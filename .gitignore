@@ -1,0 +1,81 @@
+# =========================
+# Unity UPM Package (.gitignore)
+# =========================
+
+# OS / editor noise
+.DS_Store
+.DS_Store?
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Temp / logs
+*.log
+
+# =========================
+# IDEs
+# =========================
+.vscode/
+.idea/
+*.sln
+*.csproj
+*.user
+*.userprefs
+*.pidb
+*.suo
+*.tmp
+*.svd
+*.pdb
+*.mdb
+*.opendb
+*.VC.db
+
+# Rider
+*.DotSettings.user
+
+# =========================
+# Unity generated folders (should not exist in a pure package repo, but ignore anyway)
+# =========================
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+[Bb]uilds/
+[Ll]ogs/
+[Uu]ser[Ss]ettings/
+[Mm]emoryCaptures/
+
+# Addressables cache (if ever present)
+[Aa]ssets/[Aa]ddressableAssetsData/*/*.bin*
+
+# =========================
+# Unity / Package Manager caches
+# =========================
+# UPM local cache (sometimes appears depending on workflow/tools)
+**/Library/PackageCache/
+
+# =========================
+# NUnit / Test results
+# =========================
+TestResults/
+**/TestResults/
+
+# =========================
+# Documentation build artifacts (optional; keep if you generate docs)
+# =========================
+# DocFX / similar outputs
+docs/_site/
+_site/
+
+# =========================
+# Package samples build artifacts (if you keep Samples~ in repo)
+# =========================
+Samples~/**/[Ll]ibrary/
+Samples~/**/[Tt]emp/
+Samples~/**/[Oo]bj/
+Samples~/**/[Ll]ogs/
+
+# =========================
+# Do NOT ignore meta files (Unity needs them)
+# =========================
+!*.meta
