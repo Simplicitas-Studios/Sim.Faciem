@@ -1,0 +1,16 @@
+{
+  "name": "com.sim.faciem",
+  "version": "1.0.0-alpha.1",
+  "displayName": "Sim.Faciem",
+  "description": "Simplicitas Sim.Faciem",
+ "keywords": [
+    "Unity",
+    "Simplicitas",
+	"Faciem"
+  ],
+  "author": {
+    "name": "Simplicitas-Studios",
+    "email": "pasdaa13@gmail.com",
+    "url": "https://github.com/Simplicitas-Studios"
+  }
+}

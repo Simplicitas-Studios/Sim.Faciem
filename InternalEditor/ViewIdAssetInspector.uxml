@@ -1,0 +1,15 @@
+<engine:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:engine="UnityEngine.UIElements" xmlns:editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="True">
+    <engine:VisualElement name="Root" data-source-type="Sim.Faciem.ViewIdAsset, Sim.Faciem" style="flex-grow: 1;">
+        <engine:TextField label="Name" binding-path="ViewId._id" />
+        <editor:PropertyField name="pfView" binding-path="View" />
+        <editor:PropertyField name="pfDataContext" binding-path="DataContext" />
+        <editor:PropertyField name="pfViewModel" binding-path="ViewModel" />
+        <engine:Toggle label="Source Generation" name="tgSourceGenerationEnabled" binding-path="SourceCodeGeneration" />
+        <editor:PropertyField name="pfSourceGenerationFile" binding-path="SourceFile">
+            <Bindings>
+                <engine:DataBinding property="style.display" data-source-path="SourceCodeGeneration" binding-mode="ToTarget" />
+            </Bindings>
+        </editor:PropertyField>
+        <engine:Label name="lbGenerationValidation" selectable="true" style="margin-left: 16px; color: rgb(255, 0, 0);" />
+    </engine:VisualElement>
+</engine:UXML>

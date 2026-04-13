@@ -1,0 +1,3 @@
+<engine:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:engine="UnityEngine.UIElements" xmlns:editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Sim.Faciem.Region region-name="project://database/Assets/Plugins/Sim.Faciem/Window/MainRegion.asset?fileID=11400000&amp;guid=a9195e2f72f1db94c9bc528f69f48c0c&amp;type=2#MainRegion" style="flex-grow: 1;" />
+</engine:UXML>
