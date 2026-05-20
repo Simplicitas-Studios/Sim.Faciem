@@ -15,5 +15,6 @@ namespace Plugins.Sim.Faciem.Editor
                 AddressableAssetSettingsDefaultObject.Settings.AddLabel(FaciemAddressables.ViewId);
             }
         }
+        
     }
 }

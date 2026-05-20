@@ -2,7 +2,6 @@
 using System.Linq;
 using Cysharp.Threading.Tasks;
 using Plugins.Sim.Faciem.Editor;
-using UnityEngine;
 using UnityEngine.AddressableAssets;
 
 namespace Sim.Faciem.Internal

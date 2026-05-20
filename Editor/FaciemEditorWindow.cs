@@ -1,5 +1,4 @@
-﻿using System;
-using Cysharp.Threading.Tasks;
+﻿using Cysharp.Threading.Tasks;
 using Plugins.Sim.Faciem.Editor.DI;
 using Plugins.Sim.Faciem.Editor.Navigation;
 using Sim.Faciem;

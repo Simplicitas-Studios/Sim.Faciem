@@ -2,7 +2,6 @@
 using Plugins.Sim.Faciem.Editor.Services;
 using Sim.Faciem;
 using Sim.Faciem.Internal;
-using UnityEngine;
 
 namespace Plugins.Sim.Faciem.Editor
 {
