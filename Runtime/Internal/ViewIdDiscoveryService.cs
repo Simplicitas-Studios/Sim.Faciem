@@ -14,7 +14,6 @@ namespace Sim.Faciem.Internal
         public static void RegisterViewIds(IDIRegistrationBridge registrationBridge)
         {
             ViewIds.Clear();
-            var label = new AssetLabelReference { labelString = FaciemAddressables.ViewId };
             var viewIds = Addressables
                 .LoadAssetsAsync<ViewIdAsset>(new [] { FaciemAddressables.ViewId  }, _ => { }, Addressables.MergeMode.Intersection)
                 .WaitForCompletion();
