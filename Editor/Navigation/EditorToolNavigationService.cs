@@ -13,7 +13,7 @@ namespace Plugins.Sim.Faciem.Editor.Navigation
             _editorWindow = editorWindow;
             _navigationService = navigationService;
         }
-        
+
         public UniTask Navigate(ViewId viewId, RegionName region)
         {
             return _navigationService.NavigateTo(_editorWindow.RegionManager, viewId, region);

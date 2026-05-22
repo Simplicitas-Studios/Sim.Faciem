@@ -26,25 +26,25 @@ namespace Sim.Faciem.Converters
             ConverterGroups.RegisterConverterGroup(group);
 
             ConverterGroups.RegisterGlobalConverter((ref string handle) => string.IsNullOrEmpty(handle));
-            
+
             ConverterGroups.RegisterGlobalConverter((ref string handle) => string.IsNullOrEmpty(handle)
                 ? new StyleEnum<DisplayStyle>(DisplayStyle.None)
                 : new StyleEnum<DisplayStyle>(DisplayStyle.Flex));
-            
+
             var stringToBoolInverseGroup = new ConverterGroup("String Not Empty");
-            
+
             group.AddConverter((ref string handle) => !string.IsNullOrEmpty(handle));
-            
+
             ConverterGroups.RegisterConverterGroup(stringToBoolInverseGroup);
-            
+
             var stringToVisibilityInverseGroup = new ConverterGroup("Show If String Empty");
-            
+
             group.AddConverter((ref string handle) => string.IsNullOrEmpty(handle)
                 ? new StyleEnum<DisplayStyle>(DisplayStyle.Flex)
                 : new StyleEnum<DisplayStyle>(DisplayStyle.None));
-            
+
             ConverterGroups.RegisterConverterGroup(stringToVisibilityInverseGroup);
-            
+
             // // Create local Converters.
             // var group = new ConverterGroup("Bool-Visibility");
             //

@@ -10,7 +10,7 @@ namespace Sim.Faciem
         {
             Name = name;
         }
-        
+
         public static RegionName From(string name)
         {
             return new RegionName(name);

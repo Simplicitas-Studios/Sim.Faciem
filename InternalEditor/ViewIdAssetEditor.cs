@@ -14,7 +14,7 @@ namespace Plugins.Sim.Faciem.Editor
     {
         [SerializeField]
         private VisualTreeAsset _template;
-        
+
         public override VisualElement CreateInspectorGUI()
         {
             var view = _template.CloneTree();
@@ -23,12 +23,12 @@ namespace Plugins.Sim.Faciem.Editor
             {
                 definition.ExecuteCodeGeneration = ViewIdCodeGenerator.Generate;
             }
-            
+
             var disposables = view.RegisterDisposableBag();
-            
+
             var sourceFileField = view.Q<PropertyField>("pfSourceGenerationFile");
             var validationField = view.Q<Label>("lbGenerationValidation");
-            
+
             disposables.Add(sourceFileField
                 .ObservePropertyChanges()
                 .Select(property => property.changedProperty.objectReferenceValue)
@@ -38,17 +38,18 @@ namespace Plugins.Sim.Faciem.Editor
                 {
                     validationField.text = maybeText.OrElse(string.Empty);
                 }));
-            
+
             return view;
         }
-        
+
         private Maybe<string> CheckSourceFile(MonoScript monoScript)
         {
             if (!monoScript.text.Contains(ViewIdCodeGenerator.ViewIdCodeGenerationStart))
             {
-                return "Missing Comment for Code generation. Please add the following comment ot the file:\n" + ViewIdCodeGenerator.ViewIdCodeGenerationStart;
+                return "Missing Comment for Code generation. Please add the following comment ot the file:\n" +
+                    ViewIdCodeGenerator.ViewIdCodeGenerationStart;
             }
-            
+
             return Maybe.Nothing<string>();
         }
     }

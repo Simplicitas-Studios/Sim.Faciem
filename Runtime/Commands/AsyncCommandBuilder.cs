@@ -9,12 +9,13 @@ namespace Sim.Faciem.Commands
     {
         private readonly IDisposableContainer _disposableContainer;
         private readonly Func<CancellationToken, UniTask> _executionFunc;
-        
+
         private Observable<bool> _canExecuteObservable;
-        
+
         private Observable<bool> _isVisibleObservable;
-        
-        public AsyncCommandBuilder(Func<CancellationToken, UniTask> executionFunc, IDisposableContainer disposableContainer)
+
+        public AsyncCommandBuilder(Func<CancellationToken, UniTask> executionFunc,
+            IDisposableContainer disposableContainer)
         {
             _executionFunc = executionFunc;
             _canExecuteObservable = Observable.Return(true);
@@ -27,7 +28,7 @@ namespace Sim.Faciem.Commands
             _canExecuteObservable = canExecuteObservable;
             return this;
         }
-        
+
         public AsyncCommandBuilder WithIsVisible(Observable<bool> isVisible)
         {
             _isVisibleObservable = isVisible;
@@ -41,15 +42,15 @@ namespace Sim.Faciem.Commands
             var asyncAction = _executionFunc;
             _disposableContainer.Add(
                 command
-                    .SubscribeAwait( async (_, ct) =>
+                    .SubscribeAwait(async (_, ct) =>
                     {
                         await asyncAction.Invoke(ct);
                     }));
-            
+
             _disposableContainer.Add(command);
             return command;
         }
-        
+
         public static implicit operator Command(AsyncCommandBuilder builder) => builder.Build();
     }
 }

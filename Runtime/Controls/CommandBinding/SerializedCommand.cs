@@ -9,10 +9,9 @@ namespace Sim.Faciem.CommandBinding
         public string Name;
 
         public Command Command { get; }
-        
+
         public SerializedCommand()
         {
-            
         }
 
         public SerializedCommand(Command command)

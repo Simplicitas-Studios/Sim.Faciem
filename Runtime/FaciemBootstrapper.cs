@@ -10,7 +10,7 @@ namespace Sim.Faciem
             RegisterServicesInternal(registrationBridge);
             if (registerViewIds)
             {
-                ViewIdDiscoveryService.RegisterViewIds(registrationBridge);   
+                ViewIdDiscoveryService.RegisterViewIds(registrationBridge);
             }
         }
 
@@ -19,7 +19,7 @@ namespace Sim.Faciem
             RegisterServicesInternal(registrationBridge);
             await ViewIdDiscoveryService.RegisterViewIdsAsync(registrationBridge);
         }
-        
+
         private static void RegisterServicesInternal(IDIRegistrationBridge registrationBridge)
         {
             registrationBridge.RegisterSingleton<IViewModelConstructionService, ViewModelConstructionService>();

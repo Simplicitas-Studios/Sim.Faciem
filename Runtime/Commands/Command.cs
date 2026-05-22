@@ -6,16 +6,16 @@ namespace Sim.Faciem.Commands
     public class Command : ReactiveCommand
     {
         private IDisposable _executionSubscription;
-        
+
         public Observable<bool> IsVisibleObs { get; }
 
         public Observable<bool> CanExecuteObs { get; }
-        
+
         public Command(Observable<bool> canExecute, bool initialCanExecute)
             : this(canExecute, Observable.Return(true), initialCanExecute)
         {
         }
-        
+
         public Command(Observable<bool> canExecute, Observable<bool> isVisibleObs, bool initialCanExecute)
             : base(canExecute, initialCanExecute)
         {
@@ -28,6 +28,5 @@ namespace Sim.Faciem.Commands
                 .OfType<object, Command>()
                 .Select(command => command.CanExecute());
         }
-        
     }
 }

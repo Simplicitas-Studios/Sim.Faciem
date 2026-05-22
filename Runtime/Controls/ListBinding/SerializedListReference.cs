@@ -10,7 +10,6 @@ namespace Sim.Faciem.ListBinding
 
         public SerializedListReference()
         {
-            
         }
 
         public SerializedListReference(IList itemSource)

@@ -13,16 +13,17 @@ namespace Sim.Faciem
         private readonly IViewModelConstructionService _viewModelConstructionService;
         private readonly IViewIdRegistry _viewIdRegistry;
 
-        public NavigationService(IViewModelConstructionService viewModelConstructionService, IViewIdRegistry viewIdRegistry)
+        public NavigationService(IViewModelConstructionService viewModelConstructionService,
+            IViewIdRegistry viewIdRegistry)
         {
             _viewModelConstructionService = viewModelConstructionService;
             _viewIdRegistry = viewIdRegistry;
         }
 
-
         public async UniTask NavigateTo(RegionManager regionManager, ViewId viewId, RegionName regionName)
         {
-            var maybeRegionInfos = TryFindRegion(regionManager, regionName) as IMaybe<(RegionManager, IReadOnlyList<IRegion>)>;
+            var maybeRegionInfos =
+                TryFindRegion(regionManager, regionName) as IMaybe<(RegionManager, IReadOnlyList<IRegion>)>;
 
             if (!maybeRegionInfos.HasValue
                 || !_viewIdRegistry.TryGetViewId(viewId, out var viewAsset))
@@ -30,21 +31,18 @@ namespace Sim.Faciem
                 return;
             }
 
-
             BaseViewModel viewModel = null;
 
             foreach (var region in maybeRegionInfos.Value.Item2)
             {
-                if(region.TryGetView(viewAsset.ViewId, out var view))
+                if (region.TryGetView(viewAsset.ViewId, out var view))
                 {
                     viewModel = view.dataSource as BaseViewModel;
                     break;
                 }
             }
 
-#if UNITY_EDITOR
             viewModel ??= _viewModelConstructionService.CreateInstance(viewAsset.DataContext.Script.GetClass());
-#endif
 
             foreach (var region in maybeRegionInfos.Value.Item2)
             {
@@ -68,7 +66,7 @@ namespace Sim.Faciem
                     await baseViewModel.NavigateAwayInternal();
                 }
 
-                if(!region.TryGetView(viewAsset.ViewId, out var view))
+                if (!region.TryGetView(viewAsset.ViewId, out var view))
                 {
                     view = viewAsset.View.Instantiate();
                     view.style.flexGrow = 1;
@@ -92,6 +90,7 @@ namespace Sim.Faciem
                 // Active new View
                 region.ActivateView(viewId);
             }
+
             var regionControllingManager = maybeRegionInfos.Value.Item1;
 
             if (viewModel == null)
@@ -106,7 +105,8 @@ namespace Sim.Faciem
 
         public async UniTask Clear(RegionManager regionManager, RegionName regionName)
         {
-            var maybeRegionInfos = TryFindRegion(regionManager, regionName) as IMaybe<(RegionManager, IReadOnlyList<IRegion>)>;
+            var maybeRegionInfos =
+                TryFindRegion(regionManager, regionName) as IMaybe<(RegionManager, IReadOnlyList<IRegion>)>;
 
             if (!maybeRegionInfos.HasValue)
             {
@@ -132,7 +132,8 @@ namespace Sim.Faciem
             }
         }
 
-        private Maybe<(RegionManager, IReadOnlyList<IRegion>)> TryFindRegion(RegionManager regionManager, RegionName regionName)
+        private Maybe<(RegionManager, IReadOnlyList<IRegion>)> TryFindRegion(RegionManager regionManager,
+            RegionName regionName)
         {
             if (!regionManager.TryFindRegion(regionName, out var region))
             {

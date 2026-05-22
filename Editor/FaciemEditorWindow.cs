@@ -20,23 +20,16 @@ namespace Plugins.Sim.Faciem.Editor
         RegionManager IRegionManagerOwner.RegionManager => _regionManager;
 
         protected RegionName WindowRegionName => _windowRegionName.Name;
-        
+
         protected IEditorToolNavigationService Navigation { get; private set; }
-        
+
         private async UniTaskVoid CreateGUI()
         {
             rootVisualElement.dataSource = this;
             var navigationService = EditorInjector.Instance.ResolveInstance<INavigationService>();
             Navigation = new EditorToolNavigationService(this, navigationService);
-            
-            var region = new Region
-            {
-                RegionName = _windowRegionName,
-                style =
-                {
-                    flexGrow = 1
-                }
-            };
+
+            var region = new Region { RegionName = _windowRegionName, style = { flexGrow = 1 } };
 
             rootVisualElement.Add(region);
             _regionManager.AddRegion(region);
@@ -55,7 +48,7 @@ namespace Plugins.Sim.Faciem.Editor
         {
             await NavigateAway();
         }
-        
+
         protected virtual UniTask NavigateAway()
         {
             return UniTask.CompletedTask;

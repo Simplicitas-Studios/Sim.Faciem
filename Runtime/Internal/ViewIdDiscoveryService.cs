@@ -15,7 +15,8 @@ namespace Sim.Faciem.Internal
         {
             ViewIds.Clear();
             var viewIds = Addressables
-                .LoadAssetsAsync<ViewIdAsset>(new [] { FaciemAddressables.ViewId  }, _ => { }, Addressables.MergeMode.Intersection)
+                .LoadAssetsAsync<ViewIdAsset>(new[] { FaciemAddressables.ViewId }, _ => { },
+                    Addressables.MergeMode.Intersection)
                 .WaitForCompletion();
 
             if (viewIds == null)
@@ -42,7 +43,8 @@ namespace Sim.Faciem.Internal
             RegisterViewIdsInternal(registrationBridge, viewIds.ToList());
         }
 
-        private static void RegisterViewIdsInternal(IDIRegistrationBridge registrationBridge, IReadOnlyList<ViewIdAsset> viewIds)
+        private static void RegisterViewIdsInternal(IDIRegistrationBridge registrationBridge,
+            IReadOnlyList<ViewIdAsset> viewIds)
         {
             foreach (var viewIdAsset in viewIds)
             {
@@ -52,7 +54,7 @@ namespace Sim.Faciem.Internal
                 var viewModelType = viewIdAsset.ViewModel.GetReferencedType();
                 registrationBridge.RegisterTransient(
                     dataContextType,
-                    viewModelType);   
+                    viewModelType);
             }
         }
     }

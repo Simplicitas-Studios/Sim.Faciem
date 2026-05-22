@@ -6,7 +6,6 @@ using UnityEngine.UIElements;
 
 namespace Plugins.Sim.Faciem.InternalEditor.Controls
 {
-
 #if UNITY_EDITOR
     [CustomPropertyDrawer(typeof(SerializedListReference))]
     public class SerializedListReferencePropertyDrawer : PropertyDrawer

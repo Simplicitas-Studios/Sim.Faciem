@@ -8,11 +8,11 @@ namespace Sim.Faciem
     [CreateAssetMenu(fileName = "Region", menuName = "Faciem/Region")]
     public class RegionNameDefinition : ScriptableObject
     {
-        [FormerlySerializedAs("Name")] [SerializeField]
+        [FormerlySerializedAs("Name")]
+        [SerializeField]
         private string _name;
 
         public bool SourceCodeGeneration;
-
 
         public RegionName Name => RegionName.From(_name);
 

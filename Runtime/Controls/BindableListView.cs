@@ -20,7 +20,7 @@ namespace Sim.Faciem
                 ? ScrollerVisibility.AlwaysVisible
                 : ScrollerVisibility.Auto;
         }
-        
+
         [UxmlAttribute, CreateProperty]
         public SerializedListReference ItemSource
         {
@@ -31,7 +31,7 @@ namespace Sim.Faciem
                 SetDataBinding();
             }
         }
-        
+
         [UxmlAttribute, CreateProperty]
         public int SelectedIndex
         {
@@ -43,7 +43,7 @@ namespace Sim.Faciem
         {
             _scrollView = this.Q<ScrollView>();
         }
-        
+
         protected override void HandleEventTrickleDown(EventBase evt)
         {
             if (evt is AttachToPanelEvent attachToPanelEvent)
@@ -65,36 +65,38 @@ namespace Sim.Faciem
 #if UNITY_EDITOR
 
             if (!Application.isPlaying
-                && (panel == null 
-                || IsUIBuilderInstance(panel)))
+                && (panel == null
+                    || IsUIBuilderInstance(panel)))
             {
                 return;
             }
 
 #endif
-            
+
             if (TryGetBinding(nameof(ItemSource), out var itemSourceBinding)
                 && itemSourceBinding is DataBinding dataBinding)
             {
-                SetBinding(nameof(itemsSource), new DataBinding
-                {
-                    dataSourcePath = dataBinding.dataSourcePath,
-                    bindingMode = dataBinding.bindingMode,
-                    updateTrigger = dataBinding.updateTrigger
-                });
-                
+                SetBinding(nameof(itemsSource),
+                    new DataBinding
+                    {
+                        dataSourcePath = dataBinding.dataSourcePath,
+                        bindingMode = dataBinding.bindingMode,
+                        updateTrigger = dataBinding.updateTrigger
+                    });
+
                 ClearBinding(nameof(ItemSource));
             }
 
             if (TryGetBinding(nameof(SelectedIndex), out var selectedIndexBinding)
                 && selectedIndexBinding is DataBinding selectedIndexDataBinding)
             {
-                SetBinding(nameof(selectedIndex), new DataBinding
-                {
-                    dataSourcePath = selectedIndexDataBinding.dataSourcePath,
-                    bindingMode = selectedIndexDataBinding.bindingMode,
-                    updateTrigger = selectedIndexDataBinding.updateTrigger
-                });   
+                SetBinding(nameof(selectedIndex),
+                    new DataBinding
+                    {
+                        dataSourcePath = selectedIndexDataBinding.dataSourcePath,
+                        bindingMode = selectedIndexDataBinding.bindingMode,
+                        updateTrigger = selectedIndexDataBinding.updateTrigger
+                    });
             }
         }
 

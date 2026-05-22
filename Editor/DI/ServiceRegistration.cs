@@ -5,9 +5,9 @@ namespace Plugins.Sim.Faciem.Editor.DI
     public struct ServiceRegistration : IEquatable<ServiceRegistration>
     {
         public Type InstanceType { get; }
-        
+
         public bool IsSingleton { get; }
-        
+
         public bool NonLazy { get; }
 
         private ServiceRegistration(Type instanceType, bool isSingleton, bool nonLazy)
@@ -21,7 +21,7 @@ namespace Plugins.Sim.Faciem.Editor.DI
         {
             return new ServiceRegistration(instanceType, true, nonLazy);
         }
-        
+
         public static ServiceRegistration Transient(Type instanceType, bool nonLazy = false)
         {
             return new ServiceRegistration(instanceType, false, nonLazy);

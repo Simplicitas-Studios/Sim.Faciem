@@ -3,10 +3,10 @@
   "version": "1.0.0-alpha.1",
   "displayName": "Sim.Faciem",
   "description": "Simplicitas Sim.Faciem",
- "keywords": [
+  "keywords": [
     "Unity",
     "Simplicitas",
-	"Faciem"
+    "Faciem"
   ],
   "author": {
     "name": "Simplicitas-Studios",

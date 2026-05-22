@@ -15,7 +15,7 @@ namespace Sim.Faciem
                 x => source.RegisterValueChangedCallback(x),
                 x => source.UnregisterValueChangedCallback(x));
         }
-        
+
         public static Observable<DetachFromPanelEvent> DetachFromPanelAsObservable(this VisualElement visualElement)
         {
             return visualElement.VisualElementEventAsObservable<DetachFromPanelEvent>();
@@ -25,13 +25,13 @@ namespace Sim.Faciem
         {
             return visualElement.VisualElementEventAsObservable<AttachToPanelEvent>();
         }
-        
-        #if UNITY_EDITOR
+
+#if UNITY_EDITOR
         public static Observable<DragPerformEvent> DragPerformedAsObservable(this VisualElement visualElement)
         {
             return visualElement.VisualElementEventAsObservable<DragPerformEvent>();
         }
-        #endif
+#endif
 
         public static Observable<PointerEnterEvent> PointerEnterAsObservable(this VisualElement visualElement)
         {
@@ -57,27 +57,27 @@ namespace Sim.Faciem
         {
             return visualElement.VisualElementEventAsObservable<MouseLeaveEvent>();
         }
-        
+
         public static Observable<MouseOverEvent> MouseOverAsObservable(this VisualElement visualElement)
         {
             return visualElement.VisualElementEventAsObservable<MouseOverEvent>();
         }
-        
+
         public static Observable<MouseDownEvent> MouseDownAsObservable(this VisualElement visualElement)
         {
             return visualElement.VisualElementEventAsObservable<MouseDownEvent>();
         }
-        
+
         public static Observable<MouseMoveEvent> MouseMoveObservable(this VisualElement visualElement)
         {
             return visualElement.VisualElementEventAsObservable<MouseMoveEvent>();
         }
-        
+
         public static Observable<MouseUpEvent> MouseUpAsObservable(this VisualElement visualElement)
         {
             return visualElement.VisualElementEventAsObservable<MouseUpEvent>();
         }
-        
+
         public static Observable<WheelEvent> WheelEventAsObservable(this VisualElement visualElement)
         {
             return visualElement.VisualElementEventAsObservable<WheelEvent>();
@@ -108,19 +108,20 @@ namespace Sim.Faciem
             return visualElement.VisualElementEventAsObservable<GeometryChangedEvent>();
         }
 
-        #if UNITY_EDITOR
+#if UNITY_EDITOR
         public static Observable<SerializedPropertyChangeEvent> ObserveValueChanged(this PropertyField field)
         {
             return field.VisualElementEventAsObservable<SerializedPropertyChangeEvent>();
         }
-        #endif
+#endif
 
         public static Observable<KeyDownEvent> KeyDownAsObservable(this VisualElement visualElement)
         {
             return visualElement.VisualElementEventAsObservable<KeyDownEvent>();
         }
-        
-        internal static Observable<T> VisualElementEventAsObservable<T>(this CallbackEventHandler visualElement) where T : EventBase<T>, new()
+
+        internal static Observable<T> VisualElementEventAsObservable<T>(this CallbackEventHandler visualElement)
+            where T : EventBase<T>, new()
         {
             return Observable.FromEvent<EventCallback<T>, T>(
                 x => x.Invoke,

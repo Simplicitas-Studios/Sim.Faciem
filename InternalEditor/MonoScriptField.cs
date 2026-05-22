@@ -17,16 +17,8 @@ namespace Plugins.Sim.Faciem.Editor
     {
         public override VisualElement CreatePropertyGUI(SerializedProperty property)
         {
-            var root = new VisualElement
-            {
-                style =
-                {
-                    flexGrow = 1,
-                    alignItems = Align.Stretch,
-                    paddingLeft = 3
-                }
-            };
-            
+            var root = new VisualElement { style = { flexGrow = 1, alignItems = Align.Stretch, paddingLeft = 3 } };
+
             var typeFilters = fieldInfo
                 .GetCustomAttributes<MonoScriptReferenceFilter>()
                 .ToList();
@@ -39,35 +31,19 @@ namespace Plugins.Sim.Faciem.Editor
                 .ToList();
 
             var disposables = root.RegisterDisposableBag();
-            
+
             var typeNameProperty = property.FindPropertyRelative(nameof(MonoScriptReference.TypeName));
             var scriptProperty = property.FindPropertyRelative(nameof(MonoScriptReference.Script));
 
-            var label = new Label(property.displayName)
-            {
-                style = 
-                {
-                    width = Length.Percent(40),
-                }
-            };
+            var label = new Label(property.displayName) { style = { width = Length.Percent(40), } };
 
-            var valuePart = new VisualElement
-            {
-                style =
-                {
-                    flexDirection = FlexDirection.Row,
-                }
-            };
-            
+            var valuePart = new VisualElement { style = { flexDirection = FlexDirection.Row, } };
+
             valuePart.Add(label);
-            
+
             var objectField = new ObjectField
             {
-                objectType = typeof(MonoScript),
-                style =
-                {
-                    width = Length.Percent(60)
-                }
+                objectType = typeof(MonoScript), style = { width = Length.Percent(60) }
             };
             objectField.BindProperty(scriptProperty);
             var scriptName = new Label
@@ -83,15 +59,12 @@ namespace Plugins.Sim.Faciem.Editor
                 },
             };
             scriptName.BindProperty(typeNameProperty);
-            
+
             var validationLabel = new Label
             {
                 style =
                 {
-                    marginLeft = 4,
-                    color = Color.red,
-                    flexWrap = Wrap.Wrap,
-                    textOverflow = TextOverflow.Clip,
+                    marginLeft = 4, color = Color.red, flexWrap = Wrap.Wrap, textOverflow = TextOverflow.Clip,
                 },
                 enableRichText = true
             };
@@ -100,7 +73,7 @@ namespace Plugins.Sim.Faciem.Editor
                 objectField.ObserveValueChanged()
                     .CombineLatest(Observable.Interval(TimeSpan.FromSeconds(1), UnityTimeProvider.UpdateIgnoreTimeScale)
                         .AsUnitObservable()
-                        .Prepend(Unit.Default), (obj, _ ) => obj)
+                        .Prepend(Unit.Default), (obj, _) => obj)
                     .OfType<Object, MonoScript>()
                     .Subscribe(newValue =>
                     {
@@ -110,12 +83,11 @@ namespace Plugins.Sim.Faciem.Editor
                             .Select(monoScript => monoScript.GetClass())
                             .Where(type => type != null)
                             .ToList();
-                        
-                        
+
                         if (typeFilters.Count > 0 || dependentTypes.Count > 0)
                         {
-                            var type = newValue.GetClass(); 
-                            
+                            var type = newValue.GetClass();
+
                             var missingTypes = typeFilters
                                 .Select(typeFilter => typeFilter.TargetType)
                                 .Concat(dependentTypes)
@@ -131,12 +103,11 @@ namespace Plugins.Sim.Faciem.Editor
                             {
                                 validationLabel.text = string.Empty;
                             }
-
                         }
 
                         root.panel.visualTree.MarkDirtyRepaint();
                     }));
-            
+
             valuePart.Add(objectField);
             root.Add(valuePart);
             root.Add(scriptName);
@@ -156,8 +127,10 @@ namespace Plugins.Sim.Faciem.Editor
                     {
                         return true;
                     }
+
                     derivedType = derivedType.BaseType;
                 }
+
                 return false;
             }
 

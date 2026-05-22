@@ -11,7 +11,7 @@ namespace Plugins.Sim.Faciem.Shared
         {
             _disposableBag = new DisposableBag();
         }
-        
+
         public void Add(IDisposable disposable)
         {
             _disposableBag.Add(disposable);

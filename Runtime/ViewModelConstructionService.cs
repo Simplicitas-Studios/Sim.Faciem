@@ -11,11 +11,11 @@ namespace Sim.Faciem
         {
             _diContainerBridge = diContainerBridge;
         }
-        
+
         public T CreateInstance<T>() where T : BaseViewModel
         {
             EnsureNavigationServiceSet();
-            
+
             var instance = _diContainerBridge.ResolveInstance<T>();
             var regionManager = new RegionManager();
             instance.Setup(regionManager, _navigationService);
@@ -26,7 +26,7 @@ namespace Sim.Faciem
         public BaseViewModel CreateInstance(Type type)
         {
             EnsureNavigationServiceSet();
-            
+
             var instance = _diContainerBridge.ResolveInstance(type);
 
             if (instance is not BaseViewModel baseViewModel)
@@ -37,7 +37,7 @@ namespace Sim.Faciem
             if (!baseViewModel.IsSetup)
             {
                 var regionManager = new RegionManager();
-                baseViewModel.Setup(regionManager, _navigationService);   
+                baseViewModel.Setup(regionManager, _navigationService);
             }
 
             return baseViewModel;

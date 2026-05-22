@@ -18,9 +18,9 @@ namespace Plugins.Sim.Faciem.Editor
         protected IEditorToolNavigationService Navigation { get; }
 
         protected abstract RegionName PanelRegionName { get; }
-        
+
         protected abstract RegionName ToolbarRegionName { get; }
-        
+
         protected FaciemToolbarOverlay()
         {
             _regionManager = new RegionManager();
@@ -32,7 +32,7 @@ namespace Plugins.Sim.Faciem.Editor
         {
             return new VisualElement();
         }
-        
+
         public sealed override VisualElement CreatePanelContent()
         {
             var root = CreateRootElement();
@@ -44,8 +44,8 @@ namespace Plugins.Sim.Faciem.Editor
             {
                 _regionManager.RemoveRegion(region);
                 UniTask.Defer(NavigateAwayPanel).Forget();
-            }));            
-            
+            }));
+
             UniTask.Defer(NavigateToPanel).Forget();
 
             root.Add(region);
@@ -58,15 +58,15 @@ namespace Plugins.Sim.Faciem.Editor
             var region = new Region(ToolbarRegionName);
             _regionManager.AddRegion(region);
             rootVisualElement[0].Add(region);
-            
+
             UniTask.Defer(NavigateToToolbar).Forget();
         }
-        
+
         protected virtual UniTask NavigateToToolbar()
         {
             return UniTask.CompletedTask;
         }
-        
+
         protected virtual UniTask NavigateToPanel()
         {
             return UniTask.CompletedTask;

@@ -1,5 +1,4 @@
-﻿
-namespace Sim.Faciem
+﻿namespace Sim.Faciem
 {
     public static class FaciemBridge
     {

@@ -6,14 +6,14 @@ namespace Sim.Faciem
     public class RegionManager
     {
         private readonly Dictionary<RegionName, List<IRegion>> _regions = new();
-        
+
         public Maybe<RegionManager> Parent { get; set; }
 
         public RegionManager()
         {
             Parent = Maybe.Nothing<RegionManager>();
         }
-        
+
         public RegionManager(RegionManager parent)
         {
             Parent = Maybe.From(parent);
@@ -26,7 +26,7 @@ namespace Sim.Faciem
                 regionList = new List<IRegion>();
                 _regions.Add(region.RegionName, regionList);
             }
-            
+
             regionList.Add(region);
         }
 
@@ -41,7 +41,7 @@ namespace Sim.Faciem
                 }
             }
         }
-        
+
         public bool TryFindRegion(RegionName regionName, out IReadOnlyList<IRegion> regionList)
         {
             var hasItem = _regions.TryGetValue(regionName, out var outRegionList);

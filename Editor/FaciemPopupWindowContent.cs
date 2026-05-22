@@ -17,7 +17,7 @@ namespace Plugins.Sim.Faciem.Editor
         RegionManager IRegionManagerOwner.RegionManager => _regionManager;
 
         protected IEditorToolNavigationService Navigation { get; }
-        
+
         protected abstract RegionName RegionName { get; }
 
         public override Vector2 GetWindowSize()
@@ -34,11 +34,8 @@ namespace Plugins.Sim.Faciem.Editor
 
         public override VisualElement CreateGUI()
         {
-            var root = new VisualElement
-            {
-                style = { width = 200, height = 200 }
-            };
-            
+            var root = new VisualElement { style = { width = 200, height = 200 } };
+
             var region = new Region(RegionName);
 
             var disposables = region.RegisterDisposableBag();
@@ -46,10 +43,10 @@ namespace Plugins.Sim.Faciem.Editor
             disposables.Add(Disposable.Create(() =>
             {
                 _regionManager.RemoveRegion(region);
-            }));            
-           
+            }));
+
             root.Add(region);
-            
+
             return root;
         }
 
@@ -62,7 +59,7 @@ namespace Plugins.Sim.Faciem.Editor
         {
             UniTask.Defer(NavigateAwayPopup).Forget();
         }
-        
+
         protected virtual UniTask NavigateToPopup()
         {
             return UniTask.CompletedTask;

@@ -27,12 +27,12 @@ namespace Sim.Faciem
         {
             var lifeTimeDisposables = this.RegisterDisposableBag();
             _commandSubscriptions = new DisposableBag();
-            
+
             lifeTimeDisposables.Add(_commandSubscriptions);
-            
+
             lifeTimeDisposables.Add(Observable.FromEvent(
-                x => clickable.clicked += x,
-                x => clickable.clicked -= x)
+                    x => clickable.clicked += x,
+                    x => clickable.clicked -= x)
                 .Subscribe(_ =>
                 {
                     _command?.Command?.Execute(Unit.Default);
@@ -45,21 +45,21 @@ namespace Sim.Faciem
             {
                 return;
             }
-            
+
             _commandSubscriptions.Dispose();
             _commandSubscriptions = new DisposableBag();
-            
+
             _commandSubscriptions.Add(
                 _command.Command.CanExecuteObs
                     .Prepend(_command.Command.CanExecute)
                     .Subscribe(x => SetEnabled(x)));
-            
+
             _commandSubscriptions.Add(
                 _command.Command.IsVisibleObs
                     .Subscribe(isVisible =>
                     {
-                        style.display = isVisible 
-                            ? DisplayStyle.Flex 
+                        style.display = isVisible
+                            ? DisplayStyle.Flex
                             : DisplayStyle.None;
                     }));
         }

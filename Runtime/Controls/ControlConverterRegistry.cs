@@ -25,7 +25,7 @@ namespace Sim.Faciem
             ConverterGroups.RegisterGlobalConverter((ref IList list) => new SerializedListReference(list));
 
             var group = new ConverterGroup("Inverters");
-            
+
             group.AddConverter((ref bool value) => !value);
             ConverterGroups.RegisterConverterGroup(group);
         }

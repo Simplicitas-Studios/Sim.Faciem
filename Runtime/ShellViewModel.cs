@@ -6,7 +6,6 @@ namespace Sim.Faciem
     {
         public ShellViewModel()
         {
-            
         }
 
         protected override async UniTask NavigateTo()

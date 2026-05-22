@@ -12,7 +12,7 @@ namespace Sim.Faciem
             _baseViewModel = baseViewModel;
             _navigationService = navigationService;
         }
-        
+
         public UniTask Navigate(ViewId viewId, RegionName region)
         {
             return _navigationService.NavigateTo(_baseViewModel.RegionManager, viewId, region);

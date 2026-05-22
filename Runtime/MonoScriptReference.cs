@@ -12,10 +12,9 @@ namespace Sim.Faciem
         public string TypeName;
 
         public Type GetReferencedType() => Type.GetType(TypeName);
-        
+
 #if UNITY_EDITOR
         public MonoScript Script;
 #endif
-        
     }
 }

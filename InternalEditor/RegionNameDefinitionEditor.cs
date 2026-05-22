@@ -22,12 +22,13 @@ namespace Plugins.Sim.Faciem.Editor
             {
                 definition.ExecuteCodeGeneration = RegionNameCodeGenerator.Generate;
             }
-            
+
             var nameProperty = serializedObject.FindProperty("_name");
             var namePropertyField = new PropertyField(nameProperty);
             root.Add(namePropertyField);
-            
-            var sourceGenerationProperty = serializedObject.FindProperty(nameof(RegionNameDefinition.SourceCodeGeneration));
+
+            var sourceGenerationProperty =
+                serializedObject.FindProperty(nameof(RegionNameDefinition.SourceCodeGeneration));
             var sourceGenerationPropertyField = new PropertyField(sourceGenerationProperty);
             root.Add(sourceGenerationPropertyField);
 
@@ -38,24 +39,15 @@ namespace Plugins.Sim.Faciem.Editor
 
             var sourceFileContainer = new VisualElement();
             disposables.Add(sourceFileContainer.BindVisibility(sourceFileVisibilityObs));
-            
+
             var sourceFileProperty = serializedObject.FindProperty(nameof(RegionNameDefinition.SourceFile));
             var sourceFileField = new PropertyField(sourceFileProperty);
             sourceFileContainer.Add(sourceFileField);
-            
+
             var validationField = new Label
             {
-                style =
-                {
-                    marginLeft = 16,
-                    color = Color.red
-                },
-                selection =
-                {
-                    isSelectable = true,
-                    doubleClickSelectsWord = true,
-                    tripleClickSelectsLine = true
-                }
+                style = { marginLeft = 16, color = Color.red },
+                selection = { isSelectable = true, doubleClickSelectsWord = true, tripleClickSelectsLine = true }
             };
             disposables.Add(sourceFileField
                 .ObservePropertyChanges()
@@ -66,11 +58,11 @@ namespace Plugins.Sim.Faciem.Editor
                 {
                     validationField.text = maybeText.OrElse(string.Empty);
                 }));
-            
+
             sourceFileContainer.Add(validationField);
-            
+
             root.Add(sourceFileContainer);
-            
+
             return root;
         }
 
@@ -78,9 +70,10 @@ namespace Plugins.Sim.Faciem.Editor
         {
             if (!monoScript.text.Contains(RegionNameCodeGenerator.RegionNameCodeGenerationStart))
             {
-                return "Missing Comment for Code generation. Please add the following comment ot the file:\n" + RegionNameCodeGenerator.RegionNameCodeGenerationStart;
+                return "Missing Comment for Code generation. Please add the following comment ot the file:\n" +
+                    RegionNameCodeGenerator.RegionNameCodeGenerationStart;
             }
-            
+
             return Maybe.Nothing<string>();
         }
     }

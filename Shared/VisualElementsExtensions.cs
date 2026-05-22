@@ -33,7 +33,7 @@ namespace Plugins.Sim.Faciem.Shared
         {
             visualElement.style.display = DisplayStyle.None;
         }
-        
+
         public static Observable<T> ObserveEvent<T>(this VisualElement element)
             where T : EventBase<T>, new()
         {

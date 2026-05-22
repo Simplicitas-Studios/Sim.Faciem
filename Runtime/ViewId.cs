@@ -28,10 +28,7 @@ namespace Sim.Faciem
 
         public static ViewId From(string id)
         {
-            var instance = new ViewId
-            {
-                _id = id
-            };
+            var instance = new ViewId { _id = id };
             return instance;
         }
     }

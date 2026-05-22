@@ -15,22 +15,22 @@ namespace Sim.Faciem
         private readonly Dictionary<ViewId, VisualElement> _views;
         private readonly List<ViewId> _currentActiveViews;
 
-        [UxmlAttribute] 
+        [UxmlAttribute]
         public RegionNameDefinition RegionName { get; set; }
 
         [UxmlAttribute]
         public bool SupportMultipleViews { get; set; }
-        
+
         public IReadOnlyList<ViewId> ActiveViews => _currentActiveViews;
-        
+
         public Observable<Unit> Destroyed { get; }
-        
+
         public Region(RegionName regionName)
             : this()
         {
             _regionName = Maybe.From(regionName);
         }
-        
+
         public Region()
         {
             _currentActiveViews = new List<ViewId>();
@@ -51,7 +51,7 @@ namespace Sim.Faciem
                 Add(view);
                 return;
             }
-            
+
             throw new InvalidOperationException("View already added");
         }
 
@@ -61,7 +61,7 @@ namespace Sim.Faciem
             {
                 return;
             }
-            
+
             view.Show();
             _currentActiveViews.Add(viewId);
         }
@@ -72,7 +72,7 @@ namespace Sim.Faciem
             {
                 return;
             }
-            
+
             view.Hide();
             _currentActiveViews.Remove(viewId);
         }
@@ -85,11 +85,13 @@ namespace Sim.Faciem
                 {
                     continue;
                 }
+
                 view.Hide();
             }
+
             _currentActiveViews.Clear();
         }
-        
+
         RegionName IRegion.RegionName => _regionName.OrElse(() => RegionName.Name);
 
         internal void RegisterDirect(IRegionSetup regionSetup)

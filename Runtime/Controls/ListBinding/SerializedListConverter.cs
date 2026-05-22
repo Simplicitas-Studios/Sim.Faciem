@@ -5,7 +5,7 @@ using UnityEditor.UIElements;
 namespace Sim.Faciem.ListBinding
 {
 #if UNITY_EDITOR
-    public class SerializedListConverter: UxmlAttributeConverter<SerializedListReference>
+    public class SerializedListConverter : UxmlAttributeConverter<SerializedListReference>
     {
         public override SerializedListReference FromString(string value)
         {

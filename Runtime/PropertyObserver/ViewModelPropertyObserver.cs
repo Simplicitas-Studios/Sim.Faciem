@@ -9,7 +9,7 @@ namespace Sim.Faciem.PropertyObserver
     internal class ViewModelPropertyObserver<T> : IViewModelPropertyObserver<T> where T : ViewModel<T>
     {
         private readonly Dictionary<string, Observable<Unit>> _propertyChangeTriggers;
-        
+
         private readonly T _owner;
 
         public ViewModelPropertyObserver(T owner)
@@ -31,18 +31,18 @@ namespace Sim.Faciem.PropertyObserver
                 throw new ArgumentException(
                     $"Expression '{propertyExpression}' refers to a field, not a property.");
             }
-            
+
             var compiledExpression = propertyExpression.Compile();
 
             if (!_propertyChangeTriggers.TryGetValue(propInfo.Name, out var changeObs))
-            { 
+            {
                 changeObs = _owner.PropertyChangedObs
                     .Where(change => change.propertyName.Equals(propInfo.Name))
                     .AsUnitObservable()
                     .Share();
                 _propertyChangeTriggers.Add(propInfo.Name, changeObs);
             }
-            
+
             return changeObs
                 .Select(_ => compiledExpression(_owner));
         }

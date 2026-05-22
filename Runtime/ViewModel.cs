@@ -1,5 +1,4 @@
-﻿
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq.Expressions;
 using System.Reflection;
@@ -10,26 +9,28 @@ using UnityEngine.UIElements;
 
 namespace Sim.Faciem
 {
-    public abstract class ViewModel<T> : BaseViewModel, IDataSourceViewHashProvider, INotifyBindablePropertyChanged where T : ViewModel<T>
+    public abstract class ViewModel<T> : BaseViewModel, IDataSourceViewHashProvider, INotifyBindablePropertyChanged
+        where T : ViewModel<T>
     {
         private long _viewHashCode = 0;
         private Dictionary<string, IDisposable> _nestedSubscriptions = new();
-        
+
         private event EventHandler<BindablePropertyChangedEventArgs> PropertyChanged;
 
         internal Observable<BindablePropertyChangedEventArgs> PropertyChangedObs { get; set; }
-        
+
         protected IViewModelPropertyObserver<T> Property { get; }
-        
+
         protected ViewModel()
         {
-            PropertyChangedObs = Observable.FromEvent<EventHandler<BindablePropertyChangedEventArgs>, BindablePropertyChangedEventArgs>(
+            PropertyChangedObs = Observable
+                .FromEvent<EventHandler<BindablePropertyChangedEventArgs>, BindablePropertyChangedEventArgs>(
                     x => (_, args) => x(args),
                     x => PropertyChanged += x,
                     x => PropertyChanged -= x);
 
             Property = new ViewModelPropertyObserver<T>(this as T);
-            
+
             Disposables.Add(
                 Disposable.Create(() =>
                 {
@@ -40,7 +41,8 @@ namespace Sim.Faciem
                 }));
         }
 
-        public void AddNestedBindable<TProperty>(Expression<Func<T, TProperty>> propertyExpression) where TProperty : Bindable<TProperty>
+        public void AddNestedBindable<TProperty>(Expression<Func<T, TProperty>> propertyExpression)
+            where TProperty : Bindable<TProperty>
         {
             if (propertyExpression.Body is not MemberExpression member)
             {
@@ -53,37 +55,39 @@ namespace Sim.Faciem
                 throw new ArgumentException(
                     $"Expression '{propertyExpression}' refers to a field, not a property.");
             }
-            
+
             var compiledExpression = propertyExpression.Compile();
-            
+
             var bindable = compiledExpression(this as T);
-            
-            if(_nestedSubscriptions.TryGetValue(propInfo.Name, out var oldSubscription))
+
+            if (_nestedSubscriptions.TryGetValue(propInfo.Name, out var oldSubscription))
             {
                 oldSubscription.Dispose();
             }
-            
+
             _nestedSubscriptions[propInfo.Name] = bindable
                 .PropertyChangedObs
                 .Subscribe(changedProperty =>
                 {
-                    PropertyChanged?.Invoke(this, new BindablePropertyChangedEventArgs($"{propInfo.Name}.{changedProperty.propertyName.ToString()}"));
+                    PropertyChanged?.Invoke(this,
+                        new BindablePropertyChangedEventArgs(
+                            $"{propInfo.Name}.{changedProperty.propertyName.ToString()}"));
                     _viewHashCode++;
                 });
         }
-        
+
         protected void SetProperty<TItem>(ref TItem item, TItem newValue, [CallerMemberName] string name = "")
         {
             if (item?.Equals(newValue) ?? false)
             {
                 return;
             }
-            
+
             item = newValue;
             PropertyChanged?.Invoke(this, new BindablePropertyChangedEventArgs(name));
             _viewHashCode++;
         }
-        
+
         event EventHandler<BindablePropertyChangedEventArgs> INotifyBindablePropertyChanged.propertyChanged
         {
             add => PropertyChanged += value;

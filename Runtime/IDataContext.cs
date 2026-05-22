@@ -3,6 +3,5 @@
     // Marker Interface
     public interface IDataContext
     {
-        
     }
 }

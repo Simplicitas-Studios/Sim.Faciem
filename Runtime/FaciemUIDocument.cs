@@ -10,11 +10,11 @@ namespace Sim.Faciem
     {
         [SerializeField]
         private ViewIdAsset _rootViewId;
-        
+
         private async UniTaskVoid Awake()
         {
             FaciemBridge.RootViewId = _rootViewId.ViewId;
-            
+
             var document = GetComponent<UIDocument>();
 
             if (FaciemBridge.ContainerBridge == null)
@@ -22,11 +22,12 @@ namespace Sim.Faciem
                 Debug.LogError("Faciem DI Bridge is not setup!");
                 return;
             }
+
             var constructionService = FaciemBridge.ContainerBridge.ResolveInstance<IViewModelConstructionService>();
 
             var vm = constructionService.CreateInstance<ShellViewModel>();
             document.rootVisualElement.dataSource = vm;
-            
+
             var regions = document.rootVisualElement.Query<Region>().ToList();
 
             foreach (var innerRegion in regions)

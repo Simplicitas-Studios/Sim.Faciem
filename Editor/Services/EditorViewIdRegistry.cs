@@ -16,7 +16,7 @@ namespace Plugins.Sim.Faciem.Editor.Services
                 .Select(AssetDatabase.GUIDToAssetPath)
                 .Select(AssetDatabase.LoadAssetAtPath<EditorViewIdAsset>)
                 .Where(asset => asset != null);
-            
+
             _viewIds = viewIdAssets
                 .ToDictionary(x => x.ViewId, x => x as ViewIdAsset);
         }

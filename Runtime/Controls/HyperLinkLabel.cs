@@ -20,20 +20,20 @@ namespace Sim.Faciem.Controls
 
         [UxmlAttribute, CreateProperty]
         public List<string> LinkIds { get; set; }
-        
+
         [UxmlAttribute, CreateProperty]
         public List<int> InstanceIds { get; set; }
-        
+
         [UxmlAttribute, CreateProperty]
         public Color LinkColor { get; set; }
-        
+
         [UxmlAttribute, CreateProperty]
         public Color LinkHoverColor { get; set; }
-        
+
         private bool _isSelfUpdate = false;
-        
+
         private string _baseText;
-        
+
         public HyperLinkLabel()
         {
             var disposables = this.RegisterDisposableBag();
@@ -42,7 +42,7 @@ namespace Sim.Faciem.Controls
             disposables.Add(this.PointerDownAsObservable()
                 .Subscribe(_ => { }));
             disposables.Add(this.ObserveEvent<PointerDownLinkTagEvent>()
-                .Subscribe(_=> {}));
+                .Subscribe(_ => { }));
             disposables.Add(this.ObserveEvent<PointerUpLinkTagEvent>()
                 .Subscribe(HyperlinkOnPointerUp));
             disposables.Add(this.ObserveEvent<PointerOverLinkTagEvent>()
@@ -60,10 +60,10 @@ namespace Sim.Faciem.Controls
         private void UpdateText(string newText)
         {
             _isSelfUpdate = true;
-            
+
             _baseText = Process_Base(newText, LinkColor);
             text = _baseText;
-            
+
             schedule.Execute(() => _isSelfUpdate = false)
                 .ExecuteLater(100);
         }
@@ -95,8 +95,8 @@ namespace Sim.Faciem.Controls
             {
                 return;
             }
-            
-            #if UNITY_EDITOR
+
+#if UNITY_EDITOR
 
             if (InstanceIds.Count > index)
             {
@@ -106,14 +106,16 @@ namespace Sim.Faciem.Controls
                     EditorGUIUtility.PingObject(asset);
                 }
             }
-            
-            #endif
+
+#endif
         }
 
         private string Process_Base(string input, Color normalColor)
         {
             if (string.IsNullOrEmpty(input))
+            {
                 return input;
+            }
 
             string colorHex = ColorUtility.ToHtmlStringRGB(normalColor);
 
@@ -130,7 +132,7 @@ namespace Sim.Faciem.Controls
                 RegexOptions.Singleline
             );
         }
-        
+
         private string Process_Hover(string input, Color hoverColor)
         {
             if (string.IsNullOrEmpty(input))

@@ -7,7 +7,6 @@ namespace Sim.Faciem
 {
     public abstract class BaseViewModel : IDisposable, IDisposableContainer, IRegionSetup
     {
-
         internal bool IsSetup => RegionManager != null && Navigation != null;
 
         protected DisposableBag Disposables { get; } = new();
@@ -17,7 +16,6 @@ namespace Sim.Faciem
         protected IViewModelNavigationService Navigation { get; private set; }
 
         protected ICommandBuilderFactory Command { get; private set; }
-
 
         protected BaseViewModel()
         {
@@ -68,7 +66,5 @@ namespace Sim.Faciem
         {
             Disposables.Add(disposable);
         }
-
-
     }
 }

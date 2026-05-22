@@ -20,15 +20,15 @@ namespace Plugins.Sim.Faciem.Editor.DI
             editor.RegisterInstance<IEditorInjector, EditorInjector>(editor);
             editor.Register<IDIContainerBridge, EditorInjector>();
             Instance = editor;
-            
+
             AssemblyReloadEvents.beforeAssemblyReload += OnBeforeAssemblyReload;
-            
+
             AutoRegisterEditorInstallers();
             AutoRegisterEditorViewIds(editor);
-            
+
             InstantiateNonLazyServices();
         }
-        
+
         private static void OnBeforeAssemblyReload()
         {
             foreach (IDisposable disposableService in s_instances.Values.OfType<IDisposable>())
@@ -44,7 +44,8 @@ namespace Plugins.Sim.Faciem.Editor.DI
             s_instances.Add(typeof(TInterface), instance);
         }
 
-        public void Register<TInterface, TImplementation>(bool nonLazy = false, params Type[] aliases) where TImplementation : TInterface
+        public void Register<TInterface, TImplementation>(bool nonLazy = false, params Type[] aliases)
+            where TImplementation : TInterface
         {
             var serviceRegistration = ServiceRegistration.Singleton(typeof(TImplementation), nonLazy);
             s_registeredTypes[typeof(TInterface)] = serviceRegistration;
@@ -64,7 +65,7 @@ namespace Plugins.Sim.Faciem.Editor.DI
         public TInterface ResolveInstance<TInterface>() where TInterface : class
         {
             var interfaceType = typeof(TInterface);
-            return (TInterface) ResolveInstance(interfaceType);
+            return (TInterface)ResolveInstance(interfaceType);
         }
 
         // Resolve an instance of the given type, creating it if necessary
@@ -75,13 +76,13 @@ namespace Plugins.Sim.Faciem.Editor.DI
             {
                 return existingInstance;
             }
-            
+
             // Check if the type has been registered
             if (!s_registeredTypes.TryGetValue(interfaceType, out var implementationType))
             {
                 throw new InvalidOperationException($"No registration for type {interfaceType.FullName}");
             }
-            
+
             if (s_instances.TryGetValue(implementationType.InstanceType, out existingInstance))
             {
                 return existingInstance;
@@ -115,14 +116,13 @@ namespace Plugins.Sim.Faciem.Editor.DI
             {
                 return existingInstance;
             }
-            
 
             // Check if the type has been registered
             if (!s_registeredTypes.TryGetValue(interfaceType, out var implementationType))
             {
                 throw new InvalidOperationException($"No registration for type {interfaceType.FullName}");
             }
-            
+
             if (s_instances.TryGetValue(implementationType.InstanceType, out existingInstance))
             {
                 return existingInstance;
@@ -173,7 +173,7 @@ namespace Plugins.Sim.Faciem.Editor.DI
                 {
                     continue;
                 }
-                
+
                 injector.RegisterTransient(viewId.DataContext.Script.GetClass(), viewId.ViewModel.Script.GetClass());
             }
         }
@@ -183,7 +183,7 @@ namespace Plugins.Sim.Faciem.Editor.DI
             var nonLazyRegistrations = s_registeredTypes
                 .Select(pair => pair)
                 .Where(pair => pair.Value.NonLazy);
-            
+
             foreach (var pair in nonLazyRegistrations)
             {
                 Instance.ResolveInstance(pair.Key);

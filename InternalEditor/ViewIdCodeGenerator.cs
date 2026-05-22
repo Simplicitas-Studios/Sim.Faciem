@@ -78,7 +78,6 @@ namespace Plugins.Sim.Faciem.Editor
             text = text.Insert(index, string.Format(PropertySyntax, sanitizedName, name));
 
             File.WriteAllText(sourceFilePath, text);
-
         }
 
         private static string MakeValidIdentifier(string name)

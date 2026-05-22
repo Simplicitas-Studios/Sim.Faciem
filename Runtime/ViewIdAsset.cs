@@ -18,10 +18,7 @@ namespace Sim.Faciem
         [MonoScriptReferenceFilter(typeof(ViewModel<>))]
         public MonoScriptReference ViewModel;
 
-
         public bool SourceCodeGeneration;
-
-
 
 #if UNITY_EDITOR
         public MonoScript SourceFile;
@@ -35,7 +32,7 @@ namespace Sim.Faciem
             {
                 ViewModel.TypeName = ViewModel.Script.GetClass().AssemblyQualifiedName;
             }
-            
+
             if (DataContext != null && DataContext.Script != null)
             {
                 DataContext.TypeName = DataContext.Script.GetClass().AssemblyQualifiedName;

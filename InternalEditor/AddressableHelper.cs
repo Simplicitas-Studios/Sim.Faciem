@@ -1,13 +1,14 @@
 ﻿namespace Plugins.Sim.Faciem.Editor
 {
-using UnityEditor;
+    using UnityEditor;
     using UnityEditor.AddressableAssets;
     using UnityEditor.AddressableAssets.Settings;
     using UnityEngine;
 
     public static class AddressableHelper
     {
-        public static AddressableAssetEntry CreateAssetEntry<T>(T source, string groupName, string label) where T : Object
+        public static AddressableAssetEntry CreateAssetEntry<T>(T source, string groupName, string label)
+            where T : Object
         {
             var entry = CreateAssetEntry(source, groupName);
             if (source != null)
@@ -21,7 +22,9 @@ using UnityEditor;
         public static AddressableAssetEntry CreateAssetEntry<T>(T source, string groupName) where T : Object
         {
             if (source == null || string.IsNullOrEmpty(groupName) || !AssetDatabase.Contains(source))
+            {
                 return null;
+            }
 
             var addressableSettings = AddressableAssetSettingsDefaultObject.Settings;
             var sourcePath = AssetDatabase.GetAssetPath(source);
@@ -39,7 +42,9 @@ using UnityEditor;
         public static AddressableAssetEntry CreateAssetEntry<T>(T source) where T : Object
         {
             if (source == null || !AssetDatabase.Contains(source))
+            {
                 return null;
+            }
 
             var addressableSettings = AddressableAssetSettingsDefaultObject.Settings;
             var sourcePath = AssetDatabase.GetAssetPath(source);
@@ -55,7 +60,9 @@ using UnityEditor;
         public static AddressableAssetGroup GetGroup(string groupName)
         {
             if (string.IsNullOrEmpty(groupName))
+            {
                 return null;
+            }
 
             var addressableSettings = AddressableAssetSettingsDefaultObject.Settings;
             return addressableSettings.FindGroup(groupName);
@@ -64,7 +71,9 @@ using UnityEditor;
         public static AddressableAssetGroup CreateGroup(string groupName)
         {
             if (string.IsNullOrEmpty(groupName))
+            {
                 return null;
+            }
 
             var addressableSettings = AddressableAssetSettingsDefaultObject.Settings;
             var group = addressableSettings.CreateGroup(groupName, false, false, false,

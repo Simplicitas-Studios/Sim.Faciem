@@ -8,11 +8,11 @@ namespace Sim.Faciem.Commands
         private readonly IDisposableContainer _disposableContainer;
 
         private readonly Action _executionAction;
-        
+
         private Observable<bool> _canExecuteObservable;
-        
+
         private Observable<bool> _isVisibleObservable;
-        
+
         public CommandBuilder(Action executionAction, IDisposableContainer disposableContainer)
         {
             _executionAction = executionAction;
@@ -26,7 +26,7 @@ namespace Sim.Faciem.Commands
             _canExecuteObservable = canExecuteObservable;
             return this;
         }
-        
+
         public CommandBuilder WithIsVisible(Observable<bool> isVisible)
         {
             _isVisibleObservable = isVisible;
@@ -36,17 +36,16 @@ namespace Sim.Faciem.Commands
         public Command Build()
         {
             var command = new Command(_canExecuteObservable, _isVisibleObservable, true);
-            
+
             var action = _executionAction;
             _disposableContainer.Add(
                 command
                     .Subscribe(_ => action.Invoke()));
-            
-            
+
             _disposableContainer.Add(command);
             return command;
         }
-        
+
         public static implicit operator Command(CommandBuilder builder) => builder.Build();
     }
 }

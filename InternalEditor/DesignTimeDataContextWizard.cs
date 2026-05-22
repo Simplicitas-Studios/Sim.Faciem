@@ -20,13 +20,13 @@ namespace Plugins.Sim.Faciem.Editor
         private void CreateGUI()
         {
             var disposables = rootVisualElement.RegisterDisposableBag();
-            
+
             var designTimeDataContexts = AppDomain.CurrentDomain
                 .GetAssemblies()
                 .SelectMany(assembly => assembly.GetTypes())
                 .Where(type => typeof(DesignTimeDataContext).IsAssignableFrom(type) && !type.IsAbstract)
                 .ToList();
-                
+
             var dropDown = new DropdownField(designTimeDataContexts.Select(x => x.Name).Prepend("-").ToList(), 0);
 
             var isEnabledObs = dropDown
@@ -34,7 +34,7 @@ namespace Plugins.Sim.Faciem.Editor
                 .Select(_ => dropDown.index)
                 .Prepend(dropDown.index)
                 .Select(index => index != 0);
-            
+
             var btCreate = new Button(() =>
             {
                 var currentType = dropDown.index;
@@ -49,17 +49,14 @@ namespace Plugins.Sim.Faciem.Editor
 
                 var path = AssetDatabase.GetAssetPath(Selection.activeObject);
                 AssetDatabase.CreateAsset(instance, path + "/" + type.Name + ".asset");
-                
+
                 Close();
-            })
-            {
-                text = "Create"
-            };
-            
+            }) { text = "Create" };
+
             disposables.Add(
                 isEnabledObs
                     .Subscribe(isEnabled => btCreate.SetEnabled(isEnabled)));
-            
+
             rootVisualElement.Add(dropDown);
             rootVisualElement.Add(btCreate);
         }

@@ -9,10 +9,7 @@ namespace Sim.Faciem.CommandBinding
     {
         public override SerializedCommand FromString(string value)
         {
-            return new SerializedCommand
-            {
-                Name = value
-            };
+            return new SerializedCommand { Name = value };
         }
     }
 #endif
