@@ -20,6 +20,13 @@ namespace Sim.Faciem
             await ViewIdDiscoveryService.RegisterViewIdsAsync(registrationBridge);
         }
 
+        public static void RegisterScopedService(IDIRegistrationBridge registrationBridge)
+        {
+            registrationBridge.RegisterSingleton<IViewModelConstructionService, ViewModelConstructionService>();
+            registrationBridge.RegisterSingleton<INavigationService, NavigationService>();
+        }
+
+
         private static void RegisterServicesInternal(IDIRegistrationBridge registrationBridge)
         {
             registrationBridge.RegisterSingleton<IViewModelConstructionService, ViewModelConstructionService>();

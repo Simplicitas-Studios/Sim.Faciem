@@ -23,7 +23,7 @@ namespace Sim.Faciem
                 return;
             }
 
-            var constructionService = FaciemBridge.ContainerBridge.ResolveInstance<IViewModelConstructionService>();
+            var constructionService = CreateConstructionService();
 
             var vm = constructionService.CreateInstance<ShellViewModel>();
             document.rootVisualElement.dataSource = vm;
@@ -37,6 +37,11 @@ namespace Sim.Faciem
 
             await UniTask.Delay(TimeSpan.FromMilliseconds(100));
             await vm.NavigateToInternal();
+        }
+
+        protected virtual IViewModelConstructionService CreateConstructionService()
+        {
+            return FaciemBridge.ContainerBridge.ResolveInstance<IViewModelConstructionService>();
         }
     }
 }
