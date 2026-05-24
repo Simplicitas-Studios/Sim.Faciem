@@ -24,6 +24,7 @@ namespace Sim.Faciem
         {
             registrationBridge.RegisterSingleton<IViewModelConstructionService, ViewModelConstructionService>();
             registrationBridge.RegisterSingleton<INavigationService, NavigationService>();
+            ViewIdDiscoveryService.RegisterViewIds(registrationBridge);
         }
 
 

@@ -1,4 +1,4 @@
-﻿namespace Plugins.Sim.Faciem.Editor
+﻿namespace Sim.Faciem.Internal
 {
     internal static class FaciemAddressables
     {
