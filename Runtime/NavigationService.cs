@@ -70,6 +70,7 @@ namespace Sim.Faciem
                 {
                     view = viewAsset.View.Instantiate();
                     view.style.flexGrow = 1;
+                    view.pickingMode = PickingMode.Ignore;
 
                     var regions = view.Query<Region>().ToList();
 
