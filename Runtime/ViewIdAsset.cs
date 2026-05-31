@@ -30,12 +30,22 @@ namespace Sim.Faciem
 
             if (ViewModel != null && ViewModel.Script != null)
             {
-                ViewModel.TypeName = ViewModel.Script.GetClass().AssemblyQualifiedName;
+                var classType = ViewModel.Script.GetClass();
+
+                if (classType != null)
+                {
+                    ViewModel.TypeName = classType.AssemblyQualifiedName;
+                }
             }
 
             if (DataContext != null && DataContext.Script != null)
             {
-                DataContext.TypeName = DataContext.Script.GetClass().AssemblyQualifiedName;
+                var classType = DataContext.Script.GetClass();
+
+                if (classType != null)
+                {
+                    DataContext.TypeName = classType.AssemblyQualifiedName;
+                }
             }
         }
 
