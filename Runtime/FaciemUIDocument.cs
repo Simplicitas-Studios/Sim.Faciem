@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Threading.Tasks;
 using Cysharp.Threading.Tasks;
 using UnityEngine;
 using UnityEngine.UIElements;
@@ -13,6 +14,7 @@ namespace Sim.Faciem
 
         private async UniTaskVoid Awake()
         {
+            await WaitApplicationSetup();
             FaciemBridge.RootViewId = _rootViewId.ViewId;
 
             var document = GetComponent<UIDocument>();
@@ -38,6 +40,8 @@ namespace Sim.Faciem
             await UniTask.Delay(TimeSpan.FromMilliseconds(100));
             await vm.NavigateToInternal();
         }
+
+        protected virtual ValueTask WaitApplicationSetup() => default;
 
         protected virtual IViewModelConstructionService CreateConstructionService()
         {
