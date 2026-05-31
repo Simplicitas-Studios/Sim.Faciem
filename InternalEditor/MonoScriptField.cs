@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Linq;
 using System.Reflection;
-using Plugins.Sim.Faciem.Shared;
 using R3;
 using Sim.Faciem;
+using Sim.Faciem.Shared;
 using UnityEditor;
 using UnityEditor.UIElements;
 using UnityEngine;

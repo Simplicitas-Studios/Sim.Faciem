@@ -1,7 +1,7 @@
 ﻿using R3;
 using UnityEngine.UIElements;
 
-namespace Plugins.Sim.Faciem.Shared
+namespace Sim.Faciem.Shared
 {
     public static class NotifyValueChangedExtensions
     {

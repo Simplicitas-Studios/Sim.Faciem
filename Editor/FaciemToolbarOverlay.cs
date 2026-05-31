@@ -1,9 +1,9 @@
 ﻿using Cysharp.Threading.Tasks;
 using Plugins.Sim.Faciem.Editor.DI;
 using Plugins.Sim.Faciem.Editor.Navigation;
-using Plugins.Sim.Faciem.Shared;
 using R3;
 using Sim.Faciem;
+using Sim.Faciem.Shared;
 using UnityEditor.Overlays;
 using UnityEngine.UIElements;
 

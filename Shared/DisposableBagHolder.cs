@@ -1,7 +1,7 @@
 ﻿using System;
 using R3;
 
-namespace Plugins.Sim.Faciem.Shared
+namespace Sim.Faciem.Shared
 {
     public class DisposableBagHolder : IDisposable
     {

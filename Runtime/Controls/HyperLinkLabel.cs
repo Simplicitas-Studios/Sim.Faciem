@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Text.RegularExpressions;
-using Plugins.Sim.Faciem.Shared;
 using R3;
+using Sim.Faciem.Shared;
 using Unity.Properties;
 using UnityEngine;
 using UnityEngine.UIElements;

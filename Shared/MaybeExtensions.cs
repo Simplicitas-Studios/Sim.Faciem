@@ -2,7 +2,7 @@
 using Bebop.Monads;
 using Cysharp.Threading.Tasks;
 
-namespace Plugins.Sim.Faciem.Shared
+namespace Sim.Faciem.Shared
 {
     public static class MaybeExtensions
     {

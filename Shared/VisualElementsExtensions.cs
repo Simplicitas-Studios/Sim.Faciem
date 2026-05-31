@@ -1,11 +1,11 @@
 ﻿using System;
 using R3;
-#if UNITY_EDITOR
 using UnityEditor.UIElements;
-#endif
 using UnityEngine.UIElements;
+#if UNITY_EDITOR
+#endif
 
-namespace Plugins.Sim.Faciem.Shared
+namespace Sim.Faciem.Shared
 {
     public static class VisualElementsExtensions
     {
