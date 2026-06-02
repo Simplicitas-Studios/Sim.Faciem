@@ -1,6 +1,8 @@
 ﻿using System;
+using System.Threading;
 using System.Threading.Tasks;
 using Cysharp.Threading.Tasks;
+using R3;
 using UnityEngine;
 using UnityEngine.UIElements;
 
@@ -12,7 +14,9 @@ namespace Sim.Faciem
         [SerializeField]
         private ViewIdAsset _rootViewId;
 
-        private async UniTaskVoid Awake()
+        private IDisposable _detachDisposable;
+
+        private async UniTaskVoid OnEnable()
         {
             await WaitApplicationSetup();
             FaciemBridge.RootViewId = _rootViewId.ViewId;
@@ -27,6 +31,11 @@ namespace Sim.Faciem
 
             var constructionService = CreateConstructionService();
 
+            await SetupSimFaciem(document, constructionService, destroyCancellationToken);
+        }
+
+        private async ValueTask SetupSimFaciem(UIDocument document, IViewModelConstructionService constructionService, CancellationToken ct)
+        {
             var vm = constructionService.CreateInstance<ShellViewModel>();
             document.rootVisualElement.dataSource = vm;
 
@@ -37,7 +46,7 @@ namespace Sim.Faciem
                 innerRegion.RegisterDirect(vm);
             }
 
-            await UniTask.Delay(TimeSpan.FromMilliseconds(100));
+            await UniTask.Delay(TimeSpan.FromMilliseconds(100), cancellationToken: ct); // Wait a frame for everything to be registered
             await vm.NavigateToInternal();
         }
 
