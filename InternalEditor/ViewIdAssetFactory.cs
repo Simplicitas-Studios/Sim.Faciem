@@ -7,7 +7,7 @@ namespace Plugins.Sim.Faciem.Editor
 {
     public static class ViewIdAssetFactory
     {
-        [MenuItem("Assets/Create/Faciem/ViewId", false, 10)]
+        [MenuItem("Assets/Create/Sim/Faciem/ViewId", false, 10)]
         public static void CreateViewIdAsset()
         {
             var viewIdAsset = ScriptableObject.CreateInstance<ViewIdAsset>();
@@ -20,7 +20,7 @@ namespace Plugins.Sim.Faciem.Editor
             entry.SetLabel(FaciemAddressables.ViewId, true, true);
         }
 
-        [MenuItem("Assets/Create/Faciem/Editor/ViewId", false, 11)]
+        [MenuItem("Assets/Create/Sim/Faciem/Editor/ViewId", false, 11)]
         public static void CreateEditorViewIdAsset()
         {
             var viewIdAsset = ScriptableObject.CreateInstance<EditorViewIdAsset>();

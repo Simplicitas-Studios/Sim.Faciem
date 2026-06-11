@@ -10,7 +10,7 @@ namespace Plugins.Sim.Faciem.Editor
 {
     public class DesignTimeDataContextWizard : EditorWindow
     {
-        [MenuItem("Assets/Create/Faciem/Design-Time Data Context", false, 10)]
+        [MenuItem("Assets/Create/Sim/Faciem/Design-Time Data Context", false, 10)]
         static void CreateCustomObj()
         {
             var window = CreateWindow<DesignTimeDataContextWizard>("Create Design-Time Data Context");

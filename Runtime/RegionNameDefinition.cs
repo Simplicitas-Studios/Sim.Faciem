@@ -5,7 +5,7 @@ using UnityEngine.Serialization;
 
 namespace Sim.Faciem
 {
-    [CreateAssetMenu(fileName = "Region", menuName = "Faciem/Region")]
+    [CreateAssetMenu(fileName = "Region", menuName = "Sim/Faciem/Region")]
     public class RegionNameDefinition : ScriptableObject
     {
         [FormerlySerializedAs("Name")]
