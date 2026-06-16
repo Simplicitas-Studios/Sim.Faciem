@@ -1,9 +1,8 @@
-﻿using Plugins.Sim.Faciem.Editor.DI;
-using Plugins.Sim.Faciem.Editor.Services;
-using Sim.Faciem;
+﻿using Sim.Faciem.Editor.DI;
+using Sim.Faciem.Editor.Services;
 using Sim.Faciem.Internal;
 
-namespace Plugins.Sim.Faciem.Editor
+namespace Sim.Faciem.Editor
 {
     internal class FaciemEditorServiceInstaller : EditorServiceInstaller
     {

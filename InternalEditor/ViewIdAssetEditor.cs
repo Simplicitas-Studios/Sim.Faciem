@@ -1,13 +1,12 @@
 using Bebop.Monads;
 using R3;
-using Sim.Faciem;
 using Sim.Faciem.Shared;
 using UnityEditor;
 using UnityEditor.UIElements;
 using UnityEngine;
 using UnityEngine.UIElements;
 
-namespace Plugins.Sim.Faciem.Editor
+namespace Sim.Faciem.InternalEditor
 {
     [CustomEditor(typeof(ViewIdAsset), true)]
     public class ViewIdAssetEditor : UnityEditor.Editor

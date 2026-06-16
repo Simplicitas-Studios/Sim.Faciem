@@ -45,9 +45,12 @@ namespace Sim.Faciem
                 innerRegion.RegisterDirect(vm);
             }
 
+            var navParams = ConstructNavigationParameters();
             await UniTask.Delay(TimeSpan.FromMilliseconds(100), cancellationToken: ct); // Wait a frame for everything to be registered
-            await vm.NavigateToInternal();
+            await vm.NavigateToInternal(navParams);
         }
+
+        protected virtual NavigationParameters ConstructNavigationParameters() => NavigationParameters.Empty;
 
         protected virtual ValueTask WaitApplicationSetup() => default;
 

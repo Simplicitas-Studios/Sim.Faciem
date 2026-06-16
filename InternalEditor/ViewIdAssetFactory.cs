@@ -1,10 +1,10 @@
 ﻿using InternalEditor;
-using Sim.Faciem;
+using Sim.Faciem.Editor;
 using Sim.Faciem.Internal;
 using UnityEditor;
 using UnityEngine;
 
-namespace Plugins.Sim.Faciem.Editor
+namespace Sim.Faciem.InternalEditor
 {
     public static class ViewIdAssetFactory
     {

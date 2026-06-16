@@ -1,23 +1,23 @@
 {
-  "name": "Sim.Faciem.Editor",
-  "rootNamespace": "",
-  "references": [
-    "GUID:0256ac6985bf6624da798665f1d64436",
-    "GUID:c68e2f7abac45cd409bf1e2a2e91700e",
-    "GUID:77221876cc6b8244180b96e320b1bcd4",
-    "GUID:f51ebe6a0ceec4240a699833d6309b23",
-    "GUID:343deaaf83e0cee4ca978e7df0b80d21",
-    "GUID:2bafac87e7f4b9b418d9448d219b01ab"
-  ],
-  "includePlatforms": [
-    "Editor"
-  ],
-  "excludePlatforms": [],
-  "allowUnsafeCode": false,
-  "overrideReferences": false,
-  "precompiledReferences": [],
-  "autoReferenced": true,
-  "defineConstraints": [],
-  "versionDefines": [],
-  "noEngineReferences": false
+    "name": "Sim.Faciem.Editor",
+    "rootNamespace": "Sim.Faciem.Editor",
+    "references": [
+        "GUID:0256ac6985bf6624da798665f1d64436",
+        "GUID:c68e2f7abac45cd409bf1e2a2e91700e",
+        "GUID:77221876cc6b8244180b96e320b1bcd4",
+        "GUID:f51ebe6a0ceec4240a699833d6309b23",
+        "GUID:343deaaf83e0cee4ca978e7df0b80d21",
+        "GUID:2bafac87e7f4b9b418d9448d219b01ab"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
 }

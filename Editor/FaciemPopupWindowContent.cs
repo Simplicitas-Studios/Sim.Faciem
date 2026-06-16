@@ -1,14 +1,13 @@
 ﻿using Cysharp.Threading.Tasks;
-using Plugins.Sim.Faciem.Editor.DI;
-using Plugins.Sim.Faciem.Editor.Navigation;
 using R3;
-using Sim.Faciem;
+using Sim.Faciem.Editor.DI;
+using Sim.Faciem.Editor.Navigation;
 using Sim.Faciem.Shared;
 using UnityEditor;
 using UnityEngine;
 using UnityEngine.UIElements;
 
-namespace Plugins.Sim.Faciem.Editor
+namespace Sim.Faciem.Editor
 {
     public abstract class FaciemPopupWindowContent : PopupWindowContent, IRegionManagerOwner
     {

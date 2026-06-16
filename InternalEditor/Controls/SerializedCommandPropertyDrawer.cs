@@ -1,10 +1,10 @@
 ﻿using Sim.Faciem.CommandBinding;
-#if UNITY_EDITOR
 using UnityEditor;
-#endif
 using UnityEngine.UIElements;
+#if UNITY_EDITOR
+#endif
 
-namespace Plugins.Sim.Faciem.InternalEditor.Controls
+namespace Sim.Faciem.Controls.Editor
 {
 #if UNITY_EDITOR
     [CustomPropertyDrawer(typeof(SerializedCommand))]

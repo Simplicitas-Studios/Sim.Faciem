@@ -1,6 +1,4 @@
-﻿using Sim.Faciem;
-
-namespace Plugins.Sim.Faciem.Editor
+﻿namespace Sim.Faciem.Editor
 {
     public interface IRegionManagerOwner
     {

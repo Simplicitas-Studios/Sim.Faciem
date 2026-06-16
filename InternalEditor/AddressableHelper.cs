@@ -1,4 +1,4 @@
-﻿using Plugins.Sim.Faciem.Editor;
+﻿using Sim.Faciem.InternalEditor;
 using UnityEditor;
 using UnityEditor.AddressableAssets;
 using UnityEditor.AddressableAssets.Settings;

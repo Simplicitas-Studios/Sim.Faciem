@@ -37,12 +37,12 @@ namespace Sim.Faciem
             RegionManager.AddRegion(region);
         }
 
-        internal UniTask NavigateToInternal()
+        internal UniTask NavigateToInternal(NavigationParameters parameters)
         {
-            return NavigateTo();
+            return NavigateTo(parameters);
         }
 
-        protected virtual UniTask NavigateTo()
+        protected virtual UniTask NavigateTo(NavigationParameters navigationParameters)
         {
             return UniTask.CompletedTask;
         }

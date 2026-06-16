@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace Plugins.Sim.Faciem.Editor.DI
+namespace Sim.Faciem.Editor.DI
 {
     public abstract class EditorServiceInstaller : ScriptableObject
     {

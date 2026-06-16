@@ -1,13 +1,12 @@
-﻿using InternalEditor;
+﻿using System.Collections.Generic;
+using InternalEditor;
+using UnityEditor;
+using UnityEditor.AddressableAssets;
+using UnityEditor.AddressableAssets.Settings;
+using UnityEngine;
 
-namespace Plugins.Sim.Faciem.Editor
+namespace Sim.Faciem.InternalEditor
 {
-    using System.Collections.Generic;
-    using UnityEditor;
-    using UnityEditor.AddressableAssets;
-    using UnityEditor.AddressableAssets.Settings;
-    using UnityEngine;
-
     public static class AddressableExtensions
     {
         public static void RemoveAddressableAssetLabel(this Object source, string label)

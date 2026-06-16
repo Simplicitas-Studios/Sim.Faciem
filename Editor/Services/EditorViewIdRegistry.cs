@@ -1,10 +1,9 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
-using Sim.Faciem;
 using Sim.Faciem.Internal;
 using UnityEditor;
 
-namespace Plugins.Sim.Faciem.Editor.Services
+namespace Sim.Faciem.Editor.Services
 {
     public class EditorViewIdRegistry : IViewIdRegistry
     {

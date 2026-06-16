@@ -8,7 +8,7 @@ namespace Sim.Faciem
         {
         }
 
-        protected override async UniTask NavigateTo()
+        protected override async UniTask NavigateTo(NavigationParameters navigationParameters)
         {
             await Navigation.Navigate(FaciemBridge.RootViewId, WellKnownRegionNames.MainRegion);
         }

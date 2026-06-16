@@ -1,10 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using Sim.Faciem;
 using UnityEditor;
 
-namespace Plugins.Sim.Faciem.Editor.DI
+namespace Sim.Faciem.Editor.DI
 {
     [InitializeOnLoad]
     public class EditorInjector : IEditorInjector

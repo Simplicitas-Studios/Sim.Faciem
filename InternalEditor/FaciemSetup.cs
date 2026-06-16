@@ -2,7 +2,7 @@
 using UnityEditor;
 using UnityEditor.AddressableAssets;
 
-namespace Plugins.Sim.Faciem.Editor
+namespace Sim.Faciem.InternalEditor
 {
     public static class FaciemSetup
     {

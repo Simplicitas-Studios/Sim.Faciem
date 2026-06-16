@@ -1,7 +1,6 @@
 ﻿using System;
-using Sim.Faciem;
 
-namespace Plugins.Sim.Faciem.Editor.DI
+namespace Sim.Faciem.Editor.DI
 {
     public interface IEditorInjector : IDIContainerBridge
     {

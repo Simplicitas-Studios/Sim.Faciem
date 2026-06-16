@@ -1,9 +1,8 @@
 ﻿using System;
 using System.IO;
-using Sim.Faciem;
 using UnityEditor;
 
-namespace Plugins.Sim.Faciem.Editor
+namespace Sim.Faciem.InternalEditor
 {
     internal class ViewIdCodeGenerator
     {

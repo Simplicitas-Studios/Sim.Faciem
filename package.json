@@ -12,5 +12,8 @@
     "name": "Simplicitas-Studios",
     "email": "pasdaa13@gmail.com",
     "url": "https://github.com/Simplicitas-Studios"
+  },
+  "dependencies": {
+    "com.sim.utility": "1.0.0-alpha.1"
   }
 }

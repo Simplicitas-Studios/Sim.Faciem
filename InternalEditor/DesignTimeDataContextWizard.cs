@@ -1,12 +1,11 @@
 ﻿using System;
 using System.Linq;
 using R3;
-using Sim.Faciem;
 using Sim.Faciem.Shared;
 using UnityEditor;
 using UnityEngine.UIElements;
 
-namespace Plugins.Sim.Faciem.Editor
+namespace Sim.Faciem.InternalEditor
 {
     public class DesignTimeDataContextWizard : EditorWindow
     {

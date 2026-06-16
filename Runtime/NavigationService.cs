@@ -20,7 +20,11 @@ namespace Sim.Faciem
             _viewIdRegistry = viewIdRegistry;
         }
 
-        public async UniTask NavigateTo(RegionManager regionManager, ViewId viewId, RegionName regionName)
+        public async UniTask NavigateTo(
+            RegionManager regionManager,
+            ViewId viewId,
+            RegionName regionName,
+            NavigationParameters parameters)
         {
             var maybeRegionInfos =
                 TryFindRegion(regionManager, regionName) as IMaybe<(RegionManager, IReadOnlyList<IRegion>)>;
@@ -101,7 +105,7 @@ namespace Sim.Faciem
 
             viewModel.RegionManager.Parent = regionControllingManager;
 
-            await viewModel.NavigateToInternal();
+            await viewModel.NavigateToInternal(parameters);
         }
 
         public async UniTask Clear(RegionManager regionManager, RegionName regionName)

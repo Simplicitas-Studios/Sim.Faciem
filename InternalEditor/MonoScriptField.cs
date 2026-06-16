@@ -2,7 +2,6 @@
 using System.Linq;
 using System.Reflection;
 using R3;
-using Sim.Faciem;
 using Sim.Faciem.Shared;
 using UnityEditor;
 using UnityEditor.UIElements;
@@ -10,7 +9,7 @@ using UnityEngine;
 using UnityEngine.UIElements;
 using Object = UnityEngine.Object;
 
-namespace Plugins.Sim.Faciem.Editor
+namespace Sim.Faciem.InternalEditor
 {
     [CustomPropertyDrawer(typeof(MonoScriptReference))]
     public class MonoScriptField : PropertyDrawer

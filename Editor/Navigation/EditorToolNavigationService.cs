@@ -1,7 +1,6 @@
 ﻿using Cysharp.Threading.Tasks;
-using Sim.Faciem;
 
-namespace Plugins.Sim.Faciem.Editor.Navigation
+namespace Sim.Faciem.Editor.Navigation
 {
     public class EditorToolNavigationService : IEditorToolNavigationService
     {
@@ -16,7 +15,12 @@ namespace Plugins.Sim.Faciem.Editor.Navigation
 
         public UniTask Navigate(ViewId viewId, RegionName region)
         {
-            return _navigationService.NavigateTo(_editorWindow.RegionManager, viewId, region);
+            return Navigate(viewId, region, NavigationParameters.Empty);
+        }
+        
+        public UniTask Navigate(ViewId viewId, RegionName region, NavigationParameters navigationParameters)
+        {
+            return _navigationService.NavigateTo(_editorWindow.RegionManager, viewId, region, navigationParameters);
         }
 
         public UniTask Clear(RegionName region)

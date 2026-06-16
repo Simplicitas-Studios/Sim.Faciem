@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Plugins.Sim.Faciem.Editor.DI
+namespace Sim.Faciem.Editor.DI
 {
     public struct ServiceRegistration : IEquatable<ServiceRegistration>
     {
