@@ -1,4 +1,6 @@
-﻿namespace Plugins.Sim.Faciem.Editor
+﻿using InternalEditor;
+
+namespace Plugins.Sim.Faciem.Editor
 {
     using System.Collections.Generic;
     using UnityEditor;

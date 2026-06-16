@@ -1,10 +1,11 @@
-﻿namespace Plugins.Sim.Faciem.Editor
-{
-    using UnityEditor;
-    using UnityEditor.AddressableAssets;
-    using UnityEditor.AddressableAssets.Settings;
-    using UnityEngine;
+﻿using Plugins.Sim.Faciem.Editor;
+using UnityEditor;
+using UnityEditor.AddressableAssets;
+using UnityEditor.AddressableAssets.Settings;
+using UnityEngine;
 
+namespace InternalEditor
+{
     public static class AddressableHelper
     {
         public static AddressableAssetEntry CreateAssetEntry<T>(T source, string groupName, string label)
@@ -19,22 +20,13 @@
             return entry;
         }
 
-        public static AddressableAssetEntry CreateAssetEntry<T>(T source, string groupName) where T : Object
+        public static AddressableAssetEntry CreateAssetEntry<T>(T source, string label) where T : Object
         {
-            if (source == null || string.IsNullOrEmpty(groupName) || !AssetDatabase.Contains(source))
+            var entry = CreateAssetEntry(source);
+            if (source != null)
             {
-                return null;
+                source.AddAddressableAssetLabel(label);
             }
-
-            var addressableSettings = AddressableAssetSettingsDefaultObject.Settings;
-            var sourcePath = AssetDatabase.GetAssetPath(source);
-            var sourceGuid = AssetDatabase.AssetPathToGUID(sourcePath);
-            var group = !GroupExists(groupName) ? CreateGroup(groupName) : GetGroup(groupName);
-
-            var entry = addressableSettings.CreateOrMoveEntry(sourceGuid, group);
-            entry.address = sourcePath;
-
-            addressableSettings.SetDirty(AddressableAssetSettings.ModificationEvent.EntryMoved, entry, true);
 
             return entry;
         }
