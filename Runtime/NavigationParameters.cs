@@ -4,6 +4,8 @@ namespace Sim.Faciem
 {
     public class NavigationParameters : PropertySet
     {
-        public static NavigationParameters Empty => new();
+        public new NavigationParameters Add<T>(IPropertyKey<T> key, T value) => base.Add(key, value) as NavigationParameters;
+
+        public new static NavigationParameters Empty => new();
     }
 }

@@ -34,7 +34,7 @@ namespace Sim.Faciem
             registrationBridge.RegisterSingleton<IViewIdRegistry, ViewIdRegistry>();
             registrationBridge.RegisterSingleton<INavigationService, NavigationService>();
 
-            registrationBridge.RegisterSingleton<ShellViewModel, ShellViewModel>();
+            registrationBridge.RegisterTransient<ShellViewModel, ShellViewModel>();
         }
     }
 }

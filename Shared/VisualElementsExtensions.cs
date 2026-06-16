@@ -9,6 +9,46 @@ namespace Sim.Faciem.Shared
 {
     public static class VisualElementsExtensions
     {
+        public static VisualElement FindParentByName(
+            this VisualElement element,
+            string name)
+        {
+            var current = element.parent;
+
+            while (current != null)
+            {
+                if (current.name == name)
+                    return current;
+
+                current = current.parent;
+            }
+
+            return null;
+        }
+
+        public static VisualElement FindPanelRootChild(this VisualElement element)
+        {
+            var panelRoot = element.panel?.visualTree;
+
+            if (panelRoot == null || panelRoot == element)
+            {
+                return null;
+            }
+
+            var current = element;
+            while (current != null)
+            {
+                if (current.parent.Equals(panelRoot))
+                {
+                    return current;
+                }
+
+                current = current.parent;
+            }
+
+            return null;
+        }
+
         public static DisposableBagHolder RegisterDisposableBag(this VisualElement element)
         {
             var bag = new DisposableBagHolder();

@@ -18,8 +18,6 @@ namespace Sim.Faciem
         private async UniTaskVoid OnEnable()
         {
             await WaitApplicationSetup();
-            FaciemBridge.RootViewId = _rootViewId.ViewId;
-
             var document = GetComponent<UIDocument>();
 
             if (FaciemBridge.ContainerBridge == null)
@@ -46,6 +44,7 @@ namespace Sim.Faciem
             }
 
             var navParams = ConstructNavigationParameters();
+            navParams.Add(WellKnownShellNavigationParameters.InitialViewId, _rootViewId.ViewId);
             await UniTask.Delay(TimeSpan.FromMilliseconds(100), cancellationToken: ct); // Wait a frame for everything to be registered
             await vm.NavigateToInternal(navParams);
         }

@@ -5,6 +5,7 @@ using UnityEngine.UIElements;
 
 namespace Sim.Faciem
 {
+    [CreateAssetMenu(fileName = "ViewIdAsset", menuName = "Sim/Faciem/ViewId", order = 0)]
     public class ViewIdAsset : ScriptableObject
     {
         public ViewId ViewId;

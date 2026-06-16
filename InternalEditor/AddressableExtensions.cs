@@ -29,17 +29,26 @@ namespace Sim.Faciem.InternalEditor
         public static void AddAddressableAssetLabel(this Object source, string label)
         {
             if (source == null || !AssetDatabase.Contains(source))
-            {
                 return;
-            }
+
+            EnsureLabelExists(label);
 
             var entry = source.GetAddressableAssetEntry();
             if (entry != null && !entry.labels.Contains(label))
             {
-                entry.labels.Add(label);
+                entry.SetLabel(label, true, true, true);
+                AddressableAssetSettingsDefaultObject.Settings.SetDirty(AddressableAssetSettings.ModificationEvent.LabelAdded, entry, true);
+            }
+        }
 
-                AddressableAssetSettingsDefaultObject.Settings.SetDirty(
-                    AddressableAssetSettings.ModificationEvent.LabelAdded, entry, true);
+        private static void EnsureLabelExists(string label)
+        {
+            var addressableSettings = AddressableAssetSettingsDefaultObject.Settings;
+            var labels = addressableSettings.GetLabels();
+            if (!labels.Contains(label))
+            {
+                addressableSettings.AddLabel(label);
+                addressableSettings.SetDirty(AddressableAssetSettings.ModificationEvent.LabelAdded, null, false, true);
             }
         }
 

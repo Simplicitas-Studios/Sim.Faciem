@@ -4,13 +4,14 @@ namespace Sim.Faciem
 {
     public class ShellViewModel : ViewModel<ShellViewModel>
     {
-        public ShellViewModel()
-        {
-        }
-
         protected override async UniTask NavigateTo(NavigationParameters navigationParameters)
         {
-            await Navigation.Navigate(FaciemBridge.RootViewId, WellKnownRegionNames.MainRegion);
+            var initialViewId = navigationParameters.Get(WellKnownShellNavigationParameters.InitialViewId);
+
+            if (initialViewId.HasValue)
+            {
+                await Navigation.Navigate(initialViewId.Value, WellKnownRegionNames.MainRegion);
+            }
         }
     }
 }

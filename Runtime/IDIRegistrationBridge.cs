@@ -6,6 +6,8 @@ namespace Sim.Faciem
     {
         void RegisterSingleton<TInterface, TImpl>() where TImpl : class, TInterface;
 
+        void RegisterTransient<TInterface, TImpl>() where TImpl : class, TInterface;
+
         void RegisterTransient(Type tInterface, Type tImpl);
     }
 }
