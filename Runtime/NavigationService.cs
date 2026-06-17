@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using Bebop.Monads;
 using Cysharp.Threading.Tasks;
 using Sim.Faciem.Internal;
+using Sim.Utility;
 using UnityEngine.UIElements;
 
 namespace Sim.Faciem
@@ -26,10 +26,9 @@ namespace Sim.Faciem
             RegionName regionName,
             NavigationParameters parameters)
         {
-            var maybeRegionInfos =
-                TryFindRegion(regionManager, regionName) as IMaybe<(RegionManager, IReadOnlyList<IRegion>)>;
+            var maybeRegionInfos = TryFindRegion(regionManager, regionName);
 
-            if (!maybeRegionInfos.HasValue
+            if (maybeRegionInfos.IsNone
                 || !_viewIdRegistry.TryGetViewId(viewId, out var viewAsset))
             {
                 return;
@@ -110,10 +109,9 @@ namespace Sim.Faciem
 
         public async UniTask Clear(RegionManager regionManager, RegionName regionName)
         {
-            var maybeRegionInfos =
-                TryFindRegion(regionManager, regionName) as IMaybe<(RegionManager, IReadOnlyList<IRegion>)>;
+            var maybeRegionInfos = TryFindRegion(regionManager, regionName);
 
-            if (!maybeRegionInfos.HasValue)
+            if (maybeRegionInfos.IsNone)
             {
                 return;
             }
@@ -146,7 +144,7 @@ namespace Sim.Faciem
                     .Map(parent => TryFindRegion(parent, regionName));
             }
 
-            return Maybe.From((regionManager, region));
+            return Maybe.Some((regionManager, region));
         }
     }
 }

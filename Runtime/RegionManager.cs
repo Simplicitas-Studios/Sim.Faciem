@@ -1,5 +1,5 @@
 ﻿using System.Collections.Generic;
-using Bebop.Monads;
+using Sim.Utility;
 
 namespace Sim.Faciem
 {
@@ -11,12 +11,12 @@ namespace Sim.Faciem
 
         public RegionManager()
         {
-            Parent = Maybe.Nothing<RegionManager>();
+            Parent = Maybe.None<RegionManager>();
         }
 
         public RegionManager(RegionManager parent)
         {
-            Parent = Maybe.From(parent);
+            Parent = Maybe.Some(parent);
         }
 
         public void AddRegion(IRegion region)

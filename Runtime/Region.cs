@@ -1,8 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
-using Bebop.Monads;
 using R3;
+using Sim.Dispositio.Shared;
 using Sim.Faciem.Shared;
+using Sim.Utility;
 using UnityEngine.UIElements;
 using Unit = R3.Unit;
 
@@ -28,7 +29,7 @@ namespace Sim.Faciem
         public Region(RegionName regionName)
             : this()
         {
-            _regionName = Maybe.From(regionName);
+            _regionName = Maybe.Some(regionName);
         }
 
         public Region()
