@@ -2,7 +2,7 @@
   "name": "com.sim.faciem",
   "version": "1.0.0-alpha.1",
   "displayName": "Sim.Faciem",
-  "description": "Simplicitas Sim.Faciem",
+  "description": "Simplicitas Sim.Faciem (Depends on https://github.com/Simplicitas-Studios/Sim.Utility.git)",
   "keywords": [
     "Unity",
     "Simplicitas",
@@ -14,6 +14,6 @@
     "url": "https://github.com/Simplicitas-Studios"
   },
   "dependencies": {
-    "com.sim.utility": "1.0.0-alpha.1"
+    "com.unity.addressables": "2.8.0"
   }
 }
