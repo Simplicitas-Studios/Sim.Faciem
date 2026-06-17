@@ -110,7 +110,8 @@ Add Sim.Faciem to `Packages/manifest.json`:
 ```json
 {
   "dependencies": {
-    "com.sim.faciem": "https://github.com/Simplicitas-Studios/Sim.Faciem.git"
+    "com.sim.faciem": "https://github.com/Simplicitas-Studios/Sim.Faciem.git",
+    "com.sim.utility": "https://github.com/Simplicitas-Studios/Sim.Utility.git",
   }
 }
 ```
