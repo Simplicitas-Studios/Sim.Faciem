@@ -140,8 +140,10 @@ namespace Sim.Faciem
         {
             if (!regionManager.TryFindRegion(regionName, out var region))
             {
-                return regionManager.Parent
-                    .Map(parent => TryFindRegion(parent, regionName));
+                if (regionManager.Parent.IsSome)
+                {
+                    return TryFindRegion(regionManager.Parent.Value, regionName);
+                }
             }
 
             return Maybe.Some((regionManager, region));
