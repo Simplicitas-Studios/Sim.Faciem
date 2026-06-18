@@ -35,6 +35,7 @@ namespace Sim.Faciem
         {
             var vm = constructionService.CreateInstance<ShellViewModel>();
             document.rootVisualElement.dataSource = vm;
+            document.rootVisualElement.style.flexGrow = 1;
 
             var regions = document.rootVisualElement.Query<Region>().ToList();
 
