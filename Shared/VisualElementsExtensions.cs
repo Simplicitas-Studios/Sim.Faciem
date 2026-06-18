@@ -1,6 +1,7 @@
 ﻿using System;
 using R3;
 using UnityEditor.UIElements;
+using UnityEngine;
 using UnityEngine.UIElements;
 #if UNITY_EDITOR
 #endif
@@ -38,7 +39,7 @@ namespace Sim.Faciem.Shared
             var current = element;
             while (current != null)
             {
-                if (current.parent.Equals(panelRoot))
+                if (current.parent == panelRoot)
                 {
                     return current;
                 }
@@ -47,6 +48,27 @@ namespace Sim.Faciem.Shared
             }
 
             return null;
+        }
+
+        public static bool IsWorldSpaceRuntimePanel(this IPanel panel)
+        {
+#if UNITY_6000_3_OR_NEWER
+            return panel is IRuntimePanel runtimePanel
+                && runtimePanel.panelSettings != null
+                && runtimePanel.panelSettings.renderMode == PanelRenderMode.WorldSpace;
+#else
+            return false;
+#endif
+        }
+
+        public static Rect GetLocalRectIn(this VisualElement element, VisualElement ancestor)
+        {
+            if (element == null || ancestor == null)
+            {
+                return default;
+            }
+
+            return element.ChangeCoordinatesTo(ancestor, new Rect(Vector2.zero, element.layout.size));
         }
 
         public static DisposableBagHolder RegisterDisposableBag(this VisualElement element)
