@@ -11,7 +11,7 @@ namespace Sim.Faciem
 
         protected DisposableBag Disposables { get; } = new();
 
-        protected internal RegionManager RegionManager { get; set; }
+        protected internal IViewModelRegionManager RegionManager { get; set; }
 
         protected IViewModelNavigationService Navigation { get; private set; }
 
@@ -22,7 +22,7 @@ namespace Sim.Faciem
             Command = new ViewModelCommandBuilderFactory(this);
         }
 
-        internal void Setup(RegionManager regionManager, INavigationService navigationService)
+        internal void Setup(IViewModelRegionManager regionManager, INavigationService navigationService)
         {
             RegionManager = regionManager;
             Navigation = new ViewModelNavigationService(this, navigationService);

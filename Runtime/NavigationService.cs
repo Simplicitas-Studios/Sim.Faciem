@@ -12,16 +12,19 @@ namespace Sim.Faciem
     {
         private readonly IViewModelConstructionService _viewModelConstructionService;
         private readonly IViewIdRegistry _viewIdRegistry;
+        private readonly IGlobalRegionManagerInternal _globalRegionManagerInternal;
 
         public NavigationService(IViewModelConstructionService viewModelConstructionService,
-            IViewIdRegistry viewIdRegistry)
+            IViewIdRegistry viewIdRegistry,
+            IGlobalRegionManagerInternal globalRegionManagerInternal)
         {
             _viewModelConstructionService = viewModelConstructionService;
             _viewIdRegistry = viewIdRegistry;
+            _globalRegionManagerInternal = globalRegionManagerInternal;
         }
 
         public async UniTask NavigateTo(
-            RegionManager regionManager,
+            IRegionManager regionManager,
             ViewId viewId,
             RegionName regionName,
             NavigationParameters parameters)
@@ -79,6 +82,10 @@ namespace Sim.Faciem
 
                     foreach (var innerRegion in regions)
                     {
+                        if (innerRegion.IsGlobal)
+                        {
+                            innerRegion.RegisterDirect(_globalRegionManagerInternal);
+                        }
                         innerRegion.RegisterDirect(viewModel);
                     }
 
@@ -102,12 +109,12 @@ namespace Sim.Faciem
                 throw new InvalidOperationException("View has wrong Data Source");
             }
 
-            viewModel.RegionManager.Parent = regionControllingManager;
+            viewModel.RegionManager.Parent = Maybe.Some(regionControllingManager);
 
             await viewModel.NavigateToInternal(parameters);
         }
 
-        public async UniTask Clear(RegionManager regionManager, RegionName regionName)
+        public async UniTask Clear(IRegionManager regionManager, RegionName regionName)
         {
             var maybeRegionInfos = TryFindRegion(regionManager, regionName);
 
@@ -135,18 +142,12 @@ namespace Sim.Faciem
             }
         }
 
-        private Maybe<(RegionManager, IReadOnlyList<IRegion>)> TryFindRegion(RegionManager regionManager,
+        private Maybe<(IRegionManager, IReadOnlyList<IRegion>)> TryFindRegion(IRegionManager regionManager,
             RegionName regionName)
         {
-            if (!regionManager.TryFindRegion(regionName, out var region))
-            {
-                if (regionManager.Parent.IsSome)
-                {
-                    return TryFindRegion(regionManager.Parent.Value, regionName);
-                }
-            }
-
-            return Maybe.Some((regionManager, region));
+            return !regionManager.TryFindRegion(regionName, out var region)
+                ? Maybe.None<(IRegionManager, IReadOnlyList<IRegion>)>()
+                : Maybe.Some((regionManager, region));
         }
     }
 }

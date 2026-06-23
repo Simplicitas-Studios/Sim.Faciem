@@ -33,6 +33,7 @@ namespace Sim.Faciem
             registrationBridge.RegisterSingleton<IViewModelConstructionService, ViewModelConstructionService>();
             registrationBridge.RegisterSingleton<IViewIdRegistry, ViewIdRegistry>();
             registrationBridge.RegisterSingleton<INavigationService, NavigationService>();
+            registrationBridge.RegisterSingleton<IGlobalRegionManager, GlobalRegionRegistry>(typeof(IGlobalRegionManagerInternal));
 
             registrationBridge.RegisterTransient<ShellViewModel, ShellViewModel>();
         }

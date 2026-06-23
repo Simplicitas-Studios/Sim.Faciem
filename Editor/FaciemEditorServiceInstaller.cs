@@ -11,6 +11,7 @@ namespace Sim.Faciem.Editor
             injector.Register<IViewModelConstructionService, ViewModelConstructionService>();
             injector.Register<IViewIdRegistry, EditorViewIdRegistry>();
             injector.Register<INavigationService, NavigationService>();
+            injector.Register<IGlobalRegionManager, GlobalRegionRegistry>(false, typeof(IGlobalRegionManagerInternal));
         }
     }
 }

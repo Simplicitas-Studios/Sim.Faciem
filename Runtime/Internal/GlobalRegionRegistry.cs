@@ -1,27 +1,15 @@
 ﻿using System.Collections.Generic;
-using Sim.Utility;
+using Sim.Faciem.Internal;
 
 namespace Sim.Faciem
 {
-    public class RegionManager : IViewModelRegionManager
+    internal class GlobalRegionRegistry : IGlobalRegionManagerInternal
     {
         private readonly Dictionary<RegionName, List<IRegion>> _regions = new();
 
-        public Maybe<IRegionManager> Parent { get; set; }
-
-        public RegionManager()
-        {
-            Parent = Maybe.None<IRegionManager>();
-        }
-
-        public RegionManager(IRegionManager parent)
-        {
-            Parent = Maybe.Some(parent);
-        }
-
         public void AddRegion(IRegion region)
         {
-            if (!_regions.TryGetValue(region.RegionName, out var regionList))
+            if(!_regions.TryGetValue(region.RegionName, out var regionList))
             {
                 regionList = new List<IRegion>();
                 _regions.Add(region.RegionName, regionList);
@@ -32,7 +20,7 @@ namespace Sim.Faciem
 
         public void RemoveRegion(IRegion region)
         {
-            if (_regions.TryGetValue(region.RegionName, out var regionList))
+            if(_regions.TryGetValue(region.RegionName, out var regionList))
             {
                 regionList.Remove(region);
                 if (regionList.Count == 0)
@@ -44,15 +32,10 @@ namespace Sim.Faciem
 
         public bool TryFindRegion(RegionName regionName, out IReadOnlyList<IRegion> regionList)
         {
-            if (_regions.TryGetValue(regionName, out var outRegionList))
+            if (_regions.TryGetValue(regionName, out var regions))
             {
-                regionList = outRegionList;
+                regionList = regions;
                 return true;
-            }
-
-            if (Parent.IsSome)
-            {
-                return Parent.Value.TryFindRegion(regionName, out regionList);
             }
 
             regionList = null;

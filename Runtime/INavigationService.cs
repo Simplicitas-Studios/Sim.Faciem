@@ -4,9 +4,9 @@ namespace Sim.Faciem
 {
     public interface INavigationService
     {
-        UniTask NavigateTo(RegionManager regionManager, ViewId viewId, RegionName regionName,
+        UniTask NavigateTo(IRegionManager regionManager, ViewId viewId, RegionName regionName,
             NavigationParameters parameters);
 
-        UniTask Clear(RegionManager regionManager, RegionName regionName);
+        UniTask Clear(IRegionManager regionManager, RegionName regionName);
     }
 }

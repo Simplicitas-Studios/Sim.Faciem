@@ -10,7 +10,7 @@ namespace Sim.Faciem
 
             if (initialViewId.HasValue)
             {
-                await Navigation.Navigate(initialViewId.Value, WellKnownRegionNames.MainRegion);
+                await Navigation.Navigate(initialViewId.Value, WellKnownRegionNames.MainRegion, navigationParameters);
             }
         }
     }

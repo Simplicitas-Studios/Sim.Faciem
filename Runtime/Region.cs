@@ -22,6 +22,9 @@ namespace Sim.Faciem
         [UxmlAttribute]
         public bool SupportMultipleViews { get; set; }
 
+        [UxmlAttribute]
+        public bool IsGlobal { get; set; }
+
         public IReadOnlyList<ViewId> ActiveViews => _currentActiveViews;
 
         public Observable<Unit> Destroyed { get; }
