@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using R3;
 using UnityEngine;
+using TouchPhase = UnityEngine.TouchPhase;
 #if ENABLE_INPUT_SYSTEM
 using UnityEngine.InputSystem;
 #endif
