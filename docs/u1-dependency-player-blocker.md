@@ -2,6 +2,8 @@
 
 **Not compatibility fixes or a player-ready release.** The requested dependency-closure stop condition was reached before package/source edits. This draft records the blockers and corrects two previously unresolved dependency assumptions; it does not implement the root API or change MVVM/navigation behavior.
 
+> **Historical baseline.** Utility's standalone-core proposal is now available at `d57864989f8b85332ebb8093da47602e68b39132`. The [U1b continuation](u1b-clean-consumer-blocker.md) verified dependency pins but stopped on an external NuGet CLI host-runtime prerequisite before any Faciem production change. The older Utility cycle/import evidence below describes its original pinned baseline, not the proposed split.
+
 ## Reference and scope
 
 - Faciem source/main: **`52853a83b5db11cd85c63abe65f49e96db893599`**, package **1.0.0-alpha.1**.

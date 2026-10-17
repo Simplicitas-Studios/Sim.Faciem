@@ -1,0 +1,15 @@
+You must install or update .NET to run this application.
+
+App: C:\Users\DPast\Documents\Projects\ReviewWorktrees\u1b-scratch\tools\nugetforunity.exe
+Architecture: x64
+Framework: 'Microsoft.NETCore.App', version '9.0.0' (x64)
+.NET location: C:\Program Files\dotnet\
+
+The following frameworks were found:
+  10.0.6 at [C:\Program Files\dotnet\shared\Microsoft.NETCore.App]
+
+Learn more:
+https://aka.ms/dotnet/app-launch-failed
+
+To install missing framework, download:
+https://aka.ms/dotnet-core-applaunch?framework=Microsoft.NETCore.App&framework_version=9.0.0&arch=x64&rid=win-x64&os=win10

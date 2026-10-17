@@ -2,7 +2,9 @@
 
 > **A full MVVM framework for Unity's UI Toolkit — runtime and editor**
 
-**U1 compatibility audit is blocked:** [dependency direction, external Utility player prerequisite, and exact evidence](docs/u1-dependency-player-blocker.md). No compatibility/source/package fixes or player validation are claimed. `Sim.Dispositio.Shared` is supplied by Utility; do not add a speculative dependency. Independent review/scope approval is required before implementation.
+**U1b is blocked before Unity validation:** [verified dependency pins and external host-tooling failure](docs/u1b-clean-consumer-blocker.md). NuGetForUnity.Cli 4.5.0's selected entrypoint requires .NET 9, absent on this host; R3 was not restored. No production fixes, compilation, tests or player acceptance are claimed.
+
+**Historical U1 compatibility audit:** [dependency direction, external Utility player prerequisite, and exact evidence](docs/u1-dependency-player-blocker.md). No compatibility/source/package fixes or player validation are claimed. `Sim.Dispositio.Shared` is supplied by Utility; do not add a speculative dependency. Independent review/scope approval is required before implementation.
 
 `Sim.Faciem` is a Unity 6 framework that brings a structured **MVVM (Model-View-ViewModel)** pattern to UI Toolkit. It provides a complete stack — Region-based navigation, a ViewModel lifecycle, reactive commands, two-way data binding, and editor-window support — all while staying as close to Unity's own built-in systems as possible.
 
