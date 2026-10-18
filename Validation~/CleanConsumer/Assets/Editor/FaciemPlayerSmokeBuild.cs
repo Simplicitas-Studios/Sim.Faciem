@@ -25,7 +25,7 @@ public static class FaciemPlayerSmokeBuild
         }
 
         const string scenePath = "Assets/U1bBuildSmoke.unity";
-        if (File.Exists(scenePath))
+        if (File.Exists(scenePath) || File.Exists(scenePath + ".meta"))
         {
             throw new InvalidOperationException("Refusing to overwrite an existing scene.");
         }
@@ -33,16 +33,14 @@ public static class FaciemPlayerSmokeBuild
         Scene originalActiveScene = SceneManager.GetActiveScene();
         Scene[] originalScenes = Enumerable.Range(0, SceneManager.sceneCount).Select(SceneManager.GetSceneAt).ToArray();
         bool[] originalDirty = originalScenes.Select(scene => scene.isDirty).ToArray();
-        Scene ownedScene = default;
+        GameObject[][] originalRoots = originalScenes.Select(scene => scene.GetRootGameObjects()).ToArray();
         try
         {
-            ownedScene = EditorSceneManager.NewScene(NewSceneSetup.EmptyScene, NewSceneMode.Additive);
-            SceneManager.SetActiveScene(ownedScene);
-            var root = new GameObject("Faciem Utility Player Smoke");
-            root.AddComponent<FaciemPlayerSmoke>();
-            if (!EditorSceneManager.SaveScene(ownedScene, scenePath))
+            File.Copy("SceneFixtures~/UtilitySmoke.unity", scenePath);
+            AssetDatabase.ImportAsset(scenePath, ImportAssetOptions.ForceSynchronousImport);
+            if (AssetDatabase.LoadAssetAtPath<SceneAsset>(scenePath) == null)
             {
-                throw new InvalidOperationException("Could not save the owned smoke scene.");
+                throw new InvalidOperationException("Could not import the owned saved smoke scene fixture.");
             }
 
             Directory.CreateDirectory("Logs");
@@ -51,9 +49,10 @@ public static class FaciemPlayerSmokeBuild
                 scenes = new[] { scenePath },
                 locationPathName = "Builds/FaciemConsumerSmoke.exe",
                 target = BuildTarget.StandaloneWindows64,
-                options = BuildOptions.Development
+                options = BuildOptions.Development | BuildOptions.DetailedBuildReport
             };
             BuildReport report = BuildPipeline.BuildPlayer(options);
+            SaveNativeReport(report);
             UnityEditor.Compilation.Assembly[] assemblies = CompilationPipeline.GetAssemblies(AssembliesType.Player);
             string[] expected = { "Sim.Utility", "Sim.Faciem", "Sim.Faciem.Shared", "Sim.Faciem.Controls" };
             RuntimeAssemblyEvidence[] runtime = expected.Select(name =>
@@ -98,14 +97,10 @@ public static class FaciemPlayerSmokeBuild
                 SceneManager.SetActiveScene(originalActiveScene);
             }
 
-            if (ownedScene.IsValid() && ownedScene.isLoaded)
-            {
-                EditorSceneManager.CloseScene(ownedScene, true);
-            }
-
             AssetDatabase.DeleteAsset(scenePath);
             bool unchanged = originalScenes.All(scene => scene.IsValid() && scene.isLoaded) &&
-                originalScenes.Select((scene, index) => scene.isDirty == originalDirty[index]).All(value => value) &&
+                originalScenes.Select((scene, index) => scene.isDirty == originalDirty[index] &&
+                    scene.GetRootGameObjects().SequenceEqual(originalRoots[index])).All(value => value) &&
                 SceneManager.sceneCount == originalScenes.Length && SceneManager.GetActiveScene() == originalActiveScene;
             Directory.CreateDirectory("Logs");
             File.WriteAllText("Logs/u1b-player-scene-restoration.txt", unchanged ? "preserved\n" : "CHANGED\n");
@@ -114,6 +109,69 @@ public static class FaciemPlayerSmokeBuild
                 throw new InvalidOperationException("Original scene state changed during smoke build; inspect without retrying.");
             }
         }
+    }
+
+    private static void SaveNativeReport(BuildReport report)
+    {
+        var native = new NativeReportEvidence
+        {
+            guid = report.summary.guid.ToString(),
+            result = report.summary.result.ToString(),
+            platform = report.summary.platform.ToString(),
+            outputPath = report.summary.outputPath,
+            totalErrors = report.summary.totalErrors,
+            totalWarnings = report.summary.totalWarnings,
+            totalSize = report.summary.totalSize,
+            totalSeconds = report.summary.totalTime.TotalSeconds,
+            startedUtc = report.summary.buildStartedAt.ToUniversalTime().ToString("O"),
+            endedUtc = report.summary.buildEndedAt.ToUniversalTime().ToString("O"),
+            steps = report.steps.Select(step => new NativeStepEvidence
+            {
+                name = step.name,
+                seconds = step.duration.TotalSeconds,
+                messages = step.messages.Select(message => new NativeMessageEvidence
+                {
+                    type = message.type.ToString(),
+                    content = message.content
+                }).ToArray()
+            }).ToArray()
+        };
+        File.WriteAllText("Logs/u1b-final-native-buildreport.json", JsonUtility.ToJson(native, true) + Environment.NewLine);
+        if (File.Exists("Library/LastBuild.buildreport"))
+        {
+            File.Copy("Library/LastBuild.buildreport", "Logs/u1b-final-native-player.buildreport", true);
+        }
+    }
+
+    [Serializable]
+    private sealed class NativeReportEvidence
+    {
+        public string guid;
+        public string result;
+        public string platform;
+        public string outputPath;
+        public int totalErrors;
+        public int totalWarnings;
+        public ulong totalSize;
+        public double totalSeconds;
+        public string startedUtc;
+        public string endedUtc;
+        public NativeStepEvidence[] steps;
+    }
+
+    [Serializable]
+    private sealed class NativeStepEvidence
+    {
+        public string name;
+        public double seconds;
+        public NativeMessageEvidence[] messages;
+    }
+
+    [Serializable]
+    private sealed class NativeMessageEvidence
+    {
+        public string type;
+        public string content;
     }
 
     [Serializable]

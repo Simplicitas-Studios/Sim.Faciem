@@ -1,0 +1,28 @@
+{
+  "version": "6000.6.5f1",
+  "inspection": "Public static method metadata only; no private reflection, obsolete-error call, unsafe conversion, or schema/API mutation.",
+  "supportedPingOverloads": [
+    "EditorGUIUtility.PingObject(UnityEngine.Object)",
+    "EditorGUIUtility.PingObject(UnityEngine.EntityId)"
+  ],
+  "obsoleteErrorRoutes": [
+    "EditorGUIUtility.PingObject(int)",
+    "AssetDatabase.GetAssetPath(int)",
+    "EditorUtility.InstanceIDToObject(int)",
+    "EntityId implicit int conversions"
+  ],
+  "unchangedSerializedProperty": "HyperLinkLabel.InstanceIds : List<int>",
+  "reason": "No documented safe reconstruction of the required Object/EntityId from this legacy int property was established. EntityId documentation forbids assuming integer representation or serializing through integer parsing.",
+  "userDecision": "Defer ping restoration (Recommended)",
+  "decisionMeaning": "Existing data and disabled ping retained; limitation explicitly accepted for U1b. Separate migration needed for restoration; no new workaround.",
+  "references": [
+    "https://docs.unity3d.com/6000.6/Documentation/ScriptReference/EditorGUIUtility.PingObject.html",
+    "https://docs.unity3d.com/6000.6/Documentation/ScriptReference/EditorUtility.EntityIdToObject.html",
+    "https://docs.unity3d.com/6000.6/Documentation/ScriptReference/AssetDatabase.GetAssetPath.html",
+    "https://docs.unity3d.com/6000.6/Documentation/ScriptReference/EntityId.html",
+    "https://docs.unity3d.com/6000.6/Documentation/ScriptReference/SceneManagement.EditorSceneManager.NewPreviewScene.html",
+    "https://docs.unity3d.com/6000.6/Documentation/ScriptReference/SceneManagement.EditorSceneManager.SaveScene.html",
+    "https://docs.unity3d.com/6000.6/Documentation/ScriptReference/SceneManagement.SceneManager.CreateScene.html",
+    "https://docs.unity3d.com/6000.6/Documentation/ScriptReference/BuildPipeline.BuildPlayer.html"
+  ]
+}

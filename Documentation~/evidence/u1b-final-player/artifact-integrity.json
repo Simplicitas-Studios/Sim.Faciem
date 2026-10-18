@@ -1,0 +1,70 @@
+{
+  "Documentation~/evidence/u1b-final-player/.gitattributes": {
+    "bytes": 30,
+    "sha256": "f06202a408fef9b9ea69bb6b1cb8160dbb0378c5bb67a444d510d231813824c8"
+  },
+  "Documentation~/evidence/u1b-final-player/consumer-manifest.json": {
+    "bytes": 984,
+    "sha256": "209057f193f4162207ce9171848c50887f39f56b34ff3c7ebf52993af2cd014b"
+  },
+  "Documentation~/evidence/u1b-final-player/consumer-packages-lock.json": {
+    "bytes": 6509,
+    "sha256": "0995c3159362875c4fd702ae78076813df808e59aa709d90cfd5782b0c1398b6"
+  },
+  "Documentation~/evidence/u1b-final-player/consumer-packages.config": {
+    "bytes": 325,
+    "sha256": "620491e2e13c3bcc9a6e2e67da5faa7f09ba7946b1ecf8c88a527ddc555d731f"
+  },
+  "Documentation~/evidence/u1b-final-player/dispatch-outcome.json": {
+    "bytes": 558,
+    "sha256": "fc2a5c8d9977a72eded3e871b281ff80d9c5001b73525f55b6ab26bca4d8b6be"
+  },
+  "Documentation~/evidence/u1b-final-player/hyperlink-public-api-review.json": {
+    "bytes": 1946,
+    "sha256": "3dbbb3bad2bc0e34556172c6901e250ce8d11bfab487adc621de0a3e0a94030d"
+  },
+  "Documentation~/evidence/u1b-final-player/LastBuild.buildreport": {
+    "bytes": 134032,
+    "sha256": "5ea0c12f34a8421d17ca1f36a6d91b4b44a3bdac8e4f1292679f24fa6200dffa"
+  },
+  "Documentation~/evidence/u1b-final-player/native-buildreport.json": {
+    "bytes": 16681,
+    "sha256": "5da2854d125c19d681173b042fff26c46a121e504533f9582e3d06a03e40aeb7"
+  },
+  "Documentation~/evidence/u1b-final-player/native-editor-log-excerpt.txt": {
+    "bytes": 2960,
+    "sha256": "1a6fc5977bba597670bd0b701f7d0bfd325e826671faebbe2e69a11dbf28a600"
+  },
+  "Documentation~/evidence/u1b-final-player/optional-inspector-tests.json": {
+    "bytes": 1100,
+    "sha256": "6d88c7ab5cce84641099e79aef69ea0548350220d0ae50b1ed36d15cf9c10161"
+  },
+  "Documentation~/evidence/u1b-final-player/player-assembly-evidence.json": {
+    "bytes": 37175,
+    "sha256": "6e7330cc30080b8a24f060ff820e197f3e1866538625b9415563e049d1a5bf52"
+  },
+  "Documentation~/evidence/u1b-final-player/produced-file-hashes.json": {
+    "bytes": 59357,
+    "sha256": "0218e7a9003bcdbec6c6a7aaa877a4f5d1d6a6d5870aa2c06d9ec96279ed7c13"
+  },
+  "Documentation~/evidence/u1b-final-player/scene-observations.json": {
+    "bytes": 1031,
+    "sha256": "fc5250fc072e0f2fba1dddce54f602ae5d225cc80999c364ef8010a500d940c6"
+  },
+  "Documentation~/evidence/u1b-final-player/scene-restoration.txt": {
+    "bytes": 8,
+    "sha256": "34cd4b2b763ac5fdeb63102b7d7375eb1647ba3b4c52b7b61e9566138d3f6f25"
+  },
+  "Documentation~/evidence/u1b-final-player/setup-history.json": {
+    "bytes": 1364,
+    "sha256": "0504ea424929293e47d6cd5922de66e53c0f6767a4167aa41b98c8340008fb53"
+  },
+  "Documentation~/evidence/u1b-final-player/single-build-dispatch.txt": {
+    "bytes": 28,
+    "sha256": "0ccaf2d2d42c39ae4c1e44d7d40282f69ed7ae67d733b79b3c9334057416ce9c"
+  },
+  "Documentation~/evidence/u1b-final-player/source-hashes.json": {
+    "bytes": 25439,
+    "sha256": "58fc060ab2732319bfe7c8c4c565d50a2ac579271b9495a97e53a0a604b0c25e"
+  }
+}

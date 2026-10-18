@@ -1,0 +1,12 @@
+{
+  "historicalAttemptAtCfc7ec2": "EditorSceneManager.NewScene(Additive) blocked before BuildPipeline by existing untitled scene.",
+  "thisTurnProbe": "NewPreviewScene + SaveScene(saveAsCopy:true) rejected: EditorSceneManager.SetActive failed; you can not save a preview scene.",
+  "probeCleanup": "finally closed owned preview and deleted owned probe path; typed inspection confirmed original one clean active untitled scene/two roots; no build invoked by probe.",
+  "notUsed": "SceneManager.CreateScene is documented as runtime-only; not used as an Edit Mode workaround.",
+  "finalSetup": "Byte-copy a prior Unity-authored saved validation scene fixture, import SceneAsset synchronously, pass only that path to BuildPipeline, delete owned asset in finally. No scene creation/open/save on the user scene.",
+  "fixtureOriginal": "Local generated/untracked Sim.Utility-u1-audit/Validation~/CoreConsumer/Assets/Smoke.unity; source worktree HEAD 0c308f7df1aebf6ad31b6e1141da37f3665e48a1 is not a Git attribution for this ignored scene file.",
+  "fixtureTrackedInUtility": false,
+  "fixtureSha256": "cdf04322dbef5911b0821655507ed53230c9ffd296e124974e054f7513f64ab8",
+  "componentAndMetaCopiedUnchanged": true,
+  "postBuild": "Unity itself backed up/restored the untitled scene; strict preservation guard failed. No retry or attempt to alter user scene."
+}
