@@ -1,4 +1,6 @@
-﻿using UnityEditor;
+﻿#if UNITY_EDITOR
+using UnityEditor;
+#endif
 using UnityEngine.UIElements;
 
 namespace Sim.Faciem.Converters
@@ -8,7 +10,7 @@ namespace Sim.Faciem.Converters
 #if UNITY_EDITOR
         [InitializeOnLoadMethod]
 #else
-        [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.SubsystemRegistration)]
+        [UnityEngine.RuntimeInitializeOnLoadMethod(UnityEngine.RuntimeInitializeLoadType.SubsystemRegistration)]
 #endif
         public static void RegisterConverters()
         {

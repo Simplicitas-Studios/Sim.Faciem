@@ -12,7 +12,7 @@ namespace InternalEditor
             where T : Object
         {
             var entry = CreateAssetEntry(source, groupName);
-            if (source != null)
+            if (entry != null)
             {
                 source.AddAddressableAssetLabel(label);
             }
@@ -23,7 +23,7 @@ namespace InternalEditor
         public static AddressableAssetEntry CreateAssetEntry<T>(T source, string label) where T : Object
         {
             var entry = CreateAssetEntry(source);
-            if (source != null)
+            if (entry != null)
             {
                 source.AddAddressableAssetLabel(label);
             }
@@ -39,6 +39,11 @@ namespace InternalEditor
             }
 
             var addressableSettings = AddressableAssetSettingsDefaultObject.Settings;
+            if (addressableSettings == null || addressableSettings.DefaultGroup == null)
+            {
+                return null;
+            }
+
             var sourcePath = AssetDatabase.GetAssetPath(source);
             var sourceGuid = AssetDatabase.AssetPathToGUID(sourcePath);
             var entry = addressableSettings.CreateOrMoveEntry(sourceGuid, addressableSettings.DefaultGroup);
@@ -57,7 +62,7 @@ namespace InternalEditor
             }
 
             var addressableSettings = AddressableAssetSettingsDefaultObject.Settings;
-            return addressableSettings.FindGroup(groupName);
+            return addressableSettings?.FindGroup(groupName);
         }
 
         public static AddressableAssetGroup CreateGroup(string groupName)
@@ -68,6 +73,11 @@ namespace InternalEditor
             }
 
             var addressableSettings = AddressableAssetSettingsDefaultObject.Settings;
+            if (addressableSettings == null || addressableSettings.DefaultGroup == null)
+            {
+                return null;
+            }
+
             var group = addressableSettings.CreateGroup(groupName, false, false, false,
                 addressableSettings.DefaultGroup.Schemas);
 
@@ -79,7 +89,7 @@ namespace InternalEditor
         public static bool GroupExists(string groupName)
         {
             var addressableSettings = AddressableAssetSettingsDefaultObject.Settings;
-            return addressableSettings.FindGroup(groupName) != null;
+            return addressableSettings != null && addressableSettings.FindGroup(groupName) != null;
         }
     }
 }

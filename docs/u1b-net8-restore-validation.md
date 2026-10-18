@@ -4,7 +4,9 @@
 `39137546019fc7c852d51fc272516855926a85ad`; Utility remains pinned to
 `d57864989f8b85332ebb8093da47602e68b39132`. No Faciem production fixes applied.
 
-## Fresh result
+> **Historical attempt.** The [connected continuation](u1b-connected-validation.md) incorporates the user's NuGet fixes and verifies clean Editor compilation plus 24 distinct passing cases. The newer player preparation is separately blocked by the existing untitled scene. Do not treat the older TimeProvider failure below as the current Editor result.
+
+## Historical result
 
 | Gate | Observed outcome |
 |---|---|

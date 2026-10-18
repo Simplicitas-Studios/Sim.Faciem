@@ -28,8 +28,11 @@ namespace Sim.Faciem.InternalEditor
 
         public static void AddAddressableAssetLabel(this Object source, string label)
         {
-            if (source == null || !AssetDatabase.Contains(source))
+            if (source == null || !AssetDatabase.Contains(source)
+                || AddressableAssetSettingsDefaultObject.Settings == null)
+            {
                 return;
+            }
 
             EnsureLabelExists(label);
 
@@ -44,6 +47,11 @@ namespace Sim.Faciem.InternalEditor
         private static void EnsureLabelExists(string label)
         {
             var addressableSettings = AddressableAssetSettingsDefaultObject.Settings;
+            if (addressableSettings == null)
+            {
+                return;
+            }
+
             var labels = addressableSettings.GetLabels();
             if (!labels.Contains(label))
             {
@@ -81,7 +89,7 @@ namespace Sim.Faciem.InternalEditor
 
         public static void SetAddressableAssetGroup(this Object source, AddressableAssetGroup group)
         {
-            if (source == null || !AssetDatabase.Contains(source))
+            if (source == null || group == null || !AssetDatabase.Contains(source))
             {
                 return;
             }
@@ -148,7 +156,7 @@ namespace Sim.Faciem.InternalEditor
             var sourcePath = AssetDatabase.GetAssetPath(source);
             var sourceGuid = AssetDatabase.AssetPathToGUID(sourcePath);
 
-            return addressableSettings.FindAssetEntry(sourceGuid);
+            return addressableSettings?.FindAssetEntry(sourceGuid);
         }
     }
 }

@@ -1,0 +1,13 @@
+test_core_assemblies_have_no_external_faciem_edges (__main__.PackageContractTests.test_core_assemblies_have_no_external_faciem_edges) ... ok
+test_core_consumer_contains_no_faciem_package (__main__.PackageContractTests.test_core_consumer_contains_no_faciem_package) ... ok
+test_core_manifest_has_no_dependencies (__main__.PackageContractTests.test_core_manifest_has_no_dependencies) ... ok
+test_optional_assembly_is_editor_only (__main__.PackageContractTests.test_optional_assembly_is_editor_only) ... ok
+test_optional_package_depends_on_both_packages_only (__main__.PackageContractTests.test_optional_package_depends_on_both_packages_only) ... ok
+test_original_core_assembly_guids_are_stable (__main__.PackageContractTests.test_original_core_assembly_guids_are_stable) ... ok
+test_template_references_optional_assembly_and_preserved_assets (__main__.PackageContractTests.test_template_references_optional_assembly_and_preserved_assets) ... ok
+test_view_and_style_guids_are_preserved (__main__.PackageContractTests.test_view_and_style_guids_are_preserved) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.009s
+
+OK

@@ -2,7 +2,7 @@
 
 > **A full MVVM framework for Unity's UI Toolkit — runtime and editor**
 
-**U1b remains BLOCKED / NOT MERGE-READY:** [fresh .NET 8 restore and failed baseline Unity compilation](docs/u1b-net8-restore-validation.md). The approved .NET 8 CLI route works without installing a runtime; R3 1.3.1 itself restored, but its transitive closure is incomplete. R3.Unity compilation failed with missing TimeProvider/ITimer. Addressables actually resolved to 2.8.0; UIElements is explicitly included. No Faciem production fixes, focused tests or player build followed the failed compile gate. The [earlier host-tooling report](docs/u1b-clean-consumer-blocker.md) is historical.
+**U1b compatibility fixes are ready for review, NOT MERGE-READY:** [connected validation](docs/u1b-connected-validation.md) now has clean Editor compilation and 24 distinct passing cases (7 Faciem, 5 optional integration, 12 Utility core), with Addressables actually 2.8.0. Player preparation stopped before BuildPipeline because the current scene is untitled/unsaved; it was not saved or replaced. The supplied hyperlink Editor asset-ping suppression remains a documented behavior limitation. Earlier [restore](docs/u1b-net8-restore-validation.md) and [host-tooling](docs/u1b-clean-consumer-blocker.md) failures are historical.
 
 **Historical U1 compatibility audit:** [dependency direction, external Utility player prerequisite, and exact evidence](docs/u1-dependency-player-blocker.md). No compatibility/source/package fixes or player validation are claimed. `Sim.Dispositio.Shared` is supplied by Utility; do not add a speculative dependency. Independent review/scope approval is required before implementation.
 

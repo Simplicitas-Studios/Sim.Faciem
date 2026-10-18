@@ -48,7 +48,7 @@ namespace Sim.Faciem
                 }
             }
 
-            viewModel ??= _viewModelConstructionService.CreateInstance(viewAsset.DataContext.Script.GetClass());
+            viewModel ??= _viewModelConstructionService.CreateInstance(viewAsset.DataContext.GetReferencedType());
 
             foreach (var region in maybeRegionInfos.Value.Item2)
             {

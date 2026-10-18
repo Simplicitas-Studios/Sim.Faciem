@@ -16,7 +16,6 @@
   "allowUnsafeCode": false,
   "overrideReferences": true,
   "precompiledReferences": [
-    "Bebop.Monads.dll",
     "R3.dll"
   ],
   "autoReferenced": true,
