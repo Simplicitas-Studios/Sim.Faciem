@@ -1,0 +1,12 @@
+{
+  "route": "unity_pipeline_eval; same Editor PID46808 / port7801",
+  "hostDeadlineSeconds": 600,
+  "handlerDeadlineMilliseconds": 600000,
+  "nativeBuildPipelineInvocations": 1,
+  "transportSuccess": false,
+  "errorCode": "planning_command_failed / COMMAND_FAILED",
+  "runtimeError": "Original scene state changed during smoke build; inspect without retrying.",
+  "nativeBuildReportResult": "Succeeded",
+  "distinction": "Native build succeeded; helper finally guard threw. This is not an end-to-end harness pass.",
+  "retryOrFallback": false
+}

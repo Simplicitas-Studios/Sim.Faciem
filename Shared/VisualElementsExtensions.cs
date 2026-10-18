@@ -1,9 +1,9 @@
 ﻿using System;
 using R3;
-using UnityEditor.UIElements;
 using UnityEngine;
 using UnityEngine.UIElements;
 #if UNITY_EDITOR
+using UnityEditor.UIElements;
 #endif
 
 namespace Sim.Faciem.Shared

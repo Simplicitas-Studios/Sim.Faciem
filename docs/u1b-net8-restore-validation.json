@@ -1,0 +1,140 @@
+{
+  "kind": "NuGet root restore and baseline Editor compilation, not a test run",
+  "verdict": "BLOCKED / NOT MERGE-READY: full R3 dependency closure absent; baseline compilation failed",
+  "reviewedFaciemPrHeadAndSourceAtRun": "39137546019fc7c852d51fc272516855926a85ad",
+  "faciemProductionBaseline": "52853a83b5db11cd85c63abe65f49e96db893599",
+  "utilityPin": "d57864989f8b85332ebb8093da47602e68b39132",
+  "hostRuntime": {
+    "reusedInstalledRuntime": true,
+    "version": "8.0.21",
+    "sdkInventoryVersion": "8.0.318",
+    "source": "official Unity 6000.6.5f1 bundled DotNetSdk",
+    "dotnetPath": "C:\\Program Files\\Unity\\Hub\\Editor\\6000.6.5f1\\Editor\\Data\\DotNetSdk\\dotnet.exe",
+    "runtimeInstallationPerformed": false,
+    "systemWideChanges": false,
+    "majorRollForward": false,
+    "cliVersion": "4.5.0",
+    "cliTarget": "net8.0",
+    "explicitDll": "C:\\Users\\DPast\\Documents\\Projects\\ReviewWorktrees\\u1b-scratch\\tools\\.store\\nugetforunity.cli\\4.5.0\\nugetforunity.cli\\4.5.0\\tools\\net8.0\\any\\NuGetForUnity.Cli.dll",
+    "cliSha256": "ea765c15491b75d3d2ff8368a99e2291486d7553932d3183ce07ccbf4cb9f109",
+    "publishedCliRepositoryCommitFromNuspec": "a7c6b49a0141a5bff9b1983e38137522ef61977d"
+  },
+  "restore": {
+    "attempts": 1,
+    "exitCode": 0,
+    "rootPackageRestoreSucceeded": true,
+    "fullDependencyClosureEstablished": false,
+    "actualInstalledNuGetPackages": {
+      "R3": "1.3.1"
+    },
+    "assetTarget": "netstandard2.1",
+    "r3DllSha256": "4ac9ec66b56f4cbd139e4c7f99a6e0df6e4bb4c2707635880df8dd04ace291eb",
+    "matchesOfficialNuGetArchive": true,
+    "r3NetStandard21DeclaredDependencyMinimumsNotResolvedPins": {
+      "Microsoft.Bcl.TimeProvider": "8.0.0",
+      "System.ComponentModel.Annotations": "5.0.0",
+      "System.Runtime.CompilerServices.Unsafe": "6.0.0",
+      "System.Threading.Channels": "8.0.0"
+    },
+    "nonInstalledNuGetDependencyDirectories": [
+      "Microsoft.Bcl.TimeProvider",
+      "System.ComponentModel.Annotations",
+      "System.Runtime.CompilerServices.Unsafe",
+      "System.Threading.Channels"
+    ],
+    "noClaimAboutUnityProvidedSatisfactionOfOtherDependencies": true,
+    "configuredPackagesConfigContainsOnlyRootR3": true,
+    "rawInvocationEvidence": "Documentation~/evidence/u1b-net8/u1b-net8-restore.json"
+  },
+  "upm": {
+    "registeredPackages": 22,
+    "graphAcyclic": true,
+    "actualAddressablesVersion": "2.8.0",
+    "addressablesRequest": "2.8.0",
+    "scriptableBuildPipelineActual": "3.0.3",
+    "profilingCoreActual": "1.0.3",
+    "uiElementsActual": "1.0.0",
+    "uiElementsExplicitProjectDependency": true,
+    "testFrameworkActual": "1.8.0",
+    "nunitActual": "2.1.0",
+    "lockfile": "Documentation~/evidence/u1b-net8/consumer-packages-lock.json",
+    "noClaimOfFullAddressablesCompatibility": true
+  },
+  "compile": {
+    "attempts": 1,
+    "path": "C:\\Users\\DPast\\Documents\\Projects\\ReviewWorktrees\\Sim.Faciem-assessment\\Validation~\\CleanConsumer",
+    "unity": "6000.6.5f1",
+    "revision": "3ff58d469c8a",
+    "launcher": "Unity CLI 1.0.0-beta.13",
+    "tool": "unity_launch_batchmode",
+    "args": [
+      "-quit"
+    ],
+    "useGraphics": false,
+    "timeoutSeconds": 600,
+    "requestedLogFilePath": "C:\\Users\\DPast\\Documents\\Projects\\ReviewWorktrees\\Sim.Faciem-assessment\\Validation~\\CleanConsumer\\Logs\\u1b-net8-editor-compile.log",
+    "tailLog": false,
+    "unityCliExitCode": 6,
+    "nativeUnityExitCode": 1,
+    "scriptCompilationSecondsReportedInLog": 8.484476,
+    "succeeded": false,
+    "uniqueDiagnosticLines": 27,
+    "uniqueDiagnosticCodes": {
+      "CS0246": 27
+    },
+    "uniqueMissingTypeDiagnosticCounts": {
+      "TimeProvider": 25,
+      "ITimer": 2
+    },
+    "failingPackage": "com.cysharp.r3 / R3.Unity",
+    "file": "Runtime/UnityTimeProvider.cs",
+    "firstDiagnostic": "Library\\PackageCache\\com.cysharp.r3@c98d1f01b3ca\\Runtime\\UnityTimeProvider.cs(19,38): error CS0246: The type or namespace name 'TimeProvider' could not be found (are you missing a using directive or an assembly reference?)",
+    "rawLogSha256": "b9b67769ccf541dff085a2288990d143461753ffef12be56f66828004d7b4a62",
+    "rawLogBytes": 138802,
+    "rawLogRetainedLocallyNotCommitted": true,
+    "exactCurrentRunInspectionCount": 1,
+    "inspectionResultIsNotTestOutcome": true,
+    "noRunTestsDispatch": true,
+    "noNUnitXmlRequestedOrExpected": true,
+    "remainingFaciemErrorsNotEstablishedOrRuledOut": true
+  },
+  "postAttemptStatus": {
+    "matchingUnityProcesses": 0,
+    "nativeLockfile": "present",
+    "lockfilePath": "C:\\Users\\DPast\\Documents\\Projects\\ReviewWorktrees\\Sim.Faciem-assessment\\Validation~\\CleanConsumer\\Temp\\UnityLockfile",
+    "lockfileNotDeleted": true,
+    "editorNotClosedOrRelaunched": true,
+    "pipelineNotDeclared": true
+  },
+  "deferred": {
+    "productionFixes": "not applied: clean baseline compilation prerequisite did not pass",
+    "focusedTests": "not run",
+    "playerBuild": "not attempted: clean compilation gate failed",
+    "retryOrWorkaround": false,
+    "runtimeShimOrHostDllCopiedToUnity": false,
+    "versionUpgradesOrGuesses": false,
+    "midnightWagerChangesOrUnityOperations": false,
+    "rootIndependentApi": false,
+    "merge": false,
+    "deployment": false
+  },
+  "preservation": {
+    "sourceAsmdefsPackageUnchangedSinceReviewedHead": true,
+    "sourceTreeIds": {
+      "Runtime": "0f883665704092f6739ad1b4ee9d9b19151dd18e",
+      "Shared": "7c2315e95f529398245e9c548b9734da2446d175",
+      "Editor": "df1317b28a7cd5d64c74eee5e5a2c3ed2ee54a4c",
+      "InternalEditor": "9fa47004fbda42111d876becaae60be8282c8e31",
+      "package.json": "513273d1aa9d07bea3d057cc5e900a532680ad9d"
+    },
+    "consumerInputsNotPatchedToHideMissingTransitives": true,
+    "nativeGeneratedUntrackedDocMetasRemovedByThisRun": {
+      "docs.meta": "d4afde6d0cc752ea3cc99e1dcd7f6e6a8b86655b03e9f5814f0bf16330fb3ac6",
+      "docs/u1-dependency-player-blocker.md.meta": "05622ca7371e5633c1060494b6f6fc196156c69bfadcf5ce8295b5070cb6cc52",
+      "docs/u1-dependency-player-evidence.json.meta": "96038db4c903e8a4ce486ae3d9806e80c60b41414dc3fbc0d1223dfae392842d",
+      "docs/u1b-clean-consumer-blocker.md.meta": "582c933e1d4abaf449c9b3619d6c96a4722eacb12ab5c164408cc3312ea27873",
+      "docs/u1b-clean-consumer-evidence.json.meta": "0444eb84678ba8ea692f8169d36176b0564fdbc2afc749eddfa7df33fef2337c"
+    }
+  },
+  "nextGate": "Review and establish a complete pinned R3 NuGet dependency closure appropriate to Unity/netstandard2.1; root CLI exit 0 is not closure. No new restore/compile or narrow Faciem fixes were attempted after substantive failure."
+}

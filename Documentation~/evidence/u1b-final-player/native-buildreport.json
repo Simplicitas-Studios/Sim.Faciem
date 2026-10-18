@@ -1,0 +1,478 @@
+{
+    "guid": "b43eae783d7544118812c358187add25",
+    "result": "Succeeded",
+    "platform": "StandaloneWindows64",
+    "outputPath": "C:/Users/DPast/Documents/Projects/ReviewWorktrees/Sim.Faciem-assessment/Validation~/CleanConsumer/Builds/FaciemConsumerSmoke.exe",
+    "totalErrors": 0,
+    "totalWarnings": 3,
+    "totalSize": 173700119,
+    "totalSeconds": 26.8808592,
+    "startedUtc": "2026-10-18T10:02:38.9137637Z",
+    "endedUtc": "2026-10-18T10:03:05.7946229Z",
+    "steps": [
+        {
+            "name": "Build player",
+            "seconds": 26.8646826,
+            "messages": []
+        },
+        {
+            "name": "Call PrepareForBuild callbacks",
+            "seconds": 0.0033239999999999997,
+            "messages": []
+        },
+        {
+            "name": "Call internal build started callbacks",
+            "seconds": 0.0003725,
+            "messages": []
+        },
+        {
+            "name": "Preprocess Player",
+            "seconds": 0.4139689,
+            "messages": [
+                {
+                    "type": "Warning",
+                    "content": "Pipeline: No RuntimePipelineConfig asset found (Project Settings > Pipeline > Runtime). Pipeline will be disabled in Player builds."
+                }
+            ]
+        },
+        {
+            "name": "Save scenes before build",
+            "seconds": 0.0026186,
+            "messages": []
+        },
+        {
+            "name": "Back up scenes",
+            "seconds": 0.0060850999999999995,
+            "messages": []
+        },
+        {
+            "name": "Prepare For Build",
+            "seconds": 0.0031512,
+            "messages": []
+        },
+        {
+            "name": "ProducePlayerScriptAssemblies",
+            "seconds": 6.6257844,
+            "messages": []
+        },
+        {
+            "name": "Prebuild Cleanup and Recompile",
+            "seconds": 5.4178836,
+            "messages": []
+        },
+        {
+            "name": "Compile scripts",
+            "seconds": 5.3795037,
+            "messages": [
+                {
+                    "type": "Warning",
+                    "content": "C:\\Users\\DPast\\Documents\\Projects\\ReviewWorktrees\\Sim.Utility-u1-audit\\Runtime\\SerializableGuid.cs(21,21): warning CS0414: The field 'SerializableGuid._cashedHashCode' is assigned but its value is never used"
+                },
+                {
+                    "type": "Warning",
+                    "content": "C:\\Users\\DPast\\Documents\\Projects\\ReviewWorktrees\\Sim.Faciem-assessment\\Runtime\\Controls\\ListBinding\\SerializedListReference.cs(9,22): warning UAC1009: Field 'ItemSource' uses an unsupported type 'System.Collections.IList'. Refer to the Serialization rules analyzer reference. (https://docs.unity3d.com/6000.6/Documentation/Manual/script-serialization-analyzer.html#uac1009)"
+                }
+            ]
+        },
+        {
+            "name": "Generate and validate platform script types",
+            "seconds": 0.012209,
+            "messages": []
+        },
+        {
+            "name": "Verify Build setup",
+            "seconds": 0.734401,
+            "messages": []
+        },
+        {
+            "name": "GetUnityAssemblies",
+            "seconds": 0.7148059,
+            "messages": []
+        },
+        {
+            "name": "GetPlayerAssemblies",
+            "seconds": 0.0092301,
+            "messages": []
+        },
+        {
+            "name": "Check old data build",
+            "seconds": 0.0003728,
+            "messages": []
+        },
+        {
+            "name": "Prepare assets for target platform",
+            "seconds": 0.0040539999999999994,
+            "messages": []
+        },
+        {
+            "name": "Prepare splash screen",
+            "seconds": 0.0174388,
+            "messages": [
+                {
+                    "type": "Log",
+                    "content": "Including Unity Splash Screen logo because 'Show Unity Logo' is enabled."
+                }
+            ]
+        },
+        {
+            "name": "Build scripts DLLs",
+            "seconds": 0.023120099999999998,
+            "messages": []
+        },
+        {
+            "name": "GetSystemAssemblies",
+            "seconds": 0.0019711,
+            "messages": []
+        },
+        {
+            "name": "Compile Global Game Manager dependencies",
+            "seconds": 0.008858399999999999,
+            "messages": []
+        },
+        {
+            "name": "Load objectSkip (MonoScript) from Packages/com.cysharp.unitask/Runtime/Linq/Skip.cs",
+            "seconds": 0.0032846999999999998,
+            "messages": []
+        },
+        {
+            "name": "Building scenes",
+            "seconds": 0.0577878,
+            "messages": []
+        },
+        {
+            "name": "Building scene Assets/U1bBuildSmoke.unity",
+            "seconds": 0.057733799999999995,
+            "messages": []
+        },
+        {
+            "name": "Building scene 0: U1bBuildSmoke",
+            "seconds": 0.054648499999999996,
+            "messages": []
+        },
+        {
+            "name": "Load scene (and close previous ones)",
+            "seconds": 0.0401203,
+            "messages": []
+        },
+        {
+            "name": "Compile game scene dependencies",
+            "seconds": 0.0014184999999999998,
+            "messages": []
+        },
+        {
+            "name": "Compile game scene",
+            "seconds": 0.0119198,
+            "messages": []
+        },
+        {
+            "name": "Compile Resources folder dependencies",
+            "seconds": 0.0010991,
+            "messages": []
+        },
+        {
+            "name": "Build GlobalGameManagers file",
+            "seconds": 0.07896829999999999,
+            "messages": []
+        },
+        {
+            "name": "Writing asset files",
+            "seconds": 0.16729429999999998,
+            "messages": []
+        },
+        {
+            "name": "Packaging assets - globalgamemanagers.assets",
+            "seconds": 0.0195347,
+            "messages": []
+        },
+        {
+            "name": "Extract assets to write",
+            "seconds": 0.0086131,
+            "messages": []
+        },
+        {
+            "name": "Write file:globalgamemanagers.assets",
+            "seconds": 0.0106982,
+            "messages": []
+        },
+        {
+            "name": "Write object - Sprites-Default (Material) from Resources/unity_builtin_extra",
+            "seconds": 0.0010925,
+            "messages": []
+        },
+        {
+            "name": "Write object - Splash Screen Unity Logo (Texture2D) from Library/SplashScreenCache/a1/a1643d33572457fa402d089ba470c058",
+            "seconds": 0.0012737999999999998,
+            "messages": []
+        },
+        {
+            "name": "Packaging assets - sharedassets0.assets = additional assets for scene 0: Assets/U1bBuildSmoke.unity",
+            "seconds": 0.1463814,
+            "messages": []
+        },
+        {
+            "name": "Write file:sharedassets0.assets",
+            "seconds": 0.1461514,
+            "messages": []
+        },
+        {
+            "name": "Write object - Skybox/Procedural (Shader) from Resources/unity_builtin_extra",
+            "seconds": 0.1401153,
+            "messages": []
+        },
+        {
+            "name": "Building Resources/unity_builtin_extra",
+            "seconds": 1.3991821,
+            "messages": []
+        },
+        {
+            "name": "Write file:Library/PlayerDataCache/Win642/Data/Resources/unity_builtin_extra",
+            "seconds": 1.3986053999999999,
+            "messages": []
+        },
+        {
+            "name": "Write object - Legacy Shaders/VertexLit (Shader) from Resources/unity_builtin_extra",
+            "seconds": 0.2411287,
+            "messages": []
+        },
+        {
+            "name": "Write object - Legacy Shaders/Diffuse (Shader) from Resources/unity_builtin_extra",
+            "seconds": 0.1494991,
+            "messages": []
+        },
+        {
+            "name": "Write object - Hidden/Internal-StencilWrite (Shader) from Resources/unity_builtin_extra",
+            "seconds": 0.0060453,
+            "messages": []
+        },
+        {
+            "name": "Write object - Hidden/Internal-DepthNormalsTexture (Shader) from Resources/unity_builtin_extra",
+            "seconds": 0.0439062,
+            "messages": []
+        },
+        {
+            "name": "Write object - Hidden/Internal-ScreenSpaceShadows (Shader) from Resources/unity_builtin_extra",
+            "seconds": 0.0787291,
+            "messages": []
+        },
+        {
+            "name": "Write object - Hidden/Internal-CombineDepthNormals (Shader) from Resources/unity_builtin_extra",
+            "seconds": 0.0075301,
+            "messages": []
+        },
+        {
+            "name": "Write object - Hidden/BlitCopyDepth (Shader) from Resources/unity_builtin_extra",
+            "seconds": 0.0066622999999999995,
+            "messages": []
+        },
+        {
+            "name": "Write object - Hidden/ConvertTexture (Shader) from Resources/unity_builtin_extra",
+            "seconds": 0.0094588,
+            "messages": []
+        },
+        {
+            "name": "Write object - Hidden/Internal-DeferredShading (Shader) from Resources/unity_builtin_extra",
+            "seconds": 0.1451632,
+            "messages": []
+        },
+        {
+            "name": "Write object - Hidden/Internal-DeferredReflections (Shader) from Resources/unity_builtin_extra",
+            "seconds": 0.021016399999999998,
+            "messages": []
+        },
+        {
+            "name": "Write object - Hidden/Internal-MotionVectors (Shader) from Resources/unity_builtin_extra",
+            "seconds": 0.0129859,
+            "messages": []
+        },
+        {
+            "name": "Write object - Hidden/Internal-Flare (Shader) from Resources/unity_builtin_extra",
+            "seconds": 0.006797,
+            "messages": []
+        },
+        {
+            "name": "Write object - Hidden/Internal-Halo (Shader) from Resources/unity_builtin_extra",
+            "seconds": 0.0074909,
+            "messages": []
+        },
+        {
+            "name": "Write object - Hidden/BlitCopyWithDepth (Shader) from Resources/unity_builtin_extra",
+            "seconds": 0.006705099999999999,
+            "messages": []
+        },
+        {
+            "name": "Write object - Hidden/BlitToDepth (Shader) from Resources/unity_builtin_extra",
+            "seconds": 0.0069016,
+            "messages": []
+        },
+        {
+            "name": "Write object - Hidden/BlitToDepth_MSAA (Shader) from Resources/unity_builtin_extra",
+            "seconds": 0.007057399999999999,
+            "messages": []
+        },
+        {
+            "name": "Write object - Hidden/BlitCopyHDRTonemap (Shader) from Resources/unity_builtin_extra",
+            "seconds": 0.0100104,
+            "messages": []
+        },
+        {
+            "name": "Write object - Hidden/Internal-DebugPattern (Shader) from Resources/unity_builtin_extra",
+            "seconds": 0.0101935,
+            "messages": []
+        },
+        {
+            "name": "Write object - Hidden/Internal-GUITextureClip (Shader) from Resources/unity_builtin_extra",
+            "seconds": 0.0010636,
+            "messages": []
+        },
+        {
+            "name": "Write object - Hidden/Internal-GUITextureClipText (Shader) from Resources/unity_builtin_extra",
+            "seconds": 0.0031902999999999996,
+            "messages": []
+        },
+        {
+            "name": "Write object - Hidden/Internal-GUITextureBlit (Shader) from Resources/unity_builtin_extra",
+            "seconds": 0.0141817,
+            "messages": []
+        },
+        {
+            "name": "Write object - Hidden/Internal-GUIRoundedRect (Shader) from Resources/unity_builtin_extra",
+            "seconds": 0.0010929,
+            "messages": []
+        },
+        {
+            "name": "Write object - Hidden/Internal-GUIRoundedRectWithColorPerBorder (Shader) from Resources/unity_builtin_extra",
+            "seconds": 0.0011293,
+            "messages": []
+        },
+        {
+            "name": "Write object - Hidden/Internal-UIRDefault (Shader) from Resources/unity_builtin_extra",
+            "seconds": 0.2221146,
+            "messages": []
+        },
+        {
+            "name": "Write object - Sprites/Default (Shader) from Resources/unity_builtin_extra",
+            "seconds": 0.0139046,
+            "messages": []
+        },
+        {
+            "name": "Write object - Sprites/Mask (Shader) from Resources/unity_builtin_extra",
+            "seconds": 0.014500899999999999,
+            "messages": []
+        },
+        {
+            "name": "Write object - UI/Default (Shader) from Resources/unity_builtin_extra",
+            "seconds": 0.0291535,
+            "messages": []
+        },
+        {
+            "name": "Write object - UI/DefaultETC1 (Shader) from Resources/unity_builtin_extra",
+            "seconds": 0.0279563,
+            "messages": []
+        },
+        {
+            "name": "Write object - Hidden/CubeBlur (Shader) from Resources/unity_builtin_extra",
+            "seconds": 0.0546652,
+            "messages": []
+        },
+        {
+            "name": "Write object - Hidden/CubeCopy (Shader) from Resources/unity_builtin_extra",
+            "seconds": 0.0081469,
+            "messages": []
+        },
+        {
+            "name": "Write object - Hidden/CubeBlend (Shader) from Resources/unity_builtin_extra",
+            "seconds": 0.0090508,
+            "messages": []
+        },
+        {
+            "name": "Write object - Hidden/VR/BlitTexArraySlice (Shader) from Resources/unity_builtin_extra",
+            "seconds": 0.0064509,
+            "messages": []
+        },
+        {
+            "name": "Write object - Hidden/Internal-ODSWorldTexture (Shader) from Resources/unity_builtin_extra",
+            "seconds": 0.0348865,
+            "messages": []
+        },
+        {
+            "name": "Write object - Hidden/Internal-CubemapToEquirect (Shader) from Resources/unity_builtin_extra",
+            "seconds": 0.0066244,
+            "messages": []
+        },
+        {
+            "name": "Write object - Hidden/VR/BlitFromTex2DToTexArraySlice (Shader) from Resources/unity_builtin_extra",
+            "seconds": 0.010152,
+            "messages": []
+        },
+        {
+            "name": "Write object - Hidden/VideoComposite (Shader) from Resources/unity_builtin_extra",
+            "seconds": 0.006882699999999999,
+            "messages": []
+        },
+        {
+            "name": "Write object - Hidden/VideoDecode (Shader) from Resources/unity_builtin_extra",
+            "seconds": 0.0447408,
+            "messages": []
+        },
+        {
+            "name": "Write object - Hidden/Compositing (Shader) from Resources/unity_builtin_extra",
+            "seconds": 0.0066224,
+            "messages": []
+        },
+        {
+            "name": "Write object - Hidden/Physics2D/SDF_CircleGeometry (Shader) from Resources/unity_builtin_extra",
+            "seconds": 0.014279499999999999,
+            "messages": []
+        },
+        {
+            "name": "Write object - Hidden/Physics2D/SDF_CapsuleGeometry (Shader) from Resources/unity_builtin_extra",
+            "seconds": 0.0141231,
+            "messages": []
+        },
+        {
+            "name": "Write object - Hidden/Physics2D/SDF_PolygonGeometry (Shader) from Resources/unity_builtin_extra",
+            "seconds": 0.0354221,
+            "messages": []
+        },
+        {
+            "name": "Write object - Hidden/Physics2D/SDF_Line (Shader) from Resources/unity_builtin_extra",
+            "seconds": 0.0142148,
+            "messages": []
+        },
+        {
+            "name": "Write object - Hidden/Physics2D/SDF_Point (Shader) from Resources/unity_builtin_extra",
+            "seconds": 0.0183136,
+            "messages": []
+        },
+        {
+            "name": "Write data build dirty tracking information",
+            "seconds": 0.0199877,
+            "messages": []
+        },
+        {
+            "name": "Postprocess built player",
+            "seconds": 17.00965,
+            "messages": []
+        },
+        {
+            "name": "Setup incremental player build",
+            "seconds": 0.0887608,
+            "messages": []
+        },
+        {
+            "name": "Incremental player build",
+            "seconds": 16.8305735,
+            "messages": []
+        },
+        {
+            "name": "Report output files",
+            "seconds": 0.0801168,
+            "messages": []
+        },
+        {
+            "name": "Call Post-Process callbacks",
+            "seconds": 0.0328861,
+            "messages": []
+        }
+    ]
+}

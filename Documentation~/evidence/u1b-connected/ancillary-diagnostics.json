@@ -1,0 +1,22 @@
+{
+  "failedPublicApiGuidProbe": {
+    "result": "Roslyn compilation rejected before execution",
+    "message": "'CompilationPipeline' does not contain a definition for 'GetAssemblyNameFromAssemblyDefinitionReference'",
+    "noGuidMappingOrAbsenceInferred": true,
+    "guidReferencesRetained": true
+  },
+  "officialDocsResolver": "Returned invalid URL evidence for the exact-version EntityIdToObject request; no documentation success inferred.",
+  "publicEntityIdApiRead": {
+    "editorVersion": "6000.6.5f1",
+    "publicIntConversionAndLegacyLookup": "Both EntityId implicit int conversions and EditorUtility.InstanceIDToObject(int) have ObsoleteAttribute IsError=True.",
+    "userHyperLinkLabelPingCode": "remains commented out as supplied; no private reflection, unsafe casts or serialization migration workaround"
+  },
+  "helperCompileFailure": {
+    "file": "Assets/FaciemPlayerSmoke.cs",
+    "code": "CS0246",
+    "type": "SerializableGuid",
+    "cause": "new helper used wrong namespace",
+    "repair": "existing Sim.Dispositio.Shared namespace and existing string constructor",
+    "subsequentCompile": "10.8s, zero compiler errors"
+  }
+}

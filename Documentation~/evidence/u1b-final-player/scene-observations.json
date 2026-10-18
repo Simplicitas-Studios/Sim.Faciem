@@ -1,0 +1,33 @@
+{
+  "source": "typed list_open_scenes before and after final build; no scene save/replacement operation dispatched after the guard failure",
+  "before": {
+    "count": 1,
+    "name": "",
+    "path": "",
+    "isLoaded": true,
+    "isDirty": false,
+    "isActive": true,
+    "rootCount": 2
+  },
+  "after": {
+    "count": 1,
+    "name": "",
+    "path": "",
+    "isLoaded": true,
+    "isDirty": false,
+    "isActive": true,
+    "rootCount": 2
+  },
+  "strictGuard": "CHANGED",
+  "guardChecks": [
+    "old scene validity/loading",
+    "dirty flags",
+    "root object identity/order",
+    "scene count",
+    "active scene identity"
+  ],
+  "limitation": "The guard records only an aggregate result, not the individual failed clause. Matching high-level observations do not prove object/content preservation.",
+  "nativeLogObservation": "Unity loaded scene 'Temp/__Backupscenes/0.backup' after Build Finished, Result: Success.",
+  "temporarySceneAssetRemoved": true,
+  "helperSceneSaveOrOpenCalls": false
+}

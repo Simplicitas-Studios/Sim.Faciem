@@ -1,0 +1,19 @@
+{
+  "Sim.Faciem-assessment": {
+    "head": "3eb408fe39a0d437eef156595ae047ff3abaaeac",
+    "patchSha256": "6249ad033bf52fe13a33094b94b0430236c0ddba18ff546853e0b7e16fae9769",
+    "dirtyFiles": {
+      "InternalEditor/FaciemSetup.cs": "1d270a1a17de0a6755e0257079c215340e4fadf5b8a0bfd62d5eee22bdbb85f0",
+      "Runtime/Controls/HyperLinkLabel.cs": "bc66f017d07cf694fa31a5268bc429bd726d7a83087829d6fa93d4c888317b38",
+      "Validation~/CleanConsumer/Assets/packages.config": "620491e2e13c3bcc9a6e2e67da5faa7f09ba7946b1ecf8c88a527ddc555d731f",
+      "Validation~/CleanConsumer/Packages/manifest.json": "45b41e65461985e316d54b050985a1ae190e5de18094a34c0d1908e1b02c9468"
+    }
+  },
+  "Sim.Utility-u1-audit": {
+    "head": "d57864989f8b85332ebb8093da47602e68b39132",
+    "patchSha256": "71cd82361f0857839a0b8c924483e7ffecc515927a7f8f61baea67ee221a25e8",
+    "dirtyFiles": {
+      "Integrations~/FaciemEditor/Tests/Editor/GuidInspectorIntegrationTests.cs": "54439cafa07d2658d82b957818eeab8d1666a7c3261feadac9dc87bf8ec9be52"
+    }
+  }
+}

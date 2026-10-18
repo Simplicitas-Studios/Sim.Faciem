@@ -1,0 +1,172 @@
+{
+  "verdict": "NOT MERGE-READY: native player compilation gate PASSED, but strict scene-preservation harness guard FAILED; manual bound Inspector acceptance remains unproven. Stop for independent review.",
+  "faciemProductionAndRetainedEditorEvidenceCommit": "cfc7ec284e32c13690186a92601259db06b6c75c",
+  "utilitySourceAndTestCommit": "0c308f7df1aebf6ad31b6e1141da37f3665e48a1",
+  "productionCodeChangesThisTurn": false,
+  "route": "same exact already-open CleanConsumer; connected Pipeline; no Editor close/relaunch or batchmode",
+  "unity": "6000.6.5f1",
+  "pipeline": "0.8.0-exp.1",
+  "cli": "1.0.0-beta.13",
+  "provenance": "Explicit mutable local-package consumer; not a fresh immutable Git-pin campaign.",
+  "retainedDistinctEditorPasses": 24,
+  "retainedEditorRuns": [
+    {
+      "phase": "final-faciem",
+      "artifact": "pi-unity-tests-editmode-20261018T093643207Z-d8291219aa324a889801379c17653b27.json",
+      "sha256": "76419be0ebc4d66be4cc81c6a1f09f23ee8c47d574ace2974df82d721ff79ed4",
+      "selection": {
+        "testFilters": [
+          "Sim.Faciem.Tests.FaciemCompatibilityTests"
+        ],
+        "testCategories": []
+      },
+      "summary": {
+        "total": 7,
+        "passed": 7,
+        "failed": 0,
+        "inconclusive": 0
+      },
+      "durationSeconds": 11.526
+    },
+    {
+      "phase": "final-integration",
+      "artifact": "pi-unity-tests-editmode-20261018T093702691Z-77bc6e25e6b84b559e3eb146d0755186.json",
+      "sha256": "fccad8776e80bb50a5f815a12eb334f7daf130a856e6abd714c04aea646a655b",
+      "selection": {
+        "testFilters": [
+          "Sim.Utility.Faciem.Tests.GuidInspectorIntegrationTests"
+        ],
+        "testCategories": []
+      },
+      "summary": {
+        "total": 5,
+        "passed": 5,
+        "failed": 0,
+        "inconclusive": 0
+      },
+      "durationSeconds": 11.236
+    },
+    {
+      "phase": "final-core",
+      "artifact": "pi-unity-tests-editmode-20261018T093724136Z-74b9ecd20e844ae09446b224321bb7e1.json",
+      "sha256": "5d3715542af8e2b9b62827526d2be7401df99ee33d9f00ea4cf04dcbb50c7525",
+      "selection": {
+        "testFilters": [
+          "Sim.Utility.Tests.SerializableGuidTests"
+        ],
+        "testCategories": []
+      },
+      "summary": {
+        "total": 12,
+        "passed": 12,
+        "failed": 0,
+        "inconclusive": 0
+      },
+      "durationSeconds": 11.436
+    }
+  ],
+  "freshOptionalInspectorRun": {
+    "artifact": "Documentation~/evidence/u1b-final-player/optional-inspector-tests.json",
+    "summary": {
+      "total": 5,
+      "passed": 5,
+      "failed": 0,
+      "inconclusive": 0
+    },
+    "durationSeconds": 11.771,
+    "duplicatesFiveOfExisting24": true
+  },
+  "staticUtilityContracts": {
+    "passed": 8,
+    "failed": 0,
+    "fresh": true,
+    "command": "python Sim.Utility-u1-audit/Tools~/test_package_contract.py"
+  },
+  "formatter": {
+    "scope": "FaciemPlayerSmokeBuild.cs only",
+    "tool": "dotnet format whitespace --folder --include <absolute helper path> --verify-no-changes",
+    "exitCode": 0
+  },
+  "recompiles": [
+    {
+      "seconds": 11.7,
+      "compilerErrors": 0,
+      "phase": "preview-scene setup (not retained)"
+    },
+    {
+      "seconds": 11.8,
+      "compilerErrors": 0,
+      "phase": "saved-fixture setup (built)"
+    }
+  ],
+  "hyperlink": {
+    "decision": "Defer ping restoration (Recommended)",
+    "productionUnchanged": true,
+    "pingBehaviorStillDisabled": true
+  },
+  "player": {
+    "guid": "b43eae783d7544118812c358187add25",
+    "result": "Succeeded",
+    "platform": "StandaloneWindows64",
+    "outputPath": "C:/Users/DPast/Documents/Projects/ReviewWorktrees/Sim.Faciem-assessment/Validation~/CleanConsumer/Builds/FaciemConsumerSmoke.exe",
+    "totalErrors": 0,
+    "totalWarnings": 3,
+    "totalSize": 173700119,
+    "totalSeconds": 26.8808592,
+    "startedUtc": "2026-10-18T10:02:38.9137637Z",
+    "endedUtc": "2026-10-18T10:03:05.7946229Z"
+  },
+  "nativeWarnings": [
+    {
+      "step": "Preprocess Player",
+      "type": "Warning",
+      "content": "Pipeline: No RuntimePipelineConfig asset found (Project Settings > Pipeline > Runtime). Pipeline will be disabled in Player builds."
+    },
+    {
+      "step": "Compile scripts",
+      "type": "Warning",
+      "content": "C:\\Users\\DPast\\Documents\\Projects\\ReviewWorktrees\\Sim.Utility-u1-audit\\Runtime\\SerializableGuid.cs(21,21): warning CS0414: The field 'SerializableGuid._cashedHashCode' is assigned but its value is never used"
+    },
+    {
+      "step": "Compile scripts",
+      "type": "Warning",
+      "content": "C:\\Users\\DPast\\Documents\\Projects\\ReviewWorktrees\\Sim.Faciem-assessment\\Runtime\\Controls\\ListBinding\\SerializedListReference.cs(9,22): warning UAC1009: Field 'ItemSource' uses an unsupported type 'System.Collections.IList'. Refer to the Serialization rules analyzer reference. (https://docs.unity3d.com/6000.6/Documentation/Manual/script-serialization-analyzer.html#uac1009)"
+    }
+  ],
+  "playerInvocationCount": 1,
+  "deadlineSeconds": 600,
+  "executableLaunched": false,
+  "optionalUtilityEditorAssemblyInPlayer": false,
+  "playerAssemblyChecks": "Four expected runtime/shared assemblies: no UNITY_EDITOR define or UnityEditor references; optional Utility integration/core Editor DLLs absent from output.",
+  "additionalObservation": "Sim.Faciem.Controls.Editor.dll is in the player output; its existing asmdef has includePlatforms: []. No blanket all-Editor-suffixed-assemblies-excluded claim; no production metadata fix attempted.",
+  "scenePreservation": "Strict aggregate guard CHANGED; native log shows automatic Temp/__Backupscenes/0.backup restoration. Before/after high-level shape identical; object identity/content preservation not established.",
+  "nativeLog": {
+    "path": "C:\\Users\\DPast\\Documents\\Projects\\ReviewWorktrees\\Sim.Faciem-assessment\\Validation~\\CleanConsumer\\Logs\\u1b-final-exact-native-build.log",
+    "bytes": 342873,
+    "sha256": "f8bd4139cff633a98872f831877708adab338ba7bb6776f6a850e37c4fd56988"
+  },
+  "nativeReportBinary": {
+    "artifact": "Documentation~/evidence/u1b-final-player/LastBuild.buildreport",
+    "bytes": 134032,
+    "sha256": "5ea0c12f34a8421d17ca1f36a6d91b4b44a3bdac8e4f1292679f24fa6200dffa"
+  },
+  "manualInspectorGaps": [
+    "bound Inspector editing/apply",
+    "regeneration click and serialized GUID propagation",
+    "readonly behavior",
+    "actual stylesheet/visual behavior",
+    "mount/unmount/disposal lifecycle",
+    "IMGUI coexistence"
+  ],
+  "notClaimed": [
+    "end-to-end harness pass",
+    "user scene object/content preservation",
+    "full Inspector acceptance",
+    "player launch/runtime behavior",
+    "IL2CPP/device acceptance",
+    "package upgrades",
+    "root-independent API",
+    "Midnight Wager change",
+    "merge/deployment"
+  ]
+}

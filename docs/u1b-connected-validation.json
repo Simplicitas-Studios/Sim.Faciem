@@ -1,0 +1,206 @@
+{
+  "verdict": "NOT MERGE-READY: player validation blocked before BuildPipeline; user-supplied hyperlink Editor ping suppression is an outstanding behavior limitation",
+  "faciemStart": "3eb408fe39a0d437eef156595ae047ff3abaaeac",
+  "utilityStart": "d57864989f8b85332ebb8093da47602e68b39132",
+  "utilityCompanionTestRepairCommit": "0c308f7df1aebf6ad31b6e1141da37f3665e48a1",
+  "consumer": "C:\\Users\\DPast\\Documents\\Projects\\ReviewWorktrees\\Sim.Faciem-assessment\\Validation~\\CleanConsumer",
+  "unity": "6000.6.5f1",
+  "pipeline": "0.8.0-exp.1",
+  "unityCli": "1.0.0-beta.13",
+  "route": "connected, same already-open Editor",
+  "process": 46808,
+  "port": 7801,
+  "playMode": "stopped",
+  "provenance": "Mutable local packages explicitly requested by user; source hashes and pre-resume user edits retained. This is not a clean immutable Git-pin consumer campaign.",
+  "changes": [
+    "declare standalone Utility + R3.Unity + UniTask + UIElements dependencies",
+    "remove only two stale Bebop precompiled metadata entries",
+    "guard five unguarded runtime/shared Editor imports",
+    "qualify two runtime converter initialization attributes",
+    "navigation uses existing serialized-name GetReferencedType; DI/cached ownership preserved",
+    "missing Addressables settings/default group guards; no project settings auto-creation",
+    "restore all original Utility integration cases/assertions with explicit R3.dll test reference",
+    "seven focused Faciem tests and bounded connected smoke build helper"
+  ],
+  "userEditsPreserved": [
+    "NuGet closure/config and Rider input",
+    "local editable package references",
+    "FaciemSetup missing-settings guard",
+    "HyperLinkLabel asset-ping suppression (known behavior loss)",
+    "unused test import removal"
+  ],
+  "compile": {
+    "baseline": "up to date, no new compile triggered",
+    "afterNarrowFixes": {
+      "seconds": 12.2,
+      "compilerErrors": 0
+    },
+    "afterSmokeHelperNamespaceRepair": {
+      "seconds": 10.8,
+      "compilerErrors": 0
+    }
+  },
+  "runs": [
+    {
+      "phase": "baseline-integration",
+      "artifact": "pi-unity-tests-editmode-20261018T092552909Z-4639b429f9484909af4e0712131e053c.json",
+      "sha256": "6da20a8baf47b09df36f7ef16371ccb8b570fecc4c6a11cddc16d299e8b92bf9",
+      "selection": {
+        "testFilters": [
+          "Sim.Utility.Faciem.Tests.GuidInspectorIntegrationTests"
+        ],
+        "testCategories": []
+      },
+      "summary": {
+        "total": 5,
+        "passed": 5,
+        "failed": 0,
+        "inconclusive": 0
+      },
+      "durationSeconds": 11.485
+    },
+    {
+      "phase": "baseline-core",
+      "artifact": "pi-unity-tests-editmode-20261018T092752393Z-d45ce6fcd77543a1a91f4eefeb9a5382.json",
+      "sha256": "47a8268d17dc4c39dfa52cb95dc237f2f16b6532c86c829e301e714bd5451adf",
+      "selection": {
+        "testFilters": [
+          "Sim.Utility.Tests.SerializableGuidTests"
+        ],
+        "testCategories": []
+      },
+      "summary": {
+        "total": 12,
+        "passed": 12,
+        "failed": 0,
+        "inconclusive": 0
+      },
+      "durationSeconds": 11.476
+    },
+    {
+      "phase": "first-faciem",
+      "artifact": "pi-unity-tests-editmode-20261018T093233148Z-ca66ceaa9cc6400bbce9b4c317058b34.json",
+      "sha256": "cdca9bebbdaca2e0a22ba94ebd6bec44b18deec383f44b51ddae5ba2abd9a581",
+      "selection": {
+        "testFilters": [
+          "Sim.Faciem.Tests.FaciemCompatibilityTests"
+        ],
+        "testCategories": []
+      },
+      "summary": {
+        "total": 7,
+        "passed": 7,
+        "failed": 0,
+        "inconclusive": 0
+      },
+      "durationSeconds": 11.483
+    },
+    {
+      "phase": "final-faciem",
+      "artifact": "pi-unity-tests-editmode-20261018T093643207Z-d8291219aa324a889801379c17653b27.json",
+      "sha256": "76419be0ebc4d66be4cc81c6a1f09f23ee8c47d574ace2974df82d721ff79ed4",
+      "selection": {
+        "testFilters": [
+          "Sim.Faciem.Tests.FaciemCompatibilityTests"
+        ],
+        "testCategories": []
+      },
+      "summary": {
+        "total": 7,
+        "passed": 7,
+        "failed": 0,
+        "inconclusive": 0
+      },
+      "durationSeconds": 11.526
+    },
+    {
+      "phase": "final-integration",
+      "artifact": "pi-unity-tests-editmode-20261018T093702691Z-77bc6e25e6b84b559e3eb146d0755186.json",
+      "sha256": "fccad8776e80bb50a5f815a12eb334f7daf130a856e6abd714c04aea646a655b",
+      "selection": {
+        "testFilters": [
+          "Sim.Utility.Faciem.Tests.GuidInspectorIntegrationTests"
+        ],
+        "testCategories": []
+      },
+      "summary": {
+        "total": 5,
+        "passed": 5,
+        "failed": 0,
+        "inconclusive": 0
+      },
+      "durationSeconds": 11.236
+    },
+    {
+      "phase": "final-core",
+      "artifact": "pi-unity-tests-editmode-20261018T093724136Z-74b9ecd20e844ae09446b224321bb7e1.json",
+      "sha256": "5d3715542af8e2b9b62827526d2be7401df99ee33d9f00ea4cf04dcbb50c7525",
+      "selection": {
+        "testFilters": [
+          "Sim.Utility.Tests.SerializableGuidTests"
+        ],
+        "testCategories": []
+      },
+      "summary": {
+        "total": 12,
+        "passed": 12,
+        "failed": 0,
+        "inconclusive": 0
+      },
+      "durationSeconds": 11.436
+    }
+  ],
+  "finalDistinctTests": 24,
+  "totalPassingObservationsIncludingOverlap": 48,
+  "finalFailures": 0,
+  "finalSkipped": 0,
+  "finalInconclusive": 0,
+  "formatter": {
+    "command": "dotnet format whitespace --folder <Faciem> --include <14 absolute C# paths> --verify-no-changes",
+    "exitCode": 0
+  },
+  "staticUtilityContractTests": {
+    "passed": 8,
+    "failed": 0
+  },
+  "actualUpm": {
+    "packages": 27,
+    "addressables": "2.8.0",
+    "pipeline": "0.8.0-exp.1",
+    "testFramework": "1.8.0",
+    "nunit": "2.1.0"
+  },
+  "actualNuGetDirectoryVersions": [
+    "Microsoft.Bcl.TimeProvider.8.0.0",
+    "R3.1.3.1",
+    "System.ComponentModel.Annotations.5.0.0",
+    "System.Threading.Channels.8.0.0"
+  ],
+  "nugetCaveat": "Unsafe is not an installed NuGet package here. Editor compilation passed; this does not establish complete player dependency closure.",
+  "player": {
+    "attemptedPreparation": true,
+    "buildPipelineInvoked": false,
+    "compileOrBuildPass": false,
+    "reason": "untitled unsaved current scene prevents additive scene creation",
+    "nativePlayerExecutableProducedOrLaunched": false,
+    "noRetry": true,
+    "noFallback": true,
+    "scenePreserved": true
+  },
+  "acceptanceLimits": [
+    "No actual player build result or IL2CPP/platform campaign",
+    "five Utility tests do not prove complete bound Inspector editing/regeneration/readonly/lifecycle acceptance",
+    "Hyperlink Editor asset ping remains disabled by supplied user edit; no full behavior-preservation claim",
+    "no root-independent API or native Display PanelRenderer work",
+    "baseline licensing/redistribution notices and GUID unknown-name records remain separate; no terms invented"
+  ],
+  "preservation": {
+    "noMidnightWagerChangesOrUnityOperations": true,
+    "noEditorCloseOrSecondEditor": true,
+    "noUserSceneSaveOrReplacement": true,
+    "noRuntimeModelsMovedOrDuplicated": true,
+    "noExistingAssetGuidChanges": true,
+    "noMergeDeploymentOrAutoMerge": true
+  },
+  "nextGate": "User must explicitly resolve/save their untitled scene or authorize a deliberate alternate isolation approach before another player attempt. Do not retry automatically. Review hyperlink behavior decision separately."
+}

@@ -98,14 +98,14 @@ namespace Sim.Faciem.Controls
 
 #if UNITY_EDITOR
 
-            if (InstanceIds.Count > index)
-            {
-                var asset = EditorUtility.InstanceIDToObject(InstanceIds[index]);
-                if (asset != null)
-                {
-                    EditorGUIUtility.PingObject(asset);
-                }
-            }
+            // if (InstanceIds.Count > index)
+            // {
+            //     var asset = EditorUtility.EntityIdToObject(InstanceIds[index]);
+            //     if (asset != null)
+            //     {
+            //         EditorGUIUtility.PingObject(asset);
+            //     }
+            // }
 
 #endif
         }

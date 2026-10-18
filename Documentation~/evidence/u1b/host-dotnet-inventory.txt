@@ -1,0 +1,4 @@
+Microsoft.AspNetCore.App 10.0.6 [C:\Program Files\dotnet\shared\Microsoft.AspNetCore.App]
+Microsoft.NETCore.App 10.0.6 [C:\Program Files\dotnet\shared\Microsoft.NETCore.App]
+Microsoft.WindowsDesktop.App 10.0.6 [C:\Program Files\dotnet\shared\Microsoft.WindowsDesktop.App]
+10.0.202 [C:\Program Files\dotnet\sdk]

@@ -2,7 +2,9 @@
 using Sim.Faciem.CommandBinding;
 using Sim.Faciem.Commands;
 using Sim.Faciem.ListBinding;
+#if UNITY_EDITOR
 using UnityEditor;
+#endif
 using UnityEngine.UIElements;
 
 namespace Sim.Faciem
@@ -12,7 +14,7 @@ namespace Sim.Faciem
 #if UNITY_EDITOR
         [InitializeOnLoadMethod]
 #else
-    [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.SubsystemRegistration)]
+        [UnityEngine.RuntimeInitializeOnLoadMethod(UnityEngine.RuntimeInitializeLoadType.SubsystemRegistration)]
 #endif
         public static void RegisterConverters()
         {
@@ -23,7 +25,7 @@ namespace Sim.Faciem
 
             // List
             ConverterGroups.RegisterGlobalConverter((ref IList list) => new SerializedListReference(list));
-            
+
             var group = new ConverterGroup("Inverters");
 
             group.AddConverter((ref bool value) => !value);

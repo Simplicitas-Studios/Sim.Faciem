@@ -1,0 +1,26 @@
+{
+  "route": "connected Pipeline eval",
+  "code": "return FaciemPlayerSmokeBuild.Build();",
+  "timeoutSeconds": 600,
+  "handlerTimeoutMilliseconds": 600000,
+  "outcome": "rejected / COMMAND_FAILED / Runtime Error",
+  "message": "Cannot create a new scene additively with an untitled scene unsaved.",
+  "stage": "EditorSceneManager.NewScene before BuildPipeline.BuildPlayer",
+  "playerCompilationStarted": false,
+  "buildReportCreated": false,
+  "retry": false,
+  "fallback": false,
+  "saveOrReplaceUserScene": false,
+  "beforeAndAfterOpenScenes": [
+    {
+      "name": "",
+      "path": "",
+      "isLoaded": true,
+      "isDirty": false,
+      "isActive": true,
+      "rootCount": 2
+    }
+  ],
+  "sceneRestoration": "preserved",
+  "temporarySmokeSceneRemains": false
+}

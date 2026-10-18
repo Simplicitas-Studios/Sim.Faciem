@@ -1,0 +1,78 @@
+{
+  "Documentation~/evidence/u1b-connected/.gitattributes": {
+    "sha256": "60ee2aa0a7f4d8cb65bd0e7c22d7dccb7acb31276352bae9d6b64b1587a32985",
+    "bytes": 99
+  },
+  "Documentation~/evidence/u1b-connected/ancillary-diagnostics.json": {
+    "sha256": "b4094aa52904dc1b4768883c45c2ff935ee1225594132a1d3216e81d78b6a3af",
+    "bytes": 1146
+  },
+  "Documentation~/evidence/u1b-connected/build-attempt.json": {
+    "sha256": "01fee563e4b4f5399c9caa9cc1445da95606b86066815c1b3d3548a075cb7878",
+    "bytes": 770
+  },
+  "Documentation~/evidence/u1b-connected/format-verify.txt": {
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  "Documentation~/evidence/u1b-connected/manifest.json": {
+    "sha256": "209057f193f4162207ce9171848c50887f39f56b34ff3c7ebf52993af2cd014b",
+    "bytes": 984
+  },
+  "Documentation~/evidence/u1b-connected/NuGet.config": {
+    "sha256": "84d9201abc253dca1ecf31860a7634dce393f8c881c3ed7b360fe2af29a9feba",
+    "bytes": 663
+  },
+  "Documentation~/evidence/u1b-connected/packages-lock.json": {
+    "sha256": "0995c3159362875c4fd702ae78076813df808e59aa709d90cfd5782b0c1398b6",
+    "bytes": 6509
+  },
+  "Documentation~/evidence/u1b-connected/packages.config": {
+    "sha256": "620491e2e13c3bcc9a6e2e67da5faa7f09ba7946b1ecf8c88a527ddc555d731f",
+    "bytes": 325
+  },
+  "Documentation~/evidence/u1b-connected/pi-unity-tests-editmode-20261018T092552909Z-4639b429f9484909af4e0712131e053c.json": {
+    "sha256": "6da20a8baf47b09df36f7ef16371ccb8b570fecc4c6a11cddc16d299e8b92bf9",
+    "bytes": 1100
+  },
+  "Documentation~/evidence/u1b-connected/pi-unity-tests-editmode-20261018T092752393Z-d45ce6fcd77543a1a91f4eefeb9a5382.json": {
+    "sha256": "47a8268d17dc4c39dfa52cb95dc237f2f16b6532c86c829e301e714bd5451adf",
+    "bytes": 1960
+  },
+  "Documentation~/evidence/u1b-connected/pi-unity-tests-editmode-20261018T093233148Z-ca66ceaa9cc6400bbce9b4c317058b34.json": {
+    "sha256": "cdca9bebbdaca2e0a22ba94ebd6bec44b18deec383f44b51ddae5ba2abd9a581",
+    "bytes": 1343
+  },
+  "Documentation~/evidence/u1b-connected/pi-unity-tests-editmode-20261018T093643207Z-d8291219aa324a889801379c17653b27.json": {
+    "sha256": "76419be0ebc4d66be4cc81c6a1f09f23ee8c47d574ace2974df82d721ff79ed4",
+    "bytes": 1345
+  },
+  "Documentation~/evidence/u1b-connected/pi-unity-tests-editmode-20261018T093702691Z-77bc6e25e6b84b559e3eb146d0755186.json": {
+    "sha256": "fccad8776e80bb50a5f815a12eb334f7daf130a856e6abd714c04aea646a655b",
+    "bytes": 1098
+  },
+  "Documentation~/evidence/u1b-connected/pi-unity-tests-editmode-20261018T093724136Z-74b9ecd20e844ae09446b224321bb7e1.json": {
+    "sha256": "5d3715542af8e2b9b62827526d2be7401df99ee33d9f00ea4cf04dcbb50c7525",
+    "bytes": 1959
+  },
+  "Documentation~/evidence/u1b-connected/pre-resume-user-state.json": {
+    "sha256": "27f25f5041e5b82c44bb02ca511a698b682d2c1fe5871593605375d7479bcf6e",
+    "bytes": 1046
+  },
+  "Documentation~/evidence/u1b-connected/ProjectVersion.txt": {
+    "sha256": "b3402f9d37aab37e8ad7676fff8d2f3b1333d857d2fade3fae888482e59d42ad",
+    "bytes": 83
+  },
+  "Documentation~/evidence/u1b-connected/scene-restoration.txt": {
+    "sha256": "7ee0e7f63b9b65e302add82986c18196ecb8da0121575e4733219572eeac2712",
+    "bytes": 10
+  },
+  "Documentation~/evidence/u1b-connected/source-sha256.json": {
+    "sha256": "cb96277dc77b789401ec08a92479ffecc35393d42c18e4f40ad8ec498dd6a2d0",
+    "bytes": 25064
+  },
+  "Documentation~/evidence/u1b-connected/utility-static-contracts.txt": {
+    "sha256": "e07af4cc996bbcc9c6a61fc044436d0f0982413e202f7d0f1139239c5ac85a1c",
+    "bytes": 1173
+  }
+}

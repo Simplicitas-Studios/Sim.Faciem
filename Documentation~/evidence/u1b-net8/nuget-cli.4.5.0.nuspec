@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>NuGetForUnity.Cli</id>
+    <version>4.5.0</version>
+    <title>NuGetForUnity command line tool</title>
+    <authors>NuGetForUnity Contributors</authors>
+    <license type="expression">MIT</license>
+    <licenseUrl>https://licenses.nuget.org/MIT</licenseUrl>
+    <projectUrl>https://github.com/GlitchEnzo/NuGetForUnity</projectUrl>
+    <description>A .NET Core Global Tool (Command-Line-Tool) that allows restoring NuGet packages managed by NuGetForUnity
+before starting Unity e.g. before building a Unity project on a build server.
+The tool only restores the NuGet packages, they are managed by the NuGetForUnity Unity Editor plug-in,
+so you still need to install the NuGetForUnity tool in Unity to install new packages and to ensure that
+e.g. the import settings of the DLL's are changed to comply with Unity.</description>
+    <releaseNotes>https://github.com/GlitchEnzo/NuGetForUnity/releases</releaseNotes>
+    <copyright>Copyright (c) 2017-2025 Patrick McCarthy and contributors</copyright>
+    <tags>Unity Package Manager Tool</tags>
+    <packageTypes>
+      <packageType name="DotnetTool" />
+    </packageTypes>
+    <repository type="git" url="https://github.com/GlitchEnzo/NuGetForUnity" commit="a7c6b49a0141a5bff9b1983e38137522ef61977d" />
+  </metadata>
+</package>

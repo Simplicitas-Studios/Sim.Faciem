@@ -4,3 +4,6 @@ using System.Runtime.CompilerServices;
 [assembly: AssemblyTitle("Sim.Faciem")]
 [assembly: InternalsVisibleTo("Sim.Faciem.Editor")]
 [assembly: InternalsVisibleTo("Sim.Faciem.InternalEditor")]
+#if UNITY_EDITOR
+[assembly: InternalsVisibleTo("Sim.Faciem.Editor.Tests")]
+#endif

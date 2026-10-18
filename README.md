@@ -2,6 +2,10 @@
 
 > **A full MVVM framework for Unity's UI Toolkit — runtime and editor**
 
+**U1b final player gate: native build PASSED, NOT MERGE-READY:** [final results](docs/u1b-final-player-gate.md) record one Windows x64 Mono build, **26.88s / zero errors / three warnings**, plus a failed strict scene-preservation guard after Unity's native backup/restore. The current scene remains clean/untitled/two roots, but full object/content preservation is not proved; the rejected harness is not a pass. Production is unchanged from cfc7ec2: retain [24/24 Editor cases](docs/u1b-connected-validation.md), with a fresh **5/5** repeat of the optional Inspector fixture. Hyperlink asset-ping restoration is explicitly deferred by user decision, without unsafe ID conversion or schema changes. Manual bound Inspector acceptance remains unproven. Earlier player preparation, [restore](docs/u1b-net8-restore-validation.md) and [host-tooling](docs/u1b-clean-consumer-blocker.md) failures are historical.
+
+**Historical U1 compatibility audit:** [dependency direction, external Utility player prerequisite, and exact evidence](docs/u1-dependency-player-blocker.md). No compatibility/source/package fixes or player validation are claimed. `Sim.Dispositio.Shared` is supplied by Utility; do not add a speculative dependency. Independent review/scope approval is required before implementation.
+
 `Sim.Faciem` is a Unity 6 framework that brings a structured **MVVM (Model-View-ViewModel)** pattern to UI Toolkit. It provides a complete stack — Region-based navigation, a ViewModel lifecycle, reactive commands, two-way data binding, and editor-window support — all while staying as close to Unity's own built-in systems as possible.
 
 ---

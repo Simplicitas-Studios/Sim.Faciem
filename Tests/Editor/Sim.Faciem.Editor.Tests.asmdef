@@ -1,0 +1,21 @@
+{
+    "name": "Sim.Faciem.Editor.Tests",
+    "references": [
+        "Sim.Faciem",
+        "Sim.Faciem.InternalEditor",
+        "Sim.Utility",
+        "UniTask",
+        "Unity.Addressables.Editor"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "autoReferenced": false,
+    "overrideReferences": true,
+    "precompiledReferences": [
+        "R3.dll"
+    ],
+    "optionalUnityReferences": [
+        "TestAssemblies"
+    ]
+}
