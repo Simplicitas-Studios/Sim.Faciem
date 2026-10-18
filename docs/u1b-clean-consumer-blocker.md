@@ -1,6 +1,8 @@
 # U1b — clean-consumer preparation blocked by host tooling
 
-## Verdict: blocked; no compilation or compatibility acceptance
+> **Historical attempt at 3913754.** The explicitly authorized [.NET 8 continuation](u1b-net8-restore-validation.md) found Unity's existing compatible runtime, restored the R3 root package and attempted baseline compilation. The host-launch blocker is resolved; a missing NuGet transitive closure now blocks compilation. The statements below describe the earlier attempt, not the fresh result.
+
+## Historical verdict: blocked; no compilation or compatibility acceptance
 
 Faciem PR #1 reviewed at `7c7c9fc8a1a41477808b8569ee29e813e339963d`;
 runtime/source baseline remains `52853a83b5db11cd85c63abe65f49e96db893599`.

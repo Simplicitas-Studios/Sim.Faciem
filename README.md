@@ -2,7 +2,7 @@
 
 > **A full MVVM framework for Unity's UI Toolkit — runtime and editor**
 
-**U1b is blocked before Unity validation:** [verified dependency pins and external host-tooling failure](docs/u1b-clean-consumer-blocker.md). NuGetForUnity.Cli 4.5.0's selected entrypoint requires .NET 9, absent on this host; R3 was not restored. No production fixes, compilation, tests or player acceptance are claimed.
+**U1b remains BLOCKED / NOT MERGE-READY:** [fresh .NET 8 restore and failed baseline Unity compilation](docs/u1b-net8-restore-validation.md). The approved .NET 8 CLI route works without installing a runtime; R3 1.3.1 itself restored, but its transitive closure is incomplete. R3.Unity compilation failed with missing TimeProvider/ITimer. Addressables actually resolved to 2.8.0; UIElements is explicitly included. No Faciem production fixes, focused tests or player build followed the failed compile gate. The [earlier host-tooling report](docs/u1b-clean-consumer-blocker.md) is historical.
 
 **Historical U1 compatibility audit:** [dependency direction, external Utility player prerequisite, and exact evidence](docs/u1-dependency-player-blocker.md). No compatibility/source/package fixes or player validation are claimed. `Sim.Dispositio.Shared` is supplied by Utility; do not add a speculative dependency. Independent review/scope approval is required before implementation.
 

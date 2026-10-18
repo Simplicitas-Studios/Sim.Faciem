@@ -1,0 +1,62 @@
+{
+  "Documentation~/evidence/u1b-net8/.gitattributes": {
+    "sha256": "60ee2aa0a7f4d8cb65bd0e7c22d7dccb7acb31276352bae9d6b64b1587a32985",
+    "bytes": 99
+  },
+  "Documentation~/evidence/u1b-net8/cli-net8.runtimeconfig.json": {
+    "sha256": "97c9700542b659150b230c3578b29530fd76ab01ec66a92cd16945e0245713df",
+    "bytes": 328
+  },
+  "Documentation~/evidence/u1b-net8/compiler-diagnostics.txt": {
+    "sha256": "32fd72890c57bf89b50b8767905a2bc042951084ba1d518c52a5c49dc626a720",
+    "bytes": 6036
+  },
+  "Documentation~/evidence/u1b-net8/consumer-manifest.json": {
+    "sha256": "4431450ba158e5007db16f926aab55d3dcfe8279f949b07d6436df63f4cd9671",
+    "bytes": 1028
+  },
+  "Documentation~/evidence/u1b-net8/consumer-NuGet.config": {
+    "sha256": "84d9201abc253dca1ecf31860a7634dce393f8c881c3ed7b360fe2af29a9feba",
+    "bytes": 663
+  },
+  "Documentation~/evidence/u1b-net8/consumer-packages-lock.json": {
+    "sha256": "3e764e20d912fc1ab346fb14031213e143d4d0b4496510a91dae9e62fda67c64",
+    "bytes": 5289
+  },
+  "Documentation~/evidence/u1b-net8/consumer-packages.config": {
+    "sha256": "1632a53cdc335fee0d9197b1a0762be94e2ee02b48c62203de79e3071df9d372",
+    "bytes": 100
+  },
+  "Documentation~/evidence/u1b-net8/consumer-project-version.txt": {
+    "sha256": "b3402f9d37aab37e8ad7676fff8d2f3b1333d857d2fade3fae888482e59d42ad",
+    "bytes": 83
+  },
+  "Documentation~/evidence/u1b-net8/installed-R3.nuspec": {
+    "sha256": "84d26e6ca082afe2e419cf40b287f047a6daab33d6130e00cd584cd3079b6aaf",
+    "bytes": 2045
+  },
+  "Documentation~/evidence/u1b-net8/nuget-cli.4.5.0.nuspec": {
+    "sha256": "e57f346dd559e2d07251814c6e6e39645e226a34c1d713fbd31ff9af31a49ab5",
+    "bytes": 1412
+  },
+  "Documentation~/evidence/u1b-net8/system-dotnet-inventory-after.txt": {
+    "sha256": "7220e7ff8023b5e64814e1985ca701b83c918fb88de2b19b4c14a9217d046be3",
+    "bytes": 315
+  },
+  "Documentation~/evidence/u1b-net8/u1b-net8-compile-artifact-inspection.txt": {
+    "sha256": "7846705ca7268209b744e087fa1f4075596fda1d20954c06d29f37d2db48df18",
+    "bytes": 4067
+  },
+  "Documentation~/evidence/u1b-net8/u1b-net8-restore.json": {
+    "sha256": "3a5cdc29cd90a4afc6267a19a92ceeffb0798f2e5e2b81f8dce4fe3abcd4ee1e",
+    "bytes": 2384
+  },
+  "Documentation~/evidence/u1b-net8/u1b-net8-restore.stderr.log": {
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  "Documentation~/evidence/u1b-net8/u1b-net8-restore.stdout.log": {
+    "sha256": "e71599ff41f63969af80d92c38761915c76caf6dfebc6b93ab96c152cfa6b5f6",
+    "bytes": 222
+  }
+}

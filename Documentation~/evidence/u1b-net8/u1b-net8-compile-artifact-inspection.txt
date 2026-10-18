@@ -1,0 +1,25 @@
+Unity artifacts inspected for C:\Users\DPast\Documents\Projects\ReviewWorktrees\Sim.Faciem-assessment\Validation~\CleanConsumer; Unity CLI selects the project's declared Editor version when launching.
+Requested test results: (none found)
+Requested log file: C:/Users/DPast/Documents/Projects/ReviewWorktrees/Sim.Faciem-assessment/Validation~/CleanConsumer/Logs/u1b-net8-editor-compile.log
+Requested normalized result: (none found)
+Inspection: passed. Test outcome: not established (log only).
+Relevant log output:
+[showing last 18 of 1402 lines]
+Library\PackageCache\com.cysharp.r3@c98d1f01b3ca\Runtime\UnityTimeProvider.cs(32,32): error CS0246: The type or namespace name 'TimeProvider' could not be found (are you missing a using directive or an assembly reference?)
+Library\PackageCache\com.cysharp.r3@c98d1f01b3ca\Runtime\UnityTimeProvider.cs(33,32): error CS0246: The type or namespace name 'TimeProvider' could not be found (are you missing a using directive or an assembly reference?)
+Library\PackageCache\com.cysharp.r3@c98d1f01b3ca\Runtime\UnityTimeProvider.cs(34,32): error CS0246: The type or namespace name 'TimeProvider' could not be found (are you missing a using directive or an assembly reference?)
+Library\PackageCache\com.cysharp.r3@c98d1f01b3ca\Runtime\UnityTimeProvider.cs(35,32): error CS0246: The type or namespace name 'TimeProvider' could not be found (are you missing a using directive or an assembly reference?)
+Library\PackageCache\com.cysharp.r3@c98d1f01b3ca\Runtime\UnityTimeProvider.cs(36,32): error CS0246: The type or namespace name 'TimeProvider' could not be found (are you missing a using directive or an assembly reference?)
+Library\PackageCache\com.cysharp.r3@c98d1f01b3ca\Runtime\UnityTimeProvider.cs(37,32): error CS0246: The type or namespace name 'TimeProvider' could not be found (are you missing a using directive or an assembly reference?)
+Library\PackageCache\com.cysharp.r3@c98d1f01b3ca\Runtime\UnityTimeProvider.cs(39,32): error CS0246: The type or namespace name 'TimeProvider' could not be found (are you missing a using directive or an assembly reference?)
+Library\PackageCache\com.cysharp.r3@c98d1f01b3ca\Runtime\UnityTimeProvider.cs(40,32): error CS0246: The type or namespace name 'TimeProvider' could not be found (are you missing a using directive or an assembly reference?)
+Library\PackageCache\com.cysharp.r3@c98d1f01b3ca\Runtime\UnityTimeProvider.cs(41,32): error CS0246: The type or namespace name 'TimeProvider' could not be found (are you missing a using directive or an assembly reference?)
+Library\PackageCache\com.cysharp.r3@c98d1f01b3ca\Runtime\UnityTimeProvider.cs(42,32): error CS0246: The type or namespace name 'TimeProvider' could not be found (are you missing a using directive or an assembly reference?)
+Library\PackageCache\com.cysharp.r3@c98d1f01b3ca\Runtime\UnityTimeProvider.cs(43,32): error CS0246: The type or namespace name 'TimeProvider' could not be found (are you missing a using directive or an assembly reference?)
+Library\PackageCache\com.cysharp.r3@c98d1f01b3ca\Runtime\UnityTimeProvider.cs(44,32): error CS0246: The type or namespace name 'TimeProvider' could not be found (are you missing a using directive or an assembly reference?)
+Library\PackageCache\com.cysharp.r3@c98d1f01b3ca\Runtime\UnityTimeProvider.cs(45,32): error CS0246: The type or namespace name 'TimeProvider' could not be found (are you missing a using directive or an assembly reference?)
+Library\PackageCache\com.cysharp.r3@c98d1f01b3ca\Runtime\UnityTimeProvider.cs(46,32): error CS0246: The type or namespace name 'TimeProvider' could not be found (are you missing a using directive or an assembly reference?)
+Library\PackageCache\com.cysharp.r3@c98d1f01b3ca\Runtime\UnityTimeProvider.cs(88,25): error CS0246: The type or namespace name 'ITimer' could not be found (are you missing a using directive or an assembly reference?)
+AssetDatabase: script compilation time: 8.484476s
+Scripts have compiler errors.
+[ExitDontLaunchBugReporter] Exiting without the bug reporter. Application will exit with return code 1

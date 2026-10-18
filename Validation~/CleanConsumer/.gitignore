@@ -9,7 +9,7 @@
 !/ProjectSettings/ProjectVersion.txt
 /Assets/Packages/
 /Assets/Packages.meta
-/Assets/NuGet.config
+# NuGet.config is a reproducible consumer input; generated metadata stays ignored.
 /Assets/NuGet.config.meta
 /Assets/*.meta
 /Assets/Editor.meta
