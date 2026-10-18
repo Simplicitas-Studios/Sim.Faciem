@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<test-run id="2" testcasecount="32" result="Passed" total="32" passed="32" failed="0" inconclusive="0" skipped="0" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2026-10-18 14:47:06Z" end-time="2026-10-18 14:47:06Z" duration="0.2400825">
+  <test-suite type="TestSuite" id="1000" name="d032-faciem-disposal-consumer" fullname="d032-faciem-disposal-consumer" runstate="Runnable" testcasecount="33" result="Passed" start-time="2026-10-18 14:47:06Z" end-time="2026-10-18 14:47:06Z" duration="0.240083" total="32" passed="32" failed="0" inconclusive="0" skipped="0" asserts="0">
+    <properties>
+      <property name="platform" value="EditMode" />
+    </properties>
+    <test-suite type="Assembly" id="1021" name="Sim.Faciem.Editor.Tests.dll" fullname="C:/Users/DPast/Documents/Projects/ReviewWorktrees/d032-faciem-disposal-consumer/Library/ScriptAssemblies/Sim.Faciem.Editor.Tests.dll" runstate="Runnable" testcasecount="15" result="Passed" start-time="2026-10-18 14:47:06Z" end-time="2026-10-18 14:47:06Z" duration="0.108983" total="15" passed="15" failed="0" inconclusive="0" skipped="0" asserts="0">
+      <properties>
+        <property name="_PID" value="9600" />
+        <property name="_APPDOMAIN" value="Unity Child Domain" />
+        <property name="platform" value="EditMode" />
+        <property name="EditorOnly" value="True" />
+      </properties>
+      <test-suite type="TestSuite" id="1022" name="Sim" fullname="Sim" runstate="Runnable" testcasecount="15" result="Passed" start-time="2026-10-18 14:47:06Z" end-time="2026-10-18 14:47:06Z" duration="0.108352" total="15" passed="15" failed="0" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <test-suite type="TestSuite" id="1023" name="Faciem" fullname="Sim.Faciem" runstate="Runnable" testcasecount="15" result="Passed" start-time="2026-10-18 14:47:06Z" end-time="2026-10-18 14:47:06Z" duration="0.107998" total="15" passed="15" failed="0" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <test-suite type="TestSuite" id="1024" name="Tests" fullname="Sim.Faciem.Tests" runstate="Runnable" testcasecount="15" result="Passed" start-time="2026-10-18 14:47:06Z" end-time="2026-10-18 14:47:06Z" duration="0.107627" total="15" passed="15" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-suite type="TestFixture" id="1001" name="FaciemCompatibilityTests" fullname="Sim.Faciem.Tests.FaciemCompatibilityTests" classname="Sim.Faciem.Tests.FaciemCompatibilityTests" runstate="Runnable" testcasecount="7" result="Passed" start-time="2026-10-18 14:47:06Z" end-time="2026-10-18 14:47:06Z" duration="0.100541" total="7" passed="7" failed="0" inconclusive="0" skipped="0" asserts="0">
+              <properties />
+              <test-case id="1009" name="MissingSettingsHelpersDoNotCreateConfiguration" fullname="Sim.Faciem.Tests.FaciemCompatibilityTests.MissingSettingsHelpersDoNotCreateConfiguration" methodname="MissingSettingsHelpersDoNotCreateConfiguration" classname="Sim.Faciem.Tests.FaciemCompatibilityTests" runstate="Runnable" seed="1341283164" result="Passed" start-time="2026-10-18 14:47:06Z" end-time="2026-10-18 14:47:06Z" duration="0.007446" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1010" name="MissingSettingsPersistentAssetPathsAreSafe" fullname="Sim.Faciem.Tests.FaciemCompatibilityTests.MissingSettingsPersistentAssetPathsAreSafe" methodname="MissingSettingsPersistentAssetPathsAreSafe" classname="Sim.Faciem.Tests.FaciemCompatibilityTests" runstate="Runnable" seed="2008873811" result="Passed" start-time="2026-10-18 14:47:06Z" end-time="2026-10-18 14:47:06Z" duration="0.044275" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-suite type="ParameterizedMethod" id="1008" name="NavigationUsesSerializedTypeResolutionAndPreservesCachedOwnership" fullname="Sim.Faciem.Tests.FaciemCompatibilityTests.NavigationUsesSerializedTypeResolutionAndPreservesCachedOwnership" classname="Sim.Faciem.Tests.FaciemCompatibilityTests" runstate="Runnable" testcasecount="2" result="Passed" start-time="2026-10-18 14:47:06Z" end-time="2026-10-18 14:47:06Z" duration="0.036191" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
+                <properties />
+                <test-case id="1006" name="NavigationUsesSerializedTypeResolutionAndPreservesCachedOwnership(False)" fullname="Sim.Faciem.Tests.FaciemCompatibilityTests.NavigationUsesSerializedTypeResolutionAndPreservesCachedOwnership(False)" methodname="NavigationUsesSerializedTypeResolutionAndPreservesCachedOwnership" classname="Sim.Faciem.Tests.FaciemCompatibilityTests" runstate="Runnable" seed="2052857792" result="Passed" start-time="2026-10-18 14:47:06Z" end-time="2026-10-18 14:47:06Z" duration="0.033724" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1007" name="NavigationUsesSerializedTypeResolutionAndPreservesCachedOwnership(True)" fullname="Sim.Faciem.Tests.FaciemCompatibilityTests.NavigationUsesSerializedTypeResolutionAndPreservesCachedOwnership(True)" methodname="NavigationUsesSerializedTypeResolutionAndPreservesCachedOwnership" classname="Sim.Faciem.Tests.FaciemCompatibilityTests" runstate="Runnable" seed="1888141572" result="Passed" start-time="2026-10-18 14:47:06Z" end-time="2026-10-18 14:47:06Z" duration="0.000404" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+              </test-suite>
+              <test-case id="1002" name="SerializedTypeNameResolvesWithoutAnEditorScript" fullname="Sim.Faciem.Tests.FaciemCompatibilityTests.SerializedTypeNameResolvesWithoutAnEditorScript" methodname="SerializedTypeNameResolvesWithoutAnEditorScript" classname="Sim.Faciem.Tests.FaciemCompatibilityTests" runstate="Runnable" seed="1007169274" result="Passed" start-time="2026-10-18 14:47:06Z" end-time="2026-10-18 14:47:06Z" duration="0.000193" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-suite type="ParameterizedMethod" id="1005" name="UnknownSerializedTypeNameReturnsNull" fullname="Sim.Faciem.Tests.FaciemCompatibilityTests.UnknownSerializedTypeNameReturnsNull" classname="Sim.Faciem.Tests.FaciemCompatibilityTests" runstate="Runnable" testcasecount="2" result="Passed" start-time="2026-10-18 14:47:06Z" end-time="2026-10-18 14:47:06Z" duration="0.001206" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
+                <properties />
+                <test-case id="1003" name="UnknownSerializedTypeNameReturnsNull(&quot;&quot;)" fullname="Sim.Faciem.Tests.FaciemCompatibilityTests.UnknownSerializedTypeNameReturnsNull(&quot;&quot;)" methodname="UnknownSerializedTypeNameReturnsNull" classname="Sim.Faciem.Tests.FaciemCompatibilityTests" runstate="Runnable" seed="1244823484" result="Passed" start-time="2026-10-18 14:47:06Z" end-time="2026-10-18 14:47:06Z" duration="0.000193" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1004" name="UnknownSerializedTypeNameReturnsNull(&quot;Missing.Type&quot;)" fullname="Sim.Faciem.Tests.FaciemCompatibilityTests.UnknownSerializedTypeNameReturnsNull(&quot;Missing.Type&quot;)" methodname="UnknownSerializedTypeNameReturnsNull" classname="Sim.Faciem.Tests.FaciemCompatibilityTests" runstate="Runnable" seed="1740394257" result="Passed" start-time="2026-10-18 14:47:06Z" end-time="2026-10-18 14:47:06Z" duration="0.000075" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+              </test-suite>
+            </test-suite>
+            <test-suite type="TestFixture" id="1011" name="ViewModelDisposalTests" fullname="Sim.Faciem.Tests.ViewModelDisposalTests" classname="Sim.Faciem.Tests.ViewModelDisposalTests" runstate="Runnable" testcasecount="8" result="Passed" start-time="2026-10-18 14:47:06Z" end-time="2026-10-18 14:47:06Z" duration="0.006226" total="8" passed="8" failed="0" inconclusive="0" skipped="0" asserts="0">
+              <properties />
+              <test-case id="1019" name="BagGrowthRetainsEveryOwnedResource" fullname="Sim.Faciem.Tests.ViewModelDisposalTests.BagGrowthRetainsEveryOwnedResource" methodname="BagGrowthRetainsEveryOwnedResource" classname="Sim.Faciem.Tests.ViewModelDisposalTests" runstate="Runnable" seed="1213713810" result="Passed" start-time="2026-10-18 14:47:06Z" end-time="2026-10-18 14:47:06Z" duration="0.000463" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-suite type="ParameterizedMethod" id="1014" name="BaseAndInterfaceOwnersReleaseResourcesExactlyOnce" fullname="Sim.Faciem.Tests.ViewModelDisposalTests.BaseAndInterfaceOwnersReleaseResourcesExactlyOnce" classname="Sim.Faciem.Tests.ViewModelDisposalTests" runstate="Runnable" testcasecount="2" result="Passed" start-time="2026-10-18 14:47:06Z" end-time="2026-10-18 14:47:06Z" duration="0.000681" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
+                <properties />
+                <test-case id="1012" name="BaseAndInterfaceOwnersReleaseResourcesExactlyOnce(False)" fullname="Sim.Faciem.Tests.ViewModelDisposalTests.BaseAndInterfaceOwnersReleaseResourcesExactlyOnce(False)" methodname="BaseAndInterfaceOwnersReleaseResourcesExactlyOnce" classname="Sim.Faciem.Tests.ViewModelDisposalTests" runstate="Runnable" seed="1582449636" result="Passed" start-time="2026-10-18 14:47:06Z" end-time="2026-10-18 14:47:06Z" duration="0.000159" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1013" name="BaseAndInterfaceOwnersReleaseResourcesExactlyOnce(True)" fullname="Sim.Faciem.Tests.ViewModelDisposalTests.BaseAndInterfaceOwnersReleaseResourcesExactlyOnce(True)" methodname="BaseAndInterfaceOwnersReleaseResourcesExactlyOnce" classname="Sim.Faciem.Tests.ViewModelDisposalTests" runstate="Runnable" seed="1877565963" result="Passed" start-time="2026-10-18 14:47:06Z" end-time="2026-10-18 14:47:06Z" duration="0.000066" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+              </test-suite>
+              <test-case id="1020" name="BaseDisposalDetachesTheR3Subscription" fullname="Sim.Faciem.Tests.ViewModelDisposalTests.BaseDisposalDetachesTheR3Subscription" methodname="BaseDisposalDetachesTheR3Subscription" classname="Sim.Faciem.Tests.ViewModelDisposalTests" runstate="Runnable" seed="1036411380" result="Passed" start-time="2026-10-18 14:47:06Z" end-time="2026-10-18 14:47:06Z" duration="0.001992" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1016" name="DisposableContainerRegistrationUsesTheOwnedBag" fullname="Sim.Faciem.Tests.ViewModelDisposalTests.DisposableContainerRegistrationUsesTheOwnedBag" methodname="DisposableContainerRegistrationUsesTheOwnedBag" classname="Sim.Faciem.Tests.ViewModelDisposalTests" runstate="Runnable" seed="1416683833" result="Passed" start-time="2026-10-18 14:47:06Z" end-time="2026-10-18 14:47:06Z" duration="0.000170" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1018" name="EachViewModelOwnsAnIndependentBag" fullname="Sim.Faciem.Tests.ViewModelDisposalTests.EachViewModelOwnsAnIndependentBag" methodname="EachViewModelOwnsAnIndependentBag" classname="Sim.Faciem.Tests.ViewModelDisposalTests" runstate="Runnable" seed="858961645" result="Passed" start-time="2026-10-18 14:47:06Z" end-time="2026-10-18 14:47:06Z" duration="0.000178" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1015" name="InheritedGenericViewModelUsesTheSameOwnedBag" fullname="Sim.Faciem.Tests.ViewModelDisposalTests.InheritedGenericViewModelUsesTheSameOwnedBag" methodname="InheritedGenericViewModelUsesTheSameOwnedBag" classname="Sim.Faciem.Tests.ViewModelDisposalTests" runstate="Runnable" seed="1042621825" result="Passed" start-time="2026-10-18 14:47:06Z" end-time="2026-10-18 14:47:06Z" duration="0.001080" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1017" name="ResourcesAddedAfterDisposalAreDisposedImmediately" fullname="Sim.Faciem.Tests.ViewModelDisposalTests.ResourcesAddedAfterDisposalAreDisposedImmediately" methodname="ResourcesAddedAfterDisposalAreDisposedImmediately" classname="Sim.Faciem.Tests.ViewModelDisposalTests" runstate="Runnable" seed="79437245" result="Passed" start-time="2026-10-18 14:47:06Z" end-time="2026-10-18 14:47:06Z" duration="0.000133" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+            </test-suite>
+          </test-suite>
+        </test-suite>
+      </test-suite>
+    </test-suite>
+    <test-suite type="Assembly" id="1039" name="Sim.Utility.Editor.Tests.dll" fullname="C:/Users/DPast/Documents/Projects/ReviewWorktrees/d032-faciem-disposal-consumer/Library/ScriptAssemblies/Sim.Utility.Editor.Tests.dll" runstate="Runnable" testcasecount="12" result="Passed" start-time="2026-10-18 14:47:06Z" end-time="2026-10-18 14:47:06Z" duration="0.020962" total="12" passed="12" failed="0" inconclusive="0" skipped="0" asserts="0">
+      <properties>
+        <property name="_PID" value="9600" />
+        <property name="_APPDOMAIN" value="Unity Child Domain" />
+        <property name="platform" value="EditMode" />
+        <property name="EditorOnly" value="True" />
+      </properties>
+      <test-suite type="TestSuite" id="1040" name="Sim" fullname="Sim" runstate="Runnable" testcasecount="12" result="Passed" start-time="2026-10-18 14:47:06Z" end-time="2026-10-18 14:47:06Z" duration="0.020232" total="12" passed="12" failed="0" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <test-suite type="TestSuite" id="1041" name="Utility" fullname="Sim.Utility" runstate="Runnable" testcasecount="12" result="Passed" start-time="2026-10-18 14:47:06Z" end-time="2026-10-18 14:47:06Z" duration="0.019551" total="12" passed="12" failed="0" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <test-suite type="TestSuite" id="1042" name="Tests" fullname="Sim.Utility.Tests" runstate="Runnable" testcasecount="12" result="Passed" start-time="2026-10-18 14:47:06Z" end-time="2026-10-18 14:47:06Z" duration="0.018862" total="12" passed="12" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-suite type="TestFixture" id="1025" name="SerializableGuidTests" fullname="Sim.Utility.Tests.SerializableGuidTests" classname="Sim.Utility.Tests.SerializableGuidTests" runstate="Runnable" testcasecount="12" result="Passed" start-time="2026-10-18 14:47:06Z" end-time="2026-10-18 14:47:06Z" duration="0.018107" total="12" passed="12" failed="0" inconclusive="0" skipped="0" asserts="0">
+              <properties />
+              <test-case id="1032" name="CopyConstructorPreservesIndependentSerializedValue" fullname="Sim.Utility.Tests.SerializableGuidTests.CopyConstructorPreservesIndependentSerializedValue" methodname="CopyConstructorPreservesIndependentSerializedValue" classname="Sim.Utility.Tests.SerializableGuidTests" runstate="Runnable" seed="909781855" result="Passed" start-time="2026-10-18 14:47:06Z" end-time="2026-10-18 14:47:06Z" duration="0.001739" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1026" name="DefaultConstructorRepresentsEmptyGuid" fullname="Sim.Utility.Tests.SerializableGuidTests.DefaultConstructorRepresentsEmptyGuid" methodname="DefaultConstructorRepresentsEmptyGuid" classname="Sim.Utility.Tests.SerializableGuidTests" runstate="Runnable" seed="2031075763" result="Passed" start-time="2026-10-18 14:47:06Z" end-time="2026-10-18 14:47:06Z" duration="0.000200" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-suite type="ParameterizedMethod" id="1029" name="EmptySerializedStringRepresentsEmptyGuid" fullname="Sim.Utility.Tests.SerializableGuidTests.EmptySerializedStringRepresentsEmptyGuid" classname="Sim.Utility.Tests.SerializableGuidTests" runstate="Runnable" testcasecount="2" result="Passed" start-time="2026-10-18 14:47:06Z" end-time="2026-10-18 14:47:06Z" duration="0.001115" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
+                <properties />
+                <test-case id="1027" name="EmptySerializedStringRepresentsEmptyGuid(null)" fullname="Sim.Utility.Tests.SerializableGuidTests.EmptySerializedStringRepresentsEmptyGuid(null)" methodname="EmptySerializedStringRepresentsEmptyGuid" classname="Sim.Utility.Tests.SerializableGuidTests" runstate="Runnable" seed="328199186" result="Passed" start-time="2026-10-18 14:47:06Z" end-time="2026-10-18 14:47:06Z" duration="0.000213" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1028" name="EmptySerializedStringRepresentsEmptyGuid(&quot;&quot;)" fullname="Sim.Utility.Tests.SerializableGuidTests.EmptySerializedStringRepresentsEmptyGuid(&quot;&quot;)" methodname="EmptySerializedStringRepresentsEmptyGuid" classname="Sim.Utility.Tests.SerializableGuidTests" runstate="Runnable" seed="1502006202" result="Passed" start-time="2026-10-18 14:47:06Z" end-time="2026-10-18 14:47:06Z" duration="0.000075" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+              </test-suite>
+              <test-case id="1038" name="GenericSerializedPropertyWritePreservesTheGuidStringSchema" fullname="Sim.Utility.Tests.SerializableGuidTests.GenericSerializedPropertyWritePreservesTheGuidStringSchema" methodname="GenericSerializedPropertyWritePreservesTheGuidStringSchema" classname="Sim.Utility.Tests.SerializableGuidTests" runstate="Runnable" seed="137026589" result="Passed" start-time="2026-10-18 14:47:06Z" end-time="2026-10-18 14:47:06Z" duration="0.004216" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1030" name="GuidConstructorPreservesValueAndEquality" fullname="Sim.Utility.Tests.SerializableGuidTests.GuidConstructorPreservesValueAndEquality" methodname="GuidConstructorPreservesValueAndEquality" classname="Sim.Utility.Tests.SerializableGuidTests" runstate="Runnable" seed="1476047361" result="Passed" start-time="2026-10-18 14:47:06Z" end-time="2026-10-18 14:47:06Z" duration="0.000450" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1036" name="JsonPreservesTheStoredStringFormat" fullname="Sim.Utility.Tests.SerializableGuidTests.JsonPreservesTheStoredStringFormat" methodname="JsonPreservesTheStoredStringFormat" classname="Sim.Utility.Tests.SerializableGuidTests" runstate="Runnable" seed="1324602321" result="Passed" start-time="2026-10-18 14:47:06Z" end-time="2026-10-18 14:47:06Z" duration="0.000176" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1035" name="JsonRetainsTheOriginalFieldNameAndExcludesParsedCaches" fullname="Sim.Utility.Tests.SerializableGuidTests.JsonRetainsTheOriginalFieldNameAndExcludesParsedCaches" methodname="JsonRetainsTheOriginalFieldNameAndExcludesParsedCaches" classname="Sim.Utility.Tests.SerializableGuidTests" runstate="Runnable" seed="53099462" result="Passed" start-time="2026-10-18 14:47:06Z" end-time="2026-10-18 14:47:06Z" duration="0.001321" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1034" name="MalformedStringStillFailsWhenRead" fullname="Sim.Utility.Tests.SerializableGuidTests.MalformedStringStillFailsWhenRead" methodname="MalformedStringStillFailsWhenRead" classname="Sim.Utility.Tests.SerializableGuidTests" runstate="Runnable" seed="1610871660" result="Passed" start-time="2026-10-18 14:47:06Z" end-time="2026-10-18 14:47:06Z" duration="0.001688" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1033" name="NullCopyIsRejected" fullname="Sim.Utility.Tests.SerializableGuidTests.NullCopyIsRejected" methodname="NullCopyIsRejected" classname="Sim.Utility.Tests.SerializableGuidTests" runstate="Runnable" seed="1968177964" result="Passed" start-time="2026-10-18 14:47:06Z" end-time="2026-10-18 14:47:06Z" duration="0.000337" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1037" name="SerializedPropertyConstructorAndGenericReadRemainAvailableInEditor" fullname="Sim.Utility.Tests.SerializableGuidTests.SerializedPropertyConstructorAndGenericReadRemainAvailableInEditor" methodname="SerializedPropertyConstructorAndGenericReadRemainAvailableInEditor" classname="Sim.Utility.Tests.SerializableGuidTests" runstate="Runnable" seed="1123128683" result="Passed" start-time="2026-10-18 14:47:06Z" end-time="2026-10-18 14:47:06Z" duration="0.000492" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1031" name="SetGuidInvalidatesTheParsedValue" fullname="Sim.Utility.Tests.SerializableGuidTests.SetGuidInvalidatesTheParsedValue" methodname="SetGuidInvalidatesTheParsedValue" classname="Sim.Utility.Tests.SerializableGuidTests" runstate="Runnable" seed="2124046257" result="Passed" start-time="2026-10-18 14:47:06Z" end-time="2026-10-18 14:47:06Z" duration="0.000193" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+            </test-suite>
+          </test-suite>
+        </test-suite>
+      </test-suite>
+    </test-suite>
+    <test-suite type="Assembly" id="1050" name="Sim.Utility.Faciem.Editor.Tests.dll" fullname="C:/Users/DPast/Documents/Projects/ReviewWorktrees/d032-faciem-disposal-consumer/Library/ScriptAssemblies/Sim.Utility.Faciem.Editor.Tests.dll" runstate="Runnable" testcasecount="5" result="Passed" start-time="2026-10-18 14:47:06Z" end-time="2026-10-18 14:47:06Z" duration="0.101567" total="5" passed="5" failed="0" inconclusive="0" skipped="0" asserts="0">
+      <properties>
+        <property name="_PID" value="9600" />
+        <property name="_APPDOMAIN" value="Unity Child Domain" />
+        <property name="platform" value="EditMode" />
+        <property name="EditorOnly" value="True" />
+      </properties>
+      <test-suite type="TestSuite" id="1051" name="Sim" fullname="Sim" runstate="Runnable" testcasecount="5" result="Passed" start-time="2026-10-18 14:47:06Z" end-time="2026-10-18 14:47:06Z" duration="0.100754" total="5" passed="5" failed="0" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <test-suite type="TestSuite" id="1052" name="Utility" fullname="Sim.Utility" runstate="Runnable" testcasecount="5" result="Passed" start-time="2026-10-18 14:47:06Z" end-time="2026-10-18 14:47:06Z" duration="0.100026" total="5" passed="5" failed="0" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <test-suite type="TestSuite" id="1053" name="Faciem" fullname="Sim.Utility.Faciem" runstate="Runnable" testcasecount="5" result="Passed" start-time="2026-10-18 14:47:06Z" end-time="2026-10-18 14:47:06Z" duration="0.099314" total="5" passed="5" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-suite type="TestSuite" id="1054" name="Tests" fullname="Sim.Utility.Faciem.Tests" runstate="Runnable" testcasecount="5" result="Passed" start-time="2026-10-18 14:47:06Z" end-time="2026-10-18 14:47:06Z" duration="0.098542" total="5" passed="5" failed="0" inconclusive="0" skipped="0" asserts="0">
+              <properties />
+              <test-suite type="TestFixture" id="1043" name="GuidInspectorIntegrationTests" fullname="Sim.Utility.Faciem.Tests.GuidInspectorIntegrationTests" classname="Sim.Utility.Faciem.Tests.GuidInspectorIntegrationTests" runstate="Runnable" testcasecount="5" result="Passed" start-time="2026-10-18 14:47:06Z" end-time="2026-10-18 14:47:06Z" duration="0.097788" total="5" passed="5" failed="0" inconclusive="0" skipped="0" asserts="0">
+                <properties />
+                <test-case id="1048" name="GuidChangesStillReportValidAndInvalidInput" fullname="Sim.Utility.Faciem.Tests.GuidInspectorIntegrationTests.GuidChangesStillReportValidAndInvalidInput" methodname="GuidChangesStillReportValidAndInvalidInput" classname="Sim.Utility.Faciem.Tests.GuidInspectorIntegrationTests" runstate="Runnable" seed="183488450" result="Passed" start-time="2026-10-18 14:47:06Z" end-time="2026-10-18 14:47:06Z" duration="0.023349" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1044" name="TemplateRetainsItsAssetGuidsAndExpectedControls" fullname="Sim.Utility.Faciem.Tests.GuidInspectorIntegrationTests.TemplateRetainsItsAssetGuidsAndExpectedControls" methodname="TemplateRetainsItsAssetGuidsAndExpectedControls" classname="Sim.Utility.Faciem.Tests.GuidInspectorIntegrationTests" runstate="Runnable" seed="531966013" result="Passed" start-time="2026-10-18 14:47:06Z" end-time="2026-10-18 14:47:06Z" duration="0.068204" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-suite type="ParameterizedMethod" id="1047" name="ViewModelRetainsInitialValuesAndCommandIdentity" fullname="Sim.Utility.Faciem.Tests.GuidInspectorIntegrationTests.ViewModelRetainsInitialValuesAndCommandIdentity" classname="Sim.Utility.Faciem.Tests.GuidInspectorIntegrationTests" runstate="Runnable" testcasecount="2" result="Passed" start-time="2026-10-18 14:47:06Z" end-time="2026-10-18 14:47:06Z" duration="0.002252" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
+                  <properties />
+                  <test-case id="1045" name="ViewModelRetainsInitialValuesAndCommandIdentity(False)" fullname="Sim.Utility.Faciem.Tests.GuidInspectorIntegrationTests.ViewModelRetainsInitialValuesAndCommandIdentity(False)" methodname="ViewModelRetainsInitialValuesAndCommandIdentity" classname="Sim.Utility.Faciem.Tests.GuidInspectorIntegrationTests" runstate="Runnable" seed="341549573" result="Passed" start-time="2026-10-18 14:47:06Z" end-time="2026-10-18 14:47:06Z" duration="0.000650" asserts="0">
+                    <properties>
+                      <property name="retryIteration" value="0" />
+                      <property name="repeatIteration" value="0" />
+                    </properties>
+                  </test-case>
+                  <test-case id="1046" name="ViewModelRetainsInitialValuesAndCommandIdentity(True)" fullname="Sim.Utility.Faciem.Tests.GuidInspectorIntegrationTests.ViewModelRetainsInitialValuesAndCommandIdentity(True)" methodname="ViewModelRetainsInitialValuesAndCommandIdentity" classname="Sim.Utility.Faciem.Tests.GuidInspectorIntegrationTests" runstate="Runnable" seed="383454061" result="Passed" start-time="2026-10-18 14:47:06Z" end-time="2026-10-18 14:47:06Z" duration="0.000253" asserts="0">
+                    <properties>
+                      <property name="retryIteration" value="0" />
+                      <property name="repeatIteration" value="0" />
+                    </properties>
+                  </test-case>
+                </test-suite>
+                <test-case id="1049" name="ViewModelUsesTheNewOptionalAssemblyAndOriginalNamespace" fullname="Sim.Utility.Faciem.Tests.GuidInspectorIntegrationTests.ViewModelUsesTheNewOptionalAssemblyAndOriginalNamespace" methodname="ViewModelUsesTheNewOptionalAssemblyAndOriginalNamespace" classname="Sim.Utility.Faciem.Tests.GuidInspectorIntegrationTests" runstate="Runnable" seed="1041801069" result="Passed" start-time="2026-10-18 14:47:06Z" end-time="2026-10-18 14:47:06Z" duration="0.000211" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                  <output><![CDATA[Saving results to: C:\Users\DPast\Documents\Projects\ReviewWorktrees\d032-faciem-disposal-consumer\Logs\unity-tests-editmode-20261018T144654944Z-e9b9d7ed0ca64fcf.xml
+]]></output>
+                </test-case>
+              </test-suite>
+            </test-suite>
+          </test-suite>
+        </test-suite>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>

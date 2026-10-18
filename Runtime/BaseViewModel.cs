@@ -9,7 +9,9 @@ namespace Sim.Faciem
     {
         internal bool IsSetup => RegionManager != null && Navigation != null;
 
-        protected DisposableBag Disposables { get; } = new();
+        private DisposableBag _disposables = new();
+
+        protected ref DisposableBag Disposables => ref _disposables;
 
         protected internal IViewModelRegionManager RegionManager { get; set; }
 
