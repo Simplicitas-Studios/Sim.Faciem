@@ -1,0 +1,54 @@
+{
+  "faciemFormatter": {
+    "exitCode": 0,
+    "scope": [
+      "Runtime/BaseViewModel.cs",
+      "Tests/Editor/ViewModelDisposalTests.cs"
+    ]
+  },
+  "displayDraftFormatter": {
+    "exitCode": 0,
+    "scope": [
+      "Assets/Scripts/Bootstrap/DisplayServiceRegistrationModule.cs",
+      "Assets/Scripts/Shell/DisplayShellProjection.cs",
+      "Assets/Scripts/Shell/DisplayShellViewModel.cs",
+      "Assets/Editor/D032ShellDisposalPrerequisiteTests.cs"
+    ]
+  },
+  "check_inventory.py": {
+    "exitCode": 0,
+    "stdout": "elements=62; selectors=105; dependencies=2; bindings=37; callbacks=35; references=20\nPASS: inventory is assigned and consistent\n",
+    "stderr": ""
+  },
+  "test_inventory_check.py": {
+    "exitCode": 0,
+    "stdout": "",
+    "stderr": ".......\n----------------------------------------------------------------------\nRan 7 tests in 0.002s\n\nOK\n"
+  },
+  "originalWorktrees": {
+    "C:\\Users\\DPast\\Documents\\Projects\\PastisPartyBox": {
+      "headsMatch": true,
+      "indicesMatch": true,
+      "statusMatches": true,
+      "externalChangesNotTouched": true
+    },
+    "C:\\Users\\DPast\\Documents\\Projects\\PastisPartyBox\\MafiosisPartyBangersDisplay": {
+      "headsMatch": true,
+      "indicesMatch": true,
+      "statusMatches": true,
+      "externalChangesNotTouched": true
+    },
+    "C:\\Users\\DPast\\Documents\\Projects\\PastisPartyBox\\MafiosisPartyBangersServer": {
+      "headsMatch": true,
+      "indicesMatch": true,
+      "statusMatches": true,
+      "externalChangesNotTouched": true
+    },
+    "C:\\Users\\DPast\\Documents\\Projects\\PastisPartyBox\\MafiosisPartyBangersWeb": {
+      "headsMatch": true,
+      "indicesMatch": true,
+      "statusMatches": true,
+      "externalChangesNotTouched": true
+    }
+  }
+}

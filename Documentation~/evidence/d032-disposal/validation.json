@@ -1,0 +1,203 @@
+{
+  "verdict": "Separate Faciem fix prepared and validated; not published or approved for Display. D03.2 remains BLOCKED at unchanged pin.",
+  "faciemBase": "6607c4cae686ddc13de9ba1da979caa7dca30320",
+  "displayBase": "19535255b73b330ed1efda07954da17edcd9047e",
+  "displayPinsUnchanged": {
+    "Submodules/Sim.Faciem": "6607c4cae686ddc13de9ba1da979caa7dca30320",
+    "Submodules/Sim.Utility": "7f79725d1716d3c71f2f66ca41d2f35bdfa6f836",
+    "Packages/Sim.Injectio": "e499f61abe9b736d337bc3d3043a9909235a20a7"
+  },
+  "upstreamBranch": "fix/d032-disposable-bag-ownership",
+  "upstreamPushed": false,
+  "displayPushed": false,
+  "authorization": "User explicitly selected Prepare separate Faciem fix; no push or Display pointer change.",
+  "unity": "6000.6.5f1",
+  "cli": "1.0.0-beta.13",
+  "route": "isolated unity-cli; no graphics; no existing GUI closed/launched",
+  "diagnosis": "R3.DisposableBag is a mutable struct. Original get-only by-value property mutates copies; BaseViewModel.Dispose cannot retire the recorded owners.",
+  "fix": "One private mutable backing field; existing protected property returns it by ref. Dispose remains the original nonvirtual public/interface implementation.",
+  "apiLimit": "Protected getter changes CLR return signature to managed ref; source Add/Dispose calls preserved but dependent compiled assemblies require recompilation. No binary-compatibility claim.",
+  "noDisplayWorkaround": true,
+  "runs": [
+    {
+      "phase": "display-prerequisite",
+      "project": "C:\\Users\\DPast\\Documents\\Projects\\ReviewWorktrees\\mw-display-d03-2",
+      "originalNormalized": "C:\\Users\\DPast\\Documents\\Projects\\ReviewWorktrees\\mw-display-d03-2\\Logs\\pi-unity-tests-editmode-20261018T142029241Z-43ec078898264db5b18c6db41e6e730f.json",
+      "summary": {
+        "total": 1,
+        "passed": 0,
+        "failed": 1,
+        "skipped": 0
+      },
+      "outcome": "tests_failed",
+      "selection": {
+        "testFilters": [
+          "D032ShellDisposalPrerequisiteTests"
+        ],
+        "testCategories": []
+      },
+      "nativeNUnit": {
+        "id": "2",
+        "testcasecount": "1",
+        "result": "Failed(Child)",
+        "total": "1",
+        "passed": "0",
+        "failed": "1",
+        "inconclusive": "0",
+        "skipped": "0",
+        "asserts": "0",
+        "engine-version": "3.5.0.0",
+        "clr-version": "4.0.30319.42000",
+        "start-time": "2026-10-18 14:20:16Z",
+        "end-time": "2026-10-18 14:20:16Z",
+        "duration": "0.034371"
+      },
+      "normalizedSha256": "4ab2e4df7a85229c334e8fb95e0605001b1abfeff2b0589372123bb3c2b7eec5",
+      "nunitSha256": "de072e6471e56476f1c0c39908b7092fc6119c189c6ef077269ca2e0748f85e3",
+      "nativeLog": {
+        "path": "C:\\Users\\DPast\\Documents\\Projects\\ReviewWorktrees\\mw-display-d03-2\\Logs\\unity-tests-editmode-20261018T141652590Z-301fc7af31264978.log",
+        "bytes": 4940228,
+        "sha256": "f8c827f4ad292525e495a2721745b7e1ae50bc3d9eec88d6376bdabcb1025cf4"
+      },
+      "compilerErrors": [],
+      "warnings": [
+        "Assets\\Editor\\CaptureMansionBackgroundVideo.cs(105,120): warning CS0618: 'FindObjectsSortMode' is obsolete: 'FindObjectsSortMode has been deprecated. Use the FindObjectsByType overloads that do not take a FindObjectsSortMode parameter.'",
+        "Assets\\Editor\\CaptureMansionBackgroundVideo.cs(105,42): warning CS0618: 'Object.FindObjectsByType<T>(FindObjectsInactive, FindObjectsSortMode)' is obsolete: 'FindObjectsByType with FindObjectsSortMode parameter has been deprecated. Use FindObjectsByType<T>() or FindObjectsByType<T>(FindObjectsInactive) instead. InstanceID will be replaced in the future with EntityId and previous sort order cannot be maintained.'",
+        "Assets\\Editor\\CaptureMansionBackgroundVideo.cs(57,30): warning CS0618: 'MovieRecorderSettings.VideoRecorderOutputFormat' is obsolete: 'Please use the EncoderSettings API to access the format/codec of each Encoder.'",
+        "Assets\\Editor\\CaptureMansionBackgroundVideo.cs(57,9): warning CS0618: 'MovieRecorderSettings.OutputFormat' is obsolete: 'Please use the EncoderSettings API to set/get the format/codec of each Encoder.'",
+        "Assets\\Editor\\CaptureMansionBackgroundVideo.cs(58,9): warning CS0618: 'MovieRecorderSettings.VideoBitRateMode' is obsolete: 'Please use the EncoderSettings API to set/get the bitrate/encoding quality of each Encoder.'",
+        "Assets\\Scripts\\Network\\ProtocolDtos.cs(12,18): warning UAC1001: Field 'stateRevision' type 'long?' is skipped by serialization (missing the [Serializable] attribute). Refer to the Serialization rules analyzer reference. (https://docs.unity3d.com/6000.6/Documentation/Manual/script-serialization-analyzer.html#uac1001)",
+        "Assets\\Scripts\\Network\\ProtocolDtos.cs(24,138): warning UAC1001: Field 'rank' type 'int?' is skipped by serialization (missing the [Serializable] attribute). Refer to the Serialization rules analyzer reference. (https://docs.unity3d.com/6000.6/Documentation/Manual/script-serialization-analyzer.html#uac1001)",
+        "Assets\\Scripts\\Network\\ProtocolDtos.cs(24,157): warning UAC1001: Field 'qualified' type 'bool?' is skipped by serialization (missing the [Serializable] attribute). Refer to the Serialization rules analyzer reference. (https://docs.unity3d.com/6000.6/Documentation/Manual/script-serialization-analyzer.html#uac1001)",
+        "Assets\\Scripts\\Network\\ProtocolDtos.cs(24,181): warning UAC1001: Field 'survived' type 'bool?' is skipped by serialization (missing the [Serializable] attribute). Refer to the Serialization rules analyzer reference. (https://docs.unity3d.com/6000.6/Documentation/Manual/script-serialization-analyzer.html#uac1001)",
+        "Assets\\Scripts\\Network\\ProtocolDtos.cs(27,526): warning UAC1001: Field 'suddenDeathIndex' type 'int?' is skipped by serialization (missing the [Serializable] attribute). Refer to the Serialization rules analyzer reference. (https://docs.unity3d.com/6000.6/Documentation/Manual/script-serialization-analyzer.html#uac1001)",
+        "Assets\\Scripts\\Network\\ProtocolDtos.cs(28,151): warning UAC1001: Field 'completionSeconds' type 'double?' is skipped by serialization (missing the [Serializable] attribute). Refer to the Serialization rules analyzer reference. (https://docs.unity3d.com/6000.6/Documentation/Manual/script-serialization-analyzer.html#uac1001)",
+        "Assets\\Scripts\\Presentation\\DisplayUiPresenter.cs(521,21): warning UAC0009: DEVELOPMENT_BUILD preprocessor directive has been deprecated. Please use one of the managed code variant directives (such as DEBUG, UNITY_ENABLE_CHECKS or UNITY_INCLUDE_INSTRUMENTATION) if different code paths are desired for different managed code variants. Checking for development build is possible at runtime using Debug.isDebugBuild. See the Conditional Compilation manual page for more details.",
+        "Packages\\Sim.Injectio\\Runtime\\MicrosoftDependencyInjection\\UnityCompositionRoot.cs(190,21): warning UAC0009: DEVELOPMENT_BUILD preprocessor directive has been deprecated. Please use one of the managed code variant directives (such as DEBUG, UNITY_ENABLE_CHECKS or UNITY_INCLUDE_INSTRUMENTATION) if different code paths are desired for different managed code variants. Checking for development build is possible at runtime using Debug.isDebugBuild. See the Conditional Compilation manual page for more details.",
+        "Packages\\Sim.Injectio\\Tests\\Runtime\\GeneratorInventoryFixture.cs(13,22): warning CS0414: The field 'GeneratorInventoryFixture._wasInjected' is assigned but its value is never used",
+        "Submodules\\Sim.Faciem\\InternalEditor\\DesignTimeDataContextWizard.cs(23,42): warning UAC0005: AppDomain.GetAssemblies() in Unity may return already unloaded assemblies and result in errors or leaks. Use Unity APIs instead, such as 'CurrentAssemblies.GetLoadedAssemblies()' or 'TypeCache.GetTypesDerivedFrom()'.",
+        "Submodules\\Sim.Faciem\\Runtime\\Controls\\ListBinding\\SerializedListReference.cs(9,22): warning UAC1009: Field 'ItemSource' uses an unsupported type 'System.Collections.IList'. Refer to the Serialization rules analyzer reference. (https://docs.unity3d.com/6000.6/Documentation/Manual/script-serialization-analyzer.html#uac1009)",
+        "Submodules\\Sim.Utility\\Runtime\\SerializableGuid.cs(21,21): warning CS0414: The field 'SerializableGuid._cashedHashCode' is assigned but its value is never used"
+      ]
+    },
+    {
+      "phase": "faciem-red",
+      "project": "C:\\Users\\DPast\\Documents\\Projects\\ReviewWorktrees\\d032-faciem-disposal-consumer",
+      "originalNormalized": "C:\\Users\\DPast\\Documents\\Projects\\ReviewWorktrees\\d032-faciem-disposal-consumer\\Logs\\pi-unity-tests-editmode-20261018T144603381Z-ad7ded1e903f493b80d493b049a6b68f.json",
+      "summary": {
+        "total": 8,
+        "passed": 0,
+        "failed": 8,
+        "skipped": 0
+      },
+      "outcome": "tests_failed",
+      "selection": {
+        "testFilters": [
+          "Sim.Faciem.Tests.ViewModelDisposalTests"
+        ],
+        "testCategories": []
+      },
+      "nativeNUnit": {
+        "id": "2",
+        "testcasecount": "8",
+        "result": "Failed(Child)",
+        "total": "8",
+        "passed": "0",
+        "failed": "8",
+        "inconclusive": "0",
+        "skipped": "0",
+        "asserts": "0",
+        "engine-version": "3.5.0.0",
+        "clr-version": "4.0.30319.42000",
+        "start-time": "2026-10-18 14:46:00Z",
+        "end-time": "2026-10-18 14:46:00Z",
+        "duration": "0.0367974"
+      },
+      "normalizedSha256": "7306a6b329fd125139d743335b6401e267b87f6df8db4d2c28954715f6decf8e",
+      "nunitSha256": "ddd2b51a87ba3073f3f914d9f565800f19666b3682cea2f3f04a2e91d76c283e",
+      "nativeLog": {
+        "path": "C:\\Users\\DPast\\Documents\\Projects\\ReviewWorktrees\\d032-faciem-disposal-consumer\\Logs\\unity-tests-editmode-20261018T144534147Z-3ce94c70586a4d66.log",
+        "bytes": 376213,
+        "sha256": "f664686364ba0827645f76a07661559b1e6e17f72b1ec072104f62ba3303d4ca"
+      },
+      "compilerErrors": [],
+      "warnings": [
+        "C:\\Users\\DPast\\Documents\\Projects\\ReviewWorktrees\\mw-display-d03-2\\Submodules\\Sim.Utility\\Runtime\\SerializableGuid.cs(21,21): warning CS0414: The field 'SerializableGuid._cashedHashCode' is assigned but its value is never used",
+        "C:\\Users\\DPast\\Documents\\Projects\\ReviewWorktrees\\sim-faciem-d032-disposal\\InternalEditor\\DesignTimeDataContextWizard.cs(23,42): warning UAC0005: AppDomain.GetAssemblies() in Unity may return already unloaded assemblies and result in errors or leaks. Use Unity APIs instead, such as 'CurrentAssemblies.GetLoadedAssemblies()' or 'TypeCache.GetTypesDerivedFrom()'.",
+        "C:\\Users\\DPast\\Documents\\Projects\\ReviewWorktrees\\sim-faciem-d032-disposal\\Runtime\\Controls\\ListBinding\\SerializedListReference.cs(9,22): warning UAC1009: Field 'ItemSource' uses an unsupported type 'System.Collections.IList'. Refer to the Serialization rules analyzer reference. (https://docs.unity3d.com/6000.6/Documentation/Manual/script-serialization-analyzer.html#uac1009)"
+      ]
+    },
+    {
+      "phase": "faciem-green",
+      "project": "C:\\Users\\DPast\\Documents\\Projects\\ReviewWorktrees\\d032-faciem-disposal-consumer",
+      "originalNormalized": "C:\\Users\\DPast\\Documents\\Projects\\ReviewWorktrees\\d032-faciem-disposal-consumer\\Logs\\pi-unity-tests-editmode-20261018T144708154Z-e4eb451b07124a6ca1ad28934fd38ddf.json",
+      "summary": {
+        "total": 32,
+        "passed": 32,
+        "failed": 0,
+        "skipped": 0
+      },
+      "outcome": "passed",
+      "selection": {
+        "testFilters": [
+          "Sim.Faciem.Tests.ViewModelDisposalTests",
+          "Sim.Faciem.Tests.FaciemCompatibilityTests",
+          "Sim.Utility.Tests.SerializableGuidTests",
+          "Sim.Utility.Faciem.Tests.GuidInspectorIntegrationTests"
+        ],
+        "testCategories": []
+      },
+      "nativeNUnit": {
+        "id": "2",
+        "testcasecount": "32",
+        "result": "Passed",
+        "total": "32",
+        "passed": "32",
+        "failed": "0",
+        "inconclusive": "0",
+        "skipped": "0",
+        "asserts": "0",
+        "engine-version": "3.5.0.0",
+        "clr-version": "4.0.30319.42000",
+        "start-time": "2026-10-18 14:47:06Z",
+        "end-time": "2026-10-18 14:47:06Z",
+        "duration": "0.2400825"
+      },
+      "normalizedSha256": "9f69419995751795e1782ba9a752ea5aaa502aa67916aa3f209300445fd11ead",
+      "nunitSha256": "fb1cf3071197728bd759af1a7771bf9fe43a41d0777b387b9359d2a5a90715f6",
+      "nativeLog": {
+        "path": "C:\\Users\\DPast\\Documents\\Projects\\ReviewWorktrees\\d032-faciem-disposal-consumer\\Logs\\unity-tests-editmode-20261018T144654944Z-e9b9d7ed0ca64fcf.log",
+        "bytes": 38004,
+        "sha256": "4f25b965aac54658372d2f2e152041aa67776eeb798ab10981ffede473aa8834"
+      },
+      "compilerErrors": [],
+      "warnings": [
+        "C:\\Users\\DPast\\Documents\\Projects\\ReviewWorktrees\\sim-faciem-d032-disposal\\InternalEditor\\DesignTimeDataContextWizard.cs(23,42): warning UAC0005: AppDomain.GetAssemblies() in Unity may return already unloaded assemblies and result in errors or leaks. Use Unity APIs instead, such as 'CurrentAssemblies.GetLoadedAssemblies()' or 'TypeCache.GetTypesDerivedFrom()'.",
+        "C:\\Users\\DPast\\Documents\\Projects\\ReviewWorktrees\\sim-faciem-d032-disposal\\Runtime\\Controls\\ListBinding\\SerializedListReference.cs(9,22): warning UAC1009: Field 'ItemSource' uses an unsupported type 'System.Collections.IList'. Refer to the Serialization rules analyzer reference. (https://docs.unity3d.com/6000.6/Documentation/Manual/script-serialization-analyzer.html#uac1009)"
+      ]
+    }
+  ],
+  "finalDistinctCases": 32,
+  "finalGroups": {
+    "newDisposal": 8,
+    "existingFaciem": 7,
+    "utilityCore": 12,
+    "optionalUtilityInspector": 5
+  },
+  "sourceHashes": {
+    "oldBaseViewModelGitBlobSha256": "51333da32f24c4e70e6a242f9d5b23862e355b1d7fc2af831b2ff6e66bfd6d22",
+    "newBaseViewModelWorkingBytesSha256": "000f9cff3c05d956ff00e3adb32e336b1ced1a2e54f391e34ab90cd7352f057b",
+    "regressionSourceSha256": "1b755f177fd6cdf390503e34e4f724adecc6db17c29a55818060f57f1993e714",
+    "r3DllSha256": "4ac9ec66b56f4cbd139e4c7f99a6e0df6e4bb4c2707635880df8dd04ace291eb"
+  },
+  "consumer": "New isolated consumer with genuine tracked Display NuGet files copied byte-for-byte; no SDK BCL substitutes. Local fixed Faciem, same Utility pin; Addressables2.11.2/UTF1.8.0.",
+  "notValidated": [
+    "D03.2 with an approved fixed pin",
+    "complete D03.2 initial/state/reconnect/stale/DI suite",
+    "existing Display regression tests after D03.2",
+    "native UI/player/PlayMode",
+    "async navigation/cached-view lifetime",
+    "binary compatibility of already compiled consumers"
+  ],
+  "stopBoundary": "Independent local review. Do not push, merge, activate UI, or change Display pointer without new authorization."
+}

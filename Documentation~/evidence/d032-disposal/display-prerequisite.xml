@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<test-run id="2" testcasecount="1" result="Failed(Child)" total="1" passed="0" failed="1" inconclusive="0" skipped="0" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2026-10-18 14:20:16Z" end-time="2026-10-18 14:20:16Z" duration="0.034371">
+  <test-suite type="TestSuite" id="1000" name="MafiosisPartyBangers" fullname="MafiosisPartyBangers" runstate="Runnable" testcasecount="187" result="Failed" site="Child" start-time="2026-10-18 14:20:16Z" end-time="2026-10-18 14:20:16Z" duration="0.034371" total="1" passed="0" failed="1" inconclusive="0" skipped="0" asserts="0">
+    <properties>
+      <property name="platform" value="EditMode" />
+    </properties>
+    <failure>
+      <message><![CDATA[One or more child tests had errors]]></message>
+    </failure>
+    <test-suite type="Assembly" id="1176" name="Assembly-CSharp-Editor.dll" fullname="C:/Users/DPast/Documents/Projects/ReviewWorktrees/mw-display-d03-2/Library/ScriptAssemblies/Assembly-CSharp-Editor.dll" runstate="Runnable" testcasecount="145" result="Failed" site="Child" start-time="2026-10-18 14:20:16Z" end-time="2026-10-18 14:20:16Z" duration="0.027618" total="1" passed="0" failed="1" inconclusive="0" skipped="0" asserts="0">
+      <properties>
+        <property name="_PID" value="55840" />
+        <property name="_APPDOMAIN" value="Unity Child Domain" />
+        <property name="platform" value="EditMode" />
+        <property name="EditorOnly" value="True" />
+      </properties>
+      <failure>
+        <message><![CDATA[One or more child tests had errors]]></message>
+      </failure>
+      <test-suite type="TestFixture" id="1094" name="D032ShellDisposalPrerequisiteTests" fullname="D032ShellDisposalPrerequisiteTests" classname="D032ShellDisposalPrerequisiteTests" runstate="Runnable" testcasecount="1" result="Failed" site="Child" start-time="2026-10-18 14:20:16Z" end-time="2026-10-18 14:20:16Z" duration="0.024893" total="1" passed="0" failed="1" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <failure>
+          <message><![CDATA[One or more child tests had errors]]></message>
+        </failure>
+        <test-case id="1095" name="Faciem_base_disposal_releases_the_owned_shell_subscription" fullname="D032ShellDisposalPrerequisiteTests.Faciem_base_disposal_releases_the_owned_shell_subscription" methodname="Faciem_base_disposal_releases_the_owned_shell_subscription" classname="D032ShellDisposalPrerequisiteTests" runstate="Runnable" seed="1120140433" result="Failed" start-time="2026-10-18 14:20:16Z" end-time="2026-10-18 14:20:16Z" duration="0.015572" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+          <failure>
+            <message><![CDATA[  Disposal through Faciem's existing owner contract must detach the shell subscription.
+  Expected: 1
+  But was:  2
+]]></message>
+            <stack-trace><![CDATA[at D032ShellDisposalPrerequisiteTests.Faciem_base_disposal_releases_the_owned_shell_subscription () [0x0006e] in C:\Users\DPast\Documents\Projects\ReviewWorktrees\mw-display-d03-2\Assets\Editor\D032ShellDisposalPrerequisiteTests.cs:24
+]]></stack-trace>
+          </failure>
+          <output><![CDATA[Saving results to: C:/Users/DPast/AppData/LocalLow/DefaultCompany/MafiosisPartyBangers\TestResults.xml
+]]></output>
+        </test-case>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>

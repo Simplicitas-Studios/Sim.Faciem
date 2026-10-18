@@ -1,0 +1,17 @@
+{
+  "dependencies": {
+    "com.sim.faciem": "file:../../sim-faciem-d032-disposal",
+    "com.sim.utility": "file:../../mw-display-d03-2/Submodules/Sim.Utility",
+    "com.sim.utility.faciem.editor": "file:../../mw-display-d03-2/Submodules/Sim.Utility/Integrations~/FaciemEditor",
+    "com.cysharp.r3": "https://github.com/Cysharp/R3.git?path=src/R3.Unity/Assets/R3.Unity#a8d5fb3c2d0afd124223084e94c9e0ee73497510",
+    "com.cysharp.unitask": "https://github.com/Cysharp/UniTask.git?path=src/UniTask/Assets/Plugins/UniTask#a77a1b4a89824fb6df293099de3060daf2a432c1",
+    "com.unity.addressables": "2.11.2",
+    "com.unity.test-framework": "1.8.0",
+    "com.unity.modules.uielements": "1.0.0"
+  },
+  "testables": [
+    "com.sim.faciem",
+    "com.sim.utility",
+    "com.sim.utility.faciem.editor"
+  ]
+}

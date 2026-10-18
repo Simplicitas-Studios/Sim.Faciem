@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<test-run id="2" testcasecount="8" result="Failed(Child)" total="8" passed="0" failed="8" inconclusive="0" skipped="0" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2026-10-18 14:46:00Z" end-time="2026-10-18 14:46:00Z" duration="0.0367974">
+  <test-suite type="TestSuite" id="1000" name="d032-faciem-disposal-consumer" fullname="d032-faciem-disposal-consumer" runstate="Runnable" testcasecount="33" result="Failed" site="Child" start-time="2026-10-18 14:46:00Z" end-time="2026-10-18 14:46:00Z" duration="0.036797" total="8" passed="0" failed="8" inconclusive="0" skipped="0" asserts="0">
+    <properties>
+      <property name="platform" value="EditMode" />
+    </properties>
+    <failure>
+      <message><![CDATA[One or more child tests had errors]]></message>
+    </failure>
+    <test-suite type="Assembly" id="1021" name="Sim.Faciem.Editor.Tests.dll" fullname="C:/Users/DPast/Documents/Projects/ReviewWorktrees/d032-faciem-disposal-consumer/Library/ScriptAssemblies/Sim.Faciem.Editor.Tests.dll" runstate="Runnable" testcasecount="15" result="Failed" site="Child" start-time="2026-10-18 14:46:00Z" end-time="2026-10-18 14:46:00Z" duration="0.029511" total="8" passed="0" failed="8" inconclusive="0" skipped="0" asserts="0">
+      <properties>
+        <property name="_PID" value="81260" />
+        <property name="_APPDOMAIN" value="Unity Child Domain" />
+        <property name="platform" value="EditMode" />
+        <property name="EditorOnly" value="True" />
+      </properties>
+      <failure>
+        <message><![CDATA[One or more child tests had errors]]></message>
+      </failure>
+      <test-suite type="TestSuite" id="1022" name="Sim" fullname="Sim" runstate="Runnable" testcasecount="15" result="Failed" site="Child" start-time="2026-10-18 14:46:00Z" end-time="2026-10-18 14:46:00Z" duration="0.028962" total="8" passed="0" failed="8" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <failure>
+          <message><![CDATA[One or more child tests had errors]]></message>
+        </failure>
+        <test-suite type="TestSuite" id="1023" name="Faciem" fullname="Sim.Faciem" runstate="Runnable" testcasecount="15" result="Failed" site="Child" start-time="2026-10-18 14:46:00Z" end-time="2026-10-18 14:46:00Z" duration="0.028618" total="8" passed="0" failed="8" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <failure>
+            <message><![CDATA[One or more child tests had errors]]></message>
+          </failure>
+          <test-suite type="TestSuite" id="1024" name="Tests" fullname="Sim.Faciem.Tests" runstate="Runnable" testcasecount="15" result="Failed" site="Child" start-time="2026-10-18 14:46:00Z" end-time="2026-10-18 14:46:00Z" duration="0.028251" total="8" passed="0" failed="8" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <failure>
+              <message><![CDATA[One or more child tests had errors]]></message>
+            </failure>
+            <test-suite type="TestFixture" id="1011" name="ViewModelDisposalTests" fullname="Sim.Faciem.Tests.ViewModelDisposalTests" classname="Sim.Faciem.Tests.ViewModelDisposalTests" runstate="Runnable" testcasecount="8" result="Failed" site="Child" start-time="2026-10-18 14:46:00Z" end-time="2026-10-18 14:46:00Z" duration="0.027523" total="8" passed="0" failed="8" inconclusive="0" skipped="0" asserts="0">
+              <properties />
+              <failure>
+                <message><![CDATA[One or more child tests had errors]]></message>
+              </failure>
+              <test-case id="1019" name="BagGrowthRetainsEveryOwnedResource" fullname="Sim.Faciem.Tests.ViewModelDisposalTests.BagGrowthRetainsEveryOwnedResource" methodname="BagGrowthRetainsEveryOwnedResource" classname="Sim.Faciem.Tests.ViewModelDisposalTests" runstate="Runnable" seed="1715235135" result="Failed" start-time="2026-10-18 14:46:00Z" end-time="2026-10-18 14:46:00Z" duration="0.011671" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+                <failure>
+                  <message><![CDATA[  Expected: 1
+  But was:  0
+]]></message>
+                  <stack-trace><![CDATA[at Sim.Faciem.Tests.ViewModelDisposalTests.BagGrowthRetainsEveryOwnedResource () [0x0004d] in C:\Users\DPast\Documents\Projects\ReviewWorktrees\sim-faciem-d032-disposal\Tests\Editor\ViewModelDisposalTests.cs:100
+]]></stack-trace>
+                </failure>
+              </test-case>
+              <test-suite type="ParameterizedMethod" id="1014" name="BaseAndInterfaceOwnersReleaseResourcesExactlyOnce" fullname="Sim.Faciem.Tests.ViewModelDisposalTests.BaseAndInterfaceOwnersReleaseResourcesExactlyOnce" classname="Sim.Faciem.Tests.ViewModelDisposalTests" runstate="Runnable" testcasecount="2" result="Failed" site="Child" start-time="2026-10-18 14:46:00Z" end-time="2026-10-18 14:46:00Z" duration="0.002132" total="2" passed="0" failed="2" inconclusive="0" skipped="0" asserts="0">
+                <properties />
+                <failure>
+                  <message><![CDATA[One or more child tests had errors]]></message>
+                </failure>
+                <test-case id="1012" name="BaseAndInterfaceOwnersReleaseResourcesExactlyOnce(False)" fullname="Sim.Faciem.Tests.ViewModelDisposalTests.BaseAndInterfaceOwnersReleaseResourcesExactlyOnce(False)" methodname="BaseAndInterfaceOwnersReleaseResourcesExactlyOnce" classname="Sim.Faciem.Tests.ViewModelDisposalTests" runstate="Runnable" seed="657552929" result="Failed" start-time="2026-10-18 14:46:00Z" end-time="2026-10-18 14:46:00Z" duration="0.000386" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                  <failure>
+                    <message><![CDATA[  Expected: 1
+  But was:  0
+]]></message>
+                    <stack-trace><![CDATA[at Sim.Faciem.Tests.ViewModelDisposalTests.BaseAndInterfaceOwnersReleaseResourcesExactlyOnce (System.Boolean throughInterface) [0x0003e] in C:\Users\DPast\Documents\Projects\ReviewWorktrees\sim-faciem-d032-disposal\Tests\Editor\ViewModelDisposalTests.cs:29
+]]></stack-trace>
+                  </failure>
+                </test-case>
+                <test-case id="1013" name="BaseAndInterfaceOwnersReleaseResourcesExactlyOnce(True)" fullname="Sim.Faciem.Tests.ViewModelDisposalTests.BaseAndInterfaceOwnersReleaseResourcesExactlyOnce(True)" methodname="BaseAndInterfaceOwnersReleaseResourcesExactlyOnce" classname="Sim.Faciem.Tests.ViewModelDisposalTests" runstate="Runnable" seed="1190967392" result="Failed" start-time="2026-10-18 14:46:00Z" end-time="2026-10-18 14:46:00Z" duration="0.000192" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                  <failure>
+                    <message><![CDATA[  Expected: 1
+  But was:  0
+]]></message>
+                    <stack-trace><![CDATA[at Sim.Faciem.Tests.ViewModelDisposalTests.BaseAndInterfaceOwnersReleaseResourcesExactlyOnce (System.Boolean throughInterface) [0x0003e] in C:\Users\DPast\Documents\Projects\ReviewWorktrees\sim-faciem-d032-disposal\Tests\Editor\ViewModelDisposalTests.cs:29
+]]></stack-trace>
+                  </failure>
+                </test-case>
+              </test-suite>
+              <test-case id="1020" name="BaseDisposalDetachesTheR3Subscription" fullname="Sim.Faciem.Tests.ViewModelDisposalTests.BaseDisposalDetachesTheR3Subscription" methodname="BaseDisposalDetachesTheR3Subscription" classname="Sim.Faciem.Tests.ViewModelDisposalTests" runstate="Runnable" seed="1767048515" result="Failed" start-time="2026-10-18 14:46:00Z" end-time="2026-10-18 14:46:00Z" duration="0.002301" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+                <failure>
+                  <message><![CDATA[  Expected: 1
+  But was:  2
+]]></message>
+                  <stack-trace><![CDATA[at Sim.Faciem.Tests.ViewModelDisposalTests.BaseDisposalDetachesTheR3Subscription () [0x0006a] in C:\Users\DPast\Documents\Projects\ReviewWorktrees\sim-faciem-d032-disposal\Tests\Editor\ViewModelDisposalTests.cs:118
+]]></stack-trace>
+                </failure>
+              </test-case>
+              <test-case id="1016" name="DisposableContainerRegistrationUsesTheOwnedBag" fullname="Sim.Faciem.Tests.ViewModelDisposalTests.DisposableContainerRegistrationUsesTheOwnedBag" methodname="DisposableContainerRegistrationUsesTheOwnedBag" classname="Sim.Faciem.Tests.ViewModelDisposalTests" runstate="Runnable" seed="464468404" result="Failed" start-time="2026-10-18 14:46:00Z" end-time="2026-10-18 14:46:00Z" duration="0.000277" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+                <failure>
+                  <message><![CDATA[  Expected: 1
+  But was:  0
+]]></message>
+                  <stack-trace><![CDATA[at Sim.Faciem.Tests.ViewModelDisposalTests.DisposableContainerRegistrationUsesTheOwnedBag () [0x0001c] in C:\Users\DPast\Documents\Projects\ReviewWorktrees\sim-faciem-d032-disposal\Tests\Editor\ViewModelDisposalTests.cs:53
+]]></stack-trace>
+                </failure>
+              </test-case>
+              <test-case id="1018" name="EachViewModelOwnsAnIndependentBag" fullname="Sim.Faciem.Tests.ViewModelDisposalTests.EachViewModelOwnsAnIndependentBag" methodname="EachViewModelOwnsAnIndependentBag" classname="Sim.Faciem.Tests.ViewModelDisposalTests" runstate="Runnable" seed="478508043" result="Failed" start-time="2026-10-18 14:46:00Z" end-time="2026-10-18 14:46:00Z" duration="0.000249" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+                <failure>
+                  <message><![CDATA[  Expected: 1
+  But was:  0
+]]></message>
+                  <stack-trace><![CDATA[at Sim.Faciem.Tests.ViewModelDisposalTests.EachViewModelOwnsAnIndependentBag () [0x00030] in C:\Users\DPast\Documents\Projects\ReviewWorktrees\sim-faciem-d032-disposal\Tests\Editor\ViewModelDisposalTests.cs:79
+]]></stack-trace>
+                </failure>
+              </test-case>
+              <test-case id="1015" name="InheritedGenericViewModelUsesTheSameOwnedBag" fullname="Sim.Faciem.Tests.ViewModelDisposalTests.InheritedGenericViewModelUsesTheSameOwnedBag" methodname="InheritedGenericViewModelUsesTheSameOwnedBag" classname="Sim.Faciem.Tests.ViewModelDisposalTests" runstate="Runnable" seed="2029249345" result="Failed" start-time="2026-10-18 14:46:00Z" end-time="2026-10-18 14:46:00Z" duration="0.001073" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+                <failure>
+                  <message><![CDATA[  Expected: 1
+  But was:  0
+]]></message>
+                  <stack-trace><![CDATA[at Sim.Faciem.Tests.ViewModelDisposalTests.InheritedGenericViewModelUsesTheSameOwnedBag () [0x0001c] in C:\Users\DPast\Documents\Projects\ReviewWorktrees\sim-faciem-d032-disposal\Tests\Editor\ViewModelDisposalTests.cs:41
+]]></stack-trace>
+                </failure>
+              </test-case>
+              <test-case id="1017" name="ResourcesAddedAfterDisposalAreDisposedImmediately" fullname="Sim.Faciem.Tests.ViewModelDisposalTests.ResourcesAddedAfterDisposalAreDisposedImmediately" methodname="ResourcesAddedAfterDisposalAreDisposedImmediately" classname="Sim.Faciem.Tests.ViewModelDisposalTests" runstate="Runnable" seed="1243530013" result="Failed" start-time="2026-10-18 14:46:00Z" end-time="2026-10-18 14:46:00Z" duration="0.000246" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+                <failure>
+                  <message><![CDATA[  Expected: 1
+  But was:  0
+]]></message>
+                  <stack-trace><![CDATA[at Sim.Faciem.Tests.ViewModelDisposalTests.ResourcesAddedAfterDisposalAreDisposedImmediately () [0x0001c] in C:\Users\DPast\Documents\Projects\ReviewWorktrees\sim-faciem-d032-disposal\Tests\Editor\ViewModelDisposalTests.cs:65
+]]></stack-trace>
+                </failure>
+                <output><![CDATA[Saving results to: C:\Users\DPast\Documents\Projects\ReviewWorktrees\d032-faciem-disposal-consumer\Logs\unity-tests-editmode-20261018T144534147Z-3ce94c70586a4d66.xml
+]]></output>
+              </test-case>
+            </test-suite>
+          </test-suite>
+        </test-suite>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>

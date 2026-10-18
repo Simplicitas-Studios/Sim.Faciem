@@ -1,0 +1,54 @@
+{
+  "Documentation~/evidence/d032-disposal/.gitattributes": {
+    "bytes": 30,
+    "sha256": "f06202a408fef9b9ea69bb6b1cb8160dbb0378c5bb67a444d510d231813824c8"
+  },
+  "Documentation~/evidence/d032-disposal/additional-checks.json": {
+    "bytes": 1819,
+    "sha256": "e92eb5de1528695372f96db4611906e529b99b3b9707b3239c33887d134ebef3"
+  },
+  "Documentation~/evidence/d032-disposal/consumer-manifest.json": {
+    "bytes": 796,
+    "sha256": "df3dfe7f4bf8845733c5bee0fe4c23e42e99f73180cab672ad211bdc13fc884e"
+  },
+  "Documentation~/evidence/d032-disposal/consumer-NuGet.config": {
+    "bytes": 680,
+    "sha256": "0a3cae6cc872bc672478ec649b96fd72efa91a700b063ca3c914aa6cb0f1f757"
+  },
+  "Documentation~/evidence/d032-disposal/consumer-packages-lock.json": {
+    "bytes": 4964,
+    "sha256": "9ed190f681323573f4f5faec032a65180f88c3e6a8652bcaa1bcd4904ecfe43a"
+  },
+  "Documentation~/evidence/d032-disposal/consumer-packages.config": {
+    "bytes": 636,
+    "sha256": "730b3371b2600fea3e19d0c239081bd453936a4060bc13c6e4be8e35979ae8cd"
+  },
+  "Documentation~/evidence/d032-disposal/display-prerequisite.json": {
+    "bytes": 955,
+    "sha256": "4ab2e4df7a85229c334e8fb95e0605001b1abfeff2b0589372123bb3c2b7eec5"
+  },
+  "Documentation~/evidence/d032-disposal/display-prerequisite.xml": {
+    "bytes": 3569,
+    "sha256": "de072e6471e56476f1c0c39908b7092fc6119c189c6ef077269ca2e0748f85e3"
+  },
+  "Documentation~/evidence/d032-disposal/faciem-green.json": {
+    "bytes": 5262,
+    "sha256": "9f69419995751795e1782ba9a752ea5aaa502aa67916aa3f209300445fd11ead"
+  },
+  "Documentation~/evidence/d032-disposal/faciem-green.xml": {
+    "bytes": 33176,
+    "sha256": "fb1cf3071197728bd759af1a7771bf9fe43a41d0777b387b9359d2a5a90715f6"
+  },
+  "Documentation~/evidence/d032-disposal/faciem-red.json": {
+    "bytes": 3890,
+    "sha256": "7306a6b329fd125139d743335b6401e267b87f6df8db4d2c28954715f6decf8e"
+  },
+  "Documentation~/evidence/d032-disposal/faciem-red.xml": {
+    "bytes": 13432,
+    "sha256": "ddd2b51a87ba3073f3f914d9f565800f19666b3682cea2f3f04a2e91d76c283e"
+  },
+  "Documentation~/evidence/d032-disposal/validation.json": {
+    "bytes": 15181,
+    "sha256": "57f477c2f8b4c1bb18852c9dc42afd751cb1cf73bce5818d77f31b46b8893871"
+  }
+}
