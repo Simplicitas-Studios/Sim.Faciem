@@ -19,7 +19,9 @@ namespace Sim.Faciem.Shared
             while (current != null)
             {
                 if (current.name == name)
+                {
                     return current;
+                }
 
                 current = current.parent;
             }
