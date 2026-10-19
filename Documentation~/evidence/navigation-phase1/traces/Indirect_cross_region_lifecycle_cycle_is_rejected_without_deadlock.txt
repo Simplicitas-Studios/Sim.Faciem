@@ -1,0 +1,12 @@
+test=Indirect_cross_region_lifecycle_cycle_is_rejected_without_deadlock
+outcome=Passed
+A:To.begin:active:Flex
+B:To.begin:active:Flex
+B:To.end
+A:To.end
+A:Away.begin:inactive:None
+A:Away.end
+B:Away.begin:inactive:None
+B:Away.end
+models=2
+resource-disposals=A:1,B:1

@@ -1,0 +1,121 @@
+{
+  "runs": [
+    {
+      "stage": "consumer-nuget-run-error",
+      "normalized": "runs/pi-unity-tests-editmode-20261019T210112965Z-c496b43a1f3b4c6e8a7e8d762b447f63.json",
+      "outcome": "run_error",
+      "summary": {},
+      "selection": {
+        "testFilters": [
+          "Sim.Faciem.Tests.NavigationSerializationTests.Overlapping_navigations_wait_in_FIFO_order"
+        ],
+        "testCategories": []
+      },
+      "originalLog": "Logs/unity-tests-editmode-20261019T210031433Z-dd472adc652e42ce.log"
+    },
+    {
+      "stage": "no-graphics-setup-failure",
+      "normalized": "runs/pi-unity-tests-editmode-20261019T210249111Z-92cb26736fa641daac85ad3ec8783541.json",
+      "outcome": "tests_failed",
+      "summary": {
+        "total": 1,
+        "passed": 0,
+        "failed": 1,
+        "skipped": 0
+      },
+      "selection": {
+        "testFilters": [
+          "Sim.Faciem.Tests.NavigationSerializationTests.Overlapping_navigations_wait_in_FIFO_order"
+        ],
+        "testCategories": []
+      },
+      "originalLog": "Logs/unity-tests-editmode-20261019T210230672Z-746a1830f9594167.log",
+      "nunit": "runs/unity-tests-editmode-20261019T210230672Z-746a1830f9594167.xml"
+    },
+    {
+      "stage": "baseline-expected-red",
+      "normalized": "runs/pi-unity-tests-editmode-20261019T210323447Z-32e6100cbfb447e38b055e600c460ad6.json",
+      "outcome": "tests_failed",
+      "summary": {
+        "total": 1,
+        "passed": 0,
+        "failed": 1,
+        "skipped": 0
+      },
+      "selection": {
+        "testFilters": [
+          "Sim.Faciem.Tests.NavigationSerializationTests.Overlapping_navigations_wait_in_FIFO_order"
+        ],
+        "testCategories": []
+      },
+      "originalLog": "Logs/unity-tests-editmode-20261019T210308066Z-bfdea57cf6ef4ff8.log",
+      "nunit": "runs/unity-tests-editmode-20261019T210308066Z-bfdea57cf6ef4ff8.xml"
+    },
+    {
+      "stage": "integration-compile-error",
+      "normalized": "runs/pi-unity-tests-editmode-20261019T210502922Z-93fff057a8504f2abdc235e7312b2de2.json",
+      "outcome": "run_error",
+      "summary": {},
+      "selection": {
+        "testFilters": [
+          "Sim.Faciem.Tests.NavigationSerializationTests"
+        ],
+        "testCategories": []
+      },
+      "originalLog": "Logs/unity-tests-editmode-20261019T210452229Z-036d4af469dd4369.log"
+    },
+    {
+      "stage": "initial-green-17",
+      "normalized": "runs/pi-unity-tests-editmode-20261019T210557570Z-d533d9fd36f84b48bf3334cbcdaf05cb.json",
+      "outcome": "passed",
+      "summary": {
+        "total": 17,
+        "passed": 17,
+        "failed": 0,
+        "skipped": 0
+      },
+      "selection": {
+        "testFilters": [
+          "Sim.Faciem.Tests.NavigationSerializationTests"
+        ],
+        "testCategories": []
+      },
+      "originalLog": "Logs/unity-tests-editmode-20261019T210541142Z-18ff6f7ecc654eb8.log",
+      "nunit": "runs/unity-tests-editmode-20261019T210541142Z-18ff6f7ecc654eb8.xml"
+    },
+    {
+      "stage": "final-green-33",
+      "normalized": "runs/pi-unity-tests-editmode-20261019T210842486Z-969533ba1d344c1481c9d1f58bcbc10f.json",
+      "outcome": "passed",
+      "summary": {
+        "total": 33,
+        "passed": 33,
+        "failed": 0,
+        "skipped": 0
+      },
+      "selection": {
+        "testFilters": [
+          "Sim.Faciem.Tests"
+        ],
+        "testCategories": []
+      },
+      "originalLog": "Logs/unity-tests-editmode-20261019T210824986Z-360b9441503c4e37.log",
+      "nunit": "runs/unity-tests-editmode-20261019T210824986Z-360b9441503c4e37.xml"
+    }
+  ],
+  "finalDistinctPassed": 33,
+  "finalFailed": 0,
+  "finalSkipped": 0,
+  "newNavigationCases": 18,
+  "existingFaciemCases": 15,
+  "earlier17PassesAreRepeatedSubset": true,
+  "infrastructureHistoryNotProductEvidence": [
+    "consumer-nuget-run-error",
+    "no-graphics-setup-failure",
+    "integration-compile-error"
+  ],
+  "baselineExpectedRedFailed": 1,
+  "allTestLaunches": 6,
+  "graphicsRequiredReason": "Mounted EditorWindow reports No graphic device without active graphics; successful and product-red runs use graphics-enabled batchmode.",
+  "noBlindInfrastructureRetries": true
+}

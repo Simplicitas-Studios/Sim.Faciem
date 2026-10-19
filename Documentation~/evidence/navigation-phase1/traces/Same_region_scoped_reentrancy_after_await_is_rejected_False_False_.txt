@@ -1,0 +1,8 @@
+test=Same_region_scoped_reentrancy_after_await_is_rejected(False,False)
+outcome=Passed
+A:To.begin:active:Flex
+A:To.end
+A:Away.begin:inactive:None
+A:Away.end
+models=1
+resource-disposals=A:1

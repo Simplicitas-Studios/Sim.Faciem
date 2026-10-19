@@ -15,6 +15,7 @@ namespace Sim.Faciem
 
         protected internal IViewModelRegionManager RegionManager { get; set; }
 
+        /// <summary>Use this scoped handle for navigation from lifecycle callbacks, including after awaits.</summary>
         protected IViewModelNavigationService Navigation { get; private set; }
 
         protected ICommandBuilderFactory Command { get; private set; }

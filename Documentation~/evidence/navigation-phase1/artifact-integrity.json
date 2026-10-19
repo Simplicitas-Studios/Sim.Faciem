@@ -1,0 +1,146 @@
+{
+  "algorithm": "SHA-256",
+  "scope": "All Phase1 evidence except this self-referential manifest",
+  "payloads": {
+    "Documentation~/evidence/navigation-phase1/.gitattributes": {
+      "sha256": "8b9c3028d6467ff3be7c793141927841d70f47f52d0590677438f488ca154992",
+      "bytes": 9
+    },
+    "Documentation~/evidence/navigation-phase1/changed-files.json": {
+      "sha256": "323939846aeaabe030337be157001294a4fd86615b409266497499fca5b960d2",
+      "bytes": 7480
+    },
+    "Documentation~/evidence/navigation-phase1/checks.json": {
+      "sha256": "06faadd307a48344517bb827ee9b495b68d4b01c069dba6c37c3353801375bd2",
+      "bytes": 1156
+    },
+    "Documentation~/evidence/navigation-phase1/preservation.json": {
+      "sha256": "ff06a6150c4a2e1a4c5625253f1c3ebbbd7cf169dd2e8e1c94bdd84ba98110b9",
+      "bytes": 947
+    },
+    "Documentation~/evidence/navigation-phase1/runs/pi-unity-tests-editmode-20261019T210112965Z-c496b43a1f3b4c6e8a7e8d762b447f63.json": {
+      "sha256": "cd04e5c461def53ccfde623ebead365ebbed3c71ffbfe868d4ba860911c63bcf",
+      "bytes": 571
+    },
+    "Documentation~/evidence/navigation-phase1/runs/pi-unity-tests-editmode-20261019T210249111Z-92cb26736fa641daac85ad3ec8783541.json": {
+      "sha256": "4b19660ca479e3f2e0d6db918e58a8609e65008e0ebfbb59b0c6de23c9f17255",
+      "bytes": 1084
+    },
+    "Documentation~/evidence/navigation-phase1/runs/pi-unity-tests-editmode-20261019T210323447Z-32e6100cbfb447e38b055e600c460ad6.json": {
+      "sha256": "7ac4a588c27abb16e4b5fbf0f983861228933298866a5daa0447aab9becf03d8",
+      "bytes": 928
+    },
+    "Documentation~/evidence/navigation-phase1/runs/pi-unity-tests-editmode-20261019T210502922Z-93fff057a8504f2abdc235e7312b2de2.json": {
+      "sha256": "795ab509dedbfe75d428682632e648e60e5d25b7b6cbb2595a7c48e7ebffd86c",
+      "bytes": 528
+    },
+    "Documentation~/evidence/navigation-phase1/runs/pi-unity-tests-editmode-20261019T210557570Z-d533d9fd36f84b48bf3334cbcdaf05cb.json": {
+      "sha256": "0523b2bc8b529b9cb62f7d186ec244f6916d484af7b382b887beedc8dd566a4e",
+      "bytes": 3198
+    },
+    "Documentation~/evidence/navigation-phase1/runs/pi-unity-tests-editmode-20261019T210842486Z-969533ba1d344c1481c9d1f58bcbc10f.json": {
+      "sha256": "818b8f6294ba478a2b155b3b689a6c9210cd54f9068f6a8ec1aae4b4735331e8",
+      "bytes": 5552
+    },
+    "Documentation~/evidence/navigation-phase1/runs/unity-tests-editmode-20261019T210230672Z-746a1830f9594167.xml": {
+      "sha256": "65279e20ae751593402fe772e0f7ba451ed3bd0a1f990854cb9f6f7c9fe07fa6",
+      "bytes": 5447
+    },
+    "Documentation~/evidence/navigation-phase1/runs/unity-tests-editmode-20261019T210308066Z-bfdea57cf6ef4ff8.xml": {
+      "sha256": "025b318ffc6943e51375e94077ac49c90c9898c0e23f2aa7cea7a75ca2bbedbc",
+      "bytes": 5123
+    },
+    "Documentation~/evidence/navigation-phase1/runs/unity-tests-editmode-20261019T210541142Z-18ff6f7ecc654eb8.xml": {
+      "sha256": "b4fa49101d8fd36b7ca3411936193fcb5cb50c3ac3f11f0f86d7fc66a9a16050",
+      "bytes": 17272
+    },
+    "Documentation~/evidence/navigation-phase1/runs/unity-tests-editmode-20261019T210824986Z-360b9441503c4e37.xml": {
+      "sha256": "6c390890b0d8a835720de66e4880d766cf08dc32c8713f3d0b73923c9689433c",
+      "bytes": 30850
+    },
+    "Documentation~/evidence/navigation-phase1/runs.json": {
+      "sha256": "7b3ab57adcb5fd4332680e85ace8862deaadf0ec3cdc6271265cf13ff9e1e875",
+      "bytes": 4270
+    },
+    "Documentation~/evidence/navigation-phase1/tested-source-hashes.json": {
+      "sha256": "94ff2fe8356490949a1d14e61835a43a838f5083e839914211ceadd01a656416",
+      "bytes": 4004
+    },
+    "Documentation~/evidence/navigation-phase1/traces/A_B_A_reuses_real_mounted_views_models_and_lifecycle_order.txt": {
+      "sha256": "23174635b40a0be31f79dbb8df663d68a61ad6e9ab8032b13b209bc97b9ff3b3",
+      "bytes": 324
+    },
+    "Documentation~/evidence/navigation-phase1/traces/Awaited_entry_finishes_before_next_request_constructs_or_mutates.txt": {
+      "sha256": "e9b9a1edd1ab52f07c47a064413721c8aa4a9b5c6b97b0b59f47e45c3486d162",
+      "bytes": 260
+    },
+    "Documentation~/evidence/navigation-phase1/traces/Clear_retains_cache_and_already_active_navigation_still_calls_To.txt": {
+      "sha256": "adcf422c41bf426f0f61b756869656cda4e224c9f7f03fa205fc77685e5c476f",
+      "bytes": 288
+    },
+    "Documentation~/evidence/navigation-phase1/traces/Different_navigation_service_instances_still_serialize_the_same_region.txt": {
+      "sha256": "d4d7377e916982e4a67c9dc68ad2a06ca4327dab5dff052ffcf7759fd286f7c0",
+      "bytes": 340
+    },
+    "Documentation~/evidence/navigation-phase1/traces/Independent_regions_with_the_same_name_can_navigate_concurrently.txt": {
+      "sha256": "17e2d73221b5ea818b10266c5bf6d065abcc43e95d02186402f6422e41c77cdf",
+      "bytes": 260
+    },
+    "Documentation~/evidence/navigation-phase1/traces/Indirect_cross_region_lifecycle_cycle_is_rejected_without_deadlock.txt": {
+      "sha256": "430fb8833b7ff0fb8db8a3d738f780700f725e41f5febb6fcb9c5938929ab207",
+      "bytes": 262
+    },
+    "Documentation~/evidence/navigation-phase1/traces/Lifecycle_can_await_navigation_to_an_independent_child_region.txt": {
+      "sha256": "e3046589f7e894651231c6f7804ab101fe87cc104276e38486c9ddb2a246aa6d",
+      "bytes": 257
+    },
+    "Documentation~/evidence/navigation-phase1/traces/Lifecycle_failure_does_not_poison_queued_successors_False_.txt": {
+      "sha256": "a71b98d3212de3f16cd3e023387a5c40c41ffc48cc6f2521d8cee1c1b9ba7f74",
+      "bytes": 247
+    },
+    "Documentation~/evidence/navigation-phase1/traces/Lifecycle_failure_does_not_poison_queued_successors_True_.txt": {
+      "sha256": "4c8299df227901f155927fc353de8594fbf3957aaac4c125a196bfbbc78354ff",
+      "bytes": 318
+    },
+    "Documentation~/evidence/navigation-phase1/traces/Navigate_and_Clear_share_the_same_queue_False_.txt": {
+      "sha256": "be1967a083bbb6e870b7dbd9f7d8af935d22c0dc644173f7e60bc0d465a988ab",
+      "bytes": 242
+    },
+    "Documentation~/evidence/navigation-phase1/traces/Navigate_and_Clear_share_the_same_queue_True_.txt": {
+      "sha256": "e42d85f04a362bfe8c8f4becd715357fc98943daace921d5e9ac9f7ad326882a",
+      "bytes": 241
+    },
+    "Documentation~/evidence/navigation-phase1/traces/Overlapping_navigations_wait_in_FIFO_order.txt": {
+      "sha256": "d32bbc9941527317944b131117b646e2fa840279bd450a40dc795cafc934301e",
+      "bytes": 312
+    },
+    "Documentation~/evidence/navigation-phase1/traces/Overlapping_region_groups_reserve_shared_identity_without_lock_order_deadlock.txt": {
+      "sha256": "1384c2648ac6ce1dae249cfab4a1beb88891317fd339b155ca13815fee285b28",
+      "bytes": 311
+    },
+    "Documentation~/evidence/navigation-phase1/traces/Same_region_scoped_reentrancy_after_await_is_rejected_False_False_.txt": {
+      "sha256": "df3e01ef30aec69df3fed96876392c4622804e98f0cd5f54347d683141804807",
+      "bytes": 188
+    },
+    "Documentation~/evidence/navigation-phase1/traces/Same_region_scoped_reentrancy_after_await_is_rejected_False_True_.txt": {
+      "sha256": "e59ee7bd9ca3819234d99813adbd5b6d3e3c447de78cee9e1b52c97fb8ec6f85",
+      "bytes": 187
+    },
+    "Documentation~/evidence/navigation-phase1/traces/Same_region_scoped_reentrancy_after_await_is_rejected_True_False_.txt": {
+      "sha256": "ff7ed4c68502f7bed81c1101cf540b3e6300739911ffaf9755c79051589c5d7f",
+      "bytes": 261
+    },
+    "Documentation~/evidence/navigation-phase1/traces/Same_region_scoped_reentrancy_after_await_is_rejected_True_True_.txt": {
+      "sha256": "ec06356aaabc6337a824f447811ae84f00199b7bd4b5d913f51011abd360f827",
+      "bytes": 260
+    },
+    "Documentation~/evidence/navigation-phase1/traces/Scoped_navigation_after_callback_completion_is_an_ordinary_request.txt": {
+      "sha256": "1adcd9f5c4945bba5941f60599cd4c79381d7408de206133efbbdd95a9d4590d",
+      "bytes": 262
+    },
+    "Documentation~/evidence/navigation-phase1/validation-environment.json": {
+      "sha256": "73b0aa1187cbef11b66caf541c011ca7cef08fceb05393d9bfd046b57fac2004",
+      "bytes": 1693
+    }
+  }
+}

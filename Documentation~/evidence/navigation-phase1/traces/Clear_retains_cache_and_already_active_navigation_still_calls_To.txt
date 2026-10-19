@@ -1,0 +1,14 @@
+test=Clear_retains_cache_and_already_active_navigation_still_calls_To
+outcome=Passed
+A:To.begin:active:Flex
+A:To.end
+A:To.begin:active:Flex
+A:To.end
+A:Away.begin:inactive:None
+A:Away.end
+A:To.begin:active:Flex
+A:To.end
+A:Away.begin:inactive:None
+A:Away.end
+models=1
+resource-disposals=A:1

@@ -23,11 +23,17 @@ namespace Sim.Faciem
             _globalRegionManagerInternal = globalRegionManagerInternal;
         }
 
-        public async UniTask NavigateTo(
+        public UniTask NavigateTo(
             IRegionManager regionManager,
             ViewId viewId,
             RegionName regionName,
             NavigationParameters parameters)
+        {
+            return NavigateToFrom(null, regionManager, viewId, regionName, parameters);
+        }
+
+        internal async UniTask NavigateToFrom(BaseViewModel caller, IRegionManager regionManager,
+            ViewId viewId, RegionName regionName, NavigationParameters parameters)
         {
             var maybeRegionInfos = TryFindRegion(regionManager, regionName);
 
@@ -37,9 +43,18 @@ namespace Sim.Faciem
                 return;
             }
 
+            IRegion[] regions = RegionNavigationOperations.Snapshot(maybeRegionInfos.Value.Item2);
+            await RegionNavigationOperations.Run(regions, caller, operation =>
+                NavigateToOwned(maybeRegionInfos.Value.Item1, regions, viewAsset, viewId, parameters, operation));
+        }
+
+        private async UniTask NavigateToOwned(IRegionManager regionManager, IRegion[] regions,
+            ViewIdAsset viewAsset, ViewId viewId, NavigationParameters parameters,
+            RegionNavigationOperations.Operation operation)
+        {
             BaseViewModel viewModel = null;
 
-            foreach (var region in maybeRegionInfos.Value.Item2)
+            foreach (IRegion region in regions)
             {
                 if (region.TryGetView(viewAsset.ViewId, out var view))
                 {
@@ -50,7 +65,7 @@ namespace Sim.Faciem
 
             viewModel ??= _viewModelConstructionService.CreateInstance(viewAsset.DataContext.GetReferencedType());
 
-            foreach (var region in maybeRegionInfos.Value.Item2)
+            foreach (IRegion region in regions)
             {
                 if (region.ActiveViews.Contains(viewId) || region.SupportMultipleViews)
                 {
@@ -69,7 +84,8 @@ namespace Sim.Faciem
                     }
 
                     region.DeactivateView(currentActiveViewId);
-                    await baseViewModel.NavigateAwayInternal();
+                    await RegionNavigationOperations.InvokeLifecycle(operation, baseViewModel,
+                        baseViewModel.NavigateAwayInternal);
                 }
 
                 if (!region.TryGetView(viewAsset.ViewId, out var view))
@@ -78,9 +94,9 @@ namespace Sim.Faciem
                     view.style.flexGrow = 1;
                     view.pickingMode = PickingMode.Ignore;
 
-                    var regions = view.Query<Region>().ToList();
+                    var innerRegions = view.Query<Region>().ToList();
 
-                    foreach (var innerRegion in regions)
+                    foreach (var innerRegion in innerRegions)
                     {
                         if (innerRegion.IsGlobal)
                         {
@@ -102,19 +118,23 @@ namespace Sim.Faciem
                 region.ActivateView(viewId);
             }
 
-            var regionControllingManager = maybeRegionInfos.Value.Item1;
-
             if (viewModel == null)
             {
                 throw new InvalidOperationException("View has wrong Data Source");
             }
 
-            viewModel.RegionManager.Parent = Maybe.Some(regionControllingManager);
+            viewModel.RegionManager.Parent = Maybe.Some(regionManager);
 
-            await viewModel.NavigateToInternal(parameters);
+            await RegionNavigationOperations.InvokeLifecycle(operation, viewModel,
+                () => viewModel.NavigateToInternal(parameters));
         }
 
-        public async UniTask Clear(IRegionManager regionManager, RegionName regionName)
+        public UniTask Clear(IRegionManager regionManager, RegionName regionName)
+        {
+            return ClearFrom(null, regionManager, regionName);
+        }
+
+        internal async UniTask ClearFrom(BaseViewModel caller, IRegionManager regionManager, RegionName regionName)
         {
             var maybeRegionInfos = TryFindRegion(regionManager, regionName);
 
@@ -123,8 +143,12 @@ namespace Sim.Faciem
                 return;
             }
 
-            var regions = maybeRegionInfos.Value.Item2;
+            IRegion[] regions = RegionNavigationOperations.Snapshot(maybeRegionInfos.Value.Item2);
+            await RegionNavigationOperations.Run(regions, caller, operation => ClearOwned(regions, operation));
+        }
 
+        private static async UniTask ClearOwned(IRegion[] regions, RegionNavigationOperations.Operation operation)
+        {
             foreach (IRegion region in regions)
             {
                 var activeViewsCopy = region.ActiveViews.ToList();
@@ -137,7 +161,8 @@ namespace Sim.Faciem
                     }
 
                     region.DeactivateView(currentActiveViewId);
-                    await baseViewModel.NavigateAwayInternal();
+                    await RegionNavigationOperations.InvokeLifecycle(operation, baseViewModel,
+                        baseViewModel.NavigateAwayInternal);
                 }
             }
         }

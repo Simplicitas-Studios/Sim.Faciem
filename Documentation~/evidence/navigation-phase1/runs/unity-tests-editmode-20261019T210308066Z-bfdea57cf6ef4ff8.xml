@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<test-run id="2" testcasecount="1" result="Failed(Child)" total="1" passed="0" failed="1" inconclusive="0" skipped="0" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2026-10-19 21:03:20Z" end-time="2026-10-19 21:03:20Z" duration="0.2248194">
+  <test-suite type="TestSuite" id="1000" name="faciem-nav-phase1-validation" fullname="faciem-nav-phase1-validation" runstate="Runnable" testcasecount="50" result="Failed" site="Child" start-time="2026-10-19 21:03:20Z" end-time="2026-10-19 21:03:20Z" duration="0.224819" total="1" passed="0" failed="1" inconclusive="0" skipped="0" asserts="0">
+    <properties>
+      <property name="platform" value="EditMode" />
+    </properties>
+    <failure>
+      <message><![CDATA[One or more child tests had errors]]></message>
+    </failure>
+    <test-suite type="Assembly" id="1042" name="Sim.Faciem.Editor.Tests.dll" fullname="C:/Users/DPast/Documents/Projects/ReviewWorktrees/faciem-nav-phase1-validation/Library/ScriptAssemblies/Sim.Faciem.Editor.Tests.dll" runstate="Runnable" testcasecount="32" result="Failed" site="Child" start-time="2026-10-19 21:03:20Z" end-time="2026-10-19 21:03:20Z" duration="0.217069" total="1" passed="0" failed="1" inconclusive="0" skipped="0" asserts="0">
+      <properties>
+        <property name="_PID" value="59696" />
+        <property name="_APPDOMAIN" value="Unity Child Domain" />
+        <property name="platform" value="EditMode" />
+        <property name="EditorOnly" value="True" />
+      </properties>
+      <failure>
+        <message><![CDATA[One or more child tests had errors]]></message>
+      </failure>
+      <test-suite type="TestSuite" id="1043" name="Sim" fullname="Sim" runstate="Runnable" testcasecount="32" result="Failed" site="Child" start-time="2026-10-19 21:03:20Z" end-time="2026-10-19 21:03:20Z" duration="0.216263" total="1" passed="0" failed="1" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <failure>
+          <message><![CDATA[One or more child tests had errors]]></message>
+        </failure>
+        <test-suite type="TestSuite" id="1044" name="Faciem" fullname="Sim.Faciem" runstate="Runnable" testcasecount="32" result="Failed" site="Child" start-time="2026-10-19 21:03:20Z" end-time="2026-10-19 21:03:20Z" duration="0.215635" total="1" passed="0" failed="1" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <failure>
+            <message><![CDATA[One or more child tests had errors]]></message>
+          </failure>
+          <test-suite type="TestSuite" id="1045" name="Tests" fullname="Sim.Faciem.Tests" runstate="Runnable" testcasecount="32" result="Failed" site="Child" start-time="2026-10-19 21:03:20Z" end-time="2026-10-19 21:03:20Z" duration="0.214980" total="1" passed="0" failed="1" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <failure>
+              <message><![CDATA[One or more child tests had errors]]></message>
+            </failure>
+            <test-suite type="TestFixture" id="1011" name="NavigationSerializationTests" fullname="Sim.Faciem.Tests.NavigationSerializationTests" classname="Sim.Faciem.Tests.NavigationSerializationTests" runstate="Runnable" testcasecount="17" result="Failed" site="Child" start-time="2026-10-19 21:03:20Z" end-time="2026-10-19 21:03:20Z" duration="0.213411" total="1" passed="0" failed="1" inconclusive="0" skipped="0" asserts="0">
+              <properties />
+              <failure>
+                <message><![CDATA[One or more child tests had errors]]></message>
+              </failure>
+              <test-case id="1013" name="Overlapping_navigations_wait_in_FIFO_order" fullname="Sim.Faciem.Tests.NavigationSerializationTests.Overlapping_navigations_wait_in_FIFO_order" methodname="Overlapping_navigations_wait_in_FIFO_order" classname="Sim.Faciem.Tests.NavigationSerializationTests" runstate="Runnable" seed="1993435380" result="Failed" start-time="2026-10-19 21:03:20Z" end-time="2026-10-19 21:03:20Z" duration="0.201963" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+                <failure>
+                  <message><![CDATA[  Expected: Pending
+  But was:  Succeeded
+]]></message>
+                  <stack-trace><![CDATA[at Sim.Faciem.Tests.NavigationSerializationTests.Overlapping_navigations_wait_in_FIFO_order () [0x00076] in C:\Users\DPast\Documents\Projects\ReviewWorktrees\sim-faciem-navigation-phase1\Tests\Editor\NavigationSerializationTests.cs:103
+]]></stack-trace>
+                </failure>
+                <output><![CDATA[Saving results to: C:\Users\DPast\Documents\Projects\ReviewWorktrees\faciem-nav-phase1-validation\Logs\unity-tests-editmode-20261019T210308066Z-bfdea57cf6ef4ff8.xml
+]]></output>
+              </test-case>
+            </test-suite>
+          </test-suite>
+        </test-suite>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>

@@ -1,0 +1,35 @@
+{
+  "editorVersion": "6000.6.5f1",
+  "route": "isolated Unity CLI",
+  "graphics": true,
+  "projectCreatedForTask": true,
+  "noLibraryTempCopied": true,
+  "manifest": {
+    "dependencies": {
+      "com.cysharp.r3": "https://github.com/Cysharp/R3.git?path=src/R3.Unity/Assets/R3.Unity#a8d5fb3c2d0afd124223084e94c9e0ee73497510",
+      "com.cysharp.unitask": "https://github.com/Cysharp/UniTask.git?path=src/UniTask/Assets/Plugins/UniTask#a77a1b4a89824fb6df293099de3060daf2a432c1",
+      "com.github-glitchenzo.nugetforunity": "https://github.com/GlitchEnzo/NuGetForUnity.git?path=/src/NuGetForUnity#acc1c7bc9ea34c33b830e40316fca52553878d29",
+      "com.sim.faciem": "file:C:/Users/DPast/Documents/Projects/ReviewWorktrees/sim-faciem-navigation-phase1",
+      "com.sim.utility": "file:C:/Users/DPast/Documents/Projects/ReviewWorktrees/Sim.Utility-u1-audit",
+      "com.sim.utility.faciem.editor": "file:C:/Users/DPast/Documents/Projects/ReviewWorktrees/Sim.Utility-u1-audit/Integrations~/FaciemEditor",
+      "com.unity.addressables": "2.8.0",
+      "com.unity.ide.rider": "3.0.40",
+      "com.unity.test-framework": "1.8.0",
+      "com.unity.modules.uielements": "1.0.0",
+      "com.unity.pipeline": "0.8.0-exp.1"
+    },
+    "testables": [
+      "com.sim.faciem",
+      "com.sim.utility",
+      "com.sim.utility.faciem.editor"
+    ]
+  },
+  "nugetConfigCopiedFromKnownConsumer": true,
+  "noOtherConsumerMutated": true,
+  "noGuiEditorLaunchedOrClosed": true,
+  "playModeNotRun": true,
+  "formatter": {
+    "exitCode": 0,
+    "command": "dotnet format whitespace <framework> --folder --include <7 changed/new C# files> --verify-no-changes --verbosity quiet"
+  }
+}
