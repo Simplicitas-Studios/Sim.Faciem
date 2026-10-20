@@ -1,0 +1,194 @@
+{
+  "algorithm": "SHA-256",
+  "scope": "All Phase3 evidence except self-referential manifest",
+  "payloads": {
+    "Documentation~/evidence/navigation-phase3/.gitattributes": {
+      "sha256": "8b9c3028d6467ff3be7c793141927841d70f47f52d0590677438f488ca154992",
+      "bytes": 9
+    },
+    "Documentation~/evidence/navigation-phase3/changed-files.json": {
+      "sha256": "843d81fd2f099dda11451ff44afcd1fbdf5d4cccff3feebb5fab192615f7ced0",
+      "bytes": 8837
+    },
+    "Documentation~/evidence/navigation-phase3/checks.json": {
+      "sha256": "a6093e6dc96a1247fe95f330d0ded3a3f3bcfdf5421a10901629332605b75de0",
+      "bytes": 835
+    },
+    "Documentation~/evidence/navigation-phase3/contracts.json": {
+      "sha256": "cec9f1ec3a47fd46446edff7081648f3aec932ce9bb5a71423031326b2714cef",
+      "bytes": 1784
+    },
+    "Documentation~/evidence/navigation-phase3/preservation.json": {
+      "sha256": "60a8e349c6686cbdf6ae7c94ca7bd44983e18f9eac295d019e2dc6598fedaf65",
+      "bytes": 968
+    },
+    "Documentation~/evidence/navigation-phase3/runs/pi-unity-tests-editmode-20261020T083630544Z-8534c8db57b4475eb7912814f880d727.json": {
+      "sha256": "62b898926c6bbafe2443a7f9646eafd7e39b9e099946a52a5180398a8798e42f",
+      "bytes": 15639
+    },
+    "Documentation~/evidence/navigation-phase3/runs/pi-unity-tests-editmode-20261020T083907185Z-db57f87eb6964c278137e96f203d20a0.json": {
+      "sha256": "d51c5b4419d4d29c712e1cda43dd6274d5f10a9044e2f1c966162e85990450d9",
+      "bytes": 16167
+    },
+    "Documentation~/evidence/navigation-phase3/runs/unity-tests-editmode-20261020T083554347Z-7ba659ba47254710.xml": {
+      "sha256": "08283abdf0572f2e843e2f00cd3704a0d7f26a8754a8b52c9ba774a610675a66",
+      "bytes": 84582
+    },
+    "Documentation~/evidence/navigation-phase3/runs/unity-tests-editmode-20261020T083849883Z-78ae4425f00b4833.xml": {
+      "sha256": "77225a08ff6fd76ec6a57b8e160aba084ee4f4cc613501a36202b5f062bb58c3",
+      "bytes": 87508
+    },
+    "Documentation~/evidence/navigation-phase3/runs.json": {
+      "sha256": "94d2de5d25fa18b2ec8e4a09b8d0d9b15f1e0629a8f516f2b740fc5ee63f8fd3",
+      "bytes": 1793
+    },
+    "Documentation~/evidence/navigation-phase3/tested-source-hashes.json": {
+      "sha256": "6a7feb49e678b6b35ee660c610d4093766a644a99fc7e3a346f696a118de14a5",
+      "bytes": 3943
+    },
+    "Documentation~/evidence/navigation-phase3/traces/Captured_pre_reentry_work_cannot_publish_to_the_new_activation.txt": {
+      "sha256": "0f761dafc2981329c4067eccf61c9dc7b6bb2e2d6eee1218268da4bbd60dc52c",
+      "bytes": 375
+    },
+    "Documentation~/evidence/navigation-phase3/traces/Entry_mode_validation_and_custom_service_compatibility_are_explicit.txt": {
+      "sha256": "b01a635514be75cb8b65814e332d4a9c53ca254bfa3e26854446f87ef1ddb2ac",
+      "bytes": 108
+    },
+    "Documentation~/evidence/navigation-phase3/traces/Executing_group_reentry_supersession_drains_before_only_the_winner_activates_False_.txt": {
+      "sha256": "427c8d4d61604903d6eef188f4d568bd0c561cb763d2c59e7d9694e12dbed376",
+      "bytes": 463
+    },
+    "Documentation~/evidence/navigation-phase3/traces/Executing_group_reentry_supersession_drains_before_only_the_winner_activates_True_.txt": {
+      "sha256": "e7ecefbccae99a98aa1a8cc599f56330b4db3b8d29cb1466b6ae239fa658be40",
+      "bytes": 532
+    },
+    "Documentation~/evidence/navigation-phase3/traces/Explicit_reentry_reuses_cached_objects_with_fresh_activation_and_exact_order_Fifo_.txt": {
+      "sha256": "82535e4ea81526fe317d6188a256dabbb0cfbf0a27a96a22420b15e9944f4a8b",
+      "bytes": 396
+    },
+    "Documentation~/evidence/navigation-phase3/traces/Explicit_reentry_reuses_cached_objects_with_fresh_activation_and_exact_order_LatestRequestWins_.txt": {
+      "sha256": "0989a3112f67a36dffd109956a55d0523d17abf95aac95e9f236f74f542d7cfd",
+      "bytes": 408
+    },
+    "Documentation~/evidence/navigation-phase3/traces/Heterogeneous_cached_models_reject_group_reentry_before_mutation.txt": {
+      "sha256": "acf0f9015cf16c88922635604d0b26a18bac0cdec0ca0264fb9c75af57b756f8",
+      "bytes": 685
+    },
+    "Documentation~/evidence/navigation-phase3/traces/Inactive_target_and_queued_state_changes_follow_ordinary_entry_without_extra_exit.txt": {
+      "sha256": "1cf8efa8a8ce14d12fe76c9a3292739b39c511407bd762a87e3afbb211b05883",
+      "bytes": 579
+    },
+    "Documentation~/evidence/navigation-phase3/traces/Independent_regions_reenter_concurrently_without_cross_cancellation.txt": {
+      "sha256": "8ad64c752d4056942cf09e399a81a027181871ead45f42391c305666e4b9fca0",
+      "bytes": 686
+    },
+    "Documentation~/evidence/navigation-phase3/traces/Mixed_group_exits_each_old_model_before_restoring_the_shared_requested_cache.txt": {
+      "sha256": "02ad76f00d3c5f41108fbc484645a279a4ddabfed05b207ceddcc1c98b94db59",
+      "bytes": 738
+    },
+    "Documentation~/evidence/navigation-phase3/traces/Multi_view_region_reentry_is_not_silently_treated_as_success.txt": {
+      "sha256": "d98cca4a490d6c9714bc03859440fe6b5661bb2b9ab4267310a6bd8f0517b2ba",
+      "bytes": 280
+    },
+    "Documentation~/evidence/navigation-phase3/traces/Ordinary_same_ViewId_preserves_activation_even_with_different_parameters_False_.txt": {
+      "sha256": "375e4c3a76b5f5a6835b17dc6552007047e9c7fc3197d703932faf6d683890d4",
+      "bytes": 349
+    },
+    "Documentation~/evidence/navigation-phase3/traces/Ordinary_same_ViewId_preserves_activation_even_with_different_parameters_True_.txt": {
+      "sha256": "17059d7ef8e3c71e64dce06291e683080e663d6781045606b89c701bb40979a2",
+      "bytes": 348
+    },
+    "Documentation~/evidence/navigation-phase3/traces/Partial_shared_cohort_reentry_rejects_without_resetting_any_member.txt": {
+      "sha256": "3b9fc28a34c3c7a26dc2a82c3063fd57abb74ac5bcc1a15cb1a898630a81b378",
+      "bytes": 566
+    },
+    "Documentation~/evidence/navigation-phase3/traces/Reentry_and_another_View_respect_FIFO_order_False_.txt": {
+      "sha256": "a97ddb11c84694fb8eaebf7ab37e0c196af7a9adebf638bea77d5a2fe1ea97e8",
+      "bytes": 546
+    },
+    "Documentation~/evidence/navigation-phase3/traces/Reentry_and_another_View_respect_FIFO_order_True_.txt": {
+      "sha256": "f152f275cfe9a7b012877064e346535f3b715a1356c2a90e1ca148fd0142da53",
+      "bytes": 546
+    },
+    "Documentation~/evidence/navigation-phase3/traces/Reentry_and_Clear_respect_FIFO_order_False_.txt": {
+      "sha256": "0ad16ee97b4a8664ea7c8efab4338300d14dcb9e7f9dea7b47173ae068a94e3c",
+      "bytes": 358
+    },
+    "Documentation~/evidence/navigation-phase3/traces/Reentry_and_Clear_respect_FIFO_order_True_.txt": {
+      "sha256": "e69333a78ca84f4c33207e46373367a049f525f0f77373cb422e9a80311819bc",
+      "bytes": 360
+    },
+    "Documentation~/evidence/navigation-phase3/traces/Reentry_failures_end_owned_resources_and_allow_queue_recovery__Away__.txt": {
+      "sha256": "2494a16b843a0e9fb52c3ecaa611f52b2147b1dc0b80d5b6ae7bbb0da74343fb",
+      "bytes": 465
+    },
+    "Documentation~/evidence/navigation-phase3/traces/Reentry_failures_end_owned_resources_and_allow_queue_recovery__Cleanup__.txt": {
+      "sha256": "41b8cc5d11fbead87fb170571c88c33c52357e8c09ef9a4d196dcc0ba1f620f5",
+      "bytes": 437
+    },
+    "Documentation~/evidence/navigation-phase3/traces/Reentry_failures_end_owned_resources_and_allow_queue_recovery__To__.txt": {
+      "sha256": "600edc7be3f727f2d90ba449860817745c386773a107cb18d953c7b5ccc08b8b",
+      "bytes": 549
+    },
+    "Documentation~/evidence/navigation-phase3/traces/Scoped_handle_outside_a_callback_can_request_reentry.txt": {
+      "sha256": "452c860c107f8213acba22b5c3de920521ca1196bbebffbccbe5f5e3e49fb04e",
+      "bytes": 366
+    },
+    "Documentation~/evidence/navigation-phase3/traces/Scoped_lifecycle_reentry_is_rejected_before_superseding_legitimate_work_False_.txt": {
+      "sha256": "eaf70084653edacad477915e6259e636652127a5287b02c9052585bfd872e1c5",
+      "bytes": 489
+    },
+    "Documentation~/evidence/navigation-phase3/traces/Scoped_lifecycle_reentry_is_rejected_before_superseding_legitimate_work_True_.txt": {
+      "sha256": "c51bc55f9b52d0e0741cc06270f7571a4f4c421d348e391a0c33d509cf96f89f",
+      "bytes": 487
+    },
+    "Documentation~/evidence/navigation-phase3/traces/Shared_model_busy_in_an_unowned_region_cannot_be_reset.txt": {
+      "sha256": "d7a0b63de60eba426456efcaf925282b7fbdf3443ccb37ce19385fe537af9f39",
+      "bytes": 412
+    },
+    "Documentation~/evidence/navigation-phase3/traces/Superseded_executing_exit_never_creates_its_new_activation__A__.txt": {
+      "sha256": "531fa967da175ac69134c3f1c799f3e16a060d4620b85e3948aa887748f5e147",
+      "bytes": 375
+    },
+    "Documentation~/evidence/navigation-phase3/traces/Superseded_executing_exit_never_creates_its_new_activation__B__.txt": {
+      "sha256": "592ed2f5361956822bea01cee4a897a83c886374badef77b3a0f94fd6561875a",
+      "bytes": 470
+    },
+    "Documentation~/evidence/navigation-phase3/traces/Superseded_executing_exit_never_creates_its_new_activation__Clear__.txt": {
+      "sha256": "b23d3150c8a5863990ef8991bf7ec56c80369af95d1e4f066091775a97087fe2",
+      "bytes": 290
+    },
+    "Documentation~/evidence/navigation-phase3/traces/Superseded_queued_group_reentry_does_not_partially_reset_the_cohort.txt": {
+      "sha256": "8ffc816579221b7cffcca0097d781f0b86fa0897aa4a9e4d1bb73de637412d4f",
+      "bytes": 488
+    },
+    "Documentation~/evidence/navigation-phase3/traces/Superseded_queued_reentry_cannot_reset_current_activation__A__.txt": {
+      "sha256": "bed4aec125ed8972934af457999971913e8f3e8362920b6e6a9182e51614dbbc",
+      "bytes": 370
+    },
+    "Documentation~/evidence/navigation-phase3/traces/Superseded_queued_reentry_cannot_reset_current_activation__B__.txt": {
+      "sha256": "d23b13cf843d79d23057346fe25c34cafc3a3e08587e00bac2d14d9cb57c55e6",
+      "bytes": 512
+    },
+    "Documentation~/evidence/navigation-phase3/traces/Superseded_queued_reentry_cannot_reset_current_activation__Clear__.txt": {
+      "sha256": "b1b219e46db7c55692c4748d344f79c72c2b835fdf931c142217d0cde0ff66a9",
+      "bytes": 332
+    },
+    "Documentation~/evidence/navigation-phase3/traces/Superseded_reentry_entry_drains_without_ending_the_winners_activation_False_.txt": {
+      "sha256": "1010a625788d6d92fc12fb96962f1058e09711216c2b485d757884da78a5b3d5",
+      "bytes": 443
+    },
+    "Documentation~/evidence/navigation-phase3/traces/Superseded_reentry_entry_drains_without_ending_the_winners_activation_True_.txt": {
+      "sha256": "1edfe2e8da5c2165c02336237153b5ccea89854e5bdf2a205ce82c54e38e3990",
+      "bytes": 425
+    },
+    "Documentation~/evidence/navigation-phase3/traces/Whole_shared_cohort_reentry_exits_once_and_preserves_each_cached_tree.txt": {
+      "sha256": "0d4e48aeea94b791c14d990624203bf6ecc2a50b46580c22fecb76151954879a",
+      "bytes": 501
+    },
+    "Documentation~/evidence/navigation-phase3/validation-environment.json": {
+      "sha256": "5ce1f0955ff8db03654ce5da35a721e18ba15698da4d542c48132400653b8bd3",
+      "bytes": 1661
+    }
+  }
+}

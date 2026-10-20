@@ -30,9 +30,10 @@ namespace Sim.Faciem
 
         internal async UniTask NavigateToFrom(BaseViewModel caller, IRegionManager regionManager,
             ViewId viewId, RegionName regionName, NavigationParameters parameters,
-            NavigationPolicy policy = NavigationPolicy.Fifo)
+            NavigationPolicy policy = NavigationPolicy.Fifo, NavigationEntryMode entryMode = NavigationEntryMode.Default)
         {
             RegionNavigationOperations.Validate(policy);
+            NavigationPolicyExtensions.ValidateEntryMode(entryMode);
             var maybeRegionInfos = TryFindRegion(regionManager, regionName);
             if (maybeRegionInfos.IsNone || !_viewIdRegistry.TryGetViewId(viewId, out var viewAsset))
             {
@@ -40,12 +41,12 @@ namespace Sim.Faciem
             }
             IRegion[] regions = RegionNavigationOperations.Snapshot(maybeRegionInfos.Value.Item2);
             await RegionNavigationOperations.Run(regions, caller, operation =>
-                NavigateToOwned(maybeRegionInfos.Value.Item1, regions, viewAsset, viewId, parameters, operation), policy);
+                NavigateToOwned(maybeRegionInfos.Value.Item1, regions, viewAsset, viewId, parameters, operation, entryMode), policy);
         }
 
         private async UniTask NavigateToOwned(IRegionManager regionManager, IRegion[] regions,
             ViewIdAsset viewAsset, ViewId viewId, NavigationParameters parameters,
-            RegionNavigationOperations.Operation operation)
+            RegionNavigationOperations.Operation operation, NavigationEntryMode entryMode)
         {
             BaseViewModel viewModel = null;
             NavigationActivation activation = null;
@@ -62,6 +63,17 @@ namespace Sim.Faciem
                 }
                 operation.ThrowIfSuperseded();
                 viewModel ??= _viewModelConstructionService.CreateInstance(viewAsset.DataContext.GetReferencedType());
+                if (entryMode == NavigationEntryMode.ReenterIfActive)
+                {
+                    if (regions.Any(region => region.SupportMultipleViews))
+                    {
+                        throw new NotSupportedException("Explicit re-entry requires single-view Regions.");
+                    }
+                    if (regions.Any(region => region.ActiveViews.Contains(viewId)))
+                    {
+                        await RestartActiveTargets(operation, regions, viewId, viewModel);
+                    }
+                }
 
                 foreach (IRegion region in regions)
                 {
@@ -108,6 +120,7 @@ namespace Sim.Faciem
                     }
                     operation.ThrowIfSuperseded();
                     region.ActivateView(viewId);
+                    viewModel.TrackActiveView(region, viewId);
                     newlyActivated.Add(region);
                 }
                 if (viewModel == null)
@@ -159,6 +172,48 @@ namespace Sim.Faciem
                     throw new AggregateException(error, cleanupError);
                 }
                 throw;
+            }
+        }
+
+        private static async UniTask RestartActiveTargets(RegionNavigationOperations.Operation operation,
+            IRegion[] regions, ViewId requestedId, BaseViewModel targetModel)
+        {
+            var exits = new List<(IRegion Region, ViewId ViewId, BaseViewModel Model)>();
+            var models = new List<BaseViewModel>();
+            foreach (IRegion region in regions)
+            {
+                if (region.TryGetView(requestedId, out var cached) && !ReferenceEquals(cached.dataSource, targetModel))
+                {
+                    throw new InvalidOperationException(
+                        "Re-entry across Regions requires the requested cached Views to share the same ViewModel.");
+                }
+                foreach (ViewId id in region.ActiveViews.ToList())
+                {
+                    if (!region.TryGetView(id, out var view) || view.dataSource is not BaseViewModel model)
+                    {
+                        throw new InvalidOperationException("Re-entry requires owned active ViewModel dataSources.");
+                    }
+                    RegionNavigationOperations.ValidateModelOwnership(operation, model);
+                    model.ValidateReentryOwnership(regions);
+                    exits.Add((region, id, model));
+                    if (!models.Any(previous => ReferenceEquals(previous, model)))
+                    {
+                        models.Add(model);
+                    }
+                }
+            }
+            RegionNavigationOperations.ValidateModelOwnership(operation, targetModel);
+            targetModel.ValidateReentryOwnership(regions);
+            operation.ThrowIfSuperseded();
+            // Preflight the entire group before hiding or ending any activation.
+            foreach (var exit in exits)
+            {
+                exit.Region.DeactivateView(exit.ViewId);
+            }
+            foreach (BaseViewModel model in models)
+            {
+                await Leave(operation, model);
+                operation.ThrowIfSuperseded();
             }
         }
 

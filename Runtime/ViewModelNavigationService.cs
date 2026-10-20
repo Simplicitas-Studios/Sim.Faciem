@@ -24,17 +24,18 @@ namespace Sim.Faciem
         }
 
         internal UniTask NavigateWithPolicy(ViewId viewId, RegionName region, NavigationParameters parameters,
-            NavigationPolicy policy)
+            NavigationPolicy policy, NavigationEntryMode entryMode = NavigationEntryMode.Default)
         {
             Internal.RegionNavigationOperations.Validate(policy);
+            NavigationPolicyExtensions.ValidateEntryMode(entryMode);
             if (_navigationService is NavigationService navigationService)
             {
                 return navigationService.NavigateToFrom(_baseViewModel, _baseViewModel.RegionManager,
-                    viewId, region, parameters, policy);
+                    viewId, region, parameters, policy, entryMode);
             }
-            if (policy != NavigationPolicy.Fifo)
+            if (policy != NavigationPolicy.Fifo || entryMode != NavigationEntryMode.Default)
             {
-                throw new System.NotSupportedException("This navigation service does not support LatestRequestWins.");
+                throw new System.NotSupportedException("This navigation service does not support the requested policy or entry mode.");
             }
             return _navigationService.NavigateTo(_baseViewModel.RegionManager, viewId, region, parameters);
         }

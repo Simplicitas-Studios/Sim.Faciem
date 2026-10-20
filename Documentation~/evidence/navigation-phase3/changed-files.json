@@ -1,0 +1,238 @@
+{
+  "base": "2e2ccaa37031202cdc137752a958a21e1d540282",
+  "count": 58,
+  "files": [
+    {
+      "status": "A",
+      "path": "Documentation~/evidence/navigation-phase3/.gitattributes"
+    },
+    {
+      "status": "A",
+      "path": "Documentation~/evidence/navigation-phase3/artifact-integrity.json"
+    },
+    {
+      "status": "A",
+      "path": "Documentation~/evidence/navigation-phase3/changed-files.json"
+    },
+    {
+      "status": "A",
+      "path": "Documentation~/evidence/navigation-phase3/checks.json"
+    },
+    {
+      "status": "A",
+      "path": "Documentation~/evidence/navigation-phase3/contracts.json"
+    },
+    {
+      "status": "A",
+      "path": "Documentation~/evidence/navigation-phase3/preservation.json"
+    },
+    {
+      "status": "A",
+      "path": "Documentation~/evidence/navigation-phase3/runs.json"
+    },
+    {
+      "status": "A",
+      "path": "Documentation~/evidence/navigation-phase3/runs/pi-unity-tests-editmode-20261020T083630544Z-8534c8db57b4475eb7912814f880d727.json"
+    },
+    {
+      "status": "A",
+      "path": "Documentation~/evidence/navigation-phase3/runs/pi-unity-tests-editmode-20261020T083907185Z-db57f87eb6964c278137e96f203d20a0.json"
+    },
+    {
+      "status": "A",
+      "path": "Documentation~/evidence/navigation-phase3/runs/unity-tests-editmode-20261020T083554347Z-7ba659ba47254710.xml"
+    },
+    {
+      "status": "A",
+      "path": "Documentation~/evidence/navigation-phase3/runs/unity-tests-editmode-20261020T083849883Z-78ae4425f00b4833.xml"
+    },
+    {
+      "status": "A",
+      "path": "Documentation~/evidence/navigation-phase3/tested-source-hashes.json"
+    },
+    {
+      "status": "A",
+      "path": "Documentation~/evidence/navigation-phase3/traces/Captured_pre_reentry_work_cannot_publish_to_the_new_activation.txt"
+    },
+    {
+      "status": "A",
+      "path": "Documentation~/evidence/navigation-phase3/traces/Entry_mode_validation_and_custom_service_compatibility_are_explicit.txt"
+    },
+    {
+      "status": "A",
+      "path": "Documentation~/evidence/navigation-phase3/traces/Executing_group_reentry_supersession_drains_before_only_the_winner_activates_False_.txt"
+    },
+    {
+      "status": "A",
+      "path": "Documentation~/evidence/navigation-phase3/traces/Executing_group_reentry_supersession_drains_before_only_the_winner_activates_True_.txt"
+    },
+    {
+      "status": "A",
+      "path": "Documentation~/evidence/navigation-phase3/traces/Explicit_reentry_reuses_cached_objects_with_fresh_activation_and_exact_order_Fifo_.txt"
+    },
+    {
+      "status": "A",
+      "path": "Documentation~/evidence/navigation-phase3/traces/Explicit_reentry_reuses_cached_objects_with_fresh_activation_and_exact_order_LatestRequestWins_.txt"
+    },
+    {
+      "status": "A",
+      "path": "Documentation~/evidence/navigation-phase3/traces/Heterogeneous_cached_models_reject_group_reentry_before_mutation.txt"
+    },
+    {
+      "status": "A",
+      "path": "Documentation~/evidence/navigation-phase3/traces/Inactive_target_and_queued_state_changes_follow_ordinary_entry_without_extra_exit.txt"
+    },
+    {
+      "status": "A",
+      "path": "Documentation~/evidence/navigation-phase3/traces/Independent_regions_reenter_concurrently_without_cross_cancellation.txt"
+    },
+    {
+      "status": "A",
+      "path": "Documentation~/evidence/navigation-phase3/traces/Mixed_group_exits_each_old_model_before_restoring_the_shared_requested_cache.txt"
+    },
+    {
+      "status": "A",
+      "path": "Documentation~/evidence/navigation-phase3/traces/Multi_view_region_reentry_is_not_silently_treated_as_success.txt"
+    },
+    {
+      "status": "A",
+      "path": "Documentation~/evidence/navigation-phase3/traces/Ordinary_same_ViewId_preserves_activation_even_with_different_parameters_False_.txt"
+    },
+    {
+      "status": "A",
+      "path": "Documentation~/evidence/navigation-phase3/traces/Ordinary_same_ViewId_preserves_activation_even_with_different_parameters_True_.txt"
+    },
+    {
+      "status": "A",
+      "path": "Documentation~/evidence/navigation-phase3/traces/Partial_shared_cohort_reentry_rejects_without_resetting_any_member.txt"
+    },
+    {
+      "status": "A",
+      "path": "Documentation~/evidence/navigation-phase3/traces/Reentry_and_Clear_respect_FIFO_order_False_.txt"
+    },
+    {
+      "status": "A",
+      "path": "Documentation~/evidence/navigation-phase3/traces/Reentry_and_Clear_respect_FIFO_order_True_.txt"
+    },
+    {
+      "status": "A",
+      "path": "Documentation~/evidence/navigation-phase3/traces/Reentry_and_another_View_respect_FIFO_order_False_.txt"
+    },
+    {
+      "status": "A",
+      "path": "Documentation~/evidence/navigation-phase3/traces/Reentry_and_another_View_respect_FIFO_order_True_.txt"
+    },
+    {
+      "status": "A",
+      "path": "Documentation~/evidence/navigation-phase3/traces/Reentry_failures_end_owned_resources_and_allow_queue_recovery__Away__.txt"
+    },
+    {
+      "status": "A",
+      "path": "Documentation~/evidence/navigation-phase3/traces/Reentry_failures_end_owned_resources_and_allow_queue_recovery__Cleanup__.txt"
+    },
+    {
+      "status": "A",
+      "path": "Documentation~/evidence/navigation-phase3/traces/Reentry_failures_end_owned_resources_and_allow_queue_recovery__To__.txt"
+    },
+    {
+      "status": "A",
+      "path": "Documentation~/evidence/navigation-phase3/traces/Scoped_handle_outside_a_callback_can_request_reentry.txt"
+    },
+    {
+      "status": "A",
+      "path": "Documentation~/evidence/navigation-phase3/traces/Scoped_lifecycle_reentry_is_rejected_before_superseding_legitimate_work_False_.txt"
+    },
+    {
+      "status": "A",
+      "path": "Documentation~/evidence/navigation-phase3/traces/Scoped_lifecycle_reentry_is_rejected_before_superseding_legitimate_work_True_.txt"
+    },
+    {
+      "status": "A",
+      "path": "Documentation~/evidence/navigation-phase3/traces/Shared_model_busy_in_an_unowned_region_cannot_be_reset.txt"
+    },
+    {
+      "status": "A",
+      "path": "Documentation~/evidence/navigation-phase3/traces/Superseded_executing_exit_never_creates_its_new_activation__A__.txt"
+    },
+    {
+      "status": "A",
+      "path": "Documentation~/evidence/navigation-phase3/traces/Superseded_executing_exit_never_creates_its_new_activation__B__.txt"
+    },
+    {
+      "status": "A",
+      "path": "Documentation~/evidence/navigation-phase3/traces/Superseded_executing_exit_never_creates_its_new_activation__Clear__.txt"
+    },
+    {
+      "status": "A",
+      "path": "Documentation~/evidence/navigation-phase3/traces/Superseded_queued_group_reentry_does_not_partially_reset_the_cohort.txt"
+    },
+    {
+      "status": "A",
+      "path": "Documentation~/evidence/navigation-phase3/traces/Superseded_queued_reentry_cannot_reset_current_activation__A__.txt"
+    },
+    {
+      "status": "A",
+      "path": "Documentation~/evidence/navigation-phase3/traces/Superseded_queued_reentry_cannot_reset_current_activation__B__.txt"
+    },
+    {
+      "status": "A",
+      "path": "Documentation~/evidence/navigation-phase3/traces/Superseded_queued_reentry_cannot_reset_current_activation__Clear__.txt"
+    },
+    {
+      "status": "A",
+      "path": "Documentation~/evidence/navigation-phase3/traces/Superseded_reentry_entry_drains_without_ending_the_winners_activation_False_.txt"
+    },
+    {
+      "status": "A",
+      "path": "Documentation~/evidence/navigation-phase3/traces/Superseded_reentry_entry_drains_without_ending_the_winners_activation_True_.txt"
+    },
+    {
+      "status": "A",
+      "path": "Documentation~/evidence/navigation-phase3/traces/Whole_shared_cohort_reentry_exits_once_and_preserves_each_cached_tree.txt"
+    },
+    {
+      "status": "A",
+      "path": "Documentation~/evidence/navigation-phase3/validation-environment.json"
+    },
+    {
+      "status": "A",
+      "path": "Documentation~/navigation-phase3-reentry.md"
+    },
+    {
+      "status": "M",
+      "path": "README.md"
+    },
+    {
+      "status": "M",
+      "path": "Runtime/BaseViewModel.cs"
+    },
+    {
+      "status": "A",
+      "path": "Runtime/NavigationEntryMode.cs"
+    },
+    {
+      "status": "A",
+      "path": "Runtime/NavigationEntryMode.cs.meta"
+    },
+    {
+      "status": "M",
+      "path": "Runtime/NavigationPolicyExtensions.cs"
+    },
+    {
+      "status": "M",
+      "path": "Runtime/NavigationService.cs"
+    },
+    {
+      "status": "M",
+      "path": "Runtime/ViewModelNavigationService.cs"
+    },
+    {
+      "status": "A",
+      "path": "Tests/Editor/NavigationReentryTests.cs"
+    },
+    {
+      "status": "A",
+      "path": "Tests/Editor/NavigationReentryTests.cs.meta"
+    }
+  ]
+}

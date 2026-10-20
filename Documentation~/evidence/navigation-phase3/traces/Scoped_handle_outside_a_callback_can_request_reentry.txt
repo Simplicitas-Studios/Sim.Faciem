@@ -1,0 +1,14 @@
+test=Scoped_handle_outside_a_callback_can_request_reentry
+outcome=Passed
+primaryTraceCount=7
+A:To:first:active/Flex
+A:To.return:first
+A:cleanup
+A:Away:inactive/None:null
+A:Away.return
+A:To:scoped:active/Flex
+A:To.return:scoped
+A:cleanup
+A:Away:inactive/None:null
+A:Away.return
+A:model=-92775732:To=2:Away=2:Lifetimes=2:Cleanup=2:FinalDispose=1:ViewHashes=-1111196120

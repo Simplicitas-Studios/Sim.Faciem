@@ -1,0 +1,14 @@
+test=Reentry_and_Clear_respect_FIFO_order(False)
+outcome=Passed
+primaryTraceCount=7
+A:To:first:active/Flex
+A:To.return:first
+A:cleanup
+A:Away:inactive/None:null
+A:Away.return
+A:To:restart:active/Flex
+A:To.return:restart
+A:cleanup
+A:Away:inactive/None:null
+A:Away.return
+A:model=-36336072:To=2:Away=2:Lifetimes=2:Cleanup=2:FinalDispose=1:ViewHashes=-689680816

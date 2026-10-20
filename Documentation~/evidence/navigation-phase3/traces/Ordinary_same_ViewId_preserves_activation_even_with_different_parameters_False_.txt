@@ -1,0 +1,11 @@
+test=Ordinary_same_ViewId_preserves_activation_even_with_different_parameters(False)
+outcome=Passed
+primaryTraceCount=4
+A:To:first:active/Flex
+A:To.return:first
+A:To:different:active/Flex
+A:To.return:different
+A:cleanup
+A:Away:inactive/None:null
+A:Away.return
+A:model=574983840:To=2:Away=1:Lifetimes=1:Cleanup=1:FinalDispose=1:ViewHashes=-1385960880

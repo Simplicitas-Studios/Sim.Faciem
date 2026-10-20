@@ -1,0 +1,22 @@
+{
+  "defaultSameId": "Same View/model/lifetime; To again, no Away; parameter changes do not infer re-entry",
+  "entryMode": "Explicit NavigationEntryMode.ReenterIfActive; evaluated at owned execution time",
+  "apiCompatibility": "One new enum, two higher-arity overloads; old signatures/default policy literals unambiguous",
+  "inactiveTarget": "Ordinary entry, no invented exit",
+  "ordering": "Preflight whole group; hide all; end activation/cleanup then Away once per logical old model; restore/show cached target; fresh activation before To",
+  "queuedSupersession": "No reset/cleanup/entry before turn; cancelled at head by existing engine",
+  "executingExitSupersession": "Drain exit; do not restore old activation or create obsolete fresh activation",
+  "executingEntrySupersession": "Invalidate captured new handle; drain callback and cleanup; later winner unaffected",
+  "visibilityLimitation": "Existing show-before-To retained; already shown work cannot be retroactively undone",
+  "multiRegion": "Complete active shared-model cohorts only; cached requested models must be reference-equal; reject partial/heterogeneous/multi-view targets before reset",
+  "ownershipTracking": "Model-local weak Region bindings; validate actual active IDs/dataSource, not mutable Parent lookup",
+  "failures": "No rollback/new result API; cleanup/exit failure remains hidden; entry failure keeps Phase2 partial-state contract; successor barriers release safely",
+  "reentrancy": "Scoped handle required in lifecycle; explicit flag does not bypass held-Region/cycle guards",
+  "notImplemented": [
+    "Application event/room identities",
+    "Accepted-state routing",
+    "Final cache disposal",
+    "Display dependency update",
+    "Merge/deployment/integration"
+  ]
+}
