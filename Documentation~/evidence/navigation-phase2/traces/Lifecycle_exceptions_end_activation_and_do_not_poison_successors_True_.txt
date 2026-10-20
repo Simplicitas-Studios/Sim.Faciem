@@ -1,0 +1,16 @@
+outcome=Passed
+A:To
+A:To.return
+A:cleanup
+A:Away
+B:To
+B:cleanup
+B:Away
+C:To
+C:To.return
+C:cleanup
+C:Away
+models=3
+A:To=1:Away=1:Lifetimes=1:Cleanup=1:FinalDispose=1:Publications=0
+B:To=1:Away=1:Lifetimes=1:Cleanup=1:FinalDispose=1:Publications=0
+C:To=1:Away=1:Lifetimes=1:Cleanup=1:FinalDispose=1:Publications=0

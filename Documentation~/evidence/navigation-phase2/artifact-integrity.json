@@ -1,0 +1,174 @@
+{
+  "algorithm": "SHA-256",
+  "scope": "Phase2 evidence except this self-referential manifest",
+  "payloads": {
+    "Documentation~/evidence/navigation-phase2/.gitattributes": {
+      "sha256": "8b9c3028d6467ff3be7c793141927841d70f47f52d0590677438f488ca154992",
+      "bytes": 9
+    },
+    "Documentation~/evidence/navigation-phase2/changed-files.json": {
+      "sha256": "6224539ca3ee0399c871642106433f2019e81b6c79c50d76ebf8aef44e9f8bd2",
+      "bytes": 8369
+    },
+    "Documentation~/evidence/navigation-phase2/checks.json": {
+      "sha256": "46a3f3e7873bf0127ecddc0987040b6e9b24b65cc9227b97e58c233be3829738",
+      "bytes": 906
+    },
+    "Documentation~/evidence/navigation-phase2/contracts.json": {
+      "sha256": "e422de2bbccbc80422ef7ee24760c6f6aa192e8a7d8d4ca142412a4dc83e2e52",
+      "bytes": 1655
+    },
+    "Documentation~/evidence/navigation-phase2/preservation.json": {
+      "sha256": "f067ec83059c0e7ab3e4932a8b4522a4086c2935456e1c90b2f1a26649e8984a",
+      "bytes": 934
+    },
+    "Documentation~/evidence/navigation-phase2/runs/pi-unity-tests-editmode-20261020T071807273Z-d305abd44008443ebbdffaea2bc76bfc.json": {
+      "sha256": "c0e1619c977629b981456641493f3f5a8cf6f71f3cfd999488febc5bd496acbb",
+      "bytes": 9196
+    },
+    "Documentation~/evidence/navigation-phase2/runs/pi-unity-tests-editmode-20261020T072222150Z-57be6167a885432a98ffa35b98f38c48.json": {
+      "sha256": "b96f8b5fa5bf5e9d454f020f3de35b1b56436d51ada25e90fd858e41d0d9b5db",
+      "bytes": 9703
+    },
+    "Documentation~/evidence/navigation-phase2/runs/pi-unity-tests-editmode-20261020T072543191Z-e1b4e02cd3534898a72798a23ae1d15e.json": {
+      "sha256": "b2eccf424815e27eddbc4cb94e9fbcab718639c700ad517a833f0edd43c30e49",
+      "bytes": 10324
+    },
+    "Documentation~/evidence/navigation-phase2/runs/unity-tests-editmode-20261020T071720598Z-84c6bae41af64481.xml": {
+      "sha256": "04e82b4f70a8449576d5e755444d0629d522ceeb78f7bc9fda5cc00124f322a9",
+      "bytes": 49270
+    },
+    "Documentation~/evidence/navigation-phase2/runs/unity-tests-editmode-20261020T072205080Z-a3248ee35f514142.xml": {
+      "sha256": "fe1d871d67066ec428a463a12ac80cc8fbedc23774bb701c54386b874a9592fb",
+      "bytes": 52114
+    },
+    "Documentation~/evidence/navigation-phase2/runs/unity-tests-editmode-20261020T072525699Z-78591a1cb2cc4691.xml": {
+      "sha256": "21f00846005ce1629745f0bb9757fcfe04bf2feea7f3e1608f051ef628e68882",
+      "bytes": 55276
+    },
+    "Documentation~/evidence/navigation-phase2/runs.json": {
+      "sha256": "fa876f62e45c5a543728ab7bfe34a5a3204a9ed50b81572f3330ba3ba2e4d686",
+      "bytes": 1864
+    },
+    "Documentation~/evidence/navigation-phase2/tested-source-hashes.json": {
+      "sha256": "a49f6c4d46c3ac796320727d9efa870bcc983c011f4a3acccdb987a1bfb9caa8",
+      "bytes": 4458
+    },
+    "Documentation~/evidence/navigation-phase2/traces/A_B_A_renews_activation_not_cached_objects_and_cleans_once.txt": {
+      "sha256": "a48640a1fdbe3e63db1b6c4e9952d472c49bb4f1fe5c22f16306df04b19ba490",
+      "bytes": 257
+    },
+    "Documentation~/evidence/navigation-phase2/traces/Activation_cleanup_uses_scoped_reentrancy_guard.txt": {
+      "sha256": "b49c1280c59b938077704cf47d6c0a13b142e9cac32d945b0fe701daea916dc3",
+      "bytes": 223
+    },
+    "Documentation~/evidence/navigation-phase2/traces/Captured_old_handle_fences_stale_completion_after_return_to_same_model.txt": {
+      "sha256": "a48640a1fdbe3e63db1b6c4e9952d472c49bb4f1fe5c22f16306df04b19ba490",
+      "bytes": 257
+    },
+    "Documentation~/evidence/navigation-phase2/traces/Cleanup_attempts_every_resource_once_even_when_cancellation_and_disposal_throw.txt": {
+      "sha256": "26daccb90075ee7b540f1578f09fa245d3c70daf01ba33d690c1e991192754b7",
+      "bytes": 216
+    },
+    "Documentation~/evidence/navigation-phase2/traces/Concurrent_callbacks_on_one_shared_model_are_rejected_without_ending_its_busy_activation__A__.txt": {
+      "sha256": "3c5df3e8fc5a3140a92e199a39336de4874924bc22a7c9556aa89cb9c15b0267",
+      "bytes": 147
+    },
+    "Documentation~/evidence/navigation-phase2/traces/Concurrent_callbacks_on_one_shared_model_are_rejected_without_ending_its_busy_activation__B__.txt": {
+      "sha256": "c6d07d3ed15d04389c4f20e50b4f338ea3747efdaaa3e0aa83c9e95311135a8f",
+      "bytes": 213
+    },
+    "Documentation~/evidence/navigation-phase2/traces/Concurrent_callbacks_on_one_shared_model_are_rejected_without_ending_its_busy_activation__Clear__.txt": {
+      "sha256": "3c5df3e8fc5a3140a92e199a39336de4874924bc22a7c9556aa89cb9c15b0267",
+      "bytes": 147
+    },
+    "Documentation~/evidence/navigation-phase2/traces/Cooperative_entry_cancellation_unwinds_and_cleans_before_successor_False_.txt": {
+      "sha256": "e69c3b029a253e427700244bde7be65637a3e830f0fc5cb00acb1eba2ce516f4",
+      "bytes": 204
+    },
+    "Documentation~/evidence/navigation-phase2/traces/Cooperative_entry_cancellation_unwinds_and_cleans_before_successor_True_.txt": {
+      "sha256": "d9fd40d802eff4200322887af2a779783cd235d353a043c4a26d82568e988496",
+      "bytes": 104
+    },
+    "Documentation~/evidence/navigation-phase2/traces/Executing_latest_Clear_drains_away_before_new_navigation_can_enter.txt": {
+      "sha256": "b49c1280c59b938077704cf47d6c0a13b142e9cac32d945b0fe701daea916dc3",
+      "bytes": 223
+    },
+    "Documentation~/evidence/navigation-phase2/traces/Executing_multi_region_entry_keeps_all_ownership_until_cancelled_callback_drains.txt": {
+      "sha256": "26daccb90075ee7b540f1578f09fa245d3c70daf01ba33d690c1e991192754b7",
+      "bytes": 216
+    },
+    "Documentation~/evidence/navigation-phase2/traces/Explicit_fifo_overloads_support_custom_services_and_latest_does_not_silently_fallback.txt": {
+      "sha256": "a2f71e192ce4fb5718ea271c83fd636c1f618257e85cda2041267abdad10cf97",
+      "bytes": 25
+    },
+    "Documentation~/evidence/navigation-phase2/traces/Independent_regions_do_not_supersede_or_cancel_each_other.txt": {
+      "sha256": "385a93a5c697045cedbe5777e9ac37e7f9ddafa22c53f7a77b3b30cdeaaa8b54",
+      "bytes": 223
+    },
+    "Documentation~/evidence/navigation-phase2/traces/Latest_Navigate_and_Clear_supersede_each_other_False_.txt": {
+      "sha256": "b49c1280c59b938077704cf47d6c0a13b142e9cac32d945b0fe701daea916dc3",
+      "bytes": 223
+    },
+    "Documentation~/evidence/navigation-phase2/traces/Latest_Navigate_and_Clear_supersede_each_other_True_.txt": {
+      "sha256": "e7b4c46c31597ee2019000bc2aa4871a80090e5ec67e47177c16ec2b0b946c1b",
+      "bytes": 123
+    },
+    "Documentation~/evidence/navigation-phase2/traces/Lifecycle_exceptions_end_activation_and_do_not_poison_successors_False_.txt": {
+      "sha256": "0d54a92d9d65702ab591d4d1a67ffb342aca458d182307b0e42e9ad1b0f2a8d7",
+      "bytes": 289
+    },
+    "Documentation~/evidence/navigation-phase2/traces/Lifecycle_exceptions_end_activation_and_do_not_poison_successors_True_.txt": {
+      "sha256": "7406fe3f98c09e45f2d8d0defab993d3f7c31b06fbff24b95918e9f2e2110e44",
+      "bytes": 311
+    },
+    "Documentation~/evidence/navigation-phase2/traces/Mixed_policy_keeps_fifo_requests_and_supersedes_only_opted_in_requests.txt": {
+      "sha256": "efaf2e1474a1633c1bfe2eb08b3fcb4c7152fe834528135122572cb5afe8aaea",
+      "bytes": 257
+    },
+    "Documentation~/evidence/navigation-phase2/traces/Publication_requires_owning_unity_thread.txt": {
+      "sha256": "e7b4c46c31597ee2019000bc2aa4871a80090e5ec67e47177c16ec2b0b946c1b",
+      "bytes": 123
+    },
+    "Documentation~/evidence/navigation-phase2/traces/Queued_latest_skips_obsolete_model_view_and_callbacks.txt": {
+      "sha256": "4855c6ac303eafb23bf9c2e001f4ac2f7f5ee22786874b75d9066af249706621",
+      "bytes": 223
+    },
+    "Documentation~/evidence/navigation-phase2/traces/Queued_multi_region_request_is_superseded_as_a_whole_on_any_overlap.txt": {
+      "sha256": "eb083187b73d49a6f78021412895952d617c99b1b8731b3f50fe9bc6488cf9f6",
+      "bytes": 223
+    },
+    "Documentation~/evidence/navigation-phase2/traces/Rejected_scoped_latest_request_cannot_supersede_valid_queued_work_False_.txt": {
+      "sha256": "b49c1280c59b938077704cf47d6c0a13b142e9cac32d945b0fe701daea916dc3",
+      "bytes": 223
+    },
+    "Documentation~/evidence/navigation-phase2/traces/Rejected_scoped_latest_request_cannot_supersede_valid_queued_work_True_.txt": {
+      "sha256": "b49c1280c59b938077704cf47d6c0a13b142e9cac32d945b0fe701daea916dc3",
+      "bytes": 223
+    },
+    "Documentation~/evidence/navigation-phase2/traces/Repeated_active_same_id_preserves_activation_without_forced_reentry.txt": {
+      "sha256": "f0ece2acfb975345dfe17fedb04f692bcdb8fa6c77d8c7b36ba227f3b8f6a756",
+      "bytes": 140
+    },
+    "Documentation~/evidence/navigation-phase2/traces/Shared_model_cohort_ends_once_without_mutating_an_unowned_region.txt": {
+      "sha256": "e0405a25e3a4165aca409b876ce91755c3342bd156377db12c4cc19740f464ae",
+      "bytes": 257
+    },
+    "Documentation~/evidence/navigation-phase2/traces/Superseded_exit_is_drained_before_obsolete_target_is_skipped.txt": {
+      "sha256": "0d54a92d9d65702ab591d4d1a67ffb342aca458d182307b0e42e9ad1b0f2a8d7",
+      "bytes": 289
+    },
+    "Documentation~/evidence/navigation-phase2/traces/Throwing_cancellation_observer_does_not_lose_new_request_or_release_old_ownership_early.txt": {
+      "sha256": "26daccb90075ee7b540f1578f09fa245d3c70daf01ba33d690c1e991192754b7",
+      "bytes": 216
+    },
+    "Documentation~/evidence/navigation-phase2/traces/Uncooperative_entry_is_invalidated_but_ownership_waits_for_callback_return.txt": {
+      "sha256": "26daccb90075ee7b540f1578f09fa245d3c70daf01ba33d690c1e991192754b7",
+      "bytes": 216
+    },
+    "Documentation~/evidence/navigation-phase2/validation-environment.json": {
+      "sha256": "9bde6e613dab4161cf2ebe7dc2e77213e44441473a898f9098ff8bde80c6d2e3",
+      "bytes": 1747
+    }
+  }
+}

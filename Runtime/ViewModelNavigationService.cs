@@ -20,19 +20,40 @@ namespace Sim.Faciem
 
         public UniTask Navigate(ViewId viewId, RegionName region, NavigationParameters parameters)
         {
+            return NavigateWithPolicy(viewId, region, parameters, NavigationPolicy.Fifo);
+        }
+
+        internal UniTask NavigateWithPolicy(ViewId viewId, RegionName region, NavigationParameters parameters,
+            NavigationPolicy policy)
+        {
+            Internal.RegionNavigationOperations.Validate(policy);
             if (_navigationService is NavigationService navigationService)
             {
                 return navigationService.NavigateToFrom(_baseViewModel, _baseViewModel.RegionManager,
-                    viewId, region, parameters);
+                    viewId, region, parameters, policy);
+            }
+            if (policy != NavigationPolicy.Fifo)
+            {
+                throw new System.NotSupportedException("This navigation service does not support LatestRequestWins.");
             }
             return _navigationService.NavigateTo(_baseViewModel.RegionManager, viewId, region, parameters);
         }
 
         public UniTask Clear(RegionName regionName)
         {
+            return ClearWithPolicy(regionName, NavigationPolicy.Fifo);
+        }
+
+        internal UniTask ClearWithPolicy(RegionName regionName, NavigationPolicy policy)
+        {
+            Internal.RegionNavigationOperations.Validate(policy);
             if (_navigationService is NavigationService navigationService)
             {
-                return navigationService.ClearFrom(_baseViewModel, _baseViewModel.RegionManager, regionName);
+                return navigationService.ClearFrom(_baseViewModel, _baseViewModel.RegionManager, regionName, policy);
+            }
+            if (policy != NavigationPolicy.Fifo)
+            {
+                throw new System.NotSupportedException("This navigation service does not support LatestRequestWins.");
             }
             return _navigationService.Clear(_baseViewModel.RegionManager, regionName);
         }

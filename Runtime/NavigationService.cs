@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using Cysharp.Threading.Tasks;
@@ -15,37 +15,32 @@ namespace Sim.Faciem
         private readonly IGlobalRegionManagerInternal _globalRegionManagerInternal;
 
         public NavigationService(IViewModelConstructionService viewModelConstructionService,
-            IViewIdRegistry viewIdRegistry,
-            IGlobalRegionManagerInternal globalRegionManagerInternal)
+            IViewIdRegistry viewIdRegistry, IGlobalRegionManagerInternal globalRegionManagerInternal)
         {
             _viewModelConstructionService = viewModelConstructionService;
             _viewIdRegistry = viewIdRegistry;
             _globalRegionManagerInternal = globalRegionManagerInternal;
         }
 
-        public UniTask NavigateTo(
-            IRegionManager regionManager,
-            ViewId viewId,
-            RegionName regionName,
+        public UniTask NavigateTo(IRegionManager regionManager, ViewId viewId, RegionName regionName,
             NavigationParameters parameters)
         {
             return NavigateToFrom(null, regionManager, viewId, regionName, parameters);
         }
 
         internal async UniTask NavigateToFrom(BaseViewModel caller, IRegionManager regionManager,
-            ViewId viewId, RegionName regionName, NavigationParameters parameters)
+            ViewId viewId, RegionName regionName, NavigationParameters parameters,
+            NavigationPolicy policy = NavigationPolicy.Fifo)
         {
+            RegionNavigationOperations.Validate(policy);
             var maybeRegionInfos = TryFindRegion(regionManager, regionName);
-
-            if (maybeRegionInfos.IsNone
-                || !_viewIdRegistry.TryGetViewId(viewId, out var viewAsset))
+            if (maybeRegionInfos.IsNone || !_viewIdRegistry.TryGetViewId(viewId, out var viewAsset))
             {
                 return;
             }
-
             IRegion[] regions = RegionNavigationOperations.Snapshot(maybeRegionInfos.Value.Item2);
             await RegionNavigationOperations.Run(regions, caller, operation =>
-                NavigateToOwned(maybeRegionInfos.Value.Item1, regions, viewAsset, viewId, parameters, operation));
+                NavigateToOwned(maybeRegionInfos.Value.Item1, regions, viewAsset, viewId, parameters, operation), policy);
         }
 
         private async UniTask NavigateToOwned(IRegionManager regionManager, IRegion[] regions,
@@ -53,80 +48,118 @@ namespace Sim.Faciem
             RegionNavigationOperations.Operation operation)
         {
             BaseViewModel viewModel = null;
-
-            foreach (IRegion region in regions)
+            NavigationActivation activation = null;
+            var newlyActivated = new List<IRegion>();
+            try
             {
-                if (region.TryGetView(viewAsset.ViewId, out var view))
+                foreach (IRegion region in regions)
                 {
-                    viewModel = view.dataSource as BaseViewModel;
-                    break;
-                }
-            }
-
-            viewModel ??= _viewModelConstructionService.CreateInstance(viewAsset.DataContext.GetReferencedType());
-
-            foreach (IRegion region in regions)
-            {
-                if (region.ActiveViews.Contains(viewId) || region.SupportMultipleViews)
-                {
-                    //TODO: Add support for multi view regions
-                    continue;
-                }
-
-                // Navigate away current active views
-                var activeViewsCopy = region.ActiveViews.ToList();
-                foreach (var currentActiveViewId in activeViewsCopy)
-                {
-                    if (!region.TryGetView(currentActiveViewId, out var oldView)
-                        || oldView.dataSource is not BaseViewModel baseViewModel)
+                    if (region.TryGetView(viewAsset.ViewId, out var cached))
                     {
-                        return;
+                        viewModel = cached.dataSource as BaseViewModel;
+                        break;
                     }
-
-                    region.DeactivateView(currentActiveViewId);
-                    await RegionNavigationOperations.InvokeLifecycle(operation, baseViewModel,
-                        baseViewModel.NavigateAwayInternal);
                 }
+                operation.ThrowIfSuperseded();
+                viewModel ??= _viewModelConstructionService.CreateInstance(viewAsset.DataContext.GetReferencedType());
 
-                if (!region.TryGetView(viewAsset.ViewId, out var view))
+                foreach (IRegion region in regions)
                 {
-                    view = viewAsset.View.Instantiate();
-                    view.style.flexGrow = 1;
-                    view.pickingMode = PickingMode.Ignore;
-
-                    var innerRegions = view.Query<Region>().ToList();
-
-                    foreach (var innerRegion in innerRegions)
+                    operation.ThrowIfSuperseded();
+                    RegionNavigationOperations.ValidateModelOwnership(operation, viewModel);
+                    if (region.ActiveViews.Contains(viewId) || region.SupportMultipleViews)
                     {
-                        if (innerRegion.IsGlobal)
+                        // Multi-view navigation remains outside this change.
+                        continue;
+                    }
+                    foreach (ViewId oldId in region.ActiveViews.ToList())
+                    {
+                        if (!region.TryGetView(oldId, out var oldView) || oldView.dataSource is not BaseViewModel oldModel)
                         {
-                            innerRegion.RegisterDirect(_globalRegionManagerInternal);
+                            return;
                         }
-                        innerRegion.RegisterDirect(viewModel);
+                        RegionNavigationOperations.ValidateModelOwnership(operation, oldModel);
+                        region.DeactivateView(oldId);
+                        await Leave(operation, oldModel);
+                        operation.ThrowIfSuperseded();
                     }
-
-                    region.AddView(viewId, view);
-                    view.dataSource = viewModel;
+                    operation.ThrowIfSuperseded();
+                    RegionNavigationOperations.ValidateModelOwnership(operation, viewModel);
+                    if (!region.TryGetView(viewAsset.ViewId, out var view))
+                    {
+                        view = viewAsset.View.Instantiate();
+                        view.style.flexGrow = 1;
+                        view.pickingMode = PickingMode.Ignore;
+                        foreach (Region innerRegion in view.Query<Region>().ToList())
+                        {
+                            if (innerRegion.IsGlobal)
+                            {
+                                innerRegion.RegisterDirect(_globalRegionManagerInternal);
+                            }
+                            innerRegion.RegisterDirect(viewModel);
+                        }
+                        region.AddView(viewId, view);
+                        view.dataSource = viewModel;
+                    }
+                    else
+                    {
+                        view.dataSource = null;
+                        view.dataSource = viewModel;
+                    }
+                    operation.ThrowIfSuperseded();
+                    region.ActivateView(viewId);
+                    newlyActivated.Add(region);
                 }
-                else
+                if (viewModel == null)
                 {
-                    view.dataSource = null;
-                    view.dataSource = viewModel;
+                    throw new InvalidOperationException("View has wrong Data Source");
                 }
-
-                // Active new View
-                region.ActivateView(viewId);
+                RegionNavigationOperations.ValidateModelOwnership(operation, viewModel);
+                viewModel.RegionManager.Parent = Maybe.Some(regionManager);
+                await RegionNavigationOperations.InvokeLifecycle(operation, viewModel, async () =>
+                {
+                    activation = await viewModel.EnsureActivationAsync();
+                });
+                operation.Track(activation);
+                operation.ThrowIfSuperseded();
+                await RegionNavigationOperations.InvokeLifecycle(operation, viewModel,
+                    () => viewModel.NavigateToInternal(parameters));
+                operation.ThrowIfSuperseded();
             }
-
-            if (viewModel == null)
+            catch (Exception error)
             {
-                throw new InvalidOperationException("View has wrong Data Source");
+                Exception cleanupError = null;
+                if (activation != null)
+                {
+                    try
+                    {
+                        await RegionNavigationOperations.InvokeLifecycle(operation, viewModel,
+                            () => viewModel.EndActivationAsync(activation));
+                    }
+                    catch (Exception cleanup)
+                    {
+                        cleanupError = cleanup;
+                    }
+                }
+                if (operation.Superseded && viewModel != null)
+                {
+                    // Only touch captured, owned Regions. Do not remove cached Views or dataSources.
+                    foreach (IRegion region in regions)
+                    {
+                        if ((activation != null || newlyActivated.Contains(region)) &&
+                            region.TryGetView(viewId, out var view) && ReferenceEquals(view.dataSource, viewModel) &&
+                            region.ActiveViews.Contains(viewId))
+                        {
+                            region.DeactivateView(viewId);
+                        }
+                    }
+                }
+                if (cleanupError != null)
+                {
+                    throw new AggregateException(error, cleanupError);
+                }
+                throw;
             }
-
-            viewModel.RegionManager.Parent = Maybe.Some(regionManager);
-
-            await RegionNavigationOperations.InvokeLifecycle(operation, viewModel,
-                () => viewModel.NavigateToInternal(parameters));
         }
 
         public UniTask Clear(IRegionManager regionManager, RegionName regionName)
@@ -134,45 +167,52 @@ namespace Sim.Faciem
             return ClearFrom(null, regionManager, regionName);
         }
 
-        internal async UniTask ClearFrom(BaseViewModel caller, IRegionManager regionManager, RegionName regionName)
+        internal async UniTask ClearFrom(BaseViewModel caller, IRegionManager regionManager, RegionName regionName,
+            NavigationPolicy policy = NavigationPolicy.Fifo)
         {
+            RegionNavigationOperations.Validate(policy);
             var maybeRegionInfos = TryFindRegion(regionManager, regionName);
-
             if (maybeRegionInfos.IsNone)
             {
                 return;
             }
-
             IRegion[] regions = RegionNavigationOperations.Snapshot(maybeRegionInfos.Value.Item2);
-            await RegionNavigationOperations.Run(regions, caller, operation => ClearOwned(regions, operation));
+            await RegionNavigationOperations.Run(regions, caller, operation => ClearOwned(regions, operation), policy);
         }
 
         private static async UniTask ClearOwned(IRegion[] regions, RegionNavigationOperations.Operation operation)
         {
             foreach (IRegion region in regions)
             {
-                var activeViewsCopy = region.ActiveViews.ToList();
-                foreach (var currentActiveViewId in activeViewsCopy)
+                operation.ThrowIfSuperseded();
+                foreach (ViewId oldId in region.ActiveViews.ToList())
                 {
-                    if (!region.TryGetView(currentActiveViewId, out var oldView)
-                        || oldView.dataSource is not BaseViewModel baseViewModel)
+                    if (!region.TryGetView(oldId, out var view) || view.dataSource is not BaseViewModel model)
                     {
                         return;
                     }
-
-                    region.DeactivateView(currentActiveViewId);
-                    await RegionNavigationOperations.InvokeLifecycle(operation, baseViewModel,
-                        baseViewModel.NavigateAwayInternal);
+                    RegionNavigationOperations.ValidateModelOwnership(operation, model);
+                    region.DeactivateView(oldId);
+                    await Leave(operation, model);
+                    operation.ThrowIfSuperseded();
                 }
             }
         }
 
-        private Maybe<(IRegionManager, IReadOnlyList<IRegion>)> TryFindRegion(IRegionManager regionManager,
-            RegionName regionName)
+        private static UniTask Leave(RegionNavigationOperations.Operation operation, BaseViewModel model)
         {
-            return !regionManager.TryFindRegion(regionName, out var region)
+            return RegionNavigationOperations.InvokeLifecycle(operation, model, async () =>
+            {
+                await model.EndActivationAsync();
+                await model.NavigateAwayInternal();
+            });
+        }
+
+        private Maybe<(IRegionManager, IReadOnlyList<IRegion>)> TryFindRegion(IRegionManager manager, RegionName name)
+        {
+            return !manager.TryFindRegion(name, out var regions)
                 ? Maybe.None<(IRegionManager, IReadOnlyList<IRegion>)>()
-                : Maybe.Some((regionManager, region));
+                : Maybe.Some((manager, regions));
         }
     }
 }

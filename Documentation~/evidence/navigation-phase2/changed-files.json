@@ -1,0 +1,234 @@
+{
+  "base": "67895a8531ac3dec3595f49089859a40dd3b1421",
+  "count": 57,
+  "files": [
+    {
+      "status": "A",
+      "path": "Documentation~/evidence/navigation-phase2/.gitattributes"
+    },
+    {
+      "status": "A",
+      "path": "Documentation~/evidence/navigation-phase2/artifact-integrity.json"
+    },
+    {
+      "status": "A",
+      "path": "Documentation~/evidence/navigation-phase2/changed-files.json"
+    },
+    {
+      "status": "A",
+      "path": "Documentation~/evidence/navigation-phase2/checks.json"
+    },
+    {
+      "status": "A",
+      "path": "Documentation~/evidence/navigation-phase2/contracts.json"
+    },
+    {
+      "status": "A",
+      "path": "Documentation~/evidence/navigation-phase2/preservation.json"
+    },
+    {
+      "status": "A",
+      "path": "Documentation~/evidence/navigation-phase2/runs.json"
+    },
+    {
+      "status": "A",
+      "path": "Documentation~/evidence/navigation-phase2/runs/pi-unity-tests-editmode-20261020T071807273Z-d305abd44008443ebbdffaea2bc76bfc.json"
+    },
+    {
+      "status": "A",
+      "path": "Documentation~/evidence/navigation-phase2/runs/pi-unity-tests-editmode-20261020T072222150Z-57be6167a885432a98ffa35b98f38c48.json"
+    },
+    {
+      "status": "A",
+      "path": "Documentation~/evidence/navigation-phase2/runs/pi-unity-tests-editmode-20261020T072543191Z-e1b4e02cd3534898a72798a23ae1d15e.json"
+    },
+    {
+      "status": "A",
+      "path": "Documentation~/evidence/navigation-phase2/runs/unity-tests-editmode-20261020T071720598Z-84c6bae41af64481.xml"
+    },
+    {
+      "status": "A",
+      "path": "Documentation~/evidence/navigation-phase2/runs/unity-tests-editmode-20261020T072205080Z-a3248ee35f514142.xml"
+    },
+    {
+      "status": "A",
+      "path": "Documentation~/evidence/navigation-phase2/runs/unity-tests-editmode-20261020T072525699Z-78591a1cb2cc4691.xml"
+    },
+    {
+      "status": "A",
+      "path": "Documentation~/evidence/navigation-phase2/tested-source-hashes.json"
+    },
+    {
+      "status": "A",
+      "path": "Documentation~/evidence/navigation-phase2/traces/A_B_A_renews_activation_not_cached_objects_and_cleans_once.txt"
+    },
+    {
+      "status": "A",
+      "path": "Documentation~/evidence/navigation-phase2/traces/Activation_cleanup_uses_scoped_reentrancy_guard.txt"
+    },
+    {
+      "status": "A",
+      "path": "Documentation~/evidence/navigation-phase2/traces/Captured_old_handle_fences_stale_completion_after_return_to_same_model.txt"
+    },
+    {
+      "status": "A",
+      "path": "Documentation~/evidence/navigation-phase2/traces/Cleanup_attempts_every_resource_once_even_when_cancellation_and_disposal_throw.txt"
+    },
+    {
+      "status": "A",
+      "path": "Documentation~/evidence/navigation-phase2/traces/Concurrent_callbacks_on_one_shared_model_are_rejected_without_ending_its_busy_activation__A__.txt"
+    },
+    {
+      "status": "A",
+      "path": "Documentation~/evidence/navigation-phase2/traces/Concurrent_callbacks_on_one_shared_model_are_rejected_without_ending_its_busy_activation__B__.txt"
+    },
+    {
+      "status": "A",
+      "path": "Documentation~/evidence/navigation-phase2/traces/Concurrent_callbacks_on_one_shared_model_are_rejected_without_ending_its_busy_activation__Clear__.txt"
+    },
+    {
+      "status": "A",
+      "path": "Documentation~/evidence/navigation-phase2/traces/Cooperative_entry_cancellation_unwinds_and_cleans_before_successor_False_.txt"
+    },
+    {
+      "status": "A",
+      "path": "Documentation~/evidence/navigation-phase2/traces/Cooperative_entry_cancellation_unwinds_and_cleans_before_successor_True_.txt"
+    },
+    {
+      "status": "A",
+      "path": "Documentation~/evidence/navigation-phase2/traces/Executing_latest_Clear_drains_away_before_new_navigation_can_enter.txt"
+    },
+    {
+      "status": "A",
+      "path": "Documentation~/evidence/navigation-phase2/traces/Executing_multi_region_entry_keeps_all_ownership_until_cancelled_callback_drains.txt"
+    },
+    {
+      "status": "A",
+      "path": "Documentation~/evidence/navigation-phase2/traces/Explicit_fifo_overloads_support_custom_services_and_latest_does_not_silently_fallback.txt"
+    },
+    {
+      "status": "A",
+      "path": "Documentation~/evidence/navigation-phase2/traces/Independent_regions_do_not_supersede_or_cancel_each_other.txt"
+    },
+    {
+      "status": "A",
+      "path": "Documentation~/evidence/navigation-phase2/traces/Latest_Navigate_and_Clear_supersede_each_other_False_.txt"
+    },
+    {
+      "status": "A",
+      "path": "Documentation~/evidence/navigation-phase2/traces/Latest_Navigate_and_Clear_supersede_each_other_True_.txt"
+    },
+    {
+      "status": "A",
+      "path": "Documentation~/evidence/navigation-phase2/traces/Lifecycle_exceptions_end_activation_and_do_not_poison_successors_False_.txt"
+    },
+    {
+      "status": "A",
+      "path": "Documentation~/evidence/navigation-phase2/traces/Lifecycle_exceptions_end_activation_and_do_not_poison_successors_True_.txt"
+    },
+    {
+      "status": "A",
+      "path": "Documentation~/evidence/navigation-phase2/traces/Mixed_policy_keeps_fifo_requests_and_supersedes_only_opted_in_requests.txt"
+    },
+    {
+      "status": "A",
+      "path": "Documentation~/evidence/navigation-phase2/traces/Publication_requires_owning_unity_thread.txt"
+    },
+    {
+      "status": "A",
+      "path": "Documentation~/evidence/navigation-phase2/traces/Queued_latest_skips_obsolete_model_view_and_callbacks.txt"
+    },
+    {
+      "status": "A",
+      "path": "Documentation~/evidence/navigation-phase2/traces/Queued_multi_region_request_is_superseded_as_a_whole_on_any_overlap.txt"
+    },
+    {
+      "status": "A",
+      "path": "Documentation~/evidence/navigation-phase2/traces/Rejected_scoped_latest_request_cannot_supersede_valid_queued_work_False_.txt"
+    },
+    {
+      "status": "A",
+      "path": "Documentation~/evidence/navigation-phase2/traces/Rejected_scoped_latest_request_cannot_supersede_valid_queued_work_True_.txt"
+    },
+    {
+      "status": "A",
+      "path": "Documentation~/evidence/navigation-phase2/traces/Repeated_active_same_id_preserves_activation_without_forced_reentry.txt"
+    },
+    {
+      "status": "A",
+      "path": "Documentation~/evidence/navigation-phase2/traces/Shared_model_cohort_ends_once_without_mutating_an_unowned_region.txt"
+    },
+    {
+      "status": "A",
+      "path": "Documentation~/evidence/navigation-phase2/traces/Superseded_exit_is_drained_before_obsolete_target_is_skipped.txt"
+    },
+    {
+      "status": "A",
+      "path": "Documentation~/evidence/navigation-phase2/traces/Throwing_cancellation_observer_does_not_lose_new_request_or_release_old_ownership_early.txt"
+    },
+    {
+      "status": "A",
+      "path": "Documentation~/evidence/navigation-phase2/traces/Uncooperative_entry_is_invalidated_but_ownership_waits_for_callback_return.txt"
+    },
+    {
+      "status": "A",
+      "path": "Documentation~/evidence/navigation-phase2/validation-environment.json"
+    },
+    {
+      "status": "A",
+      "path": "Documentation~/navigation-phase2.md"
+    },
+    {
+      "status": "M",
+      "path": "README.md"
+    },
+    {
+      "status": "M",
+      "path": "Runtime/BaseViewModel.cs"
+    },
+    {
+      "status": "M",
+      "path": "Runtime/Internal/RegionNavigationOperations.cs"
+    },
+    {
+      "status": "A",
+      "path": "Runtime/NavigationActivation.cs"
+    },
+    {
+      "status": "A",
+      "path": "Runtime/NavigationActivation.cs.meta"
+    },
+    {
+      "status": "A",
+      "path": "Runtime/NavigationPolicy.cs"
+    },
+    {
+      "status": "A",
+      "path": "Runtime/NavigationPolicy.cs.meta"
+    },
+    {
+      "status": "A",
+      "path": "Runtime/NavigationPolicyExtensions.cs"
+    },
+    {
+      "status": "A",
+      "path": "Runtime/NavigationPolicyExtensions.cs.meta"
+    },
+    {
+      "status": "M",
+      "path": "Runtime/NavigationService.cs"
+    },
+    {
+      "status": "M",
+      "path": "Runtime/ViewModelNavigationService.cs"
+    },
+    {
+      "status": "A",
+      "path": "Tests/Editor/NavigationActivationTests.cs"
+    },
+    {
+      "status": "A",
+      "path": "Tests/Editor/NavigationActivationTests.cs.meta"
+    }
+  ]
+}
