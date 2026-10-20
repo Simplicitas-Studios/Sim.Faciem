@@ -1,0 +1,18 @@
+{
+  "default": "Fifo; old public signatures unchanged",
+  "optIn": "NavigationPolicy.LatestRequestWins extension overloads",
+  "mixedPolicies": "Only older opted-in overlapping operations superseded; FIFO protected",
+  "multiRegion": "Whole old request superseded on any intersection; no early reservation release",
+  "queued": "Cancelled at head before construction/mutation/lifecycle",
+  "inFlight": "Invalidate entering activation; keep all ownership until callback drains; exit callbacks always drained",
+  "alreadyShownLimitation": "Show-before-To preserved; cannot retroactively suppress display or undo side effects",
+  "uncooperativeLimitation": "Can block indefinitely; guarded publication denied but callback never detached",
+  "validity": "Capture NavigationActivation before await; TryPublish synchronous on owning Unity thread",
+  "cleanup": "Once per activation/ownership registration; notification completes before resource/token disposal; all cleanup attempts made",
+  "exceptions": "Callback or aggregate cleanup faults remain observable; queued supersession is OperationCanceledException",
+  "sameId": "Valid active lifetime reused; no forced Away/To re-entry",
+  "sharedVm": "One logical activation cohort; any exit ends it; no mutation of unowned Region; concurrent callbacks across operations rejected",
+  "reentrancy": "Scoped Navigation required; validation before supersession; root raw service external-only",
+  "customServices": "Explicit Fifo forwards; Latest unsupported throws, no silent fallback",
+  "finalDispose": "Unchanged; Clear/quiesce before provider final Dispose; no new cache/root disposal API"
+}

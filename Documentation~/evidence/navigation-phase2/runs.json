@@ -1,0 +1,49 @@
+{
+  "runs": [
+    {
+      "stage": "initial55",
+      "normalized": "runs/pi-unity-tests-editmode-20261020T071807273Z-d305abd44008443ebbdffaea2bc76bfc.json",
+      "nunit": "runs/unity-tests-editmode-20261020T071720598Z-84c6bae41af64481.xml",
+      "summary": {
+        "total": 55,
+        "passed": 55,
+        "failed": 0,
+        "skipped": 0
+      },
+      "originalLog": "Logs/unity-tests-editmode-20261020T071720598Z-84c6bae41af64481.log"
+    },
+    {
+      "stage": "expanded58",
+      "normalized": "runs/pi-unity-tests-editmode-20261020T072222150Z-57be6167a885432a98ffa35b98f38c48.json",
+      "nunit": "runs/unity-tests-editmode-20261020T072205080Z-a3248ee35f514142.xml",
+      "summary": {
+        "total": 58,
+        "passed": 58,
+        "failed": 0,
+        "skipped": 0
+      },
+      "originalLog": "Logs/unity-tests-editmode-20261020T072205080Z-a3248ee35f514142.log"
+    },
+    {
+      "stage": "final61",
+      "normalized": "runs/pi-unity-tests-editmode-20261020T072543191Z-e1b4e02cd3534898a72798a23ae1d15e.json",
+      "nunit": "runs/unity-tests-editmode-20261020T072525699Z-78591a1cb2cc4691.xml",
+      "summary": {
+        "total": 61,
+        "passed": 61,
+        "failed": 0,
+        "skipped": 0
+      },
+      "originalLog": "Logs/unity-tests-editmode-20261020T072525699Z-78591a1cb2cc4691.log"
+    }
+  ],
+  "finalDistinctPassed": 61,
+  "finalFailed": 0,
+  "finalSkipped": 0,
+  "newPhase2Cases": 28,
+  "baselineCases": 33,
+  "allLaunchesPassed": true,
+  "earlierRunsNotAddedToFinalCounts": true,
+  "earlierSourceCoverage": "Initial55 contained an unparameterized cooperative cancellation case later expanded; expanded58 precedes concurrent-shared-model guard/cases. Final61 is authoritative.",
+  "route": "isolated Unity CLI, graphics-enabled Editor panels; no GUI launch or PlayMode"
+}

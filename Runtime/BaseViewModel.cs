@@ -18,6 +18,12 @@ namespace Sim.Faciem
         /// <summary>Use this scoped handle for navigation from lifecycle callbacks, including after awaits.</summary>
         protected IViewModelNavigationService Navigation { get; private set; }
 
+        /// <summary>
+        /// Current activation, or null after exit. Capture this handle before awaits and publish through it.
+        /// Disposables remains the separate final-model lifetime bag.
+        /// </summary>
+        protected NavigationActivation Activation { get; private set; }
+
         protected ICommandBuilderFactory Command { get; private set; }
 
         protected BaseViewModel()
@@ -38,6 +44,35 @@ namespace Sim.Faciem
                 .Take(1)
                 .Subscribe(_ => RegionManager.RemoveRegion(region)));
             RegionManager.AddRegion(region);
+        }
+
+        internal async UniTask<NavigationActivation> EnsureActivationAsync()
+        {
+            if (Activation != null && !Activation.IsValid)
+            {
+                await EndActivationAsync(Activation);
+            }
+            if (Activation == null)
+            {
+                NavigationActivation created = null;
+                created = new NavigationActivation(() => ReferenceEquals(Activation, created));
+                Activation = created;
+            }
+            return Activation;
+        }
+
+        internal UniTask EndActivationAsync(NavigationActivation expected = null)
+        {
+            NavigationActivation activation = expected ?? Activation;
+            if (activation == null)
+            {
+                return UniTask.CompletedTask;
+            }
+            if (ReferenceEquals(Activation, activation))
+            {
+                Activation = null;
+            }
+            return activation.EndAsync();
         }
 
         internal UniTask NavigateToInternal(NavigationParameters parameters)
