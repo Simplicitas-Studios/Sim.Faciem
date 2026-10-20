@@ -1,0 +1,13 @@
+test=Shared_model_busy_in_an_unowned_region_cannot_be_reset
+outcome=Passed
+primaryTraceCount=4
+A:To:first:active/Flex,active/Flex
+A:To.return:first
+A:To:busy:active/Flex,active/Flex
+A:To.return:busy
+A:cleanup
+A:Away:inactive/None,active/Flex:null
+A:Away.return
+A:Away:inactive/None,inactive/None:null
+A:Away.return
+A:model=171129884:To=2:Away=2:Lifetimes=1:Cleanup=1:FinalDispose=1:ViewHashes=-703607748,27783188

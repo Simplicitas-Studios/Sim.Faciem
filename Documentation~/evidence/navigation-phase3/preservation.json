@@ -1,0 +1,19 @@
+{
+  "baseMain": "2e2ccaa37031202cdc137752a958a21e1d540282",
+  "containsMergedPR3AndPR4": true,
+  "unchangedOriginalTrackedFiles": 443,
+  "unchangedOriginalHashSetDigest": "a6db953860090037e4904372b6fd1259fcb0bdf1f444ece089f83862f6fcb75e",
+  "allOriginalGuidsAndMetadataUnchanged": true,
+  "old61TestsAndAsmdefUnchanged": true,
+  "phase1QueueAndPhase2ActivationImplementationUnchanged": true,
+  "packageJsonUnchanged": true,
+  "priorWorktreeHeads": {
+    "sim-faciem-navigation-phase1": "67895a8531ac3dec3595f49089859a40dd3b1421",
+    "sim-faciem-navigation-phase2": "81f7b01f6cb65b9fcb3d8317b4e0b9c67f9bb92c"
+  },
+  "priorWorktreesRawFilesAndStatusUnchanged": true,
+  "displayHeadUnchanged": "63ddd013269fa4e23f3b56a14961cf24ee269c09",
+  "displayStatusUnchanged": "M Submodules/Sim.Faciem",
+  "displayPinUnchanged": "160000 commit 4189d2bf67f3702debf3a6029e40b56f0b519802\tSubmodules/Sim.Faciem",
+  "preexistingDisplayMetadataBytePreserved": true
+}

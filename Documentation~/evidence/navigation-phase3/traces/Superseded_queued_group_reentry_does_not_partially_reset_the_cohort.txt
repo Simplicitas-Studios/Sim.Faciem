@@ -1,0 +1,15 @@
+test=Superseded_queued_group_reentry_does_not_partially_reset_the_cohort
+outcome=Passed
+primaryTraceCount=6
+A:To:first:active/Flex,active/Flex
+A:To.return:first
+A:To:blocker:active/Flex,active/Flex
+A:To.return:blocker
+A:To:winner:active/Flex,active/Flex
+A:To.return:winner
+A:cleanup
+A:Away:inactive/None,active/Flex:null
+A:Away.return
+A:Away:inactive/None,inactive/None:null
+A:Away.return
+A:model=289881100:To=3:Away=2:Lifetimes=1:Cleanup=1:FinalDispose=1:ViewHashes=1294354472,2025745408

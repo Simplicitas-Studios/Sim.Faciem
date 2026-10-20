@@ -1,0 +1,14 @@
+test=Superseded_executing_exit_never_creates_its_new_activation("A")
+outcome=Passed
+primaryTraceCount=7
+A:To:first:active/Flex
+A:To.return:first
+A:cleanup
+A:Away:inactive/None:null
+A:Away.return
+A:To:winner:active/Flex
+A:To.return:winner
+A:cleanup
+A:Away:inactive/None:null
+A:Away.return
+A:model=79381152:To=2:Away=2:Lifetimes=2:Cleanup=2:FinalDispose=1:ViewHashes=-273344412

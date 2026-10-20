@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
 using Cysharp.Threading.Tasks;
 using R3;
 using Sim.Faciem.Commands;
@@ -10,6 +12,7 @@ namespace Sim.Faciem
         internal bool IsSetup => RegionManager != null && Navigation != null;
 
         private DisposableBag _disposables = new();
+        private readonly List<ActiveViewBinding> _activeViews = new();
 
         protected ref DisposableBag Disposables => ref _disposables;
 
@@ -44,6 +47,44 @@ namespace Sim.Faciem
                 .Take(1)
                 .Subscribe(_ => RegionManager.RemoveRegion(region)));
             RegionManager.AddRegion(region);
+        }
+
+        internal void TrackActiveView(IRegion region, ViewId viewId)
+        {
+            _activeViews.RemoveAll(binding => !IsActive(binding, out _) ||
+                (binding.Region.TryGetTarget(out IRegion previous) && ReferenceEquals(previous, region) &&
+                    binding.ViewId.Equals(viewId)));
+            _activeViews.Add(new ActiveViewBinding(region, viewId));
+        }
+
+        internal void ValidateReentryOwnership(IReadOnlyList<IRegion> targets)
+        {
+            foreach (ActiveViewBinding binding in _activeViews)
+            {
+                if (IsActive(binding, out IRegion region) && !targets.Any(target => ReferenceEquals(target, region)))
+                {
+                    throw new InvalidOperationException(
+                        "Re-entry requires all active Regions sharing the cached ViewModel to be targeted together.");
+                }
+            }
+        }
+
+        private bool IsActive(ActiveViewBinding binding, out IRegion region)
+        {
+            return binding.Region.TryGetTarget(out region) && region.ActiveViews.Contains(binding.ViewId) &&
+                region.TryGetView(binding.ViewId, out var view) && ReferenceEquals(view.dataSource, this);
+        }
+
+        private sealed class ActiveViewBinding
+        {
+            internal readonly WeakReference<IRegion> Region;
+            internal readonly ViewId ViewId;
+
+            internal ActiveViewBinding(IRegion region, ViewId viewId)
+            {
+                Region = new WeakReference<IRegion>(region);
+                ViewId = viewId;
+            }
         }
 
         internal async UniTask<NavigationActivation> EnsureActivationAsync()

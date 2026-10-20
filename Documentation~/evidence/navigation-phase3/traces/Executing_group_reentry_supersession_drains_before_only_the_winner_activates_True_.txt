@@ -1,0 +1,17 @@
+test=Executing_group_reentry_supersession_drains_before_only_the_winner_activates(True)
+outcome=Passed
+primaryTraceCount=10
+A:To:first:active/Flex,active/Flex
+A:To.return:first
+A:cleanup
+A:Away:inactive/None,inactive/None:null
+A:Away.return
+A:To:restart:active/Flex,active/Flex
+A:To.return:restart
+A:cleanup
+A:To:winner:active/Flex,inactive/None
+A:To.return:winner
+A:cleanup
+A:Away:inactive/None,inactive/None:null
+A:Away.return
+A:model=-1399900644:To=3:Away=2:Lifetimes=3:Cleanup=3:FinalDispose=1:ViewHashes=-2005289904,-1273898968

@@ -1,0 +1,16 @@
+test=Whole_shared_cohort_reentry_exits_once_and_preserves_each_cached_tree
+outcome=Passed
+primaryTraceCount=7
+A:To:first:active/Flex,active/Flex
+A:To.return:first
+A:cleanup
+A:Away:inactive/None,inactive/None:null
+A:Away.return
+A:To:restart:active/Flex,active/Flex
+A:To.return:restart
+A:cleanup
+A:Away:inactive/None,active/Flex:null
+A:Away.return
+A:Away:inactive/None,inactive/None:null
+A:Away.return
+A:model=-1336672404:To=2:Away=3:Lifetimes=2:Cleanup=2:FinalDispose=1:ViewHashes=-1260038044,631166544

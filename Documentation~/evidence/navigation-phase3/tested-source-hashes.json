@@ -1,0 +1,70 @@
+{
+  "algorithm": "SHA-256",
+  "scope": "Canonical LF text plus raw tested working-copy bytes",
+  "files": {
+    "Runtime/BaseViewModel.cs": {
+      "sha256": "9d22e7a7f894c1234bd965d7b76637e79984d793117592c7eda4490b684c1dd4",
+      "rawWorkingCopySha256": "1b2a635c4393cd58dd7bf0cda375bb30b26a979cfd76580bf04db822cde9c850"
+    },
+    "Runtime/NavigationService.cs": {
+      "sha256": "310d67e2f9ccb1fb126cf78853d0aa7b5210e3386ad9bc0591f096ec0b515dfb",
+      "rawWorkingCopySha256": "b09aae3da3b4fc08261842145f6b2def7e5a7f32d86c02d3d6a36d83f9e6600e"
+    },
+    "Runtime/ViewModelNavigationService.cs": {
+      "sha256": "cf92b3ba43fd6e9ef0763b94796de0c200a92bf32c1896dbf06cb56f1afbbddd",
+      "rawWorkingCopySha256": "50e6761d765c8e5293560f8f59cea08e3ee961f815237c4f8b0ee680f86545bd"
+    },
+    "Runtime/NavigationPolicyExtensions.cs": {
+      "sha256": "9393dc768f99fb0f410fe603e672156898aa0e1662c60d1d054269f82cc99ffa",
+      "rawWorkingCopySha256": "9393dc768f99fb0f410fe603e672156898aa0e1662c60d1d054269f82cc99ffa"
+    },
+    "Runtime/NavigationEntryMode.cs": {
+      "sha256": "a7a5022a1f4a8c83ddbbfe038486b34df41e4e4e4464275d15923b765bcb8fce",
+      "rawWorkingCopySha256": "a7a5022a1f4a8c83ddbbfe038486b34df41e4e4e4464275d15923b765bcb8fce"
+    },
+    "Tests/Editor/NavigationReentryTests.cs": {
+      "sha256": "e8cd9afe22ec50ec56c9aae61a6db387f29fcdfbd7f18f0ef40124916bf87d3b",
+      "rawWorkingCopySha256": "e8cd9afe22ec50ec56c9aae61a6db387f29fcdfbd7f18f0ef40124916bf87d3b"
+    },
+    "Runtime/NavigationEntryMode.cs.meta": {
+      "sha256": "1bd786eaeb561bbc646ab4fbcfe805754ab07a64596f6b46522426b34b2491dc",
+      "rawWorkingCopySha256": "800fa0c240dfc5dc6e48762c299cad554a477ed7cdf796c8fdf4211917e76eb8"
+    },
+    "Tests/Editor/NavigationReentryTests.cs.meta": {
+      "sha256": "4e3f42cc0f4ef45b64922bc8b4e8a29346feb1201487b89d5f806a2490ebdfdd",
+      "rawWorkingCopySha256": "5e940da7d172189a2e3b8455f9e5f39e84e64f07a35eed7fcc3deec3beea5183"
+    },
+    "Runtime/Internal/RegionNavigationOperations.cs": {
+      "sha256": "2b6af1609ba6b80f65573c1cf2c2e551c5613f8b554b8ceb44391387789241bb",
+      "rawWorkingCopySha256": "f3b03b87343d8f0da2fe9fde4aeb77f70ac85fdbdecab1799e551b275274ed27"
+    },
+    "Runtime/NavigationActivation.cs": {
+      "sha256": "f54cae9cf8f200ffa164635c3e32b0c32792b4c09f235984ea6aa108f38917b9",
+      "rawWorkingCopySha256": "dd31a6ec06b41fde79b8d289aa12a691a097ad030344fa3a02720efb87ba40e8"
+    },
+    "Tests/Editor/NavigationFixtures/A.uxml": {
+      "sha256": "27ef89d79de6328187c8cb543406bdd5643c81c2015812fd2bfffa5163019e77",
+      "rawWorkingCopySha256": "3e5e50b4c7024ff413e898a26e2fc80c2d2f7c88e72fc36c2a6729da653d020a"
+    },
+    "Tests/Editor/NavigationFixtures/A.uxml.meta": {
+      "sha256": "3c194ba50ef8d6f9b620b573f79098f7da61ebc5b4aa87fdd6a86f9ae3524067",
+      "rawWorkingCopySha256": "7e7cbd882dde63079b8a50f2e08215bd73751d1ab743d91d36e53a854135d7b9"
+    },
+    "Tests/Editor/NavigationFixtures/B.uxml": {
+      "sha256": "5392c3c38e226ff845469ccc38aa2e424048e8d824520d0aab83fc79b18db030",
+      "rawWorkingCopySha256": "b61be42d168cd77a3c8f77a166ff4c41161c21dc64a678f29be64dbbd57e100a"
+    },
+    "Tests/Editor/NavigationFixtures/B.uxml.meta": {
+      "sha256": "2cf4a6567852b45f4a620b01c832971f5b595bf6f6adab7770a51c4b5862e154",
+      "rawWorkingCopySha256": "3d3ab2b161d5548acea91ac82342d1779536ed566116bf1cf8421418e6635766"
+    },
+    "Tests/Editor/NavigationFixtures/C.uxml": {
+      "sha256": "32a7740cecb2d44695a48f246e00a928e3fbf61c2c2ec56638547fd841cdf51c",
+      "rawWorkingCopySha256": "2e9c28ecd041f2dcd7401e7e70bdc1cdd41d59324c99388ec37bbeaa22c00f47"
+    },
+    "Tests/Editor/NavigationFixtures/C.uxml.meta": {
+      "sha256": "e34d9b8bb0381c357c74e4dc27e8268dc47c34a13e1cd6b15d5369f3bba47147",
+      "rawWorkingCopySha256": "c672f4208f3e0e42830d0dd30b08c669b753e427cc62969846d624f1a7b5ff4a"
+    }
+  }
+}

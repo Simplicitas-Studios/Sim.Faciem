@@ -1,0 +1,14 @@
+test=Explicit_reentry_reuses_cached_objects_with_fresh_activation_and_exact_order(Fifo)
+outcome=Passed
+primaryTraceCount=10
+A:To:first:active/Flex
+A:To.return:first
+A:cleanup
+A:Away:inactive/None:null
+A:Away.return
+A:To:second:active/Flex
+A:To.return:second
+A:cleanup
+A:Away:inactive/None:null
+A:Away.return
+A:model=431736860:To=2:Away=2:Lifetimes=2:Cleanup=2:FinalDispose=1:ViewHashes=-371057152

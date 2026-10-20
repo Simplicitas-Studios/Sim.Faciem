@@ -1,0 +1,14 @@
+test=Captured_pre_reentry_work_cannot_publish_to_the_new_activation
+outcome=Passed
+primaryTraceCount=7
+A:To:first:active/Flex
+A:To.return:first
+A:cleanup
+A:Away:inactive/None:null
+A:Away.return
+A:To:second:active/Flex
+A:To.return:second
+A:cleanup
+A:Away:inactive/None:null
+A:Away.return
+A:model=-708806116:To=2:Away=2:Lifetimes=2:Cleanup=2:FinalDispose=1:ViewHashes=781849088

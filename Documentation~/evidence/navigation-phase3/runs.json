@@ -1,0 +1,48 @@
+{
+  "runs": [
+    {
+      "stage": "initial93",
+      "normalized": "runs/pi-unity-tests-editmode-20261020T083630544Z-8534c8db57b4475eb7912814f880d727.json",
+      "nunit": "runs/unity-tests-editmode-20261020T083554347Z-7ba659ba47254710.xml",
+      "summary": {
+        "total": 93,
+        "passed": 93,
+        "failed": 0,
+        "skipped": 0
+      },
+      "originalLog": "Logs/unity-tests-editmode-20261020T083554347Z-7ba659ba47254710.log"
+    },
+    {
+      "stage": "final96",
+      "normalized": "runs/pi-unity-tests-editmode-20261020T083907185Z-db57f87eb6964c278137e96f203d20a0.json",
+      "nunit": "runs/unity-tests-editmode-20261020T083849883Z-78ae4425f00b4833.xml",
+      "summary": {
+        "total": 96,
+        "passed": 96,
+        "failed": 0,
+        "skipped": 0
+      },
+      "originalLog": "Logs/unity-tests-editmode-20261020T083849883Z-78ae4425f00b4833.log"
+    }
+  ],
+  "finalDistinctPassed": 96,
+  "finalFailed": 0,
+  "finalSkipped": 0,
+  "phase3Cases": 35,
+  "unchangedBaselineCases": 61,
+  "earlier93AreRepeatedSubsetNotAdditionalCases": true,
+  "totalPassingObservations": 189,
+  "launches": 2,
+  "allLaunchesPassed": true,
+  "execution": "isolated Unity CLI, graphics-enabled mounted EditorWindow panels",
+  "noRetriesBackendSwitchOrPlayMode": true,
+  "traceExportNormalization": [
+    {
+      "file": "traces/Entry_mode_validation_and_custom_service_compatibility_are_explicit.txt",
+      "rawSha256": "8f8117cb9bd929b01f2a33185d71e5d8c58102eb6e52891742a94f889c43c0b5",
+      "exportedSha256": "b01a635514be75cb8b65814e332d4a9c53ca254bfa3e26854446f87ef1ddb2ac",
+      "transform": "Remove surplus EOF blank line only; original remains in validation Logs"
+    }
+  ],
+  "normalizedAndNunitReportsByteExact": true
+}

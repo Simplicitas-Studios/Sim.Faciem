@@ -1,0 +1,3 @@
+test=Entry_mode_validation_and_custom_service_compatibility_are_explicit
+outcome=Passed
+primaryTraceCount=0

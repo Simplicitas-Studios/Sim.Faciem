@@ -1,0 +1,15 @@
+test=Scoped_lifecycle_reentry_is_rejected_before_superseding_legitimate_work(False)
+outcome=Passed
+primaryTraceCount=7
+A:To:first:active/Flex
+A:To.return:first
+A:cleanup
+A:Away:inactive/None:null
+A:Away.return
+B:To:legitimate:active/Flex
+B:To.return:legitimate
+B:cleanup
+B:Away:inactive/None:null
+B:Away.return
+A:model=840301552:To=1:Away=1:Lifetimes=1:Cleanup=1:FinalDispose=1:ViewHashes=-1439992832
+B:model=487945844:To=1:Away=1:Lifetimes=1:Cleanup=1:FinalDispose=1:ViewHashes=1421946448
