@@ -1,0 +1,16 @@
+{
+  "basePhase1": "67895a8531ac3dec3595f49089859a40dd3b1421",
+  "prBase": "fix/region-navigation-serialization-phase1",
+  "phase1BranchCleanAndUnchanged": true,
+  "unchangedOriginalFiles": 391,
+  "unchangedHashSetDigest": "9863060f36b751252f6e6f6d35362ad5400477c4e33540076e6f295b9988830d",
+  "originalMetadataAndGuidsUnchanged": true,
+  "freshCheckoutLineEndings": "Five untouched files differ only by normal CRLF/LF materialization; canonical content verified and all original Phase1 working-copy raw hashes unchanged",
+  "packageJsonAndAsmdefsUnchanged": true,
+  "all33BaselineTestsUnmodified": true,
+  "displayHeadUnchanged": "63ddd013269fa4e23f3b56a14961cf24ee269c09",
+  "displayStatusUnchanged": "M Submodules/Sim.Faciem",
+  "displayPinUnchanged": "160000 commit 4189d2bf67f3702debf3a6029e40b56f0b519802\tSubmodules/Sim.Faciem",
+  "preexistingDisplayMetadataBytePreserved": true,
+  "noDisplayIntegration": true
+}

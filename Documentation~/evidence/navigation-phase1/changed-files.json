@@ -1,0 +1,222 @@
+{
+  "base": "4189d2bf67f3702debf3a6029e40b56f0b519802",
+  "count": 54,
+  "files": [
+    {
+      "status": "A",
+      "path": "Documentation~/evidence/navigation-phase1/.gitattributes"
+    },
+    {
+      "status": "A",
+      "path": "Documentation~/evidence/navigation-phase1/artifact-integrity.json"
+    },
+    {
+      "status": "A",
+      "path": "Documentation~/evidence/navigation-phase1/changed-files.json"
+    },
+    {
+      "status": "A",
+      "path": "Documentation~/evidence/navigation-phase1/checks.json"
+    },
+    {
+      "status": "A",
+      "path": "Documentation~/evidence/navigation-phase1/preservation.json"
+    },
+    {
+      "status": "A",
+      "path": "Documentation~/evidence/navigation-phase1/runs.json"
+    },
+    {
+      "status": "A",
+      "path": "Documentation~/evidence/navigation-phase1/runs/pi-unity-tests-editmode-20261019T210112965Z-c496b43a1f3b4c6e8a7e8d762b447f63.json"
+    },
+    {
+      "status": "A",
+      "path": "Documentation~/evidence/navigation-phase1/runs/pi-unity-tests-editmode-20261019T210249111Z-92cb26736fa641daac85ad3ec8783541.json"
+    },
+    {
+      "status": "A",
+      "path": "Documentation~/evidence/navigation-phase1/runs/pi-unity-tests-editmode-20261019T210323447Z-32e6100cbfb447e38b055e600c460ad6.json"
+    },
+    {
+      "status": "A",
+      "path": "Documentation~/evidence/navigation-phase1/runs/pi-unity-tests-editmode-20261019T210502922Z-93fff057a8504f2abdc235e7312b2de2.json"
+    },
+    {
+      "status": "A",
+      "path": "Documentation~/evidence/navigation-phase1/runs/pi-unity-tests-editmode-20261019T210557570Z-d533d9fd36f84b48bf3334cbcdaf05cb.json"
+    },
+    {
+      "status": "A",
+      "path": "Documentation~/evidence/navigation-phase1/runs/pi-unity-tests-editmode-20261019T210842486Z-969533ba1d344c1481c9d1f58bcbc10f.json"
+    },
+    {
+      "status": "A",
+      "path": "Documentation~/evidence/navigation-phase1/runs/unity-tests-editmode-20261019T210230672Z-746a1830f9594167.xml"
+    },
+    {
+      "status": "A",
+      "path": "Documentation~/evidence/navigation-phase1/runs/unity-tests-editmode-20261019T210308066Z-bfdea57cf6ef4ff8.xml"
+    },
+    {
+      "status": "A",
+      "path": "Documentation~/evidence/navigation-phase1/runs/unity-tests-editmode-20261019T210541142Z-18ff6f7ecc654eb8.xml"
+    },
+    {
+      "status": "A",
+      "path": "Documentation~/evidence/navigation-phase1/runs/unity-tests-editmode-20261019T210824986Z-360b9441503c4e37.xml"
+    },
+    {
+      "status": "A",
+      "path": "Documentation~/evidence/navigation-phase1/tested-source-hashes.json"
+    },
+    {
+      "status": "A",
+      "path": "Documentation~/evidence/navigation-phase1/traces/A_B_A_reuses_real_mounted_views_models_and_lifecycle_order.txt"
+    },
+    {
+      "status": "A",
+      "path": "Documentation~/evidence/navigation-phase1/traces/Awaited_entry_finishes_before_next_request_constructs_or_mutates.txt"
+    },
+    {
+      "status": "A",
+      "path": "Documentation~/evidence/navigation-phase1/traces/Clear_retains_cache_and_already_active_navigation_still_calls_To.txt"
+    },
+    {
+      "status": "A",
+      "path": "Documentation~/evidence/navigation-phase1/traces/Different_navigation_service_instances_still_serialize_the_same_region.txt"
+    },
+    {
+      "status": "A",
+      "path": "Documentation~/evidence/navigation-phase1/traces/Independent_regions_with_the_same_name_can_navigate_concurrently.txt"
+    },
+    {
+      "status": "A",
+      "path": "Documentation~/evidence/navigation-phase1/traces/Indirect_cross_region_lifecycle_cycle_is_rejected_without_deadlock.txt"
+    },
+    {
+      "status": "A",
+      "path": "Documentation~/evidence/navigation-phase1/traces/Lifecycle_can_await_navigation_to_an_independent_child_region.txt"
+    },
+    {
+      "status": "A",
+      "path": "Documentation~/evidence/navigation-phase1/traces/Lifecycle_failure_does_not_poison_queued_successors_False_.txt"
+    },
+    {
+      "status": "A",
+      "path": "Documentation~/evidence/navigation-phase1/traces/Lifecycle_failure_does_not_poison_queued_successors_True_.txt"
+    },
+    {
+      "status": "A",
+      "path": "Documentation~/evidence/navigation-phase1/traces/Navigate_and_Clear_share_the_same_queue_False_.txt"
+    },
+    {
+      "status": "A",
+      "path": "Documentation~/evidence/navigation-phase1/traces/Navigate_and_Clear_share_the_same_queue_True_.txt"
+    },
+    {
+      "status": "A",
+      "path": "Documentation~/evidence/navigation-phase1/traces/Overlapping_navigations_wait_in_FIFO_order.txt"
+    },
+    {
+      "status": "A",
+      "path": "Documentation~/evidence/navigation-phase1/traces/Overlapping_region_groups_reserve_shared_identity_without_lock_order_deadlock.txt"
+    },
+    {
+      "status": "A",
+      "path": "Documentation~/evidence/navigation-phase1/traces/Same_region_scoped_reentrancy_after_await_is_rejected_False_False_.txt"
+    },
+    {
+      "status": "A",
+      "path": "Documentation~/evidence/navigation-phase1/traces/Same_region_scoped_reentrancy_after_await_is_rejected_False_True_.txt"
+    },
+    {
+      "status": "A",
+      "path": "Documentation~/evidence/navigation-phase1/traces/Same_region_scoped_reentrancy_after_await_is_rejected_True_False_.txt"
+    },
+    {
+      "status": "A",
+      "path": "Documentation~/evidence/navigation-phase1/traces/Same_region_scoped_reentrancy_after_await_is_rejected_True_True_.txt"
+    },
+    {
+      "status": "A",
+      "path": "Documentation~/evidence/navigation-phase1/traces/Scoped_navigation_after_callback_completion_is_an_ordinary_request.txt"
+    },
+    {
+      "status": "A",
+      "path": "Documentation~/evidence/navigation-phase1/validation-environment.json"
+    },
+    {
+      "status": "A",
+      "path": "Documentation~/navigation-serialization-phase1.md"
+    },
+    {
+      "status": "M",
+      "path": "README.md"
+    },
+    {
+      "status": "M",
+      "path": "Runtime/BaseViewModel.cs"
+    },
+    {
+      "status": "M",
+      "path": "Runtime/INavigationService.cs"
+    },
+    {
+      "status": "M",
+      "path": "Runtime/IViewModelNavigationService.cs"
+    },
+    {
+      "status": "A",
+      "path": "Runtime/Internal/RegionNavigationOperations.cs"
+    },
+    {
+      "status": "A",
+      "path": "Runtime/Internal/RegionNavigationOperations.cs.meta"
+    },
+    {
+      "status": "M",
+      "path": "Runtime/NavigationService.cs"
+    },
+    {
+      "status": "M",
+      "path": "Runtime/ViewModelNavigationService.cs"
+    },
+    {
+      "status": "A",
+      "path": "Tests/Editor/NavigationFixtures.meta"
+    },
+    {
+      "status": "A",
+      "path": "Tests/Editor/NavigationFixtures/A.uxml"
+    },
+    {
+      "status": "A",
+      "path": "Tests/Editor/NavigationFixtures/A.uxml.meta"
+    },
+    {
+      "status": "A",
+      "path": "Tests/Editor/NavigationFixtures/B.uxml"
+    },
+    {
+      "status": "A",
+      "path": "Tests/Editor/NavigationFixtures/B.uxml.meta"
+    },
+    {
+      "status": "A",
+      "path": "Tests/Editor/NavigationFixtures/C.uxml"
+    },
+    {
+      "status": "A",
+      "path": "Tests/Editor/NavigationFixtures/C.uxml.meta"
+    },
+    {
+      "status": "A",
+      "path": "Tests/Editor/NavigationSerializationTests.cs"
+    },
+    {
+      "status": "A",
+      "path": "Tests/Editor/NavigationSerializationTests.cs.meta"
+    }
+  ]
+}

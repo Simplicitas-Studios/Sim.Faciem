@@ -1,0 +1,15 @@
+{
+  "base": "4189d2bf67f3702debf3a6029e40b56f0b519802",
+  "unchangedOriginalTrackedFiles": 342,
+  "unchangedOriginalFilesDigest": "c4ee45aeb97dc1e76938705a99073999f004d5a882979760ca9394ef3906a0bd",
+  "allOriginalMetadataGuidsUnchanged": true,
+  "packageJsonUnchanged": true,
+  "oldTestsAndAsmdefUnchanged": true,
+  "displayHeadUnchanged": "63ddd013269fa4e23f3b56a14961cf24ee269c09",
+  "displayPinUnchanged": "160000 commit 4189d2bf67f3702debf3a6029e40b56f0b519802\tSubmodules/Sim.Faciem",
+  "displayStatusUnchanged": "M Submodules/Sim.Faciem",
+  "preexistingDisplayMetadataPreserved": true,
+  "noDisplayPackageOrProductionChange": true,
+  "baselineSourceUntouchedDuringRedTest": "Original NavigationService/ViewModelNavigationService at4189d2b; newly added scheduler not yet connected",
+  "callerContractExplicitlyApproved": "User selected existing scoped Navigation handle; raw INavigationService external-only during callbacks"
+}

@@ -1,0 +1,78 @@
+{
+  "algorithm": "SHA-256",
+  "scope": "Canonical LF text and raw working-copy bytes; actual tested source/templates/metadata",
+  "files": {
+    "Runtime/BaseViewModel.cs": {
+      "sha256": "08c045fbb2c7f9fd887d4992080306a2e73313b1d9d49a0b27c8419da88fd85c",
+      "rawWorkingCopySha256": "42e30f8613a6346f7f3dd4296ee4028714f39d94f396616ef2a533bae7b3a011"
+    },
+    "Runtime/Internal/RegionNavigationOperations.cs": {
+      "sha256": "2b6af1609ba6b80f65573c1cf2c2e551c5613f8b554b8ceb44391387789241bb",
+      "rawWorkingCopySha256": "f3b03b87343d8f0da2fe9fde4aeb77f70ac85fdbdecab1799e551b275274ed27"
+    },
+    "Runtime/NavigationService.cs": {
+      "sha256": "153698ecc15e1894dbbcc81c74bfabb73f6103159314e0f42c177c2703be3d98",
+      "rawWorkingCopySha256": "153698ecc15e1894dbbcc81c74bfabb73f6103159314e0f42c177c2703be3d98"
+    },
+    "Runtime/ViewModelNavigationService.cs": {
+      "sha256": "5e022182a7da2d1f4560bf64a9f91cdb386917a316ab6366e8b244bf8891f3a8",
+      "rawWorkingCopySha256": "5921213837a9f678830cda30c8fe164a1f73b7b7e837995bba1b57c00962b5d5"
+    },
+    "Runtime/NavigationActivation.cs": {
+      "sha256": "f54cae9cf8f200ffa164635c3e32b0c32792b4c09f235984ea6aa108f38917b9",
+      "rawWorkingCopySha256": "f54cae9cf8f200ffa164635c3e32b0c32792b4c09f235984ea6aa108f38917b9"
+    },
+    "Runtime/NavigationPolicy.cs": {
+      "sha256": "67b917a038b2791be3503e8d52698084b0c845233023e0e3910605ef67dce2ea",
+      "rawWorkingCopySha256": "67b917a038b2791be3503e8d52698084b0c845233023e0e3910605ef67dce2ea"
+    },
+    "Runtime/NavigationPolicyExtensions.cs": {
+      "sha256": "b8cbafa921ea8bd69f8d2c4b8b0e2dd4757f4ba38bee29bdbd6f8e136eb8149e",
+      "rawWorkingCopySha256": "b8cbafa921ea8bd69f8d2c4b8b0e2dd4757f4ba38bee29bdbd6f8e136eb8149e"
+    },
+    "Tests/Editor/NavigationActivationTests.cs": {
+      "sha256": "dfafd10671ca9db2b14a5c4ab978f63cacdb64f0e3db281a83923adfafb5d82c",
+      "rawWorkingCopySha256": "dfafd10671ca9db2b14a5c4ab978f63cacdb64f0e3db281a83923adfafb5d82c"
+    },
+    "Runtime/NavigationActivation.cs.meta": {
+      "sha256": "cc2de47dea9ea58fd382e5aaf52079ea9cab605afc55bf7752092806ce1abe60",
+      "rawWorkingCopySha256": "26f3a833150e19197ba5cc744b0e1809b63d5abd4927a7c608ece0182b8b9291"
+    },
+    "Runtime/NavigationPolicy.cs.meta": {
+      "sha256": "f3cdfdbd50c58eaa4067287896be60e8abd30f46d5e5fd3bc45cbb091500f7d8",
+      "rawWorkingCopySha256": "3de7a1ccc3dde62481af20caa270082a4b423ec2f690d197c225082f99e28ee9"
+    },
+    "Runtime/NavigationPolicyExtensions.cs.meta": {
+      "sha256": "a7d2851bd482b7ea5d3b1c9207e965c7be7e7a7bca96264c45dc47ab85d93c7a",
+      "rawWorkingCopySha256": "dd47c0204ee843558f9f7210ab1a4b90f57fe8bed98c0735b2c8ee2b93cb3328"
+    },
+    "Tests/Editor/NavigationActivationTests.cs.meta": {
+      "sha256": "87294c9662588e904be7e6caa10caa7ec67872054f9abd2c9c812596bf7a1f37",
+      "rawWorkingCopySha256": "f53143af40e7597832b09e962921b98a7b07dfc2c96fb55af777dc20cda18397"
+    },
+    "Tests/Editor/NavigationFixtures/A.uxml": {
+      "sha256": "27ef89d79de6328187c8cb543406bdd5643c81c2015812fd2bfffa5163019e77",
+      "rawWorkingCopySha256": "3e5e50b4c7024ff413e898a26e2fc80c2d2f7c88e72fc36c2a6729da653d020a"
+    },
+    "Tests/Editor/NavigationFixtures/A.uxml.meta": {
+      "sha256": "3c194ba50ef8d6f9b620b573f79098f7da61ebc5b4aa87fdd6a86f9ae3524067",
+      "rawWorkingCopySha256": "7e7cbd882dde63079b8a50f2e08215bd73751d1ab743d91d36e53a854135d7b9"
+    },
+    "Tests/Editor/NavigationFixtures/B.uxml": {
+      "sha256": "5392c3c38e226ff845469ccc38aa2e424048e8d824520d0aab83fc79b18db030",
+      "rawWorkingCopySha256": "b61be42d168cd77a3c8f77a166ff4c41161c21dc64a678f29be64dbbd57e100a"
+    },
+    "Tests/Editor/NavigationFixtures/B.uxml.meta": {
+      "sha256": "2cf4a6567852b45f4a620b01c832971f5b595bf6f6adab7770a51c4b5862e154",
+      "rawWorkingCopySha256": "3d3ab2b161d5548acea91ac82342d1779536ed566116bf1cf8421418e6635766"
+    },
+    "Tests/Editor/NavigationFixtures/C.uxml": {
+      "sha256": "32a7740cecb2d44695a48f246e00a928e3fbf61c2c2ec56638547fd841cdf51c",
+      "rawWorkingCopySha256": "2e9c28ecd041f2dcd7401e7e70bdc1cdd41d59324c99388ec37bbeaa22c00f47"
+    },
+    "Tests/Editor/NavigationFixtures/C.uxml.meta": {
+      "sha256": "e34d9b8bb0381c357c74e4dc27e8268dc47c34a13e1cd6b15d5369f3bba47147",
+      "rawWorkingCopySha256": "c672f4208f3e0e42830d0dd30b08c669b753e427cc62969846d624f1a7b5ff4a"
+    }
+  }
+}
