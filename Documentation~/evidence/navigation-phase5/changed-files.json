@@ -1,0 +1,358 @@
+{
+  "base": "c9507cce4a71d54a13d8efe595b4d01c66b2d14a",
+  "count": 88,
+  "files": [
+    {
+      "status": "A",
+      "path": "Documentation~/evidence/navigation-phase5/.gitattributes"
+    },
+    {
+      "status": "A",
+      "path": "Documentation~/evidence/navigation-phase5/artifact-integrity.json"
+    },
+    {
+      "status": "A",
+      "path": "Documentation~/evidence/navigation-phase5/baseline.json"
+    },
+    {
+      "status": "A",
+      "path": "Documentation~/evidence/navigation-phase5/changed-files.json"
+    },
+    {
+      "status": "A",
+      "path": "Documentation~/evidence/navigation-phase5/checks.json"
+    },
+    {
+      "status": "A",
+      "path": "Documentation~/evidence/navigation-phase5/contracts.json"
+    },
+    {
+      "status": "A",
+      "path": "Documentation~/evidence/navigation-phase5/format.json"
+    },
+    {
+      "status": "A",
+      "path": "Documentation~/evidence/navigation-phase5/initial/NavigationService.Teardown.cs.txt"
+    },
+    {
+      "status": "A",
+      "path": "Documentation~/evidence/navigation-phase5/initial/NavigationTeardownTests.cs.txt"
+    },
+    {
+      "status": "A",
+      "path": "Documentation~/evidence/navigation-phase5/initial/compile-tested-source-hashes.json"
+    },
+    {
+      "status": "A",
+      "path": "Documentation~/evidence/navigation-phase5/initial/failing-traces/Binding_references_are_cleared_before_final_model_disposal.txt"
+    },
+    {
+      "status": "A",
+      "path": "Documentation~/evidence/navigation-phase5/initial/initial-tested-source-hashes.json"
+    },
+    {
+      "status": "A",
+      "path": "Documentation~/evidence/navigation-phase5/preservation.json"
+    },
+    {
+      "status": "A",
+      "path": "Documentation~/evidence/navigation-phase5/runs.json"
+    },
+    {
+      "status": "A",
+      "path": "Documentation~/evidence/navigation-phase5/runs/compile-error-excerpt.txt"
+    },
+    {
+      "status": "A",
+      "path": "Documentation~/evidence/navigation-phase5/runs/compile-error.json"
+    },
+    {
+      "status": "A",
+      "path": "Documentation~/evidence/navigation-phase5/runs/final-198.json"
+    },
+    {
+      "status": "A",
+      "path": "Documentation~/evidence/navigation-phase5/runs/final-198.nunit.xml"
+    },
+    {
+      "status": "A",
+      "path": "Documentation~/evidence/navigation-phase5/runs/initial-188.json"
+    },
+    {
+      "status": "A",
+      "path": "Documentation~/evidence/navigation-phase5/runs/initial-188.nunit.xml"
+    },
+    {
+      "status": "A",
+      "path": "Documentation~/evidence/navigation-phase5/runs/intermediate-188.json"
+    },
+    {
+      "status": "A",
+      "path": "Documentation~/evidence/navigation-phase5/runs/intermediate-188.nunit.xml"
+    },
+    {
+      "status": "A",
+      "path": "Documentation~/evidence/navigation-phase5/tested-source-hashes.json"
+    },
+    {
+      "status": "A",
+      "path": "Documentation~/evidence/navigation-phase5/traces/A_B_A_Clear_and_reentry_preserve_exact_cache_references_until_explicit_final_release.txt"
+    },
+    {
+      "status": "A",
+      "path": "Documentation~/evidence/navigation-phase5/traces/A_captured_disposed_scoped_handle_cannot_tear_down_a_new_application_scope.txt"
+    },
+    {
+      "status": "A",
+      "path": "Documentation~/evidence/navigation-phase5/traces/A_disposed_DI_singleton_cannot_be_reactivated_in_a_new_scope.txt"
+    },
+    {
+      "status": "A",
+      "path": "Documentation~/evidence/navigation-phase5/traces/A_nested_scope_added_during_an_awaited_exit_is_not_forcibly_detached_with_its_callback_running.txt"
+    },
+    {
+      "status": "A",
+      "path": "Documentation~/evidence/navigation-phase5/traces/A_new_Region_scope_creates_fresh_instances_and_the_old_scope_remains_terminal.txt"
+    },
+    {
+      "status": "A",
+      "path": "Documentation~/evidence/navigation-phase5/traces/All_owned_models_and_stages_are_attempted_and_failures_aggregate_in_order.txt"
+    },
+    {
+      "status": "A",
+      "path": "Documentation~/evidence/navigation-phase5/traces/An_ownership_rejected_queued_teardown_does_not_prevent_an_already_queued_authorized_teardown.txt"
+    },
+    {
+      "status": "A",
+      "path": "Documentation~/evidence/navigation-phase5/traces/Awaiting_entry_retains_ownership_and_final_disposal_waits_for_actual_return_Fifo_.txt"
+    },
+    {
+      "status": "A",
+      "path": "Documentation~/evidence/navigation-phase5/traces/Awaiting_entry_retains_ownership_and_final_disposal_waits_for_actual_return_LatestRequestWins_.txt"
+    },
+    {
+      "status": "A",
+      "path": "Documentation~/evidence/navigation-phase5/traces/Binding_references_are_cleared_before_final_model_disposal.txt"
+    },
+    {
+      "status": "A",
+      "path": "Documentation~/evidence/navigation-phase5/traces/Concurrent_repetition_retains_a_failed_teardown_result_without_duplicate_exit_or_disposal.txt"
+    },
+    {
+      "status": "A",
+      "path": "Documentation~/evidence/navigation-phase5/traces/Custom_service_teardown_is_unsupported_and_never_dispatches.txt"
+    },
+    {
+      "status": "A",
+      "path": "Documentation~/evidence/navigation-phase5/traces/Earlier_exit_and_its_queued_transition_drain_before_teardown__clear__.txt"
+    },
+    {
+      "status": "A",
+      "path": "Documentation~/evidence/navigation-phase5/traces/Earlier_exit_and_its_queued_transition_drain_before_teardown__navigate__.txt"
+    },
+    {
+      "status": "A",
+      "path": "Documentation~/evidence/navigation-phase5/traces/Earlier_exit_and_its_queued_transition_drain_before_teardown__reentry__.txt"
+    },
+    {
+      "status": "A",
+      "path": "Documentation~/evidence/navigation-phase5/traces/Explicit_ownership_denial_or_predicate_fault_reopens_admission_without_partial_disposal_False_.txt"
+    },
+    {
+      "status": "A",
+      "path": "Documentation~/evidence/navigation-phase5/traces/Explicit_ownership_denial_or_predicate_fault_reopens_admission_without_partial_disposal_True_.txt"
+    },
+    {
+      "status": "A",
+      "path": "Documentation~/evidence/navigation-phase5/traces/FIFO_terminal_barrier_drains_admitted_latest_winners_and_rejects_later_supersession_Fifo_.txt"
+    },
+    {
+      "status": "A",
+      "path": "Documentation~/evidence/navigation-phase5/traces/FIFO_terminal_barrier_drains_admitted_latest_winners_and_rejects_later_supersession_LatestRequestWins_.txt"
+    },
+    {
+      "status": "A",
+      "path": "Documentation~/evidence/navigation-phase5/traces/Failed_teardown_remains_terminal_and_repeated_call_retains_failure_without_retrying_resources__cleanup__.txt"
+    },
+    {
+      "status": "A",
+      "path": "Documentation~/evidence/navigation-phase5/traces/Failed_teardown_remains_terminal_and_repeated_call_retains_failure_without_retrying_resources__dispose__.txt"
+    },
+    {
+      "status": "A",
+      "path": "Documentation~/evidence/navigation-phase5/traces/Failed_teardown_remains_terminal_and_repeated_call_retains_failure_without_retrying_resources__exit__.txt"
+    },
+    {
+      "status": "A",
+      "path": "Documentation~/evidence/navigation-phase5/traces/Foreign_source_introduced_during_exit_is_not_overwritten_or_disposed_as_a_cached_model.txt"
+    },
+    {
+      "status": "A",
+      "path": "Documentation~/evidence/navigation-phase5/traces/Independent_Region_and_persistent_shell_remain_alive_and_usable.txt"
+    },
+    {
+      "status": "A",
+      "path": "Documentation~/evidence/navigation-phase5/traces/Invalid_teardown_arguments_do_not_fence_or_dispose_a_live_scope__empty__.txt"
+    },
+    {
+      "status": "A",
+      "path": "Documentation~/evidence/navigation-phase5/traces/Invalid_teardown_arguments_do_not_fence_or_dispose_a_live_scope__null-list__.txt"
+    },
+    {
+      "status": "A",
+      "path": "Documentation~/evidence/navigation-phase5/traces/Invalid_teardown_arguments_do_not_fence_or_dispose_a_live_scope__null-owner__.txt"
+    },
+    {
+      "status": "A",
+      "path": "Documentation~/evidence/navigation-phase5/traces/Invalid_teardown_arguments_do_not_fence_or_dispose_a_live_scope__null-region__.txt"
+    },
+    {
+      "status": "A",
+      "path": "Documentation~/evidence/navigation-phase5/traces/Nested_parent_is_explicitly_rejected_but_selected_leaf_can_release_without_disposing_parent.txt"
+    },
+    {
+      "status": "A",
+      "path": "Documentation~/evidence/navigation-phase5/traces/Opaque_legacy_R3_bag_failure_is_reported_incomplete_not_misrepresented_as_all_resources_released.txt"
+    },
+    {
+      "status": "A",
+      "path": "Documentation~/evidence/navigation-phase5/traces/Overlapping_inflight_teardown_sets_are_rejected_without_closing_unrelated_Region.txt"
+    },
+    {
+      "status": "A",
+      "path": "Documentation~/evidence/navigation-phase5/traces/Preparation_candidate_not_adopted_by_cache_remains_with_its_existing_DI_owner.txt"
+    },
+    {
+      "status": "A",
+      "path": "Documentation~/evidence/navigation-phase5/traces/Scoped_reentrant_teardown_is_rejected_before_mutation_or_idempotent_shortcut__dispose__.txt"
+    },
+    {
+      "status": "A",
+      "path": "Documentation~/evidence/navigation-phase5/traces/Scoped_reentrant_teardown_is_rejected_before_mutation_or_idempotent_shortcut__entry__.txt"
+    },
+    {
+      "status": "A",
+      "path": "Documentation~/evidence/navigation-phase5/traces/Scoped_reentrant_teardown_is_rejected_before_mutation_or_idempotent_shortcut__exit__.txt"
+    },
+    {
+      "status": "A",
+      "path": "Documentation~/evidence/navigation-phase5/traces/Shared_model_final_lease_blocks_a_new_owner_while_a_different_model_exit_is_awaiting.txt"
+    },
+    {
+      "status": "A",
+      "path": "Documentation~/evidence/navigation-phase5/traces/Shared_model_requires_all_cached_owners_even_when_the_other_owner_is_inactive_False_.txt"
+    },
+    {
+      "status": "A",
+      "path": "Documentation~/evidence/navigation-phase5/traces/Shared_model_requires_all_cached_owners_even_when_the_other_owner_is_inactive_True_.txt"
+    },
+    {
+      "status": "A",
+      "path": "Documentation~/evidence/navigation-phase5/traces/Teardown_own_exit_await_holds_both_Region_and_model_leases_until_cleanup_finishes.txt"
+    },
+    {
+      "status": "A",
+      "path": "Documentation~/evidence/navigation-phase5/traces/Tracked_partial_commit_before_or_after_mount_is_finally_released_False_.txt"
+    },
+    {
+      "status": "A",
+      "path": "Documentation~/evidence/navigation-phase5/traces/Tracked_partial_commit_before_or_after_mount_is_finally_released_True_.txt"
+    },
+    {
+      "status": "A",
+      "path": "Documentation~/evidence/navigation-phase5/traces/Unsafe_cache_configuration_rejects_before_final_ownership_or_UI_changes__foreign__.txt"
+    },
+    {
+      "status": "A",
+      "path": "Documentation~/evidence/navigation-phase5/traces/Unsafe_cache_configuration_rejects_before_final_ownership_or_UI_changes__global__.txt"
+    },
+    {
+      "status": "A",
+      "path": "Documentation~/evidence/navigation-phase5/traces/Unsafe_cache_configuration_rejects_before_final_ownership_or_UI_changes__multi__.txt"
+    },
+    {
+      "status": "A",
+      "path": "Documentation~/evidence/navigation-phase5/traces/Unsafe_cache_configuration_rejects_before_final_ownership_or_UI_changes__reparented__.txt"
+    },
+    {
+      "status": "A",
+      "path": "Documentation~/evidence/navigation-phase5/traces/Unsafe_cache_configuration_rejects_before_final_ownership_or_UI_changes__untracked__.txt"
+    },
+    {
+      "status": "A",
+      "path": "Documentation~/evidence/navigation-phase5/validation-environment.json"
+    },
+    {
+      "status": "A",
+      "path": "Documentation~/navigation-phase5-teardown.md"
+    },
+    {
+      "status": "M",
+      "path": "README.md"
+    },
+    {
+      "status": "M",
+      "path": "Runtime/BaseViewModel.cs"
+    },
+    {
+      "status": "M",
+      "path": "Runtime/Internal/NavigationExecution.cs"
+    },
+    {
+      "status": "M",
+      "path": "Runtime/Internal/RegionNavigationOperations.cs"
+    },
+    {
+      "status": "M",
+      "path": "Runtime/NavigationResult.cs"
+    },
+    {
+      "status": "A",
+      "path": "Runtime/NavigationService.Teardown.cs"
+    },
+    {
+      "status": "A",
+      "path": "Runtime/NavigationService.Teardown.cs.meta"
+    },
+    {
+      "status": "M",
+      "path": "Runtime/NavigationService.cs"
+    },
+    {
+      "status": "A",
+      "path": "Runtime/NavigationTeardownExtensions.cs"
+    },
+    {
+      "status": "A",
+      "path": "Runtime/NavigationTeardownExtensions.cs.meta"
+    },
+    {
+      "status": "A",
+      "path": "Runtime/Region.CacheOwnership.cs"
+    },
+    {
+      "status": "A",
+      "path": "Runtime/Region.CacheOwnership.cs.meta"
+    },
+    {
+      "status": "M",
+      "path": "Runtime/Region.cs"
+    },
+    {
+      "status": "M",
+      "path": "Runtime/RegionManager.cs"
+    },
+    {
+      "status": "M",
+      "path": "Runtime/ViewModelNavigationService.cs"
+    },
+    {
+      "status": "A",
+      "path": "Tests/Editor/NavigationTeardownTests.cs"
+    },
+    {
+      "status": "A",
+      "path": "Tests/Editor/NavigationTeardownTests.cs.meta"
+    }
+  ]
+}

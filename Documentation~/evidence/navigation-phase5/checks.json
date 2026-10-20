@@ -1,0 +1,23 @@
+{
+  "finalSuite": {
+    "total": 198,
+    "passed": 198,
+    "failed": 0,
+    "skipped": 0
+  },
+  "newCases": 46,
+  "baselineCases": 152,
+  "exactBaselineTestNameSetMatchesPrior152": true,
+  "sourceHashesCapturedBeforeAndVerifiedAfterFinalRun": true,
+  "formatExitCode": 0,
+  "formatVerifyExitCode": 0,
+  "originalInterfacesAndExistingPolicyEntryOverloadsUnchanged": true,
+  "newGuids": 4,
+  "clearStillCaches": true,
+  "teardownScheduler": "Existing queue, FIFO terminal fence; no parallel coordinator.",
+  "finalLifetime": "Once-only BaseViewModel Dispose; final-model leases cover all validated models across awaited exits.",
+  "failureHistoryRetained": true,
+  "rawReportsByteExact": true,
+  "traceWhitespace": "Targeted -whitespace preserves raw exception stacks; source/docs checked.",
+  "stop": "Focused draft PR; no merge, deploy, Display update/integration or next phase."
+}

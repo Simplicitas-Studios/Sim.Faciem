@@ -1,0 +1,29 @@
+test=Overlapping_inflight_teardown_sets_are_rejected_without_closing_unrelated_Region
+outcome=Passed
+primaryTraceCount=12
+PRIMARY MODELS
+A:model=-1852032808:To=1:Away=1:Cleanup=1:FinalDispose=1:IsDisposed=True
+C:model=1611877996:To=1:Away=0:Cleanup=0:FinalDispose=0:IsDisposed=False
+TRACE
+A:To:lifetime=-1193376972
+A:To.return
+result=Succeeded:stage=None:recovery=NotRequired:error=null
+A:activation-cleanup
+A:Away:activation=null
+result=InvalidConfiguration:stage=Queue:recovery=Preserved:error=System.InvalidOperationException: An overlapping teardown must use the exact in-flight Region set.
+  at Sim.Faciem.Internal.RegionNavigationOperations.Reserve (Sim.Faciem.IRegion[] regions, Sim.Faciem.BaseViewModel caller, Sim.Faciem.NavigationPolicy policy, System.Boolean teardown) [0x0022b] in C:\Users\DPast\Documents\Projects\ReviewWorktrees\sim-faciem-navigation-phase5\Runtime\Internal\RegionNavigationOperations.cs:225 
+  at Sim.Faciem.Internal.RegionNavigationOperations.Run (Sim.Faciem.IRegion[] regions, Sim.Faciem.BaseViewModel caller, System.Func`2[T,TResult] action, Sim.Faciem.NavigationPolicy policy, Sim.Faciem.Internal.NavigationExecution execution, System.Boolean teardown) [0x00010] in C:\Users\DPast\Documents\Projects\ReviewWorktrees\sim-faciem-navigation-phase5\Runtime\Internal\RegionNavigationOperations.cs:70 
+  at Cysharp.Threading.Tasks.UniTask+ExceptionResultSource.GetResult (System.Int16 token) [0x0001e] in .\Library\PackageCache\com.cysharp.unitask@bf35135da627\Runtime\UniTask.Factory.cs:326 
+  at Cysharp.Threading.Tasks.UniTask+Awaiter.GetResult () [0x00015] in .\Library\PackageCache\com.cysharp.unitask@bf35135da627\Runtime\UniTask.cs:316 
+  at Sim.Faciem.NavigationService.TeardownFrom (Sim.Faciem.BaseViewModel caller, System.Collections.Generic.IReadOnlyList`1[T] selected, System.Func`2[T,TResult] ownsModel) [0x001d1] in C:\Users\DPast\Documents\Projects\ReviewWorktrees\sim-faciem-navigation-phase5\Runtime\NavigationService.Teardown.cs:31 
+C:To:lifetime=1339811784
+C:To.return
+result=Succeeded:stage=None:recovery=NotRequired:error=null
+A:Away.return
+A:final-dispose
+result=Succeeded:stage=None:recovery=NotRequired:error=null
+C:activation-cleanup
+C:final-dispose
+FINAL MODELS
+A:model=-1852032808:To=1:Away=1:Cleanup=1:FinalDispose=1:IsDisposed=True
+C:model=1611877996:To=1:Away=0:Cleanup=1:FinalDispose=1:IsDisposed=True

@@ -12,7 +12,8 @@ namespace Sim.Faciem
         UnsupportedOperation,
         InvalidConfiguration,
         Cancelled,
-        Failed
+        Failed,
+        ScopeClosed
     }
 
     public enum NavigationStage
@@ -26,7 +27,9 @@ namespace Sim.Faciem
         Cleanup,
         Exit,
         Entry,
-        Verification
+        Verification,
+        ViewRelease,
+        FinalDisposal
     }
 
     /// <summary>Framework UI recovery, not rollback of arbitrary application side effects.</summary>

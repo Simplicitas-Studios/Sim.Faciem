@@ -1,0 +1,9 @@
+test=Custom_service_teardown_is_unsupported_and_never_dispatches
+outcome=Passed
+primaryTraceCount=2
+PRIMARY MODELS
+
+TRACE
+result=UnsupportedOperation:stage=Validation:recovery=Preserved:error=System.NotSupportedException: Custom navigation services do not support final teardown.
+A:final-dispose
+FINAL MODELS

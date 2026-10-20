@@ -1,0 +1,25 @@
+test=Invalid_teardown_arguments_do_not_fence_or_dispose_a_live_scope("null-list")
+outcome=Passed
+primaryTraceCount=10
+PRIMARY MODELS
+A:model=-2102215976:To=1:Away=1:Cleanup=1:FinalDispose=0:IsDisposed=False
+B:model=-370260574:To=1:Away=0:Cleanup=0:FinalDispose=0:IsDisposed=False
+TRACE
+A:To:lifetime=-2132240324
+A:To.return
+result=Succeeded:stage=None:recovery=NotRequired:error=null
+result=InvalidConfiguration:stage=Validation:recovery=Preserved:error=System.InvalidOperationException: Explicit Regions and a final model ownership predicate are required.
+  at Sim.Faciem.Internal.NavigationExecution.Reject (Sim.Faciem.NavigationStatus status, System.String message) [0x0000d] in C:\Users\DPast\Documents\Projects\ReviewWorktrees\sim-faciem-navigation-phase5\Runtime\Internal\NavigationExecution.cs:53 
+  at Sim.Faciem.NavigationService.TeardownFrom (Sim.Faciem.BaseViewModel caller, System.Collections.Generic.IReadOnlyList`1[T] selected, System.Func`2[T,TResult] ownsModel) [0x000c8] in C:\Users\DPast\Documents\Projects\ReviewWorktrees\sim-faciem-navigation-phase5\Runtime\NavigationService.Teardown.cs:22 
+A:activation-cleanup
+A:Away:activation=null
+A:Away.return
+B:To:lifetime=-1048493680
+B:To.return
+result=Succeeded:stage=None:recovery=NotRequired:error=null
+A:final-dispose
+B:activation-cleanup
+B:final-dispose
+FINAL MODELS
+A:model=-2102215976:To=1:Away=1:Cleanup=1:FinalDispose=1:IsDisposed=True
+B:model=-370260574:To=1:Away=0:Cleanup=1:FinalDispose=1:IsDisposed=True

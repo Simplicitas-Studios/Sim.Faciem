@@ -8,7 +8,7 @@ using UnityEngine.UIElements;
 
 namespace Sim.Faciem
 {
-    internal class NavigationService : INavigationService
+    internal partial class NavigationService : INavigationService
     {
         private readonly IViewModelConstructionService _viewModelConstructionService;
         private readonly IViewIdRegistry _viewIdRegistry;
@@ -205,6 +205,7 @@ namespace Sim.Faciem
                             prepared.Single(item => ReferenceEquals(item.Region, region)).View;
                         view.style.flexGrow = 1;
                         view.pickingMode = PickingMode.Ignore;
+                        TrackCache(region, viewId, view, viewModel);
                         foreach (Region innerRegion in view.Query<Region>().ToList())
                         {
                             if (innerRegion.IsGlobal)
@@ -223,6 +224,7 @@ namespace Sim.Faciem
                         {
                             execution.Reject(NavigationStatus.InvalidConfiguration, "Cached View moved outside its owned Region.");
                         }
+                        TrackCache(region, viewId, view, viewModel);
                         view.dataSource = null;
                         view.dataSource = viewModel;
                     }
@@ -299,6 +301,15 @@ namespace Sim.Faciem
                     throw new AggregateException(error, cleanupError);
                 }
                 throw;
+            }
+        }
+
+        private static void TrackCache(IRegion region, ViewId id, VisualElement view, BaseViewModel model)
+        {
+            model.TrackCachedRegion(region);
+            if (region is Region native)
+            {
+                native.RecordCache(id, view, model);
             }
         }
 

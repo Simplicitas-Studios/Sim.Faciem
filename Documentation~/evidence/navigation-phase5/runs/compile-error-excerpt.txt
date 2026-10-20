@@ -1,0 +1,8 @@
+C:\Users\DPast\Documents\Projects\ReviewWorktrees\sim-faciem-navigation-phase5\Tests\Editor\NavigationTeardownTests.cs(553,24): error CS0019: Operator '+' cannot be applied to operands of type 'string' and 'method group'
+C:\Users\DPast\Documents\Projects\ReviewWorktrees\sim-faciem-navigation-phase5\Tests\Editor\NavigationTeardownTests.cs(556,28): error CS0019: Operator '+' cannot be applied to operands of type 'string' and 'method group'
+*** Tundra build failed (0.77 seconds), 12 items updated, 565 evaluated
+C:\Users\DPast\Documents\Projects\ReviewWorktrees\sim-faciem-navigation-phase5\Tests\Editor\NavigationTeardownTests.cs(553,24): error CS0019: Operator '+' cannot be applied to operands of type 'string' and 'method group'
+C:\Users\DPast\Documents\Projects\ReviewWorktrees\sim-faciem-navigation-phase5\Tests\Editor\NavigationTeardownTests.cs(556,28): error CS0019: Operator '+' cannot be applied to operands of type 'string' and 'method group'
+C:\Users\DPast\Documents\Projects\ReviewWorktrees\sim-faciem-navigation-phase5\Tests\Editor\NavigationTeardownTests.cs(553,24): error CS0019: Operator '+' cannot be applied to operands of type 'string' and 'method group'
+C:\Users\DPast\Documents\Projects\ReviewWorktrees\sim-faciem-navigation-phase5\Tests\Editor\NavigationTeardownTests.cs(556,28): error CS0019: Operator '+' cannot be applied to operands of type 'string' and 'method group'
+Scripts have compiler errors.

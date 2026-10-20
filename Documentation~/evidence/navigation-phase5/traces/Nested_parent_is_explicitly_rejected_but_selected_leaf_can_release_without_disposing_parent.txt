@@ -1,0 +1,35 @@
+test=Nested_parent_is_explicitly_rejected_but_selected_leaf_can_release_without_disposing_parent
+outcome=Passed
+primaryTraceCount=12
+PRIMARY MODELS
+A:model=641136668:To=1:Away=0:Cleanup=0:FinalDispose=0:IsDisposed=False
+B:model=-1921875226:To=1:Away=1:Cleanup=1:FinalDispose=1:IsDisposed=True
+TRACE
+A:To:lifetime=-230308520
+A:To.return
+result=Succeeded:stage=None:recovery=NotRequired:error=null
+B:To:lifetime=1219133592
+B:To.return
+result=Succeeded:stage=None:recovery=NotRequired:error=null
+result=UnsupportedOperation:stage=Validation:recovery=Preserved:error=System.InvalidOperationException: Parent caches containing nested Regions require a separate ownership contract.
+  at Sim.Faciem.Internal.NavigationExecution.Reject (Sim.Faciem.NavigationStatus status, System.String message) [0x0000d] in C:\Users\DPast\Documents\Projects\ReviewWorktrees\sim-faciem-navigation-phase5\Runtime\Internal\NavigationExecution.cs:53 
+  at Sim.Faciem.NavigationService.TeardownOwned (Sim.Faciem.Region[] regions, Sim.Faciem.IRegion[] targets, System.Func`2[T,TResult] ownsModel, Sim.Faciem.Internal.RegionNavigationOperations+Operation operation, Sim.Faciem.Internal.NavigationExecution execution) [0x00337] in C:\Users\DPast\Documents\Projects\ReviewWorktrees\sim-faciem-navigation-phase5\Runtime\NavigationService.Teardown.cs:81 
+  at Cysharp.Threading.Tasks.UniTask+ExceptionResultSource`1[T].GetResult (System.Int16 token) [0x0001e] in .\Library\PackageCache\com.cysharp.unitask@bf35135da627\Runtime\UniTask.Factory.cs:370 
+  at Cysharp.Threading.Tasks.UniTask`1+Awaiter[T].GetResult () [0x00025] in .\Library\PackageCache\com.cysharp.unitask@bf35135da627\Runtime\UniTask.cs:657 
+  at Sim.Faciem.NavigationService+<>c__DisplayClass0_1.<TeardownFrom>b__0 (Sim.Faciem.Internal.RegionNavigationOperations+Operation operation) [0x00059] in C:\Users\DPast\Documents\Projects\ReviewWorktrees\sim-faciem-navigation-phase5\Runtime\NavigationService.Teardown.cs:33 
+  at Cysharp.Threading.Tasks.UniTask+ExceptionResultSource.GetResult (System.Int16 token) [0x0001e] in .\Library\PackageCache\com.cysharp.unitask@bf35135da627\Runtime\UniTask.Factory.cs:326 
+  at Cysharp.Threading.Tasks.UniTask+Awaiter.GetResult () [0x00015] in .\Library\PackageCache\com.cysharp.unitask@bf35135da627\Runtime\UniTask.cs:316 
+  at Sim.Faciem.Internal.RegionNavigationOperations.Run (Sim.Faciem.IRegion[] regions, Sim.Faciem.BaseViewModel caller, System.Func`2[T,TResult] action, Sim.Faciem.NavigationPolicy policy, Sim.Faciem.Internal.NavigationExecution execution, System.Boolean teardown) [0x00352] in C:\Users\DPast\Documents\Projects\ReviewWorktrees\sim-faciem-navigation-phase5\Runtime\Internal\RegionNavigationOperations.cs:105 
+  at Cysharp.Threading.Tasks.UniTask+ExceptionResultSource.GetResult (System.Int16 token) [0x0001e] in .\Library\PackageCache\com.cysharp.unitask@bf35135da627\Runtime\UniTask.Factory.cs:326 
+  at Cysharp.Threading.Tasks.UniTask+Awaiter.GetResult () [0x00015] in .\Library\PackageCache\com.cysharp.unitask@bf35135da627\Runtime\UniTask.cs:316 
+  at Sim.Faciem.NavigationService.TeardownFrom (Sim.Faciem.BaseViewModel caller, System.Collections.Generic.IReadOnlyList`1[T] selected, System.Func`2[T,TResult] ownsModel) [0x001d1] in C:\Users\DPast\Documents\Projects\ReviewWorktrees\sim-faciem-navigation-phase5\Runtime\NavigationService.Teardown.cs:31 
+B:activation-cleanup
+B:Away:activation=null
+B:Away.return
+B:final-dispose
+result=Succeeded:stage=None:recovery=NotRequired:error=null
+A:activation-cleanup
+A:final-dispose
+FINAL MODELS
+A:model=641136668:To=1:Away=0:Cleanup=1:FinalDispose=1:IsDisposed=True
+B:model=-1921875226:To=1:Away=1:Cleanup=1:FinalDispose=1:IsDisposed=True

@@ -13,6 +13,10 @@ namespace Sim.Faciem
 
         private DisposableBag _disposables = new();
         private readonly List<ActiveViewBinding> _activeViews = new();
+        private readonly List<WeakReference<IRegion>> _cacheRegions = new();
+        private readonly List<IDisposable> _regionSubscriptions = new();
+        internal bool IsDisposed { get; private set; }
+        internal Internal.RegionNavigationOperations.Operation FinalOwner;
 
         protected ref DisposableBag Disposables => ref _disposables;
 
@@ -36,17 +40,47 @@ namespace Sim.Faciem
 
         internal void Setup(IViewModelRegionManager regionManager, INavigationService navigationService)
         {
+            if (IsDisposed || FinalOwner != null)
+            {
+                throw new ObjectDisposedException(GetType().Name);
+            }
             RegionManager = regionManager;
             Navigation = new ViewModelNavigationService(this, navigationService);
         }
 
         public void AddRegion(IRegion region)
         {
-            Disposables.Add(region
+            if (IsDisposed || FinalOwner != null)
+            {
+                throw new ObjectDisposedException(GetType().Name);
+            }
+            _regionSubscriptions.Add(region
                 .Destroyed
                 .Take(1)
                 .Subscribe(_ => RegionManager.RemoveRegion(region)));
             RegionManager.AddRegion(region);
+        }
+
+        internal void TrackCachedRegion(IRegion region)
+        {
+            _cacheRegions.RemoveAll(reference => !reference.TryGetTarget(out _));
+            if (!_cacheRegions.Any(reference => reference.TryGetTarget(out IRegion previous) && ReferenceEquals(previous, region)))
+            {
+                _cacheRegions.Add(new WeakReference<IRegion>(region));
+            }
+        }
+
+        internal void ValidateFinalOwnership(IReadOnlyList<IRegion> targets)
+        {
+            foreach (WeakReference<IRegion> reference in _cacheRegions)
+            {
+                if (reference.TryGetTarget(out IRegion region) &&
+                    !targets.Any(target => ReferenceEquals(target, region)) &&
+                    (region is not Region native || native.OwnsModel(this)))
+                {
+                    throw new InvalidOperationException("Final disposal requires every cached owner of the model, including inactive owners.");
+                }
+            }
         }
 
         internal void TrackActiveView(IRegion region, ViewId viewId)
@@ -89,6 +123,10 @@ namespace Sim.Faciem
 
         internal async UniTask<NavigationActivation> EnsureActivationAsync()
         {
+            if (IsDisposed || FinalOwner != null)
+            {
+                throw new ObjectDisposedException(GetType().Name);
+            }
             if (Activation != null && !Activation.IsValid)
             {
                 await EndActivationAsync(Activation);
@@ -96,7 +134,7 @@ namespace Sim.Faciem
             if (Activation == null)
             {
                 NavigationActivation created = null;
-                created = new NavigationActivation(() => ReferenceEquals(Activation, created));
+                created = new NavigationActivation(() => !IsDisposed && ReferenceEquals(Activation, created));
                 Activation = created;
             }
             return Activation;
@@ -136,9 +174,54 @@ namespace Sim.Faciem
             return UniTask.CompletedTask;
         }
 
+        /// <summary>Once-only final-model disposal. Use awaited navigation teardown before disposing a live cache owner.</summary>
         public void Dispose()
         {
-            Disposables.Dispose();
+            if (IsDisposed)
+            {
+                return;
+            }
+            IsDisposed = true;
+            var errors = new List<Exception>();
+            foreach (IDisposable subscription in _regionSubscriptions)
+            {
+                try
+                {
+                    subscription.Dispose();
+                }
+                catch (Exception error)
+                {
+                    errors.Add(error);
+                }
+            }
+            _regionSubscriptions.Clear();
+            try
+            {
+                Disposables.Dispose();
+            }
+            catch (Exception error)
+            {
+                errors.Add(error);
+            }
+            finally
+            {
+                // R3's opaque bag may stop on a throwing user resource; do not retry it or retain its references.
+                _disposables = default;
+                _disposables.Dispose();
+                _cacheRegions.Clear();
+                _activeViews.Clear();
+                if (RegionManager is RegionManager manager)
+                {
+                    manager.ReleaseReferences();
+                }
+                RegionManager = null;
+                Navigation = null;
+                Command = null;
+            }
+            if (errors.Count != 0)
+            {
+                throw new AggregateException("Final ViewModel disposal failed.", errors);
+            }
         }
 
         void IDisposableContainer.Add(IDisposable disposable)

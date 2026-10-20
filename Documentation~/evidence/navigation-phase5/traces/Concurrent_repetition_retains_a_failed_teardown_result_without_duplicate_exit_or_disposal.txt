@@ -1,0 +1,74 @@
+test=Concurrent_repetition_retains_a_failed_teardown_result_without_duplicate_exit_or_disposal
+outcome=Passed
+primaryTraceCount=8
+PRIMARY MODELS
+A:model=1975845216:To=1:Away=1:Cleanup=1:FinalDispose=1:IsDisposed=True
+TRACE
+A:To:lifetime=1562807452
+A:To.return
+result=Succeeded:stage=None:recovery=NotRequired:error=null
+A:activation-cleanup
+A:Away:activation=null
+A:final-dispose
+result=Failed:stage=Exit:recovery=Incomplete:error=System.AggregateException: Final teardown encountered failures; all safely owned stages were attempted. (injected teardown fault) ---> System.InvalidOperationException: injected teardown fault
+  at Sim.Faciem.Tests.NavigationTeardownTests+<>c__DisplayClass45_0.<Concurrent_repetition_retains_a_failed_teardown_result_without_duplicate_exit_or_disposal>b__0 () [0x00079] in C:\Users\DPast\Documents\Projects\ReviewWorktrees\sim-faciem-navigation-phase5\Tests\Editor\NavigationTeardownTests.cs:711 
+  at Cysharp.Threading.Tasks.UniTaskCompletionSourceCore`1[TResult].GetResult (System.Int16 token) [0x00067] in .\Library\PackageCache\com.cysharp.unitask@bf35135da627\Runtime\UniTaskCompletionSource.cs:244 
+  at Cysharp.Threading.Tasks.CompilerServices.AsyncUniTask`1[TStateMachine].GetResult (System.Int16 token) [0x00002] in .\Library\PackageCache\com.cysharp.unitask@bf35135da627\Runtime\CompilerServices\StateMachineRunner.cs:218 
+  at Cysharp.Threading.Tasks.UniTask+Awaiter.GetResult () [0x00015] in .\Library\PackageCache\com.cysharp.unitask@bf35135da627\Runtime\UniTask.cs:316 
+  at Sim.Faciem.Tests.NavigationTeardownTests+Model.NavigateAway () [0x0009a] in C:\Users\DPast\Documents\Projects\ReviewWorktrees\sim-faciem-navigation-phase5\Tests\Editor\NavigationTeardownTests.cs:1014 
+  at Cysharp.Threading.Tasks.UniTaskCompletionSourceCore`1[TResult].GetResult (System.Int16 token) [0x00067] in .\Library\PackageCache\com.cysharp.unitask@bf35135da627\Runtime\UniTaskCompletionSource.cs:244 
+  at Cysharp.Threading.Tasks.CompilerServices.AsyncUniTask`1[TStateMachine].GetResult (System.Int16 token) [0x00002] in .\Library\PackageCache\com.cysharp.unitask@bf35135da627\Runtime\CompilerServices\StateMachineRunner.cs:218 
+  at Cysharp.Threading.Tasks.UniTask+Awaiter.GetResult () [0x00015] in .\Library\PackageCache\com.cysharp.unitask@bf35135da627\Runtime\UniTask.cs:316 
+  at Sim.Faciem.Internal.RegionNavigationOperations.InvokeLifecycle (Sim.Faciem.Internal.RegionNavigationOperations+Operation operation, Sim.Faciem.BaseViewModel model, System.Func`1[TResult] callback) [0x000d5] in C:\Users\DPast\Documents\Projects\ReviewWorktrees\sim-faciem-navigation-phase5\Runtime\Internal\RegionNavigationOperations.cs:169 
+  at Cysharp.Threading.Tasks.UniTaskCompletionSourceCore`1[TResult].GetResult (System.Int16 token) [0x00067] in .\Library\PackageCache\com.cysharp.unitask@bf35135da627\Runtime\UniTaskCompletionSource.cs:244 
+  at Cysharp.Threading.Tasks.CompilerServices.AsyncUniTask`1[TStateMachine].GetResult (System.Int16 token) [0x00002] in .\Library\PackageCache\com.cysharp.unitask@bf35135da627\Runtime\CompilerServices\StateMachineRunner.cs:218 
+  at Cysharp.Threading.Tasks.UniTask+Awaiter.GetResult () [0x00015] in .\Library\PackageCache\com.cysharp.unitask@bf35135da627\Runtime\UniTask.cs:316 
+  at Sim.Faciem.NavigationService+<>c__DisplayClass1_0.<TeardownOwned>g__Attempt|2 (Sim.Faciem.NavigationStage stage, System.Func`1[TResult] action) [0x00043] in C:\Users\DPast\Documents\Projects\ReviewWorktrees\sim-faciem-navigation-phase5\Runtime\NavigationService.Teardown.cs:142 
+   --- End of inner exception stack trace ---
+---> (Inner Exception #0) System.InvalidOperationException: injected teardown fault
+  at Sim.Faciem.Tests.NavigationTeardownTests+<>c__DisplayClass45_0.<Concurrent_repetition_retains_a_failed_teardown_result_without_duplicate_exit_or_disposal>b__0 () [0x00079] in C:\Users\DPast\Documents\Projects\ReviewWorktrees\sim-faciem-navigation-phase5\Tests\Editor\NavigationTeardownTests.cs:711 
+  at Cysharp.Threading.Tasks.UniTaskCompletionSourceCore`1[TResult].GetResult (System.Int16 token) [0x00067] in .\Library\PackageCache\com.cysharp.unitask@bf35135da627\Runtime\UniTaskCompletionSource.cs:244 
+  at Cysharp.Threading.Tasks.CompilerServices.AsyncUniTask`1[TStateMachine].GetResult (System.Int16 token) [0x00002] in .\Library\PackageCache\com.cysharp.unitask@bf35135da627\Runtime\CompilerServices\StateMachineRunner.cs:218 
+  at Cysharp.Threading.Tasks.UniTask+Awaiter.GetResult () [0x00015] in .\Library\PackageCache\com.cysharp.unitask@bf35135da627\Runtime\UniTask.cs:316 
+  at Sim.Faciem.Tests.NavigationTeardownTests+Model.NavigateAway () [0x0009a] in C:\Users\DPast\Documents\Projects\ReviewWorktrees\sim-faciem-navigation-phase5\Tests\Editor\NavigationTeardownTests.cs:1014 
+  at Cysharp.Threading.Tasks.UniTaskCompletionSourceCore`1[TResult].GetResult (System.Int16 token) [0x00067] in .\Library\PackageCache\com.cysharp.unitask@bf35135da627\Runtime\UniTaskCompletionSource.cs:244 
+  at Cysharp.Threading.Tasks.CompilerServices.AsyncUniTask`1[TStateMachine].GetResult (System.Int16 token) [0x00002] in .\Library\PackageCache\com.cysharp.unitask@bf35135da627\Runtime\CompilerServices\StateMachineRunner.cs:218 
+  at Cysharp.Threading.Tasks.UniTask+Awaiter.GetResult () [0x00015] in .\Library\PackageCache\com.cysharp.unitask@bf35135da627\Runtime\UniTask.cs:316 
+  at Sim.Faciem.Internal.RegionNavigationOperations.InvokeLifecycle (Sim.Faciem.Internal.RegionNavigationOperations+Operation operation, Sim.Faciem.BaseViewModel model, System.Func`1[TResult] callback) [0x000d5] in C:\Users\DPast\Documents\Projects\ReviewWorktrees\sim-faciem-navigation-phase5\Runtime\Internal\RegionNavigationOperations.cs:169 
+  at Cysharp.Threading.Tasks.UniTaskCompletionSourceCore`1[TResult].GetResult (System.Int16 token) [0x00067] in .\Library\PackageCache\com.cysharp.unitask@bf35135da627\Runtime\UniTaskCompletionSource.cs:244 
+  at Cysharp.Threading.Tasks.CompilerServices.AsyncUniTask`1[TStateMachine].GetResult (System.Int16 token) [0x00002] in .\Library\PackageCache\com.cysharp.unitask@bf35135da627\Runtime\CompilerServices\StateMachineRunner.cs:218 
+  at Cysharp.Threading.Tasks.UniTask+Awaiter.GetResult () [0x00015] in .\Library\PackageCache\com.cysharp.unitask@bf35135da627\Runtime\UniTask.cs:316 
+  at Sim.Faciem.NavigationService+<>c__DisplayClass1_0.<TeardownOwned>g__Attempt|2 (Sim.Faciem.NavigationStage stage, System.Func`1[TResult] action) [0x00043] in C:\Users\DPast\Documents\Projects\ReviewWorktrees\sim-faciem-navigation-phase5\Runtime\NavigationService.Teardown.cs:142 <---
+
+result=Failed:stage=Exit:recovery=Incomplete:error=System.AggregateException: Final teardown encountered failures; all safely owned stages were attempted. (injected teardown fault) ---> System.InvalidOperationException: injected teardown fault
+  at Sim.Faciem.Tests.NavigationTeardownTests+<>c__DisplayClass45_0.<Concurrent_repetition_retains_a_failed_teardown_result_without_duplicate_exit_or_disposal>b__0 () [0x00079] in C:\Users\DPast\Documents\Projects\ReviewWorktrees\sim-faciem-navigation-phase5\Tests\Editor\NavigationTeardownTests.cs:711 
+  at Cysharp.Threading.Tasks.UniTaskCompletionSourceCore`1[TResult].GetResult (System.Int16 token) [0x00067] in .\Library\PackageCache\com.cysharp.unitask@bf35135da627\Runtime\UniTaskCompletionSource.cs:244 
+  at Cysharp.Threading.Tasks.CompilerServices.AsyncUniTask`1[TStateMachine].GetResult (System.Int16 token) [0x00002] in .\Library\PackageCache\com.cysharp.unitask@bf35135da627\Runtime\CompilerServices\StateMachineRunner.cs:218 
+  at Cysharp.Threading.Tasks.UniTask+Awaiter.GetResult () [0x00015] in .\Library\PackageCache\com.cysharp.unitask@bf35135da627\Runtime\UniTask.cs:316 
+  at Sim.Faciem.Tests.NavigationTeardownTests+Model.NavigateAway () [0x0009a] in C:\Users\DPast\Documents\Projects\ReviewWorktrees\sim-faciem-navigation-phase5\Tests\Editor\NavigationTeardownTests.cs:1014 
+  at Cysharp.Threading.Tasks.UniTaskCompletionSourceCore`1[TResult].GetResult (System.Int16 token) [0x00067] in .\Library\PackageCache\com.cysharp.unitask@bf35135da627\Runtime\UniTaskCompletionSource.cs:244 
+  at Cysharp.Threading.Tasks.CompilerServices.AsyncUniTask`1[TStateMachine].GetResult (System.Int16 token) [0x00002] in .\Library\PackageCache\com.cysharp.unitask@bf35135da627\Runtime\CompilerServices\StateMachineRunner.cs:218 
+  at Cysharp.Threading.Tasks.UniTask+Awaiter.GetResult () [0x00015] in .\Library\PackageCache\com.cysharp.unitask@bf35135da627\Runtime\UniTask.cs:316 
+  at Sim.Faciem.Internal.RegionNavigationOperations.InvokeLifecycle (Sim.Faciem.Internal.RegionNavigationOperations+Operation operation, Sim.Faciem.BaseViewModel model, System.Func`1[TResult] callback) [0x000d5] in C:\Users\DPast\Documents\Projects\ReviewWorktrees\sim-faciem-navigation-phase5\Runtime\Internal\RegionNavigationOperations.cs:169 
+  at Cysharp.Threading.Tasks.UniTaskCompletionSourceCore`1[TResult].GetResult (System.Int16 token) [0x00067] in .\Library\PackageCache\com.cysharp.unitask@bf35135da627\Runtime\UniTaskCompletionSource.cs:244 
+  at Cysharp.Threading.Tasks.CompilerServices.AsyncUniTask`1[TStateMachine].GetResult (System.Int16 token) [0x00002] in .\Library\PackageCache\com.cysharp.unitask@bf35135da627\Runtime\CompilerServices\StateMachineRunner.cs:218 
+  at Cysharp.Threading.Tasks.UniTask+Awaiter.GetResult () [0x00015] in .\Library\PackageCache\com.cysharp.unitask@bf35135da627\Runtime\UniTask.cs:316 
+  at Sim.Faciem.NavigationService+<>c__DisplayClass1_0.<TeardownOwned>g__Attempt|2 (Sim.Faciem.NavigationStage stage, System.Func`1[TResult] action) [0x00043] in C:\Users\DPast\Documents\Projects\ReviewWorktrees\sim-faciem-navigation-phase5\Runtime\NavigationService.Teardown.cs:142 
+   --- End of inner exception stack trace ---
+---> (Inner Exception #0) System.InvalidOperationException: injected teardown fault
+  at Sim.Faciem.Tests.NavigationTeardownTests+<>c__DisplayClass45_0.<Concurrent_repetition_retains_a_failed_teardown_result_without_duplicate_exit_or_disposal>b__0 () [0x00079] in C:\Users\DPast\Documents\Projects\ReviewWorktrees\sim-faciem-navigation-phase5\Tests\Editor\NavigationTeardownTests.cs:711 
+  at Cysharp.Threading.Tasks.UniTaskCompletionSourceCore`1[TResult].GetResult (System.Int16 token) [0x00067] in .\Library\PackageCache\com.cysharp.unitask@bf35135da627\Runtime\UniTaskCompletionSource.cs:244 
+  at Cysharp.Threading.Tasks.CompilerServices.AsyncUniTask`1[TStateMachine].GetResult (System.Int16 token) [0x00002] in .\Library\PackageCache\com.cysharp.unitask@bf35135da627\Runtime\CompilerServices\StateMachineRunner.cs:218 
+  at Cysharp.Threading.Tasks.UniTask+Awaiter.GetResult () [0x00015] in .\Library\PackageCache\com.cysharp.unitask@bf35135da627\Runtime\UniTask.cs:316 
+  at Sim.Faciem.Tests.NavigationTeardownTests+Model.NavigateAway () [0x0009a] in C:\Users\DPast\Documents\Projects\ReviewWorktrees\sim-faciem-navigation-phase5\Tests\Editor\NavigationTeardownTests.cs:1014 
+  at Cysharp.Threading.Tasks.UniTaskCompletionSourceCore`1[TResult].GetResult (System.Int16 token) [0x00067] in .\Library\PackageCache\com.cysharp.unitask@bf35135da627\Runtime\UniTaskCompletionSource.cs:244 
+  at Cysharp.Threading.Tasks.CompilerServices.AsyncUniTask`1[TStateMachine].GetResult (System.Int16 token) [0x00002] in .\Library\PackageCache\com.cysharp.unitask@bf35135da627\Runtime\CompilerServices\StateMachineRunner.cs:218 
+  at Cysharp.Threading.Tasks.UniTask+Awaiter.GetResult () [0x00015] in .\Library\PackageCache\com.cysharp.unitask@bf35135da627\Runtime\UniTask.cs:316 
+  at Sim.Faciem.Internal.RegionNavigationOperations.InvokeLifecycle (Sim.Faciem.Internal.RegionNavigationOperations+Operation operation, Sim.Faciem.BaseViewModel model, System.Func`1[TResult] callback) [0x000d5] in C:\Users\DPast\Documents\Projects\ReviewWorktrees\sim-faciem-navigation-phase5\Runtime\Internal\RegionNavigationOperations.cs:169 
+  at Cysharp.Threading.Tasks.UniTaskCompletionSourceCore`1[TResult].GetResult (System.Int16 token) [0x00067] in .\Library\PackageCache\com.cysharp.unitask@bf35135da627\Runtime\UniTaskCompletionSource.cs:244 
+  at Cysharp.Threading.Tasks.CompilerServices.AsyncUniTask`1[TStateMachine].GetResult (System.Int16 token) [0x00002] in .\Library\PackageCache\com.cysharp.unitask@bf35135da627\Runtime\CompilerServices\StateMachineRunner.cs:218 
+  at Cysharp.Threading.Tasks.UniTask+Awaiter.GetResult () [0x00015] in .\Library\PackageCache\com.cysharp.unitask@bf35135da627\Runtime\UniTask.cs:316 
+  at Sim.Faciem.NavigationService+<>c__DisplayClass1_0.<TeardownOwned>g__Attempt|2 (Sim.Faciem.NavigationStage stage, System.Func`1[TResult] action) [0x00043] in C:\Users\DPast\Documents\Projects\ReviewWorktrees\sim-faciem-navigation-phase5\Runtime\NavigationService.Teardown.cs:142 <---
+
+FINAL MODELS
+A:model=1975845216:To=1:Away=1:Cleanup=1:FinalDispose=1:IsDisposed=True

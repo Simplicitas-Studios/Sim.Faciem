@@ -1,0 +1,18 @@
+test=Binding_references_are_cleared_before_final_model_disposal
+outcome=Passed
+primaryTraceCount=10
+PRIMARY MODELS
+A:model=1074946306:To=1:Away=1:Cleanup=1:FinalDispose=1:IsDisposed=True
+TRACE
+A:To:lifetime=1907945704
+A:To.return
+result=Succeeded:stage=None:recovery=NotRequired:error=null
+binding:before-release:infos=1
+A:activation-cleanup
+A:Away:activation=null
+A:Away.return
+A:final-dispose
+binding:at-final-dispose:infos=0
+result=Succeeded:stage=None:recovery=NotRequired:error=null
+FINAL MODELS
+A:model=1074946306:To=1:Away=1:Cleanup=1:FinalDispose=1:IsDisposed=True

@@ -1,0 +1,280 @@
+{
+  "payloads": {
+    "Documentation~/evidence/navigation-phase5/.gitattributes": {
+      "sha256": "c0841779096500bd3b3c7e17e12655af98a4a425c874923e7b06431c414ba541",
+      "bytes": 158
+    },
+    "Documentation~/evidence/navigation-phase5/baseline.json": {
+      "sha256": "1abe9c69dc533ef35bf4ac2cff0bf213a6b488d8bdc12c35200fe908d7a82d20",
+      "bytes": 220
+    },
+    "Documentation~/evidence/navigation-phase5/checks.json": {
+      "sha256": "a784bfd2e83d7b757c77322dc11dbb6d22c249e51f5ec3b25681e4ee064e04fd",
+      "bytes": 907
+    },
+    "Documentation~/evidence/navigation-phase5/contracts.json": {
+      "sha256": "a086249d3c6847306ff5c09f3acdb204d149ea8a52e9113de357323cc19fa846",
+      "bytes": 16887
+    },
+    "Documentation~/evidence/navigation-phase5/format.json": {
+      "sha256": "ac84658d55c089e11448e1bf7e3c6ed6abe1c68527f0f432ef31e950d4941703",
+      "bytes": 1788
+    },
+    "Documentation~/evidence/navigation-phase5/preservation.json": {
+      "sha256": "c285b4b863e45bd03d89ff46f47c83b5f850eaaa05ba138d222888a0d657346e",
+      "bytes": 44863
+    },
+    "Documentation~/evidence/navigation-phase5/runs.json": {
+      "sha256": "81366c2381e4424271668e193cf13b6775d8be0ab630ffe7bf9e9a687caf0494",
+      "bytes": 32681
+    },
+    "Documentation~/evidence/navigation-phase5/tested-source-hashes.json": {
+      "sha256": "9afe94cf631a2b1936999e7d85052361f9c0b8e666c079f5479f7b90b11107b2",
+      "bytes": 44776
+    },
+    "Documentation~/evidence/navigation-phase5/validation-environment.json": {
+      "sha256": "7578ad38b83616f1a798e6353eabdae666e7981c26ca36e1b9e4541a4fc2cc29",
+      "bytes": 2359
+    },
+    "Documentation~/evidence/navigation-phase5/initial/compile-tested-source-hashes.json": {
+      "sha256": "966c339c5c586a835c29f6d54267f28573e288ed46104745e17e62f4a499e8f3",
+      "bytes": 20261
+    },
+    "Documentation~/evidence/navigation-phase5/initial/initial-tested-source-hashes.json": {
+      "sha256": "295292e855ef20c66e8f958d39081bc802cde8e163571a7b7f65be2fd333391a",
+      "bytes": 20261
+    },
+    "Documentation~/evidence/navigation-phase5/initial/NavigationService.Teardown.cs.txt": {
+      "sha256": "d213deed52fa8ced1484ca4c0b5323ec244a59d8a5a83670348b928aa79bd11e",
+      "bytes": 11257
+    },
+    "Documentation~/evidence/navigation-phase5/initial/NavigationTeardownTests.cs.txt": {
+      "sha256": "6cdad3241405bd9074e53cd1002e6906f34a2167c426d064324752097e3211a8",
+      "bytes": 41668
+    },
+    "Documentation~/evidence/navigation-phase5/runs/compile-error-excerpt.txt": {
+      "sha256": "083b40ba54d15b023d940a862c356a44bdd4a3a7d9df49c805e06eb645fc85a1",
+      "bytes": 1436
+    },
+    "Documentation~/evidence/navigation-phase5/runs/compile-error.json": {
+      "sha256": "457453de33f5dd5064d876e750ae2f63078f692fb6ec7813011e6507c0f64fe5",
+      "bytes": 499
+    },
+    "Documentation~/evidence/navigation-phase5/runs/final-198.json": {
+      "sha256": "455a54423a38a9a006fa389d7c2ba0dc7d59775d1c2404fc7f55932fc3280031",
+      "bytes": 34789
+    },
+    "Documentation~/evidence/navigation-phase5/runs/final-198.nunit.xml": {
+      "sha256": "857e99eb559a75f4ec75a8bd806fd29371dd52182e655f578b40c50a0e2f6162",
+      "bytes": 184907
+    },
+    "Documentation~/evidence/navigation-phase5/runs/initial-188.json": {
+      "sha256": "d1b76071fbf562aa17386349202a51fc76da00c3a2bce16bb7a3f21aea1924ba",
+      "bytes": 37650
+    },
+    "Documentation~/evidence/navigation-phase5/runs/initial-188.nunit.xml": {
+      "sha256": "ce2ad4f2aaa8d6d724d41c8be5372f3817c920508b000ec9bdf6de88c7d789fb",
+      "bytes": 186049
+    },
+    "Documentation~/evidence/navigation-phase5/runs/intermediate-188.json": {
+      "sha256": "1f75d052d927e51f520e827b7441cc3ea393100c010616f818bc1424bf4f45f3",
+      "bytes": 32942
+    },
+    "Documentation~/evidence/navigation-phase5/runs/intermediate-188.nunit.xml": {
+      "sha256": "3d07a3bfb659e29a29db642c06cdc88814d0abf81165a3725fc59bbf902d6c50",
+      "bytes": 176414
+    },
+    "Documentation~/evidence/navigation-phase5/traces/All_owned_models_and_stages_are_attempted_and_failures_aggregate_in_order.txt": {
+      "sha256": "dd89479bad9309ce5a05f0c15feebe21275802a21d8dec225f9d1f2507d7f7bf",
+      "bytes": 15496
+    },
+    "Documentation~/evidence/navigation-phase5/traces/An_ownership_rejected_queued_teardown_does_not_prevent_an_already_queued_authorized_teardown.txt": {
+      "sha256": "0597e5da0b51daf8ba62f0fbd73f39044dbfa747ae4ec0c2df107d6dddd763a0",
+      "bytes": 6138
+    },
+    "Documentation~/evidence/navigation-phase5/traces/Awaiting_entry_retains_ownership_and_final_disposal_waits_for_actual_return_Fifo_.txt": {
+      "sha256": "373d99fa6fe85b5aa77e2f0491af71e6477704e81bc471d8485f7497714da42d",
+      "bytes": 3096
+    },
+    "Documentation~/evidence/navigation-phase5/traces/Awaiting_entry_retains_ownership_and_final_disposal_waits_for_actual_return_LatestRequestWins_.txt": {
+      "sha256": "5823c14b7ef71ebb24c5e4d5c3ce4c5f0dcc720076c0c09c8ad57b7e1212a21d",
+      "bytes": 3107
+    },
+    "Documentation~/evidence/navigation-phase5/traces/A_B_A_Clear_and_reentry_preserve_exact_cache_references_until_explicit_final_release.txt": {
+      "sha256": "4d534b57d787bdb97fa8d67dae6983093aaf31e607807dd0ddf7bc199845f465",
+      "bytes": 1429
+    },
+    "Documentation~/evidence/navigation-phase5/traces/A_captured_disposed_scoped_handle_cannot_tear_down_a_new_application_scope.txt": {
+      "sha256": "f606b7d9a4f781db19a9e46219550eac0b2fa4f2275e63ef0c1eb00f8c023162",
+      "bytes": 2385
+    },
+    "Documentation~/evidence/navigation-phase5/traces/A_disposed_DI_singleton_cannot_be_reactivated_in_a_new_scope.txt": {
+      "sha256": "2a7f38674e0101122e1e07e9842fdeb42eebc94be2bac05c560b07c2ace31ae5",
+      "bytes": 1637
+    },
+    "Documentation~/evidence/navigation-phase5/traces/A_nested_scope_added_during_an_awaited_exit_is_not_forcibly_detached_with_its_callback_running.txt": {
+      "sha256": "3b28830fe8fd51739d89ae16928f5edf8e8d52b0b956d52b6c0ba97dfacb4acc",
+      "bytes": 2577
+    },
+    "Documentation~/evidence/navigation-phase5/traces/A_new_Region_scope_creates_fresh_instances_and_the_old_scope_remains_terminal.txt": {
+      "sha256": "4bf3b75a8a0f93b5835f9feadc80fb5de9e0abe5c861a687210b3eace72cdc9b",
+      "bytes": 5570
+    },
+    "Documentation~/evidence/navigation-phase5/traces/Binding_references_are_cleared_before_final_model_disposal.txt": {
+      "sha256": "a79310d303a05ee86096a7587415ad22d4d88e86c9321ce8867f47bee58542e0",
+      "bytes": 573
+    },
+    "Documentation~/evidence/navigation-phase5/traces/Concurrent_repetition_retains_a_failed_teardown_result_without_duplicate_exit_or_disposal.txt": {
+      "sha256": "f3bf02ec41d04cc89020dec9cfb44ff48f3a79472131f1c7c1ddcdc282b2fbe3",
+      "bytes": 12885
+    },
+    "Documentation~/evidence/navigation-phase5/traces/Custom_service_teardown_is_unsupported_and_never_dispatches.txt": {
+      "sha256": "1c1bc9e88f2c732f2f22f730daa6ddb9a17756d95046d94109bcfdaa492f2ced",
+      "bytes": 309
+    },
+    "Documentation~/evidence/navigation-phase5/traces/Earlier_exit_and_its_queued_transition_drain_before_teardown__clear__.txt": {
+      "sha256": "8f0930ef89ae5df384aa17e6d277edc651e52a927150ed15a3a1a43f581d00dd",
+      "bytes": 581
+    },
+    "Documentation~/evidence/navigation-phase5/traces/Earlier_exit_and_its_queued_transition_drain_before_teardown__navigate__.txt": {
+      "sha256": "fa825bdbbc1423c07143bf06a4ae49768b09c54610f9b3cd4b39ac7188ce9cef",
+      "bytes": 835
+    },
+    "Documentation~/evidence/navigation-phase5/traces/Earlier_exit_and_its_queued_transition_drain_before_teardown__reentry__.txt": {
+      "sha256": "a28bb5b2837b8c7c7e5f7a3bb0200b92fe0767af78eb70284242af818fe680d2",
+      "bytes": 676
+    },
+    "Documentation~/evidence/navigation-phase5/traces/Explicit_ownership_denial_or_predicate_fault_reopens_admission_without_partial_disposal_False_.txt": {
+      "sha256": "0491f8c3b124837eb95c97d665ba9bc456b51a348389efbbda0fcb5b641dcd86",
+      "bytes": 3869
+    },
+    "Documentation~/evidence/navigation-phase5/traces/Explicit_ownership_denial_or_predicate_fault_reopens_admission_without_partial_disposal_True_.txt": {
+      "sha256": "9085e089964fe25057c7c979aec98fc32dba1f0cc43df28da427f72985cdda52",
+      "bytes": 3911
+    },
+    "Documentation~/evidence/navigation-phase5/traces/Failed_teardown_remains_terminal_and_repeated_call_retains_failure_without_retrying_resources__cleanup__.txt": {
+      "sha256": "77d0d59bc68bdf89e58573b5d03c48b258d54e76419d4af4df1ed2e4bf8b77ca",
+      "bytes": 14754
+    },
+    "Documentation~/evidence/navigation-phase5/traces/Failed_teardown_remains_terminal_and_repeated_call_retains_failure_without_retrying_resources__dispose__.txt": {
+      "sha256": "0b63fc3628c1cc1e96f5d09d9be080601bcbd1fd753bd821ac3aa41ac0c03e7b",
+      "bytes": 15348
+    },
+    "Documentation~/evidence/navigation-phase5/traces/Failed_teardown_remains_terminal_and_repeated_call_retains_failure_without_retrying_resources__exit__.txt": {
+      "sha256": "db2eedd1203ccab536bf77cb71e59347febb3556b9e8cb1604d431af53b45db0",
+      "bytes": 11388
+    },
+    "Documentation~/evidence/navigation-phase5/traces/FIFO_terminal_barrier_drains_admitted_latest_winners_and_rejects_later_supersession_Fifo_.txt": {
+      "sha256": "f8c75f771bba47f3f13a94abf4cc5fdbd99a34c4802f3c4015ee610e240aa716",
+      "bytes": 6764
+    },
+    "Documentation~/evidence/navigation-phase5/traces/FIFO_terminal_barrier_drains_admitted_latest_winners_and_rejects_later_supersession_LatestRequestWins_.txt": {
+      "sha256": "28a3202352a9579d4a1173e0fb38025af4fa67a56109462c05ad8c7b442b807d",
+      "bytes": 7562
+    },
+    "Documentation~/evidence/navigation-phase5/traces/Foreign_source_introduced_during_exit_is_not_overwritten_or_disposed_as_a_cached_model.txt": {
+      "sha256": "9bab91501dcf51889974d016052004fd59d0c8bbda37e41aaf51a46f06659893",
+      "bytes": 2291
+    },
+    "Documentation~/evidence/navigation-phase5/traces/Independent_Region_and_persistent_shell_remain_alive_and_usable.txt": {
+      "sha256": "3870efbc06c30878e4e1e325442c6da94e4f50def775ca1cd3c6004e46257ec2",
+      "bytes": 1429
+    },
+    "Documentation~/evidence/navigation-phase5/traces/Invalid_teardown_arguments_do_not_fence_or_dispose_a_live_scope__empty__.txt": {
+      "sha256": "e9605a0656f416220da3a842ad24b9633b8c02c764ac9dc429c2945b11939abc",
+      "bytes": 1472
+    },
+    "Documentation~/evidence/navigation-phase5/traces/Invalid_teardown_arguments_do_not_fence_or_dispose_a_live_scope__null-list__.txt": {
+      "sha256": "f5c29916b50874a46e6b9b398871cd708bd50ac7923865f28817af23a81b5687",
+      "bytes": 1481
+    },
+    "Documentation~/evidence/navigation-phase5/traces/Invalid_teardown_arguments_do_not_fence_or_dispose_a_live_scope__null-owner__.txt": {
+      "sha256": "241f0e94baa338dc3fde0d9fe391cfd84b55cac795628ed5147424064bce8060",
+      "bytes": 1477
+    },
+    "Documentation~/evidence/navigation-phase5/traces/Invalid_teardown_arguments_do_not_fence_or_dispose_a_live_scope__null-region__.txt": {
+      "sha256": "6f2082c75636efdfa0bb93bc7ddea045285b368ecd5740ff2ce873b5e925c0a6",
+      "bytes": 1478
+    },
+    "Documentation~/evidence/navigation-phase5/traces/Nested_parent_is_explicitly_rejected_but_selected_leaf_can_release_without_disposing_parent.txt": {
+      "sha256": "a9197cb8006aab1ba165891f97e6d39f4dd72fee6a5d3bcfb813c6ff55c42661",
+      "bytes": 3689
+    },
+    "Documentation~/evidence/navigation-phase5/traces/Opaque_legacy_R3_bag_failure_is_reported_incomplete_not_misrepresented_as_all_resources_released.txt": {
+      "sha256": "2c96b6455671ce7bc286cfe0803de5591aa1a21019e77d8b3adeb424a9ed45e8",
+      "bytes": 6732
+    },
+    "Documentation~/evidence/navigation-phase5/traces/Overlapping_inflight_teardown_sets_are_rejected_without_closing_unrelated_Region.txt": {
+      "sha256": "b7e1728b17edad8390f5f2d77001329577dd02bf14ee058e80256385ed3dfbf5",
+      "bytes": 2368
+    },
+    "Documentation~/evidence/navigation-phase5/traces/Preparation_candidate_not_adopted_by_cache_remains_with_its_existing_DI_owner.txt": {
+      "sha256": "5da4061d913378d3f42fb0bfb97c1ac2394fa2461d3575ef326140a7a4816094",
+      "bytes": 1585
+    },
+    "Documentation~/evidence/navigation-phase5/traces/Scoped_reentrant_teardown_is_rejected_before_mutation_or_idempotent_shortcut__dispose__.txt": {
+      "sha256": "e21760116e0a484b82d38b3f3e53a97db617e7280d07ac25738c0e26fb3ac224",
+      "bytes": 533
+    },
+    "Documentation~/evidence/navigation-phase5/traces/Scoped_reentrant_teardown_is_rejected_before_mutation_or_idempotent_shortcut__entry__.txt": {
+      "sha256": "df5578805bd2162e222c375e3f7a033d4c94e801d9269607a731f738f8ab54cd",
+      "bytes": 756
+    },
+    "Documentation~/evidence/navigation-phase5/traces/Scoped_reentrant_teardown_is_rejected_before_mutation_or_idempotent_shortcut__exit__.txt": {
+      "sha256": "836fdea2f793eef87bf33917e629f8efe85b6fd7c95a4883089ec6b99608a6c1",
+      "bytes": 530
+    },
+    "Documentation~/evidence/navigation-phase5/traces/Shared_model_final_lease_blocks_a_new_owner_while_a_different_model_exit_is_awaiting.txt": {
+      "sha256": "21cd903384ff9390b6025d599701a94975ea5e1dbfe4b9c44de529993a1224c6",
+      "bytes": 1854
+    },
+    "Documentation~/evidence/navigation-phase5/traces/Shared_model_requires_all_cached_owners_even_when_the_other_owner_is_inactive_False_.txt": {
+      "sha256": "d5397443df6eaa3571b2abe14e2cc18a1efc9b4ea219318cedb382476d4a915a",
+      "bytes": 3393
+    },
+    "Documentation~/evidence/navigation-phase5/traces/Shared_model_requires_all_cached_owners_even_when_the_other_owner_is_inactive_True_.txt": {
+      "sha256": "ee0fa1674da645100bf8aaa873d9cdac95b0e42f75aade4b371550cad11a07ec",
+      "bytes": 3486
+    },
+    "Documentation~/evidence/navigation-phase5/traces/Teardown_own_exit_await_holds_both_Region_and_model_leases_until_cleanup_finishes.txt": {
+      "sha256": "623fbe41cc3c9a41f9f47410553dd90798a5c9f9c9f3c965cc199e6e1f5ff6de",
+      "bytes": 1535
+    },
+    "Documentation~/evidence/navigation-phase5/traces/Tracked_partial_commit_before_or_after_mount_is_finally_released_False_.txt": {
+      "sha256": "d92d6a000d31c4b1fbb46bb762f21acab61324e15372619c4a7f9f5a72c69502",
+      "bytes": 1598
+    },
+    "Documentation~/evidence/navigation-phase5/traces/Tracked_partial_commit_before_or_after_mount_is_finally_released_True_.txt": {
+      "sha256": "34acb4ec0b34430c43997c1447d39812d149dfe3d36d55c49928fe5185e9967a",
+      "bytes": 1597
+    },
+    "Documentation~/evidence/navigation-phase5/traces/Unsafe_cache_configuration_rejects_before_final_ownership_or_UI_changes__foreign__.txt": {
+      "sha256": "b6700a18268141773049bf162378f182b24788f278cfc62935f71b1abccc04ae",
+      "bytes": 3265
+    },
+    "Documentation~/evidence/navigation-phase5/traces/Unsafe_cache_configuration_rejects_before_final_ownership_or_UI_changes__global__.txt": {
+      "sha256": "8e3f70ba4e48fe4d2789dbce8c65d836f048138177e13e8714c280c3a7d7861d",
+      "bytes": 3291
+    },
+    "Documentation~/evidence/navigation-phase5/traces/Unsafe_cache_configuration_rejects_before_final_ownership_or_UI_changes__multi__.txt": {
+      "sha256": "14285b3727f09e6257472b722dd55db9b570b570340ff8b82f242d99e3081672",
+      "bytes": 3291
+    },
+    "Documentation~/evidence/navigation-phase5/traces/Unsafe_cache_configuration_rejects_before_final_ownership_or_UI_changes__reparented__.txt": {
+      "sha256": "d82720e69b841c8076ddd369ae43471f85b2f18b64fce1c06aebb4129be4b53e",
+      "bytes": 3269
+    },
+    "Documentation~/evidence/navigation-phase5/traces/Unsafe_cache_configuration_rejects_before_final_ownership_or_UI_changes__untracked__.txt": {
+      "sha256": "1aad1221d47252e344cb818f794321f506c4f1c96b91650ad8e2f48ae502f0e1",
+      "bytes": 3284
+    },
+    "Documentation~/evidence/navigation-phase5/initial/failing-traces/Binding_references_are_cleared_before_final_model_disposal.txt": {
+      "sha256": "1e1fda98d05f306da20c4a2beacd47f31e8f29b7f62e7df775d95705da6c0948",
+      "bytes": 8629
+    }
+  },
+  "rawReportsByteExact": true,
+  "traceNormalization": "Recorded per trace in runs.json; only surplus EOF CR/LF normalized.",
+  "traceNames": "HTML entities in normalized test names decoded before applying fixture filename sanitizer.",
+  "manifestExcludesItselfAndChangedFilesManifest": true
+}

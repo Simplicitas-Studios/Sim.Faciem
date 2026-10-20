@@ -1,0 +1,22 @@
+test=Scoped_reentrant_teardown_is_rejected_before_mutation_or_idempotent_shortcut("entry")
+outcome=Passed
+primaryTraceCount=9
+PRIMARY MODELS
+A:model=-1480736200:To=1:Away=1:Cleanup=1:FinalDispose=0:IsDisposed=False
+B:model=251219202:To=1:Away=0:Cleanup=0:FinalDispose=0:IsDisposed=False
+TRACE
+A:To:lifetime=-1775239888
+A:To.return
+result=Succeeded:stage=None:recovery=NotRequired:error=null
+A:activation-cleanup
+A:Away:activation=null
+A:Away.return
+B:To:lifetime=1518044696
+B:To.return
+result=Succeeded:stage=None:recovery=NotRequired:error=null
+A:final-dispose
+B:activation-cleanup
+B:final-dispose
+FINAL MODELS
+A:model=-1480736200:To=1:Away=1:Cleanup=1:FinalDispose=1:IsDisposed=True
+B:model=251219202:To=1:Away=0:Cleanup=1:FinalDispose=1:IsDisposed=True

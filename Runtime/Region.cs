@@ -50,6 +50,14 @@ namespace Sim.Faciem
 
         public void AddView(ViewId viewId, VisualElement view)
         {
+            if (IsReleased)
+            {
+                throw new ObjectDisposedException(nameof(Region));
+            }
+            if (view.dataSource is BaseViewModel model && (model.IsDisposed || model.FinalOwner != null))
+            {
+                throw new ObjectDisposedException(nameof(BaseViewModel), "Cannot attach a finalizing or disposed model to a cache.");
+            }
             if (_views.TryAdd(viewId, view))
             {
                 Add(view);
@@ -61,6 +69,10 @@ namespace Sim.Faciem
 
         public void ActivateView(ViewId viewId)
         {
+            if (IsReleased)
+            {
+                throw new ObjectDisposedException(nameof(Region));
+            }
             if (!_views.TryGetValue(viewId, out var view))
             {
                 return;
