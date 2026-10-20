@@ -1,0 +1,297 @@
+{
+  "source": "Tests/Editor/NavigationOutcomeTests.cs",
+  "cases": [
+    {
+      "test": "Sim.Faciem.Tests.NavigationOutcomeTests.Busy_shared_model_rejects_an_independent_result_request_without_ending_the_owning_callback",
+      "outcome": "Passed",
+      "trace": "traces/Busy_shared_model_rejects_an_independent_result_request_without_ending_the_owning_callback.txt"
+    },
+    {
+      "test": "Sim.Faciem.Tests.NavigationOutcomeTests.Callback_breaking_postconditions_is_not_success_and_foreign_state_is_not_overwritten(&quot;deactivate&quot;)",
+      "outcome": "Passed",
+      "trace": "traces/Callback_breaking_postconditions_is_not_success_and_foreign_state_is_not_overwritten__deactivate__.txt"
+    },
+    {
+      "test": "Sim.Faciem.Tests.NavigationOutcomeTests.Callback_breaking_postconditions_is_not_success_and_foreign_state_is_not_overwritten(&quot;foreign-source&quot;)",
+      "outcome": "Passed",
+      "trace": "traces/Callback_breaking_postconditions_is_not_success_and_foreign_state_is_not_overwritten__foreign-source__.txt"
+    },
+    {
+      "test": "Sim.Faciem.Tests.NavigationOutcomeTests.Callback_breaking_postconditions_is_not_success_and_foreign_state_is_not_overwritten(&quot;reparent&quot;)",
+      "outcome": "Passed",
+      "trace": "traces/Callback_breaking_postconditions_is_not_success_and_foreign_state_is_not_overwritten__reparent__.txt"
+    },
+    {
+      "test": "Sim.Faciem.Tests.NavigationOutcomeTests.Cleanup_failure_attempts_all_resources_and_reports_its_stage_without_replaying_Away(&quot;clear&quot;)",
+      "outcome": "Passed",
+      "trace": "traces/Cleanup_failure_attempts_all_resources_and_reports_its_stage_without_replaying_Away__clear__.txt"
+    },
+    {
+      "test": "Sim.Faciem.Tests.NavigationOutcomeTests.Cleanup_failure_attempts_all_resources_and_reports_its_stage_without_replaying_Away(&quot;navigate&quot;)",
+      "outcome": "Passed",
+      "trace": "traces/Cleanup_failure_attempts_all_resources_and_reports_its_stage_without_replaying_Away__navigate__.txt"
+    },
+    {
+      "test": "Sim.Faciem.Tests.NavigationOutcomeTests.Cleanup_failure_attempts_all_resources_and_reports_its_stage_without_replaying_Away(&quot;reentry&quot;)",
+      "outcome": "Passed",
+      "trace": "traces/Cleanup_failure_attempts_all_resources_and_reports_its_stage_without_replaying_Away__reentry__.txt"
+    },
+    {
+      "test": "Sim.Faciem.Tests.NavigationOutcomeTests.Commit_fault_before_or_after_real_mount_is_contained_including_unrecorded_visible_tree(False)",
+      "outcome": "Passed",
+      "trace": "traces/Commit_fault_before_or_after_real_mount_is_contained_including_unrecorded_visible_tree_False_.txt"
+    },
+    {
+      "test": "Sim.Faciem.Tests.NavigationOutcomeTests.Commit_fault_before_or_after_real_mount_is_contained_including_unrecorded_visible_tree(True)",
+      "outcome": "Passed",
+      "trace": "traces/Commit_fault_before_or_after_real_mount_is_contained_including_unrecorded_visible_tree_True_.txt"
+    },
+    {
+      "test": "Sim.Faciem.Tests.NavigationOutcomeTests.Construction_failure_preserves_UI_but_does_not_undo_constructor_side_effects",
+      "outcome": "Passed",
+      "trace": "traces/Construction_failure_preserves_UI_but_does_not_undo_constructor_side_effects.txt"
+    },
+    {
+      "test": "Sim.Faciem.Tests.NavigationOutcomeTests.Cooperative_cancellation_returns_a_superseded_result_only_after_callback_finally_runs",
+      "outcome": "Passed",
+      "trace": "traces/Cooperative_cancellation_returns_a_superseded_result_only_after_callback_finally_runs.txt"
+    },
+    {
+      "test": "Sim.Faciem.Tests.NavigationOutcomeTests.Custom_services_remain_legacy_compatible_but_results_never_guess_success",
+      "outcome": "Passed",
+      "trace": "traces/Custom_services_remain_legacy_compatible_but_results_never_guess_success.txt"
+    },
+    {
+      "test": "Sim.Faciem.Tests.NavigationOutcomeTests.Empty_Clear_is_NoOp_only_after_its_FIFO_predecessor_drains",
+      "outcome": "Passed",
+      "trace": "traces/Empty_Clear_is_NoOp_only_after_its_FIFO_predecessor_drains.txt"
+    },
+    {
+      "test": "Sim.Faciem.Tests.NavigationOutcomeTests.Entry_and_containment_cleanup_failures_are_both_retained_without_early_successor_release",
+      "outcome": "Passed",
+      "trace": "traces/Entry_and_containment_cleanup_failures_are_both_retained_without_early_successor_release.txt"
+    },
+    {
+      "test": "Sim.Faciem.Tests.NavigationOutcomeTests.Entry_failure_is_contained_and_recovery_reuses_cache(False)",
+      "outcome": "Passed",
+      "trace": "traces/Entry_failure_is_contained_and_recovery_reuses_cache_False_.txt"
+    },
+    {
+      "test": "Sim.Faciem.Tests.NavigationOutcomeTests.Entry_failure_is_contained_and_recovery_reuses_cache(True)",
+      "outcome": "Passed",
+      "trace": "traces/Entry_failure_is_contained_and_recovery_reuses_cache_True_.txt"
+    },
+    {
+      "test": "Sim.Faciem.Tests.NavigationOutcomeTests.Executing_exit_must_drain_before_latest_winner_and_does_not_enter_obsolete_target(False)",
+      "outcome": "Passed",
+      "trace": "traces/Executing_exit_must_drain_before_latest_winner_and_does_not_enter_obsolete_target_False_.txt"
+    },
+    {
+      "test": "Sim.Faciem.Tests.NavigationOutcomeTests.Executing_exit_must_drain_before_latest_winner_and_does_not_enter_obsolete_target(True)",
+      "outcome": "Passed",
+      "trace": "traces/Executing_exit_must_drain_before_latest_winner_and_does_not_enter_obsolete_target_True_.txt"
+    },
+    {
+      "test": "Sim.Faciem.Tests.NavigationOutcomeTests.Exit_failure_does_not_resurrect_an_ended_activation_and_does_not_touch_independent_Region(False)",
+      "outcome": "Passed",
+      "trace": "traces/Exit_failure_does_not_resurrect_an_ended_activation_and_does_not_touch_independent_Region_False_.txt"
+    },
+    {
+      "test": "Sim.Faciem.Tests.NavigationOutcomeTests.Exit_failure_does_not_resurrect_an_ended_activation_and_does_not_touch_independent_Region(True)",
+      "outcome": "Passed",
+      "trace": "traces/Exit_failure_does_not_resurrect_an_ended_activation_and_does_not_touch_independent_Region_True_.txt"
+    },
+    {
+      "test": "Sim.Faciem.Tests.NavigationOutcomeTests.Explicit_reentry_result_keeps_identity_and_replaces_only_activation_lifetime(Fifo)",
+      "outcome": "Passed",
+      "trace": "traces/Explicit_reentry_result_keeps_identity_and_replaces_only_activation_lifetime_Fifo_.txt"
+    },
+    {
+      "test": "Sim.Faciem.Tests.NavigationOutcomeTests.Explicit_reentry_result_keeps_identity_and_replaces_only_activation_lifetime(LatestRequestWins)",
+      "outcome": "Passed",
+      "trace": "traces/Explicit_reentry_result_keeps_identity_and_replaces_only_activation_lifetime_LatestRequestWins_.txt"
+    },
+    {
+      "test": "Sim.Faciem.Tests.NavigationOutcomeTests.FIFO_successors_wait_for_the_actual_callback_return_even_when_it_will_fail(False)",
+      "outcome": "Passed",
+      "trace": "traces/FIFO_successors_wait_for_the_actual_callback_return_even_when_it_will_fail_False_.txt"
+    },
+    {
+      "test": "Sim.Faciem.Tests.NavigationOutcomeTests.FIFO_successors_wait_for_the_actual_callback_return_even_when_it_will_fail(True)",
+      "outcome": "Passed",
+      "trace": "traces/FIFO_successors_wait_for_the_actual_callback_return_even_when_it_will_fail_True_.txt"
+    },
+    {
+      "test": "Sim.Faciem.Tests.NavigationOutcomeTests.Foreign_active_source_in_later_Region_rejects_the_whole_group_before_any_exit",
+      "outcome": "Passed",
+      "trace": "traces/Foreign_active_source_in_later_Region_rejects_the_whole_group_before_any_exit.txt"
+    },
+    {
+      "test": "Sim.Faciem.Tests.NavigationOutcomeTests.Heterogeneous_target_caches_are_not_silently_rebound_or_reported_success(False)",
+      "outcome": "Passed",
+      "trace": "traces/Heterogeneous_target_caches_are_not_silently_rebound_or_reported_success_False_.txt"
+    },
+    {
+      "test": "Sim.Faciem.Tests.NavigationOutcomeTests.Heterogeneous_target_caches_are_not_silently_rebound_or_reported_success(True)",
+      "outcome": "Passed",
+      "trace": "traces/Heterogeneous_target_caches_are_not_silently_rebound_or_reported_success_True_.txt"
+    },
+    {
+      "test": "Sim.Faciem.Tests.NavigationOutcomeTests.Injected_synchronous_preparation_fault_preserves_current_UI(&quot;before-create&quot;)",
+      "outcome": "Passed",
+      "trace": "traces/Injected_synchronous_preparation_fault_preserves_current_UI__before-create__.txt"
+    },
+    {
+      "test": "Sim.Faciem.Tests.NavigationOutcomeTests.Injected_synchronous_preparation_fault_preserves_current_UI(&quot;after-detached-binding&quot;)",
+      "outcome": "Passed",
+      "trace": "traces/Injected_synchronous_preparation_fault_preserves_current_UI__after-detached-binding__.txt"
+    },
+    {
+      "test": "Sim.Faciem.Tests.NavigationOutcomeTests.Invalid_configuration_preserves_the_current_View_and_activation(&quot;policy&quot;)",
+      "outcome": "Passed",
+      "trace": "traces/Invalid_configuration_preserves_the_current_View_and_activation__policy__.txt"
+    },
+    {
+      "test": "Sim.Faciem.Tests.NavigationOutcomeTests.Invalid_configuration_preserves_the_current_View_and_activation(&quot;entryMode&quot;)",
+      "outcome": "Passed",
+      "trace": "traces/Invalid_configuration_preserves_the_current_View_and_activation__entryMode__.txt"
+    },
+    {
+      "test": "Sim.Faciem.Tests.NavigationOutcomeTests.Invalid_configuration_preserves_the_current_View_and_activation(&quot;manager&quot;)",
+      "outcome": "Passed",
+      "trace": "traces/Invalid_configuration_preserves_the_current_View_and_activation__manager__.txt"
+    },
+    {
+      "test": "Sim.Faciem.Tests.NavigationOutcomeTests.Invalid_configuration_preserves_the_current_View_and_activation(&quot;id&quot;)",
+      "outcome": "Passed",
+      "trace": "traces/Invalid_configuration_preserves_the_current_View_and_activation__id__.txt"
+    },
+    {
+      "test": "Sim.Faciem.Tests.NavigationOutcomeTests.Invalid_configuration_preserves_the_current_View_and_activation(&quot;parameters&quot;)",
+      "outcome": "Passed",
+      "trace": "traces/Invalid_configuration_preserves_the_current_View_and_activation__parameters__.txt"
+    },
+    {
+      "test": "Sim.Faciem.Tests.NavigationOutcomeTests.Invalid_configuration_preserves_the_current_View_and_activation(&quot;template&quot;)",
+      "outcome": "Passed",
+      "trace": "traces/Invalid_configuration_preserves_the_current_View_and_activation__template__.txt"
+    },
+    {
+      "test": "Sim.Faciem.Tests.NavigationOutcomeTests.Invalid_configuration_preserves_the_current_View_and_activation(&quot;dataContext&quot;)",
+      "outcome": "Passed",
+      "trace": "traces/Invalid_configuration_preserves_the_current_View_and_activation__dataContext__.txt"
+    },
+    {
+      "test": "Sim.Faciem.Tests.NavigationOutcomeTests.Latest_queued_supersession_does_not_construct_or_restart_and_uncooperative_entry_retains_ownership(&quot;navigate&quot;)",
+      "outcome": "Passed",
+      "trace": "traces/Latest_queued_supersession_does_not_construct_or_restart_and_uncooperative_entry_retains_ownership__navigate__.txt"
+    },
+    {
+      "test": "Sim.Faciem.Tests.NavigationOutcomeTests.Latest_queued_supersession_does_not_construct_or_restart_and_uncooperative_entry_retains_ownership(&quot;clear&quot;)",
+      "outcome": "Passed",
+      "trace": "traces/Latest_queued_supersession_does_not_construct_or_restart_and_uncooperative_entry_retains_ownership__clear__.txt"
+    },
+    {
+      "test": "Sim.Faciem.Tests.NavigationOutcomeTests.Latest_queued_supersession_does_not_construct_or_restart_and_uncooperative_entry_retains_ownership(&quot;reentry&quot;)",
+      "outcome": "Passed",
+      "trace": "traces/Latest_queued_supersession_does_not_construct_or_restart_and_uncooperative_entry_retains_ownership__reentry__.txt"
+    },
+    {
+      "test": "Sim.Faciem.Tests.NavigationOutcomeTests.Missing_lookup_is_explicit_and_does_not_dispatch(False)",
+      "outcome": "Passed",
+      "trace": "traces/Missing_lookup_is_explicit_and_does_not_dispatch_False_.txt"
+    },
+    {
+      "test": "Sim.Faciem.Tests.NavigationOutcomeTests.Missing_lookup_is_explicit_and_does_not_dispatch(True)",
+      "outcome": "Passed",
+      "trace": "traces/Missing_lookup_is_explicit_and_does_not_dispatch_True_.txt"
+    },
+    {
+      "test": "Sim.Faciem.Tests.NavigationOutcomeTests.Multi_view_configuration_is_unsupported_not_success(False)",
+      "outcome": "Passed",
+      "trace": "traces/Multi_view_configuration_is_unsupported_not_success_False_.txt"
+    },
+    {
+      "test": "Sim.Faciem.Tests.NavigationOutcomeTests.Multi_view_configuration_is_unsupported_not_success(True)",
+      "outcome": "Passed",
+      "trace": "traces/Multi_view_configuration_is_unsupported_not_success_True_.txt"
+    },
+    {
+      "test": "Sim.Faciem.Tests.NavigationOutcomeTests.Opted_in_latest_requests_do_not_cancel_a_FIFO_predecessor",
+      "outcome": "Passed",
+      "trace": "traces/Opted_in_latest_requests_do_not_cancel_a_FIFO_predecessor.txt"
+    },
+    {
+      "test": "Sim.Faciem.Tests.NavigationOutcomeTests.Overlap_with_one_member_supersedes_and_contains_the_whole_executing_result_group",
+      "outcome": "Passed",
+      "trace": "traces/Overlap_with_one_member_supersedes_and_contains_the_whole_executing_result_group.txt"
+    },
+    {
+      "test": "Sim.Faciem.Tests.NavigationOutcomeTests.Partial_multi_Region_exit_failure_is_contained_without_touching_unowned_Region",
+      "outcome": "Passed",
+      "trace": "traces/Partial_multi_Region_exit_failure_is_contained_without_touching_unowned_Region.txt"
+    },
+    {
+      "test": "Sim.Faciem.Tests.NavigationOutcomeTests.Partial_shared_cohort_reentry_reports_invalid_configuration_before_restart_mutation",
+      "outcome": "Passed",
+      "trace": "traces/Partial_shared_cohort_reentry_reports_invalid_configuration_before_restart_mutation.txt"
+    },
+    {
+      "test": "Sim.Faciem.Tests.NavigationOutcomeTests.Result_and_legacy_calls_share_cached_trees_models_and_ordinary_same_ID_semantics",
+      "outcome": "Passed",
+      "trace": "traces/Result_and_legacy_calls_share_cached_trees_models_and_ordinary_same_ID_semantics.txt"
+    },
+    {
+      "test": "Sim.Faciem.Tests.NavigationOutcomeTests.Scoped_independent_navigation_succeeds_and_a_dependency_cycle_is_an_explicit_result",
+      "outcome": "Passed",
+      "trace": "traces/Scoped_independent_navigation_succeeds_and_a_dependency_cycle_is_an_explicit_result.txt"
+    },
+    {
+      "test": "Sim.Faciem.Tests.NavigationOutcomeTests.Scoped_result_reentrancy_after_await_is_rejected_without_deadlock_or_state_change(False)",
+      "outcome": "Passed",
+      "trace": "traces/Scoped_result_reentrancy_after_await_is_rejected_without_deadlock_or_state_change_False_.txt"
+    },
+    {
+      "test": "Sim.Faciem.Tests.NavigationOutcomeTests.Scoped_result_reentrancy_after_await_is_rejected_without_deadlock_or_state_change(True)",
+      "outcome": "Passed",
+      "trace": "traces/Scoped_result_reentrancy_after_await_is_rejected_without_deadlock_or_state_change_True_.txt"
+    },
+    {
+      "test": "Sim.Faciem.Tests.NavigationOutcomeTests.Shared_multi_Region_entry_failure_contains_the_whole_owned_group_and_cleans_each_logical_model_once",
+      "outcome": "Passed",
+      "trace": "traces/Shared_multi_Region_entry_failure_contains_the_whole_owned_group_and_cleans_each_logical_model_once.txt"
+    },
+    {
+      "test": "Sim.Faciem.Tests.NavigationOutcomeTests.Source_corruption_during_an_earlier_exit_cannot_turn_a_partial_group_operation_into_success(False)",
+      "outcome": "Passed",
+      "trace": "traces/Source_corruption_during_an_earlier_exit_cannot_turn_a_partial_group_operation_into_success_False_.txt"
+    },
+    {
+      "test": "Sim.Faciem.Tests.NavigationOutcomeTests.Source_corruption_during_an_earlier_exit_cannot_turn_a_partial_group_operation_into_success(True)",
+      "outcome": "Passed",
+      "trace": "traces/Source_corruption_during_an_earlier_exit_cannot_turn_a_partial_group_operation_into_success_True_.txt"
+    },
+    {
+      "test": "Sim.Faciem.Tests.NavigationOutcomeTests.User_cancellation_is_not_misreported_as_supersession(False)",
+      "outcome": "Passed",
+      "trace": "traces/User_cancellation_is_not_misreported_as_supersession_False_.txt"
+    },
+    {
+      "test": "Sim.Faciem.Tests.NavigationOutcomeTests.User_cancellation_is_not_misreported_as_supersession(True)",
+      "outcome": "Passed",
+      "trace": "traces/User_cancellation_is_not_misreported_as_supersession_True_.txt"
+    }
+  ],
+  "faultInjection": [
+    "PrepareView internal seam: before real instantiation / after actual detached dataSource assignment.",
+    "Real mounted Region subclass: throws before/after actual AddView; not evidence of a UI Toolkit engine binding error."
+  ],
+  "notProved": [
+    "Deferred native binding success",
+    "Pixel/render acceptance",
+    "World Space/player behavior",
+    "Arbitrary user-side-effect rollback",
+    "Transactional nested Region/DI/binding registration rollback",
+    "Final cache/model disposal"
+  ]
+}

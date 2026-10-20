@@ -1,0 +1,30 @@
+test=Executing_exit_must_drain_before_latest_winner_and_does_not_enter_obsolete_target(False)
+outcome=Passed
+primaryTraceCount=11
+PRIMARY MODELS
+A:model=1797967536:To=1:Away=1:Cleanup=1:FinalDispose=0:Activation=null
+B:model=-329506472:To=0:Away=0:Cleanup=0:FinalDispose=0:Activation=null
+C:model=-1921777038:To=1:Away=0:Cleanup=0:FinalDispose=0:Activation=True
+TRACE (teardown begins at primaryTraceCount)
+A:To:input:lifetime=1651283176
+A:To.return
+result=Succeeded:stage=None:recovery=NotRequired:error=null
+A:cleanup
+A:Away:activation=null
+A:late-exit-write
+A:Away.return
+C:To:input:lifetime=-841886300
+C:To.return
+result=Succeeded:stage=None:recovery=NotRequired:error=null
+result=Superseded:stage=Exit:recovery=Contained:error=System.OperationCanceledException: Superseded by a newer LatestRequestWins operation.
+  at Sim.Faciem.Internal.RegionNavigationOperations+Operation.ThrowIfSuperseded () [0x0000c] in C:\Users\DPast\Documents\Projects\ReviewWorktrees\sim-faciem-navigation-phase4\Runtime\Internal\RegionNavigationOperations.cs:41 
+  at Sim.Faciem.NavigationService.NavigateToOwned (Sim.Faciem.IRegionManager regionManager, Sim.Faciem.IRegion[] regions, Sim.Faciem.ViewIdAsset viewAsset, Sim.Faciem.ViewId viewId, Sim.Faciem.NavigationParameters parameters, Sim.Faciem.Internal.RegionNavigationOperations+Operation operation, Sim.Faciem.NavigationEntryMode entryMode, Sim.Faciem.Internal.NavigationExecution execution) [0x00793] in C:\Users\DPast\Documents\Projects\ReviewWorktrees\sim-faciem-navigation-phase4\Runtime\NavigationService.cs:195 
+C:cleanup
+C:Away:activation=null
+C:Away.return
+result=Succeeded:stage=None:recovery=NotRequired:error=null
+result=NoOp:stage=None:recovery=NotRequired:error=null
+FINAL MODELS
+A:model=1797967536:To=1:Away=1:Cleanup=1:FinalDispose=1:Activation=null
+B:model=-329506472:To=0:Away=0:Cleanup=0:FinalDispose=1:Activation=null
+C:model=-1921777038:To=1:Away=1:Cleanup=1:FinalDispose=1:Activation=null

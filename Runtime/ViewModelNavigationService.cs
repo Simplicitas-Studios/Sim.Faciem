@@ -40,6 +40,21 @@ namespace Sim.Faciem
             return _navigationService.NavigateTo(_baseViewModel.RegionManager, viewId, region, parameters);
         }
 
+        internal UniTask<NavigationResult> NavigateResult(ViewId viewId, RegionName region,
+            NavigationParameters parameters, NavigationPolicy policy, NavigationEntryMode entryMode)
+        {
+            return _navigationService is NavigationService native
+                ? native.NavigateResultFrom(_baseViewModel, _baseViewModel.RegionManager, viewId, region, parameters, policy, entryMode)
+                : UniTask.FromResult(Internal.NavigationExecution.Unsupported("Custom navigation services do not advertise result/recovery support."));
+        }
+
+        internal UniTask<NavigationResult> ClearResult(RegionName region, NavigationPolicy policy)
+        {
+            return _navigationService is NavigationService native
+                ? native.ClearResultFrom(_baseViewModel, _baseViewModel.RegionManager, region, policy)
+                : UniTask.FromResult(Internal.NavigationExecution.Unsupported("Custom navigation services do not advertise result/recovery support."));
+        }
+
         public UniTask Clear(RegionName regionName)
         {
             return ClearWithPolicy(regionName, NavigationPolicy.Fifo);

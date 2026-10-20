@@ -1,0 +1,544 @@
+{
+  "finalDistinctCases": 152,
+  "newCases": 56,
+  "unchangedBaselineCases": 96,
+  "totalObservations": 450,
+  "passedObservations": 447,
+  "failedObservations": 3,
+  "launches": 3,
+  "runnerRetries": 0,
+  "backendSwitches": 0,
+  "playMode": "Intentionally not run; no player/World Space/Display/audio claim.",
+  "runs": [
+    {
+      "id": "initial-148",
+      "summary": {
+        "total": 148,
+        "passed": 145,
+        "failed": 3,
+        "skipped": 0
+      },
+      "normalized": "runs/initial-148.json",
+      "nunit": "runs/initial-148.nunit.xml",
+      "normalizedSha256": "c881d0dc1a2ea96f9badfe81b8edc9ab08ce30cf8adbfc5c76c2fbf5bc4bba76",
+      "nunitSha256": "9903de6e531dde3154678a6d86bcc17acd15301d3ab9e4e94fcc47009bad5158",
+      "rawLogPath": "C:\\Users\\DPast\\Documents\\Projects\\ReviewWorktrees\\faciem-nav-phase4-validation\\Logs\\unity-tests-editmode-20261020T091947737Z-73b5e8c70ca9412f.log",
+      "rawLogSha256": "62f9cf8ac11999f89c4db03efd1f7a36bab138602a93b52cb7912d5e336fe531",
+      "sourceSnapshot": "initial/source-hashes.json",
+      "note": ""
+    },
+    {
+      "id": "intermediate-150",
+      "summary": {
+        "total": 150,
+        "passed": 150,
+        "failed": 0,
+        "skipped": 0
+      },
+      "normalized": "runs/intermediate-150.json",
+      "nunit": "runs/intermediate-150.nunit.xml",
+      "normalizedSha256": "806dde0450b2e98b8efa716ef5be10602817b0d165b48ef34aea6f95ebb2788e",
+      "nunitSha256": "bd89ad54127b420ded8b5b00cb55573ce123aa6b889cc7ed682170a42450a31b",
+      "rawLogPath": "C:\\Users\\DPast\\Documents\\Projects\\ReviewWorktrees\\faciem-nav-phase4-validation\\Logs\\unity-tests-editmode-20261020T092432824Z-4f067c3ee8754827.log",
+      "rawLogSha256": "be7e3180dac121f91e8ff54f5db7b82231e0bf95f5c7f0b2150084a46f692b90",
+      "sourceSnapshot": null,
+      "note": "Intermediate source hashes were not captured at run time; not final-source acceptance."
+    },
+    {
+      "id": "final-152",
+      "summary": {
+        "total": 152,
+        "passed": 152,
+        "failed": 0,
+        "skipped": 0
+      },
+      "normalized": "runs/final-152.json",
+      "nunit": "runs/final-152.nunit.xml",
+      "normalizedSha256": "de00cc11f8e55e171c0801129dde0cb37a15b2c2208ab8608cbf0c2076cb2ceb",
+      "nunitSha256": "87423010c2844ea9413d2bd499945553e0e7f2da605e13e7a08b5c2e7298c3fe",
+      "rawLogPath": "C:\\Users\\DPast\\Documents\\Projects\\ReviewWorktrees\\faciem-nav-phase4-validation\\Logs\\unity-tests-editmode-20261020T092847246Z-20950a0b499e494e.log",
+      "rawLogSha256": "1e4feaf840933729af96a184316116bb8b4886fd78a3f649d2e6d59359c9d3e7",
+      "sourceSnapshot": "tested-source-hashes.json",
+      "note": ""
+    }
+  ],
+  "traceNormalization": [
+    {
+      "path": "traces/Busy_shared_model_rejects_an_independent_result_request_without_ending_the_owning_callback.txt",
+      "rawPath": "C:\\Users\\DPast\\Documents\\Projects\\ReviewWorktrees\\faciem-nav-phase4-validation\\Logs\\navigation-phase4\\Busy_shared_model_rejects_an_independent_result_request_without_ending_the_owning_callback.txt",
+      "rawSha256": "233e4d55b2ab80c2c1613b26baae4b9f117b61073f29a4d9918cf1c0d680565b",
+      "exportedSha256": "233e4d55b2ab80c2c1613b26baae4b9f117b61073f29a4d9918cf1c0d680565b",
+      "changed": false,
+      "rule": "Remove surplus EOF CR/LF only; append one LF."
+    },
+    {
+      "path": "traces/Callback_breaking_postconditions_is_not_success_and_foreign_state_is_not_overwritten__deactivate__.txt",
+      "rawPath": "C:\\Users\\DPast\\Documents\\Projects\\ReviewWorktrees\\faciem-nav-phase4-validation\\Logs\\navigation-phase4\\Callback_breaking_postconditions_is_not_success_and_foreign_state_is_not_overwritten__deactivate__.txt",
+      "rawSha256": "201293ee03736e27bd566598d84e777dab48fab283f11c2230089ea412524eea",
+      "exportedSha256": "201293ee03736e27bd566598d84e777dab48fab283f11c2230089ea412524eea",
+      "changed": false,
+      "rule": "Remove surplus EOF CR/LF only; append one LF."
+    },
+    {
+      "path": "traces/Callback_breaking_postconditions_is_not_success_and_foreign_state_is_not_overwritten__foreign-source__.txt",
+      "rawPath": "C:\\Users\\DPast\\Documents\\Projects\\ReviewWorktrees\\faciem-nav-phase4-validation\\Logs\\navigation-phase4\\Callback_breaking_postconditions_is_not_success_and_foreign_state_is_not_overwritten__foreign-source__.txt",
+      "rawSha256": "6b0e83c554013ff0456810e5628d698cc1bc062d38287857cac2d506609f1439",
+      "exportedSha256": "6b0e83c554013ff0456810e5628d698cc1bc062d38287857cac2d506609f1439",
+      "changed": false,
+      "rule": "Remove surplus EOF CR/LF only; append one LF."
+    },
+    {
+      "path": "traces/Callback_breaking_postconditions_is_not_success_and_foreign_state_is_not_overwritten__reparent__.txt",
+      "rawPath": "C:\\Users\\DPast\\Documents\\Projects\\ReviewWorktrees\\faciem-nav-phase4-validation\\Logs\\navigation-phase4\\Callback_breaking_postconditions_is_not_success_and_foreign_state_is_not_overwritten__reparent__.txt",
+      "rawSha256": "4d233ce908f8af57ce604c2d185b8cd7d0c175ea7e87dd2315a51006f4de63ae",
+      "exportedSha256": "4d233ce908f8af57ce604c2d185b8cd7d0c175ea7e87dd2315a51006f4de63ae",
+      "changed": false,
+      "rule": "Remove surplus EOF CR/LF only; append one LF."
+    },
+    {
+      "path": "traces/Cleanup_failure_attempts_all_resources_and_reports_its_stage_without_replaying_Away__clear__.txt",
+      "rawPath": "C:\\Users\\DPast\\Documents\\Projects\\ReviewWorktrees\\faciem-nav-phase4-validation\\Logs\\navigation-phase4\\Cleanup_failure_attempts_all_resources_and_reports_its_stage_without_replaying_Away__clear__.txt",
+      "rawSha256": "7ce21e59997fa97300ce403c1e4de0dfa1dfb202b8ff91a8bba07024ee60be43",
+      "exportedSha256": "7ce21e59997fa97300ce403c1e4de0dfa1dfb202b8ff91a8bba07024ee60be43",
+      "changed": false,
+      "rule": "Remove surplus EOF CR/LF only; append one LF."
+    },
+    {
+      "path": "traces/Cleanup_failure_attempts_all_resources_and_reports_its_stage_without_replaying_Away__navigate__.txt",
+      "rawPath": "C:\\Users\\DPast\\Documents\\Projects\\ReviewWorktrees\\faciem-nav-phase4-validation\\Logs\\navigation-phase4\\Cleanup_failure_attempts_all_resources_and_reports_its_stage_without_replaying_Away__navigate__.txt",
+      "rawSha256": "86c6ed886208bda66ae15c10ec25469b8f769b52b8e78b57b9f68d188982ffcc",
+      "exportedSha256": "86c6ed886208bda66ae15c10ec25469b8f769b52b8e78b57b9f68d188982ffcc",
+      "changed": false,
+      "rule": "Remove surplus EOF CR/LF only; append one LF."
+    },
+    {
+      "path": "traces/Cleanup_failure_attempts_all_resources_and_reports_its_stage_without_replaying_Away__reentry__.txt",
+      "rawPath": "C:\\Users\\DPast\\Documents\\Projects\\ReviewWorktrees\\faciem-nav-phase4-validation\\Logs\\navigation-phase4\\Cleanup_failure_attempts_all_resources_and_reports_its_stage_without_replaying_Away__reentry__.txt",
+      "rawSha256": "ebe3c0342c77d65ff77b7e4c2cb615a294fb81d868ca62e5076af2d2c147f549",
+      "exportedSha256": "ebe3c0342c77d65ff77b7e4c2cb615a294fb81d868ca62e5076af2d2c147f549",
+      "changed": false,
+      "rule": "Remove surplus EOF CR/LF only; append one LF."
+    },
+    {
+      "path": "traces/Commit_fault_before_or_after_real_mount_is_contained_including_unrecorded_visible_tree_False_.txt",
+      "rawPath": "C:\\Users\\DPast\\Documents\\Projects\\ReviewWorktrees\\faciem-nav-phase4-validation\\Logs\\navigation-phase4\\Commit_fault_before_or_after_real_mount_is_contained_including_unrecorded_visible_tree_False_.txt",
+      "rawSha256": "3d5d7da6af9f0a3d66657e904d5c2ac74fa6627039559d8da8f30066ba4c773a",
+      "exportedSha256": "3d5d7da6af9f0a3d66657e904d5c2ac74fa6627039559d8da8f30066ba4c773a",
+      "changed": false,
+      "rule": "Remove surplus EOF CR/LF only; append one LF."
+    },
+    {
+      "path": "traces/Commit_fault_before_or_after_real_mount_is_contained_including_unrecorded_visible_tree_True_.txt",
+      "rawPath": "C:\\Users\\DPast\\Documents\\Projects\\ReviewWorktrees\\faciem-nav-phase4-validation\\Logs\\navigation-phase4\\Commit_fault_before_or_after_real_mount_is_contained_including_unrecorded_visible_tree_True_.txt",
+      "rawSha256": "f3ac8a212535bcff8ee284b910f6e0fd670e9ce3c41a4f40ab6f737a67d50a9a",
+      "exportedSha256": "f3ac8a212535bcff8ee284b910f6e0fd670e9ce3c41a4f40ab6f737a67d50a9a",
+      "changed": false,
+      "rule": "Remove surplus EOF CR/LF only; append one LF."
+    },
+    {
+      "path": "traces/Construction_failure_preserves_UI_but_does_not_undo_constructor_side_effects.txt",
+      "rawPath": "C:\\Users\\DPast\\Documents\\Projects\\ReviewWorktrees\\faciem-nav-phase4-validation\\Logs\\navigation-phase4\\Construction_failure_preserves_UI_but_does_not_undo_constructor_side_effects.txt",
+      "rawSha256": "c5b8ac61caec56015a290516af42744ec5813cbc64e4eda897d86fbdab352433",
+      "exportedSha256": "c5b8ac61caec56015a290516af42744ec5813cbc64e4eda897d86fbdab352433",
+      "changed": false,
+      "rule": "Remove surplus EOF CR/LF only; append one LF."
+    },
+    {
+      "path": "traces/Cooperative_cancellation_returns_a_superseded_result_only_after_callback_finally_runs.txt",
+      "rawPath": "C:\\Users\\DPast\\Documents\\Projects\\ReviewWorktrees\\faciem-nav-phase4-validation\\Logs\\navigation-phase4\\Cooperative_cancellation_returns_a_superseded_result_only_after_callback_finally_runs.txt",
+      "rawSha256": "80195edc46a4903eab309611c10fe5b55e1918cb95ef3efd183e6bf62205046d",
+      "exportedSha256": "80195edc46a4903eab309611c10fe5b55e1918cb95ef3efd183e6bf62205046d",
+      "changed": false,
+      "rule": "Remove surplus EOF CR/LF only; append one LF."
+    },
+    {
+      "path": "traces/Custom_services_remain_legacy_compatible_but_results_never_guess_success.txt",
+      "rawPath": "C:\\Users\\DPast\\Documents\\Projects\\ReviewWorktrees\\faciem-nav-phase4-validation\\Logs\\navigation-phase4\\Custom_services_remain_legacy_compatible_but_results_never_guess_success.txt",
+      "rawSha256": "76a35ecbbb6327ae8e9c44849cf674aef96a338589df0a8ef1326f32c647690c",
+      "exportedSha256": "07ae2305fc6dbf7b12c291a63fddef255d2a1cad2184fcc2b6e64ff666934c12",
+      "changed": true,
+      "rule": "Remove surplus EOF CR/LF only; append one LF."
+    },
+    {
+      "path": "traces/Empty_Clear_is_NoOp_only_after_its_FIFO_predecessor_drains.txt",
+      "rawPath": "C:\\Users\\DPast\\Documents\\Projects\\ReviewWorktrees\\faciem-nav-phase4-validation\\Logs\\navigation-phase4\\Empty_Clear_is_NoOp_only_after_its_FIFO_predecessor_drains.txt",
+      "rawSha256": "c9a68519a26068735c38bdfef96cddbdb867675525ce41c3743f6cab9b185ffc",
+      "exportedSha256": "c9a68519a26068735c38bdfef96cddbdb867675525ce41c3743f6cab9b185ffc",
+      "changed": false,
+      "rule": "Remove surplus EOF CR/LF only; append one LF."
+    },
+    {
+      "path": "traces/Entry_and_containment_cleanup_failures_are_both_retained_without_early_successor_release.txt",
+      "rawPath": "C:\\Users\\DPast\\Documents\\Projects\\ReviewWorktrees\\faciem-nav-phase4-validation\\Logs\\navigation-phase4\\Entry_and_containment_cleanup_failures_are_both_retained_without_early_successor_release.txt",
+      "rawSha256": "5b9514fb804a88faf097c3dc7d34e9456051586eee4cf5d786c1f79f743ec395",
+      "exportedSha256": "5b9514fb804a88faf097c3dc7d34e9456051586eee4cf5d786c1f79f743ec395",
+      "changed": false,
+      "rule": "Remove surplus EOF CR/LF only; append one LF."
+    },
+    {
+      "path": "traces/Entry_failure_is_contained_and_recovery_reuses_cache_False_.txt",
+      "rawPath": "C:\\Users\\DPast\\Documents\\Projects\\ReviewWorktrees\\faciem-nav-phase4-validation\\Logs\\navigation-phase4\\Entry_failure_is_contained_and_recovery_reuses_cache_False_.txt",
+      "rawSha256": "96e9775b1a731e8fe7a06ea5b6f8d41f3603dccbe74aa701de7cdc61f3db2cc4",
+      "exportedSha256": "96e9775b1a731e8fe7a06ea5b6f8d41f3603dccbe74aa701de7cdc61f3db2cc4",
+      "changed": false,
+      "rule": "Remove surplus EOF CR/LF only; append one LF."
+    },
+    {
+      "path": "traces/Entry_failure_is_contained_and_recovery_reuses_cache_True_.txt",
+      "rawPath": "C:\\Users\\DPast\\Documents\\Projects\\ReviewWorktrees\\faciem-nav-phase4-validation\\Logs\\navigation-phase4\\Entry_failure_is_contained_and_recovery_reuses_cache_True_.txt",
+      "rawSha256": "9a036fe7b0289336e5173d73d5d342645c9c3817ce218018e1c30af30c78e0e0",
+      "exportedSha256": "9a036fe7b0289336e5173d73d5d342645c9c3817ce218018e1c30af30c78e0e0",
+      "changed": false,
+      "rule": "Remove surplus EOF CR/LF only; append one LF."
+    },
+    {
+      "path": "traces/Executing_exit_must_drain_before_latest_winner_and_does_not_enter_obsolete_target_False_.txt",
+      "rawPath": "C:\\Users\\DPast\\Documents\\Projects\\ReviewWorktrees\\faciem-nav-phase4-validation\\Logs\\navigation-phase4\\Executing_exit_must_drain_before_latest_winner_and_does_not_enter_obsolete_target_False_.txt",
+      "rawSha256": "743811959d9e7957eb172f2a6f0be106d9b3dbe2c71cd83b7ab636d43b97c692",
+      "exportedSha256": "743811959d9e7957eb172f2a6f0be106d9b3dbe2c71cd83b7ab636d43b97c692",
+      "changed": false,
+      "rule": "Remove surplus EOF CR/LF only; append one LF."
+    },
+    {
+      "path": "traces/Executing_exit_must_drain_before_latest_winner_and_does_not_enter_obsolete_target_True_.txt",
+      "rawPath": "C:\\Users\\DPast\\Documents\\Projects\\ReviewWorktrees\\faciem-nav-phase4-validation\\Logs\\navigation-phase4\\Executing_exit_must_drain_before_latest_winner_and_does_not_enter_obsolete_target_True_.txt",
+      "rawSha256": "cb47d9417d21c7b629aa23979c966f700b008f319efe0077f45046e719c569aa",
+      "exportedSha256": "cb47d9417d21c7b629aa23979c966f700b008f319efe0077f45046e719c569aa",
+      "changed": false,
+      "rule": "Remove surplus EOF CR/LF only; append one LF."
+    },
+    {
+      "path": "traces/Exit_failure_does_not_resurrect_an_ended_activation_and_does_not_touch_independent_Region_False_.txt",
+      "rawPath": "C:\\Users\\DPast\\Documents\\Projects\\ReviewWorktrees\\faciem-nav-phase4-validation\\Logs\\navigation-phase4\\Exit_failure_does_not_resurrect_an_ended_activation_and_does_not_touch_independent_Region_False_.txt",
+      "rawSha256": "5b565ec8eb8e53a00b2d30d1109a8c4f8289a55f2abe9837e8e3bb4287d79d7a",
+      "exportedSha256": "5b565ec8eb8e53a00b2d30d1109a8c4f8289a55f2abe9837e8e3bb4287d79d7a",
+      "changed": false,
+      "rule": "Remove surplus EOF CR/LF only; append one LF."
+    },
+    {
+      "path": "traces/Exit_failure_does_not_resurrect_an_ended_activation_and_does_not_touch_independent_Region_True_.txt",
+      "rawPath": "C:\\Users\\DPast\\Documents\\Projects\\ReviewWorktrees\\faciem-nav-phase4-validation\\Logs\\navigation-phase4\\Exit_failure_does_not_resurrect_an_ended_activation_and_does_not_touch_independent_Region_True_.txt",
+      "rawSha256": "3e4b340b5804f30696e8b28ab360bc14721a0131ba54ab7e74593fc8c22fd8c9",
+      "exportedSha256": "3e4b340b5804f30696e8b28ab360bc14721a0131ba54ab7e74593fc8c22fd8c9",
+      "changed": false,
+      "rule": "Remove surplus EOF CR/LF only; append one LF."
+    },
+    {
+      "path": "traces/Explicit_reentry_result_keeps_identity_and_replaces_only_activation_lifetime_Fifo_.txt",
+      "rawPath": "C:\\Users\\DPast\\Documents\\Projects\\ReviewWorktrees\\faciem-nav-phase4-validation\\Logs\\navigation-phase4\\Explicit_reentry_result_keeps_identity_and_replaces_only_activation_lifetime_Fifo_.txt",
+      "rawSha256": "c813b966177a3ab2f1d7f71c23a7b60557f04d16eaf6019ed502e8127aa62713",
+      "exportedSha256": "c813b966177a3ab2f1d7f71c23a7b60557f04d16eaf6019ed502e8127aa62713",
+      "changed": false,
+      "rule": "Remove surplus EOF CR/LF only; append one LF."
+    },
+    {
+      "path": "traces/Explicit_reentry_result_keeps_identity_and_replaces_only_activation_lifetime_LatestRequestWins_.txt",
+      "rawPath": "C:\\Users\\DPast\\Documents\\Projects\\ReviewWorktrees\\faciem-nav-phase4-validation\\Logs\\navigation-phase4\\Explicit_reentry_result_keeps_identity_and_replaces_only_activation_lifetime_LatestRequestWins_.txt",
+      "rawSha256": "9fa7e29faf860d6f6dfd81d59c2ada92c3ed0a8a5da7805e0db9198dc63ae33b",
+      "exportedSha256": "9fa7e29faf860d6f6dfd81d59c2ada92c3ed0a8a5da7805e0db9198dc63ae33b",
+      "changed": false,
+      "rule": "Remove surplus EOF CR/LF only; append one LF."
+    },
+    {
+      "path": "traces/FIFO_successors_wait_for_the_actual_callback_return_even_when_it_will_fail_False_.txt",
+      "rawPath": "C:\\Users\\DPast\\Documents\\Projects\\ReviewWorktrees\\faciem-nav-phase4-validation\\Logs\\navigation-phase4\\FIFO_successors_wait_for_the_actual_callback_return_even_when_it_will_fail_False_.txt",
+      "rawSha256": "69bc5b037657624991a036a2b764ff5a35422ea8e7f2730c25e13cefbeca4398",
+      "exportedSha256": "69bc5b037657624991a036a2b764ff5a35422ea8e7f2730c25e13cefbeca4398",
+      "changed": false,
+      "rule": "Remove surplus EOF CR/LF only; append one LF."
+    },
+    {
+      "path": "traces/FIFO_successors_wait_for_the_actual_callback_return_even_when_it_will_fail_True_.txt",
+      "rawPath": "C:\\Users\\DPast\\Documents\\Projects\\ReviewWorktrees\\faciem-nav-phase4-validation\\Logs\\navigation-phase4\\FIFO_successors_wait_for_the_actual_callback_return_even_when_it_will_fail_True_.txt",
+      "rawSha256": "e8ab4707bcb62bfabbd27a9ba2fe5a512e7ac50e9713c0998c3d02adfaf533a0",
+      "exportedSha256": "e8ab4707bcb62bfabbd27a9ba2fe5a512e7ac50e9713c0998c3d02adfaf533a0",
+      "changed": false,
+      "rule": "Remove surplus EOF CR/LF only; append one LF."
+    },
+    {
+      "path": "traces/Foreign_active_source_in_later_Region_rejects_the_whole_group_before_any_exit.txt",
+      "rawPath": "C:\\Users\\DPast\\Documents\\Projects\\ReviewWorktrees\\faciem-nav-phase4-validation\\Logs\\navigation-phase4\\Foreign_active_source_in_later_Region_rejects_the_whole_group_before_any_exit.txt",
+      "rawSha256": "a738898d443a8702b3947b4fec84e3594196bfae8d3360cf4fac390e49a72d06",
+      "exportedSha256": "a738898d443a8702b3947b4fec84e3594196bfae8d3360cf4fac390e49a72d06",
+      "changed": false,
+      "rule": "Remove surplus EOF CR/LF only; append one LF."
+    },
+    {
+      "path": "traces/Heterogeneous_target_caches_are_not_silently_rebound_or_reported_success_False_.txt",
+      "rawPath": "C:\\Users\\DPast\\Documents\\Projects\\ReviewWorktrees\\faciem-nav-phase4-validation\\Logs\\navigation-phase4\\Heterogeneous_target_caches_are_not_silently_rebound_or_reported_success_False_.txt",
+      "rawSha256": "ede71a9ae8c79f377df45dc72aec86a2ffc773b3b5bb05570156347d6e833d78",
+      "exportedSha256": "ede71a9ae8c79f377df45dc72aec86a2ffc773b3b5bb05570156347d6e833d78",
+      "changed": false,
+      "rule": "Remove surplus EOF CR/LF only; append one LF."
+    },
+    {
+      "path": "traces/Heterogeneous_target_caches_are_not_silently_rebound_or_reported_success_True_.txt",
+      "rawPath": "C:\\Users\\DPast\\Documents\\Projects\\ReviewWorktrees\\faciem-nav-phase4-validation\\Logs\\navigation-phase4\\Heterogeneous_target_caches_are_not_silently_rebound_or_reported_success_True_.txt",
+      "rawSha256": "3a10f810a8bf712c7e3d08ba1d87c135d14e565130f9724593850a3da230a894",
+      "exportedSha256": "3a10f810a8bf712c7e3d08ba1d87c135d14e565130f9724593850a3da230a894",
+      "changed": false,
+      "rule": "Remove surplus EOF CR/LF only; append one LF."
+    },
+    {
+      "path": "traces/Injected_synchronous_preparation_fault_preserves_current_UI__before-create__.txt",
+      "rawPath": "C:\\Users\\DPast\\Documents\\Projects\\ReviewWorktrees\\faciem-nav-phase4-validation\\Logs\\navigation-phase4\\Injected_synchronous_preparation_fault_preserves_current_UI__before-create__.txt",
+      "rawSha256": "d9888acce95ef9d11f7c25ec5ad65782949fc1d84391357a812ae7f8c79749f6",
+      "exportedSha256": "d9888acce95ef9d11f7c25ec5ad65782949fc1d84391357a812ae7f8c79749f6",
+      "changed": false,
+      "rule": "Remove surplus EOF CR/LF only; append one LF."
+    },
+    {
+      "path": "traces/Injected_synchronous_preparation_fault_preserves_current_UI__after-detached-binding__.txt",
+      "rawPath": "C:\\Users\\DPast\\Documents\\Projects\\ReviewWorktrees\\faciem-nav-phase4-validation\\Logs\\navigation-phase4\\Injected_synchronous_preparation_fault_preserves_current_UI__after-detached-binding__.txt",
+      "rawSha256": "7ed794228f8c62ca1e23907fefac8caad275b07b64a576ac180c5bb7e15d28bc",
+      "exportedSha256": "7ed794228f8c62ca1e23907fefac8caad275b07b64a576ac180c5bb7e15d28bc",
+      "changed": false,
+      "rule": "Remove surplus EOF CR/LF only; append one LF."
+    },
+    {
+      "path": "traces/Invalid_configuration_preserves_the_current_View_and_activation__policy__.txt",
+      "rawPath": "C:\\Users\\DPast\\Documents\\Projects\\ReviewWorktrees\\faciem-nav-phase4-validation\\Logs\\navigation-phase4\\Invalid_configuration_preserves_the_current_View_and_activation__policy__.txt",
+      "rawSha256": "e08c72859918895775b047de6bbbc67d7f8dfba036edaaaec00e94adcfbaa9b5",
+      "exportedSha256": "e08c72859918895775b047de6bbbc67d7f8dfba036edaaaec00e94adcfbaa9b5",
+      "changed": false,
+      "rule": "Remove surplus EOF CR/LF only; append one LF."
+    },
+    {
+      "path": "traces/Invalid_configuration_preserves_the_current_View_and_activation__entryMode__.txt",
+      "rawPath": "C:\\Users\\DPast\\Documents\\Projects\\ReviewWorktrees\\faciem-nav-phase4-validation\\Logs\\navigation-phase4\\Invalid_configuration_preserves_the_current_View_and_activation__entryMode__.txt",
+      "rawSha256": "5b2e266deb6bb8e96c9aaacbe11b526a16994c3e752c398ea291f513bcb4a833",
+      "exportedSha256": "5b2e266deb6bb8e96c9aaacbe11b526a16994c3e752c398ea291f513bcb4a833",
+      "changed": false,
+      "rule": "Remove surplus EOF CR/LF only; append one LF."
+    },
+    {
+      "path": "traces/Invalid_configuration_preserves_the_current_View_and_activation__manager__.txt",
+      "rawPath": "C:\\Users\\DPast\\Documents\\Projects\\ReviewWorktrees\\faciem-nav-phase4-validation\\Logs\\navigation-phase4\\Invalid_configuration_preserves_the_current_View_and_activation__manager__.txt",
+      "rawSha256": "13b6d185384375a0f298da61de929cf694985634d604793b31ce3b08ad422b45",
+      "exportedSha256": "13b6d185384375a0f298da61de929cf694985634d604793b31ce3b08ad422b45",
+      "changed": false,
+      "rule": "Remove surplus EOF CR/LF only; append one LF."
+    },
+    {
+      "path": "traces/Invalid_configuration_preserves_the_current_View_and_activation__id__.txt",
+      "rawPath": "C:\\Users\\DPast\\Documents\\Projects\\ReviewWorktrees\\faciem-nav-phase4-validation\\Logs\\navigation-phase4\\Invalid_configuration_preserves_the_current_View_and_activation__id__.txt",
+      "rawSha256": "dbe92b3a6146a6c6728c0462ef5ce2ee00b34273d3d1d7767a6352bb6dda18de",
+      "exportedSha256": "dbe92b3a6146a6c6728c0462ef5ce2ee00b34273d3d1d7767a6352bb6dda18de",
+      "changed": false,
+      "rule": "Remove surplus EOF CR/LF only; append one LF."
+    },
+    {
+      "path": "traces/Invalid_configuration_preserves_the_current_View_and_activation__parameters__.txt",
+      "rawPath": "C:\\Users\\DPast\\Documents\\Projects\\ReviewWorktrees\\faciem-nav-phase4-validation\\Logs\\navigation-phase4\\Invalid_configuration_preserves_the_current_View_and_activation__parameters__.txt",
+      "rawSha256": "59201b9aee544bdb08c8714bd16d600556bd0cef14d93da5d0981ef8c5872f02",
+      "exportedSha256": "59201b9aee544bdb08c8714bd16d600556bd0cef14d93da5d0981ef8c5872f02",
+      "changed": false,
+      "rule": "Remove surplus EOF CR/LF only; append one LF."
+    },
+    {
+      "path": "traces/Invalid_configuration_preserves_the_current_View_and_activation__template__.txt",
+      "rawPath": "C:\\Users\\DPast\\Documents\\Projects\\ReviewWorktrees\\faciem-nav-phase4-validation\\Logs\\navigation-phase4\\Invalid_configuration_preserves_the_current_View_and_activation__template__.txt",
+      "rawSha256": "9270dc06db0afee1f90007264780a52b7e60dc180edfa6baf5dfd2abe90c4533",
+      "exportedSha256": "9270dc06db0afee1f90007264780a52b7e60dc180edfa6baf5dfd2abe90c4533",
+      "changed": false,
+      "rule": "Remove surplus EOF CR/LF only; append one LF."
+    },
+    {
+      "path": "traces/Invalid_configuration_preserves_the_current_View_and_activation__dataContext__.txt",
+      "rawPath": "C:\\Users\\DPast\\Documents\\Projects\\ReviewWorktrees\\faciem-nav-phase4-validation\\Logs\\navigation-phase4\\Invalid_configuration_preserves_the_current_View_and_activation__dataContext__.txt",
+      "rawSha256": "d26c5a29e115829a7cbb273fc072eb997834d73201b86491a1ef0a17c9e36394",
+      "exportedSha256": "d26c5a29e115829a7cbb273fc072eb997834d73201b86491a1ef0a17c9e36394",
+      "changed": false,
+      "rule": "Remove surplus EOF CR/LF only; append one LF."
+    },
+    {
+      "path": "traces/Latest_queued_supersession_does_not_construct_or_restart_and_uncooperative_entry_retains_ownership__navigate__.txt",
+      "rawPath": "C:\\Users\\DPast\\Documents\\Projects\\ReviewWorktrees\\faciem-nav-phase4-validation\\Logs\\navigation-phase4\\Latest_queued_supersession_does_not_construct_or_restart_and_uncooperative_entry_retains_ownership__navigate__.txt",
+      "rawSha256": "9a793dde21e1d90cc35e0aac3be46c3e1549a4e7e37585c21a7da7acc3e33a2d",
+      "exportedSha256": "9a793dde21e1d90cc35e0aac3be46c3e1549a4e7e37585c21a7da7acc3e33a2d",
+      "changed": false,
+      "rule": "Remove surplus EOF CR/LF only; append one LF."
+    },
+    {
+      "path": "traces/Latest_queued_supersession_does_not_construct_or_restart_and_uncooperative_entry_retains_ownership__clear__.txt",
+      "rawPath": "C:\\Users\\DPast\\Documents\\Projects\\ReviewWorktrees\\faciem-nav-phase4-validation\\Logs\\navigation-phase4\\Latest_queued_supersession_does_not_construct_or_restart_and_uncooperative_entry_retains_ownership__clear__.txt",
+      "rawSha256": "30f35aa2dbcbd6c30c184e69353969ac2f96dd09b78ed4e3abfb1cd65c7cea32",
+      "exportedSha256": "30f35aa2dbcbd6c30c184e69353969ac2f96dd09b78ed4e3abfb1cd65c7cea32",
+      "changed": false,
+      "rule": "Remove surplus EOF CR/LF only; append one LF."
+    },
+    {
+      "path": "traces/Latest_queued_supersession_does_not_construct_or_restart_and_uncooperative_entry_retains_ownership__reentry__.txt",
+      "rawPath": "C:\\Users\\DPast\\Documents\\Projects\\ReviewWorktrees\\faciem-nav-phase4-validation\\Logs\\navigation-phase4\\Latest_queued_supersession_does_not_construct_or_restart_and_uncooperative_entry_retains_ownership__reentry__.txt",
+      "rawSha256": "6f65c3af19b349eee50c8cf8591b66f32663fd15ce3d1b7b6dc5e5911f3ba689",
+      "exportedSha256": "6f65c3af19b349eee50c8cf8591b66f32663fd15ce3d1b7b6dc5e5911f3ba689",
+      "changed": false,
+      "rule": "Remove surplus EOF CR/LF only; append one LF."
+    },
+    {
+      "path": "traces/Missing_lookup_is_explicit_and_does_not_dispatch_False_.txt",
+      "rawPath": "C:\\Users\\DPast\\Documents\\Projects\\ReviewWorktrees\\faciem-nav-phase4-validation\\Logs\\navigation-phase4\\Missing_lookup_is_explicit_and_does_not_dispatch_False_.txt",
+      "rawSha256": "5504d839f70fd923a19c72e6b7547adf571724a94b7d910b458c9cfdde2ed603",
+      "exportedSha256": "5504d839f70fd923a19c72e6b7547adf571724a94b7d910b458c9cfdde2ed603",
+      "changed": false,
+      "rule": "Remove surplus EOF CR/LF only; append one LF."
+    },
+    {
+      "path": "traces/Missing_lookup_is_explicit_and_does_not_dispatch_True_.txt",
+      "rawPath": "C:\\Users\\DPast\\Documents\\Projects\\ReviewWorktrees\\faciem-nav-phase4-validation\\Logs\\navigation-phase4\\Missing_lookup_is_explicit_and_does_not_dispatch_True_.txt",
+      "rawSha256": "7402330f0c14adaf0038a11681c9917d29b1a6f2889089364f4aa4145afe8a55",
+      "exportedSha256": "7402330f0c14adaf0038a11681c9917d29b1a6f2889089364f4aa4145afe8a55",
+      "changed": false,
+      "rule": "Remove surplus EOF CR/LF only; append one LF."
+    },
+    {
+      "path": "traces/Multi_view_configuration_is_unsupported_not_success_False_.txt",
+      "rawPath": "C:\\Users\\DPast\\Documents\\Projects\\ReviewWorktrees\\faciem-nav-phase4-validation\\Logs\\navigation-phase4\\Multi_view_configuration_is_unsupported_not_success_False_.txt",
+      "rawSha256": "8816cf34c1ab2aeb82fb3bdc53a356852684609d454b80c20af1fff5cde2ab01",
+      "exportedSha256": "8816cf34c1ab2aeb82fb3bdc53a356852684609d454b80c20af1fff5cde2ab01",
+      "changed": false,
+      "rule": "Remove surplus EOF CR/LF only; append one LF."
+    },
+    {
+      "path": "traces/Multi_view_configuration_is_unsupported_not_success_True_.txt",
+      "rawPath": "C:\\Users\\DPast\\Documents\\Projects\\ReviewWorktrees\\faciem-nav-phase4-validation\\Logs\\navigation-phase4\\Multi_view_configuration_is_unsupported_not_success_True_.txt",
+      "rawSha256": "502fcb0e26e391348fae113e92856dbe77a40e575111f44fdad2799dbec85efb",
+      "exportedSha256": "502fcb0e26e391348fae113e92856dbe77a40e575111f44fdad2799dbec85efb",
+      "changed": false,
+      "rule": "Remove surplus EOF CR/LF only; append one LF."
+    },
+    {
+      "path": "traces/Opted_in_latest_requests_do_not_cancel_a_FIFO_predecessor.txt",
+      "rawPath": "C:\\Users\\DPast\\Documents\\Projects\\ReviewWorktrees\\faciem-nav-phase4-validation\\Logs\\navigation-phase4\\Opted_in_latest_requests_do_not_cancel_a_FIFO_predecessor.txt",
+      "rawSha256": "578528d166fd709d3238e86149265da72d3f306a6b6656e0673dfeff2eed0b8d",
+      "exportedSha256": "578528d166fd709d3238e86149265da72d3f306a6b6656e0673dfeff2eed0b8d",
+      "changed": false,
+      "rule": "Remove surplus EOF CR/LF only; append one LF."
+    },
+    {
+      "path": "traces/Overlap_with_one_member_supersedes_and_contains_the_whole_executing_result_group.txt",
+      "rawPath": "C:\\Users\\DPast\\Documents\\Projects\\ReviewWorktrees\\faciem-nav-phase4-validation\\Logs\\navigation-phase4\\Overlap_with_one_member_supersedes_and_contains_the_whole_executing_result_group.txt",
+      "rawSha256": "874b9c5650ceb703e0a6ee278f749b74d9f1504908589d8625055e695525016b",
+      "exportedSha256": "874b9c5650ceb703e0a6ee278f749b74d9f1504908589d8625055e695525016b",
+      "changed": false,
+      "rule": "Remove surplus EOF CR/LF only; append one LF."
+    },
+    {
+      "path": "traces/Partial_multi_Region_exit_failure_is_contained_without_touching_unowned_Region.txt",
+      "rawPath": "C:\\Users\\DPast\\Documents\\Projects\\ReviewWorktrees\\faciem-nav-phase4-validation\\Logs\\navigation-phase4\\Partial_multi_Region_exit_failure_is_contained_without_touching_unowned_Region.txt",
+      "rawSha256": "1734a7f3c65f04e49f785a93e89acfc19f03d856b6d7f6fca86f48591d2914b7",
+      "exportedSha256": "1734a7f3c65f04e49f785a93e89acfc19f03d856b6d7f6fca86f48591d2914b7",
+      "changed": false,
+      "rule": "Remove surplus EOF CR/LF only; append one LF."
+    },
+    {
+      "path": "traces/Partial_shared_cohort_reentry_reports_invalid_configuration_before_restart_mutation.txt",
+      "rawPath": "C:\\Users\\DPast\\Documents\\Projects\\ReviewWorktrees\\faciem-nav-phase4-validation\\Logs\\navigation-phase4\\Partial_shared_cohort_reentry_reports_invalid_configuration_before_restart_mutation.txt",
+      "rawSha256": "504dcd9175372b76b429edd38601650c5b3fb46703daf32ec4852c1df33e2003",
+      "exportedSha256": "504dcd9175372b76b429edd38601650c5b3fb46703daf32ec4852c1df33e2003",
+      "changed": false,
+      "rule": "Remove surplus EOF CR/LF only; append one LF."
+    },
+    {
+      "path": "traces/Result_and_legacy_calls_share_cached_trees_models_and_ordinary_same_ID_semantics.txt",
+      "rawPath": "C:\\Users\\DPast\\Documents\\Projects\\ReviewWorktrees\\faciem-nav-phase4-validation\\Logs\\navigation-phase4\\Result_and_legacy_calls_share_cached_trees_models_and_ordinary_same_ID_semantics.txt",
+      "rawSha256": "940254d0f643e46674d5f62303271de4cba6dffa91ecd2765ec1e315ede8dd21",
+      "exportedSha256": "940254d0f643e46674d5f62303271de4cba6dffa91ecd2765ec1e315ede8dd21",
+      "changed": false,
+      "rule": "Remove surplus EOF CR/LF only; append one LF."
+    },
+    {
+      "path": "traces/Scoped_independent_navigation_succeeds_and_a_dependency_cycle_is_an_explicit_result.txt",
+      "rawPath": "C:\\Users\\DPast\\Documents\\Projects\\ReviewWorktrees\\faciem-nav-phase4-validation\\Logs\\navigation-phase4\\Scoped_independent_navigation_succeeds_and_a_dependency_cycle_is_an_explicit_result.txt",
+      "rawSha256": "957317b6f4cba0a5addd46cc5713eea436bc1343b0122f9fc6a8fc9639d73784",
+      "exportedSha256": "957317b6f4cba0a5addd46cc5713eea436bc1343b0122f9fc6a8fc9639d73784",
+      "changed": false,
+      "rule": "Remove surplus EOF CR/LF only; append one LF."
+    },
+    {
+      "path": "traces/Scoped_result_reentrancy_after_await_is_rejected_without_deadlock_or_state_change_False_.txt",
+      "rawPath": "C:\\Users\\DPast\\Documents\\Projects\\ReviewWorktrees\\faciem-nav-phase4-validation\\Logs\\navigation-phase4\\Scoped_result_reentrancy_after_await_is_rejected_without_deadlock_or_state_change_False_.txt",
+      "rawSha256": "34d7547882d4d501f8ed4a4ba97ff8035c13533052474912dd0d394205b7f73f",
+      "exportedSha256": "34d7547882d4d501f8ed4a4ba97ff8035c13533052474912dd0d394205b7f73f",
+      "changed": false,
+      "rule": "Remove surplus EOF CR/LF only; append one LF."
+    },
+    {
+      "path": "traces/Scoped_result_reentrancy_after_await_is_rejected_without_deadlock_or_state_change_True_.txt",
+      "rawPath": "C:\\Users\\DPast\\Documents\\Projects\\ReviewWorktrees\\faciem-nav-phase4-validation\\Logs\\navigation-phase4\\Scoped_result_reentrancy_after_await_is_rejected_without_deadlock_or_state_change_True_.txt",
+      "rawSha256": "ba806a9bbc3fc6b832b42c8f8c5b3bfd5b254411e8ce155b249689376e9db97f",
+      "exportedSha256": "ba806a9bbc3fc6b832b42c8f8c5b3bfd5b254411e8ce155b249689376e9db97f",
+      "changed": false,
+      "rule": "Remove surplus EOF CR/LF only; append one LF."
+    },
+    {
+      "path": "traces/Shared_multi_Region_entry_failure_contains_the_whole_owned_group_and_cleans_each_logical_model_once.txt",
+      "rawPath": "C:\\Users\\DPast\\Documents\\Projects\\ReviewWorktrees\\faciem-nav-phase4-validation\\Logs\\navigation-phase4\\Shared_multi_Region_entry_failure_contains_the_whole_owned_group_and_cleans_each_logical_model_once.txt",
+      "rawSha256": "d3489b64069e6cad5f96e15df01929f71d0a3b820cfae229a2a02de152e40cf1",
+      "exportedSha256": "d3489b64069e6cad5f96e15df01929f71d0a3b820cfae229a2a02de152e40cf1",
+      "changed": false,
+      "rule": "Remove surplus EOF CR/LF only; append one LF."
+    },
+    {
+      "path": "traces/Source_corruption_during_an_earlier_exit_cannot_turn_a_partial_group_operation_into_success_False_.txt",
+      "rawPath": "C:\\Users\\DPast\\Documents\\Projects\\ReviewWorktrees\\faciem-nav-phase4-validation\\Logs\\navigation-phase4\\Source_corruption_during_an_earlier_exit_cannot_turn_a_partial_group_operation_into_success_False_.txt",
+      "rawSha256": "4c6a15234c74f0fccf55711d9bdf09f2f154c87a4e5575c1bc2e3028c3c46d19",
+      "exportedSha256": "4c6a15234c74f0fccf55711d9bdf09f2f154c87a4e5575c1bc2e3028c3c46d19",
+      "changed": false,
+      "rule": "Remove surplus EOF CR/LF only; append one LF."
+    },
+    {
+      "path": "traces/Source_corruption_during_an_earlier_exit_cannot_turn_a_partial_group_operation_into_success_True_.txt",
+      "rawPath": "C:\\Users\\DPast\\Documents\\Projects\\ReviewWorktrees\\faciem-nav-phase4-validation\\Logs\\navigation-phase4\\Source_corruption_during_an_earlier_exit_cannot_turn_a_partial_group_operation_into_success_True_.txt",
+      "rawSha256": "543758662b60dd888e3771e58405344c7f64e74a5a71e026db984fbc2b31f714",
+      "exportedSha256": "543758662b60dd888e3771e58405344c7f64e74a5a71e026db984fbc2b31f714",
+      "changed": false,
+      "rule": "Remove surplus EOF CR/LF only; append one LF."
+    },
+    {
+      "path": "traces/User_cancellation_is_not_misreported_as_supersession_False_.txt",
+      "rawPath": "C:\\Users\\DPast\\Documents\\Projects\\ReviewWorktrees\\faciem-nav-phase4-validation\\Logs\\navigation-phase4\\User_cancellation_is_not_misreported_as_supersession_False_.txt",
+      "rawSha256": "2a7c32038db211c0bf9aec00d67434594d8934f6bf5f9053066dd275549f8f49",
+      "exportedSha256": "2a7c32038db211c0bf9aec00d67434594d8934f6bf5f9053066dd275549f8f49",
+      "changed": false,
+      "rule": "Remove surplus EOF CR/LF only; append one LF."
+    },
+    {
+      "path": "traces/User_cancellation_is_not_misreported_as_supersession_True_.txt",
+      "rawPath": "C:\\Users\\DPast\\Documents\\Projects\\ReviewWorktrees\\faciem-nav-phase4-validation\\Logs\\navigation-phase4\\User_cancellation_is_not_misreported_as_supersession_True_.txt",
+      "rawSha256": "50fd2db76ac09de0f193d28f7e3576d40a4587735c7f42ac9b159497cac9a3bb",
+      "exportedSha256": "50fd2db76ac09de0f193d28f7e3576d40a4587735c7f42ac9b159497cac9a3bb",
+      "changed": false,
+      "rule": "Remove surplus EOF CR/LF only; append one LF."
+    },
+    {
+      "path": "initial/failing-traces/Shared_multi_Region_entry_failure_contains_the_whole_owned_group_and_cleans_each_logical_model_once.txt",
+      "rawPath": "C:\\Users\\DPast\\Documents\\Projects\\ReviewWorktrees\\faciem-nav-phase4-evidence\\initial-148\\traces\\Shared_multi_Region_entry_failure_contains_the_whole_owned_group_and_cleans_each_logical_model_once.txt",
+      "rawSha256": "90b46e7fdeb610a51a405e3a643b94ca982d3716bbf9eefc7c15c8f85e45caad",
+      "exportedSha256": "90b46e7fdeb610a51a405e3a643b94ca982d3716bbf9eefc7c15c8f85e45caad",
+      "changed": false,
+      "rule": "Remove surplus EOF CR/LF only; append one LF."
+    },
+    {
+      "path": "initial/failing-traces/User_cancellation_is_not_misreported_as_supersession_False_.txt",
+      "rawPath": "C:\\Users\\DPast\\Documents\\Projects\\ReviewWorktrees\\faciem-nav-phase4-evidence\\initial-148\\traces\\User_cancellation_is_not_misreported_as_supersession_False_.txt",
+      "rawSha256": "4f856941cddf499216ec9d4702a19ae54ed590a580e0f75a1cd248b9e44a26ac",
+      "exportedSha256": "4f856941cddf499216ec9d4702a19ae54ed590a580e0f75a1cd248b9e44a26ac",
+      "changed": false,
+      "rule": "Remove surplus EOF CR/LF only; append one LF."
+    },
+    {
+      "path": "initial/failing-traces/User_cancellation_is_not_misreported_as_supersession_True_.txt",
+      "rawPath": "C:\\Users\\DPast\\Documents\\Projects\\ReviewWorktrees\\faciem-nav-phase4-evidence\\initial-148\\traces\\User_cancellation_is_not_misreported_as_supersession_True_.txt",
+      "rawSha256": "1f5f67bbb9114180da6a00b6b6ee90c00c1e8c7a5cf7852849c08cc8e7ae90a0",
+      "exportedSha256": "1f5f67bbb9114180da6a00b6b6ee90c00c1e8c7a5cf7852849c08cc8e7ae90a0",
+      "changed": false,
+      "rule": "Remove surplus EOF CR/LF only; append one LF."
+    }
+  ],
+  "initialIssues": [
+    "Shared-model group exit invoked Away twice; result-only cohort hide/exit fix.",
+    "Two fixture assumptions required original OCE identity; UniTask normalizes cancellation. Corrected to observed type/token."
+  ],
+  "reviewFollowup": "After 150 green, result-only Clear early-return guard and two partial-source-corruption regression cases added."
+}

@@ -1,0 +1,60 @@
+test=Entry_and_containment_cleanup_failures_are_both_retained_without_early_successor_release
+outcome=Passed
+primaryTraceCount=6
+PRIMARY MODELS
+A:model=-964137982:To=1:Away=0:Cleanup=1:FinalDispose=0:Activation=null
+B:model=-950798222:To=1:Away=0:Cleanup=0:FinalDispose=0:Activation=True
+TRACE (teardown begins at primaryTraceCount)
+A:To:input:lifetime=1096317272
+A:cleanup
+result=Failed:stage=Entry:recovery=Incomplete:error=System.AggregateException: Navigation and containment failures. (injected primary failure) (Activation cancellation or cleanup failed. (injected cleanup failure)) ---> System.InvalidOperationException: injected primary failure
+  at Sim.Faciem.Tests.NavigationOutcomeTests+<>c__DisplayClass33_0.<Entry_and_containment_cleanup_failures_are_both_retained_without_early_successor_release>b__1 (System.String _, Sim.Faciem.NavigationActivation lifetime) [0x0002c] in C:\Users\DPast\Documents\Projects\ReviewWorktrees\sim-faciem-navigation-phase4\Tests\Editor\NavigationOutcomeTests.cs:393 
+  at (wrapper delegate-invoke) System.Func`3[System.String,Sim.Faciem.NavigationActivation,Cysharp.Threading.Tasks.UniTask].invoke_TResult_T1_T2(string,Sim.Faciem.NavigationActivation)
+  at Sim.Faciem.Tests.NavigationOutcomeTests+Model.NavigateTo (Sim.Faciem.NavigationParameters parameters) [0x00156] in C:\Users\DPast\Documents\Projects\ReviewWorktrees\sim-faciem-navigation-phase4\Tests\Editor\NavigationOutcomeTests.cs:1198 
+  at Cysharp.Threading.Tasks.UniTask+ExceptionResultSource.GetResult (System.Int16 token) [0x0001e] in .\Library\PackageCache\com.cysharp.unitask@bf35135da627\Runtime\UniTask.Factory.cs:326 
+  at Cysharp.Threading.Tasks.UniTask+Awaiter.GetResult () [0x00015] in .\Library\PackageCache\com.cysharp.unitask@bf35135da627\Runtime\UniTask.cs:316 
+  at Sim.Faciem.Internal.RegionNavigationOperations.InvokeLifecycle (Sim.Faciem.Internal.RegionNavigationOperations+Operation operation, Sim.Faciem.BaseViewModel model, System.Func`1[TResult] callback) [0x000d5] in C:\Users\DPast\Documents\Projects\ReviewWorktrees\sim-faciem-navigation-phase4\Runtime\Internal\RegionNavigationOperations.cs:146 
+  at Cysharp.Threading.Tasks.UniTask+ExceptionResultSource.GetResult (System.Int16 token) [0x0001e] in .\Library\PackageCache\com.cysharp.unitask@bf35135da627\Runtime\UniTask.Factory.cs:326 
+  at Cysharp.Threading.Tasks.UniTask+Awaiter.GetResult () [0x00015] in .\Library\PackageCache\com.cysharp.unitask@bf35135da627\Runtime\UniTask.cs:316 
+  at Sim.Faciem.NavigationService.NavigateToOwned (Sim.Faciem.IRegionManager regionManager, Sim.Faciem.IRegion[] regions, Sim.Faciem.ViewIdAsset viewAsset, Sim.Faciem.ViewId viewId, Sim.Faciem.NavigationParameters parameters, Sim.Faciem.Internal.RegionNavigationOperations+Operation operation, Sim.Faciem.NavigationEntryMode entryMode, Sim.Faciem.Internal.NavigationExecution execution) [0x00c79] in C:\Users\DPast\Documents\Projects\ReviewWorktrees\sim-faciem-navigation-phase4\Runtime\NavigationService.cs:250 
+   --- End of inner exception stack trace ---
+---> (Inner Exception #0) System.InvalidOperationException: injected primary failure
+  at Sim.Faciem.Tests.NavigationOutcomeTests+<>c__DisplayClass33_0.<Entry_and_containment_cleanup_failures_are_both_retained_without_early_successor_release>b__1 (System.String _, Sim.Faciem.NavigationActivation lifetime) [0x0002c] in C:\Users\DPast\Documents\Projects\ReviewWorktrees\sim-faciem-navigation-phase4\Tests\Editor\NavigationOutcomeTests.cs:393 
+  at (wrapper delegate-invoke) System.Func`3[System.String,Sim.Faciem.NavigationActivation,Cysharp.Threading.Tasks.UniTask].invoke_TResult_T1_T2(string,Sim.Faciem.NavigationActivation)
+  at Sim.Faciem.Tests.NavigationOutcomeTests+Model.NavigateTo (Sim.Faciem.NavigationParameters parameters) [0x00156] in C:\Users\DPast\Documents\Projects\ReviewWorktrees\sim-faciem-navigation-phase4\Tests\Editor\NavigationOutcomeTests.cs:1198 
+  at Cysharp.Threading.Tasks.UniTask+ExceptionResultSource.GetResult (System.Int16 token) [0x0001e] in .\Library\PackageCache\com.cysharp.unitask@bf35135da627\Runtime\UniTask.Factory.cs:326 
+  at Cysharp.Threading.Tasks.UniTask+Awaiter.GetResult () [0x00015] in .\Library\PackageCache\com.cysharp.unitask@bf35135da627\Runtime\UniTask.cs:316 
+  at Sim.Faciem.Internal.RegionNavigationOperations.InvokeLifecycle (Sim.Faciem.Internal.RegionNavigationOperations+Operation operation, Sim.Faciem.BaseViewModel model, System.Func`1[TResult] callback) [0x000d5] in C:\Users\DPast\Documents\Projects\ReviewWorktrees\sim-faciem-navigation-phase4\Runtime\Internal\RegionNavigationOperations.cs:146 
+  at Cysharp.Threading.Tasks.UniTask+ExceptionResultSource.GetResult (System.Int16 token) [0x0001e] in .\Library\PackageCache\com.cysharp.unitask@bf35135da627\Runtime\UniTask.Factory.cs:326 
+  at Cysharp.Threading.Tasks.UniTask+Awaiter.GetResult () [0x00015] in .\Library\PackageCache\com.cysharp.unitask@bf35135da627\Runtime\UniTask.cs:316 
+  at Sim.Faciem.NavigationService.NavigateToOwned (Sim.Faciem.IRegionManager regionManager, Sim.Faciem.IRegion[] regions, Sim.Faciem.ViewIdAsset viewAsset, Sim.Faciem.ViewId viewId, Sim.Faciem.NavigationParameters parameters, Sim.Faciem.Internal.RegionNavigationOperations+Operation operation, Sim.Faciem.NavigationEntryMode entryMode, Sim.Faciem.Internal.NavigationExecution execution) [0x00c79] in C:\Users\DPast\Documents\Projects\ReviewWorktrees\sim-faciem-navigation-phase4\Runtime\NavigationService.cs:250 <---
+
+---> (Inner Exception #1) System.AggregateException: Activation cancellation or cleanup failed. (injected cleanup failure) ---> System.ArgumentException: injected cleanup failure
+  at Sim.Faciem.Tests.NavigationOutcomeTests+<>c__DisplayClass33_0.<Entry_and_containment_cleanup_failures_are_both_retained_without_early_successor_release>b__2 () [0x00000] in C:\Users\DPast\Documents\Projects\ReviewWorktrees\sim-faciem-navigation-phase4\Tests\Editor\NavigationOutcomeTests.cs:392 
+  at Sim.Faciem.Tests.NavigationOutcomeTests+Resource.Dispose () [0x00000] in C:\Users\DPast\Documents\Projects\ReviewWorktrees\sim-faciem-navigation-phase4\Tests\Editor\NavigationOutcomeTests.cs:1238 
+  at Sim.Faciem.NavigationActivation.CompleteEndAsync () [0x00104] in C:\Users\DPast\Documents\Projects\ReviewWorktrees\sim-faciem-navigation-phase4\Runtime\NavigationActivation.cs:131 
+   --- End of inner exception stack trace ---
+  at Sim.Faciem.NavigationActivation.CompleteEndAsync () [0x00190] in C:\Users\DPast\Documents\Projects\ReviewWorktrees\sim-faciem-navigation-phase4\Runtime\NavigationActivation.cs:141 
+  at Cysharp.Threading.Tasks.UniTaskCompletionSource.GetResult (System.Int16 token) [0x0002d] in .\Library\PackageCache\com.cysharp.unitask@bf35135da627\Runtime\UniTaskCompletionSource.cs:649 
+  at Cysharp.Threading.Tasks.UniTask+Awaiter.GetResult () [0x00015] in .\Library\PackageCache\com.cysharp.unitask@bf35135da627\Runtime\UniTask.cs:316 
+  at Sim.Faciem.Internal.RegionNavigationOperations.InvokeLifecycle (Sim.Faciem.Internal.RegionNavigationOperations+Operation operation, Sim.Faciem.BaseViewModel model, System.Func`1[TResult] callback) [0x000d5] in C:\Users\DPast\Documents\Projects\ReviewWorktrees\sim-faciem-navigation-phase4\Runtime\Internal\RegionNavigationOperations.cs:146 
+  at Cysharp.Threading.Tasks.UniTask+ExceptionResultSource.GetResult (System.Int16 token) [0x0001e] in .\Library\PackageCache\com.cysharp.unitask@bf35135da627\Runtime\UniTask.Factory.cs:326 
+  at Cysharp.Threading.Tasks.UniTask+Awaiter.GetResult () [0x00015] in .\Library\PackageCache\com.cysharp.unitask@bf35135da627\Runtime\UniTask.cs:316 
+  at Sim.Faciem.NavigationService.Contain (Sim.Faciem.Internal.NavigationExecution execution, Sim.Faciem.Internal.RegionNavigationOperations+Operation operation, Sim.Faciem.IRegion[] regions, System.Exception error) [0x003a2] in C:\Users\DPast\Documents\Projects\ReviewWorktrees\sim-faciem-navigation-phase4\Runtime\NavigationService.cs:604 
+---> (Inner Exception #0) System.ArgumentException: injected cleanup failure
+  at Sim.Faciem.Tests.NavigationOutcomeTests+<>c__DisplayClass33_0.<Entry_and_containment_cleanup_failures_are_both_retained_without_early_successor_release>b__2 () [0x00000] in C:\Users\DPast\Documents\Projects\ReviewWorktrees\sim-faciem-navigation-phase4\Tests\Editor\NavigationOutcomeTests.cs:392 
+  at Sim.Faciem.Tests.NavigationOutcomeTests+Resource.Dispose () [0x00000] in C:\Users\DPast\Documents\Projects\ReviewWorktrees\sim-faciem-navigation-phase4\Tests\Editor\NavigationOutcomeTests.cs:1238 
+  at Sim.Faciem.NavigationActivation.CompleteEndAsync () [0x00104] in C:\Users\DPast\Documents\Projects\ReviewWorktrees\sim-faciem-navigation-phase4\Runtime\NavigationActivation.cs:131 <---
+<---
+
+B:To:input:lifetime=-1986038136
+B:To.return
+result=Succeeded:stage=None:recovery=NotRequired:error=null
+B:cleanup
+B:Away:activation=null
+B:Away.return
+result=Succeeded:stage=None:recovery=NotRequired:error=null
+result=NoOp:stage=None:recovery=NotRequired:error=null
+FINAL MODELS
+A:model=-964137982:To=1:Away=0:Cleanup=1:FinalDispose=1:Activation=null
+B:model=-950798222:To=1:Away=1:Cleanup=1:FinalDispose=1:Activation=null

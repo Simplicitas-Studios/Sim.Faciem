@@ -1,0 +1,28 @@
+{
+  "base": "c5733d6266ab6848883d663a89abdc89994dc80d",
+  "freshRemoteMain": "c5733d6266ab6848883d663a89abdc89994dc80d",
+  "mergedPrerequisites": [
+    {
+      "number": 3,
+      "merged": true,
+      "mergeSha": "2e2ccaa37031202cdc137752a958a21e1d540282",
+      "mergedAt": "2026-10-20T08:20:27Z",
+      "url": "https://github.com/Simplicitas-Studios/Sim.Faciem/pull/3"
+    },
+    {
+      "number": 4,
+      "merged": true,
+      "mergeSha": "ccc24628b6347e6e4b854626c245e251fefd294d",
+      "mergedAt": "2026-10-20T08:19:07Z",
+      "url": "https://github.com/Simplicitas-Studios/Sim.Faciem/pull/4"
+    },
+    {
+      "number": 5,
+      "merged": true,
+      "mergeSha": "c5733d6266ab6848883d663a89abdc89994dc80d",
+      "mergedAt": "2026-10-20T08:57:07Z",
+      "url": "https://github.com/Simplicitas-Studios/Sim.Faciem/pull/5"
+    }
+  ],
+  "agentPerformedMerges": false
+}

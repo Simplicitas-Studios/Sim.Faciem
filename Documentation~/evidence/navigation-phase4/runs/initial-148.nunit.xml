@@ -1,0 +1,1098 @@
+<?xml version="1.0" encoding="utf-8"?>
+<test-run id="2" testcasecount="148" result="Failed(Child)" total="148" passed="145" failed="3" inconclusive="0" skipped="0" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2026-10-20 09:20:18Z" end-time="2026-10-20 09:20:21Z" duration="2.8401726">
+  <test-suite type="TestSuite" id="1000" name="faciem-nav-phase3-validation" fullname="faciem-nav-phase3-validation" runstate="Runnable" testcasecount="166" result="Failed" site="Child" start-time="2026-10-20 09:20:18Z" end-time="2026-10-20 09:20:21Z" duration="2.840173" total="148" passed="145" failed="3" inconclusive="0" skipped="0" asserts="0">
+    <properties>
+      <property name="platform" value="EditMode" />
+    </properties>
+    <failure>
+      <message><![CDATA[One or more child tests had errors]]></message>
+    </failure>
+    <test-suite type="Assembly" id="1192" name="Sim.Faciem.Editor.Tests.dll" fullname="C:/Users/DPast/Documents/Projects/ReviewWorktrees/faciem-nav-phase4-validation/Library/ScriptAssemblies/Sim.Faciem.Editor.Tests.dll" runstate="Runnable" testcasecount="148" result="Failed" site="Child" start-time="2026-10-20 09:20:18Z" end-time="2026-10-20 09:20:21Z" duration="2.833028" total="148" passed="145" failed="3" inconclusive="0" skipped="0" asserts="0">
+      <properties>
+        <property name="_PID" value="79412" />
+        <property name="_APPDOMAIN" value="Unity Child Domain" />
+        <property name="platform" value="EditMode" />
+        <property name="EditorOnly" value="True" />
+      </properties>
+      <failure>
+        <message><![CDATA[One or more child tests had errors]]></message>
+      </failure>
+      <test-suite type="TestSuite" id="1193" name="Sim" fullname="Sim" runstate="Runnable" testcasecount="148" result="Failed" site="Child" start-time="2026-10-20 09:20:18Z" end-time="2026-10-20 09:20:21Z" duration="2.832625" total="148" passed="145" failed="3" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <failure>
+          <message><![CDATA[One or more child tests had errors]]></message>
+        </failure>
+        <test-suite type="TestSuite" id="1194" name="Faciem" fullname="Sim.Faciem" runstate="Runnable" testcasecount="148" result="Failed" site="Child" start-time="2026-10-20 09:20:18Z" end-time="2026-10-20 09:20:21Z" duration="2.832416" total="148" passed="145" failed="3" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <failure>
+            <message><![CDATA[One or more child tests had errors]]></message>
+          </failure>
+          <test-suite type="TestSuite" id="1195" name="Tests" fullname="Sim.Faciem.Tests" runstate="Runnable" testcasecount="148" result="Failed" site="Child" start-time="2026-10-20 09:20:18Z" end-time="2026-10-20 09:20:21Z" duration="2.832171" total="148" passed="145" failed="3" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <failure>
+              <message><![CDATA[One or more child tests had errors]]></message>
+            </failure>
+            <test-suite type="TestFixture" id="1001" name="FaciemCompatibilityTests" fullname="Sim.Faciem.Tests.FaciemCompatibilityTests" classname="Sim.Faciem.Tests.FaciemCompatibilityTests" runstate="Runnable" testcasecount="7" result="Passed" start-time="2026-10-20 09:20:18Z" end-time="2026-10-20 09:20:18Z" duration="0.107782" total="7" passed="7" failed="0" inconclusive="0" skipped="0" asserts="0">
+              <properties />
+              <test-case id="1009" name="MissingSettingsHelpersDoNotCreateConfiguration" fullname="Sim.Faciem.Tests.FaciemCompatibilityTests.MissingSettingsHelpersDoNotCreateConfiguration" methodname="MissingSettingsHelpersDoNotCreateConfiguration" classname="Sim.Faciem.Tests.FaciemCompatibilityTests" runstate="Runnable" seed="330575760" result="Passed" start-time="2026-10-20 09:20:18Z" end-time="2026-10-20 09:20:18Z" duration="0.007038" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1010" name="MissingSettingsPersistentAssetPathsAreSafe" fullname="Sim.Faciem.Tests.FaciemCompatibilityTests.MissingSettingsPersistentAssetPathsAreSafe" methodname="MissingSettingsPersistentAssetPathsAreSafe" classname="Sim.Faciem.Tests.FaciemCompatibilityTests" runstate="Runnable" seed="1427752802" result="Passed" start-time="2026-10-20 09:20:18Z" end-time="2026-10-20 09:20:18Z" duration="0.045555" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-suite type="ParameterizedMethod" id="1008" name="NavigationUsesSerializedTypeResolutionAndPreservesCachedOwnership" fullname="Sim.Faciem.Tests.FaciemCompatibilityTests.NavigationUsesSerializedTypeResolutionAndPreservesCachedOwnership" classname="Sim.Faciem.Tests.FaciemCompatibilityTests" runstate="Runnable" testcasecount="2" result="Passed" start-time="2026-10-20 09:20:18Z" end-time="2026-10-20 09:20:18Z" duration="0.044419" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
+                <properties />
+                <test-case id="1006" name="NavigationUsesSerializedTypeResolutionAndPreservesCachedOwnership(False)" fullname="Sim.Faciem.Tests.FaciemCompatibilityTests.NavigationUsesSerializedTypeResolutionAndPreservesCachedOwnership(False)" methodname="NavigationUsesSerializedTypeResolutionAndPreservesCachedOwnership" classname="Sim.Faciem.Tests.FaciemCompatibilityTests" runstate="Runnable" seed="323974357" result="Passed" start-time="2026-10-20 09:20:18Z" end-time="2026-10-20 09:20:18Z" duration="0.041660" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1007" name="NavigationUsesSerializedTypeResolutionAndPreservesCachedOwnership(True)" fullname="Sim.Faciem.Tests.FaciemCompatibilityTests.NavigationUsesSerializedTypeResolutionAndPreservesCachedOwnership(True)" methodname="NavigationUsesSerializedTypeResolutionAndPreservesCachedOwnership" classname="Sim.Faciem.Tests.FaciemCompatibilityTests" runstate="Runnable" seed="1119787426" result="Passed" start-time="2026-10-20 09:20:18Z" end-time="2026-10-20 09:20:18Z" duration="0.000768" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+              </test-suite>
+              <test-case id="1002" name="SerializedTypeNameResolvesWithoutAnEditorScript" fullname="Sim.Faciem.Tests.FaciemCompatibilityTests.SerializedTypeNameResolvesWithoutAnEditorScript" methodname="SerializedTypeNameResolvesWithoutAnEditorScript" classname="Sim.Faciem.Tests.FaciemCompatibilityTests" runstate="Runnable" seed="309481037" result="Passed" start-time="2026-10-20 09:20:18Z" end-time="2026-10-20 09:20:18Z" duration="0.000214" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-suite type="ParameterizedMethod" id="1005" name="UnknownSerializedTypeNameReturnsNull" fullname="Sim.Faciem.Tests.FaciemCompatibilityTests.UnknownSerializedTypeNameReturnsNull" classname="Sim.Faciem.Tests.FaciemCompatibilityTests" runstate="Runnable" testcasecount="2" result="Passed" start-time="2026-10-20 09:20:18Z" end-time="2026-10-20 09:20:18Z" duration="0.001148" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
+                <properties />
+                <test-case id="1003" name="UnknownSerializedTypeNameReturnsNull(&quot;&quot;)" fullname="Sim.Faciem.Tests.FaciemCompatibilityTests.UnknownSerializedTypeNameReturnsNull(&quot;&quot;)" methodname="UnknownSerializedTypeNameReturnsNull" classname="Sim.Faciem.Tests.FaciemCompatibilityTests" runstate="Runnable" seed="41553343" result="Passed" start-time="2026-10-20 09:20:18Z" end-time="2026-10-20 09:20:18Z" duration="0.000210" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1004" name="UnknownSerializedTypeNameReturnsNull(&quot;Missing.Type&quot;)" fullname="Sim.Faciem.Tests.FaciemCompatibilityTests.UnknownSerializedTypeNameReturnsNull(&quot;Missing.Type&quot;)" methodname="UnknownSerializedTypeNameReturnsNull" classname="Sim.Faciem.Tests.FaciemCompatibilityTests" runstate="Runnable" seed="689071789" result="Passed" start-time="2026-10-20 09:20:18Z" end-time="2026-10-20 09:20:18Z" duration="0.000110" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+              </test-suite>
+            </test-suite>
+            <test-suite type="TestFixture" id="1011" name="NavigationActivationTests" fullname="Sim.Faciem.Tests.NavigationActivationTests" classname="Sim.Faciem.Tests.NavigationActivationTests" runstate="Runnable" testcasecount="28" result="Passed" start-time="2026-10-20 09:20:18Z" end-time="2026-10-20 09:20:19Z" duration="0.623932" total="28" passed="28" failed="0" inconclusive="0" skipped="0" asserts="0">
+              <properties />
+              <test-case id="1023" name="A_B_A_renews_activation_not_cached_objects_and_cleans_once" fullname="Sim.Faciem.Tests.NavigationActivationTests.A_B_A_renews_activation_not_cached_objects_and_cleans_once" methodname="A_B_A_renews_activation_not_cached_objects_and_cleans_once" classname="Sim.Faciem.Tests.NavigationActivationTests" runstate="Runnable" seed="782729896" result="Passed" start-time="2026-10-20 09:20:18Z" end-time="2026-10-20 09:20:19Z" duration="0.126046" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1043" name="Activation_cleanup_uses_scoped_reentrancy_guard" fullname="Sim.Faciem.Tests.NavigationActivationTests.Activation_cleanup_uses_scoped_reentrancy_guard" methodname="Activation_cleanup_uses_scoped_reentrancy_guard" classname="Sim.Faciem.Tests.NavigationActivationTests" runstate="Runnable" seed="525758726" result="Passed" start-time="2026-10-20 09:20:19Z" end-time="2026-10-20 09:20:19Z" duration="0.021558" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1038" name="Captured_old_handle_fences_stale_completion_after_return_to_same_model" fullname="Sim.Faciem.Tests.NavigationActivationTests.Captured_old_handle_fences_stale_completion_after_return_to_same_model" methodname="Captured_old_handle_fences_stale_completion_after_return_to_same_model" classname="Sim.Faciem.Tests.NavigationActivationTests" runstate="Runnable" seed="18395993" result="Passed" start-time="2026-10-20 09:20:19Z" end-time="2026-10-20 09:20:19Z" duration="0.019242" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1036" name="Cleanup_attempts_every_resource_once_even_when_cancellation_and_disposal_throw" fullname="Sim.Faciem.Tests.NavigationActivationTests.Cleanup_attempts_every_resource_once_even_when_cancellation_and_disposal_throw" methodname="Cleanup_attempts_every_resource_once_even_when_cancellation_and_disposal_throw" classname="Sim.Faciem.Tests.NavigationActivationTests" runstate="Runnable" seed="1247264185" result="Passed" start-time="2026-10-20 09:20:19Z" end-time="2026-10-20 09:20:19Z" duration="0.016980" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-suite type="ParameterizedMethod" id="1032" name="Concurrent_callbacks_on_one_shared_model_are_rejected_without_ending_its_busy_activation" fullname="Sim.Faciem.Tests.NavigationActivationTests.Concurrent_callbacks_on_one_shared_model_are_rejected_without_ending_its_busy_activation" classname="Sim.Faciem.Tests.NavigationActivationTests" runstate="Runnable" testcasecount="3" result="Passed" start-time="2026-10-20 09:20:19Z" end-time="2026-10-20 09:20:19Z" duration="0.058476" total="3" passed="3" failed="0" inconclusive="0" skipped="0" asserts="0">
+                <properties />
+                <test-case id="1029" name="Concurrent_callbacks_on_one_shared_model_are_rejected_without_ending_its_busy_activation(&quot;A&quot;)" fullname="Sim.Faciem.Tests.NavigationActivationTests.Concurrent_callbacks_on_one_shared_model_are_rejected_without_ending_its_busy_activation(&quot;A&quot;)" methodname="Concurrent_callbacks_on_one_shared_model_are_rejected_without_ending_its_busy_activation" classname="Sim.Faciem.Tests.NavigationActivationTests" runstate="Runnable" seed="1057796288" result="Passed" start-time="2026-10-20 09:20:19Z" end-time="2026-10-20 09:20:19Z" duration="0.022151" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1030" name="Concurrent_callbacks_on_one_shared_model_are_rejected_without_ending_its_busy_activation(&quot;B&quot;)" fullname="Sim.Faciem.Tests.NavigationActivationTests.Concurrent_callbacks_on_one_shared_model_are_rejected_without_ending_its_busy_activation(&quot;B&quot;)" methodname="Concurrent_callbacks_on_one_shared_model_are_rejected_without_ending_its_busy_activation" classname="Sim.Faciem.Tests.NavigationActivationTests" runstate="Runnable" seed="1626685376" result="Passed" start-time="2026-10-20 09:20:19Z" end-time="2026-10-20 09:20:19Z" duration="0.016485" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1031" name="Concurrent_callbacks_on_one_shared_model_are_rejected_without_ending_its_busy_activation(&quot;Clear&quot;)" fullname="Sim.Faciem.Tests.NavigationActivationTests.Concurrent_callbacks_on_one_shared_model_are_rejected_without_ending_its_busy_activation(&quot;Clear&quot;)" methodname="Concurrent_callbacks_on_one_shared_model_are_rejected_without_ending_its_busy_activation" classname="Sim.Faciem.Tests.NavigationActivationTests" runstate="Runnable" seed="1931526164" result="Passed" start-time="2026-10-20 09:20:19Z" end-time="2026-10-20 09:20:19Z" duration="0.014942" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+              </test-suite>
+              <test-suite type="ParameterizedMethod" id="1018" name="Cooperative_entry_cancellation_unwinds_and_cleans_before_successor" fullname="Sim.Faciem.Tests.NavigationActivationTests.Cooperative_entry_cancellation_unwinds_and_cleans_before_successor" classname="Sim.Faciem.Tests.NavigationActivationTests" runstate="Runnable" testcasecount="2" result="Passed" start-time="2026-10-20 09:20:19Z" end-time="2026-10-20 09:20:19Z" duration="0.042009" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
+                <properties />
+                <test-case id="1016" name="Cooperative_entry_cancellation_unwinds_and_cleans_before_successor(True)" fullname="Sim.Faciem.Tests.NavigationActivationTests.Cooperative_entry_cancellation_unwinds_and_cleans_before_successor(True)" methodname="Cooperative_entry_cancellation_unwinds_and_cleans_before_successor" classname="Sim.Faciem.Tests.NavigationActivationTests" runstate="Runnable" seed="1929552060" result="Passed" start-time="2026-10-20 09:20:19Z" end-time="2026-10-20 09:20:19Z" duration="0.021325" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1017" name="Cooperative_entry_cancellation_unwinds_and_cleans_before_successor(False)" fullname="Sim.Faciem.Tests.NavigationActivationTests.Cooperative_entry_cancellation_unwinds_and_cleans_before_successor(False)" methodname="Cooperative_entry_cancellation_unwinds_and_cleans_before_successor" classname="Sim.Faciem.Tests.NavigationActivationTests" runstate="Runnable" seed="1164802531" result="Passed" start-time="2026-10-20 09:20:19Z" end-time="2026-10-20 09:20:19Z" duration="0.016816" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+              </test-suite>
+              <test-case id="1022" name="Executing_latest_Clear_drains_away_before_new_navigation_can_enter" fullname="Sim.Faciem.Tests.NavigationActivationTests.Executing_latest_Clear_drains_away_before_new_navigation_can_enter" methodname="Executing_latest_Clear_drains_away_before_new_navigation_can_enter" classname="Sim.Faciem.Tests.NavigationActivationTests" runstate="Runnable" seed="469173273" result="Passed" start-time="2026-10-20 09:20:19Z" end-time="2026-10-20 09:20:19Z" duration="0.017222" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1027" name="Executing_multi_region_entry_keeps_all_ownership_until_cancelled_callback_drains" fullname="Sim.Faciem.Tests.NavigationActivationTests.Executing_multi_region_entry_keeps_all_ownership_until_cancelled_callback_drains" methodname="Executing_multi_region_entry_keeps_all_ownership_until_cancelled_callback_drains" classname="Sim.Faciem.Tests.NavigationActivationTests" runstate="Runnable" seed="360761090" result="Passed" start-time="2026-10-20 09:20:19Z" end-time="2026-10-20 09:20:19Z" duration="0.016559" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1044" name="Explicit_fifo_overloads_support_custom_services_and_latest_does_not_silently_fallback" fullname="Sim.Faciem.Tests.NavigationActivationTests.Explicit_fifo_overloads_support_custom_services_and_latest_does_not_silently_fallback" methodname="Explicit_fifo_overloads_support_custom_services_and_latest_does_not_silently_fallback" classname="Sim.Faciem.Tests.NavigationActivationTests" runstate="Runnable" seed="1850152684" result="Passed" start-time="2026-10-20 09:20:19Z" end-time="2026-10-20 09:20:19Z" duration="0.016440" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1025" name="Independent_regions_do_not_supersede_or_cancel_each_other" fullname="Sim.Faciem.Tests.NavigationActivationTests.Independent_regions_do_not_supersede_or_cancel_each_other" methodname="Independent_regions_do_not_supersede_or_cancel_each_other" classname="Sim.Faciem.Tests.NavigationActivationTests" runstate="Runnable" seed="1047601676" result="Passed" start-time="2026-10-20 09:20:19Z" end-time="2026-10-20 09:20:19Z" duration="0.014482" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-suite type="ParameterizedMethod" id="1021" name="Latest_Navigate_and_Clear_supersede_each_other" fullname="Sim.Faciem.Tests.NavigationActivationTests.Latest_Navigate_and_Clear_supersede_each_other" classname="Sim.Faciem.Tests.NavigationActivationTests" runstate="Runnable" testcasecount="2" result="Passed" start-time="2026-10-20 09:20:19Z" end-time="2026-10-20 09:20:19Z" duration="0.038497" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
+                <properties />
+                <test-case id="1019" name="Latest_Navigate_and_Clear_supersede_each_other(True)" fullname="Sim.Faciem.Tests.NavigationActivationTests.Latest_Navigate_and_Clear_supersede_each_other(True)" methodname="Latest_Navigate_and_Clear_supersede_each_other" classname="Sim.Faciem.Tests.NavigationActivationTests" runstate="Runnable" seed="2093441783" result="Passed" start-time="2026-10-20 09:20:19Z" end-time="2026-10-20 09:20:19Z" duration="0.015102" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1020" name="Latest_Navigate_and_Clear_supersede_each_other(False)" fullname="Sim.Faciem.Tests.NavigationActivationTests.Latest_Navigate_and_Clear_supersede_each_other(False)" methodname="Latest_Navigate_and_Clear_supersede_each_other" classname="Sim.Faciem.Tests.NavigationActivationTests" runstate="Runnable" seed="2014989189" result="Passed" start-time="2026-10-20 09:20:19Z" end-time="2026-10-20 09:20:19Z" duration="0.015958" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+              </test-suite>
+              <test-suite type="ParameterizedMethod" id="1035" name="Lifecycle_exceptions_end_activation_and_do_not_poison_successors" fullname="Sim.Faciem.Tests.NavigationActivationTests.Lifecycle_exceptions_end_activation_and_do_not_poison_successors" classname="Sim.Faciem.Tests.NavigationActivationTests" runstate="Runnable" testcasecount="2" result="Passed" start-time="2026-10-20 09:20:19Z" end-time="2026-10-20 09:20:19Z" duration="0.041703" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
+                <properties />
+                <test-case id="1033" name="Lifecycle_exceptions_end_activation_and_do_not_poison_successors(True)" fullname="Sim.Faciem.Tests.NavigationActivationTests.Lifecycle_exceptions_end_activation_and_do_not_poison_successors(True)" methodname="Lifecycle_exceptions_end_activation_and_do_not_poison_successors" classname="Sim.Faciem.Tests.NavigationActivationTests" runstate="Runnable" seed="961517996" result="Passed" start-time="2026-10-20 09:20:19Z" end-time="2026-10-20 09:20:19Z" duration="0.017751" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1034" name="Lifecycle_exceptions_end_activation_and_do_not_poison_successors(False)" fullname="Sim.Faciem.Tests.NavigationActivationTests.Lifecycle_exceptions_end_activation_and_do_not_poison_successors(False)" methodname="Lifecycle_exceptions_end_activation_and_do_not_poison_successors" classname="Sim.Faciem.Tests.NavigationActivationTests" runstate="Runnable" seed="344970520" result="Passed" start-time="2026-10-20 09:20:19Z" end-time="2026-10-20 09:20:19Z" duration="0.017948" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+              </test-suite>
+              <test-case id="1013" name="Mixed_policy_keeps_fifo_requests_and_supersedes_only_opted_in_requests" fullname="Sim.Faciem.Tests.NavigationActivationTests.Mixed_policy_keeps_fifo_requests_and_supersedes_only_opted_in_requests" methodname="Mixed_policy_keeps_fifo_requests_and_supersedes_only_opted_in_requests" classname="Sim.Faciem.Tests.NavigationActivationTests" runstate="Runnable" seed="892994396" result="Passed" start-time="2026-10-20 09:20:19Z" end-time="2026-10-20 09:20:19Z" duration="0.015042" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1039" name="Publication_requires_owning_unity_thread" fullname="Sim.Faciem.Tests.NavigationActivationTests.Publication_requires_owning_unity_thread" methodname="Publication_requires_owning_unity_thread" classname="Sim.Faciem.Tests.NavigationActivationTests" runstate="Runnable" seed="1642689051" result="Passed" start-time="2026-10-20 09:20:19Z" end-time="2026-10-20 09:20:19Z" duration="0.017331" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1012" name="Queued_latest_skips_obsolete_model_view_and_callbacks" fullname="Sim.Faciem.Tests.NavigationActivationTests.Queued_latest_skips_obsolete_model_view_and_callbacks" methodname="Queued_latest_skips_obsolete_model_view_and_callbacks" classname="Sim.Faciem.Tests.NavigationActivationTests" runstate="Runnable" seed="259782891" result="Passed" start-time="2026-10-20 09:20:19Z" end-time="2026-10-20 09:20:19Z" duration="0.015215" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1026" name="Queued_multi_region_request_is_superseded_as_a_whole_on_any_overlap" fullname="Sim.Faciem.Tests.NavigationActivationTests.Queued_multi_region_request_is_superseded_as_a_whole_on_any_overlap" methodname="Queued_multi_region_request_is_superseded_as_a_whole_on_any_overlap" classname="Sim.Faciem.Tests.NavigationActivationTests" runstate="Runnable" seed="1253953167" result="Passed" start-time="2026-10-20 09:20:19Z" end-time="2026-10-20 09:20:19Z" duration="0.014771" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-suite type="ParameterizedMethod" id="1042" name="Rejected_scoped_latest_request_cannot_supersede_valid_queued_work" fullname="Sim.Faciem.Tests.NavigationActivationTests.Rejected_scoped_latest_request_cannot_supersede_valid_queued_work" classname="Sim.Faciem.Tests.NavigationActivationTests" runstate="Runnable" testcasecount="2" result="Passed" start-time="2026-10-20 09:20:19Z" end-time="2026-10-20 09:20:19Z" duration="0.040081" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
+                <properties />
+                <test-case id="1040" name="Rejected_scoped_latest_request_cannot_supersede_valid_queued_work(True)" fullname="Sim.Faciem.Tests.NavigationActivationTests.Rejected_scoped_latest_request_cannot_supersede_valid_queued_work(True)" methodname="Rejected_scoped_latest_request_cannot_supersede_valid_queued_work" classname="Sim.Faciem.Tests.NavigationActivationTests" runstate="Runnable" seed="559535674" result="Passed" start-time="2026-10-20 09:20:19Z" end-time="2026-10-20 09:20:19Z" duration="0.015685" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1041" name="Rejected_scoped_latest_request_cannot_supersede_valid_queued_work(False)" fullname="Sim.Faciem.Tests.NavigationActivationTests.Rejected_scoped_latest_request_cannot_supersede_valid_queued_work(False)" methodname="Rejected_scoped_latest_request_cannot_supersede_valid_queued_work" classname="Sim.Faciem.Tests.NavigationActivationTests" runstate="Runnable" seed="302727480" result="Passed" start-time="2026-10-20 09:20:19Z" end-time="2026-10-20 09:20:19Z" duration="0.016446" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+              </test-suite>
+              <test-case id="1024" name="Repeated_active_same_id_preserves_activation_without_forced_reentry" fullname="Sim.Faciem.Tests.NavigationActivationTests.Repeated_active_same_id_preserves_activation_without_forced_reentry" methodname="Repeated_active_same_id_preserves_activation_without_forced_reentry" classname="Sim.Faciem.Tests.NavigationActivationTests" runstate="Runnable" seed="1376933604" result="Passed" start-time="2026-10-20 09:20:19Z" end-time="2026-10-20 09:20:19Z" duration="0.016772" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1028" name="Shared_model_cohort_ends_once_without_mutating_an_unowned_region" fullname="Sim.Faciem.Tests.NavigationActivationTests.Shared_model_cohort_ends_once_without_mutating_an_unowned_region" methodname="Shared_model_cohort_ends_once_without_mutating_an_unowned_region" classname="Sim.Faciem.Tests.NavigationActivationTests" runstate="Runnable" seed="1915545827" result="Passed" start-time="2026-10-20 09:20:19Z" end-time="2026-10-20 09:20:19Z" duration="0.018853" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1014" name="Superseded_exit_is_drained_before_obsolete_target_is_skipped" fullname="Sim.Faciem.Tests.NavigationActivationTests.Superseded_exit_is_drained_before_obsolete_target_is_skipped" methodname="Superseded_exit_is_drained_before_obsolete_target_is_skipped" classname="Sim.Faciem.Tests.NavigationActivationTests" runstate="Runnable" seed="865430157" result="Passed" start-time="2026-10-20 09:20:19Z" end-time="2026-10-20 09:20:19Z" duration="0.017365" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1037" name="Throwing_cancellation_observer_does_not_lose_new_request_or_release_old_ownership_early" fullname="Sim.Faciem.Tests.NavigationActivationTests.Throwing_cancellation_observer_does_not_lose_new_request_or_release_old_ownership_early" methodname="Throwing_cancellation_observer_does_not_lose_new_request_or_release_old_ownership_early" classname="Sim.Faciem.Tests.NavigationActivationTests" runstate="Runnable" seed="1047421805" result="Passed" start-time="2026-10-20 09:20:19Z" end-time="2026-10-20 09:20:19Z" duration="0.016720" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1015" name="Uncooperative_entry_is_invalidated_but_ownership_waits_for_callback_return" fullname="Sim.Faciem.Tests.NavigationActivationTests.Uncooperative_entry_is_invalidated_but_ownership_waits_for_callback_return" methodname="Uncooperative_entry_is_invalidated_but_ownership_waits_for_callback_return" classname="Sim.Faciem.Tests.NavigationActivationTests" runstate="Runnable" seed="2122109126" result="Passed" start-time="2026-10-20 09:20:19Z" end-time="2026-10-20 09:20:19Z" duration="0.016762" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+            </test-suite>
+            <test-suite type="TestFixture" id="1045" name="NavigationOutcomeTests" fullname="Sim.Faciem.Tests.NavigationOutcomeTests" classname="Sim.Faciem.Tests.NavigationOutcomeTests" runstate="Runnable" testcasecount="52" result="Failed" site="Child" start-time="2026-10-20 09:20:19Z" end-time="2026-10-20 09:20:20Z" duration="1.042031" total="52" passed="49" failed="3" inconclusive="0" skipped="0" asserts="0">
+              <properties />
+              <failure>
+                <message><![CDATA[One or more child tests had errors]]></message>
+              </failure>
+              <test-suite type="ParameterizedMethod" id="1087" name="Callback_breaking_postconditions_is_not_success_and_foreign_state_is_not_overwritten" fullname="Sim.Faciem.Tests.NavigationOutcomeTests.Callback_breaking_postconditions_is_not_success_and_foreign_state_is_not_overwritten" classname="Sim.Faciem.Tests.NavigationOutcomeTests" runstate="Runnable" testcasecount="3" result="Passed" start-time="2026-10-20 09:20:19Z" end-time="2026-10-20 09:20:19Z" duration="0.070523" total="3" passed="3" failed="0" inconclusive="0" skipped="0" asserts="0">
+                <properties />
+                <test-case id="1084" name="Callback_breaking_postconditions_is_not_success_and_foreign_state_is_not_overwritten(&quot;deactivate&quot;)" fullname="Sim.Faciem.Tests.NavigationOutcomeTests.Callback_breaking_postconditions_is_not_success_and_foreign_state_is_not_overwritten(&quot;deactivate&quot;)" methodname="Callback_breaking_postconditions_is_not_success_and_foreign_state_is_not_overwritten" classname="Sim.Faciem.Tests.NavigationOutcomeTests" runstate="Runnable" seed="1677523605" result="Passed" start-time="2026-10-20 09:20:19Z" end-time="2026-10-20 09:20:19Z" duration="0.030249" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1085" name="Callback_breaking_postconditions_is_not_success_and_foreign_state_is_not_overwritten(&quot;foreign-source&quot;)" fullname="Sim.Faciem.Tests.NavigationOutcomeTests.Callback_breaking_postconditions_is_not_success_and_foreign_state_is_not_overwritten(&quot;foreign-source&quot;)" methodname="Callback_breaking_postconditions_is_not_success_and_foreign_state_is_not_overwritten" classname="Sim.Faciem.Tests.NavigationOutcomeTests" runstate="Runnable" seed="240474466" result="Passed" start-time="2026-10-20 09:20:19Z" end-time="2026-10-20 09:20:19Z" duration="0.015973" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1086" name="Callback_breaking_postconditions_is_not_success_and_foreign_state_is_not_overwritten(&quot;reparent&quot;)" fullname="Sim.Faciem.Tests.NavigationOutcomeTests.Callback_breaking_postconditions_is_not_success_and_foreign_state_is_not_overwritten(&quot;reparent&quot;)" methodname="Callback_breaking_postconditions_is_not_success_and_foreign_state_is_not_overwritten" classname="Sim.Faciem.Tests.NavigationOutcomeTests" runstate="Runnable" seed="1153603308" result="Passed" start-time="2026-10-20 09:20:19Z" end-time="2026-10-20 09:20:19Z" duration="0.018605" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+              </test-suite>
+              <test-suite type="ParameterizedMethod" id="1079" name="Cleanup_failure_attempts_all_resources_and_reports_its_stage_without_replaying_Away" fullname="Sim.Faciem.Tests.NavigationOutcomeTests.Cleanup_failure_attempts_all_resources_and_reports_its_stage_without_replaying_Away" classname="Sim.Faciem.Tests.NavigationOutcomeTests" runstate="Runnable" testcasecount="3" result="Passed" start-time="2026-10-20 09:20:19Z" end-time="2026-10-20 09:20:19Z" duration="0.067748" total="3" passed="3" failed="0" inconclusive="0" skipped="0" asserts="0">
+                <properties />
+                <test-case id="1076" name="Cleanup_failure_attempts_all_resources_and_reports_its_stage_without_replaying_Away(&quot;clear&quot;)" fullname="Sim.Faciem.Tests.NavigationOutcomeTests.Cleanup_failure_attempts_all_resources_and_reports_its_stage_without_replaying_Away(&quot;clear&quot;)" methodname="Cleanup_failure_attempts_all_resources_and_reports_its_stage_without_replaying_Away" classname="Sim.Faciem.Tests.NavigationOutcomeTests" runstate="Runnable" seed="462978720" result="Passed" start-time="2026-10-20 09:20:19Z" end-time="2026-10-20 09:20:19Z" duration="0.020398" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1077" name="Cleanup_failure_attempts_all_resources_and_reports_its_stage_without_replaying_Away(&quot;navigate&quot;)" fullname="Sim.Faciem.Tests.NavigationOutcomeTests.Cleanup_failure_attempts_all_resources_and_reports_its_stage_without_replaying_Away(&quot;navigate&quot;)" methodname="Cleanup_failure_attempts_all_resources_and_reports_its_stage_without_replaying_Away" classname="Sim.Faciem.Tests.NavigationOutcomeTests" runstate="Runnable" seed="1137744705" result="Passed" start-time="2026-10-20 09:20:19Z" end-time="2026-10-20 09:20:19Z" duration="0.017323" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1078" name="Cleanup_failure_attempts_all_resources_and_reports_its_stage_without_replaying_Away(&quot;reentry&quot;)" fullname="Sim.Faciem.Tests.NavigationOutcomeTests.Cleanup_failure_attempts_all_resources_and_reports_its_stage_without_replaying_Away(&quot;reentry&quot;)" methodname="Cleanup_failure_attempts_all_resources_and_reports_its_stage_without_replaying_Away" classname="Sim.Faciem.Tests.NavigationOutcomeTests" runstate="Runnable" seed="147323083" result="Passed" start-time="2026-10-20 09:20:19Z" end-time="2026-10-20 09:20:19Z" duration="0.020207" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+              </test-suite>
+              <test-suite type="ParameterizedMethod" id="1069" name="Commit_fault_before_or_after_real_mount_is_contained_including_unrecorded_visible_tree" fullname="Sim.Faciem.Tests.NavigationOutcomeTests.Commit_fault_before_or_after_real_mount_is_contained_including_unrecorded_visible_tree" classname="Sim.Faciem.Tests.NavigationOutcomeTests" runstate="Runnable" testcasecount="2" result="Passed" start-time="2026-10-20 09:20:19Z" end-time="2026-10-20 09:20:19Z" duration="0.046513" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
+                <properties />
+                <test-case id="1067" name="Commit_fault_before_or_after_real_mount_is_contained_including_unrecorded_visible_tree(False)" fullname="Sim.Faciem.Tests.NavigationOutcomeTests.Commit_fault_before_or_after_real_mount_is_contained_including_unrecorded_visible_tree(False)" methodname="Commit_fault_before_or_after_real_mount_is_contained_including_unrecorded_visible_tree" classname="Sim.Faciem.Tests.NavigationOutcomeTests" runstate="Runnable" seed="1096711002" result="Passed" start-time="2026-10-20 09:20:19Z" end-time="2026-10-20 09:20:19Z" duration="0.018986" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1068" name="Commit_fault_before_or_after_real_mount_is_contained_including_unrecorded_visible_tree(True)" fullname="Sim.Faciem.Tests.NavigationOutcomeTests.Commit_fault_before_or_after_real_mount_is_contained_including_unrecorded_visible_tree(True)" methodname="Commit_fault_before_or_after_real_mount_is_contained_including_unrecorded_visible_tree" classname="Sim.Faciem.Tests.NavigationOutcomeTests" runstate="Runnable" seed="1107550080" result="Passed" start-time="2026-10-20 09:20:19Z" end-time="2026-10-20 09:20:19Z" duration="0.016610" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+              </test-suite>
+              <test-case id="1063" name="Construction_failure_preserves_UI_but_does_not_undo_constructor_side_effects" fullname="Sim.Faciem.Tests.NavigationOutcomeTests.Construction_failure_preserves_UI_but_does_not_undo_constructor_side_effects" methodname="Construction_failure_preserves_UI_but_does_not_undo_constructor_side_effects" classname="Sim.Faciem.Tests.NavigationOutcomeTests" runstate="Runnable" seed="477858756" result="Passed" start-time="2026-10-20 09:20:19Z" end-time="2026-10-20 09:20:19Z" duration="0.016314" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1099" name="Cooperative_cancellation_returns_a_superseded_result_only_after_callback_finally_runs" fullname="Sim.Faciem.Tests.NavigationOutcomeTests.Cooperative_cancellation_returns_a_superseded_result_only_after_callback_finally_runs" methodname="Cooperative_cancellation_returns_a_superseded_result_only_after_callback_finally_runs" classname="Sim.Faciem.Tests.NavigationOutcomeTests" runstate="Runnable" seed="1217679451" result="Passed" start-time="2026-10-20 09:20:19Z" end-time="2026-10-20 09:20:19Z" duration="0.023671" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1061" name="Custom_services_remain_legacy_compatible_but_results_never_guess_success" fullname="Sim.Faciem.Tests.NavigationOutcomeTests.Custom_services_remain_legacy_compatible_but_results_never_guess_success" methodname="Custom_services_remain_legacy_compatible_but_results_never_guess_success" classname="Sim.Faciem.Tests.NavigationOutcomeTests" runstate="Runnable" seed="685110562" result="Passed" start-time="2026-10-20 09:20:19Z" end-time="2026-10-20 09:20:19Z" duration="0.016291" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1049" name="Empty_Clear_is_NoOp_only_after_its_FIFO_predecessor_drains" fullname="Sim.Faciem.Tests.NavigationOutcomeTests.Empty_Clear_is_NoOp_only_after_its_FIFO_predecessor_drains" methodname="Empty_Clear_is_NoOp_only_after_its_FIFO_predecessor_drains" classname="Sim.Faciem.Tests.NavigationOutcomeTests" runstate="Runnable" seed="669045076" result="Passed" start-time="2026-10-20 09:20:19Z" end-time="2026-10-20 09:20:19Z" duration="0.018889" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1080" name="Entry_and_containment_cleanup_failures_are_both_retained_without_early_successor_release" fullname="Sim.Faciem.Tests.NavigationOutcomeTests.Entry_and_containment_cleanup_failures_are_both_retained_without_early_successor_release" methodname="Entry_and_containment_cleanup_failures_are_both_retained_without_early_successor_release" classname="Sim.Faciem.Tests.NavigationOutcomeTests" runstate="Runnable" seed="323226021" result="Passed" start-time="2026-10-20 09:20:19Z" end-time="2026-10-20 09:20:19Z" duration="0.018405" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-suite type="ParameterizedMethod" id="1075" name="Entry_failure_is_contained_and_recovery_reuses_cache" fullname="Sim.Faciem.Tests.NavigationOutcomeTests.Entry_failure_is_contained_and_recovery_reuses_cache" classname="Sim.Faciem.Tests.NavigationOutcomeTests" runstate="Runnable" testcasecount="2" result="Passed" start-time="2026-10-20 09:20:19Z" end-time="2026-10-20 09:20:19Z" duration="0.044253" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
+                <properties />
+                <test-case id="1073" name="Entry_failure_is_contained_and_recovery_reuses_cache(False)" fullname="Sim.Faciem.Tests.NavigationOutcomeTests.Entry_failure_is_contained_and_recovery_reuses_cache(False)" methodname="Entry_failure_is_contained_and_recovery_reuses_cache" classname="Sim.Faciem.Tests.NavigationOutcomeTests" runstate="Runnable" seed="1026438112" result="Passed" start-time="2026-10-20 09:20:19Z" end-time="2026-10-20 09:20:19Z" duration="0.017446" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1074" name="Entry_failure_is_contained_and_recovery_reuses_cache(True)" fullname="Sim.Faciem.Tests.NavigationOutcomeTests.Entry_failure_is_contained_and_recovery_reuses_cache(True)" methodname="Entry_failure_is_contained_and_recovery_reuses_cache" classname="Sim.Faciem.Tests.NavigationOutcomeTests" runstate="Runnable" seed="1332672424" result="Passed" start-time="2026-10-20 09:20:19Z" end-time="2026-10-20 09:20:19Z" duration="0.017568" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+              </test-suite>
+              <test-suite type="ParameterizedMethod" id="1098" name="Executing_exit_must_drain_before_latest_winner_and_does_not_enter_obsolete_target" fullname="Sim.Faciem.Tests.NavigationOutcomeTests.Executing_exit_must_drain_before_latest_winner_and_does_not_enter_obsolete_target" classname="Sim.Faciem.Tests.NavigationOutcomeTests" runstate="Runnable" testcasecount="2" result="Passed" start-time="2026-10-20 09:20:19Z" end-time="2026-10-20 09:20:19Z" duration="0.044777" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
+                <properties />
+                <test-case id="1096" name="Executing_exit_must_drain_before_latest_winner_and_does_not_enter_obsolete_target(False)" fullname="Sim.Faciem.Tests.NavigationOutcomeTests.Executing_exit_must_drain_before_latest_winner_and_does_not_enter_obsolete_target(False)" methodname="Executing_exit_must_drain_before_latest_winner_and_does_not_enter_obsolete_target" classname="Sim.Faciem.Tests.NavigationOutcomeTests" runstate="Runnable" seed="214792594" result="Passed" start-time="2026-10-20 09:20:19Z" end-time="2026-10-20 09:20:19Z" duration="0.020156" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1097" name="Executing_exit_must_drain_before_latest_winner_and_does_not_enter_obsolete_target(True)" fullname="Sim.Faciem.Tests.NavigationOutcomeTests.Executing_exit_must_drain_before_latest_winner_and_does_not_enter_obsolete_target(True)" methodname="Executing_exit_must_drain_before_latest_winner_and_does_not_enter_obsolete_target" classname="Sim.Faciem.Tests.NavigationOutcomeTests" runstate="Runnable" seed="1076488173" result="Passed" start-time="2026-10-20 09:20:19Z" end-time="2026-10-20 09:20:19Z" duration="0.017923" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+              </test-suite>
+              <test-suite type="ParameterizedMethod" id="1072" name="Exit_failure_does_not_resurrect_an_ended_activation_and_does_not_touch_independent_Region" fullname="Sim.Faciem.Tests.NavigationOutcomeTests.Exit_failure_does_not_resurrect_an_ended_activation_and_does_not_touch_independent_Region" classname="Sim.Faciem.Tests.NavigationOutcomeTests" runstate="Runnable" testcasecount="2" result="Passed" start-time="2026-10-20 09:20:19Z" end-time="2026-10-20 09:20:19Z" duration="0.039617" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
+                <properties />
+                <test-case id="1070" name="Exit_failure_does_not_resurrect_an_ended_activation_and_does_not_touch_independent_Region(False)" fullname="Sim.Faciem.Tests.NavigationOutcomeTests.Exit_failure_does_not_resurrect_an_ended_activation_and_does_not_touch_independent_Region(False)" methodname="Exit_failure_does_not_resurrect_an_ended_activation_and_does_not_touch_independent_Region" classname="Sim.Faciem.Tests.NavigationOutcomeTests" runstate="Runnable" seed="345261494" result="Passed" start-time="2026-10-20 09:20:19Z" end-time="2026-10-20 09:20:19Z" duration="0.017981" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1071" name="Exit_failure_does_not_resurrect_an_ended_activation_and_does_not_touch_independent_Region(True)" fullname="Sim.Faciem.Tests.NavigationOutcomeTests.Exit_failure_does_not_resurrect_an_ended_activation_and_does_not_touch_independent_Region(True)" methodname="Exit_failure_does_not_resurrect_an_ended_activation_and_does_not_touch_independent_Region" classname="Sim.Faciem.Tests.NavigationOutcomeTests" runstate="Runnable" seed="206320322" result="Passed" start-time="2026-10-20 09:20:19Z" end-time="2026-10-20 09:20:19Z" duration="0.016196" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+              </test-suite>
+              <test-suite type="ParameterizedMethod" id="1106" name="Explicit_reentry_result_keeps_identity_and_replaces_only_activation_lifetime" fullname="Sim.Faciem.Tests.NavigationOutcomeTests.Explicit_reentry_result_keeps_identity_and_replaces_only_activation_lifetime" classname="Sim.Faciem.Tests.NavigationOutcomeTests" runstate="Runnable" testcasecount="2" result="Passed" start-time="2026-10-20 09:20:19Z" end-time="2026-10-20 09:20:19Z" duration="0.039531" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
+                <properties />
+                <test-case id="1104" name="Explicit_reentry_result_keeps_identity_and_replaces_only_activation_lifetime(Fifo)" fullname="Sim.Faciem.Tests.NavigationOutcomeTests.Explicit_reentry_result_keeps_identity_and_replaces_only_activation_lifetime(Fifo)" methodname="Explicit_reentry_result_keeps_identity_and_replaces_only_activation_lifetime" classname="Sim.Faciem.Tests.NavigationOutcomeTests" runstate="Runnable" seed="321142473" result="Passed" start-time="2026-10-20 09:20:19Z" end-time="2026-10-20 09:20:19Z" duration="0.014885" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1105" name="Explicit_reentry_result_keeps_identity_and_replaces_only_activation_lifetime(LatestRequestWins)" fullname="Sim.Faciem.Tests.NavigationOutcomeTests.Explicit_reentry_result_keeps_identity_and_replaces_only_activation_lifetime(LatestRequestWins)" methodname="Explicit_reentry_result_keeps_identity_and_replaces_only_activation_lifetime" classname="Sim.Faciem.Tests.NavigationOutcomeTests" runstate="Runnable" seed="1817382171" result="Passed" start-time="2026-10-20 09:20:19Z" end-time="2026-10-20 09:20:19Z" duration="0.015892" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+              </test-suite>
+              <test-suite type="ParameterizedMethod" id="1090" name="FIFO_successors_wait_for_the_actual_callback_return_even_when_it_will_fail" fullname="Sim.Faciem.Tests.NavigationOutcomeTests.FIFO_successors_wait_for_the_actual_callback_return_even_when_it_will_fail" classname="Sim.Faciem.Tests.NavigationOutcomeTests" runstate="Runnable" testcasecount="2" result="Passed" start-time="2026-10-20 09:20:19Z" end-time="2026-10-20 09:20:20Z" duration="0.042471" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
+                <properties />
+                <test-case id="1088" name="FIFO_successors_wait_for_the_actual_callback_return_even_when_it_will_fail(False)" fullname="Sim.Faciem.Tests.NavigationOutcomeTests.FIFO_successors_wait_for_the_actual_callback_return_even_when_it_will_fail(False)" methodname="FIFO_successors_wait_for_the_actual_callback_return_even_when_it_will_fail" classname="Sim.Faciem.Tests.NavigationOutcomeTests" runstate="Runnable" seed="1078077203" result="Passed" start-time="2026-10-20 09:20:19Z" end-time="2026-10-20 09:20:20Z" duration="0.020497" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1089" name="FIFO_successors_wait_for_the_actual_callback_return_even_when_it_will_fail(True)" fullname="Sim.Faciem.Tests.NavigationOutcomeTests.FIFO_successors_wait_for_the_actual_callback_return_even_when_it_will_fail(True)" methodname="FIFO_successors_wait_for_the_actual_callback_return_even_when_it_will_fail" classname="Sim.Faciem.Tests.NavigationOutcomeTests" runstate="Runnable" seed="1678772508" result="Passed" start-time="2026-10-20 09:20:20Z" end-time="2026-10-20 09:20:20Z" duration="0.016147" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+              </test-suite>
+              <test-case id="1109" name="Foreign_active_source_in_later_Region_rejects_the_whole_group_before_any_exit" fullname="Sim.Faciem.Tests.NavigationOutcomeTests.Foreign_active_source_in_later_Region_rejects_the_whole_group_before_any_exit" methodname="Foreign_active_source_in_later_Region_rejects_the_whole_group_before_any_exit" classname="Sim.Faciem.Tests.NavigationOutcomeTests" runstate="Runnable" seed="560274865" result="Passed" start-time="2026-10-20 09:20:20Z" end-time="2026-10-20 09:20:20Z" duration="0.015760" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-suite type="ParameterizedMethod" id="1113" name="Heterogeneous_target_caches_are_not_silently_rebound_or_reported_success" fullname="Sim.Faciem.Tests.NavigationOutcomeTests.Heterogeneous_target_caches_are_not_silently_rebound_or_reported_success" classname="Sim.Faciem.Tests.NavigationOutcomeTests" runstate="Runnable" testcasecount="2" result="Passed" start-time="2026-10-20 09:20:20Z" end-time="2026-10-20 09:20:20Z" duration="0.038202" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
+                <properties />
+                <test-case id="1111" name="Heterogeneous_target_caches_are_not_silently_rebound_or_reported_success(False)" fullname="Sim.Faciem.Tests.NavigationOutcomeTests.Heterogeneous_target_caches_are_not_silently_rebound_or_reported_success(False)" methodname="Heterogeneous_target_caches_are_not_silently_rebound_or_reported_success" classname="Sim.Faciem.Tests.NavigationOutcomeTests" runstate="Runnable" seed="1805292419" result="Passed" start-time="2026-10-20 09:20:20Z" end-time="2026-10-20 09:20:20Z" duration="0.016726" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1112" name="Heterogeneous_target_caches_are_not_silently_rebound_or_reported_success(True)" fullname="Sim.Faciem.Tests.NavigationOutcomeTests.Heterogeneous_target_caches_are_not_silently_rebound_or_reported_success(True)" methodname="Heterogeneous_target_caches_are_not_silently_rebound_or_reported_success" classname="Sim.Faciem.Tests.NavigationOutcomeTests" runstate="Runnable" seed="1814503005" result="Passed" start-time="2026-10-20 09:20:20Z" end-time="2026-10-20 09:20:20Z" duration="0.015505" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+              </test-suite>
+              <test-suite type="ParameterizedMethod" id="1066" name="Injected_synchronous_preparation_fault_preserves_current_UI" fullname="Sim.Faciem.Tests.NavigationOutcomeTests.Injected_synchronous_preparation_fault_preserves_current_UI" classname="Sim.Faciem.Tests.NavigationOutcomeTests" runstate="Runnable" testcasecount="2" result="Passed" start-time="2026-10-20 09:20:20Z" end-time="2026-10-20 09:20:20Z" duration="0.040774" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
+                <properties />
+                <test-case id="1064" name="Injected_synchronous_preparation_fault_preserves_current_UI(&quot;before-create&quot;)" fullname="Sim.Faciem.Tests.NavigationOutcomeTests.Injected_synchronous_preparation_fault_preserves_current_UI(&quot;before-create&quot;)" methodname="Injected_synchronous_preparation_fault_preserves_current_UI" classname="Sim.Faciem.Tests.NavigationOutcomeTests" runstate="Runnable" seed="1930406654" result="Passed" start-time="2026-10-20 09:20:20Z" end-time="2026-10-20 09:20:20Z" duration="0.019028" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1065" name="Injected_synchronous_preparation_fault_preserves_current_UI(&quot;after-detached-binding&quot;)" fullname="Sim.Faciem.Tests.NavigationOutcomeTests.Injected_synchronous_preparation_fault_preserves_current_UI(&quot;after-detached-binding&quot;)" methodname="Injected_synchronous_preparation_fault_preserves_current_UI" classname="Sim.Faciem.Tests.NavigationOutcomeTests" runstate="Runnable" seed="905129444" result="Passed" start-time="2026-10-20 09:20:20Z" end-time="2026-10-20 09:20:20Z" duration="0.016918" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+              </test-suite>
+              <test-suite type="ParameterizedMethod" id="1057" name="Invalid_configuration_preserves_the_current_View_and_activation" fullname="Sim.Faciem.Tests.NavigationOutcomeTests.Invalid_configuration_preserves_the_current_View_and_activation" classname="Sim.Faciem.Tests.NavigationOutcomeTests" runstate="Runnable" testcasecount="7" result="Passed" start-time="2026-10-20 09:20:20Z" end-time="2026-10-20 09:20:20Z" duration="0.118612" total="7" passed="7" failed="0" inconclusive="0" skipped="0" asserts="0">
+                <properties />
+                <test-case id="1050" name="Invalid_configuration_preserves_the_current_View_and_activation(&quot;policy&quot;)" fullname="Sim.Faciem.Tests.NavigationOutcomeTests.Invalid_configuration_preserves_the_current_View_and_activation(&quot;policy&quot;)" methodname="Invalid_configuration_preserves_the_current_View_and_activation" classname="Sim.Faciem.Tests.NavigationOutcomeTests" runstate="Runnable" seed="1426150697" result="Passed" start-time="2026-10-20 09:20:20Z" end-time="2026-10-20 09:20:20Z" duration="0.018156" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1051" name="Invalid_configuration_preserves_the_current_View_and_activation(&quot;entryMode&quot;)" fullname="Sim.Faciem.Tests.NavigationOutcomeTests.Invalid_configuration_preserves_the_current_View_and_activation(&quot;entryMode&quot;)" methodname="Invalid_configuration_preserves_the_current_View_and_activation" classname="Sim.Faciem.Tests.NavigationOutcomeTests" runstate="Runnable" seed="419578089" result="Passed" start-time="2026-10-20 09:20:20Z" end-time="2026-10-20 09:20:20Z" duration="0.014023" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1052" name="Invalid_configuration_preserves_the_current_View_and_activation(&quot;manager&quot;)" fullname="Sim.Faciem.Tests.NavigationOutcomeTests.Invalid_configuration_preserves_the_current_View_and_activation(&quot;manager&quot;)" methodname="Invalid_configuration_preserves_the_current_View_and_activation" classname="Sim.Faciem.Tests.NavigationOutcomeTests" runstate="Runnable" seed="981386515" result="Passed" start-time="2026-10-20 09:20:20Z" end-time="2026-10-20 09:20:20Z" duration="0.014582" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1053" name="Invalid_configuration_preserves_the_current_View_and_activation(&quot;id&quot;)" fullname="Sim.Faciem.Tests.NavigationOutcomeTests.Invalid_configuration_preserves_the_current_View_and_activation(&quot;id&quot;)" methodname="Invalid_configuration_preserves_the_current_View_and_activation" classname="Sim.Faciem.Tests.NavigationOutcomeTests" runstate="Runnable" seed="1714999943" result="Passed" start-time="2026-10-20 09:20:20Z" end-time="2026-10-20 09:20:20Z" duration="0.015129" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1054" name="Invalid_configuration_preserves_the_current_View_and_activation(&quot;parameters&quot;)" fullname="Sim.Faciem.Tests.NavigationOutcomeTests.Invalid_configuration_preserves_the_current_View_and_activation(&quot;parameters&quot;)" methodname="Invalid_configuration_preserves_the_current_View_and_activation" classname="Sim.Faciem.Tests.NavigationOutcomeTests" runstate="Runnable" seed="1304503689" result="Passed" start-time="2026-10-20 09:20:20Z" end-time="2026-10-20 09:20:20Z" duration="0.015123" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1055" name="Invalid_configuration_preserves_the_current_View_and_activation(&quot;template&quot;)" fullname="Sim.Faciem.Tests.NavigationOutcomeTests.Invalid_configuration_preserves_the_current_View_and_activation(&quot;template&quot;)" methodname="Invalid_configuration_preserves_the_current_View_and_activation" classname="Sim.Faciem.Tests.NavigationOutcomeTests" runstate="Runnable" seed="1762128251" result="Passed" start-time="2026-10-20 09:20:20Z" end-time="2026-10-20 09:20:20Z" duration="0.015144" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1056" name="Invalid_configuration_preserves_the_current_View_and_activation(&quot;dataContext&quot;)" fullname="Sim.Faciem.Tests.NavigationOutcomeTests.Invalid_configuration_preserves_the_current_View_and_activation(&quot;dataContext&quot;)" methodname="Invalid_configuration_preserves_the_current_View_and_activation" classname="Sim.Faciem.Tests.NavigationOutcomeTests" runstate="Runnable" seed="1910230775" result="Passed" start-time="2026-10-20 09:20:20Z" end-time="2026-10-20 09:20:20Z" duration="0.020735" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+              </test-suite>
+              <test-suite type="ParameterizedMethod" id="1094" name="Latest_queued_supersession_does_not_construct_or_restart_and_uncooperative_entry_retains_ownership" fullname="Sim.Faciem.Tests.NavigationOutcomeTests.Latest_queued_supersession_does_not_construct_or_restart_and_uncooperative_entry_retains_ownership" classname="Sim.Faciem.Tests.NavigationOutcomeTests" runstate="Runnable" testcasecount="3" result="Passed" start-time="2026-10-20 09:20:20Z" end-time="2026-10-20 09:20:20Z" duration="0.062143" total="3" passed="3" failed="0" inconclusive="0" skipped="0" asserts="0">
+                <properties />
+                <test-case id="1091" name="Latest_queued_supersession_does_not_construct_or_restart_and_uncooperative_entry_retains_ownership(&quot;navigate&quot;)" fullname="Sim.Faciem.Tests.NavigationOutcomeTests.Latest_queued_supersession_does_not_construct_or_restart_and_uncooperative_entry_retains_ownership(&quot;navigate&quot;)" methodname="Latest_queued_supersession_does_not_construct_or_restart_and_uncooperative_entry_retains_ownership" classname="Sim.Faciem.Tests.NavigationOutcomeTests" runstate="Runnable" seed="1110099628" result="Passed" start-time="2026-10-20 09:20:20Z" end-time="2026-10-20 09:20:20Z" duration="0.017785" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1092" name="Latest_queued_supersession_does_not_construct_or_restart_and_uncooperative_entry_retains_ownership(&quot;clear&quot;)" fullname="Sim.Faciem.Tests.NavigationOutcomeTests.Latest_queued_supersession_does_not_construct_or_restart_and_uncooperative_entry_retains_ownership(&quot;clear&quot;)" methodname="Latest_queued_supersession_does_not_construct_or_restart_and_uncooperative_entry_retains_ownership" classname="Sim.Faciem.Tests.NavigationOutcomeTests" runstate="Runnable" seed="212703939" result="Passed" start-time="2026-10-20 09:20:20Z" end-time="2026-10-20 09:20:20Z" duration="0.016094" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1093" name="Latest_queued_supersession_does_not_construct_or_restart_and_uncooperative_entry_retains_ownership(&quot;reentry&quot;)" fullname="Sim.Faciem.Tests.NavigationOutcomeTests.Latest_queued_supersession_does_not_construct_or_restart_and_uncooperative_entry_retains_ownership(&quot;reentry&quot;)" methodname="Latest_queued_supersession_does_not_construct_or_restart_and_uncooperative_entry_retains_ownership" classname="Sim.Faciem.Tests.NavigationOutcomeTests" runstate="Runnable" seed="546435344" result="Passed" start-time="2026-10-20 09:20:20Z" end-time="2026-10-20 09:20:20Z" duration="0.018171" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+              </test-suite>
+              <test-suite type="ParameterizedMethod" id="1048" name="Missing_lookup_is_explicit_and_does_not_dispatch" fullname="Sim.Faciem.Tests.NavigationOutcomeTests.Missing_lookup_is_explicit_and_does_not_dispatch" classname="Sim.Faciem.Tests.NavigationOutcomeTests" runstate="Runnable" testcasecount="2" result="Passed" start-time="2026-10-20 09:20:20Z" end-time="2026-10-20 09:20:20Z" duration="0.038705" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
+                <properties />
+                <test-case id="1046" name="Missing_lookup_is_explicit_and_does_not_dispatch(False)" fullname="Sim.Faciem.Tests.NavigationOutcomeTests.Missing_lookup_is_explicit_and_does_not_dispatch(False)" methodname="Missing_lookup_is_explicit_and_does_not_dispatch" classname="Sim.Faciem.Tests.NavigationOutcomeTests" runstate="Runnable" seed="1309843774" result="Passed" start-time="2026-10-20 09:20:20Z" end-time="2026-10-20 09:20:20Z" duration="0.017755" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1047" name="Missing_lookup_is_explicit_and_does_not_dispatch(True)" fullname="Sim.Faciem.Tests.NavigationOutcomeTests.Missing_lookup_is_explicit_and_does_not_dispatch(True)" methodname="Missing_lookup_is_explicit_and_does_not_dispatch" classname="Sim.Faciem.Tests.NavigationOutcomeTests" runstate="Runnable" seed="1255285180" result="Passed" start-time="2026-10-20 09:20:20Z" end-time="2026-10-20 09:20:20Z" duration="0.015322" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+              </test-suite>
+              <test-suite type="ParameterizedMethod" id="1060" name="Multi_view_configuration_is_unsupported_not_success" fullname="Sim.Faciem.Tests.NavigationOutcomeTests.Multi_view_configuration_is_unsupported_not_success" classname="Sim.Faciem.Tests.NavigationOutcomeTests" runstate="Runnable" testcasecount="2" result="Passed" start-time="2026-10-20 09:20:20Z" end-time="2026-10-20 09:20:20Z" duration="0.037263" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
+                <properties />
+                <test-case id="1058" name="Multi_view_configuration_is_unsupported_not_success(False)" fullname="Sim.Faciem.Tests.NavigationOutcomeTests.Multi_view_configuration_is_unsupported_not_success(False)" methodname="Multi_view_configuration_is_unsupported_not_success" classname="Sim.Faciem.Tests.NavigationOutcomeTests" runstate="Runnable" seed="1443790549" result="Passed" start-time="2026-10-20 09:20:20Z" end-time="2026-10-20 09:20:20Z" duration="0.017154" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1059" name="Multi_view_configuration_is_unsupported_not_success(True)" fullname="Sim.Faciem.Tests.NavigationOutcomeTests.Multi_view_configuration_is_unsupported_not_success(True)" methodname="Multi_view_configuration_is_unsupported_not_success" classname="Sim.Faciem.Tests.NavigationOutcomeTests" runstate="Runnable" seed="2011887874" result="Passed" start-time="2026-10-20 09:20:20Z" end-time="2026-10-20 09:20:20Z" duration="0.014814" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+              </test-suite>
+              <test-case id="1095" name="Opted_in_latest_requests_do_not_cancel_a_FIFO_predecessor" fullname="Sim.Faciem.Tests.NavigationOutcomeTests.Opted_in_latest_requests_do_not_cancel_a_FIFO_predecessor" methodname="Opted_in_latest_requests_do_not_cancel_a_FIFO_predecessor" classname="Sim.Faciem.Tests.NavigationOutcomeTests" runstate="Runnable" seed="610575407" result="Passed" start-time="2026-10-20 09:20:20Z" end-time="2026-10-20 09:20:20Z" duration="0.015042" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1108" name="Partial_multi_Region_exit_failure_is_contained_without_touching_unowned_Region" fullname="Sim.Faciem.Tests.NavigationOutcomeTests.Partial_multi_Region_exit_failure_is_contained_without_touching_unowned_Region" methodname="Partial_multi_Region_exit_failure_is_contained_without_touching_unowned_Region" classname="Sim.Faciem.Tests.NavigationOutcomeTests" runstate="Runnable" seed="1513542318" result="Passed" start-time="2026-10-20 09:20:20Z" end-time="2026-10-20 09:20:20Z" duration="0.016137" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1110" name="Partial_shared_cohort_reentry_reports_invalid_configuration_before_restart_mutation" fullname="Sim.Faciem.Tests.NavigationOutcomeTests.Partial_shared_cohort_reentry_reports_invalid_configuration_before_restart_mutation" methodname="Partial_shared_cohort_reentry_reports_invalid_configuration_before_restart_mutation" classname="Sim.Faciem.Tests.NavigationOutcomeTests" runstate="Runnable" seed="2146814117" result="Passed" start-time="2026-10-20 09:20:20Z" end-time="2026-10-20 09:20:20Z" duration="0.014693" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1062" name="Result_and_legacy_calls_share_cached_trees_models_and_ordinary_same_ID_semantics" fullname="Sim.Faciem.Tests.NavigationOutcomeTests.Result_and_legacy_calls_share_cached_trees_models_and_ordinary_same_ID_semantics" methodname="Result_and_legacy_calls_share_cached_trees_models_and_ordinary_same_ID_semantics" classname="Sim.Faciem.Tests.NavigationOutcomeTests" runstate="Runnable" seed="784102389" result="Passed" start-time="2026-10-20 09:20:20Z" end-time="2026-10-20 09:20:20Z" duration="0.015831" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1103" name="Scoped_independent_navigation_succeeds_and_a_dependency_cycle_is_an_explicit_result" fullname="Sim.Faciem.Tests.NavigationOutcomeTests.Scoped_independent_navigation_succeeds_and_a_dependency_cycle_is_an_explicit_result" methodname="Scoped_independent_navigation_succeeds_and_a_dependency_cycle_is_an_explicit_result" classname="Sim.Faciem.Tests.NavigationOutcomeTests" runstate="Runnable" seed="1622307938" result="Passed" start-time="2026-10-20 09:20:20Z" end-time="2026-10-20 09:20:20Z" duration="0.016207" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-suite type="ParameterizedMethod" id="1102" name="Scoped_result_reentrancy_after_await_is_rejected_without_deadlock_or_state_change" fullname="Sim.Faciem.Tests.NavigationOutcomeTests.Scoped_result_reentrancy_after_await_is_rejected_without_deadlock_or_state_change" classname="Sim.Faciem.Tests.NavigationOutcomeTests" runstate="Runnable" testcasecount="2" result="Passed" start-time="2026-10-20 09:20:20Z" end-time="2026-10-20 09:20:20Z" duration="0.044814" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
+                <properties />
+                <test-case id="1100" name="Scoped_result_reentrancy_after_await_is_rejected_without_deadlock_or_state_change(False)" fullname="Sim.Faciem.Tests.NavigationOutcomeTests.Scoped_result_reentrancy_after_await_is_rejected_without_deadlock_or_state_change(False)" methodname="Scoped_result_reentrancy_after_await_is_rejected_without_deadlock_or_state_change" classname="Sim.Faciem.Tests.NavigationOutcomeTests" runstate="Runnable" seed="541743234" result="Passed" start-time="2026-10-20 09:20:20Z" end-time="2026-10-20 09:20:20Z" duration="0.017464" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1101" name="Scoped_result_reentrancy_after_await_is_rejected_without_deadlock_or_state_change(True)" fullname="Sim.Faciem.Tests.NavigationOutcomeTests.Scoped_result_reentrancy_after_await_is_rejected_without_deadlock_or_state_change(True)" methodname="Scoped_result_reentrancy_after_await_is_rejected_without_deadlock_or_state_change" classname="Sim.Faciem.Tests.NavigationOutcomeTests" runstate="Runnable" seed="664969191" result="Passed" start-time="2026-10-20 09:20:20Z" end-time="2026-10-20 09:20:20Z" duration="0.015438" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+              </test-suite>
+              <test-case id="1107" name="Shared_multi_Region_entry_failure_contains_the_whole_owned_group_and_cleans_each_logical_model_once" fullname="Sim.Faciem.Tests.NavigationOutcomeTests.Shared_multi_Region_entry_failure_contains_the_whole_owned_group_and_cleans_each_logical_model_once" methodname="Shared_multi_Region_entry_failure_contains_the_whole_owned_group_and_cleans_each_logical_model_once" classname="Sim.Faciem.Tests.NavigationOutcomeTests" runstate="Runnable" seed="203179369" result="Failed" start-time="2026-10-20 09:20:20Z" end-time="2026-10-20 09:20:20Z" duration="0.022258" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+                <failure>
+                  <message><![CDATA[  Expected: 1
+  But was:  2
+]]></message>
+                  <stack-trace><![CDATA[at Sim.Faciem.Tests.NavigationOutcomeTests.Shared_multi_Region_entry_failure_contains_the_whole_owned_group_and_cleans_each_logical_model_once () [0x0013d] in C:\Users\DPast\Documents\Projects\ReviewWorktrees\sim-faciem-navigation-phase4\Tests\Editor\NavigationOutcomeTests.cs:729
+]]></stack-trace>
+                </failure>
+              </test-case>
+              <test-suite type="ParameterizedMethod" id="1083" name="User_cancellation_is_not_misreported_as_supersession" fullname="Sim.Faciem.Tests.NavigationOutcomeTests.User_cancellation_is_not_misreported_as_supersession" classname="Sim.Faciem.Tests.NavigationOutcomeTests" runstate="Runnable" testcasecount="2" result="Failed" site="Child" start-time="2026-10-20 09:20:20Z" end-time="2026-10-20 09:20:20Z" duration="0.040046" total="2" passed="0" failed="2" inconclusive="0" skipped="0" asserts="0">
+                <properties />
+                <failure>
+                  <message><![CDATA[One or more child tests had errors]]></message>
+                </failure>
+                <test-case id="1081" name="User_cancellation_is_not_misreported_as_supersession(False)" fullname="Sim.Faciem.Tests.NavigationOutcomeTests.User_cancellation_is_not_misreported_as_supersession(False)" methodname="User_cancellation_is_not_misreported_as_supersession" classname="Sim.Faciem.Tests.NavigationOutcomeTests" runstate="Runnable" seed="1397860356" result="Failed" start-time="2026-10-20 09:20:20Z" end-time="2026-10-20 09:20:20Z" duration="0.017732" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                  <failure>
+                    <message><![CDATA[  Expected: same as <System.OperationCanceledException: application cancellation, not LatestRequestWins
+  at Sim.Faciem.Tests.NavigationOutcomeTests+<>c__DisplayClass34_0.<User_cancellation_is_not_misreported_as_supersession>b__2 (System.String _, Sim.Faciem.NavigationActivation _) [0x00000] in C:\Users\DPast\Documents\Projects\ReviewWorktrees\sim-faciem-navigation-phase4\Tests\Editor\NavigationOutcomeTests.cs:417 
+  at (wrapper delegate-invoke) System.Func`3[System.String,Sim.Faciem.NavigationActivation,Cysharp.Threading.Tasks.UniTask].invoke_TResult_T1_T2(string,Sim.Faciem.NavigationActivation)
+  at Sim.Faciem.Tests.NavigationOutcomeTests+Model.NavigateTo (Sim.Faciem.NavigationParameters parameters) [0x00156] in C:\Users\DPast\Documents\Projects\ReviewWorktrees\sim-faciem-navigation-phase4\Tests\Editor\NavigationOutcomeTests.cs:1114 >
+  But was:  <System.OperationCanceledException: The operation was canceled.
+  at Cysharp.Threading.Tasks.UniTask+CanceledResultSource.GetResult (System.Int16 token) [0x00001] in .\Library\PackageCache\com.cysharp.unitask@bf35135da627\Runtime\UniTask.Factory.cs:419 
+  at Cysharp.Threading.Tasks.UniTask+Awaiter.GetResult () [0x00015] in .\Library\PackageCache\com.cysharp.unitask@bf35135da627\Runtime\UniTask.cs:316 
+  at Sim.Faciem.NavigationService.NavigateToOwned (Sim.Faciem.IRegionManager regionManager, Sim.Faciem.IRegion[] regions, Sim.Faciem.ViewIdAsset viewAsset, Sim.Faciem.ViewId viewId, Sim.Faciem.NavigationParameters parameters, Sim.Faciem.Internal.RegionNavigationOperations+Operation operation, Sim.Faciem.NavigationEntryMode entryMode, Sim.Faciem.Internal.NavigationExecution execution) [0x00c8c] in C:\Users\DPast\Documents\Projects\ReviewWorktrees\sim-faciem-navigation-phase4\Runtime\NavigationService.cs:252 >
+]]></message>
+                    <stack-trace><![CDATA[at Sim.Faciem.Tests.NavigationOutcomeTests.User_cancellation_is_not_misreported_as_supersession (System.Boolean exit) [0x000b6] in C:\Users\DPast\Documents\Projects\ReviewWorktrees\sim-faciem-navigation-phase4\Tests\Editor\NavigationOutcomeTests.cs:421
+]]></stack-trace>
+                  </failure>
+                </test-case>
+                <test-case id="1082" name="User_cancellation_is_not_misreported_as_supersession(True)" fullname="Sim.Faciem.Tests.NavigationOutcomeTests.User_cancellation_is_not_misreported_as_supersession(True)" methodname="User_cancellation_is_not_misreported_as_supersession" classname="Sim.Faciem.Tests.NavigationOutcomeTests" runstate="Runnable" seed="1139339184" result="Failed" start-time="2026-10-20 09:20:20Z" end-time="2026-10-20 09:20:20Z" duration="0.015357" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                  <failure>
+                    <message><![CDATA[  Expected: same as <System.OperationCanceledException: application cancellation, not LatestRequestWins
+  at Sim.Faciem.Tests.NavigationOutcomeTests+<>c__DisplayClass34_0.<User_cancellation_is_not_misreported_as_supersession>b__0 () [0x00000] in C:\Users\DPast\Documents\Projects\ReviewWorktrees\sim-faciem-navigation-phase4\Tests\Editor\NavigationOutcomeTests.cs:413 
+  at (wrapper delegate-invoke) System.Func`1[Cysharp.Threading.Tasks.UniTask].invoke_TResult()
+  at Sim.Faciem.Tests.NavigationOutcomeTests+Model.NavigateAway () [0x00081] in C:\Users\DPast\Documents\Projects\ReviewWorktrees\sim-faciem-navigation-phase4\Tests\Editor\NavigationOutcomeTests.cs:1124 >
+  But was:  <System.OperationCanceledException: The operation was canceled.
+  at Cysharp.Threading.Tasks.UniTask+CanceledResultSource.GetResult (System.Int16 token) [0x00001] in .\Library\PackageCache\com.cysharp.unitask@bf35135da627\Runtime\UniTask.Factory.cs:419 
+  at Cysharp.Threading.Tasks.UniTask+Awaiter.GetResult () [0x00015] in .\Library\PackageCache\com.cysharp.unitask@bf35135da627\Runtime\UniTask.cs:316 
+  at Sim.Faciem.NavigationService.ClearOwned (Sim.Faciem.IRegion[] regions, Sim.Faciem.Internal.RegionNavigationOperations+Operation operation, Sim.Faciem.Internal.NavigationExecution execution) [0x001ac] in C:\Users\DPast\Documents\Projects\ReviewWorktrees\sim-faciem-navigation-phase4\Runtime\NavigationService.cs:467 >
+]]></message>
+                    <stack-trace><![CDATA[at Sim.Faciem.Tests.NavigationOutcomeTests.User_cancellation_is_not_misreported_as_supersession (System.Boolean exit) [0x000b6] in C:\Users\DPast\Documents\Projects\ReviewWorktrees\sim-faciem-navigation-phase4\Tests\Editor\NavigationOutcomeTests.cs:421
+]]></stack-trace>
+                  </failure>
+                </test-case>
+              </test-suite>
+            </test-suite>
+            <test-suite type="TestFixture" id="1114" name="NavigationReentryTests" fullname="Sim.Faciem.Tests.NavigationReentryTests" classname="Sim.Faciem.Tests.NavigationReentryTests" runstate="Runnable" testcasecount="35" result="Passed" start-time="2026-10-20 09:20:20Z" end-time="2026-10-20 09:20:21Z" duration="0.667236" total="35" passed="35" failed="0" inconclusive="0" skipped="0" asserts="0">
+              <properties />
+              <test-case id="1121" name="Captured_pre_reentry_work_cannot_publish_to_the_new_activation" fullname="Sim.Faciem.Tests.NavigationReentryTests.Captured_pre_reentry_work_cannot_publish_to_the_new_activation" methodname="Captured_pre_reentry_work_cannot_publish_to_the_new_activation" classname="Sim.Faciem.Tests.NavigationReentryTests" runstate="Runnable" seed="236937006" result="Passed" start-time="2026-10-20 09:20:20Z" end-time="2026-10-20 09:20:20Z" duration="0.020443" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1158" name="Entry_mode_validation_and_custom_service_compatibility_are_explicit" fullname="Sim.Faciem.Tests.NavigationReentryTests.Entry_mode_validation_and_custom_service_compatibility_are_explicit" methodname="Entry_mode_validation_and_custom_service_compatibility_are_explicit" classname="Sim.Faciem.Tests.NavigationReentryTests" runstate="Runnable" seed="795533167" result="Passed" start-time="2026-10-20 09:20:20Z" end-time="2026-10-20 09:20:20Z" duration="0.015641" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-suite type="ParameterizedMethod" id="1156" name="Executing_group_reentry_supersession_drains_before_only_the_winner_activates" fullname="Sim.Faciem.Tests.NavigationReentryTests.Executing_group_reentry_supersession_drains_before_only_the_winner_activates" classname="Sim.Faciem.Tests.NavigationReentryTests" runstate="Runnable" testcasecount="2" result="Passed" start-time="2026-10-20 09:20:20Z" end-time="2026-10-20 09:20:20Z" duration="0.042322" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
+                <properties />
+                <test-case id="1154" name="Executing_group_reentry_supersession_drains_before_only_the_winner_activates(False)" fullname="Sim.Faciem.Tests.NavigationReentryTests.Executing_group_reentry_supersession_drains_before_only_the_winner_activates(False)" methodname="Executing_group_reentry_supersession_drains_before_only_the_winner_activates" classname="Sim.Faciem.Tests.NavigationReentryTests" runstate="Runnable" seed="200809300" result="Passed" start-time="2026-10-20 09:20:20Z" end-time="2026-10-20 09:20:20Z" duration="0.018285" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1155" name="Executing_group_reentry_supersession_drains_before_only_the_winner_activates(True)" fullname="Sim.Faciem.Tests.NavigationReentryTests.Executing_group_reentry_supersession_drains_before_only_the_winner_activates(True)" methodname="Executing_group_reentry_supersession_drains_before_only_the_winner_activates" classname="Sim.Faciem.Tests.NavigationReentryTests" runstate="Runnable" seed="1701745414" result="Passed" start-time="2026-10-20 09:20:20Z" end-time="2026-10-20 09:20:20Z" duration="0.016265" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+              </test-suite>
+              <test-suite type="ParameterizedMethod" id="1120" name="Explicit_reentry_reuses_cached_objects_with_fresh_activation_and_exact_order" fullname="Sim.Faciem.Tests.NavigationReentryTests.Explicit_reentry_reuses_cached_objects_with_fresh_activation_and_exact_order" classname="Sim.Faciem.Tests.NavigationReentryTests" runstate="Runnable" testcasecount="2" result="Passed" start-time="2026-10-20 09:20:20Z" end-time="2026-10-20 09:20:20Z" duration="0.038415" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
+                <properties />
+                <test-case id="1118" name="Explicit_reentry_reuses_cached_objects_with_fresh_activation_and_exact_order(Fifo)" fullname="Sim.Faciem.Tests.NavigationReentryTests.Explicit_reentry_reuses_cached_objects_with_fresh_activation_and_exact_order(Fifo)" methodname="Explicit_reentry_reuses_cached_objects_with_fresh_activation_and_exact_order" classname="Sim.Faciem.Tests.NavigationReentryTests" runstate="Runnable" seed="297769924" result="Passed" start-time="2026-10-20 09:20:20Z" end-time="2026-10-20 09:20:20Z" duration="0.017094" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1119" name="Explicit_reentry_reuses_cached_objects_with_fresh_activation_and_exact_order(LatestRequestWins)" fullname="Sim.Faciem.Tests.NavigationReentryTests.Explicit_reentry_reuses_cached_objects_with_fresh_activation_and_exact_order(LatestRequestWins)" methodname="Explicit_reentry_reuses_cached_objects_with_fresh_activation_and_exact_order" classname="Sim.Faciem.Tests.NavigationReentryTests" runstate="Runnable" seed="1258326778" result="Passed" start-time="2026-10-20 09:20:20Z" end-time="2026-10-20 09:20:20Z" duration="0.015202" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+              </test-suite>
+              <test-case id="1151" name="Heterogeneous_cached_models_reject_group_reentry_before_mutation" fullname="Sim.Faciem.Tests.NavigationReentryTests.Heterogeneous_cached_models_reject_group_reentry_before_mutation" methodname="Heterogeneous_cached_models_reject_group_reentry_before_mutation" classname="Sim.Faciem.Tests.NavigationReentryTests" runstate="Runnable" seed="1399134102" result="Passed" start-time="2026-10-20 09:20:20Z" end-time="2026-10-20 09:20:20Z" duration="0.016752" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1122" name="Inactive_target_and_queued_state_changes_follow_ordinary_entry_without_extra_exit" fullname="Sim.Faciem.Tests.NavigationReentryTests.Inactive_target_and_queued_state_changes_follow_ordinary_entry_without_extra_exit" methodname="Inactive_target_and_queued_state_changes_follow_ordinary_entry_without_extra_exit" classname="Sim.Faciem.Tests.NavigationReentryTests" runstate="Runnable" seed="1101940925" result="Passed" start-time="2026-10-20 09:20:20Z" end-time="2026-10-20 09:20:20Z" duration="0.015991" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1148" name="Independent_regions_reenter_concurrently_without_cross_cancellation" fullname="Sim.Faciem.Tests.NavigationReentryTests.Independent_regions_reenter_concurrently_without_cross_cancellation" methodname="Independent_regions_reenter_concurrently_without_cross_cancellation" classname="Sim.Faciem.Tests.NavigationReentryTests" runstate="Runnable" seed="438980874" result="Passed" start-time="2026-10-20 09:20:20Z" end-time="2026-10-20 09:20:20Z" duration="0.015700" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1157" name="Mixed_group_exits_each_old_model_before_restoring_the_shared_requested_cache" fullname="Sim.Faciem.Tests.NavigationReentryTests.Mixed_group_exits_each_old_model_before_restoring_the_shared_requested_cache" methodname="Mixed_group_exits_each_old_model_before_restoring_the_shared_requested_cache" classname="Sim.Faciem.Tests.NavigationReentryTests" runstate="Runnable" seed="37694172" result="Passed" start-time="2026-10-20 09:20:20Z" end-time="2026-10-20 09:20:20Z" duration="0.014790" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1159" name="Multi_view_region_reentry_is_not_silently_treated_as_success" fullname="Sim.Faciem.Tests.NavigationReentryTests.Multi_view_region_reentry_is_not_silently_treated_as_success" methodname="Multi_view_region_reentry_is_not_silently_treated_as_success" classname="Sim.Faciem.Tests.NavigationReentryTests" runstate="Runnable" seed="1956564884" result="Passed" start-time="2026-10-20 09:20:20Z" end-time="2026-10-20 09:20:20Z" duration="0.015095" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-suite type="ParameterizedMethod" id="1117" name="Ordinary_same_ViewId_preserves_activation_even_with_different_parameters" fullname="Sim.Faciem.Tests.NavigationReentryTests.Ordinary_same_ViewId_preserves_activation_even_with_different_parameters" classname="Sim.Faciem.Tests.NavigationReentryTests" runstate="Runnable" testcasecount="2" result="Passed" start-time="2026-10-20 09:20:20Z" end-time="2026-10-20 09:20:20Z" duration="0.039411" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
+                <properties />
+                <test-case id="1115" name="Ordinary_same_ViewId_preserves_activation_even_with_different_parameters(False)" fullname="Sim.Faciem.Tests.NavigationReentryTests.Ordinary_same_ViewId_preserves_activation_even_with_different_parameters(False)" methodname="Ordinary_same_ViewId_preserves_activation_even_with_different_parameters" classname="Sim.Faciem.Tests.NavigationReentryTests" runstate="Runnable" seed="1739776451" result="Passed" start-time="2026-10-20 09:20:20Z" end-time="2026-10-20 09:20:20Z" duration="0.015668" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1116" name="Ordinary_same_ViewId_preserves_activation_even_with_different_parameters(True)" fullname="Sim.Faciem.Tests.NavigationReentryTests.Ordinary_same_ViewId_preserves_activation_even_with_different_parameters(True)" methodname="Ordinary_same_ViewId_preserves_activation_even_with_different_parameters" classname="Sim.Faciem.Tests.NavigationReentryTests" runstate="Runnable" seed="421365604" result="Passed" start-time="2026-10-20 09:20:20Z" end-time="2026-10-20 09:20:20Z" duration="0.015105" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+              </test-suite>
+              <test-case id="1150" name="Partial_shared_cohort_reentry_rejects_without_resetting_any_member" fullname="Sim.Faciem.Tests.NavigationReentryTests.Partial_shared_cohort_reentry_rejects_without_resetting_any_member" methodname="Partial_shared_cohort_reentry_rejects_without_resetting_any_member" classname="Sim.Faciem.Tests.NavigationReentryTests" runstate="Runnable" seed="1850307587" result="Passed" start-time="2026-10-20 09:20:20Z" end-time="2026-10-20 09:20:20Z" duration="0.017092" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-suite type="ParameterizedMethod" id="1128" name="Reentry_and_another_View_respect_FIFO_order" fullname="Sim.Faciem.Tests.NavigationReentryTests.Reentry_and_another_View_respect_FIFO_order" classname="Sim.Faciem.Tests.NavigationReentryTests" runstate="Runnable" testcasecount="2" result="Passed" start-time="2026-10-20 09:20:20Z" end-time="2026-10-20 09:20:20Z" duration="0.039721" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
+                <properties />
+                <test-case id="1126" name="Reentry_and_another_View_respect_FIFO_order(True)" fullname="Sim.Faciem.Tests.NavigationReentryTests.Reentry_and_another_View_respect_FIFO_order(True)" methodname="Reentry_and_another_View_respect_FIFO_order" classname="Sim.Faciem.Tests.NavigationReentryTests" runstate="Runnable" seed="1368776259" result="Passed" start-time="2026-10-20 09:20:20Z" end-time="2026-10-20 09:20:20Z" duration="0.017642" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1127" name="Reentry_and_another_View_respect_FIFO_order(False)" fullname="Sim.Faciem.Tests.NavigationReentryTests.Reentry_and_another_View_respect_FIFO_order(False)" methodname="Reentry_and_another_View_respect_FIFO_order" classname="Sim.Faciem.Tests.NavigationReentryTests" runstate="Runnable" seed="260845822" result="Passed" start-time="2026-10-20 09:20:20Z" end-time="2026-10-20 09:20:20Z" duration="0.015270" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+              </test-suite>
+              <test-suite type="ParameterizedMethod" id="1125" name="Reentry_and_Clear_respect_FIFO_order" fullname="Sim.Faciem.Tests.NavigationReentryTests.Reentry_and_Clear_respect_FIFO_order" classname="Sim.Faciem.Tests.NavigationReentryTests" runstate="Runnable" testcasecount="2" result="Passed" start-time="2026-10-20 09:20:20Z" end-time="2026-10-20 09:20:20Z" duration="0.037540" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
+                <properties />
+                <test-case id="1123" name="Reentry_and_Clear_respect_FIFO_order(True)" fullname="Sim.Faciem.Tests.NavigationReentryTests.Reentry_and_Clear_respect_FIFO_order(True)" methodname="Reentry_and_Clear_respect_FIFO_order" classname="Sim.Faciem.Tests.NavigationReentryTests" runstate="Runnable" seed="1966991584" result="Passed" start-time="2026-10-20 09:20:20Z" end-time="2026-10-20 09:20:20Z" duration="0.016691" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1124" name="Reentry_and_Clear_respect_FIFO_order(False)" fullname="Sim.Faciem.Tests.NavigationReentryTests.Reentry_and_Clear_respect_FIFO_order(False)" methodname="Reentry_and_Clear_respect_FIFO_order" classname="Sim.Faciem.Tests.NavigationReentryTests" runstate="Runnable" seed="1893225845" result="Passed" start-time="2026-10-20 09:20:20Z" end-time="2026-10-20 09:20:20Z" duration="0.015872" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+              </test-suite>
+              <test-suite type="ParameterizedMethod" id="1143" name="Reentry_failures_end_owned_resources_and_allow_queue_recovery" fullname="Sim.Faciem.Tests.NavigationReentryTests.Reentry_failures_end_owned_resources_and_allow_queue_recovery" classname="Sim.Faciem.Tests.NavigationReentryTests" runstate="Runnable" testcasecount="3" result="Passed" start-time="2026-10-20 09:20:20Z" end-time="2026-10-20 09:20:20Z" duration="0.060469" total="3" passed="3" failed="0" inconclusive="0" skipped="0" asserts="0">
+                <properties />
+                <test-case id="1140" name="Reentry_failures_end_owned_resources_and_allow_queue_recovery(&quot;Away&quot;)" fullname="Sim.Faciem.Tests.NavigationReentryTests.Reentry_failures_end_owned_resources_and_allow_queue_recovery(&quot;Away&quot;)" methodname="Reentry_failures_end_owned_resources_and_allow_queue_recovery" classname="Sim.Faciem.Tests.NavigationReentryTests" runstate="Runnable" seed="1312846790" result="Passed" start-time="2026-10-20 09:20:20Z" end-time="2026-10-20 09:20:20Z" duration="0.017154" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1141" name="Reentry_failures_end_owned_resources_and_allow_queue_recovery(&quot;To&quot;)" fullname="Sim.Faciem.Tests.NavigationReentryTests.Reentry_failures_end_owned_resources_and_allow_queue_recovery(&quot;To&quot;)" methodname="Reentry_failures_end_owned_resources_and_allow_queue_recovery" classname="Sim.Faciem.Tests.NavigationReentryTests" runstate="Runnable" seed="662459611" result="Passed" start-time="2026-10-20 09:20:20Z" end-time="2026-10-20 09:20:20Z" duration="0.017823" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1142" name="Reentry_failures_end_owned_resources_and_allow_queue_recovery(&quot;Cleanup&quot;)" fullname="Sim.Faciem.Tests.NavigationReentryTests.Reentry_failures_end_owned_resources_and_allow_queue_recovery(&quot;Cleanup&quot;)" methodname="Reentry_failures_end_owned_resources_and_allow_queue_recovery" classname="Sim.Faciem.Tests.NavigationReentryTests" runstate="Runnable" seed="146498851" result="Passed" start-time="2026-10-20 09:20:20Z" end-time="2026-10-20 09:20:20Z" duration="0.016563" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+              </test-suite>
+              <test-case id="1147" name="Scoped_handle_outside_a_callback_can_request_reentry" fullname="Sim.Faciem.Tests.NavigationReentryTests.Scoped_handle_outside_a_callback_can_request_reentry" methodname="Scoped_handle_outside_a_callback_can_request_reentry" classname="Sim.Faciem.Tests.NavigationReentryTests" runstate="Runnable" seed="569617203" result="Passed" start-time="2026-10-20 09:20:20Z" end-time="2026-10-20 09:20:20Z" duration="0.017783" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-suite type="ParameterizedMethod" id="1146" name="Scoped_lifecycle_reentry_is_rejected_before_superseding_legitimate_work" fullname="Sim.Faciem.Tests.NavigationReentryTests.Scoped_lifecycle_reentry_is_rejected_before_superseding_legitimate_work" classname="Sim.Faciem.Tests.NavigationReentryTests" runstate="Runnable" testcasecount="2" result="Passed" start-time="2026-10-20 09:20:20Z" end-time="2026-10-20 09:20:21Z" duration="0.039724" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
+                <properties />
+                <test-case id="1144" name="Scoped_lifecycle_reentry_is_rejected_before_superseding_legitimate_work(False)" fullname="Sim.Faciem.Tests.NavigationReentryTests.Scoped_lifecycle_reentry_is_rejected_before_superseding_legitimate_work(False)" methodname="Scoped_lifecycle_reentry_is_rejected_before_superseding_legitimate_work" classname="Sim.Faciem.Tests.NavigationReentryTests" runstate="Runnable" seed="1341409311" result="Passed" start-time="2026-10-20 09:20:20Z" end-time="2026-10-20 09:20:21Z" duration="0.017175" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1145" name="Scoped_lifecycle_reentry_is_rejected_before_superseding_legitimate_work(True)" fullname="Sim.Faciem.Tests.NavigationReentryTests.Scoped_lifecycle_reentry_is_rejected_before_superseding_legitimate_work(True)" methodname="Scoped_lifecycle_reentry_is_rejected_before_superseding_legitimate_work" classname="Sim.Faciem.Tests.NavigationReentryTests" runstate="Runnable" seed="677730851" result="Passed" start-time="2026-10-20 09:20:21Z" end-time="2026-10-20 09:20:21Z" duration="0.015470" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+              </test-suite>
+              <test-case id="1152" name="Shared_model_busy_in_an_unowned_region_cannot_be_reset" fullname="Sim.Faciem.Tests.NavigationReentryTests.Shared_model_busy_in_an_unowned_region_cannot_be_reset" methodname="Shared_model_busy_in_an_unowned_region_cannot_be_reset" classname="Sim.Faciem.Tests.NavigationReentryTests" runstate="Runnable" seed="37984728" result="Passed" start-time="2026-10-20 09:20:21Z" end-time="2026-10-20 09:20:21Z" duration="0.017221" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-suite type="ParameterizedMethod" id="1136" name="Superseded_executing_exit_never_creates_its_new_activation" fullname="Sim.Faciem.Tests.NavigationReentryTests.Superseded_executing_exit_never_creates_its_new_activation" classname="Sim.Faciem.Tests.NavigationReentryTests" runstate="Runnable" testcasecount="3" result="Passed" start-time="2026-10-20 09:20:21Z" end-time="2026-10-20 09:20:21Z" duration="0.057307" total="3" passed="3" failed="0" inconclusive="0" skipped="0" asserts="0">
+                <properties />
+                <test-case id="1133" name="Superseded_executing_exit_never_creates_its_new_activation(&quot;A&quot;)" fullname="Sim.Faciem.Tests.NavigationReentryTests.Superseded_executing_exit_never_creates_its_new_activation(&quot;A&quot;)" methodname="Superseded_executing_exit_never_creates_its_new_activation" classname="Sim.Faciem.Tests.NavigationReentryTests" runstate="Runnable" seed="1819380742" result="Passed" start-time="2026-10-20 09:20:21Z" end-time="2026-10-20 09:20:21Z" duration="0.019017" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1134" name="Superseded_executing_exit_never_creates_its_new_activation(&quot;B&quot;)" fullname="Sim.Faciem.Tests.NavigationReentryTests.Superseded_executing_exit_never_creates_its_new_activation(&quot;B&quot;)" methodname="Superseded_executing_exit_never_creates_its_new_activation" classname="Sim.Faciem.Tests.NavigationReentryTests" runstate="Runnable" seed="277575904" result="Passed" start-time="2026-10-20 09:20:21Z" end-time="2026-10-20 09:20:21Z" duration="0.015703" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1135" name="Superseded_executing_exit_never_creates_its_new_activation(&quot;Clear&quot;)" fullname="Sim.Faciem.Tests.NavigationReentryTests.Superseded_executing_exit_never_creates_its_new_activation(&quot;Clear&quot;)" methodname="Superseded_executing_exit_never_creates_its_new_activation" classname="Sim.Faciem.Tests.NavigationReentryTests" runstate="Runnable" seed="77750620" result="Passed" start-time="2026-10-20 09:20:21Z" end-time="2026-10-20 09:20:21Z" duration="0.015974" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+              </test-suite>
+              <test-case id="1153" name="Superseded_queued_group_reentry_does_not_partially_reset_the_cohort" fullname="Sim.Faciem.Tests.NavigationReentryTests.Superseded_queued_group_reentry_does_not_partially_reset_the_cohort" methodname="Superseded_queued_group_reentry_does_not_partially_reset_the_cohort" classname="Sim.Faciem.Tests.NavigationReentryTests" runstate="Runnable" seed="877993104" result="Passed" start-time="2026-10-20 09:20:21Z" end-time="2026-10-20 09:20:21Z" duration="0.017517" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-suite type="ParameterizedMethod" id="1132" name="Superseded_queued_reentry_cannot_reset_current_activation" fullname="Sim.Faciem.Tests.NavigationReentryTests.Superseded_queued_reentry_cannot_reset_current_activation" classname="Sim.Faciem.Tests.NavigationReentryTests" runstate="Runnable" testcasecount="3" result="Passed" start-time="2026-10-20 09:20:21Z" end-time="2026-10-20 09:20:21Z" duration="0.054996" total="3" passed="3" failed="0" inconclusive="0" skipped="0" asserts="0">
+                <properties />
+                <test-case id="1129" name="Superseded_queued_reentry_cannot_reset_current_activation(&quot;A&quot;)" fullname="Sim.Faciem.Tests.NavigationReentryTests.Superseded_queued_reentry_cannot_reset_current_activation(&quot;A&quot;)" methodname="Superseded_queued_reentry_cannot_reset_current_activation" classname="Sim.Faciem.Tests.NavigationReentryTests" runstate="Runnable" seed="1243456663" result="Passed" start-time="2026-10-20 09:20:21Z" end-time="2026-10-20 09:20:21Z" duration="0.016405" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1130" name="Superseded_queued_reentry_cannot_reset_current_activation(&quot;B&quot;)" fullname="Sim.Faciem.Tests.NavigationReentryTests.Superseded_queued_reentry_cannot_reset_current_activation(&quot;B&quot;)" methodname="Superseded_queued_reentry_cannot_reset_current_activation" classname="Sim.Faciem.Tests.NavigationReentryTests" runstate="Runnable" seed="542647990" result="Passed" start-time="2026-10-20 09:20:21Z" end-time="2026-10-20 09:20:21Z" duration="0.016256" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1131" name="Superseded_queued_reentry_cannot_reset_current_activation(&quot;Clear&quot;)" fullname="Sim.Faciem.Tests.NavigationReentryTests.Superseded_queued_reentry_cannot_reset_current_activation(&quot;Clear&quot;)" methodname="Superseded_queued_reentry_cannot_reset_current_activation" classname="Sim.Faciem.Tests.NavigationReentryTests" runstate="Runnable" seed="1129406160" result="Passed" start-time="2026-10-20 09:20:21Z" end-time="2026-10-20 09:20:21Z" duration="0.015022" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+              </test-suite>
+              <test-suite type="ParameterizedMethod" id="1139" name="Superseded_reentry_entry_drains_without_ending_the_winners_activation" fullname="Sim.Faciem.Tests.NavigationReentryTests.Superseded_reentry_entry_drains_without_ending_the_winners_activation" classname="Sim.Faciem.Tests.NavigationReentryTests" runstate="Runnable" testcasecount="2" result="Passed" start-time="2026-10-20 09:20:21Z" end-time="2026-10-20 09:20:21Z" duration="0.043974" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
+                <properties />
+                <test-case id="1137" name="Superseded_reentry_entry_drains_without_ending_the_winners_activation(True)" fullname="Sim.Faciem.Tests.NavigationReentryTests.Superseded_reentry_entry_drains_without_ending_the_winners_activation(True)" methodname="Superseded_reentry_entry_drains_without_ending_the_winners_activation" classname="Sim.Faciem.Tests.NavigationReentryTests" runstate="Runnable" seed="1696967253" result="Passed" start-time="2026-10-20 09:20:21Z" end-time="2026-10-20 09:20:21Z" duration="0.021183" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1138" name="Superseded_reentry_entry_drains_without_ending_the_winners_activation(False)" fullname="Sim.Faciem.Tests.NavigationReentryTests.Superseded_reentry_entry_drains_without_ending_the_winners_activation(False)" methodname="Superseded_reentry_entry_drains_without_ending_the_winners_activation" classname="Sim.Faciem.Tests.NavigationReentryTests" runstate="Runnable" seed="2080699426" result="Passed" start-time="2026-10-20 09:20:21Z" end-time="2026-10-20 09:20:21Z" duration="0.015767" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+              </test-suite>
+              <test-case id="1149" name="Whole_shared_cohort_reentry_exits_once_and_preserves_each_cached_tree" fullname="Sim.Faciem.Tests.NavigationReentryTests.Whole_shared_cohort_reentry_exits_once_and_preserves_each_cached_tree" methodname="Whole_shared_cohort_reentry_exits_once_and_preserves_each_cached_tree" classname="Sim.Faciem.Tests.NavigationReentryTests" runstate="Runnable" seed="947226056" result="Passed" start-time="2026-10-20 09:20:21Z" end-time="2026-10-20 09:20:21Z" duration="0.017202" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+            </test-suite>
+            <test-suite type="TestFixture" id="1160" name="NavigationSerializationTests" fullname="Sim.Faciem.Tests.NavigationSerializationTests" classname="Sim.Faciem.Tests.NavigationSerializationTests" runstate="Runnable" testcasecount="18" result="Passed" start-time="2026-10-20 09:20:21Z" end-time="2026-10-20 09:20:21Z" duration="0.368394" total="18" passed="18" failed="0" inconclusive="0" skipped="0" asserts="0">
+              <properties />
+              <test-case id="1161" name="A_B_A_reuses_real_mounted_views_models_and_lifecycle_order" fullname="Sim.Faciem.Tests.NavigationSerializationTests.A_B_A_reuses_real_mounted_views_models_and_lifecycle_order" methodname="A_B_A_reuses_real_mounted_views_models_and_lifecycle_order" classname="Sim.Faciem.Tests.NavigationSerializationTests" runstate="Runnable" seed="559010672" result="Passed" start-time="2026-10-20 09:20:21Z" end-time="2026-10-20 09:20:21Z" duration="0.021227" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1166" name="Awaited_entry_finishes_before_next_request_constructs_or_mutates" fullname="Sim.Faciem.Tests.NavigationSerializationTests.Awaited_entry_finishes_before_next_request_constructs_or_mutates" methodname="Awaited_entry_finishes_before_next_request_constructs_or_mutates" classname="Sim.Faciem.Tests.NavigationSerializationTests" runstate="Runnable" seed="1736349976" result="Passed" start-time="2026-10-20 09:20:21Z" end-time="2026-10-20 09:20:21Z" duration="0.016854" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1180" name="Clear_retains_cache_and_already_active_navigation_still_calls_To" fullname="Sim.Faciem.Tests.NavigationSerializationTests.Clear_retains_cache_and_already_active_navigation_still_calls_To" methodname="Clear_retains_cache_and_already_active_navigation_still_calls_To" classname="Sim.Faciem.Tests.NavigationSerializationTests" runstate="Runnable" seed="977758870" result="Passed" start-time="2026-10-20 09:20:21Z" end-time="2026-10-20 09:20:21Z" duration="0.016812" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1168" name="Different_navigation_service_instances_still_serialize_the_same_region" fullname="Sim.Faciem.Tests.NavigationSerializationTests.Different_navigation_service_instances_still_serialize_the_same_region" methodname="Different_navigation_service_instances_still_serialize_the_same_region" classname="Sim.Faciem.Tests.NavigationSerializationTests" runstate="Runnable" seed="805076188" result="Passed" start-time="2026-10-20 09:20:21Z" end-time="2026-10-20 09:20:21Z" duration="0.017596" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1167" name="Independent_regions_with_the_same_name_can_navigate_concurrently" fullname="Sim.Faciem.Tests.NavigationSerializationTests.Independent_regions_with_the_same_name_can_navigate_concurrently" methodname="Independent_regions_with_the_same_name_can_navigate_concurrently" classname="Sim.Faciem.Tests.NavigationSerializationTests" runstate="Runnable" seed="1311922268" result="Passed" start-time="2026-10-20 09:20:21Z" end-time="2026-10-20 09:20:21Z" duration="0.015996" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1176" name="Indirect_cross_region_lifecycle_cycle_is_rejected_without_deadlock" fullname="Sim.Faciem.Tests.NavigationSerializationTests.Indirect_cross_region_lifecycle_cycle_is_rejected_without_deadlock" methodname="Indirect_cross_region_lifecycle_cycle_is_rejected_without_deadlock" classname="Sim.Faciem.Tests.NavigationSerializationTests" runstate="Runnable" seed="456262313" result="Passed" start-time="2026-10-20 09:20:21Z" end-time="2026-10-20 09:20:21Z" duration="0.019267" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1175" name="Lifecycle_can_await_navigation_to_an_independent_child_region" fullname="Sim.Faciem.Tests.NavigationSerializationTests.Lifecycle_can_await_navigation_to_an_independent_child_region" methodname="Lifecycle_can_await_navigation_to_an_independent_child_region" classname="Sim.Faciem.Tests.NavigationSerializationTests" runstate="Runnable" seed="1062512925" result="Passed" start-time="2026-10-20 09:20:21Z" end-time="2026-10-20 09:20:21Z" duration="0.019141" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-suite type="ParameterizedMethod" id="1179" name="Lifecycle_failure_does_not_poison_queued_successors" fullname="Sim.Faciem.Tests.NavigationSerializationTests.Lifecycle_failure_does_not_poison_queued_successors" classname="Sim.Faciem.Tests.NavigationSerializationTests" runstate="Runnable" testcasecount="2" result="Passed" start-time="2026-10-20 09:20:21Z" end-time="2026-10-20 09:20:21Z" duration="0.050604" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
+                <properties />
+                <test-case id="1177" name="Lifecycle_failure_does_not_poison_queued_successors(True)" fullname="Sim.Faciem.Tests.NavigationSerializationTests.Lifecycle_failure_does_not_poison_queued_successors(True)" methodname="Lifecycle_failure_does_not_poison_queued_successors" classname="Sim.Faciem.Tests.NavigationSerializationTests" runstate="Runnable" seed="806897018" result="Passed" start-time="2026-10-20 09:20:21Z" end-time="2026-10-20 09:20:21Z" duration="0.019296" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1178" name="Lifecycle_failure_does_not_poison_queued_successors(False)" fullname="Sim.Faciem.Tests.NavigationSerializationTests.Lifecycle_failure_does_not_poison_queued_successors(False)" methodname="Lifecycle_failure_does_not_poison_queued_successors" classname="Sim.Faciem.Tests.NavigationSerializationTests" runstate="Runnable" seed="1464074677" result="Passed" start-time="2026-10-20 09:20:21Z" end-time="2026-10-20 09:20:21Z" duration="0.019322" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+              </test-suite>
+              <test-suite type="ParameterizedMethod" id="1165" name="Navigate_and_Clear_share_the_same_queue" fullname="Sim.Faciem.Tests.NavigationSerializationTests.Navigate_and_Clear_share_the_same_queue" classname="Sim.Faciem.Tests.NavigationSerializationTests" runstate="Runnable" testcasecount="2" result="Passed" start-time="2026-10-20 09:20:21Z" end-time="2026-10-20 09:20:21Z" duration="0.045480" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
+                <properties />
+                <test-case id="1163" name="Navigate_and_Clear_share_the_same_queue(True)" fullname="Sim.Faciem.Tests.NavigationSerializationTests.Navigate_and_Clear_share_the_same_queue(True)" methodname="Navigate_and_Clear_share_the_same_queue" classname="Sim.Faciem.Tests.NavigationSerializationTests" runstate="Runnable" seed="2049449867" result="Passed" start-time="2026-10-20 09:20:21Z" end-time="2026-10-20 09:20:21Z" duration="0.020809" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1164" name="Navigate_and_Clear_share_the_same_queue(False)" fullname="Sim.Faciem.Tests.NavigationSerializationTests.Navigate_and_Clear_share_the_same_queue(False)" methodname="Navigate_and_Clear_share_the_same_queue" classname="Sim.Faciem.Tests.NavigationSerializationTests" runstate="Runnable" seed="1209443569" result="Passed" start-time="2026-10-20 09:20:21Z" end-time="2026-10-20 09:20:21Z" duration="0.017129" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+              </test-suite>
+              <test-case id="1162" name="Overlapping_navigations_wait_in_FIFO_order" fullname="Sim.Faciem.Tests.NavigationSerializationTests.Overlapping_navigations_wait_in_FIFO_order" methodname="Overlapping_navigations_wait_in_FIFO_order" classname="Sim.Faciem.Tests.NavigationSerializationTests" runstate="Runnable" seed="1906673254" result="Passed" start-time="2026-10-20 09:20:21Z" end-time="2026-10-20 09:20:21Z" duration="0.018905" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1181" name="Overlapping_region_groups_reserve_shared_identity_without_lock_order_deadlock" fullname="Sim.Faciem.Tests.NavigationSerializationTests.Overlapping_region_groups_reserve_shared_identity_without_lock_order_deadlock" methodname="Overlapping_region_groups_reserve_shared_identity_without_lock_order_deadlock" classname="Sim.Faciem.Tests.NavigationSerializationTests" runstate="Runnable" seed="966056454" result="Passed" start-time="2026-10-20 09:20:21Z" end-time="2026-10-20 09:20:21Z" duration="0.017648" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-suite type="ParameterizedMethod" id="1173" name="Same_region_scoped_reentrancy_after_await_is_rejected" fullname="Sim.Faciem.Tests.NavigationSerializationTests.Same_region_scoped_reentrancy_after_await_is_rejected" classname="Sim.Faciem.Tests.NavigationSerializationTests" runstate="Runnable" testcasecount="4" result="Passed" start-time="2026-10-20 09:20:21Z" end-time="2026-10-20 09:20:21Z" duration="0.078634" total="4" passed="4" failed="0" inconclusive="0" skipped="0" asserts="0">
+                <properties />
+                <test-case id="1169" name="Same_region_scoped_reentrancy_after_await_is_rejected(False,False)" fullname="Sim.Faciem.Tests.NavigationSerializationTests.Same_region_scoped_reentrancy_after_await_is_rejected(False,False)" methodname="Same_region_scoped_reentrancy_after_await_is_rejected" classname="Sim.Faciem.Tests.NavigationSerializationTests" runstate="Runnable" seed="215599948" result="Passed" start-time="2026-10-20 09:20:21Z" end-time="2026-10-20 09:20:21Z" duration="0.017721" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1170" name="Same_region_scoped_reentrancy_after_await_is_rejected(False,True)" fullname="Sim.Faciem.Tests.NavigationSerializationTests.Same_region_scoped_reentrancy_after_await_is_rejected(False,True)" methodname="Same_region_scoped_reentrancy_after_await_is_rejected" classname="Sim.Faciem.Tests.NavigationSerializationTests" runstate="Runnable" seed="1196952650" result="Passed" start-time="2026-10-20 09:20:21Z" end-time="2026-10-20 09:20:21Z" duration="0.016893" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1171" name="Same_region_scoped_reentrancy_after_await_is_rejected(True,False)" fullname="Sim.Faciem.Tests.NavigationSerializationTests.Same_region_scoped_reentrancy_after_await_is_rejected(True,False)" methodname="Same_region_scoped_reentrancy_after_await_is_rejected" classname="Sim.Faciem.Tests.NavigationSerializationTests" runstate="Runnable" seed="1729831461" result="Passed" start-time="2026-10-20 09:20:21Z" end-time="2026-10-20 09:20:21Z" duration="0.017582" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1172" name="Same_region_scoped_reentrancy_after_await_is_rejected(True,True)" fullname="Sim.Faciem.Tests.NavigationSerializationTests.Same_region_scoped_reentrancy_after_await_is_rejected(True,True)" methodname="Same_region_scoped_reentrancy_after_await_is_rejected" classname="Sim.Faciem.Tests.NavigationSerializationTests" runstate="Runnable" seed="530419407" result="Passed" start-time="2026-10-20 09:20:21Z" end-time="2026-10-20 09:20:21Z" duration="0.016529" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+              </test-suite>
+              <test-case id="1174" name="Scoped_navigation_after_callback_completion_is_an_ordinary_request" fullname="Sim.Faciem.Tests.NavigationSerializationTests.Scoped_navigation_after_callback_completion_is_an_ordinary_request" methodname="Scoped_navigation_after_callback_completion_is_an_ordinary_request" classname="Sim.Faciem.Tests.NavigationSerializationTests" runstate="Runnable" seed="505573244" result="Passed" start-time="2026-10-20 09:20:21Z" end-time="2026-10-20 09:20:21Z" duration="0.020159" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+            </test-suite>
+            <test-suite type="TestFixture" id="1182" name="ViewModelDisposalTests" fullname="Sim.Faciem.Tests.ViewModelDisposalTests" classname="Sim.Faciem.Tests.ViewModelDisposalTests" runstate="Runnable" testcasecount="8" result="Passed" start-time="2026-10-20 09:20:21Z" end-time="2026-10-20 09:20:21Z" duration="0.020846" total="8" passed="8" failed="0" inconclusive="0" skipped="0" asserts="0">
+              <properties />
+              <test-case id="1190" name="BagGrowthRetainsEveryOwnedResource" fullname="Sim.Faciem.Tests.ViewModelDisposalTests.BagGrowthRetainsEveryOwnedResource" methodname="BagGrowthRetainsEveryOwnedResource" classname="Sim.Faciem.Tests.ViewModelDisposalTests" runstate="Runnable" seed="267771854" result="Passed" start-time="2026-10-20 09:20:21Z" end-time="2026-10-20 09:20:21Z" duration="0.000522" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-suite type="ParameterizedMethod" id="1185" name="BaseAndInterfaceOwnersReleaseResourcesExactlyOnce" fullname="Sim.Faciem.Tests.ViewModelDisposalTests.BaseAndInterfaceOwnersReleaseResourcesExactlyOnce" classname="Sim.Faciem.Tests.ViewModelDisposalTests" runstate="Runnable" testcasecount="2" result="Passed" start-time="2026-10-20 09:20:21Z" end-time="2026-10-20 09:20:21Z" duration="0.004037" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
+                <properties />
+                <test-case id="1183" name="BaseAndInterfaceOwnersReleaseResourcesExactlyOnce(False)" fullname="Sim.Faciem.Tests.ViewModelDisposalTests.BaseAndInterfaceOwnersReleaseResourcesExactlyOnce(False)" methodname="BaseAndInterfaceOwnersReleaseResourcesExactlyOnce" classname="Sim.Faciem.Tests.ViewModelDisposalTests" runstate="Runnable" seed="343037437" result="Passed" start-time="2026-10-20 09:20:21Z" end-time="2026-10-20 09:20:21Z" duration="0.000255" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1184" name="BaseAndInterfaceOwnersReleaseResourcesExactlyOnce(True)" fullname="Sim.Faciem.Tests.ViewModelDisposalTests.BaseAndInterfaceOwnersReleaseResourcesExactlyOnce(True)" methodname="BaseAndInterfaceOwnersReleaseResourcesExactlyOnce" classname="Sim.Faciem.Tests.ViewModelDisposalTests" runstate="Runnable" seed="151264105" result="Passed" start-time="2026-10-20 09:20:21Z" end-time="2026-10-20 09:20:21Z" duration="0.000089" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+              </test-suite>
+              <test-case id="1191" name="BaseDisposalDetachesTheR3Subscription" fullname="Sim.Faciem.Tests.ViewModelDisposalTests.BaseDisposalDetachesTheR3Subscription" methodname="BaseDisposalDetachesTheR3Subscription" classname="Sim.Faciem.Tests.ViewModelDisposalTests" runstate="Runnable" seed="1557774716" result="Passed" start-time="2026-10-20 09:20:21Z" end-time="2026-10-20 09:20:21Z" duration="0.002403" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1187" name="DisposableContainerRegistrationUsesTheOwnedBag" fullname="Sim.Faciem.Tests.ViewModelDisposalTests.DisposableContainerRegistrationUsesTheOwnedBag" methodname="DisposableContainerRegistrationUsesTheOwnedBag" classname="Sim.Faciem.Tests.ViewModelDisposalTests" runstate="Runnable" seed="148123081" result="Passed" start-time="2026-10-20 09:20:21Z" end-time="2026-10-20 09:20:21Z" duration="0.000204" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1189" name="EachViewModelOwnsAnIndependentBag" fullname="Sim.Faciem.Tests.ViewModelDisposalTests.EachViewModelOwnsAnIndependentBag" methodname="EachViewModelOwnsAnIndependentBag" classname="Sim.Faciem.Tests.ViewModelDisposalTests" runstate="Runnable" seed="85948950" result="Passed" start-time="2026-10-20 09:20:21Z" end-time="2026-10-20 09:20:21Z" duration="0.000226" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1186" name="InheritedGenericViewModelUsesTheSameOwnedBag" fullname="Sim.Faciem.Tests.ViewModelDisposalTests.InheritedGenericViewModelUsesTheSameOwnedBag" methodname="InheritedGenericViewModelUsesTheSameOwnedBag" classname="Sim.Faciem.Tests.ViewModelDisposalTests" runstate="Runnable" seed="1947193907" result="Passed" start-time="2026-10-20 09:20:21Z" end-time="2026-10-20 09:20:21Z" duration="0.001038" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1188" name="ResourcesAddedAfterDisposalAreDisposedImmediately" fullname="Sim.Faciem.Tests.ViewModelDisposalTests.ResourcesAddedAfterDisposalAreDisposedImmediately" methodname="ResourcesAddedAfterDisposalAreDisposedImmediately" classname="Sim.Faciem.Tests.ViewModelDisposalTests" runstate="Runnable" seed="1941861612" result="Passed" start-time="2026-10-20 09:20:21Z" end-time="2026-10-20 09:20:21Z" duration="0.000146" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+                <output><![CDATA[Saving results to: C:\Users\DPast\Documents\Projects\ReviewWorktrees\faciem-nav-phase4-validation\Logs\unity-tests-editmode-20261020T091947737Z-73b5e8c70ca9412f.xml
+]]></output>
+              </test-case>
+            </test-suite>
+          </test-suite>
+        </test-suite>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>

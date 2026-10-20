@@ -1,0 +1,25 @@
+test=Partial_shared_cohort_reentry_reports_invalid_configuration_before_restart_mutation
+outcome=Passed
+primaryTraceCount=4
+PRIMARY MODELS
+A:model=1529127144:To=1:Away=0:Cleanup=0:FinalDispose=0:Activation=True
+TRACE (teardown begins at primaryTraceCount)
+A:To:input:lifetime=1523110400
+A:To.return
+result=Succeeded:stage=None:recovery=NotRequired:error=null
+result=InvalidConfiguration:stage=Validation:recovery=Preserved:error=System.InvalidOperationException: Re-entry requires all active Regions sharing the cached ViewModel to be targeted together.
+  at Sim.Faciem.BaseViewModel.ValidateReentryOwnership (System.Collections.Generic.IReadOnlyList`1[T] targets) [0x0004b] in C:\Users\DPast\Documents\Projects\ReviewWorktrees\sim-faciem-navigation-phase4\Runtime\BaseViewModel.cs:66 
+  at Sim.Faciem.NavigationService.RestartActiveTargets (Sim.Faciem.Internal.RegionNavigationOperations+Operation operation, Sim.Faciem.IRegion[] regions, Sim.Faciem.ViewId requestedId, Sim.Faciem.BaseViewModel targetModel, Sim.Faciem.Internal.NavigationExecution execution) [0x00159] in C:\Users\DPast\Documents\Projects\ReviewWorktrees\sim-faciem-navigation-phase4\Runtime\NavigationService.cs:385 
+  at Cysharp.Threading.Tasks.UniTask+ExceptionResultSource.GetResult (System.Int16 token) [0x0001e] in .\Library\PackageCache\com.cysharp.unitask@bf35135da627\Runtime\UniTask.Factory.cs:326 
+  at Cysharp.Threading.Tasks.UniTask+Awaiter.GetResult () [0x00015] in .\Library\PackageCache\com.cysharp.unitask@bf35135da627\Runtime\UniTask.cs:316 
+  at Sim.Faciem.NavigationService.NavigateToOwned (Sim.Faciem.IRegionManager regionManager, Sim.Faciem.IRegion[] regions, Sim.Faciem.ViewIdAsset viewAsset, Sim.Faciem.ViewId viewId, Sim.Faciem.NavigationParameters parameters, Sim.Faciem.Internal.RegionNavigationOperations+Operation operation, Sim.Faciem.NavigationEntryMode entryMode, Sim.Faciem.Internal.NavigationExecution execution) [0x00500] in C:\Users\DPast\Documents\Projects\ReviewWorktrees\sim-faciem-navigation-phase4\Runtime\NavigationService.cs:169 
+A:cleanup
+A:Away:activation=null
+A:Away.return
+result=Succeeded:stage=None:recovery=NotRequired:error=null
+result=NoOp:stage=None:recovery=NotRequired:error=null
+A:Away:activation=null
+A:Away.return
+result=Succeeded:stage=None:recovery=NotRequired:error=null
+FINAL MODELS
+A:model=1529127144:To=1:Away=2:Cleanup=1:FinalDispose=1:Activation=null

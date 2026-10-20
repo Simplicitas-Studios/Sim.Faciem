@@ -1,0 +1,25 @@
+test=Cooperative_cancellation_returns_a_superseded_result_only_after_callback_finally_runs
+outcome=Passed
+primaryTraceCount=6
+PRIMARY MODELS
+A:model=-1039538626:To=1:Away=0:Cleanup=1:FinalDispose=0:Activation=null
+B:model=1663158104:To=1:Away=0:Cleanup=0:FinalDispose=0:Activation=True
+TRACE (teardown begins at primaryTraceCount)
+A:To:input:lifetime=-1315434816
+A:cleanup
+result=Superseded:stage=Entry:recovery=Contained:error=System.OperationCanceledException: The operation was canceled.
+  at Cysharp.Threading.Tasks.UniTaskCompletionSourceCore`1[TResult].GetResult (System.Int16 token) [0x0004c] in .\Library\PackageCache\com.cysharp.unitask@bf35135da627\Runtime\UniTaskCompletionSource.cs:240 
+  at Cysharp.Threading.Tasks.CompilerServices.AsyncUniTask`1[TStateMachine].GetResult (System.Int16 token) [0x00002] in .\Library\PackageCache\com.cysharp.unitask@bf35135da627\Runtime\CompilerServices\StateMachineRunner.cs:218 
+  at Cysharp.Threading.Tasks.UniTask+Awaiter.GetResult () [0x00015] in .\Library\PackageCache\com.cysharp.unitask@bf35135da627\Runtime\UniTask.cs:316 
+  at Sim.Faciem.NavigationService.NavigateToOwned (Sim.Faciem.IRegionManager regionManager, Sim.Faciem.IRegion[] regions, Sim.Faciem.ViewIdAsset viewAsset, Sim.Faciem.ViewId viewId, Sim.Faciem.NavigationParameters parameters, Sim.Faciem.Internal.RegionNavigationOperations+Operation operation, Sim.Faciem.NavigationEntryMode entryMode, Sim.Faciem.Internal.NavigationExecution execution) [0x00c79] in C:\Users\DPast\Documents\Projects\ReviewWorktrees\sim-faciem-navigation-phase4\Runtime\NavigationService.cs:250 
+B:To:input:lifetime=2144379056
+B:To.return
+result=Succeeded:stage=None:recovery=NotRequired:error=null
+B:cleanup
+B:Away:activation=null
+B:Away.return
+result=Succeeded:stage=None:recovery=NotRequired:error=null
+result=NoOp:stage=None:recovery=NotRequired:error=null
+FINAL MODELS
+A:model=-1039538626:To=1:Away=0:Cleanup=1:FinalDispose=1:Activation=null
+B:model=1663158104:To=1:Away=1:Cleanup=1:FinalDispose=1:Activation=null

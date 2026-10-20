@@ -1,0 +1,317 @@
+{
+  "payloads": {
+    "Documentation~/evidence/navigation-phase4/.gitattributes": {
+      "sha256": "dcab8677dc60956728521439abfcae6702e50a51fd3edfecd9e066cc3406e56c",
+      "bytes": 169
+    },
+    "Documentation~/evidence/navigation-phase4/baseline.json": {
+      "sha256": "0b8b46e93008a4ec770d527794f1e0854a3f33e432fdeefe6253ccf530b5c43e",
+      "bytes": 904
+    },
+    "Documentation~/evidence/navigation-phase4/checks.json": {
+      "sha256": "3daad5ff2f898a93b6374cb2756ddcf00b6fa68a5e8f51e13699b0b4ac05aa97",
+      "bytes": 1492
+    },
+    "Documentation~/evidence/navigation-phase4/contracts.json": {
+      "sha256": "24073d0c944070fca874420a83428907f69ae179f8ae1f96b194941ea1918f45",
+      "bytes": 17323
+    },
+    "Documentation~/evidence/navigation-phase4/format.json": {
+      "sha256": "c425703f014f956139377744f17c8a12baa29d2371f559f205a9433d87f10acc",
+      "bytes": 1433
+    },
+    "Documentation~/evidence/navigation-phase4/preservation.json": {
+      "sha256": "fdf15aa9b7d9e66097b5031b96ca06495f30e3bfd65c565c6996f3e7177d0a9d",
+      "bytes": 34639
+    },
+    "Documentation~/evidence/navigation-phase4/runs.json": {
+      "sha256": "44aaa9c26d3aeb2d5feb0e009f96be36640406ec91b032b4e49e9d664aca7173",
+      "bytes": 39375
+    },
+    "Documentation~/evidence/navigation-phase4/tested-source-hashes.json": {
+      "sha256": "c777894a74cfe0296c1a497835ead31c4a0b2cc9cee0e5ea2831e2d0b946c44a",
+      "bytes": 42790
+    },
+    "Documentation~/evidence/navigation-phase4/validation-environment.json": {
+      "sha256": "badf068f94a15db49bd8bdd274eaae195de231dfd4d65a4f15244ce2bf0f6556",
+      "bytes": 2252
+    },
+    "Documentation~/evidence/navigation-phase4/initial/NavigationOutcomeTests.cs.txt": {
+      "sha256": "17f44f25391662a89b5773c2d2c89079dfa21950f865ba05386511b569c5faf5",
+      "bytes": 54296
+    },
+    "Documentation~/evidence/navigation-phase4/initial/NavigationService.cs.txt": {
+      "sha256": "2cdd20944e199fdb63b1a197202aa9e650518d42050f161c1ccf63762940be2d",
+      "bytes": 28019
+    },
+    "Documentation~/evidence/navigation-phase4/initial/source-hashes.json": {
+      "sha256": "560683f6bf0e23afa3abdb024b125982fbdfe842f916d24adfebf20e7338d50b",
+      "bytes": 8451
+    },
+    "Documentation~/evidence/navigation-phase4/runs/final-152.json": {
+      "sha256": "de00cc11f8e55e171c0801129dde0cb37a15b2c2208ab8608cbf0c2076cb2ceb",
+      "bytes": 26338
+    },
+    "Documentation~/evidence/navigation-phase4/runs/final-152.nunit.xml": {
+      "sha256": "87423010c2844ea9413d2bd499945553e0e7f2da605e13e7a08b5c2e7298c3fe",
+      "bytes": 142115
+    },
+    "Documentation~/evidence/navigation-phase4/runs/initial-148.json": {
+      "sha256": "c881d0dc1a2ea96f9badfe81b8edc9ab08ce30cf8adbfc5c76c2fbf5bc4bba76",
+      "bytes": 29819
+    },
+    "Documentation~/evidence/navigation-phase4/runs/initial-148.nunit.xml": {
+      "sha256": "9903de6e531dde3154678a6d86bcc17acd15301d3ab9e4e94fcc47009bad5158",
+      "bytes": 143737
+    },
+    "Documentation~/evidence/navigation-phase4/runs/intermediate-150.json": {
+      "sha256": "806dde0450b2e98b8efa716ef5be10602817b0d165b48ef34aea6f95ebb2788e",
+      "bytes": 25948
+    },
+    "Documentation~/evidence/navigation-phase4/runs/intermediate-150.nunit.xml": {
+      "sha256": "bd89ad54127b420ded8b5b00cb55573ce123aa6b889cc7ed682170a42450a31b",
+      "bytes": 139819
+    },
+    "Documentation~/evidence/navigation-phase4/traces/Busy_shared_model_rejects_an_independent_result_request_without_ending_the_owning_callback.txt": {
+      "sha256": "233e4d55b2ab80c2c1613b26baae4b9f117b61073f29a4d9918cf1c0d680565b",
+      "bytes": 2261
+    },
+    "Documentation~/evidence/navigation-phase4/traces/Callback_breaking_postconditions_is_not_success_and_foreign_state_is_not_overwritten__deactivate__.txt": {
+      "sha256": "201293ee03736e27bd566598d84e777dab48fab283f11c2230089ea412524eea",
+      "bytes": 1181
+    },
+    "Documentation~/evidence/navigation-phase4/traces/Callback_breaking_postconditions_is_not_success_and_foreign_state_is_not_overwritten__foreign-source__.txt": {
+      "sha256": "6b0e83c554013ff0456810e5628d698cc1bc062d38287857cac2d506609f1439",
+      "bytes": 1185
+    },
+    "Documentation~/evidence/navigation-phase4/traces/Callback_breaking_postconditions_is_not_success_and_foreign_state_is_not_overwritten__reparent__.txt": {
+      "sha256": "4d233ce908f8af57ce604c2d185b8cd7d0c175ea7e87dd2315a51006f4de63ae",
+      "bytes": 2543
+    },
+    "Documentation~/evidence/navigation-phase4/traces/Cleanup_failure_attempts_all_resources_and_reports_its_stage_without_replaying_Away__clear__.txt": {
+      "sha256": "7ce21e59997fa97300ce403c1e4de0dfa1dfb202b8ff91a8bba07024ee60be43",
+      "bytes": 4546
+    },
+    "Documentation~/evidence/navigation-phase4/traces/Cleanup_failure_attempts_all_resources_and_reports_its_stage_without_replaying_Away__navigate__.txt": {
+      "sha256": "86c6ed886208bda66ae15c10ec25469b8f769b52b8e78b57b9f68d188982ffcc",
+      "bytes": 4888
+    },
+    "Documentation~/evidence/navigation-phase4/traces/Cleanup_failure_attempts_all_resources_and_reports_its_stage_without_replaying_Away__reentry__.txt": {
+      "sha256": "ebe3c0342c77d65ff77b7e4c2cb615a294fb81d868ca62e5076af2d2c147f549",
+      "bytes": 5484
+    },
+    "Documentation~/evidence/navigation-phase4/traces/Commit_fault_before_or_after_real_mount_is_contained_including_unrecorded_visible_tree_False_.txt": {
+      "sha256": "3d5d7da6af9f0a3d66657e904d5c2ac74fa6627039559d8da8f30066ba4c773a",
+      "bytes": 2026
+    },
+    "Documentation~/evidence/navigation-phase4/traces/Commit_fault_before_or_after_real_mount_is_contained_including_unrecorded_visible_tree_True_.txt": {
+      "sha256": "f3ac8a212535bcff8ee284b910f6e0fd670e9ce3c41a4f40ab6f737a67d50a9a",
+      "bytes": 1887
+    },
+    "Documentation~/evidence/navigation-phase4/traces/Construction_failure_preserves_UI_but_does_not_undo_constructor_side_effects.txt": {
+      "sha256": "c5b8ac61caec56015a290516af42744ec5813cbc64e4eda897d86fbdab352433",
+      "bytes": 2273
+    },
+    "Documentation~/evidence/navigation-phase4/traces/Cooperative_cancellation_returns_a_superseded_result_only_after_callback_finally_runs.txt": {
+      "sha256": "80195edc46a4903eab309611c10fe5b55e1918cb95ef3efd183e6bf62205046d",
+      "bytes": 2018
+    },
+    "Documentation~/evidence/navigation-phase4/traces/Custom_services_remain_legacy_compatible_but_results_never_guess_success.txt": {
+      "sha256": "07ae2305fc6dbf7b12c291a63fddef255d2a1cad2184fcc2b6e64ff666934c12",
+      "bytes": 973
+    },
+    "Documentation~/evidence/navigation-phase4/traces/Empty_Clear_is_NoOp_only_after_its_FIFO_predecessor_drains.txt": {
+      "sha256": "c9a68519a26068735c38bdfef96cddbdb867675525ce41c3743f6cab9b185ffc",
+      "bytes": 743
+    },
+    "Documentation~/evidence/navigation-phase4/traces/Entry_and_containment_cleanup_failures_are_both_retained_without_early_successor_release.txt": {
+      "sha256": "5b9514fb804a88faf097c3dc7d34e9456051586eee4cf5d786c1f79f743ec395",
+      "bytes": 9161
+    },
+    "Documentation~/evidence/navigation-phase4/traces/Entry_failure_is_contained_and_recovery_reuses_cache_False_.txt": {
+      "sha256": "96e9775b1a731e8fe7a06ea5b6f8d41f3603dccbe74aa701de7cdc61f3db2cc4",
+      "bytes": 3305
+    },
+    "Documentation~/evidence/navigation-phase4/traces/Entry_failure_is_contained_and_recovery_reuses_cache_True_.txt": {
+      "sha256": "9a036fe7b0289336e5173d73d5d342645c9c3817ce218018e1c30af30c78e0e0",
+      "bytes": 3166
+    },
+    "Documentation~/evidence/navigation-phase4/traces/Executing_exit_must_drain_before_latest_winner_and_does_not_enter_obsolete_target_False_.txt": {
+      "sha256": "743811959d9e7957eb172f2a6f0be106d9b3dbe2c71cd83b7ab636d43b97c692",
+      "bytes": 1951
+    },
+    "Documentation~/evidence/navigation-phase4/traces/Executing_exit_must_drain_before_latest_winner_and_does_not_enter_obsolete_target_True_.txt": {
+      "sha256": "cb47d9417d21c7b629aa23979c966f700b008f319efe0077f45046e719c569aa",
+      "bytes": 1701
+    },
+    "Documentation~/evidence/navigation-phase4/traces/Exit_failure_does_not_resurrect_an_ended_activation_and_does_not_touch_independent_Region_False_.txt": {
+      "sha256": "5b565ec8eb8e53a00b2d30d1109a8c4f8289a55f2abe9837e8e3bb4287d79d7a",
+      "bytes": 4007
+    },
+    "Documentation~/evidence/navigation-phase4/traces/Exit_failure_does_not_resurrect_an_ended_activation_and_does_not_touch_independent_Region_True_.txt": {
+      "sha256": "3e4b340b5804f30696e8b28ab360bc14721a0131ba54ab7e74593fc8c22fd8c9",
+      "bytes": 3672
+    },
+    "Documentation~/evidence/navigation-phase4/traces/Explicit_reentry_result_keeps_identity_and_replaces_only_activation_lifetime_Fifo_.txt": {
+      "sha256": "c813b966177a3ab2f1d7f71c23a7b60557f04d16eaf6019ed502e8127aa62713",
+      "bytes": 760
+    },
+    "Documentation~/evidence/navigation-phase4/traces/Explicit_reentry_result_keeps_identity_and_replaces_only_activation_lifetime_LatestRequestWins_.txt": {
+      "sha256": "9fa7e29faf860d6f6dfd81d59c2ada92c3ed0a8a5da7805e0db9198dc63ae33b",
+      "bytes": 768
+    },
+    "Documentation~/evidence/navigation-phase4/traces/FIFO_successors_wait_for_the_actual_callback_return_even_when_it_will_fail_False_.txt": {
+      "sha256": "69bc5b037657624991a036a2b764ff5a35422ea8e7f2730c25e13cefbeca4398",
+      "bytes": 1267
+    },
+    "Documentation~/evidence/navigation-phase4/traces/FIFO_successors_wait_for_the_actual_callback_return_even_when_it_will_fail_True_.txt": {
+      "sha256": "e8ab4707bcb62bfabbd27a9ba2fe5a512e7ac50e9713c0998c3d02adfaf533a0",
+      "bytes": 4486
+    },
+    "Documentation~/evidence/navigation-phase4/traces/Foreign_active_source_in_later_Region_rejects_the_whole_group_before_any_exit.txt": {
+      "sha256": "a738898d443a8702b3947b4fec84e3594196bfae8d3360cf4fac390e49a72d06",
+      "bytes": 2227
+    },
+    "Documentation~/evidence/navigation-phase4/traces/Heterogeneous_target_caches_are_not_silently_rebound_or_reported_success_False_.txt": {
+      "sha256": "ede71a9ae8c79f377df45dc72aec86a2ffc773b3b5bb05570156347d6e833d78",
+      "bytes": 2217
+    },
+    "Documentation~/evidence/navigation-phase4/traces/Heterogeneous_target_caches_are_not_silently_rebound_or_reported_success_True_.txt": {
+      "sha256": "3a10f810a8bf712c7e3d08ba1d87c135d14e565130f9724593850a3da230a894",
+      "bytes": 2220
+    },
+    "Documentation~/evidence/navigation-phase4/traces/Injected_synchronous_preparation_fault_preserves_current_UI__after-detached-binding__.txt": {
+      "sha256": "7ed794228f8c62ca1e23907fefac8caad275b07b64a576ac180c5bb7e15d28bc",
+      "bytes": 2003
+    },
+    "Documentation~/evidence/navigation-phase4/traces/Injected_synchronous_preparation_fault_preserves_current_UI__before-create__.txt": {
+      "sha256": "d9888acce95ef9d11f7c25ec5ad65782949fc1d84391357a812ae7f8c79749f6",
+      "bytes": 1983
+    },
+    "Documentation~/evidence/navigation-phase4/traces/Invalid_configuration_preserves_the_current_View_and_activation__dataContext__.txt": {
+      "sha256": "d26c5a29e115829a7cbb273fc072eb997834d73201b86491a1ef0a17c9e36394",
+      "bytes": 1525
+    },
+    "Documentation~/evidence/navigation-phase4/traces/Invalid_configuration_preserves_the_current_View_and_activation__entryMode__.txt": {
+      "sha256": "5b2e266deb6bb8e96c9aaacbe11b526a16994c3e752c398ea291f513bcb4a833",
+      "bytes": 2276
+    },
+    "Documentation~/evidence/navigation-phase4/traces/Invalid_configuration_preserves_the_current_View_and_activation__id__.txt": {
+      "sha256": "dbe92b3a6146a6c6728c0462ef5ce2ee00b34273d3d1d7767a6352bb6dda18de",
+      "bytes": 2240
+    },
+    "Documentation~/evidence/navigation-phase4/traces/Invalid_configuration_preserves_the_current_View_and_activation__manager__.txt": {
+      "sha256": "13b6d185384375a0f298da61de929cf694985634d604793b31ce3b08ad422b45",
+      "bytes": 2241
+    },
+    "Documentation~/evidence/navigation-phase4/traces/Invalid_configuration_preserves_the_current_View_and_activation__parameters__.txt": {
+      "sha256": "59201b9aee544bdb08c8714bd16d600556bd0cef14d93da5d0981ef8c5872f02",
+      "bytes": 2246
+    },
+    "Documentation~/evidence/navigation-phase4/traces/Invalid_configuration_preserves_the_current_View_and_activation__policy__.txt": {
+      "sha256": "e08c72859918895775b047de6bbbc67d7f8dfba036edaaaec00e94adcfbaa9b5",
+      "bytes": 2275
+    },
+    "Documentation~/evidence/navigation-phase4/traces/Invalid_configuration_preserves_the_current_View_and_activation__template__.txt": {
+      "sha256": "9270dc06db0afee1f90007264780a52b7e60dc180edfa6baf5dfd2abe90c4533",
+      "bytes": 1521
+    },
+    "Documentation~/evidence/navigation-phase4/traces/Latest_queued_supersession_does_not_construct_or_restart_and_uncooperative_entry_retains_ownership__clear__.txt": {
+      "sha256": "30f35aa2dbcbd6c30c184e69353969ac2f96dd09b78ed4e3abfb1cd65c7cea32",
+      "bytes": 2727
+    },
+    "Documentation~/evidence/navigation-phase4/traces/Latest_queued_supersession_does_not_construct_or_restart_and_uncooperative_entry_retains_ownership__navigate__.txt": {
+      "sha256": "9a793dde21e1d90cc35e0aac3be46c3e1549a4e7e37585c21a7da7acc3e33a2d",
+      "bytes": 2972
+    },
+    "Documentation~/evidence/navigation-phase4/traces/Latest_queued_supersession_does_not_construct_or_restart_and_uncooperative_entry_retains_ownership__reentry__.txt": {
+      "sha256": "6f65c3af19b349eee50c8cf8591b66f32663fd15ce3d1b7b6dc5e5911f3ba689",
+      "bytes": 2829
+    },
+    "Documentation~/evidence/navigation-phase4/traces/Missing_lookup_is_explicit_and_does_not_dispatch_False_.txt": {
+      "sha256": "5504d839f70fd923a19c72e6b7547adf571724a94b7d910b458c9cfdde2ed603",
+      "bytes": 648
+    },
+    "Documentation~/evidence/navigation-phase4/traces/Missing_lookup_is_explicit_and_does_not_dispatch_True_.txt": {
+      "sha256": "7402330f0c14adaf0038a11681c9917d29b1a6f2889089364f4aa4145afe8a55",
+      "bytes": 719
+    },
+    "Documentation~/evidence/navigation-phase4/traces/Multi_view_configuration_is_unsupported_not_success_False_.txt": {
+      "sha256": "8816cf34c1ab2aeb82fb3bdc53a356852684609d454b80c20af1fff5cde2ab01",
+      "bytes": 1860
+    },
+    "Documentation~/evidence/navigation-phase4/traces/Multi_view_configuration_is_unsupported_not_success_True_.txt": {
+      "sha256": "502fcb0e26e391348fae113e92856dbe77a40e575111f44fdad2799dbec85efb",
+      "bytes": 1663
+    },
+    "Documentation~/evidence/navigation-phase4/traces/Opted_in_latest_requests_do_not_cancel_a_FIFO_predecessor.txt": {
+      "sha256": "578528d166fd709d3238e86149265da72d3f306a6b6656e0673dfeff2eed0b8d",
+      "bytes": 2028
+    },
+    "Documentation~/evidence/navigation-phase4/traces/Overlap_with_one_member_supersedes_and_contains_the_whole_executing_result_group.txt": {
+      "sha256": "874b9c5650ceb703e0a6ee278f749b74d9f1504908589d8625055e695525016b",
+      "bytes": 1735
+    },
+    "Documentation~/evidence/navigation-phase4/traces/Partial_multi_Region_exit_failure_is_contained_without_touching_unowned_Region.txt": {
+      "sha256": "1734a7f3c65f04e49f785a93e89acfc19f03d856b6d7f6fca86f48591d2914b7",
+      "bytes": 4153
+    },
+    "Documentation~/evidence/navigation-phase4/traces/Partial_shared_cohort_reentry_reports_invalid_configuration_before_restart_mutation.txt": {
+      "sha256": "504dcd9175372b76b429edd38601650c5b3fb46703daf32ec4852c1df33e2003",
+      "bytes": 2390
+    },
+    "Documentation~/evidence/navigation-phase4/traces/Result_and_legacy_calls_share_cached_trees_models_and_ordinary_same_ID_semantics.txt": {
+      "sha256": "940254d0f643e46674d5f62303271de4cba6dffa91ecd2765ec1e315ede8dd21",
+      "bytes": 1092
+    },
+    "Documentation~/evidence/navigation-phase4/traces/Scoped_independent_navigation_succeeds_and_a_dependency_cycle_is_an_explicit_result.txt": {
+      "sha256": "957317b6f4cba0a5addd46cc5713eea436bc1343b0122f9fc6a8fc9639d73784",
+      "bytes": 841
+    },
+    "Documentation~/evidence/navigation-phase4/traces/Scoped_result_reentrancy_after_await_is_rejected_without_deadlock_or_state_change_False_.txt": {
+      "sha256": "34d7547882d4d501f8ed4a4ba97ff8035c13533052474912dd0d394205b7f73f",
+      "bytes": 610
+    },
+    "Documentation~/evidence/navigation-phase4/traces/Scoped_result_reentrancy_after_await_is_rejected_without_deadlock_or_state_change_True_.txt": {
+      "sha256": "ba806a9bbc3fc6b832b42c8f8c5b3bfd5b254411e8ce155b249689376e9db97f",
+      "bytes": 608
+    },
+    "Documentation~/evidence/navigation-phase4/traces/Shared_multi_Region_entry_failure_contains_the_whole_owned_group_and_cleans_each_logical_model_once.txt": {
+      "sha256": "d3489b64069e6cad5f96e15df01929f71d0a3b820cfae229a2a02de152e40cf1",
+      "bytes": 3490
+    },
+    "Documentation~/evidence/navigation-phase4/traces/Source_corruption_during_an_earlier_exit_cannot_turn_a_partial_group_operation_into_success_False_.txt": {
+      "sha256": "4c6a15234c74f0fccf55711d9bdf09f2f154c87a4e5575c1bc2e3028c3c46d19",
+      "bytes": 2171
+    },
+    "Documentation~/evidence/navigation-phase4/traces/Source_corruption_during_an_earlier_exit_cannot_turn_a_partial_group_operation_into_success_True_.txt": {
+      "sha256": "543758662b60dd888e3771e58405344c7f64e74a5a71e026db984fbc2b31f714",
+      "bytes": 1833
+    },
+    "Documentation~/evidence/navigation-phase4/traces/User_cancellation_is_not_misreported_as_supersession_False_.txt": {
+      "sha256": "2a7c32038db211c0bf9aec00d67434594d8934f6bf5f9053066dd275549f8f49",
+      "bytes": 1444
+    },
+    "Documentation~/evidence/navigation-phase4/traces/User_cancellation_is_not_misreported_as_supersession_True_.txt": {
+      "sha256": "50fd2db76ac09de0f193d28f7e3576d40a4587735c7f42ac9b159497cac9a3bb",
+      "bytes": 1342
+    },
+    "Documentation~/evidence/navigation-phase4/initial/failing-traces/Shared_multi_Region_entry_failure_contains_the_whole_owned_group_and_cleans_each_logical_model_once.txt": {
+      "sha256": "90b46e7fdeb610a51a405e3a643b94ca982d3716bbf9eefc7c15c8f85e45caad",
+      "bytes": 15242
+    },
+    "Documentation~/evidence/navigation-phase4/initial/failing-traces/User_cancellation_is_not_misreported_as_supersession_False_.txt": {
+      "sha256": "4f856941cddf499216ec9d4702a19ae54ed590a580e0f75a1cd248b9e44a26ac",
+      "bytes": 1443
+    },
+    "Documentation~/evidence/navigation-phase4/initial/failing-traces/User_cancellation_is_not_misreported_as_supersession_True_.txt": {
+      "sha256": "1f5f67bbb9114180da6a00b6b6ee90c00c1e8c7a5cf7852849c08cc8e7ae90a0",
+      "bytes": 1341
+    }
+  },
+  "reportBytesNormalized": false,
+  "traceOnlyNormalizationRecordedIn": "runs.json",
+  "manifestExcludesItselfAndChangedFilesManifest": true,
+  "traceNameMapping": "Decode HTML entities in normalized test names before applying the fixture filename sanitizer; reports remain byte-exact.",
+  "exportNote": "Initial partial export stopped on quoted-parameter filename mapping; archived outside PR, mapping corrected, no test/source changes or test relaunch."
+}

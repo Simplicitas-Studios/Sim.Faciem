@@ -1,0 +1,19 @@
+test=Empty_Clear_is_NoOp_only_after_its_FIFO_predecessor_drains
+outcome=Passed
+primaryTraceCount=9
+PRIMARY MODELS
+A:model=-63710774:To=1:Away=1:Cleanup=1:FinalDispose=0:Activation=null
+TRACE (teardown begins at primaryTraceCount)
+result=NoOp:stage=None:recovery=NotRequired:error=null
+A:To:input:lifetime=244175764
+A:To.return
+A:cleanup
+A:Away:activation=null
+A:Away.return
+result=Succeeded:stage=None:recovery=NotRequired:error=null
+result=Succeeded:stage=None:recovery=NotRequired:error=null
+result=NoOp:stage=None:recovery=NotRequired:error=null
+result=NoOp:stage=None:recovery=NotRequired:error=null
+result=NoOp:stage=None:recovery=NotRequired:error=null
+FINAL MODELS
+A:model=-63710774:To=1:Away=1:Cleanup=1:FinalDispose=1:Activation=null

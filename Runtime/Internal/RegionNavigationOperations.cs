@@ -63,9 +63,14 @@ namespace Sim.Faciem.Internal
         }
 
         internal static async UniTask Run(IRegion[] regions, BaseViewModel caller,
-            Func<Operation, UniTask> action, NavigationPolicy policy = NavigationPolicy.Fifo)
+            Func<Operation, UniTask> action, NavigationPolicy policy = NavigationPolicy.Fifo,
+            NavigationExecution execution = null)
         {
             Operation operation = Reserve(regions, caller, policy);
+            if (execution != null)
+            {
+                execution.Operation = operation;
+            }
             try
             {
                 // Notify outside the bookkeeping lock; callbacks may submit more requests.

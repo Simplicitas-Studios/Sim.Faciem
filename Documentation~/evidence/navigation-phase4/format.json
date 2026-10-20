@@ -1,0 +1,43 @@
+{
+  "commands": [
+    [
+      "C:/Program Files/Unity/Hub/Editor/6000.6.5f1/Editor/Data/DotNetSdk/dotnet.exe",
+      "format",
+      "whitespace",
+      "C:\\Users\\DPast\\Documents\\Projects\\ReviewWorktrees\\sim-faciem-navigation-phase4",
+      "--folder",
+      "--include",
+      "Runtime/NavigationService.cs",
+      "Runtime/ViewModelNavigationService.cs",
+      "Runtime/Internal/RegionNavigationOperations.cs",
+      "Runtime/NavigationResult.cs",
+      "Runtime/NavigationResultExtensions.cs",
+      "Runtime/Internal/NavigationExecution.cs",
+      "Tests/Editor/NavigationOutcomeTests.cs",
+      "--verbosity",
+      "quiet"
+    ],
+    [
+      "C:/Program Files/Unity/Hub/Editor/6000.6.5f1/Editor/Data/DotNetSdk/dotnet.exe",
+      "format",
+      "whitespace",
+      "C:\\Users\\DPast\\Documents\\Projects\\ReviewWorktrees\\sim-faciem-navigation-phase4",
+      "--folder",
+      "--include",
+      "Runtime/NavigationService.cs",
+      "Runtime/ViewModelNavigationService.cs",
+      "Runtime/Internal/RegionNavigationOperations.cs",
+      "Runtime/NavigationResult.cs",
+      "Runtime/NavigationResultExtensions.cs",
+      "Runtime/Internal/NavigationExecution.cs",
+      "Tests/Editor/NavigationOutcomeTests.cs",
+      "--verbosity",
+      "quiet",
+      "--verify-no-changes"
+    ]
+  ],
+  "formatExitCode": 0,
+  "verifyExitCode": 0,
+  "formatOutput": "",
+  "verifyOutput": ""
+}
