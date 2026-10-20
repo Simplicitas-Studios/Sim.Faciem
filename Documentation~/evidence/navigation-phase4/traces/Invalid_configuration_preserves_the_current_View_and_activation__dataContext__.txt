@@ -1,0 +1,19 @@
+test=Invalid_configuration_preserves_the_current_View_and_activation("dataContext")
+outcome=Passed
+primaryTraceCount=4
+PRIMARY MODELS
+A:model=1533174614:To=1:Away=0:Cleanup=0:FinalDispose=0:Activation=True
+TRACE (teardown begins at primaryTraceCount)
+A:To:input:lifetime=-1669380472
+A:To.return
+result=Succeeded:stage=None:recovery=NotRequired:error=null
+result=InvalidConfiguration:stage=Validation:recovery=Preserved:error=System.InvalidOperationException: View template and resolvable data context are required.
+  at Sim.Faciem.Internal.NavigationExecution.Reject (Sim.Faciem.NavigationStatus status, System.String message) [0x0000d] in C:\Users\DPast\Documents\Projects\ReviewWorktrees\sim-faciem-navigation-phase4\Runtime\Internal\NavigationExecution.cs:53 
+  at Sim.Faciem.NavigationService.NavigateToOwned (Sim.Faciem.IRegionManager regionManager, Sim.Faciem.IRegion[] regions, Sim.Faciem.ViewIdAsset viewAsset, Sim.Faciem.ViewId viewId, Sim.Faciem.NavigationParameters parameters, Sim.Faciem.Internal.RegionNavigationOperations+Operation operation, Sim.Faciem.NavigationEntryMode entryMode, Sim.Faciem.Internal.NavigationExecution execution) [0x0017b] in C:\Users\DPast\Documents\Projects\ReviewWorktrees\sim-faciem-navigation-phase4\Runtime\NavigationService.cs:123 
+A:cleanup
+A:Away:activation=null
+A:Away.return
+result=Succeeded:stage=None:recovery=NotRequired:error=null
+result=NoOp:stage=None:recovery=NotRequired:error=null
+FINAL MODELS
+A:model=1533174614:To=1:Away=1:Cleanup=1:FinalDispose=1:Activation=null

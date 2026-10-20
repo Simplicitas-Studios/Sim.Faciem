@@ -1,0 +1,29 @@
+test=Construction_failure_preserves_UI_but_does_not_undo_constructor_side_effects
+outcome=Passed
+primaryTraceCount=10
+PRIMARY MODELS
+A:model=1405463894:To=1:Away=1:Cleanup=1:FinalDispose=0:Activation=null
+B:model=-1000367100:To=1:Away=0:Cleanup=0:FinalDispose=0:Activation=True
+TRACE (teardown begins at primaryTraceCount)
+A:To:input:lifetime=-402373764
+A:To.return
+result=Succeeded:stage=None:recovery=NotRequired:error=null
+result=Failed:stage=Construction:recovery=Preserved:error=System.InvalidOperationException: injected primary failure
+  at Sim.Faciem.Tests.NavigationOutcomeTests+<>c__DisplayClass27_0.<Construction_failure_preserves_UI_but_does_not_undo_constructor_side_effects>b__0 (System.Type type) [0x00026] in C:\Users\DPast\Documents\Projects\ReviewWorktrees\sim-faciem-navigation-phase4\Tests\Editor\NavigationOutcomeTests.cs:221 
+  at Sim.Faciem.Tests.NavigationOutcomeTests+Bridge.ResolveInstance (System.Type type) [0x00027] in C:\Users\DPast\Documents\Projects\ReviewWorktrees\sim-faciem-navigation-phase4\Tests\Editor\NavigationOutcomeTests.cs:1099 
+  at Sim.Faciem.ViewModelConstructionService.CreateInstance (System.Type type) [0x00008] in C:\Users\DPast\Documents\Projects\ReviewWorktrees\sim-faciem-navigation-phase4\Runtime\ViewModelConstructionService.cs:30 
+  at Sim.Faciem.NavigationService.NavigateToOwned (Sim.Faciem.IRegionManager regionManager, Sim.Faciem.IRegion[] regions, Sim.Faciem.ViewIdAsset viewAsset, Sim.Faciem.ViewId viewId, Sim.Faciem.NavigationParameters parameters, Sim.Faciem.Internal.RegionNavigationOperations+Operation operation, Sim.Faciem.NavigationEntryMode entryMode, Sim.Faciem.Internal.NavigationExecution execution) [0x0024a] in C:\Users\DPast\Documents\Projects\ReviewWorktrees\sim-faciem-navigation-phase4\Runtime\NavigationService.cs:136 
+A:cleanup
+A:Away:activation=null
+A:Away.return
+B:To:input:lifetime=806352312
+B:To.return
+result=Succeeded:stage=None:recovery=NotRequired:error=null
+B:cleanup
+B:Away:activation=null
+B:Away.return
+result=Succeeded:stage=None:recovery=NotRequired:error=null
+result=NoOp:stage=None:recovery=NotRequired:error=null
+FINAL MODELS
+A:model=1405463894:To=1:Away=1:Cleanup=1:FinalDispose=1:Activation=null
+B:model=-1000367100:To=1:Away=1:Cleanup=1:FinalDispose=1:Activation=null

@@ -1,0 +1,22 @@
+test=Invalid_configuration_preserves_the_current_View_and_activation("id")
+outcome=Passed
+primaryTraceCount=4
+PRIMARY MODELS
+A:model=-173255792:To=1:Away=0:Cleanup=0:FinalDispose=0:Activation=True
+TRACE (teardown begins at primaryTraceCount)
+A:To:input:lifetime=-1582295760
+A:To.return
+result=Succeeded:stage=None:recovery=NotRequired:error=null
+result=InvalidConfiguration:stage=Validation:recovery=Preserved:error=System.InvalidOperationException: Manager, ViewId and parameters are required.
+  at Sim.Faciem.Internal.NavigationExecution.Reject (Sim.Faciem.NavigationStatus status, System.String message) [0x0000d] in C:\Users\DPast\Documents\Projects\ReviewWorktrees\sim-faciem-navigation-phase4\Runtime\Internal\NavigationExecution.cs:53 
+  at Sim.Faciem.NavigationService.NavigateToFrom (Sim.Faciem.BaseViewModel caller, Sim.Faciem.IRegionManager regionManager, Sim.Faciem.ViewId viewId, Sim.Faciem.RegionName regionName, Sim.Faciem.NavigationParameters parameters, Sim.Faciem.NavigationPolicy policy, Sim.Faciem.NavigationEntryMode entryMode, Sim.Faciem.Internal.NavigationExecution execution) [0x000ca] in C:\Users\DPast\Documents\Projects\ReviewWorktrees\sim-faciem-navigation-phase4\Runtime\NavigationService.cs:71 
+  at Cysharp.Threading.Tasks.UniTask+ExceptionResultSource.GetResult (System.Int16 token) [0x0001e] in .\Library\PackageCache\com.cysharp.unitask@bf35135da627\Runtime\UniTask.Factory.cs:326 
+  at Cysharp.Threading.Tasks.UniTask+Awaiter.GetResult () [0x00015] in .\Library\PackageCache\com.cysharp.unitask@bf35135da627\Runtime\UniTask.cs:316 
+  at Sim.Faciem.NavigationService.NavigateResultFrom (Sim.Faciem.BaseViewModel caller, Sim.Faciem.IRegionManager manager, Sim.Faciem.ViewId id, Sim.Faciem.RegionName region, Sim.Faciem.NavigationParameters parameters, Sim.Faciem.NavigationPolicy policy, Sim.Faciem.NavigationEntryMode entryMode) [0x00067] in C:\Users\DPast\Documents\Projects\ReviewWorktrees\sim-faciem-navigation-phase4\Runtime\NavigationService.cs:38 
+A:cleanup
+A:Away:activation=null
+A:Away.return
+result=Succeeded:stage=None:recovery=NotRequired:error=null
+result=NoOp:stage=None:recovery=NotRequired:error=null
+FINAL MODELS
+A:model=-173255792:To=1:Away=1:Cleanup=1:FinalDispose=1:Activation=null

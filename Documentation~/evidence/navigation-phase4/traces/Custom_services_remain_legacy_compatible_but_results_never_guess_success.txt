@@ -1,0 +1,13 @@
+test=Custom_services_remain_legacy_compatible_but_results_never_guess_success
+outcome=Passed
+primaryTraceCount=4
+PRIMARY MODELS
+
+TRACE (teardown begins at primaryTraceCount)
+result=UnsupportedOperation:stage=Validation:recovery=Preserved:error=System.NotSupportedException: Custom navigation services do not advertise result/recovery support.
+result=UnsupportedOperation:stage=Validation:recovery=Preserved:error=System.NotSupportedException: Custom navigation services do not advertise result/recovery support.
+result=UnsupportedOperation:stage=Validation:recovery=Preserved:error=System.NotSupportedException: Custom navigation services do not advertise result/recovery support.
+result=UnsupportedOperation:stage=Validation:recovery=Preserved:error=System.NotSupportedException: Custom navigation services do not advertise result/recovery support.
+result=NoOp:stage=None:recovery=NotRequired:error=null
+result=NoOp:stage=None:recovery=NotRequired:error=null
+FINAL MODELS

@@ -1,0 +1,87 @@
+test=Shared_multi_Region_entry_failure_contains_the_whole_owned_group_and_cleans_each_logical_model_once
+outcome=Failed
+primaryTraceCount=11
+PRIMARY MODELS
+A:model=-971300746:To=1:Away=2:Cleanup=1:FinalDispose=0:Activation=null
+B:model=-1493164428:To=1:Away=0:Cleanup=1:FinalDispose=0:Activation=null
+TRACE (teardown begins at primaryTraceCount)
+A:To:input:lifetime=1503623836
+A:To.return
+result=Succeeded:stage=None:recovery=NotRequired:error=null
+A:cleanup
+A:Away:activation=null
+A:Away.return
+A:Away:activation=null
+A:Away.return
+B:To:input:lifetime=-1341901348
+B:cleanup
+result=Failed:stage=Entry:recovery=Contained:error=System.InvalidOperationException: injected primary failure
+  at Sim.Faciem.Tests.NavigationOutcomeTests+<>c__DisplayClass33_0.<Entry_and_containment_cleanup_failures_are_both_retained_without_early_successor_release>b__1 (System.String _, Sim.Faciem.NavigationActivation lifetime) [0x0002c] in C:\Users\DPast\Documents\Projects\ReviewWorktrees\sim-faciem-navigation-phase4\Tests\Editor\NavigationOutcomeTests.cs:392 
+  at (wrapper delegate-invoke) System.Func`3[System.String,Sim.Faciem.NavigationActivation,Cysharp.Threading.Tasks.UniTask].invoke_TResult_T1_T2(string,Sim.Faciem.NavigationActivation)
+  at Sim.Faciem.Tests.NavigationOutcomeTests+Model.NavigateTo (Sim.Faciem.NavigationParameters parameters) [0x00156] in C:\Users\DPast\Documents\Projects\ReviewWorktrees\sim-faciem-navigation-phase4\Tests\Editor\NavigationOutcomeTests.cs:1114 
+  at Cysharp.Threading.Tasks.UniTask+ExceptionResultSource.GetResult (System.Int16 token) [0x0001e] in .\Library\PackageCache\com.cysharp.unitask@bf35135da627\Runtime\UniTask.Factory.cs:326 
+  at Cysharp.Threading.Tasks.UniTask+Awaiter.GetResult () [0x00015] in .\Library\PackageCache\com.cysharp.unitask@bf35135da627\Runtime\UniTask.cs:316 
+  at Sim.Faciem.Internal.RegionNavigationOperations.InvokeLifecycle (Sim.Faciem.Internal.RegionNavigationOperations+Operation operation, Sim.Faciem.BaseViewModel model, System.Func`1[TResult] callback) [0x000d5] in C:\Users\DPast\Documents\Projects\ReviewWorktrees\sim-faciem-navigation-phase4\Runtime\Internal\RegionNavigationOperations.cs:146 
+  at Sim.Faciem.Tests.NavigationOutcomeTests.<Entry_failure_is_contained_and_recovery_reuses_cache>b__31_2 (System.String _, Sim.Faciem.NavigationActivation _) [0x00000] in C:\Users\DPast\Documents\Projects\ReviewWorktrees\sim-faciem-navigation-phase4\Tests\Editor\NavigationOutcomeTests.cs:334 
+  at (wrapper delegate-invoke) System.Func`3[System.String,Sim.Faciem.NavigationActivation,Cysharp.Threading.Tasks.UniTask].invoke_TResult_T1_T2(string,Sim.Faciem.NavigationActivation)
+  at Sim.Faciem.Tests.NavigationOutcomeTests+Model.NavigateTo (Sim.Faciem.NavigationParameters parameters) [0x00156] in C:\Users\DPast\Documents\Projects\ReviewWorktrees\sim-faciem-navigation-phase4\Tests\Editor\NavigationOutcomeTests.cs:1114 
+  at Cysharp.Threading.Tasks.UniTask+ExceptionResultSource.GetResult (System.Int16 token) [0x0001e] in .\Library\PackageCache\com.cysharp.unitask@bf35135da627\Runtime\UniTask.Factory.cs:326 
+  at Cysharp.Threading.Tasks.UniTask+Awaiter.GetResult () [0x00015] in .\Library\PackageCache\com.cysharp.unitask@bf35135da627\Runtime\UniTask.cs:316 
+  at Sim.Faciem.Internal.RegionNavigationOperations.InvokeLifecycle (Sim.Faciem.Internal.RegionNavigationOperations+Operation operation, Sim.Faciem.BaseViewModel model, System.Func`1[TResult] callback) [0x000d5] in C:\Users\DPast\Documents\Projects\ReviewWorktrees\sim-faciem-navigation-phase4\Runtime\Internal\RegionNavigationOperations.cs:146 
+  at Sim.Faciem.Tests.NavigationOutcomeTests.<Entry_failure_is_contained_and_recovery_reuses_cache>b__31_0 (System.String _, Sim.Faciem.NavigationActivation _) [0x00000] in C:\Users\DPast\Documents\Projects\ReviewWorktrees\sim-faciem-navigation-phase4\Tests\Editor\NavigationOutcomeTests.cs:330 
+  at (wrapper delegate-invoke) System.Func`3[System.String,Sim.Faciem.NavigationActivation,Cysharp.Threading.Tasks.UniTask].invoke_TResult_T1_T2(string,Sim.Faciem.NavigationActivation)
+  at Sim.Faciem.Tests.NavigationOutcomeTests+Model.NavigateTo (Sim.Faciem.NavigationParameters parameters) [0x00156] in C:\Users\DPast\Documents\Projects\ReviewWorktrees\sim-faciem-navigation-phase4\Tests\Editor\NavigationOutcomeTests.cs:1114 
+  at Cysharp.Threading.Tasks.UniTask+ExceptionResultSource.GetResult (System.Int16 token) [0x0001e] in .\Library\PackageCache\com.cysharp.unitask@bf35135da627\Runtime\UniTask.Factory.cs:326 
+  at Cysharp.Threading.Tasks.UniTask+Awaiter.GetResult () [0x00015] in .\Library\PackageCache\com.cysharp.unitask@bf35135da627\Runtime\UniTask.cs:316 
+  at Sim.Faciem.Internal.RegionNavigationOperations.InvokeLifecycle (Sim.Faciem.Internal.RegionNavigationOperations+Operation operation, Sim.Faciem.BaseViewModel model, System.Func`1[TResult] callback) [0x000d5] in C:\Users\DPast\Documents\Projects\ReviewWorktrees\sim-faciem-navigation-phase4\Runtime\Internal\RegionNavigationOperations.cs:146 
+  at Sim.Faciem.Tests.NavigationOutcomeTests+<>c__DisplayClass30_0.<Exit_failure_does_not_resurrect_an_ended_activation_and_does_not_touch_independent_Region>b__0 () [0x00000] in C:\Users\DPast\Documents\Projects\ReviewWorktrees\sim-faciem-navigation-phase4\Tests\Editor\NavigationOutcomeTests.cs:299 
+  at (wrapper delegate-invoke) System.Func`1[Cysharp.Threading.Tasks.UniTask].invoke_TResult()
+  at Sim.Faciem.Tests.NavigationOutcomeTests+Model.NavigateAway () [0x00081] in C:\Users\DPast\Documents\Projects\ReviewWorktrees\sim-faciem-navigation-phase4\Tests\Editor\NavigationOutcomeTests.cs:1124 
+  at Cysharp.Threading.Tasks.UniTask+ExceptionResultSource.GetResult (System.Int16 token) [0x0001e] in .\Library\PackageCache\com.cysharp.unitask@bf35135da627\Runtime\UniTask.Factory.cs:326 
+  at Cysharp.Threading.Tasks.UniTask+Awaiter.GetResult () [0x00015] in .\Library\PackageCache\com.cysharp.unitask@bf35135da627\Runtime\UniTask.cs:316 
+  at Sim.Faciem.NavigationService+<>c__DisplayClass15_0.<Leave>b__0 () [0x000d2] in C:\Users\DPast\Documents\Projects\ReviewWorktrees\sim-faciem-navigation-phase4\Runtime\NavigationService.cs:498 
+  at Cysharp.Threading.Tasks.UniTask+ExceptionResultSource.GetResult (System.Int16 token) [0x0001e] in .\Library\PackageCache\com.cysharp.unitask@bf35135da627\Runtime\UniTask.Factory.cs:326 
+  at Cysharp.Threading.Tasks.UniTask+Awaiter.GetResult () [0x00015] in .\Library\PackageCache\com.cysharp.unitask@bf35135da627\Runtime\UniTask.cs:316 
+  at Sim.Faciem.Internal.RegionNavigationOperations.InvokeLifecycle (Sim.Faciem.Internal.RegionNavigationOperations+Operation operation, Sim.Faciem.BaseViewModel model, System.Func`1[TResult] callback) [0x000d5] in C:\Users\DPast\Documents\Projects\ReviewWorktrees\sim-faciem-navigation-phase4\Runtime\Internal\RegionNavigationOperations.cs:146 
+  at Sim.Faciem.Tests.NavigationOutcomeTests+<>c__DisplayClass30_0.<Exit_failure_does_not_resurrect_an_ended_activation_and_does_not_touch_independent_Region>b__0 () [0x00000] in C:\Users\DPast\Documents\Projects\ReviewWorktrees\sim-faciem-navigation-phase4\Tests\Editor\NavigationOutcomeTests.cs:299 
+  at (wrapper delegate-invoke) System.Func`1[Cysharp.Threading.Tasks.UniTask].invoke_TResult()
+  at Sim.Faciem.Tests.NavigationOutcomeTests+Model.NavigateAway () [0x00081] in C:\Users\DPast\Documents\Projects\ReviewWorktrees\sim-faciem-navigation-phase4\Tests\Editor\NavigationOutcomeTests.cs:1124 
+  at Cysharp.Threading.Tasks.UniTask+ExceptionResultSource.GetResult (System.Int16 token) [0x0001e] in .\Library\PackageCache\com.cysharp.unitask@bf35135da627\Runtime\UniTask.Factory.cs:326 
+  at Cysharp.Threading.Tasks.UniTask+Awaiter.GetResult () [0x00015] in .\Library\PackageCache\com.cysharp.unitask@bf35135da627\Runtime\UniTask.cs:316 
+  at Sim.Faciem.NavigationService+<>c__DisplayClass15_0.<Leave>b__0 () [0x000d2] in C:\Users\DPast\Documents\Projects\ReviewWorktrees\sim-faciem-navigation-phase4\Runtime\NavigationService.cs:498 
+  at Cysharp.Threading.Tasks.UniTask+ExceptionResultSource.GetResult (System.Int16 token) [0x0001e] in .\Library\PackageCache\com.cysharp.unitask@bf35135da627\Runtime\UniTask.Factory.cs:326 
+  at Cysharp.Threading.Tasks.UniTask+Awaiter.GetResult () [0x00015] in .\Library\PackageCache\com.cysharp.unitask@bf35135da627\Runtime\UniTask.cs:316 
+  at Sim.Faciem.Internal.RegionNavigationOperations.InvokeLifecycle (Sim.Faciem.Internal.RegionNavigationOperations+Operation operation, Sim.Faciem.BaseViewModel model, System.Func`1[TResult] callback) [0x000d5] in C:\Users\DPast\Documents\Projects\ReviewWorktrees\sim-faciem-navigation-phase4\Runtime\Internal\RegionNavigationOperations.cs:146 
+  at Sim.Faciem.Tests.NavigationOutcomeTests+<>c__DisplayClass36_0.<FIFO_successors_wait_for_the_actual_callback_return_even_when_it_will_fail>b__1 (System.String _, Sim.Faciem.NavigationActivation _) [0x000a3] in C:\Users\DPast\Documents\Projects\ReviewWorktrees\sim-faciem-navigation-phase4\Tests\Editor\NavigationOutcomeTests.cs:486 
+  at Cysharp.Threading.Tasks.UniTaskCompletionSourceCore`1[TResult].GetResult (System.Int16 token) [0x00067] in .\Library\PackageCache\com.cysharp.unitask@bf35135da627\Runtime\UniTaskCompletionSource.cs:244 
+  at Cysharp.Threading.Tasks.CompilerServices.AsyncUniTask`1[TStateMachine].GetResult (System.Int16 token) [0x00002] in .\Library\PackageCache\com.cysharp.unitask@bf35135da627\Runtime\CompilerServices\StateMachineRunner.cs:218 
+  at Cysharp.Threading.Tasks.UniTask+Awaiter.GetResult () [0x00015] in .\Library\PackageCache\com.cysharp.unitask@bf35135da627\Runtime\UniTask.cs:316 
+  at Sim.Faciem.Tests.NavigationOutcomeTests+Model.NavigateTo (Sim.Faciem.NavigationParameters parameters) [0x0017d] in C:\Users\DPast\Documents\Projects\ReviewWorktrees\sim-faciem-navigation-phase4\Tests\Editor\NavigationOutcomeTests.cs:1114 
+  at Cysharp.Threading.Tasks.UniTaskCompletionSourceCore`1[TResult].GetResult (System.Int16 token) [0x00067] in .\Library\PackageCache\com.cysharp.unitask@bf35135da627\Runtime\UniTaskCompletionSource.cs:244 
+  at Cysharp.Threading.Tasks.CompilerServices.AsyncUniTask`1[TStateMachine].GetResult (System.Int16 token) [0x00002] in .\Library\PackageCache\com.cysharp.unitask@bf35135da627\Runtime\CompilerServices\StateMachineRunner.cs:218 
+  at Cysharp.Threading.Tasks.UniTask+Awaiter.GetResult () [0x00015] in .\Library\PackageCache\com.cysharp.unitask@bf35135da627\Runtime\UniTask.cs:316 
+  at Sim.Faciem.Internal.RegionNavigationOperations.InvokeLifecycle (Sim.Faciem.Internal.RegionNavigationOperations+Operation operation, Sim.Faciem.BaseViewModel model, System.Func`1[TResult] callback) [0x000d5] in C:\Users\DPast\Documents\Projects\ReviewWorktrees\sim-faciem-navigation-phase4\Runtime\Internal\RegionNavigationOperations.cs:146 
+  at Sim.Faciem.Tests.NavigationOutcomeTests.<Partial_multi_Region_exit_failure_is_contained_without_touching_unowned_Region>b__45_0 () [0x00000] in C:\Users\DPast\Documents\Projects\ReviewWorktrees\sim-faciem-navigation-phase4\Tests\Editor\NavigationOutcomeTests.cs:753 
+  at (wrapper delegate-invoke) System.Func`1[Cysharp.Threading.Tasks.UniTask].invoke_TResult()
+  at Sim.Faciem.Tests.NavigationOutcomeTests+Model.NavigateAway () [0x00081] in C:\Users\DPast\Documents\Projects\ReviewWorktrees\sim-faciem-navigation-phase4\Tests\Editor\NavigationOutcomeTests.cs:1124 
+  at Cysharp.Threading.Tasks.UniTask+ExceptionResultSource.GetResult (System.Int16 token) [0x0001e] in .\Library\PackageCache\com.cysharp.unitask@bf35135da627\Runtime\UniTask.Factory.cs:326 
+  at Cysharp.Threading.Tasks.UniTask+Awaiter.GetResult () [0x00015] in .\Library\PackageCache\com.cysharp.unitask@bf35135da627\Runtime\UniTask.cs:316 
+  at Sim.Faciem.NavigationService+<>c__DisplayClass15_0.<Leave>b__0 () [0x000d2] in C:\Users\DPast\Documents\Projects\ReviewWorktrees\sim-faciem-navigation-phase4\Runtime\NavigationService.cs:498 
+  at Cysharp.Threading.Tasks.UniTask+ExceptionResultSource.GetResult (System.Int16 token) [0x0001e] in .\Library\PackageCache\com.cysharp.unitask@bf35135da627\Runtime\UniTask.Factory.cs:326 
+  at Cysharp.Threading.Tasks.UniTask+Awaiter.GetResult () [0x00015] in .\Library\PackageCache\com.cysharp.unitask@bf35135da627\Runtime\UniTask.cs:316 
+  at Sim.Faciem.Internal.RegionNavigationOperations.InvokeLifecycle (Sim.Faciem.Internal.RegionNavigationOperations+Operation operation, Sim.Faciem.BaseViewModel model, System.Func`1[TResult] callback) [0x000d5] in C:\Users\DPast\Documents\Projects\ReviewWorktrees\sim-faciem-navigation-phase4\Runtime\Internal\RegionNavigationOperations.cs:146 
+  at Sim.Faciem.Tests.NavigationOutcomeTests.<Shared_multi_Region_entry_failure_contains_the_whole_owned_group_and_cleans_each_logical_model_once>b__44_1 (System.String _, Sim.Faciem.NavigationActivation _) [0x00000] in C:\Users\DPast\Documents\Projects\ReviewWorktrees\sim-faciem-navigation-phase4\Tests\Editor\NavigationOutcomeTests.cs:722 
+  at (wrapper delegate-invoke) System.Func`3[System.String,Sim.Faciem.NavigationActivation,Cysharp.Threading.Tasks.UniTask].invoke_TResult_T1_T2(string,Sim.Faciem.NavigationActivation)
+  at Sim.Faciem.Tests.NavigationOutcomeTests+Model.NavigateTo (Sim.Faciem.NavigationParameters parameters) [0x00156] in C:\Users\DPast\Documents\Projects\ReviewWorktrees\sim-faciem-navigation-phase4\Tests\Editor\NavigationOutcomeTests.cs:1114 
+  at Cysharp.Threading.Tasks.UniTask+ExceptionResultSource.GetResult (System.Int16 token) [0x0001e] in .\Library\PackageCache\com.cysharp.unitask@bf35135da627\Runtime\UniTask.Factory.cs:326 
+  at Cysharp.Threading.Tasks.UniTask+Awaiter.GetResult () [0x00015] in .\Library\PackageCache\com.cysharp.unitask@bf35135da627\Runtime\UniTask.cs:316 
+  at Sim.Faciem.Internal.RegionNavigationOperations.InvokeLifecycle (Sim.Faciem.Internal.RegionNavigationOperations+Operation operation, Sim.Faciem.BaseViewModel model, System.Func`1[TResult] callback) [0x000d5] in C:\Users\DPast\Documents\Projects\ReviewWorktrees\sim-faciem-navigation-phase4\Runtime\Internal\RegionNavigationOperations.cs:146 
+  at Cysharp.Threading.Tasks.UniTask+ExceptionResultSource.GetResult (System.Int16 token) [0x0001e] in .\Library\PackageCache\com.cysharp.unitask@bf35135da627\Runtime\UniTask.Factory.cs:326 
+  at Cysharp.Threading.Tasks.UniTask+Awaiter.GetResult () [0x00015] in .\Library\PackageCache\com.cysharp.unitask@bf35135da627\Runtime\UniTask.cs:316 
+  at Sim.Faciem.NavigationService.NavigateToOwned (Sim.Faciem.IRegionManager regionManager, Sim.Faciem.IRegion[] regions, Sim.Faciem.ViewIdAsset viewAsset, Sim.Faciem.ViewId viewId, Sim.Faciem.NavigationParameters parameters, Sim.Faciem.Internal.RegionNavigationOperations+Operation operation, Sim.Faciem.NavigationEntryMode entryMode, Sim.Faciem.Internal.NavigationExecution execution) [0x00c8c] in C:\Users\DPast\Documents\Projects\ReviewWorktrees\sim-faciem-navigation-phase4\Runtime\NavigationService.cs:252 
+result=NoOp:stage=None:recovery=NotRequired:error=null
+result=NoOp:stage=None:recovery=NotRequired:error=null
+result=NoOp:stage=None:recovery=NotRequired:error=null
+FINAL MODELS
+A:model=-971300746:To=1:Away=2:Cleanup=1:FinalDispose=1:Activation=null
+B:model=-1493164428:To=1:Away=0:Cleanup=1:FinalDispose=1:Activation=null

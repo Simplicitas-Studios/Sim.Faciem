@@ -1,0 +1,47 @@
+test=Partial_multi_Region_exit_failure_is_contained_without_touching_unowned_Region
+outcome=Passed
+primaryTraceCount=15
+PRIMARY MODELS
+A:model=-2097430410:To=1:Away=1:Cleanup=1:FinalDispose=0:Activation=null
+C:model=-478480324:To=1:Away=1:Cleanup=1:FinalDispose=0:Activation=null
+A:model=1140469762:To=1:Away=0:Cleanup=0:FinalDispose=0:Activation=True
+B:model=-1535547448:To=0:Away=0:Cleanup=0:FinalDispose=0:Activation=null
+TRACE (teardown begins at primaryTraceCount)
+A:To:input:lifetime=-1613045756
+A:To.return
+result=Succeeded:stage=None:recovery=NotRequired:error=null
+C:To:input:lifetime=-529299112
+C:To.return
+result=Succeeded:stage=None:recovery=NotRequired:error=null
+A:To:input:lifetime=554447532
+A:To.return
+result=Succeeded:stage=None:recovery=NotRequired:error=null
+A:cleanup
+A:Away:activation=null
+A:Away.return
+C:cleanup
+C:Away:activation=null
+result=Failed:stage=Exit:recovery=Contained:error=System.InvalidOperationException: injected primary failure
+  at Sim.Faciem.Tests.NavigationOutcomeTests.<Partial_multi_Region_exit_failure_is_contained_without_touching_unowned_Region>b__45_0 () [0x00000] in C:\Users\DPast\Documents\Projects\ReviewWorktrees\sim-faciem-navigation-phase4\Tests\Editor\NavigationOutcomeTests.cs:756 
+  at (wrapper delegate-invoke) System.Func`1[Cysharp.Threading.Tasks.UniTask].invoke_TResult()
+  at Sim.Faciem.Tests.NavigationOutcomeTests+Model.NavigateAway () [0x00081] in C:\Users\DPast\Documents\Projects\ReviewWorktrees\sim-faciem-navigation-phase4\Tests\Editor\NavigationOutcomeTests.cs:1208 
+  at Cysharp.Threading.Tasks.UniTask+ExceptionResultSource.GetResult (System.Int16 token) [0x0001e] in .\Library\PackageCache\com.cysharp.unitask@bf35135da627\Runtime\UniTask.Factory.cs:326 
+  at Cysharp.Threading.Tasks.UniTask+Awaiter.GetResult () [0x00015] in .\Library\PackageCache\com.cysharp.unitask@bf35135da627\Runtime\UniTask.cs:316 
+  at Sim.Faciem.NavigationService+<>c__DisplayClass16_0.<Leave>b__0 () [0x000d2] in C:\Users\DPast\Documents\Projects\ReviewWorktrees\sim-faciem-navigation-phase4\Runtime\NavigationService.cs:535 
+  at Cysharp.Threading.Tasks.UniTask+ExceptionResultSource.GetResult (System.Int16 token) [0x0001e] in .\Library\PackageCache\com.cysharp.unitask@bf35135da627\Runtime\UniTask.Factory.cs:326 
+  at Cysharp.Threading.Tasks.UniTask+Awaiter.GetResult () [0x00015] in .\Library\PackageCache\com.cysharp.unitask@bf35135da627\Runtime\UniTask.cs:316 
+  at Sim.Faciem.Internal.RegionNavigationOperations.InvokeLifecycle (Sim.Faciem.Internal.RegionNavigationOperations+Operation operation, Sim.Faciem.BaseViewModel model, System.Func`1[TResult] callback) [0x000d5] in C:\Users\DPast\Documents\Projects\ReviewWorktrees\sim-faciem-navigation-phase4\Runtime\Internal\RegionNavigationOperations.cs:146 
+  at Cysharp.Threading.Tasks.UniTask+ExceptionResultSource.GetResult (System.Int16 token) [0x0001e] in .\Library\PackageCache\com.cysharp.unitask@bf35135da627\Runtime\UniTask.Factory.cs:326 
+  at Cysharp.Threading.Tasks.UniTask+Awaiter.GetResult () [0x00015] in .\Library\PackageCache\com.cysharp.unitask@bf35135da627\Runtime\UniTask.cs:316 
+  at Sim.Faciem.NavigationService.NavigateToOwned (Sim.Faciem.IRegionManager regionManager, Sim.Faciem.IRegion[] regions, Sim.Faciem.ViewIdAsset viewAsset, Sim.Faciem.ViewId viewId, Sim.Faciem.NavigationParameters parameters, Sim.Faciem.Internal.RegionNavigationOperations+Operation operation, Sim.Faciem.NavigationEntryMode entryMode, Sim.Faciem.Internal.NavigationExecution execution) [0x0073c] in C:\Users\DPast\Documents\Projects\ReviewWorktrees\sim-faciem-navigation-phase4\Runtime\NavigationService.cs:194 
+result=NoOp:stage=None:recovery=NotRequired:error=null
+A:cleanup
+A:Away:activation=null
+A:Away.return
+result=Succeeded:stage=None:recovery=NotRequired:error=null
+result=NoOp:stage=None:recovery=NotRequired:error=null
+FINAL MODELS
+A:model=-2097430410:To=1:Away=1:Cleanup=1:FinalDispose=1:Activation=null
+C:model=-478480324:To=1:Away=1:Cleanup=1:FinalDispose=1:Activation=null
+A:model=1140469762:To=1:Away=1:Cleanup=1:FinalDispose=1:Activation=null
+B:model=-1535547448:To=0:Away=0:Cleanup=0:FinalDispose=1:Activation=null

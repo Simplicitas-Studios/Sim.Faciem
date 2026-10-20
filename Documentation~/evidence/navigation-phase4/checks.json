@@ -1,0 +1,23 @@
+{
+  "finalSuite": {
+    "total": 152,
+    "passed": 152,
+    "failed": 0,
+    "skipped": 0
+  },
+  "exactBaselineTestNameSetMatchesPrior96": true,
+  "sourceHashesCapturedBeforeFinalRunAndVerifiedAfter": true,
+  "formatterExitCode": 0,
+  "formatterVerificationExitCode": 0,
+  "oldPublicNavigationInterfacesAndPolicyEntryOverloadsUnchanged": true,
+  "queueChange": "Only optional observation record association; reservation/FIFO/supersession/callback/finish bookkeeping unchanged.",
+  "newPublicApi": "NavigationResult + Status/Stage/Recovery enums; four distinct-name extension methods; no interface additions.",
+  "containmentScope": "Captured Regions and known Views/models only. No forced callback cancellation, cache eviction or final-model Dispose.",
+  "finalTraceCount": 56,
+  "historicalFailedTraceCount": 3,
+  "intermediateSourceSnapshotMissing": true,
+  "manualReviewFixAfter150": "Prevent result-only Clear early return after partial group source corruption.",
+  "stop": "Focused draft PR for independent review; no Display update, merge, deployment or next phase.",
+  "rawEvidenceWhitespace": "Trace/XML exception-stack trailing spaces preserved with targeted -whitespace attributes; source/docs still checked.",
+  "evidenceToolingNotes": "Quoted parameter names HTML-decoded for trace filenames; Windows-generated manifest paths normalized to Git POSIX paths after staged verification rejected backslashes. No runtime/test source changes or test relaunch."
+}

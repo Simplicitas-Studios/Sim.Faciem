@@ -1,0 +1,16 @@
+test=User_cancellation_is_not_misreported_as_supersession(False)
+outcome=Failed
+primaryTraceCount=3
+PRIMARY MODELS
+A:model=-1972647310:To=1:Away=0:Cleanup=1:FinalDispose=0:Activation=null
+TRACE (teardown begins at primaryTraceCount)
+A:To:input:lifetime=188311344
+A:cleanup
+result=Cancelled:stage=Entry:recovery=Contained:error=System.OperationCanceledException: The operation was canceled.
+  at Cysharp.Threading.Tasks.UniTask+CanceledResultSource.GetResult (System.Int16 token) [0x00001] in .\Library\PackageCache\com.cysharp.unitask@bf35135da627\Runtime\UniTask.Factory.cs:419 
+  at Cysharp.Threading.Tasks.UniTask+Awaiter.GetResult () [0x00015] in .\Library\PackageCache\com.cysharp.unitask@bf35135da627\Runtime\UniTask.cs:316 
+  at Sim.Faciem.NavigationService.NavigateToOwned (Sim.Faciem.IRegionManager regionManager, Sim.Faciem.IRegion[] regions, Sim.Faciem.ViewIdAsset viewAsset, Sim.Faciem.ViewId viewId, Sim.Faciem.NavigationParameters parameters, Sim.Faciem.Internal.RegionNavigationOperations+Operation operation, Sim.Faciem.NavigationEntryMode entryMode, Sim.Faciem.Internal.NavigationExecution execution) [0x00c8c] in C:\Users\DPast\Documents\Projects\ReviewWorktrees\sim-faciem-navigation-phase4\Runtime\NavigationService.cs:252 
+result=NoOp:stage=None:recovery=NotRequired:error=null
+result=NoOp:stage=None:recovery=NotRequired:error=null
+FINAL MODELS
+A:model=-1972647310:To=1:Away=0:Cleanup=1:FinalDispose=1:Activation=null

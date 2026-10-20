@@ -1,0 +1,15 @@
+test=Callback_breaking_postconditions_is_not_success_and_foreign_state_is_not_overwritten("foreign-source")
+outcome=Passed
+primaryTraceCount=4
+PRIMARY MODELS
+A:model=1663827742:To=1:Away=0:Cleanup=1:FinalDispose=0:Activation=null
+TRACE (teardown begins at primaryTraceCount)
+A:To:input:lifetime=-692048060
+A:To.return
+A:cleanup
+result=Failed:stage=Verification:recovery=Contained:error=System.InvalidOperationException: Requested navigation postconditions were not satisfied.
+  at Sim.Faciem.NavigationService.NavigateToOwned (Sim.Faciem.IRegionManager regionManager, Sim.Faciem.IRegion[] regions, Sim.Faciem.ViewIdAsset viewAsset, Sim.Faciem.ViewId viewId, Sim.Faciem.NavigationParameters parameters, Sim.Faciem.Internal.RegionNavigationOperations+Operation operation, Sim.Faciem.NavigationEntryMode entryMode, Sim.Faciem.Internal.NavigationExecution execution) [0x00d32] in C:\Users\DPast\Documents\Projects\ReviewWorktrees\sim-faciem-navigation-phase4\Runtime\NavigationService.cs:261 
+result=NoOp:stage=None:recovery=NotRequired:error=null
+result=NoOp:stage=None:recovery=NotRequired:error=null
+FINAL MODELS
+A:model=1663827742:To=1:Away=0:Cleanup=1:FinalDispose=1:Activation=null

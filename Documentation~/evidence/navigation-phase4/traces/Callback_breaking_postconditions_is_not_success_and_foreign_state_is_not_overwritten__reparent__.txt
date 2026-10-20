@@ -1,0 +1,27 @@
+test=Callback_breaking_postconditions_is_not_success_and_foreign_state_is_not_overwritten("reparent")
+outcome=Passed
+primaryTraceCount=4
+PRIMARY MODELS
+A:model=515490136:To=1:Away=0:Cleanup=1:FinalDispose=0:Activation=null
+TRACE (teardown begins at primaryTraceCount)
+A:To:input:lifetime=879820312
+A:To.return
+A:cleanup
+result=Failed:stage=Verification:recovery=Incomplete:error=System.AggregateException: Navigation and containment failures. (Requested navigation postconditions were not satisfied.) (Containment cannot mutate a View moved outside its owned Region.) (A tracked View is outside its owned Region.) (Containment could not clear all active IDs.) ---> System.InvalidOperationException: Requested navigation postconditions were not satisfied.
+  at Sim.Faciem.NavigationService.NavigateToOwned (Sim.Faciem.IRegionManager regionManager, Sim.Faciem.IRegion[] regions, Sim.Faciem.ViewIdAsset viewAsset, Sim.Faciem.ViewId viewId, Sim.Faciem.NavigationParameters parameters, Sim.Faciem.Internal.RegionNavigationOperations+Operation operation, Sim.Faciem.NavigationEntryMode entryMode, Sim.Faciem.Internal.NavigationExecution execution) [0x00d32] in C:\Users\DPast\Documents\Projects\ReviewWorktrees\sim-faciem-navigation-phase4\Runtime\NavigationService.cs:261 
+   --- End of inner exception stack trace ---
+---> (Inner Exception #0) System.InvalidOperationException: Requested navigation postconditions were not satisfied.
+  at Sim.Faciem.NavigationService.NavigateToOwned (Sim.Faciem.IRegionManager regionManager, Sim.Faciem.IRegion[] regions, Sim.Faciem.ViewIdAsset viewAsset, Sim.Faciem.ViewId viewId, Sim.Faciem.NavigationParameters parameters, Sim.Faciem.Internal.RegionNavigationOperations+Operation operation, Sim.Faciem.NavigationEntryMode entryMode, Sim.Faciem.Internal.NavigationExecution execution) [0x00d32] in C:\Users\DPast\Documents\Projects\ReviewWorktrees\sim-faciem-navigation-phase4\Runtime\NavigationService.cs:261 <---
+
+---> (Inner Exception #1) System.InvalidOperationException: Containment cannot mutate a View moved outside its owned Region.<---
+
+---> (Inner Exception #2) System.InvalidOperationException: A tracked View is outside its owned Region.<---
+
+---> (Inner Exception #3) System.InvalidOperationException: Containment could not clear all active IDs.<---
+
+A:Away:activation=null
+A:Away.return
+result=Succeeded:stage=None:recovery=NotRequired:error=null
+result=NoOp:stage=None:recovery=NotRequired:error=null
+FINAL MODELS
+A:model=515490136:To=1:Away=1:Cleanup=1:FinalDispose=1:Activation=null

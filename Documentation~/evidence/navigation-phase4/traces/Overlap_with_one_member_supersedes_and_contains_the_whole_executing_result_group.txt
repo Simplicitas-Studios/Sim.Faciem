@@ -1,0 +1,25 @@
+test=Overlap_with_one_member_supersedes_and_contains_the_whole_executing_result_group
+outcome=Passed
+primaryTraceCount=7
+PRIMARY MODELS
+A:model=910490852:To=1:Away=0:Cleanup=1:FinalDispose=0:Activation=null
+B:model=1144213736:To=1:Away=0:Cleanup=0:FinalDispose=0:Activation=True
+TRACE (teardown begins at primaryTraceCount)
+A:To:input:lifetime=2016272728
+A:To.return
+A:cleanup
+B:To:input:lifetime=2029612488
+B:To.return
+result=Succeeded:stage=None:recovery=NotRequired:error=null
+result=Superseded:stage=Entry:recovery=Contained:error=System.OperationCanceledException: Superseded by a newer LatestRequestWins operation.
+  at Sim.Faciem.Internal.RegionNavigationOperations+Operation.ThrowIfSuperseded () [0x0000c] in C:\Users\DPast\Documents\Projects\ReviewWorktrees\sim-faciem-navigation-phase4\Runtime\Internal\RegionNavigationOperations.cs:41 
+  at Sim.Faciem.NavigationService.NavigateToOwned (Sim.Faciem.IRegionManager regionManager, Sim.Faciem.IRegion[] regions, Sim.Faciem.ViewIdAsset viewAsset, Sim.Faciem.ViewId viewId, Sim.Faciem.NavigationParameters parameters, Sim.Faciem.Internal.RegionNavigationOperations+Operation operation, Sim.Faciem.NavigationEntryMode entryMode, Sim.Faciem.Internal.NavigationExecution execution) [0x00cd0] in C:\Users\DPast\Documents\Projects\ReviewWorktrees\sim-faciem-navigation-phase4\Runtime\NavigationService.cs:252 
+result=NoOp:stage=None:recovery=NotRequired:error=null
+result=NoOp:stage=None:recovery=NotRequired:error=null
+B:cleanup
+B:Away:activation=null
+B:Away.return
+result=Succeeded:stage=None:recovery=NotRequired:error=null
+FINAL MODELS
+A:model=910490852:To=1:Away=0:Cleanup=1:FinalDispose=1:Activation=null
+B:model=1144213736:To=1:Away=1:Cleanup=1:FinalDispose=1:Activation=null

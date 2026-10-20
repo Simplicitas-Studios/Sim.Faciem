@@ -1,0 +1,34 @@
+test=Source_corruption_during_an_earlier_exit_cannot_turn_a_partial_group_operation_into_success(True)
+outcome=Passed
+primaryTraceCount=14
+PRIMARY MODELS
+A:model=593420858:To=1:Away=1:Cleanup=1:FinalDispose=0:Activation=null
+C:model=-46392826:To=2:Away=0:Cleanup=1:FinalDispose=0:Activation=True
+TRACE (teardown begins at primaryTraceCount)
+A:To:input:lifetime=1642264652
+A:To.return
+result=Succeeded:stage=None:recovery=NotRequired:error=null
+C:To:input:lifetime=1194399692
+C:To.return
+result=Succeeded:stage=None:recovery=NotRequired:error=null
+A:cleanup
+A:Away:activation=null
+A:Away.return
+C:cleanup
+result=InvalidConfiguration:stage=Validation:recovery=Contained:error=System.InvalidOperationException: Active View has no owned ViewModel.
+  at Sim.Faciem.Internal.NavigationExecution.Reject (Sim.Faciem.NavigationStatus status, System.String message) [0x0000d] in C:\Users\DPast\Documents\Projects\ReviewWorktrees\sim-faciem-navigation-phase4\Runtime\Internal\NavigationExecution.cs:53 
+  at Sim.Faciem.NavigationService.ClearOwned (Sim.Faciem.IRegion[] regions, Sim.Faciem.Internal.RegionNavigationOperations+Operation operation, Sim.Faciem.Internal.NavigationExecution execution) [0x00147] in C:\Users\DPast\Documents\Projects\ReviewWorktrees\sim-faciem-navigation-phase4\Runtime\NavigationService.cs:461 
+C:To:recover:lifetime=919186324
+C:To.return
+result=Succeeded:stage=None:recovery=NotRequired:error=null
+C:cleanup
+C:Away:activation=null
+C:Away.return
+result=Succeeded:stage=None:recovery=NotRequired:error=null
+result=NoOp:stage=None:recovery=NotRequired:error=null
+C:Away:activation=null
+C:Away.return
+result=Succeeded:stage=None:recovery=NotRequired:error=null
+FINAL MODELS
+A:model=593420858:To=1:Away=1:Cleanup=1:FinalDispose=1:Activation=null
+C:model=-46392826:To=2:Away=2:Cleanup=2:FinalDispose=1:Activation=null

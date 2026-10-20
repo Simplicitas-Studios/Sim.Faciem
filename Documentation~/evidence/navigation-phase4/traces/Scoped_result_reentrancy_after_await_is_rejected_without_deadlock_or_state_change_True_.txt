@@ -1,0 +1,16 @@
+test=Scoped_result_reentrancy_after_await_is_rejected_without_deadlock_or_state_change(True)
+outcome=Passed
+primaryTraceCount=3
+PRIMARY MODELS
+A:model=232742632:To=1:Away=0:Cleanup=0:FinalDispose=0:Activation=True
+TRACE (teardown begins at primaryTraceCount)
+A:To:input:lifetime=-491371476
+A:To.return
+result=Succeeded:stage=None:recovery=NotRequired:error=null
+A:cleanup
+A:Away:activation=null
+A:Away.return
+result=Succeeded:stage=None:recovery=NotRequired:error=null
+result=NoOp:stage=None:recovery=NotRequired:error=null
+FINAL MODELS
+A:model=232742632:To=1:Away=1:Cleanup=1:FinalDispose=1:Activation=null

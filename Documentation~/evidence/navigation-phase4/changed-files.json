@@ -1,0 +1,374 @@
+{
+  "base": "c5733d6266ab6848883d663a89abdc89994dc80d",
+  "count": 92,
+  "files": [
+    {
+      "status": "A",
+      "path": "Documentation~/evidence/navigation-phase4/.gitattributes"
+    },
+    {
+      "status": "A",
+      "path": "Documentation~/evidence/navigation-phase4/artifact-integrity.json"
+    },
+    {
+      "status": "A",
+      "path": "Documentation~/evidence/navigation-phase4/baseline.json"
+    },
+    {
+      "status": "A",
+      "path": "Documentation~/evidence/navigation-phase4/changed-files.json"
+    },
+    {
+      "status": "A",
+      "path": "Documentation~/evidence/navigation-phase4/checks.json"
+    },
+    {
+      "status": "A",
+      "path": "Documentation~/evidence/navigation-phase4/contracts.json"
+    },
+    {
+      "status": "A",
+      "path": "Documentation~/evidence/navigation-phase4/format.json"
+    },
+    {
+      "status": "A",
+      "path": "Documentation~/evidence/navigation-phase4/initial/NavigationOutcomeTests.cs.txt"
+    },
+    {
+      "status": "A",
+      "path": "Documentation~/evidence/navigation-phase4/initial/NavigationService.cs.txt"
+    },
+    {
+      "status": "A",
+      "path": "Documentation~/evidence/navigation-phase4/initial/failing-traces/Shared_multi_Region_entry_failure_contains_the_whole_owned_group_and_cleans_each_logical_model_once.txt"
+    },
+    {
+      "status": "A",
+      "path": "Documentation~/evidence/navigation-phase4/initial/failing-traces/User_cancellation_is_not_misreported_as_supersession_False_.txt"
+    },
+    {
+      "status": "A",
+      "path": "Documentation~/evidence/navigation-phase4/initial/failing-traces/User_cancellation_is_not_misreported_as_supersession_True_.txt"
+    },
+    {
+      "status": "A",
+      "path": "Documentation~/evidence/navigation-phase4/initial/source-hashes.json"
+    },
+    {
+      "status": "A",
+      "path": "Documentation~/evidence/navigation-phase4/preservation.json"
+    },
+    {
+      "status": "A",
+      "path": "Documentation~/evidence/navigation-phase4/runs.json"
+    },
+    {
+      "status": "A",
+      "path": "Documentation~/evidence/navigation-phase4/runs/final-152.json"
+    },
+    {
+      "status": "A",
+      "path": "Documentation~/evidence/navigation-phase4/runs/final-152.nunit.xml"
+    },
+    {
+      "status": "A",
+      "path": "Documentation~/evidence/navigation-phase4/runs/initial-148.json"
+    },
+    {
+      "status": "A",
+      "path": "Documentation~/evidence/navigation-phase4/runs/initial-148.nunit.xml"
+    },
+    {
+      "status": "A",
+      "path": "Documentation~/evidence/navigation-phase4/runs/intermediate-150.json"
+    },
+    {
+      "status": "A",
+      "path": "Documentation~/evidence/navigation-phase4/runs/intermediate-150.nunit.xml"
+    },
+    {
+      "status": "A",
+      "path": "Documentation~/evidence/navigation-phase4/tested-source-hashes.json"
+    },
+    {
+      "status": "A",
+      "path": "Documentation~/evidence/navigation-phase4/traces/Busy_shared_model_rejects_an_independent_result_request_without_ending_the_owning_callback.txt"
+    },
+    {
+      "status": "A",
+      "path": "Documentation~/evidence/navigation-phase4/traces/Callback_breaking_postconditions_is_not_success_and_foreign_state_is_not_overwritten__deactivate__.txt"
+    },
+    {
+      "status": "A",
+      "path": "Documentation~/evidence/navigation-phase4/traces/Callback_breaking_postconditions_is_not_success_and_foreign_state_is_not_overwritten__foreign-source__.txt"
+    },
+    {
+      "status": "A",
+      "path": "Documentation~/evidence/navigation-phase4/traces/Callback_breaking_postconditions_is_not_success_and_foreign_state_is_not_overwritten__reparent__.txt"
+    },
+    {
+      "status": "A",
+      "path": "Documentation~/evidence/navigation-phase4/traces/Cleanup_failure_attempts_all_resources_and_reports_its_stage_without_replaying_Away__clear__.txt"
+    },
+    {
+      "status": "A",
+      "path": "Documentation~/evidence/navigation-phase4/traces/Cleanup_failure_attempts_all_resources_and_reports_its_stage_without_replaying_Away__navigate__.txt"
+    },
+    {
+      "status": "A",
+      "path": "Documentation~/evidence/navigation-phase4/traces/Cleanup_failure_attempts_all_resources_and_reports_its_stage_without_replaying_Away__reentry__.txt"
+    },
+    {
+      "status": "A",
+      "path": "Documentation~/evidence/navigation-phase4/traces/Commit_fault_before_or_after_real_mount_is_contained_including_unrecorded_visible_tree_False_.txt"
+    },
+    {
+      "status": "A",
+      "path": "Documentation~/evidence/navigation-phase4/traces/Commit_fault_before_or_after_real_mount_is_contained_including_unrecorded_visible_tree_True_.txt"
+    },
+    {
+      "status": "A",
+      "path": "Documentation~/evidence/navigation-phase4/traces/Construction_failure_preserves_UI_but_does_not_undo_constructor_side_effects.txt"
+    },
+    {
+      "status": "A",
+      "path": "Documentation~/evidence/navigation-phase4/traces/Cooperative_cancellation_returns_a_superseded_result_only_after_callback_finally_runs.txt"
+    },
+    {
+      "status": "A",
+      "path": "Documentation~/evidence/navigation-phase4/traces/Custom_services_remain_legacy_compatible_but_results_never_guess_success.txt"
+    },
+    {
+      "status": "A",
+      "path": "Documentation~/evidence/navigation-phase4/traces/Empty_Clear_is_NoOp_only_after_its_FIFO_predecessor_drains.txt"
+    },
+    {
+      "status": "A",
+      "path": "Documentation~/evidence/navigation-phase4/traces/Entry_and_containment_cleanup_failures_are_both_retained_without_early_successor_release.txt"
+    },
+    {
+      "status": "A",
+      "path": "Documentation~/evidence/navigation-phase4/traces/Entry_failure_is_contained_and_recovery_reuses_cache_False_.txt"
+    },
+    {
+      "status": "A",
+      "path": "Documentation~/evidence/navigation-phase4/traces/Entry_failure_is_contained_and_recovery_reuses_cache_True_.txt"
+    },
+    {
+      "status": "A",
+      "path": "Documentation~/evidence/navigation-phase4/traces/Executing_exit_must_drain_before_latest_winner_and_does_not_enter_obsolete_target_False_.txt"
+    },
+    {
+      "status": "A",
+      "path": "Documentation~/evidence/navigation-phase4/traces/Executing_exit_must_drain_before_latest_winner_and_does_not_enter_obsolete_target_True_.txt"
+    },
+    {
+      "status": "A",
+      "path": "Documentation~/evidence/navigation-phase4/traces/Exit_failure_does_not_resurrect_an_ended_activation_and_does_not_touch_independent_Region_False_.txt"
+    },
+    {
+      "status": "A",
+      "path": "Documentation~/evidence/navigation-phase4/traces/Exit_failure_does_not_resurrect_an_ended_activation_and_does_not_touch_independent_Region_True_.txt"
+    },
+    {
+      "status": "A",
+      "path": "Documentation~/evidence/navigation-phase4/traces/Explicit_reentry_result_keeps_identity_and_replaces_only_activation_lifetime_Fifo_.txt"
+    },
+    {
+      "status": "A",
+      "path": "Documentation~/evidence/navigation-phase4/traces/Explicit_reentry_result_keeps_identity_and_replaces_only_activation_lifetime_LatestRequestWins_.txt"
+    },
+    {
+      "status": "A",
+      "path": "Documentation~/evidence/navigation-phase4/traces/FIFO_successors_wait_for_the_actual_callback_return_even_when_it_will_fail_False_.txt"
+    },
+    {
+      "status": "A",
+      "path": "Documentation~/evidence/navigation-phase4/traces/FIFO_successors_wait_for_the_actual_callback_return_even_when_it_will_fail_True_.txt"
+    },
+    {
+      "status": "A",
+      "path": "Documentation~/evidence/navigation-phase4/traces/Foreign_active_source_in_later_Region_rejects_the_whole_group_before_any_exit.txt"
+    },
+    {
+      "status": "A",
+      "path": "Documentation~/evidence/navigation-phase4/traces/Heterogeneous_target_caches_are_not_silently_rebound_or_reported_success_False_.txt"
+    },
+    {
+      "status": "A",
+      "path": "Documentation~/evidence/navigation-phase4/traces/Heterogeneous_target_caches_are_not_silently_rebound_or_reported_success_True_.txt"
+    },
+    {
+      "status": "A",
+      "path": "Documentation~/evidence/navigation-phase4/traces/Injected_synchronous_preparation_fault_preserves_current_UI__after-detached-binding__.txt"
+    },
+    {
+      "status": "A",
+      "path": "Documentation~/evidence/navigation-phase4/traces/Injected_synchronous_preparation_fault_preserves_current_UI__before-create__.txt"
+    },
+    {
+      "status": "A",
+      "path": "Documentation~/evidence/navigation-phase4/traces/Invalid_configuration_preserves_the_current_View_and_activation__dataContext__.txt"
+    },
+    {
+      "status": "A",
+      "path": "Documentation~/evidence/navigation-phase4/traces/Invalid_configuration_preserves_the_current_View_and_activation__entryMode__.txt"
+    },
+    {
+      "status": "A",
+      "path": "Documentation~/evidence/navigation-phase4/traces/Invalid_configuration_preserves_the_current_View_and_activation__id__.txt"
+    },
+    {
+      "status": "A",
+      "path": "Documentation~/evidence/navigation-phase4/traces/Invalid_configuration_preserves_the_current_View_and_activation__manager__.txt"
+    },
+    {
+      "status": "A",
+      "path": "Documentation~/evidence/navigation-phase4/traces/Invalid_configuration_preserves_the_current_View_and_activation__parameters__.txt"
+    },
+    {
+      "status": "A",
+      "path": "Documentation~/evidence/navigation-phase4/traces/Invalid_configuration_preserves_the_current_View_and_activation__policy__.txt"
+    },
+    {
+      "status": "A",
+      "path": "Documentation~/evidence/navigation-phase4/traces/Invalid_configuration_preserves_the_current_View_and_activation__template__.txt"
+    },
+    {
+      "status": "A",
+      "path": "Documentation~/evidence/navigation-phase4/traces/Latest_queued_supersession_does_not_construct_or_restart_and_uncooperative_entry_retains_ownership__clear__.txt"
+    },
+    {
+      "status": "A",
+      "path": "Documentation~/evidence/navigation-phase4/traces/Latest_queued_supersession_does_not_construct_or_restart_and_uncooperative_entry_retains_ownership__navigate__.txt"
+    },
+    {
+      "status": "A",
+      "path": "Documentation~/evidence/navigation-phase4/traces/Latest_queued_supersession_does_not_construct_or_restart_and_uncooperative_entry_retains_ownership__reentry__.txt"
+    },
+    {
+      "status": "A",
+      "path": "Documentation~/evidence/navigation-phase4/traces/Missing_lookup_is_explicit_and_does_not_dispatch_False_.txt"
+    },
+    {
+      "status": "A",
+      "path": "Documentation~/evidence/navigation-phase4/traces/Missing_lookup_is_explicit_and_does_not_dispatch_True_.txt"
+    },
+    {
+      "status": "A",
+      "path": "Documentation~/evidence/navigation-phase4/traces/Multi_view_configuration_is_unsupported_not_success_False_.txt"
+    },
+    {
+      "status": "A",
+      "path": "Documentation~/evidence/navigation-phase4/traces/Multi_view_configuration_is_unsupported_not_success_True_.txt"
+    },
+    {
+      "status": "A",
+      "path": "Documentation~/evidence/navigation-phase4/traces/Opted_in_latest_requests_do_not_cancel_a_FIFO_predecessor.txt"
+    },
+    {
+      "status": "A",
+      "path": "Documentation~/evidence/navigation-phase4/traces/Overlap_with_one_member_supersedes_and_contains_the_whole_executing_result_group.txt"
+    },
+    {
+      "status": "A",
+      "path": "Documentation~/evidence/navigation-phase4/traces/Partial_multi_Region_exit_failure_is_contained_without_touching_unowned_Region.txt"
+    },
+    {
+      "status": "A",
+      "path": "Documentation~/evidence/navigation-phase4/traces/Partial_shared_cohort_reentry_reports_invalid_configuration_before_restart_mutation.txt"
+    },
+    {
+      "status": "A",
+      "path": "Documentation~/evidence/navigation-phase4/traces/Result_and_legacy_calls_share_cached_trees_models_and_ordinary_same_ID_semantics.txt"
+    },
+    {
+      "status": "A",
+      "path": "Documentation~/evidence/navigation-phase4/traces/Scoped_independent_navigation_succeeds_and_a_dependency_cycle_is_an_explicit_result.txt"
+    },
+    {
+      "status": "A",
+      "path": "Documentation~/evidence/navigation-phase4/traces/Scoped_result_reentrancy_after_await_is_rejected_without_deadlock_or_state_change_False_.txt"
+    },
+    {
+      "status": "A",
+      "path": "Documentation~/evidence/navigation-phase4/traces/Scoped_result_reentrancy_after_await_is_rejected_without_deadlock_or_state_change_True_.txt"
+    },
+    {
+      "status": "A",
+      "path": "Documentation~/evidence/navigation-phase4/traces/Shared_multi_Region_entry_failure_contains_the_whole_owned_group_and_cleans_each_logical_model_once.txt"
+    },
+    {
+      "status": "A",
+      "path": "Documentation~/evidence/navigation-phase4/traces/Source_corruption_during_an_earlier_exit_cannot_turn_a_partial_group_operation_into_success_False_.txt"
+    },
+    {
+      "status": "A",
+      "path": "Documentation~/evidence/navigation-phase4/traces/Source_corruption_during_an_earlier_exit_cannot_turn_a_partial_group_operation_into_success_True_.txt"
+    },
+    {
+      "status": "A",
+      "path": "Documentation~/evidence/navigation-phase4/traces/User_cancellation_is_not_misreported_as_supersession_False_.txt"
+    },
+    {
+      "status": "A",
+      "path": "Documentation~/evidence/navigation-phase4/traces/User_cancellation_is_not_misreported_as_supersession_True_.txt"
+    },
+    {
+      "status": "A",
+      "path": "Documentation~/evidence/navigation-phase4/validation-environment.json"
+    },
+    {
+      "status": "A",
+      "path": "Documentation~/navigation-phase4-outcomes.md"
+    },
+    {
+      "status": "M",
+      "path": "README.md"
+    },
+    {
+      "status": "A",
+      "path": "Runtime/Internal/NavigationExecution.cs"
+    },
+    {
+      "status": "A",
+      "path": "Runtime/Internal/NavigationExecution.cs.meta"
+    },
+    {
+      "status": "M",
+      "path": "Runtime/Internal/RegionNavigationOperations.cs"
+    },
+    {
+      "status": "A",
+      "path": "Runtime/NavigationResult.cs"
+    },
+    {
+      "status": "A",
+      "path": "Runtime/NavigationResult.cs.meta"
+    },
+    {
+      "status": "A",
+      "path": "Runtime/NavigationResultExtensions.cs"
+    },
+    {
+      "status": "A",
+      "path": "Runtime/NavigationResultExtensions.cs.meta"
+    },
+    {
+      "status": "M",
+      "path": "Runtime/NavigationService.cs"
+    },
+    {
+      "status": "M",
+      "path": "Runtime/ViewModelNavigationService.cs"
+    },
+    {
+      "status": "A",
+      "path": "Tests/Editor/NavigationOutcomeTests.cs"
+    },
+    {
+      "status": "A",
+      "path": "Tests/Editor/NavigationOutcomeTests.cs.meta"
+    }
+  ]
+}
