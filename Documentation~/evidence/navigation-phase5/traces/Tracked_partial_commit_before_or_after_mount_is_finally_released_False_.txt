@@ -1,0 +1,22 @@
+test=Tracked_partial_commit_before_or_after_mount_is_finally_released(False)
+outcome=Passed
+primaryTraceCount=10
+PRIMARY MODELS
+A:model=2122859440:To=1:Away=1:Cleanup=1:FinalDispose=1:IsDisposed=True
+B:model=-440152454:To=0:Away=0:Cleanup=0:FinalDispose=1:IsDisposed=True
+TRACE
+A:To:lifetime=474402896
+A:To.return
+result=Succeeded:stage=None:recovery=NotRequired:error=null
+A:activation-cleanup
+A:Away:activation=null
+A:Away.return
+result=Failed:stage=ViewCommit:recovery=Contained:error=System.InvalidOperationException: injected teardown fault
+  at Sim.Faciem.Tests.NavigationTeardownTests+FaultRegion.Sim.Faciem.IRegion.AddView (Sim.Faciem.ViewId id, UnityEngine.UIElements.VisualElement view) [0x0001a] in C:\Users\DPast\Documents\Projects\ReviewWorktrees\sim-faciem-navigation-phase5\Tests\Editor\NavigationTeardownTests.cs:952 
+  at Sim.Faciem.NavigationService.NavigateToOwned (Sim.Faciem.IRegionManager regionManager, Sim.Faciem.IRegion[] regions, Sim.Faciem.ViewIdAsset viewAsset, Sim.Faciem.ViewId viewId, Sim.Faciem.NavigationParameters parameters, Sim.Faciem.Internal.RegionNavigationOperations+Operation operation, Sim.Faciem.NavigationEntryMode entryMode, Sim.Faciem.Internal.NavigationExecution execution) [0x009e8] in C:\Users\DPast\Documents\Projects\ReviewWorktrees\sim-faciem-navigation-phase5\Runtime\NavigationService.cs:218 
+A:final-dispose
+B:final-dispose
+result=Succeeded:stage=None:recovery=NotRequired:error=null
+FINAL MODELS
+A:model=2122859440:To=1:Away=1:Cleanup=1:FinalDispose=1:IsDisposed=True
+B:model=-440152454:To=0:Away=0:Cleanup=0:FinalDispose=1:IsDisposed=True

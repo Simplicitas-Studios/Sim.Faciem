@@ -19,6 +19,14 @@ namespace Sim.Faciem
             Parent = Maybe.Some(parent);
         }
 
+        internal bool HasLocalRegions => _regions.Count != 0;
+
+        internal void ReleaseReferences()
+        {
+            _regions.Clear();
+            Parent = Maybe.None<IRegionManager>();
+        }
+
         public void AddRegion(IRegion region)
         {
             if (!_regions.TryGetValue(region.RegionName, out var regionList))

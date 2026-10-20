@@ -24,6 +24,7 @@ namespace Sim.Faciem.Internal
             internal NavigationActivation[] Invalidations = Array.Empty<NavigationActivation>();
             internal bool Finished;
             internal bool Superseded;
+            internal bool KeepClosed;
 
             internal Operation(IRegion[] regions, Operation[] predecessors, Operation[] parents, NavigationPolicy policy)
             {
@@ -64,9 +65,9 @@ namespace Sim.Faciem.Internal
 
         internal static async UniTask Run(IRegion[] regions, BaseViewModel caller,
             Func<Operation, UniTask> action, NavigationPolicy policy = NavigationPolicy.Fifo,
-            NavigationExecution execution = null)
+            NavigationExecution execution = null, bool teardown = false)
         {
-            Operation operation = Reserve(regions, caller, policy);
+            Operation operation = Reserve(regions, caller, policy, teardown);
             if (execution != null)
             {
                 execution.Operation = operation;
@@ -87,6 +88,18 @@ namespace Sim.Faciem.Internal
                 {
                     operation.WaitingOn.ExceptWith(operation.Predecessors);
                     operation.Predecessors = Array.Empty<Operation>();
+                    foreach (IRegion region in regions)
+                    {
+                        RegionTail tail = Tails.GetValue(region, _ => new RegionTail());
+                        if (!teardown && tail.Closed)
+                        {
+                            throw new ObjectDisposedException(nameof(Region), "The Region cache has been released.");
+                        }
+                        if (teardown && !tail.Closed && tail.Finalizing == null)
+                        {
+                            tail.Finalizing = operation;
+                        }
+                    }
                 }
                 operation.ThrowIfSuperseded();
                 await action(operation);
@@ -106,6 +119,11 @@ namespace Sim.Faciem.Internal
                     {
                         RegionTail tail = Tails.GetValue(region, _ => new RegionTail());
                         tail.Pending.Remove(operation);
+                        if (ReferenceEquals(tail.Finalizing, operation))
+                        {
+                            tail.Finalizing = null;
+                            tail.Closed = operation.KeepClosed;
+                        }
                         if (ReferenceEquals(tail.Last, operation))
                         {
                             tail.Last = null;
@@ -121,6 +139,11 @@ namespace Sim.Faciem.Internal
         {
             lock (Gate)
             {
+                if ((model.FinalOwner != null && !ReferenceEquals(model.FinalOwner, operation)) ||
+                    (model.IsDisposed && !ReferenceEquals(model.FinalOwner, operation)))
+                {
+                    throw new ObjectDisposedException(nameof(BaseViewModel), "The cached model is finalizing or disposed.");
+                }
                 if (Callbacks.TryGetValue(model, out CallbackState state) &&
                     state.Active.Any(owner => !ReferenceEquals(owner, operation)))
                 {
@@ -162,7 +185,7 @@ namespace Sim.Faciem.Internal
             }
         }
 
-        private static Operation Reserve(IRegion[] regions, BaseViewModel caller, NavigationPolicy policy)
+        private static Operation Reserve(IRegion[] regions, BaseViewModel caller, NavigationPolicy policy, bool teardown)
         {
             Validate(policy);
             lock (Gate)
@@ -184,6 +207,24 @@ namespace Sim.Faciem.Internal
                     }
                 }
 
+                if (caller != null && (caller.IsDisposed || caller.FinalOwner != null))
+                {
+                    throw new ObjectDisposedException(nameof(BaseViewModel), "A stale/finalizing scoped handle cannot submit navigation or teardown.");
+                }
+                foreach (IRegion region in regions)
+                {
+                    RegionTail tail = Tails.GetValue(region, _ => new RegionTail());
+                    if (!teardown && (tail.Closed || tail.Finalizing != null))
+                    {
+                        throw new ObjectDisposedException(nameof(Region), "Region teardown has closed navigation admission.");
+                    }
+                    if (teardown && tail.Finalizing != null &&
+                        (tail.Finalizing.Regions.Length != regions.Length ||
+                            !tail.Finalizing.Regions.All(target => regions.Contains(target, RegionIdentity.Instance))))
+                    {
+                        throw new InvalidOperationException("An overlapping teardown must use the exact in-flight Region set.");
+                    }
+                }
                 var operation = new Operation(regions, predecessors, parents, policy);
                 if (policy == NavigationPolicy.LatestRequestWins)
                 {
@@ -204,6 +245,10 @@ namespace Sim.Faciem.Internal
                     RegionTail tail = Tails.GetValue(region, _ => new RegionTail());
                     tail.Last = operation;
                     tail.Pending.Add(operation);
+                    if (teardown && !tail.Closed && tail.Finalizing == null)
+                    {
+                        tail.Finalizing = operation;
+                    }
                 }
                 return operation;
             }
@@ -221,6 +266,8 @@ namespace Sim.Faciem.Internal
         private sealed class RegionTail
         {
             internal Operation Last;
+            internal Operation Finalizing;
+            internal bool Closed;
             internal readonly HashSet<Operation> Pending = new();
         }
 

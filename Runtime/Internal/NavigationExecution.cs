@@ -88,7 +88,8 @@ namespace Sim.Faciem.Internal
             }
             else if (FailureStage == NavigationStage.Validation || FailureStage == NavigationStage.Queue)
             {
-                status = Error is NotSupportedException ? NavigationStatus.UnsupportedOperation :
+                status = Error is ObjectDisposedException ? NavigationStatus.ScopeClosed :
+                    Error is NotSupportedException ? NavigationStatus.UnsupportedOperation :
                     Error is ArgumentException || Error is InvalidOperationException ? NavigationStatus.InvalidConfiguration : NavigationStatus.Failed;
             }
             else

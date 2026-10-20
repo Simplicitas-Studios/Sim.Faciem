@@ -1,0 +1,297 @@
+{
+  "cases": [
+    {
+      "test": "Sim.Faciem.Tests.NavigationTeardownTests.A_B_A_Clear_and_reentry_preserve_exact_cache_references_until_explicit_final_release",
+      "status": "Passed",
+      "trace": "traces/A_B_A_Clear_and_reentry_preserve_exact_cache_references_until_explicit_final_release.txt",
+      "limitationCharacterization": false
+    },
+    {
+      "test": "Sim.Faciem.Tests.NavigationTeardownTests.A_captured_disposed_scoped_handle_cannot_tear_down_a_new_application_scope",
+      "status": "Passed",
+      "trace": "traces/A_captured_disposed_scoped_handle_cannot_tear_down_a_new_application_scope.txt",
+      "limitationCharacterization": false
+    },
+    {
+      "test": "Sim.Faciem.Tests.NavigationTeardownTests.A_disposed_DI_singleton_cannot_be_reactivated_in_a_new_scope",
+      "status": "Passed",
+      "trace": "traces/A_disposed_DI_singleton_cannot_be_reactivated_in_a_new_scope.txt",
+      "limitationCharacterization": false
+    },
+    {
+      "test": "Sim.Faciem.Tests.NavigationTeardownTests.A_nested_scope_added_during_an_awaited_exit_is_not_forcibly_detached_with_its_callback_running",
+      "status": "Passed",
+      "trace": "traces/A_nested_scope_added_during_an_awaited_exit_is_not_forcibly_detached_with_its_callback_running.txt",
+      "limitationCharacterization": false
+    },
+    {
+      "test": "Sim.Faciem.Tests.NavigationTeardownTests.A_new_Region_scope_creates_fresh_instances_and_the_old_scope_remains_terminal",
+      "status": "Passed",
+      "trace": "traces/A_new_Region_scope_creates_fresh_instances_and_the_old_scope_remains_terminal.txt",
+      "limitationCharacterization": false
+    },
+    {
+      "test": "Sim.Faciem.Tests.NavigationTeardownTests.All_owned_models_and_stages_are_attempted_and_failures_aggregate_in_order",
+      "status": "Passed",
+      "trace": "traces/All_owned_models_and_stages_are_attempted_and_failures_aggregate_in_order.txt",
+      "limitationCharacterization": false
+    },
+    {
+      "test": "Sim.Faciem.Tests.NavigationTeardownTests.An_ownership_rejected_queued_teardown_does_not_prevent_an_already_queued_authorized_teardown",
+      "status": "Passed",
+      "trace": "traces/An_ownership_rejected_queued_teardown_does_not_prevent_an_already_queued_authorized_teardown.txt",
+      "limitationCharacterization": false
+    },
+    {
+      "test": "Sim.Faciem.Tests.NavigationTeardownTests.Awaiting_entry_retains_ownership_and_final_disposal_waits_for_actual_return(Fifo)",
+      "status": "Passed",
+      "trace": "traces/Awaiting_entry_retains_ownership_and_final_disposal_waits_for_actual_return_Fifo_.txt",
+      "limitationCharacterization": false
+    },
+    {
+      "test": "Sim.Faciem.Tests.NavigationTeardownTests.Awaiting_entry_retains_ownership_and_final_disposal_waits_for_actual_return(LatestRequestWins)",
+      "status": "Passed",
+      "trace": "traces/Awaiting_entry_retains_ownership_and_final_disposal_waits_for_actual_return_LatestRequestWins_.txt",
+      "limitationCharacterization": false
+    },
+    {
+      "test": "Sim.Faciem.Tests.NavigationTeardownTests.Binding_references_are_cleared_before_final_model_disposal",
+      "status": "Passed",
+      "trace": "traces/Binding_references_are_cleared_before_final_model_disposal.txt",
+      "limitationCharacterization": false
+    },
+    {
+      "test": "Sim.Faciem.Tests.NavigationTeardownTests.Concurrent_repetition_retains_a_failed_teardown_result_without_duplicate_exit_or_disposal",
+      "status": "Passed",
+      "trace": "traces/Concurrent_repetition_retains_a_failed_teardown_result_without_duplicate_exit_or_disposal.txt",
+      "limitationCharacterization": false
+    },
+    {
+      "test": "Sim.Faciem.Tests.NavigationTeardownTests.Custom_service_teardown_is_unsupported_and_never_dispatches",
+      "status": "Passed",
+      "trace": "traces/Custom_service_teardown_is_unsupported_and_never_dispatches.txt",
+      "limitationCharacterization": false
+    },
+    {
+      "test": "Sim.Faciem.Tests.NavigationTeardownTests.Earlier_exit_and_its_queued_transition_drain_before_teardown(&quot;navigate&quot;)",
+      "status": "Passed",
+      "trace": "traces/Earlier_exit_and_its_queued_transition_drain_before_teardown__navigate__.txt",
+      "limitationCharacterization": false
+    },
+    {
+      "test": "Sim.Faciem.Tests.NavigationTeardownTests.Earlier_exit_and_its_queued_transition_drain_before_teardown(&quot;clear&quot;)",
+      "status": "Passed",
+      "trace": "traces/Earlier_exit_and_its_queued_transition_drain_before_teardown__clear__.txt",
+      "limitationCharacterization": false
+    },
+    {
+      "test": "Sim.Faciem.Tests.NavigationTeardownTests.Earlier_exit_and_its_queued_transition_drain_before_teardown(&quot;reentry&quot;)",
+      "status": "Passed",
+      "trace": "traces/Earlier_exit_and_its_queued_transition_drain_before_teardown__reentry__.txt",
+      "limitationCharacterization": false
+    },
+    {
+      "test": "Sim.Faciem.Tests.NavigationTeardownTests.Explicit_ownership_denial_or_predicate_fault_reopens_admission_without_partial_disposal(False)",
+      "status": "Passed",
+      "trace": "traces/Explicit_ownership_denial_or_predicate_fault_reopens_admission_without_partial_disposal_False_.txt",
+      "limitationCharacterization": false
+    },
+    {
+      "test": "Sim.Faciem.Tests.NavigationTeardownTests.Explicit_ownership_denial_or_predicate_fault_reopens_admission_without_partial_disposal(True)",
+      "status": "Passed",
+      "trace": "traces/Explicit_ownership_denial_or_predicate_fault_reopens_admission_without_partial_disposal_True_.txt",
+      "limitationCharacterization": false
+    },
+    {
+      "test": "Sim.Faciem.Tests.NavigationTeardownTests.Failed_teardown_remains_terminal_and_repeated_call_retains_failure_without_retrying_resources(&quot;cleanup&quot;)",
+      "status": "Passed",
+      "trace": "traces/Failed_teardown_remains_terminal_and_repeated_call_retains_failure_without_retrying_resources__cleanup__.txt",
+      "limitationCharacterization": false
+    },
+    {
+      "test": "Sim.Faciem.Tests.NavigationTeardownTests.Failed_teardown_remains_terminal_and_repeated_call_retains_failure_without_retrying_resources(&quot;exit&quot;)",
+      "status": "Passed",
+      "trace": "traces/Failed_teardown_remains_terminal_and_repeated_call_retains_failure_without_retrying_resources__exit__.txt",
+      "limitationCharacterization": false
+    },
+    {
+      "test": "Sim.Faciem.Tests.NavigationTeardownTests.Failed_teardown_remains_terminal_and_repeated_call_retains_failure_without_retrying_resources(&quot;dispose&quot;)",
+      "status": "Passed",
+      "trace": "traces/Failed_teardown_remains_terminal_and_repeated_call_retains_failure_without_retrying_resources__dispose__.txt",
+      "limitationCharacterization": false
+    },
+    {
+      "test": "Sim.Faciem.Tests.NavigationTeardownTests.FIFO_terminal_barrier_drains_admitted_latest_winners_and_rejects_later_supersession(Fifo)",
+      "status": "Passed",
+      "trace": "traces/FIFO_terminal_barrier_drains_admitted_latest_winners_and_rejects_later_supersession_Fifo_.txt",
+      "limitationCharacterization": false
+    },
+    {
+      "test": "Sim.Faciem.Tests.NavigationTeardownTests.FIFO_terminal_barrier_drains_admitted_latest_winners_and_rejects_later_supersession(LatestRequestWins)",
+      "status": "Passed",
+      "trace": "traces/FIFO_terminal_barrier_drains_admitted_latest_winners_and_rejects_later_supersession_LatestRequestWins_.txt",
+      "limitationCharacterization": false
+    },
+    {
+      "test": "Sim.Faciem.Tests.NavigationTeardownTests.Foreign_source_introduced_during_exit_is_not_overwritten_or_disposed_as_a_cached_model",
+      "status": "Passed",
+      "trace": "traces/Foreign_source_introduced_during_exit_is_not_overwritten_or_disposed_as_a_cached_model.txt",
+      "limitationCharacterization": false
+    },
+    {
+      "test": "Sim.Faciem.Tests.NavigationTeardownTests.Independent_Region_and_persistent_shell_remain_alive_and_usable",
+      "status": "Passed",
+      "trace": "traces/Independent_Region_and_persistent_shell_remain_alive_and_usable.txt",
+      "limitationCharacterization": false
+    },
+    {
+      "test": "Sim.Faciem.Tests.NavigationTeardownTests.Invalid_teardown_arguments_do_not_fence_or_dispose_a_live_scope(&quot;empty&quot;)",
+      "status": "Passed",
+      "trace": "traces/Invalid_teardown_arguments_do_not_fence_or_dispose_a_live_scope__empty__.txt",
+      "limitationCharacterization": false
+    },
+    {
+      "test": "Sim.Faciem.Tests.NavigationTeardownTests.Invalid_teardown_arguments_do_not_fence_or_dispose_a_live_scope(&quot;null-list&quot;)",
+      "status": "Passed",
+      "trace": "traces/Invalid_teardown_arguments_do_not_fence_or_dispose_a_live_scope__null-list__.txt",
+      "limitationCharacterization": false
+    },
+    {
+      "test": "Sim.Faciem.Tests.NavigationTeardownTests.Invalid_teardown_arguments_do_not_fence_or_dispose_a_live_scope(&quot;null-region&quot;)",
+      "status": "Passed",
+      "trace": "traces/Invalid_teardown_arguments_do_not_fence_or_dispose_a_live_scope__null-region__.txt",
+      "limitationCharacterization": false
+    },
+    {
+      "test": "Sim.Faciem.Tests.NavigationTeardownTests.Invalid_teardown_arguments_do_not_fence_or_dispose_a_live_scope(&quot;null-owner&quot;)",
+      "status": "Passed",
+      "trace": "traces/Invalid_teardown_arguments_do_not_fence_or_dispose_a_live_scope__null-owner__.txt",
+      "limitationCharacterization": false
+    },
+    {
+      "test": "Sim.Faciem.Tests.NavigationTeardownTests.Nested_parent_is_explicitly_rejected_but_selected_leaf_can_release_without_disposing_parent",
+      "status": "Passed",
+      "trace": "traces/Nested_parent_is_explicitly_rejected_but_selected_leaf_can_release_without_disposing_parent.txt",
+      "limitationCharacterization": false
+    },
+    {
+      "test": "Sim.Faciem.Tests.NavigationTeardownTests.Opaque_legacy_R3_bag_failure_is_reported_incomplete_not_misrepresented_as_all_resources_released",
+      "status": "Passed",
+      "trace": "traces/Opaque_legacy_R3_bag_failure_is_reported_incomplete_not_misrepresented_as_all_resources_released.txt",
+      "limitationCharacterization": true
+    },
+    {
+      "test": "Sim.Faciem.Tests.NavigationTeardownTests.Overlapping_inflight_teardown_sets_are_rejected_without_closing_unrelated_Region",
+      "status": "Passed",
+      "trace": "traces/Overlapping_inflight_teardown_sets_are_rejected_without_closing_unrelated_Region.txt",
+      "limitationCharacterization": false
+    },
+    {
+      "test": "Sim.Faciem.Tests.NavigationTeardownTests.Preparation_candidate_not_adopted_by_cache_remains_with_its_existing_DI_owner",
+      "status": "Passed",
+      "trace": "traces/Preparation_candidate_not_adopted_by_cache_remains_with_its_existing_DI_owner.txt",
+      "limitationCharacterization": false
+    },
+    {
+      "test": "Sim.Faciem.Tests.NavigationTeardownTests.Scoped_reentrant_teardown_is_rejected_before_mutation_or_idempotent_shortcut(&quot;entry&quot;)",
+      "status": "Passed",
+      "trace": "traces/Scoped_reentrant_teardown_is_rejected_before_mutation_or_idempotent_shortcut__entry__.txt",
+      "limitationCharacterization": false
+    },
+    {
+      "test": "Sim.Faciem.Tests.NavigationTeardownTests.Scoped_reentrant_teardown_is_rejected_before_mutation_or_idempotent_shortcut(&quot;exit&quot;)",
+      "status": "Passed",
+      "trace": "traces/Scoped_reentrant_teardown_is_rejected_before_mutation_or_idempotent_shortcut__exit__.txt",
+      "limitationCharacterization": false
+    },
+    {
+      "test": "Sim.Faciem.Tests.NavigationTeardownTests.Scoped_reentrant_teardown_is_rejected_before_mutation_or_idempotent_shortcut(&quot;dispose&quot;)",
+      "status": "Passed",
+      "trace": "traces/Scoped_reentrant_teardown_is_rejected_before_mutation_or_idempotent_shortcut__dispose__.txt",
+      "limitationCharacterization": false
+    },
+    {
+      "test": "Sim.Faciem.Tests.NavigationTeardownTests.Shared_model_final_lease_blocks_a_new_owner_while_a_different_model_exit_is_awaiting",
+      "status": "Passed",
+      "trace": "traces/Shared_model_final_lease_blocks_a_new_owner_while_a_different_model_exit_is_awaiting.txt",
+      "limitationCharacterization": false
+    },
+    {
+      "test": "Sim.Faciem.Tests.NavigationTeardownTests.Shared_model_requires_all_cached_owners_even_when_the_other_owner_is_inactive(False)",
+      "status": "Passed",
+      "trace": "traces/Shared_model_requires_all_cached_owners_even_when_the_other_owner_is_inactive_False_.txt",
+      "limitationCharacterization": false
+    },
+    {
+      "test": "Sim.Faciem.Tests.NavigationTeardownTests.Shared_model_requires_all_cached_owners_even_when_the_other_owner_is_inactive(True)",
+      "status": "Passed",
+      "trace": "traces/Shared_model_requires_all_cached_owners_even_when_the_other_owner_is_inactive_True_.txt",
+      "limitationCharacterization": false
+    },
+    {
+      "test": "Sim.Faciem.Tests.NavigationTeardownTests.Teardown_own_exit_await_holds_both_Region_and_model_leases_until_cleanup_finishes",
+      "status": "Passed",
+      "trace": "traces/Teardown_own_exit_await_holds_both_Region_and_model_leases_until_cleanup_finishes.txt",
+      "limitationCharacterization": false
+    },
+    {
+      "test": "Sim.Faciem.Tests.NavigationTeardownTests.Tracked_partial_commit_before_or_after_mount_is_finally_released(False)",
+      "status": "Passed",
+      "trace": "traces/Tracked_partial_commit_before_or_after_mount_is_finally_released_False_.txt",
+      "limitationCharacterization": false
+    },
+    {
+      "test": "Sim.Faciem.Tests.NavigationTeardownTests.Tracked_partial_commit_before_or_after_mount_is_finally_released(True)",
+      "status": "Passed",
+      "trace": "traces/Tracked_partial_commit_before_or_after_mount_is_finally_released_True_.txt",
+      "limitationCharacterization": false
+    },
+    {
+      "test": "Sim.Faciem.Tests.NavigationTeardownTests.Unsafe_cache_configuration_rejects_before_final_ownership_or_UI_changes(&quot;foreign&quot;)",
+      "status": "Passed",
+      "trace": "traces/Unsafe_cache_configuration_rejects_before_final_ownership_or_UI_changes__foreign__.txt",
+      "limitationCharacterization": false
+    },
+    {
+      "test": "Sim.Faciem.Tests.NavigationTeardownTests.Unsafe_cache_configuration_rejects_before_final_ownership_or_UI_changes(&quot;reparented&quot;)",
+      "status": "Passed",
+      "trace": "traces/Unsafe_cache_configuration_rejects_before_final_ownership_or_UI_changes__reparented__.txt",
+      "limitationCharacterization": false
+    },
+    {
+      "test": "Sim.Faciem.Tests.NavigationTeardownTests.Unsafe_cache_configuration_rejects_before_final_ownership_or_UI_changes(&quot;untracked&quot;)",
+      "status": "Passed",
+      "trace": "traces/Unsafe_cache_configuration_rejects_before_final_ownership_or_UI_changes__untracked__.txt",
+      "limitationCharacterization": false
+    },
+    {
+      "test": "Sim.Faciem.Tests.NavigationTeardownTests.Unsafe_cache_configuration_rejects_before_final_ownership_or_UI_changes(&quot;multi&quot;)",
+      "status": "Passed",
+      "trace": "traces/Unsafe_cache_configuration_rejects_before_final_ownership_or_UI_changes__multi__.txt",
+      "limitationCharacterization": false
+    },
+    {
+      "test": "Sim.Faciem.Tests.NavigationTeardownTests.Unsafe_cache_configuration_rejects_before_final_ownership_or_UI_changes(&quot;global&quot;)",
+      "status": "Passed",
+      "trace": "traces/Unsafe_cache_configuration_rejects_before_final_ownership_or_UI_changes__global__.txt",
+      "limitationCharacterization": false
+    }
+  ],
+  "api": "Root/scoped TeardownResult(IReadOnlyList<Region>, Func<BaseViewModel,bool>)",
+  "scope": "Explicitly application-owned flat native non-global single-view caches; complete cached-model ownership.",
+  "unsafeRejected": [
+    "Partial shared cache ownership, including inactive caches",
+    "Parent/nested caches and local registration ownership",
+    "Global/multi-view/untracked/foreign/moved caches",
+    "Disposed/finalizing scoped handle",
+    "Mixed live/released groups"
+  ],
+  "leases": "Final-model lease acquired for complete preflighted set before awaits; existing scheduler terminal FIFO fence.",
+  "opaqueBagLimit": "R3 bag can stop at throwing user resource. Other models/stages/framework subscriptions still attempted; Failed/Incomplete, no unsafe retry.",
+  "notClaimed": [
+    "Recursive/global disposal",
+    "Arbitrary user resource rollback or leak-free recovery after opaque-bag failure",
+    "Custom VisualElement IDisposable ownership",
+    "Pixels/player/World Space/Display/audio acceptance"
+  ]
+}

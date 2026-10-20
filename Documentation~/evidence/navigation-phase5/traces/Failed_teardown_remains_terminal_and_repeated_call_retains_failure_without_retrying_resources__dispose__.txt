@@ -1,0 +1,99 @@
+test=Failed_teardown_remains_terminal_and_repeated_call_retains_failure_without_retrying_resources("dispose")
+outcome=Passed
+primaryTraceCount=10
+PRIMARY MODELS
+A:model=-1341001902:To=1:Away=1:Cleanup=1:FinalDispose=1:IsDisposed=True
+TRACE
+A:To:lifetime=-1817245164
+A:To.return
+result=Succeeded:stage=None:recovery=NotRequired:error=null
+A:activation-cleanup
+A:Away:activation=null
+A:Away.return
+A:final-dispose
+result=Failed:stage=FinalDisposal:recovery=Incomplete:error=System.AggregateException: Final teardown encountered failures; all safely owned stages were attempted. (Final ViewModel disposal failed. (injected teardown fault)) ---> System.AggregateException: Final ViewModel disposal failed. (injected teardown fault) ---> System.InvalidOperationException: injected teardown fault
+  at Sim.Faciem.Tests.NavigationTeardownTests.<Failed_teardown_remains_terminal_and_repeated_call_retains_failure_without_retrying_resources>b__34_2 () [0x00000] in C:\Users\DPast\Documents\Projects\ReviewWorktrees\sim-faciem-navigation-phase5\Tests\Editor\NavigationTeardownTests.cs:486 
+  at Sim.Faciem.Tests.NavigationTeardownTests+Resource.Dispose () [0x00000] in C:\Users\DPast\Documents\Projects\ReviewWorktrees\sim-faciem-navigation-phase5\Tests\Editor\NavigationTeardownTests.cs:1044 
+  at R3.DisposableBag.Clear () [0x00018] in <c49537a98ac54652840af968be1a11db>:0 
+  at R3.DisposableBag.Dispose () [0x00000] in <c49537a98ac54652840af968be1a11db>:0 
+  at Sim.Faciem.BaseViewModel.Dispose () [0x00079] in C:\Users\DPast\Documents\Projects\ReviewWorktrees\sim-faciem-navigation-phase5\Runtime\BaseViewModel.cs:200 
+   --- End of inner exception stack trace ---
+  at Sim.Faciem.BaseViewModel.Dispose () [0x00116] in C:\Users\DPast\Documents\Projects\ReviewWorktrees\sim-faciem-navigation-phase5\Runtime\BaseViewModel.cs:223 
+  at Sim.Faciem.NavigationService+<>c__DisplayClass1_10.<TeardownOwned>b__23 () [0x00001] in C:\Users\DPast\Documents\Projects\ReviewWorktrees\sim-faciem-navigation-phase5\Runtime\NavigationService.Teardown.cs:225 
+  at (wrapper delegate-invoke) System.Func`1[Cysharp.Threading.Tasks.UniTask].invoke_TResult()
+  at Sim.Faciem.Internal.RegionNavigationOperations.InvokeLifecycle (Sim.Faciem.Internal.RegionNavigationOperations+Operation operation, Sim.Faciem.BaseViewModel model, System.Func`1[TResult] callback) [0x000c1] in C:\Users\DPast\Documents\Projects\ReviewWorktrees\sim-faciem-navigation-phase5\Runtime\Internal\RegionNavigationOperations.cs:169 
+  at Cysharp.Threading.Tasks.UniTask+ExceptionResultSource.GetResult (System.Int16 token) [0x0001e] in .\Library\PackageCache\com.cysharp.unitask@bf35135da627\Runtime\UniTask.Factory.cs:326 
+  at Cysharp.Threading.Tasks.UniTask+Awaiter.GetResult () [0x00015] in .\Library\PackageCache\com.cysharp.unitask@bf35135da627\Runtime\UniTask.cs:316 
+  at Sim.Faciem.NavigationService+<>c__DisplayClass1_0.<TeardownOwned>g__Attempt|2 (Sim.Faciem.NavigationStage stage, System.Func`1[TResult] action) [0x00043] in C:\Users\DPast\Documents\Projects\ReviewWorktrees\sim-faciem-navigation-phase5\Runtime\NavigationService.Teardown.cs:142 
+   --- End of inner exception stack trace ---
+---> (Inner Exception #0) System.AggregateException: Final ViewModel disposal failed. (injected teardown fault) ---> System.InvalidOperationException: injected teardown fault
+  at Sim.Faciem.Tests.NavigationTeardownTests.<Failed_teardown_remains_terminal_and_repeated_call_retains_failure_without_retrying_resources>b__34_2 () [0x00000] in C:\Users\DPast\Documents\Projects\ReviewWorktrees\sim-faciem-navigation-phase5\Tests\Editor\NavigationTeardownTests.cs:486 
+  at Sim.Faciem.Tests.NavigationTeardownTests+Resource.Dispose () [0x00000] in C:\Users\DPast\Documents\Projects\ReviewWorktrees\sim-faciem-navigation-phase5\Tests\Editor\NavigationTeardownTests.cs:1044 
+  at R3.DisposableBag.Clear () [0x00018] in <c49537a98ac54652840af968be1a11db>:0 
+  at R3.DisposableBag.Dispose () [0x00000] in <c49537a98ac54652840af968be1a11db>:0 
+  at Sim.Faciem.BaseViewModel.Dispose () [0x00079] in C:\Users\DPast\Documents\Projects\ReviewWorktrees\sim-faciem-navigation-phase5\Runtime\BaseViewModel.cs:200 
+   --- End of inner exception stack trace ---
+  at Sim.Faciem.BaseViewModel.Dispose () [0x00116] in C:\Users\DPast\Documents\Projects\ReviewWorktrees\sim-faciem-navigation-phase5\Runtime\BaseViewModel.cs:223 
+  at Sim.Faciem.NavigationService+<>c__DisplayClass1_10.<TeardownOwned>b__23 () [0x00001] in C:\Users\DPast\Documents\Projects\ReviewWorktrees\sim-faciem-navigation-phase5\Runtime\NavigationService.Teardown.cs:225 
+  at (wrapper delegate-invoke) System.Func`1[Cysharp.Threading.Tasks.UniTask].invoke_TResult()
+  at Sim.Faciem.Internal.RegionNavigationOperations.InvokeLifecycle (Sim.Faciem.Internal.RegionNavigationOperations+Operation operation, Sim.Faciem.BaseViewModel model, System.Func`1[TResult] callback) [0x000c1] in C:\Users\DPast\Documents\Projects\ReviewWorktrees\sim-faciem-navigation-phase5\Runtime\Internal\RegionNavigationOperations.cs:169 
+  at Cysharp.Threading.Tasks.UniTask+ExceptionResultSource.GetResult (System.Int16 token) [0x0001e] in .\Library\PackageCache\com.cysharp.unitask@bf35135da627\Runtime\UniTask.Factory.cs:326 
+  at Cysharp.Threading.Tasks.UniTask+Awaiter.GetResult () [0x00015] in .\Library\PackageCache\com.cysharp.unitask@bf35135da627\Runtime\UniTask.cs:316 
+  at Sim.Faciem.NavigationService+<>c__DisplayClass1_0.<TeardownOwned>g__Attempt|2 (Sim.Faciem.NavigationStage stage, System.Func`1[TResult] action) [0x00043] in C:\Users\DPast\Documents\Projects\ReviewWorktrees\sim-faciem-navigation-phase5\Runtime\NavigationService.Teardown.cs:142 
+---> (Inner Exception #0) System.InvalidOperationException: injected teardown fault
+  at Sim.Faciem.Tests.NavigationTeardownTests.<Failed_teardown_remains_terminal_and_repeated_call_retains_failure_without_retrying_resources>b__34_2 () [0x00000] in C:\Users\DPast\Documents\Projects\ReviewWorktrees\sim-faciem-navigation-phase5\Tests\Editor\NavigationTeardownTests.cs:486 
+  at Sim.Faciem.Tests.NavigationTeardownTests+Resource.Dispose () [0x00000] in C:\Users\DPast\Documents\Projects\ReviewWorktrees\sim-faciem-navigation-phase5\Tests\Editor\NavigationTeardownTests.cs:1044 
+  at R3.DisposableBag.Clear () [0x00018] in <c49537a98ac54652840af968be1a11db>:0 
+  at R3.DisposableBag.Dispose () [0x00000] in <c49537a98ac54652840af968be1a11db>:0 
+  at Sim.Faciem.BaseViewModel.Dispose () [0x00079] in C:\Users\DPast\Documents\Projects\ReviewWorktrees\sim-faciem-navigation-phase5\Runtime\BaseViewModel.cs:200 <---
+<---
+
+result=Failed:stage=FinalDisposal:recovery=Incomplete:error=System.AggregateException: Final teardown encountered failures; all safely owned stages were attempted. (Final ViewModel disposal failed. (injected teardown fault)) ---> System.AggregateException: Final ViewModel disposal failed. (injected teardown fault) ---> System.InvalidOperationException: injected teardown fault
+  at Sim.Faciem.Tests.NavigationTeardownTests.<Failed_teardown_remains_terminal_and_repeated_call_retains_failure_without_retrying_resources>b__34_2 () [0x00000] in C:\Users\DPast\Documents\Projects\ReviewWorktrees\sim-faciem-navigation-phase5\Tests\Editor\NavigationTeardownTests.cs:486 
+  at Sim.Faciem.Tests.NavigationTeardownTests+Resource.Dispose () [0x00000] in C:\Users\DPast\Documents\Projects\ReviewWorktrees\sim-faciem-navigation-phase5\Tests\Editor\NavigationTeardownTests.cs:1044 
+  at R3.DisposableBag.Clear () [0x00018] in <c49537a98ac54652840af968be1a11db>:0 
+  at R3.DisposableBag.Dispose () [0x00000] in <c49537a98ac54652840af968be1a11db>:0 
+  at Sim.Faciem.BaseViewModel.Dispose () [0x00079] in C:\Users\DPast\Documents\Projects\ReviewWorktrees\sim-faciem-navigation-phase5\Runtime\BaseViewModel.cs:200 
+   --- End of inner exception stack trace ---
+  at Sim.Faciem.BaseViewModel.Dispose () [0x00116] in C:\Users\DPast\Documents\Projects\ReviewWorktrees\sim-faciem-navigation-phase5\Runtime\BaseViewModel.cs:223 
+  at Sim.Faciem.NavigationService+<>c__DisplayClass1_10.<TeardownOwned>b__23 () [0x00001] in C:\Users\DPast\Documents\Projects\ReviewWorktrees\sim-faciem-navigation-phase5\Runtime\NavigationService.Teardown.cs:225 
+  at (wrapper delegate-invoke) System.Func`1[Cysharp.Threading.Tasks.UniTask].invoke_TResult()
+  at Sim.Faciem.Internal.RegionNavigationOperations.InvokeLifecycle (Sim.Faciem.Internal.RegionNavigationOperations+Operation operation, Sim.Faciem.BaseViewModel model, System.Func`1[TResult] callback) [0x000c1] in C:\Users\DPast\Documents\Projects\ReviewWorktrees\sim-faciem-navigation-phase5\Runtime\Internal\RegionNavigationOperations.cs:169 
+  at Cysharp.Threading.Tasks.UniTask+ExceptionResultSource.GetResult (System.Int16 token) [0x0001e] in .\Library\PackageCache\com.cysharp.unitask@bf35135da627\Runtime\UniTask.Factory.cs:326 
+  at Cysharp.Threading.Tasks.UniTask+Awaiter.GetResult () [0x00015] in .\Library\PackageCache\com.cysharp.unitask@bf35135da627\Runtime\UniTask.cs:316 
+  at Sim.Faciem.NavigationService+<>c__DisplayClass1_0.<TeardownOwned>g__Attempt|2 (Sim.Faciem.NavigationStage stage, System.Func`1[TResult] action) [0x00043] in C:\Users\DPast\Documents\Projects\ReviewWorktrees\sim-faciem-navigation-phase5\Runtime\NavigationService.Teardown.cs:142 
+   --- End of inner exception stack trace ---
+---> (Inner Exception #0) System.AggregateException: Final ViewModel disposal failed. (injected teardown fault) ---> System.InvalidOperationException: injected teardown fault
+  at Sim.Faciem.Tests.NavigationTeardownTests.<Failed_teardown_remains_terminal_and_repeated_call_retains_failure_without_retrying_resources>b__34_2 () [0x00000] in C:\Users\DPast\Documents\Projects\ReviewWorktrees\sim-faciem-navigation-phase5\Tests\Editor\NavigationTeardownTests.cs:486 
+  at Sim.Faciem.Tests.NavigationTeardownTests+Resource.Dispose () [0x00000] in C:\Users\DPast\Documents\Projects\ReviewWorktrees\sim-faciem-navigation-phase5\Tests\Editor\NavigationTeardownTests.cs:1044 
+  at R3.DisposableBag.Clear () [0x00018] in <c49537a98ac54652840af968be1a11db>:0 
+  at R3.DisposableBag.Dispose () [0x00000] in <c49537a98ac54652840af968be1a11db>:0 
+  at Sim.Faciem.BaseViewModel.Dispose () [0x00079] in C:\Users\DPast\Documents\Projects\ReviewWorktrees\sim-faciem-navigation-phase5\Runtime\BaseViewModel.cs:200 
+   --- End of inner exception stack trace ---
+  at Sim.Faciem.BaseViewModel.Dispose () [0x00116] in C:\Users\DPast\Documents\Projects\ReviewWorktrees\sim-faciem-navigation-phase5\Runtime\BaseViewModel.cs:223 
+  at Sim.Faciem.NavigationService+<>c__DisplayClass1_10.<TeardownOwned>b__23 () [0x00001] in C:\Users\DPast\Documents\Projects\ReviewWorktrees\sim-faciem-navigation-phase5\Runtime\NavigationService.Teardown.cs:225 
+  at (wrapper delegate-invoke) System.Func`1[Cysharp.Threading.Tasks.UniTask].invoke_TResult()
+  at Sim.Faciem.Internal.RegionNavigationOperations.InvokeLifecycle (Sim.Faciem.Internal.RegionNavigationOperations+Operation operation, Sim.Faciem.BaseViewModel model, System.Func`1[TResult] callback) [0x000c1] in C:\Users\DPast\Documents\Projects\ReviewWorktrees\sim-faciem-navigation-phase5\Runtime\Internal\RegionNavigationOperations.cs:169 
+  at Cysharp.Threading.Tasks.UniTask+ExceptionResultSource.GetResult (System.Int16 token) [0x0001e] in .\Library\PackageCache\com.cysharp.unitask@bf35135da627\Runtime\UniTask.Factory.cs:326 
+  at Cysharp.Threading.Tasks.UniTask+Awaiter.GetResult () [0x00015] in .\Library\PackageCache\com.cysharp.unitask@bf35135da627\Runtime\UniTask.cs:316 
+  at Sim.Faciem.NavigationService+<>c__DisplayClass1_0.<TeardownOwned>g__Attempt|2 (Sim.Faciem.NavigationStage stage, System.Func`1[TResult] action) [0x00043] in C:\Users\DPast\Documents\Projects\ReviewWorktrees\sim-faciem-navigation-phase5\Runtime\NavigationService.Teardown.cs:142 
+---> (Inner Exception #0) System.InvalidOperationException: injected teardown fault
+  at Sim.Faciem.Tests.NavigationTeardownTests.<Failed_teardown_remains_terminal_and_repeated_call_retains_failure_without_retrying_resources>b__34_2 () [0x00000] in C:\Users\DPast\Documents\Projects\ReviewWorktrees\sim-faciem-navigation-phase5\Tests\Editor\NavigationTeardownTests.cs:486 
+  at Sim.Faciem.Tests.NavigationTeardownTests+Resource.Dispose () [0x00000] in C:\Users\DPast\Documents\Projects\ReviewWorktrees\sim-faciem-navigation-phase5\Tests\Editor\NavigationTeardownTests.cs:1044 
+  at R3.DisposableBag.Clear () [0x00018] in <c49537a98ac54652840af968be1a11db>:0 
+  at R3.DisposableBag.Dispose () [0x00000] in <c49537a98ac54652840af968be1a11db>:0 
+  at Sim.Faciem.BaseViewModel.Dispose () [0x00079] in C:\Users\DPast\Documents\Projects\ReviewWorktrees\sim-faciem-navigation-phase5\Runtime\BaseViewModel.cs:200 <---
+<---
+
+result=ScopeClosed:stage=Queue:recovery=Preserved:error=System.ObjectDisposedException: Region teardown has closed navigation admission.
+Object name: 'Region'.
+  at Sim.Faciem.Internal.RegionNavigationOperations.Reserve (Sim.Faciem.IRegion[] regions, Sim.Faciem.BaseViewModel caller, Sim.Faciem.NavigationPolicy policy, System.Boolean teardown) [0x001b5] in C:\Users\DPast\Documents\Projects\ReviewWorktrees\sim-faciem-navigation-phase5\Runtime\Internal\RegionNavigationOperations.cs:219 
+  at Sim.Faciem.Internal.RegionNavigationOperations.Run (Sim.Faciem.IRegion[] regions, Sim.Faciem.BaseViewModel caller, System.Func`2[T,TResult] action, Sim.Faciem.NavigationPolicy policy, Sim.Faciem.Internal.NavigationExecution execution, System.Boolean teardown) [0x00010] in C:\Users\DPast\Documents\Projects\ReviewWorktrees\sim-faciem-navigation-phase5\Runtime\Internal\RegionNavigationOperations.cs:70 
+  at Cysharp.Threading.Tasks.UniTask+ExceptionResultSource.GetResult (System.Int16 token) [0x0001e] in .\Library\PackageCache\com.cysharp.unitask@bf35135da627\Runtime\UniTask.Factory.cs:326 
+  at Cysharp.Threading.Tasks.UniTask+Awaiter.GetResult () [0x00015] in .\Library\PackageCache\com.cysharp.unitask@bf35135da627\Runtime\UniTask.cs:316 
+  at Sim.Faciem.NavigationService.NavigateToFrom (Sim.Faciem.BaseViewModel caller, Sim.Faciem.IRegionManager regionManager, Sim.Faciem.ViewId viewId, Sim.Faciem.RegionName regionName, Sim.Faciem.NavigationParameters parameters, Sim.Faciem.NavigationPolicy policy, Sim.Faciem.NavigationEntryMode entryMode, Sim.Faciem.Internal.NavigationExecution execution) [0x002fb] in C:\Users\DPast\Documents\Projects\ReviewWorktrees\sim-faciem-navigation-phase5\Runtime\NavigationService.cs:101 
+  at Cysharp.Threading.Tasks.UniTask+ExceptionResultSource.GetResult (System.Int16 token) [0x0001e] in .\Library\PackageCache\com.cysharp.unitask@bf35135da627\Runtime\UniTask.Factory.cs:326 
+  at Cysharp.Threading.Tasks.UniTask+Awaiter.GetResult () [0x00015] in .\Library\PackageCache\com.cysharp.unitask@bf35135da627\Runtime\UniTask.cs:316 
+  at Sim.Faciem.NavigationService.NavigateResultFrom (Sim.Faciem.BaseViewModel caller, Sim.Faciem.IRegionManager manager, Sim.Faciem.ViewId id, Sim.Faciem.RegionName region, Sim.Faciem.NavigationParameters parameters, Sim.Faciem.NavigationPolicy policy, Sim.Faciem.NavigationEntryMode entryMode) [0x00067] in C:\Users\DPast\Documents\Projects\ReviewWorktrees\sim-faciem-navigation-phase5\Runtime\NavigationService.cs:38 
+FINAL MODELS
+A:model=-1341001902:To=1:Away=1:Cleanup=1:FinalDispose=1:IsDisposed=True

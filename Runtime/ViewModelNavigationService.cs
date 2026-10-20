@@ -55,6 +55,14 @@ namespace Sim.Faciem
                 : UniTask.FromResult(Internal.NavigationExecution.Unsupported("Custom navigation services do not advertise result/recovery support."));
         }
 
+        internal UniTask<NavigationResult> TeardownResult(System.Collections.Generic.IReadOnlyList<Region> regions,
+            System.Func<BaseViewModel, bool> ownsModel)
+        {
+            return _navigationService is NavigationService native
+                ? native.TeardownFrom(_baseViewModel, regions, ownsModel)
+                : UniTask.FromResult(Internal.NavigationExecution.Unsupported("Custom navigation services do not support final teardown."));
+        }
+
         public UniTask Clear(RegionName regionName)
         {
             return ClearWithPolicy(regionName, NavigationPolicy.Fifo);

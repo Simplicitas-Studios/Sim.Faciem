@@ -1,0 +1,52 @@
+{
+  "commands": [
+    [
+      "C:/Program Files/Unity/Hub/Editor/6000.6.5f1/Editor/Data/DotNetSdk/dotnet.exe",
+      "format",
+      "whitespace",
+      "C:\\Users\\DPast\\Documents\\Projects\\ReviewWorktrees\\sim-faciem-navigation-phase5",
+      "--folder",
+      "--include",
+      "Runtime/BaseViewModel.cs",
+      "Runtime/Internal/NavigationExecution.cs",
+      "Runtime/Internal/RegionNavigationOperations.cs",
+      "Runtime/NavigationResult.cs",
+      "Runtime/NavigationService.cs",
+      "Runtime/Region.cs",
+      "Runtime/RegionManager.cs",
+      "Runtime/ViewModelNavigationService.cs",
+      "Runtime/Region.CacheOwnership.cs",
+      "Runtime/NavigationTeardownExtensions.cs",
+      "Runtime/NavigationService.Teardown.cs",
+      "Tests/Editor/NavigationTeardownTests.cs",
+      "--verbosity",
+      "quiet"
+    ],
+    [
+      "C:/Program Files/Unity/Hub/Editor/6000.6.5f1/Editor/Data/DotNetSdk/dotnet.exe",
+      "format",
+      "whitespace",
+      "C:\\Users\\DPast\\Documents\\Projects\\ReviewWorktrees\\sim-faciem-navigation-phase5",
+      "--folder",
+      "--include",
+      "Runtime/BaseViewModel.cs",
+      "Runtime/Internal/NavigationExecution.cs",
+      "Runtime/Internal/RegionNavigationOperations.cs",
+      "Runtime/NavigationResult.cs",
+      "Runtime/NavigationService.cs",
+      "Runtime/Region.cs",
+      "Runtime/RegionManager.cs",
+      "Runtime/ViewModelNavigationService.cs",
+      "Runtime/Region.CacheOwnership.cs",
+      "Runtime/NavigationTeardownExtensions.cs",
+      "Runtime/NavigationService.Teardown.cs",
+      "Tests/Editor/NavigationTeardownTests.cs",
+      "--verbosity",
+      "quiet",
+      "--verify-no-changes"
+    ]
+  ],
+  "formatExitCode": 0,
+  "verifyExitCode": 0,
+  "output": ""
+}

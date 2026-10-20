@@ -1,0 +1,21 @@
+test=A_disposed_DI_singleton_cannot_be_reactivated_in_a_new_scope
+outcome=Passed
+primaryTraceCount=9
+PRIMARY MODELS
+A:model=284014742:To=1:Away=1:Cleanup=1:FinalDispose=1:IsDisposed=True
+TRACE
+A:To:lifetime=569839944
+A:To.return
+result=Succeeded:stage=None:recovery=NotRequired:error=null
+A:activation-cleanup
+A:Away:activation=null
+A:Away.return
+A:final-dispose
+result=Succeeded:stage=None:recovery=NotRequired:error=null
+result=Failed:stage=Construction:recovery=Preserved:error=System.ObjectDisposedException: Cannot access a disposed object.
+Object name: 'A'.
+  at Sim.Faciem.BaseViewModel.Setup (Sim.Faciem.IViewModelRegionManager regionManager, Sim.Faciem.INavigationService navigationService) [0x0001a] in C:\Users\DPast\Documents\Projects\ReviewWorktrees\sim-faciem-navigation-phase5\Runtime\BaseViewModel.cs:45 
+  at Sim.Faciem.ViewModelConstructionService.CreateInstance (System.Type type) [0x00053] in C:\Users\DPast\Documents\Projects\ReviewWorktrees\sim-faciem-navigation-phase5\Runtime\ViewModelConstructionService.cs:40 
+  at Sim.Faciem.NavigationService.NavigateToOwned (Sim.Faciem.IRegionManager regionManager, Sim.Faciem.IRegion[] regions, Sim.Faciem.ViewIdAsset viewAsset, Sim.Faciem.ViewId viewId, Sim.Faciem.NavigationParameters parameters, Sim.Faciem.Internal.RegionNavigationOperations+Operation operation, Sim.Faciem.NavigationEntryMode entryMode, Sim.Faciem.Internal.NavigationExecution execution) [0x0024a] in C:\Users\DPast\Documents\Projects\ReviewWorktrees\sim-faciem-navigation-phase5\Runtime\NavigationService.cs:136 
+FINAL MODELS
+A:model=284014742:To=1:Away=1:Cleanup=1:FinalDispose=1:IsDisposed=True

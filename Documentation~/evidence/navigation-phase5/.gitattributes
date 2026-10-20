@@ -1,0 +1,5 @@
+* -text
+# Preserve raw exception stacks, not source whitespace.
+traces/*.txt -whitespace
+initial/failing-traces/*.txt -whitespace
+runs/*.xml -whitespace

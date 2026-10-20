@@ -1,0 +1,32 @@
+test=A_nested_scope_added_during_an_awaited_exit_is_not_forcibly_detached_with_its_callback_running
+outcome=Passed
+primaryTraceCount=11
+PRIMARY MODELS
+A:model=-477199332:To=1:Away=1:Cleanup=1:FinalDispose=1:IsDisposed=True
+B:model=1254756070:To=1:Away=0:Cleanup=0:FinalDispose=0:IsDisposed=False
+TRACE
+A:To:lifetime=-1980389808
+A:To.return
+result=Succeeded:stage=None:recovery=NotRequired:error=null
+A:activation-cleanup
+A:Away:activation=null
+B:To:lifetime=539459188
+A:Away.return
+A:final-dispose
+result=Failed:stage=ViewRelease:recovery=Incomplete:error=System.AggregateException: Final teardown encountered failures; all safely owned stages were attempted. (A nested Region appeared during exit; teardown cannot detach an unreserved scope.) ---> System.NotSupportedException: A nested Region appeared during exit; teardown cannot detach an unreserved scope.
+  at Cysharp.Threading.Tasks.UniTask+ExceptionResultSource.GetResult (System.Int16 token) [0x0001e] in .\Library\PackageCache\com.cysharp.unitask@bf35135da627\Runtime\UniTask.Factory.cs:326 
+  at Cysharp.Threading.Tasks.UniTask+Awaiter.GetResult () [0x00015] in .\Library\PackageCache\com.cysharp.unitask@bf35135da627\Runtime\UniTask.cs:316 
+  at Sim.Faciem.NavigationService+<>c__DisplayClass1_0.<TeardownOwned>g__Attempt|2 (Sim.Faciem.NavigationStage stage, System.Func`1[TResult] action) [0x00043] in C:\Users\DPast\Documents\Projects\ReviewWorktrees\sim-faciem-navigation-phase5\Runtime\NavigationService.Teardown.cs:142 
+   --- End of inner exception stack trace ---
+---> (Inner Exception #0) System.NotSupportedException: A nested Region appeared during exit; teardown cannot detach an unreserved scope.
+  at Cysharp.Threading.Tasks.UniTask+ExceptionResultSource.GetResult (System.Int16 token) [0x0001e] in .\Library\PackageCache\com.cysharp.unitask@bf35135da627\Runtime\UniTask.Factory.cs:326 
+  at Cysharp.Threading.Tasks.UniTask+Awaiter.GetResult () [0x00015] in .\Library\PackageCache\com.cysharp.unitask@bf35135da627\Runtime\UniTask.cs:316 
+  at Sim.Faciem.NavigationService+<>c__DisplayClass1_0.<TeardownOwned>g__Attempt|2 (Sim.Faciem.NavigationStage stage, System.Func`1[TResult] action) [0x00043] in C:\Users\DPast\Documents\Projects\ReviewWorktrees\sim-faciem-navigation-phase5\Runtime\NavigationService.Teardown.cs:142 <---
+
+B:To.return
+result=Succeeded:stage=None:recovery=NotRequired:error=null
+B:activation-cleanup
+B:final-dispose
+FINAL MODELS
+A:model=-477199332:To=1:Away=1:Cleanup=1:FinalDispose=1:IsDisposed=True
+B:model=1254756070:To=1:Away=0:Cleanup=1:FinalDispose=1:IsDisposed=True
