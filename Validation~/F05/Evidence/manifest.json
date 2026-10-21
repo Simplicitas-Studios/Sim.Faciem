@@ -359,6 +359,11 @@
       "path": "SourceHistory/source-05-final-acceptance/Tests/Editor/NavigationTypedViewTests.cs",
       "bytes": 26490,
       "sha256": "bf6b2f480894e2b94943c0fd3ffe50e1ad5da44ad350b93fd9764a3a1a7b0f41"
+    },
+    {
+      "path": "repro-preparation-check.json",
+      "bytes": 265,
+      "sha256": "a7b6673f6322f24811460712842672d14010fc473def305c9b10c7cd5b20d99e"
     }
   ]
 }
