@@ -1,0 +1,34 @@
+{
+  "consumer": "C:\\Users\\DPast\\Documents\\Projects\\ReviewWorktrees\\f05-typed-view-validation",
+  "faciemBaseline": "2959e7be2304808fdb244b35c655778004322973",
+  "displayTree": "799f2a0c8cb49755dbe27d9f812992c76a934554",
+  "faciemOverlays": [
+    "Runtime/View.cs",
+    "Runtime/ViewIdAsset.cs",
+    "Runtime/Region.CacheOwnership.cs",
+    "Runtime/NavigationService.cs",
+    "Runtime/NavigationService.Teardown.cs",
+    "Tests/Editor/NavigationTypedViewTests.cs",
+    "Samples~/TypedView/SelectedItemView.cs",
+    "Samples~/TypedView/SelectedItemViewModel.cs"
+  ],
+  "sampleImported": true,
+  "formatCommand": [
+    "C:/Program Files/Unity/Hub/Editor/6000.6.5f1/Editor/Data/DotNetSdk/dotnet.exe",
+    "format",
+    "whitespace",
+    "C:\\Users\\DPast\\Documents\\Projects\\ReviewWorktrees\\sim-faciem-f05-typed-views",
+    "--folder",
+    "--include",
+    "Runtime/View.cs",
+    "Runtime/ViewIdAsset.cs",
+    "Runtime/Region.CacheOwnership.cs",
+    "Runtime/NavigationService.cs",
+    "Runtime/NavigationService.Teardown.cs",
+    "Tests/Editor/NavigationTypedViewTests.cs",
+    "Samples~/TypedView/SelectedItemView.cs",
+    "Samples~/TypedView/SelectedItemViewModel.cs",
+    "--verbosity",
+    "quiet"
+  ]
+}

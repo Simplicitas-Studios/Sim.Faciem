@@ -55,6 +55,7 @@ namespace Sim.Faciem
             }
             var models = new List<BaseViewModel>();
             var active = new List<BaseViewModel>();
+            var typedViews = new List<View>();
             var views = new List<(Region Region, VisualElement View)>();
             foreach (Region region in regions)
             {
@@ -72,6 +73,18 @@ namespace Sim.Faciem
                 }
                 foreach (Region.CacheEntry entry in entries)
                 {
+                    if (entry.TypedView != null)
+                    {
+                        if (entry.TypedView.IsDisposed || !ReferenceEquals(entry.TypedView.Model, entry.Model) ||
+                            !ReferenceEquals(entry.TypedView.VisualRoot, entry.View))
+                        {
+                            execution.Reject(NavigationStatus.InvalidConfiguration, "Typed View/cache identity is invalid.");
+                        }
+                        if (!typedViews.Any(previous => ReferenceEquals(previous, entry.TypedView)))
+                        {
+                            typedViews.Add(entry.TypedView);
+                        }
+                    }
                     if (entry.View.parent != null && !region.Contains(entry.View))
                     {
                         execution.Reject(NavigationStatus.InvalidConfiguration, "A cached View moved outside its owner.");
@@ -213,6 +226,10 @@ namespace Sim.Faciem
                         owned.View.RemoveFromHierarchy();
                         return UniTask.CompletedTask;
                     });
+                }
+                foreach (View typedView in typedViews)
+                {
+                    typedView.ReleaseReferences();
                 }
                 foreach (Region region in regions)
                 {

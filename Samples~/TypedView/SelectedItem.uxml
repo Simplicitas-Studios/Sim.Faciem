@@ -1,0 +1,9 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements">
+    <Style src="SelectedItem.uss" />
+    <ui:VisualElement>
+        <ui:Label name="item-0" text="First" />
+        <ui:Label name="item-1" text="Second" />
+        <ui:Label name="item-2" text="Third" />
+        <ui:Label name="item-3" text="Fourth" />
+    </ui:VisualElement>
+</ui:UXML>

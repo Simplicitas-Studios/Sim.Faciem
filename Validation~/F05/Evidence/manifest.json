@@ -1,0 +1,364 @@
+{
+  "files": [
+    {
+      "path": ".gitattributes",
+      "bytes": 67,
+      "sha256": "95b9081b4e8d54bfa66c737420874878d82eb0f7ee23747fb1c6411f7217f3b2"
+    },
+    {
+      "path": "acceptance-selection.json",
+      "bytes": 1689,
+      "sha256": "cc7f487354f45456ca6d6420eef76640d5040fcb8d7ae2d1642ad24620de6e2d"
+    },
+    {
+      "path": "before.json",
+      "bytes": 82960,
+      "sha256": "073d9a235baa37cc68b85a0ecc9a37d418dd7c3430cd7ed6030b91b118568f92"
+    },
+    {
+      "path": "preparation.json",
+      "bytes": 1248,
+      "sha256": "5c65ce52ec45bdbc535801b9bd06e1e262c70398e54516ef9ab3058bae9c92bd"
+    },
+    {
+      "path": "protection.json",
+      "bytes": 1652,
+      "sha256": "60f113faeca7e821e29556996eb6d9801ffa6f70fd66263f23db65e9082622f6"
+    },
+    {
+      "path": "Runs/pi-unity-tests-editmode-20261021T195050731Z-910efec6888b42c8b8412e1831d95ea9.json",
+      "bytes": 4132,
+      "sha256": "22536df01a849d94891f8021dd2823b7c64b79b7f88a2c77ba98e5b4c21a8fe0"
+    },
+    {
+      "path": "Runs/pi-unity-tests-editmode-20261021T195641136Z-f784ed4c622445c7a56981ac1406b4bd.json",
+      "bytes": 5128,
+      "sha256": "1b59c54801922c4d88b450edbc4897d90eede629a2f5c08dd544504a8707ea34"
+    },
+    {
+      "path": "Runs/pi-unity-tests-editmode-20261021T200133842Z-acf2d7ec825948c2893d6c15ff980845.json",
+      "bytes": 151906,
+      "sha256": "f305d1f3ba64e860e93bd99b5d89939a7dd5450ff74ef973be1959618a954ad4"
+    },
+    {
+      "path": "Runs/pi-unity-tests-editmode-20261021T200445315Z-6fd9555656bb41f58c0465abf64d2678.json",
+      "bytes": 149729,
+      "sha256": "da97973d29940d2e6ab6f1133f245f9d78d0adb512839674b6c29f6265de8fd7"
+    },
+    {
+      "path": "Runs/pi-unity-tests-editmode-20261021T200611759Z-c5e6cc5f7c5e4e6f8e74ef5e227fd244.json",
+      "bytes": 39413,
+      "sha256": "e4eb351105c6d07f0f31bd9ea8ee846313f45d0f878ca9d1c2b9a854ff10c2be"
+    },
+    {
+      "path": "Runs/pi-unity-tests-editmode-20261021T201141791Z-6e18b9d6c5b2436c8a7b3bdf5b223f9f.json",
+      "bytes": 149585,
+      "sha256": "45b2dd90c604d719c401a1d569384815765add1e2aad3561c90be1e914697e75"
+    },
+    {
+      "path": "Runs/unity-tests-editmode-20261021T194712784Z-2565327db0a0483b.log",
+      "bytes": 4953919,
+      "sha256": "21c4ae724975c622667e8da9eae143d9411ec7252c675ca6aa181f3612ea61f2"
+    },
+    {
+      "path": "Runs/unity-tests-editmode-20261021T194712784Z-2565327db0a0483b.xml",
+      "bytes": 21217,
+      "sha256": "e645dd68ead49ed22a344696af76f4d91300cee7eeb1fd10614391555115ff54"
+    },
+    {
+      "path": "Runs/unity-tests-editmode-20261021T195619648Z-5daeae126bf14817.log",
+      "bytes": 58512,
+      "sha256": "11c70b9e74bad64cd32a41d5adc04205cd21b59d3b91a3647ce9b12cf542a606"
+    },
+    {
+      "path": "Runs/unity-tests-editmode-20261021T195619648Z-5daeae126bf14817.xml",
+      "bytes": 31927,
+      "sha256": "25b1092926599b46e0d486712ea64a2dfc73e41d3f65c6cea7cac0569c51fe9e"
+    },
+    {
+      "path": "Runs/unity-tests-editmode-20261021T200006662Z-b8abc6facb69430c.log",
+      "bytes": 7245775,
+      "sha256": "beba3e8d2df2cd1fbf62790e3472ed7306e5875351f7261eb00ab100e60621a3"
+    },
+    {
+      "path": "Runs/unity-tests-editmode-20261021T200006662Z-b8abc6facb69430c.xml",
+      "bytes": 825400,
+      "sha256": "f779dfb05f7ca194971faa3bf36911dd0b05e0c1988730275402ded656855bd2"
+    },
+    {
+      "path": "Runs/unity-tests-editmode-20261021T200336927Z-e1b8c91e87784665.log",
+      "bytes": 7196819,
+      "sha256": "239141ae83051796c46ad908873bdf0b1ab35b542aa104ca6d09bfffaadabd9e"
+    },
+    {
+      "path": "Runs/unity-tests-editmode-20261021T200336927Z-e1b8c91e87784665.xml",
+      "bytes": 822489,
+      "sha256": "37aedf776f72bc992214ca45a16ce103589ed35459eff110fe18a259a420eb45"
+    },
+    {
+      "path": "Runs/unity-tests-editmode-20261021T200550452Z-5824854c10cd4a6e.log",
+      "bytes": 52464,
+      "sha256": "deb1fec4d7f3bcfa0f12532d34bf5838e331341e93c339e2b8990cdeba94a506"
+    },
+    {
+      "path": "Runs/unity-tests-editmode-20261021T200550452Z-5824854c10cd4a6e.xml",
+      "bytes": 208513,
+      "sha256": "3a7372638b8c20214615e55c5d30a1acd448597febd3796d6dbb2d6e5081b415"
+    },
+    {
+      "path": "Runs/unity-tests-editmode-20261021T201045042Z-6ae0c11fa2e44213.log",
+      "bytes": 6396431,
+      "sha256": "0a52b5e2a90633272b436ebd508fd244f1175c14a5c91365bb3ec5a628644a91"
+    },
+    {
+      "path": "Runs/unity-tests-editmode-20261021T201045042Z-6ae0c11fa2e44213.xml",
+      "bytes": 801618,
+      "sha256": "14246c1925a5077a720242d681328a302c843f02d7a60b08fa4a53bd366318c2"
+    },
+    {
+      "path": "runs.json",
+      "bytes": 6078,
+      "sha256": "a427a50ff3267b56b8e89fa242ba5f38aa3c2ebd753c65631f21948bff0d43d8"
+    },
+    {
+      "path": "SourceHistory/source-01-first-21/hashes.json",
+      "bytes": 25815,
+      "sha256": "37326f47bd5d8486f7c2496941a5980208f2ad6ee1f03e98aa07000b45211714"
+    },
+    {
+      "path": "SourceHistory/source-01-first-21/Runtime/NavigationService.cs",
+      "bytes": 33974,
+      "sha256": "0b6485ee3349f3d28b86d23187e4272cc7f0db5ff19c005df3eac27bc12cd82c"
+    },
+    {
+      "path": "SourceHistory/source-01-first-21/Runtime/NavigationService.Teardown.cs",
+      "bytes": 13580,
+      "sha256": "bdb0e22ea9d7c717bf8208c2bc23abb4b2f057b4a1d799bc1c27aef42315e783"
+    },
+    {
+      "path": "SourceHistory/source-01-first-21/Runtime/Region.CacheOwnership.cs",
+      "bytes": 2335,
+      "sha256": "3255ca2cd01e80ecfa7809f295c55d12642d72a5f86e7185baa69bb5980f181b"
+    },
+    {
+      "path": "SourceHistory/source-01-first-21/Runtime/View.cs",
+      "bytes": 7077,
+      "sha256": "771ea7e40a5a91c1087a6a7705f199978ddf8efbbef1ac50438704c688fda6f2"
+    },
+    {
+      "path": "SourceHistory/source-01-first-21/Runtime/ViewIdAsset.cs",
+      "bytes": 2132,
+      "sha256": "40252999fa624a46330e5c6d14a85f3099062a5ecde3985f8db4bbf5280a43d0"
+    },
+    {
+      "path": "SourceHistory/source-01-first-21/Samples~/TypedView/SelectedItemView.cs",
+      "bytes": 1116,
+      "sha256": "9eec0244afcb9563eaf8311412530d1ccae2dfd6f39640ea53ba13b3bbad7b83"
+    },
+    {
+      "path": "SourceHistory/source-01-first-21/Samples~/TypedView/SelectedItemViewModel.cs",
+      "bytes": 410,
+      "sha256": "cce6a3ff3291d512b99fd0fbda693ace6dbc43a4cdb85a550e525f2ed7dc4f0d"
+    },
+    {
+      "path": "SourceHistory/source-01-first-21/Tests/Editor/NavigationTypedViewTests.cs",
+      "bytes": 23310,
+      "sha256": "03f081e34144998c28ee7ee9a0a7a0bc4641dc32a70938e3d33da109496d0479"
+    },
+    {
+      "path": "SourceHistory/source-02-replay-failed-25/hashes.json",
+      "bytes": 25815,
+      "sha256": "83c53e41274764aa87349ae58697c1c4d96b7000d05e11a9df468af1527a7cef"
+    },
+    {
+      "path": "SourceHistory/source-02-replay-failed-25/Runtime/NavigationService.cs",
+      "bytes": 33974,
+      "sha256": "0b6485ee3349f3d28b86d23187e4272cc7f0db5ff19c005df3eac27bc12cd82c"
+    },
+    {
+      "path": "SourceHistory/source-02-replay-failed-25/Runtime/NavigationService.Teardown.cs",
+      "bytes": 13580,
+      "sha256": "bdb0e22ea9d7c717bf8208c2bc23abb4b2f057b4a1d799bc1c27aef42315e783"
+    },
+    {
+      "path": "SourceHistory/source-02-replay-failed-25/Runtime/Region.CacheOwnership.cs",
+      "bytes": 2335,
+      "sha256": "3255ca2cd01e80ecfa7809f295c55d12642d72a5f86e7185baa69bb5980f181b"
+    },
+    {
+      "path": "SourceHistory/source-02-replay-failed-25/Runtime/View.cs",
+      "bytes": 7077,
+      "sha256": "771ea7e40a5a91c1087a6a7705f199978ddf8efbbef1ac50438704c688fda6f2"
+    },
+    {
+      "path": "SourceHistory/source-02-replay-failed-25/Runtime/ViewIdAsset.cs",
+      "bytes": 2132,
+      "sha256": "40252999fa624a46330e5c6d14a85f3099062a5ecde3985f8db4bbf5280a43d0"
+    },
+    {
+      "path": "SourceHistory/source-02-replay-failed-25/Samples~/TypedView/SelectedItemView.cs",
+      "bytes": 1116,
+      "sha256": "9eec0244afcb9563eaf8311412530d1ccae2dfd6f39640ea53ba13b3bbad7b83"
+    },
+    {
+      "path": "SourceHistory/source-02-replay-failed-25/Samples~/TypedView/SelectedItemViewModel.cs",
+      "bytes": 410,
+      "sha256": "cce6a3ff3291d512b99fd0fbda693ace6dbc43a4cdb85a550e525f2ed7dc4f0d"
+    },
+    {
+      "path": "SourceHistory/source-02-replay-failed-25/Tests/Editor/NavigationTypedViewTests.cs",
+      "bytes": 26559,
+      "sha256": "df8daecc124162b17d6f774ba35cb862d04f7437ff7316793edd9010d7c19d9c"
+    },
+    {
+      "path": "SourceHistory/source-03-replay-fix-and-imported-example/hashes.json",
+      "bytes": 26049,
+      "sha256": "2ad634ee467636dcd3db0a59f9bd27cb8d1abf7876f960b063826a3972e454df"
+    },
+    {
+      "path": "SourceHistory/source-03-replay-fix-and-imported-example/Runtime/NavigationService.cs",
+      "bytes": 33974,
+      "sha256": "0b6485ee3349f3d28b86d23187e4272cc7f0db5ff19c005df3eac27bc12cd82c"
+    },
+    {
+      "path": "SourceHistory/source-03-replay-fix-and-imported-example/Runtime/NavigationService.Teardown.cs",
+      "bytes": 13580,
+      "sha256": "bdb0e22ea9d7c717bf8208c2bc23abb4b2f057b4a1d799bc1c27aef42315e783"
+    },
+    {
+      "path": "SourceHistory/source-03-replay-fix-and-imported-example/Runtime/Region.CacheOwnership.cs",
+      "bytes": 2335,
+      "sha256": "3255ca2cd01e80ecfa7809f295c55d12642d72a5f86e7185baa69bb5980f181b"
+    },
+    {
+      "path": "SourceHistory/source-03-replay-fix-and-imported-example/Runtime/View.cs",
+      "bytes": 8047,
+      "sha256": "1e7a790f204a208644633bdd5160b18fe971286f2c4c8df321205a357587dabb"
+    },
+    {
+      "path": "SourceHistory/source-03-replay-fix-and-imported-example/Runtime/ViewIdAsset.cs",
+      "bytes": 2132,
+      "sha256": "40252999fa624a46330e5c6d14a85f3099062a5ecde3985f8db4bbf5280a43d0"
+    },
+    {
+      "path": "SourceHistory/source-03-replay-fix-and-imported-example/Samples~/TypedView/SelectedItemView.cs",
+      "bytes": 1116,
+      "sha256": "9eec0244afcb9563eaf8311412530d1ccae2dfd6f39640ea53ba13b3bbad7b83"
+    },
+    {
+      "path": "SourceHistory/source-03-replay-fix-and-imported-example/Samples~/TypedView/SelectedItemViewModel.cs",
+      "bytes": 410,
+      "sha256": "cce6a3ff3291d512b99fd0fbda693ace6dbc43a4cdb85a550e525f2ed7dc4f0d"
+    },
+    {
+      "path": "SourceHistory/source-03-replay-fix-and-imported-example/Tests/Editor/F05ImportedTypedSampleTests.cs",
+      "bytes": 6481,
+      "sha256": "38e258130ed1489c0fd345a5d12837c2668f42a236f90ebaa4080d52bf005be4"
+    },
+    {
+      "path": "SourceHistory/source-03-replay-fix-and-imported-example/Tests/Editor/NavigationTypedViewTests.cs",
+      "bytes": 26559,
+      "sha256": "df8daecc124162b17d6f774ba35cb862d04f7437ff7316793edd9010d7c19d9c"
+    },
+    {
+      "path": "SourceHistory/source-04-full-consumer-docs-restored/hashes.json",
+      "bytes": 26049,
+      "sha256": "2ad634ee467636dcd3db0a59f9bd27cb8d1abf7876f960b063826a3972e454df"
+    },
+    {
+      "path": "SourceHistory/source-04-full-consumer-docs-restored/Runtime/NavigationService.cs",
+      "bytes": 33974,
+      "sha256": "0b6485ee3349f3d28b86d23187e4272cc7f0db5ff19c005df3eac27bc12cd82c"
+    },
+    {
+      "path": "SourceHistory/source-04-full-consumer-docs-restored/Runtime/NavigationService.Teardown.cs",
+      "bytes": 13580,
+      "sha256": "bdb0e22ea9d7c717bf8208c2bc23abb4b2f057b4a1d799bc1c27aef42315e783"
+    },
+    {
+      "path": "SourceHistory/source-04-full-consumer-docs-restored/Runtime/Region.CacheOwnership.cs",
+      "bytes": 2335,
+      "sha256": "3255ca2cd01e80ecfa7809f295c55d12642d72a5f86e7185baa69bb5980f181b"
+    },
+    {
+      "path": "SourceHistory/source-04-full-consumer-docs-restored/Runtime/View.cs",
+      "bytes": 8047,
+      "sha256": "1e7a790f204a208644633bdd5160b18fe971286f2c4c8df321205a357587dabb"
+    },
+    {
+      "path": "SourceHistory/source-04-full-consumer-docs-restored/Runtime/ViewIdAsset.cs",
+      "bytes": 2132,
+      "sha256": "40252999fa624a46330e5c6d14a85f3099062a5ecde3985f8db4bbf5280a43d0"
+    },
+    {
+      "path": "SourceHistory/source-04-full-consumer-docs-restored/Samples~/TypedView/SelectedItemView.cs",
+      "bytes": 1116,
+      "sha256": "9eec0244afcb9563eaf8311412530d1ccae2dfd6f39640ea53ba13b3bbad7b83"
+    },
+    {
+      "path": "SourceHistory/source-04-full-consumer-docs-restored/Samples~/TypedView/SelectedItemViewModel.cs",
+      "bytes": 410,
+      "sha256": "cce6a3ff3291d512b99fd0fbda693ace6dbc43a4cdb85a550e525f2ed7dc4f0d"
+    },
+    {
+      "path": "SourceHistory/source-04-full-consumer-docs-restored/Tests/Editor/F05ImportedTypedSampleTests.cs",
+      "bytes": 6481,
+      "sha256": "38e258130ed1489c0fd345a5d12837c2668f42a236f90ebaa4080d52bf005be4"
+    },
+    {
+      "path": "SourceHistory/source-04-full-consumer-docs-restored/Tests/Editor/NavigationTypedViewTests.cs",
+      "bytes": 26559,
+      "sha256": "df8daecc124162b17d6f774ba35cb862d04f7437ff7316793edd9010d7c19d9c"
+    },
+    {
+      "path": "SourceHistory/source-05-final-acceptance/hashes.json",
+      "bytes": 26049,
+      "sha256": "7b75905825bd2c5591683cbd3e80a90e9264bb9895f5fb67519a9c16990b1f81"
+    },
+    {
+      "path": "SourceHistory/source-05-final-acceptance/Runtime/NavigationService.cs",
+      "bytes": 33974,
+      "sha256": "0b6485ee3349f3d28b86d23187e4272cc7f0db5ff19c005df3eac27bc12cd82c"
+    },
+    {
+      "path": "SourceHistory/source-05-final-acceptance/Runtime/NavigationService.Teardown.cs",
+      "bytes": 13580,
+      "sha256": "bdb0e22ea9d7c717bf8208c2bc23abb4b2f057b4a1d799bc1c27aef42315e783"
+    },
+    {
+      "path": "SourceHistory/source-05-final-acceptance/Runtime/Region.CacheOwnership.cs",
+      "bytes": 2335,
+      "sha256": "3255ca2cd01e80ecfa7809f295c55d12642d72a5f86e7185baa69bb5980f181b"
+    },
+    {
+      "path": "SourceHistory/source-05-final-acceptance/Runtime/View.cs",
+      "bytes": 8047,
+      "sha256": "1e7a790f204a208644633bdd5160b18fe971286f2c4c8df321205a357587dabb"
+    },
+    {
+      "path": "SourceHistory/source-05-final-acceptance/Runtime/ViewIdAsset.cs",
+      "bytes": 2132,
+      "sha256": "40252999fa624a46330e5c6d14a85f3099062a5ecde3985f8db4bbf5280a43d0"
+    },
+    {
+      "path": "SourceHistory/source-05-final-acceptance/Samples~/TypedView/SelectedItemView.cs",
+      "bytes": 1116,
+      "sha256": "9eec0244afcb9563eaf8311412530d1ccae2dfd6f39640ea53ba13b3bbad7b83"
+    },
+    {
+      "path": "SourceHistory/source-05-final-acceptance/Samples~/TypedView/SelectedItemViewModel.cs",
+      "bytes": 410,
+      "sha256": "cce6a3ff3291d512b99fd0fbda693ace6dbc43a4cdb85a550e525f2ed7dc4f0d"
+    },
+    {
+      "path": "SourceHistory/source-05-final-acceptance/Tests/Editor/F05ImportedTypedSampleTests.cs",
+      "bytes": 6497,
+      "sha256": "9bd5eb207907548d6d07bbc676d9fb91eda45612a5ddf31e321f7176d1f53769"
+    },
+    {
+      "path": "SourceHistory/source-05-final-acceptance/Tests/Editor/NavigationTypedViewTests.cs",
+      "bytes": 26490,
+      "sha256": "bf6b2f480894e2b94943c0fd3ffe50e1ad5da44ad350b93fd9764a3a1a7b0f41"
+    }
+  ]
+}

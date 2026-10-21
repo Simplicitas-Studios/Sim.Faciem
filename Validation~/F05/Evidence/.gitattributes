@@ -1,0 +1,4 @@
+* -text
+*.json -whitespace
+*.xml -whitespace
+*.log -whitespace

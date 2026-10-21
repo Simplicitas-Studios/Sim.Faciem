@@ -13,12 +13,14 @@ namespace Sim.Faciem
             internal readonly ViewId Id;
             internal readonly VisualElement View;
             internal readonly BaseViewModel Model;
+            internal readonly Sim.Faciem.View TypedView;
 
-            internal CacheEntry(ViewId id, VisualElement view, BaseViewModel model)
+            internal CacheEntry(ViewId id, VisualElement view, BaseViewModel model, Sim.Faciem.View typedView)
             {
                 Id = id;
                 View = view;
                 Model = model;
+                TypedView = typedView;
             }
         }
 
@@ -31,7 +33,7 @@ namespace Sim.Faciem
         internal BaseViewModel[] OwnedModels => _ownedModels.ToArray();
         internal KeyValuePair<ViewId, VisualElement>[] CachedViews => _views.ToArray();
 
-        internal void RecordCache(ViewId id, VisualElement view, BaseViewModel model)
+        internal void RecordCache(ViewId id, VisualElement view, BaseViewModel model, Sim.Faciem.View typedView = null)
         {
             if (IsReleased)
             {
@@ -39,7 +41,7 @@ namespace Sim.Faciem
             }
             if (!_ownedEntries.Any(entry => entry.Id.Equals(id) && ReferenceEquals(entry.View, view) && ReferenceEquals(entry.Model, model)))
             {
-                _ownedEntries.Add(new CacheEntry(id, view, model));
+                _ownedEntries.Add(new CacheEntry(id, view, model, typedView));
             }
             if (!_ownedModels.Any(previous => ReferenceEquals(previous, model)))
             {

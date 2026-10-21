@@ -1,0 +1,2 @@
+Label { padding: 8px; }
+.item--selected { background-color: rgb(45, 105, 63); color: white; }
