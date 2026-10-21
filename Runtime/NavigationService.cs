@@ -87,6 +87,12 @@ namespace Sim.Faciem
                 }
                 return;
             }
+            bool typedLegacy = execution == null && !string.IsNullOrWhiteSpace(viewAsset?.TypedView?.TypeName);
+            if (typedLegacy)
+            {
+                // Typed legacy entry uses the same preparation/containment path, retaining throwing semantics.
+                execution = new NavigationExecution();
+            }
             if (execution != null && (maybeRegionInfos.Value.Item2 == null || maybeRegionInfos.Value.Item2.Count == 0))
             {
                 execution.Status = NavigationStatus.MissingRegion;
@@ -101,6 +107,10 @@ namespace Sim.Faciem
             await RegionNavigationOperations.Run(regions, caller, operation =>
                 NavigateToOwned(maybeRegionInfos.Value.Item1, regions, viewAsset, viewId, parameters, operation, entryMode, execution),
                 policy, execution);
+            if (typedLegacy && execution.Error != null)
+            {
+                System.Runtime.ExceptionServices.ExceptionDispatchInfo.Capture(execution.Error).Throw();
+            }
         }
 
         private async UniTask NavigateToOwned(IRegionManager regionManager, IRegion[] regions,
@@ -110,7 +120,7 @@ namespace Sim.Faciem
             BaseViewModel viewModel = null;
             NavigationActivation activation = null;
             var newlyActivated = new List<IRegion>();
-            var prepared = new List<(IRegion Region, VisualElement View)>();
+            var prepared = new List<(IRegion Region, VisualElement View, View TypedView)>();
             try
             {
                 execution?.At(NavigationStage.Validation);
@@ -122,6 +132,12 @@ namespace Sim.Faciem
                     {
                         execution.Reject(NavigationStatus.InvalidConfiguration, "View template and resolvable data context are required.");
                     }
+                }
+                Type typedViewType = View.ResolveType(viewAsset);
+                if (typedViewType != null && (regions.Length != 1 || regions[0] is not Region typedRegion ||
+                    typedRegion.IsGlobal || typedRegion.SupportMultipleViews))
+                {
+                    throw new NotSupportedException("Typed Views require one independently owned native non-global single-view Region.");
                 }
                 foreach (IRegion region in regions)
                 {
@@ -153,7 +169,11 @@ namespace Sim.Faciem
                             {
                                 throw new InvalidOperationException("Prepared View must be detached and use the requested model.");
                             }
-                            prepared.Add((region, view));
+                            if (typedViewType != null && view.Query<Region>().ToList().Count != 0)
+                            {
+                                throw new NotSupportedException("Typed Views do not own nested Regions.");
+                            }
+                            prepared.Add((region, view, View.Create(typedViewType, viewModel, view)));
                         }
                     }
                 }
@@ -205,7 +225,8 @@ namespace Sim.Faciem
                             prepared.Single(item => ReferenceEquals(item.Region, region)).View;
                         view.style.flexGrow = 1;
                         view.pickingMode = PickingMode.Ignore;
-                        TrackCache(region, viewId, view, viewModel);
+                        View behavior = execution == null ? null : prepared.Single(item => ReferenceEquals(item.Region, region)).TypedView;
+                        TrackCache(region, viewId, view, viewModel, behavior);
                         foreach (Region innerRegion in view.Query<Region>().ToList())
                         {
                             if (innerRegion.IsGlobal)
@@ -249,6 +270,25 @@ namespace Sim.Faciem
                 operation.Track(activation);
                 operation.ThrowIfSuperseded();
                 execution?.At(NavigationStage.Entry);
+                foreach (Region region in regions.OfType<Region>())
+                {
+                    Region.CacheEntry entry = region.OwnedEntries.FirstOrDefault(candidate => candidate.Id.Equals(viewId) &&
+                        ReferenceEquals(candidate.Model, viewModel));
+                    if (entry?.TypedView == null)
+                    {
+                        continue;
+                    }
+                    IPanel panel = entry.View.panel;
+                    await RegionNavigationOperations.InvokeLifecycle(operation, viewModel, () =>
+                    {
+                        entry.TypedView.BindActivation(activation, () => region.ActiveViews.Contains(viewId) &&
+                            region.TryGetView(viewId, out VisualElement current) && ReferenceEquals(current, entry.View) &&
+                            ReferenceEquals(entry.View.dataSource, viewModel) && region.Contains(entry.View) &&
+                            (panel == null || ReferenceEquals(entry.View.panel, panel)));
+                        return UniTask.CompletedTask;
+                    });
+                    operation.ThrowIfSuperseded();
+                }
                 await RegionNavigationOperations.InvokeLifecycle(operation, viewModel,
                     () => viewModel.NavigateToInternal(parameters));
                 operation.ThrowIfSuperseded();
@@ -302,14 +342,26 @@ namespace Sim.Faciem
                 }
                 throw;
             }
+            finally
+            {
+                // Preparation has no activation subscriptions. Uncommitted controllers never transfer to a cache.
+                foreach (var candidate in prepared)
+                {
+                    if (candidate.TypedView != null && (candidate.Region is not Region native ||
+                        !native.OwnedEntries.Any(entry => ReferenceEquals(entry.TypedView, candidate.TypedView))))
+                    {
+                        candidate.TypedView.ReleaseReferences();
+                    }
+                }
+            }
         }
 
-        private static void TrackCache(IRegion region, ViewId id, VisualElement view, BaseViewModel model)
+        private static void TrackCache(IRegion region, ViewId id, VisualElement view, BaseViewModel model, View typedView = null)
         {
             model.TrackCachedRegion(region);
             if (region is Region native)
             {
-                native.RecordCache(id, view, model);
+                native.RecordCache(id, view, model, typedView);
             }
         }
 

@@ -1,0 +1,33 @@
+{
+  "baseline": "2959e7be2304808fdb244b35c655778004322973",
+  "baselineCSharpCount": 113,
+  "changedExistingCSharp": {
+    "Runtime/NavigationService.Teardown.cs": {
+      "baselineCanonicalLfSha256": "ec2c046ddfdcda9a631595a326730e4e71a3ec6269404b8447c3ac9424670a8a",
+      "currentCanonicalLfSha256": "7fcced554282204dab19f62dea6bafd3e8790c4a66e7a0a3aafbdf9c645eaef8"
+    },
+    "Runtime/NavigationService.cs": {
+      "baselineCanonicalLfSha256": "685559324895dda78479ceaaed01b8994312d0f24eef583fd26289dfdb027b2e",
+      "currentCanonicalLfSha256": "48b20b662062a3fbc56228010a62be60b4f1d01ba2061e353005a59cf15dbad6"
+    },
+    "Runtime/Region.CacheOwnership.cs": {
+      "baselineCanonicalLfSha256": "428394a5897522057e5630f8b2b14e6424391363b5ddcd0a2feacc742905933f",
+      "currentCanonicalLfSha256": "f711d4a27dd5416526519cdec5bb9a72d0816fa2e0f32adce65110fb54888661"
+    },
+    "Runtime/ViewIdAsset.cs": {
+      "baselineCanonicalLfSha256": "75be4dccc02fc8d915ca8ea4d7bd1427fa27b0776e8168257a31889adc7b8d37",
+      "currentCanonicalLfSha256": "f3aca56759259a4077989d6690bcbf6c931b65def2db15eed62ea6e61b5d4af9"
+    }
+  },
+  "unchangedCSharpCount": 109,
+  "unchangedExistingMetadataCount": 159,
+  "existingTestSourcesUnchanged": true,
+  "baselineWorktreeAndIndexPreserved": true,
+  "displayReviewWorktreePreserved": true,
+  "displayMainAndReviewedPRTreeEqual": true,
+  "originalCheckoutObserved": {
+    "originalDisplayHead": "63ddd013269fa4e23f3b56a14961cf24ee269c09",
+    "originalDisplayStatus": " M Submodules/Sim.Faciem\n",
+    "originalSubmoduleStatus": "?? docs/d032-disposable-bag-ownership.md.meta\n"
+  }
+}

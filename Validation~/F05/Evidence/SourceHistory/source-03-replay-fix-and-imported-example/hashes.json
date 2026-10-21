@@ -1,0 +1,462 @@
+{
+  "Editor/EditorViewIdAsset.cs": {
+    "sha256": "0b328d7f0e0e31abdb211f0e275ac60b4cb86236d863d662a954e35e5945d39c",
+    "canonicalLfSha256": "ef58ffb618183da1ee234e87b00c2c3c83fbce45c8a1a095d36c49ab1a578600"
+  },
+  "Editor/FaciemEditorServiceInstaller.cs": {
+    "sha256": "cc4d3dfb4e80baa1e4b468f1afd3ffd60c8ef26d27b6714626f6b850c61ed833",
+    "canonicalLfSha256": "c980968afc454474ed0e3953b6aea060f7bb409fe9457bd24e9d75202bc5cfc6"
+  },
+  "Editor/FaciemEditorWindow.cs": {
+    "sha256": "5c00451946e32d2de709b2578c5521a92ba4e4ac86825b4967241f002a979f1e",
+    "canonicalLfSha256": "2cfc1cb177cdda7f006ade588185182f998075bbd2452a701fdb513b553d58a8"
+  },
+  "Editor/FaciemPopupWindowContent.cs": {
+    "sha256": "d5ceb944b88c4ae87df97df24a98643387eabba18cbbde54723c8c3d34276106",
+    "canonicalLfSha256": "b3280d68e6ab1a0f0f38074142c5ab45d58ffa0708bb1a6283e1726a7da7f482"
+  },
+  "Editor/FaciemToolbarOverlay.cs": {
+    "sha256": "2a299c778a821fd9595d9a19d24a6f9953c5fff191d99e2210ae1deffa7f90aa",
+    "canonicalLfSha256": "13334a6d093d51af074371ea59881382e1168cd08d337b4abd4a3258368d6bbe"
+  },
+  "Editor/IRegionManagerOwner.cs": {
+    "sha256": "7d015fc727546f72d13d621f0c2628d5613395c4a4c01879160a6f07603ea4fe",
+    "canonicalLfSha256": "9469531f08f159c195e388fc7d0de18d8ee4a012fbb7889b46ec2d02fbdcc19e"
+  },
+  "InternalEditor/AddressableExtensions.cs": {
+    "sha256": "74e6bc29213054eb83d86f2ca77bcebba2ca35069dbd9014d1bff7c4a5ba1715",
+    "canonicalLfSha256": "a43d76986d46e754c041d9e92813ea52a54d41696793f4a8e21c6581e2da99ed"
+  },
+  "InternalEditor/AddressableHelper.cs": {
+    "sha256": "2c0b3f9afdf339f96120dea00257641036fcb4618122f88f39510451a9ee1f91",
+    "canonicalLfSha256": "88ad2b99de8bfc8a1ecf1edded047cdb1fcea27674d90085e6d7af985876f2a3"
+  },
+  "InternalEditor/DesignTimeDataContextWizard.cs": {
+    "sha256": "7793c7d1ec18007302a8f9a1c63eeb3790d0ebc0473a25a730741566c0d50fdb",
+    "canonicalLfSha256": "09136849dcf20c8c9571aa25595e5e1ede6489749e7fbb4f1c78f9f70ad5ca47"
+  },
+  "InternalEditor/FaciemSetup.cs": {
+    "sha256": "853e0447495033a3bc1f2afe13be2ed50621e7051f737e67f9e5dd0664d2a778",
+    "canonicalLfSha256": "5cb31542b6ef68adaeb2c2a1c295ad6e7b51ce4af7d97e871d3d0c60d2a137b1"
+  },
+  "InternalEditor/MonoScriptField.cs": {
+    "sha256": "ef4add4eb8b31f442dbec17623c055905b32591c4a8179e8ae9a3be6c468a891",
+    "canonicalLfSha256": "93b5a1c141462d296c3047523a73798cd7b3543ee8582dd91911839c7dbe16ec"
+  },
+  "InternalEditor/RegionNameCodeGenerator.cs": {
+    "sha256": "be4a8acfe194c50359090282e43276d0b89c6919152857f6be12569d4c07e808",
+    "canonicalLfSha256": "3fd288ed602f9a5b1b908aeafd7bda32f9ca6e8f66c394a453ec8035f98b42f4"
+  },
+  "InternalEditor/RegionNameDefinitionEditor.cs": {
+    "sha256": "7f9c3418bc99a9b3289c5a4f74532df0d6f1d583da09ded854fead383d4841ae",
+    "canonicalLfSha256": "f146a85bbfd95c73ae8d19771e630f8b0c89a15982421fae577466fec0e5c417"
+  },
+  "InternalEditor/ViewIdAssetEditor.cs": {
+    "sha256": "6a0f4fcd7754e563bb060bc23cf86fa5822911b5e6b21e239d01d81c34db06f4",
+    "canonicalLfSha256": "1198aa15445d84b917a8d77eeb4fd65351aa11bda9020b38c2c1e6fca7c6b69f"
+  },
+  "InternalEditor/ViewIdAssetFactory.cs": {
+    "sha256": "1740f31b1d12cab3367810c071ba65f83295d2f3f88c36934343ceb7700e3b16",
+    "canonicalLfSha256": "8204791b51c08e2948a2a60085788fadd870549e8d49830d4b3e43dc98802318"
+  },
+  "InternalEditor/ViewIdAssetPostprocessor.cs": {
+    "sha256": "17ad2b2bda567089eb8b0047c61d0b23aecb7b3712024463a80326609cf9a41d",
+    "canonicalLfSha256": "992615bd5cb9356446be01ae328846f0ae6518db063387590ec4a18b90daf939"
+  },
+  "InternalEditor/ViewIdCodeGenerator.cs": {
+    "sha256": "3f9243f626ba0b82e91ac0f672b163afa9dbdcb80f702568aa5cf358be314933",
+    "canonicalLfSha256": "d036dc063db95d54aa205270f1bca41cda4465686c50906b9f8e3a5c514e6a82"
+  },
+  "Runtime/AssemblyInfo.cs": {
+    "sha256": "4934e559129281bd524df7377f5c38c01dfca15f8af83f7016d1b8af6ef1749f",
+    "canonicalLfSha256": "eeb3ecb49852805a08d775451485b96bd71f55888b3b4e68d66b2a5ea7729bb2"
+  },
+  "Runtime/BaseViewModel.cs": {
+    "sha256": "5dedddfc003d848a07ce2e3d5be27bf38137d826cf7c7e91dc85846ac621fe3d",
+    "canonicalLfSha256": "306346ada0de2e6c054f6d7f21ad1494627cc4f06dd72b137d92341cf133f341"
+  },
+  "Runtime/Bindable.cs": {
+    "sha256": "d31ff846f6602ba90e90449f22a5fef950217f9489c552e80d1137fa53f769a2",
+    "canonicalLfSha256": "caf9ffec9920854e9689b85e09d10d5c2ffc068618c7b89c17fb60dd573793f7"
+  },
+  "Runtime/DesignTimeDataContext.cs": {
+    "sha256": "8978923a6889d4a12f95b764d160261a4ae39013eb1b15f8636fe60eabb6ca76",
+    "canonicalLfSha256": "ba5e71c0a434bb84eef83aac679dd4f532e77afab3b6eda5f60fa44790522ec5"
+  },
+  "Runtime/FaciemBootstrapper.cs": {
+    "sha256": "2a8a9c88c1c55c9c47ffbace469df6c1e90f93f32ccf648c604109d61c582b88",
+    "canonicalLfSha256": "fdf6426719e1d4acc87a892e8572e6340ea88fd436cf66fa6f163f69f5197e3f"
+  },
+  "Runtime/FaciemBridge.cs": {
+    "sha256": "be0b3512c2acdde64f484ea703535e53f8e4adae56db6efaf63dbffc6920321e",
+    "canonicalLfSha256": "9f06527904fdc5e4307303ab20e70a040b0180df5447bb42746c863b79d773be"
+  },
+  "Runtime/FaciemUIDocument.cs": {
+    "sha256": "ea82eda2a40097b5a041bf0b12efa346bd0ff992732444c746a5e02b26a541c8",
+    "canonicalLfSha256": "07e2637221528053b409137533eb1f7c5c4599e347a583f5e7e15c611fa1a8d5"
+  },
+  "Runtime/IDataContext.cs": {
+    "sha256": "eeab2e5d398d28a88bbddbae508f8f5ac12a7ebf204a37c4731910deccc6796c",
+    "canonicalLfSha256": "3f10be9f8914197d035367d6c76522a352fbf06688ae481b1d9351d9413cbb45"
+  },
+  "Runtime/IDIContainerBridge.cs": {
+    "sha256": "0e6d6c7bf26bd75968a3c1f04db117073dc7ff8a68a3b5a844c42a46699f9fb9",
+    "canonicalLfSha256": "6880ed91ff9dd57453103e0ee16f04fa8aad3fccf8d543eeb9f4000fa57c74df"
+  },
+  "Runtime/IDIRegistrationBridge.cs": {
+    "sha256": "b2ed80f2e17bcb9a208f23dc3cc7f27002d581a384a637abfa07e635125a9603",
+    "canonicalLfSha256": "5f920fa82eaf6fc3e62cd9961d84eea1f3889ab544898fdeb835f25fa70219bc"
+  },
+  "Runtime/IDisposableContainer.cs": {
+    "sha256": "5eb147f3aad942f6c9449107240afa559f43e7c7e45582b2e9c4d5246ea6e418",
+    "canonicalLfSha256": "bc34d1f8899fb6aac149bc8e2b1f5d98e18d3275f11f502023fce7dcec240377"
+  },
+  "Runtime/IGlobalRegionManager.cs": {
+    "sha256": "2a481683263a5013922d2d9d468ab8870edbc8468170071d9a72402b5af806ae",
+    "canonicalLfSha256": "80f6b380fcbb670d905a8346c61686c5574d6af98416575deca86bf4fd5739e6"
+  },
+  "Runtime/INavigationService.cs": {
+    "sha256": "7e29df5825a8fcca91e43861f87a94641ed2ca3f9ac05fe30d10743d87bf8132",
+    "canonicalLfSha256": "70e1255babfb631b64ddd6067110b57dda710370200e9770b49a18203bbac7c8"
+  },
+  "Runtime/IRegion.cs": {
+    "sha256": "6e30ccd4e060b90b4aa1b28aee025c34f20f3a0fb49028926f469716031abe80",
+    "canonicalLfSha256": "1c76e0984d2b5b736111ac552969340da0595ab93e0096dda9a446ecb24f85c6"
+  },
+  "Runtime/IRegionManager.cs": {
+    "sha256": "292244809781d65e44805e73734e09543a43827fd6af9d0f305bb7ea79923739",
+    "canonicalLfSha256": "6f82f29f46846f7e322b759b3212bf57eea7384589d4a2f956df5c52d3daad44"
+  },
+  "Runtime/IViewIdRegistry.cs": {
+    "sha256": "a972e098a88f319b3244e165623b0a0607da49bc0ed1cbe8f4582284ec615214",
+    "canonicalLfSha256": "489d4fb7d1425516f9dc7642cfdf1675efa0ab9f39a2661ea50511cb2000ead4"
+  },
+  "Runtime/IViewModelConstructionService.cs": {
+    "sha256": "98aef709990c8f9350c922fbafa908e7195c1bbcb45f6d3cfad0669a6c49b9d1",
+    "canonicalLfSha256": "2bb03090e9cec1317074c7cc4462b3d6e67028d20b061716354e81805bc13278"
+  },
+  "Runtime/IViewModelNavigationService.cs": {
+    "sha256": "6de4db8f589365793172dcbf986511bdfe590c45dd7b359d24e66ee7e5c57d63",
+    "canonicalLfSha256": "83b33b1fde5c30ec1e46ac5b870bb05a6beccf2152b5256e7bc21d501d03e0c7"
+  },
+  "Runtime/IViewModelRegionManager.cs": {
+    "sha256": "edcde825e18a9a4d18ad184cc31969ce339e81d0644df580b3afd5e1e6f53f2e",
+    "canonicalLfSha256": "228c8459aa250ff170973abf608fd158e95c27ce1bf22e9dcaf532218c14f104"
+  },
+  "Runtime/MonoScriptReference.cs": {
+    "sha256": "894c34e779575af66cfaa75413fe6e91253eb15c22ee0abfa0cf133db97055f7",
+    "canonicalLfSha256": "43ef095e35b14f8b1bc54f922951cb0fc39ab1991e10f542f2e98ebf63efa04f"
+  },
+  "Runtime/MonoScriptReferenceDependentFilter.cs": {
+    "sha256": "a9d027c756d7079a7231ff8883dadbde7177d07609c8123676524c5df0b07166",
+    "canonicalLfSha256": "1ffce8455fe41511b4e766fc69e49992258fe0eacf21bb67917e019112e2d309"
+  },
+  "Runtime/MonoScriptReferenceFilter.cs": {
+    "sha256": "a6dbe7887bb6bc6bf89b4e5517412efc13f657c3efa1a3b6ddaf4224a951a74a",
+    "canonicalLfSha256": "0b6111561d4eb6d92ecd570e8c9b954d908d965946e3d1a7829eedeea4e11345"
+  },
+  "Runtime/NavigationActivation.cs": {
+    "sha256": "dd31a6ec06b41fde79b8d289aa12a691a097ad030344fa3a02720efb87ba40e8",
+    "canonicalLfSha256": "f54cae9cf8f200ffa164635c3e32b0c32792b4c09f235984ea6aa108f38917b9"
+  },
+  "Runtime/NavigationEntryMode.cs": {
+    "sha256": "be7b1c2d4acefe1bf57c6c5a778e428d178e5b133cad1bc7d05d3f725d7cceb9",
+    "canonicalLfSha256": "a7a5022a1f4a8c83ddbbfe038486b34df41e4e4e4464275d15923b765bcb8fce"
+  },
+  "Runtime/NavigationParameters.cs": {
+    "sha256": "11559f091e50ad38a2f6524b404c6b935fec0a97390d5b67797db127ffa47330",
+    "canonicalLfSha256": "c7500ca70d9bb69164531b699d7e8c781d2bcec254ce75582f42c765c36b1d33"
+  },
+  "Runtime/NavigationPolicy.cs": {
+    "sha256": "ab995d20582fe5f04f01b434b8a6412c4292fb36b0a4a4f236725f8b26f84d04",
+    "canonicalLfSha256": "67b917a038b2791be3503e8d52698084b0c845233023e0e3910605ef67dce2ea"
+  },
+  "Runtime/NavigationPolicyExtensions.cs": {
+    "sha256": "530a70ad7eb51f6ccd8059d8a9e15948b10211f5b63331f07ae3d5d58998c0a3",
+    "canonicalLfSha256": "9393dc768f99fb0f410fe603e672156898aa0e1662c60d1d054269f82cc99ffa"
+  },
+  "Runtime/NavigationResult.cs": {
+    "sha256": "1a913b6eff3561d507e3d46e26380ee276fae50204281c31e0fae63c3cfd767c",
+    "canonicalLfSha256": "fbffc8d987688f8ae5e3dc8ab2c386207873f9157eb526d81fa995a1dd8bad39"
+  },
+  "Runtime/NavigationResultExtensions.cs": {
+    "sha256": "2d924abff814aeccd747aeaac79a09598967523e3166fd6970a11ed57c30658d",
+    "canonicalLfSha256": "de5908b711873a3270061f33dd6e2dc6a64338071aa92bc5787091ac00de5c27"
+  },
+  "Runtime/NavigationService.cs": {
+    "sha256": "0b6485ee3349f3d28b86d23187e4272cc7f0db5ff19c005df3eac27bc12cd82c",
+    "canonicalLfSha256": "48b20b662062a3fbc56228010a62be60b4f1d01ba2061e353005a59cf15dbad6"
+  },
+  "Runtime/NavigationService.Teardown.cs": {
+    "sha256": "bdb0e22ea9d7c717bf8208c2bc23abb4b2f057b4a1d799bc1c27aef42315e783",
+    "canonicalLfSha256": "7fcced554282204dab19f62dea6bafd3e8790c4a66e7a0a3aafbdf9c645eaef8"
+  },
+  "Runtime/NavigationTeardownExtensions.cs": {
+    "sha256": "b89123f0abcc7273a5c8251c32cd5eda975bc7b816aa446f14eb7f027e68f833",
+    "canonicalLfSha256": "0dd3a6e2ff63faef98fb2dd929efb4356fc4f29a4037e496f0cd8000760d5ae9"
+  },
+  "Runtime/Region.CacheOwnership.cs": {
+    "sha256": "3255ca2cd01e80ecfa7809f295c55d12642d72a5f86e7185baa69bb5980f181b",
+    "canonicalLfSha256": "f711d4a27dd5416526519cdec5bb9a72d0816fa2e0f32adce65110fb54888661"
+  },
+  "Runtime/Region.cs": {
+    "sha256": "0c2b06add140065a0478515fd4214e4e5a3bfdc297ee79bfd4724e7c242f2a66",
+    "canonicalLfSha256": "b9f5976d0b1bb0dd3a9c0f0b0692c1d6d1ad12c9e8994524455b2009d416e67e"
+  },
+  "Runtime/RegionManager.cs": {
+    "sha256": "69ca3b93da55de0f201bdd55db046e469796e2994535915653b11735e9985327",
+    "canonicalLfSha256": "c385c544af2da5ffa6bb819f2252c17d5f4f72c510a86b239b11459365f78d5f"
+  },
+  "Runtime/RegionName.cs": {
+    "sha256": "52d67f3bc0419621333aca59fac877309c51f93ae37cee9db7e563b576301022",
+    "canonicalLfSha256": "806c5fc76dbfd7e41c79b99da1e6f1c654c3c79630497ed01007f561f9852173"
+  },
+  "Runtime/RegionNameDefinition.cs": {
+    "sha256": "5e684be8d46370f2a676dd5c70b9d345fe928161fcb3e13e9b5e0beb12904066",
+    "canonicalLfSha256": "2f8b9eed46891d826d8d86c956af5d8067150f9bb0b1b91f0ca788ecf4ae9291"
+  },
+  "Runtime/ShellViewModel.cs": {
+    "sha256": "5a573c89a2875d94df52b3366f6210d89637a0ec36a3fff76683da10baef2055",
+    "canonicalLfSha256": "1589acb9c6fb66b9cb1cc3dabd7e1551785d9077b1a5262c0235d2e08a818ebe"
+  },
+  "Runtime/View.cs": {
+    "sha256": "1e7a790f204a208644633bdd5160b18fe971286f2c4c8df321205a357587dabb",
+    "canonicalLfSha256": "1e7a790f204a208644633bdd5160b18fe971286f2c4c8df321205a357587dabb"
+  },
+  "Runtime/ViewId.cs": {
+    "sha256": "8a97d54385c31c746326af2a5590b4c616a801ac178046773ddf0017bf24b2b9",
+    "canonicalLfSha256": "c03b82f374a27087274c0162335f9694a1383621c278bd21bcecefaf34fe71ca"
+  },
+  "Runtime/ViewIdAsset.cs": {
+    "sha256": "40252999fa624a46330e5c6d14a85f3099062a5ecde3985f8db4bbf5280a43d0",
+    "canonicalLfSha256": "f3aca56759259a4077989d6690bcbf6c931b65def2db15eed62ea6e61b5d4af9"
+  },
+  "Runtime/ViewModel.cs": {
+    "sha256": "17269242d5aa8340276a59a55c15c268ea6ae23e80a002e2e7806ce0eef4b87d",
+    "canonicalLfSha256": "d670d2900dc97420450f9ced01ecaf0d355999c87b121e2a45d7cb666920e650"
+  },
+  "Runtime/ViewModelConstructionService.cs": {
+    "sha256": "722ab011d7848ac94f2b804b62636f5901ff4fd2afc536acc70741287455d0d6",
+    "canonicalLfSha256": "348b43ad5b567c6459e3f4ce19a2bfee93380279a2f95459b183ec8f17508617"
+  },
+  "Runtime/ViewModelNavigationService.cs": {
+    "sha256": "d5952841d8630f884f86ed2348931643133f8768e5373d96dcf4a8485764f8a7",
+    "canonicalLfSha256": "7920b426f3c3ce63f9f3b3267bd6f80a913f8fe11ba4172732337503320a0467"
+  },
+  "Runtime/VisualElementObservableExtensions.cs": {
+    "sha256": "f627a7faea8fb2ac4534536674ccb5961f68d9e26a15f1768590615903920dd9",
+    "canonicalLfSha256": "d904f09ace0a4dd033b373bf0dca667c33cbc51cead0f1ce460f4386d6b87e5c"
+  },
+  "Runtime/WellKnownRegionNames.cs": {
+    "sha256": "4f3e45a96989eadef89222a320391ff9f0bd9441038f29dae89b1bc65bc06777",
+    "canonicalLfSha256": "cf25181c78c20b5cfcdf954a35b88886400999deb4d61870cb0cd9c1c89ba479"
+  },
+  "Runtime/WellKnownShellNavigationParameters.cs": {
+    "sha256": "5cf2036b9cfb42c8dfa52cfc499d58d51dac7a4ee3483e9ff7aa36f913f25978",
+    "canonicalLfSha256": "979f1e9cfd58eba7eaae87c220f544d79eb5823f4524cb07c72ddf1ebf735efb"
+  },
+  "Shared/DisposableBagHolder.cs": {
+    "sha256": "79026c5a4d11f6046ff7c1144b73266a61557206ca997da8ce8649c5cc23e152",
+    "canonicalLfSha256": "6c7855d963f6a0324a4ac1bf9a5ca5cd51f3cbdee85cf9113086b4b9aa5dd3cd"
+  },
+  "Shared/GlobalPointerInputWatcher.cs": {
+    "sha256": "d26713f23d1371ff3eff5926ffd08004d826137feb8dad8b5db40f1dc0a06f77",
+    "canonicalLfSha256": "e630812013a5f2a5e3f4ed93abffb86eadb6c7d9ad85ad01fec676a273c50aee"
+  },
+  "Shared/NotifyValueChangedExtensions.cs": {
+    "sha256": "7c2ffd19dd3807dbfcc8cc2450422b44f53089cfc86483ffd2b7e165889ec9c4",
+    "canonicalLfSha256": "da946f7b3e0c0098dc04cd6a834a56f886f79984c7d6c33143cccfb557ad5304"
+  },
+  "Shared/VisualElementsExtensions.cs": {
+    "sha256": "dc3e97a907cbf1a8b2fe4b9e4ddc099c020dbb9725aa68a9add1f50477ddb7fd",
+    "canonicalLfSha256": "5d4abbf33330bfd97a010d57e57aa34d3d65dd6bd8210a1ca35ab1b702291251"
+  },
+  "Tests/Editor/F05ImportedTypedSampleTests.cs": {
+    "sha256": "38e258130ed1489c0fd345a5d12837c2668f42a236f90ebaa4080d52bf005be4",
+    "canonicalLfSha256": "38e258130ed1489c0fd345a5d12837c2668f42a236f90ebaa4080d52bf005be4"
+  },
+  "Tests/Editor/FaciemCompatibilityTests.cs": {
+    "sha256": "9c5509d16d32a406928dbbe7b6b4de9322da3b675e1beedfd020852bdd4717a4",
+    "canonicalLfSha256": "a19fc6a19c8ac43a390fda75d40b4c95a83fc17dea9bded883256b01a7f101cd"
+  },
+  "Tests/Editor/NavigationActivationTests.cs": {
+    "sha256": "29ff53eac78c71bfd5deb6406476b5c8a865ca77cbda6ca15e068b597ab54626",
+    "canonicalLfSha256": "dfafd10671ca9db2b14a5c4ab978f63cacdb64f0e3db281a83923adfafb5d82c"
+  },
+  "Tests/Editor/NavigationOutcomeTests.cs": {
+    "sha256": "033bc33f5d98bd9849ff2352bf7dcf3dcd9d637b058ad7fb4c4213d454f68cc8",
+    "canonicalLfSha256": "6be3f791690d038aae3a29df2a0d20db6726fe557288df125b67d6ab56a417b5"
+  },
+  "Tests/Editor/NavigationReentryTests.cs": {
+    "sha256": "3182d923ee83bc5c4bf975be4cd45321ba521018c2212febc4b4c17b054b65d5",
+    "canonicalLfSha256": "e8cd9afe22ec50ec56c9aae61a6db387f29fcdfbd7f18f0ef40124916bf87d3b"
+  },
+  "Tests/Editor/NavigationSerializationTests.cs": {
+    "sha256": "2189ec20900404cf524c5d745e7324c2a70363fa15f25de99f5b32b66522ce96",
+    "canonicalLfSha256": "048948a60a6eb35e081f377bd15a42142468259100ae6ce5b7c9afceee44eda7"
+  },
+  "Tests/Editor/NavigationTeardownTests.cs": {
+    "sha256": "d2e6246e33493ded683027c812b2ae16b43bcda5fbf3a6f0665fd82c15ba58b8",
+    "canonicalLfSha256": "29a38ecbe85a8f54540b84d0cf22f5454877ed6c99e7e46acfc49fb3aa8042d9"
+  },
+  "Tests/Editor/NavigationTypedViewTests.cs": {
+    "sha256": "df8daecc124162b17d6f774ba35cb862d04f7437ff7316793edd9010d7c19d9c",
+    "canonicalLfSha256": "df8daecc124162b17d6f774ba35cb862d04f7437ff7316793edd9010d7c19d9c"
+  },
+  "Tests/Editor/ViewModelDisposalTests.cs": {
+    "sha256": "8a0f8e8c9c9ce92aa1b00d8de57ac84ab79a3a939bbca0c91aab1a2c6ca88e1f",
+    "canonicalLfSha256": "1b755f177fd6cdf390503e34e4f724adecc6db17c29a55818060f57f1993e714"
+  },
+  "Samples~/TypedView/SelectedItemView.cs": {
+    "sha256": "9eec0244afcb9563eaf8311412530d1ccae2dfd6f39640ea53ba13b3bbad7b83",
+    "canonicalLfSha256": "9eec0244afcb9563eaf8311412530d1ccae2dfd6f39640ea53ba13b3bbad7b83"
+  },
+  "Samples~/TypedView/SelectedItemViewModel.cs": {
+    "sha256": "cce6a3ff3291d512b99fd0fbda693ace6dbc43a4cdb85a550e525f2ed7dc4f0d",
+    "canonicalLfSha256": "cce6a3ff3291d512b99fd0fbda693ace6dbc43a4cdb85a550e525f2ed7dc4f0d"
+  },
+  "Runtime/Commands/AsyncCommandBuilder.cs": {
+    "sha256": "b28ee4f0f7ff8c84f05a28c4c493727986c4c0bfa8694fefb730d529ddff54c2",
+    "canonicalLfSha256": "031c3c1b786e0cf25b82f05ae5493c702f9e43734eb0453e2f4f3cf27631cc57"
+  },
+  "Runtime/Commands/Command.cs": {
+    "sha256": "83806481fd253faaee2eb59b24348de8e5be1d001dd4ff582d3ede596110940d",
+    "canonicalLfSha256": "9c2a6a5307a9c042a3216def66b44f5dbd802451cf925a106aa118a26a7e2ae4"
+  },
+  "Runtime/Commands/CommandBuilder.cs": {
+    "sha256": "382f6af703e6f7e9474e9bca2a68cb773fbc96d4bb341a29c281d5cb1a585f45",
+    "canonicalLfSha256": "fc04a75e6bddacdf54823c2c1fd92fb06adffdca0bf70b46bb72e0aa3f8ddbd2"
+  },
+  "Runtime/Commands/CommandBuilderT.cs": {
+    "sha256": "efc3f7cd3c867d0c29694c666d82def0194663d50244845e5deb95380bf48d61",
+    "canonicalLfSha256": "66e44249acda7cc4fc19a287811e8de61abfa8fa99c94bdd6e980dedec481a95"
+  },
+  "Runtime/Commands/CommandT.cs": {
+    "sha256": "56790f73044af40072e8273b1643a825e2514cffbe6ac5fd0aa0021cf43301fe",
+    "canonicalLfSha256": "e61d59ef0fd45eb799eb5f0dd692498bf77a6159faaa4b83d5f93bb4952cfcfc"
+  },
+  "Runtime/Commands/ICommandBuilderFactory.cs": {
+    "sha256": "5fa4733c77e8107fe1d51d94460daf52c53621bcc70f421abd21ddbd0bc1a948",
+    "canonicalLfSha256": "eed3a5c093af8d0dc534d09d7768973f9f49dd8b877ce03995b45ece2e25ca5a"
+  },
+  "Runtime/Commands/ViewModelCommandBuilderFactory.cs": {
+    "sha256": "8582a8a9745dfebad952f27f977e11358bb71a42724c84c99e697e5c7c7ab97e",
+    "canonicalLfSha256": "d85c14816786e0998ac150ed4526a6c3f2cf9c9bdcaba3854836305176a8e258"
+  },
+  "Runtime/Controls/BindableButton.cs": {
+    "sha256": "c667f8f4a055e87d1a36cb34c20783c20f9b162173c09e608b46b63b2de27901",
+    "canonicalLfSha256": "3747ab8fb8d9f1d084876c469a382c25024c407cc0c656103c8797aa4740f361"
+  },
+  "Runtime/Controls/BindableListView.cs": {
+    "sha256": "3a85dace88dc8ac51681252ab51b1ad4ab232597776e94bbc30fe3140b75864f",
+    "canonicalLfSha256": "084f98fba3f2d29b69bb8b2066b3cf9fdb0dee11e8c4d083c16dd39b6704093a"
+  },
+  "Runtime/Controls/ControlConverterRegistry.cs": {
+    "sha256": "8c0babc993765292768e81e98f3f2f5ae1ad8097b27e0689e63176ea1813bd39",
+    "canonicalLfSha256": "c384aa660a9e32f39105795f0fb33fcd0c0e8fa102f5243200568d2747bfebeb"
+  },
+  "Runtime/Controls/HyperLinkLabel.cs": {
+    "sha256": "bc66f017d07cf694fa31a5268bc429bd726d7a83087829d6fa93d4c888317b38",
+    "canonicalLfSha256": "041fc4cef11941b111eaf3219ff423c9d29c5df3253ee0913ccd407d1e715dd9"
+  },
+  "Runtime/Controls/SampleDataBinding.cs": {
+    "sha256": "ecf79bcc55975daa25b1bed7a62913327df2a496021166ef77ea885e1b2b98f9",
+    "canonicalLfSha256": "db84818d2621592aca571514d67888ffd21f091ff8ff0b79f3b23676b3b93e84"
+  },
+  "Runtime/Converters/SimConverterRegistry.cs": {
+    "sha256": "d7e115e58df41c99de6abfa4af64beb2712dab42e5b35c709ad1241c84b34995",
+    "canonicalLfSha256": "f0ae4199a514f75c9a36bc0ce1dc3de2d13b7ddd71ba7692c560ea4c69a30ec8"
+  },
+  "Runtime/Internal/FaciemAddressables.cs": {
+    "sha256": "18f652310cde2e036d73288d89bc99ecfe76d5b0ada56a4db6db12e6829d92ec",
+    "canonicalLfSha256": "f14e3f66113a853181d185135ea70b8c4557a14df31215f9e939e68aad3daa49"
+  },
+  "Runtime/Internal/GlobalRegionRegistry.cs": {
+    "sha256": "22db7f4b9099d129ba4039e2a6936e0604df638ea36f72e3e066d7ebddc3cc71",
+    "canonicalLfSha256": "45cb0ac0bcb6b41d2186179ce790f8499bc448e05f69abe5e86ba230f79db96a"
+  },
+  "Runtime/Internal/IGlobalRegionManagerInternal.cs": {
+    "sha256": "1ac561f79f7eab303dd1a58a71a6462bfa2785b45d8e88f0cf1601b679aa115a",
+    "canonicalLfSha256": "ecb21482a3d68ee5f3c2cb827a06c5f4d89acf255146e3fc1b3b3b73a858b799"
+  },
+  "Runtime/Internal/IRegionSetup.cs": {
+    "sha256": "bb3c43827a08ed3274cdd7cd2053734a1d9ca33e6210c517eec2990d8949070b",
+    "canonicalLfSha256": "23abb56baa011be8d40f1c127992bd7827c48653c6b8e45f1b00772e974962c1"
+  },
+  "Runtime/Internal/NavigationExecution.cs": {
+    "sha256": "699d4c2a89a929ba7bee56c7ccd75cd24ec7354db4413c46e6b4bb8799bcbb88",
+    "canonicalLfSha256": "0b2be1904e313d271f0bd488f8191d06b22d1b021f8bfdf1c33501ea61ac899d"
+  },
+  "Runtime/Internal/RegionNavigationOperations.cs": {
+    "sha256": "9fc55a636d3ee23a63a37ae8ec34237df24c48235a0294b2868078f86797c2c8",
+    "canonicalLfSha256": "304022cec76fc558dcf3f21f37be80a4cf0a8516188526181b0e561152b566bb"
+  },
+  "Runtime/Internal/ViewIdDiscoveryService.cs": {
+    "sha256": "0b9c4a5dfdd92c89d70bfc2583f55d2746c058616f79266cdb16946797d463da",
+    "canonicalLfSha256": "6439f4249ea20b1352ca9e2bf787b8ee0aca9542782b0e1e22dc73a46a3cd228"
+  },
+  "Runtime/Internal/ViewIdRegistry.cs": {
+    "sha256": "369799dcaf91bc1255d4c2f2eb82999095123e12c9aad4587c2b1470974f63f4",
+    "canonicalLfSha256": "759d44ae3cda08a645150f204bebf22224a28adeadcbedbd150878b8de380843"
+  },
+  "Runtime/PropertyObserver/IViewModelPropertyObserver.cs": {
+    "sha256": "0917c0f1b267a3341b4877134bafa25b419c4f06554e5b693d8e4d1021ed0c23",
+    "canonicalLfSha256": "01e58e57b039145834746689e629c1e8041d93e45e0505fd41e8ca8a1cb29868"
+  },
+  "Runtime/PropertyObserver/ViewModelPropertyObserver.cs": {
+    "sha256": "b27ab00cdc31059570e7a5338f554644a1406118fcb5af3822b676f1430f24cc",
+    "canonicalLfSha256": "7935e4e5903369e515465ea13d9695da888ccd746c5cf667161352dd4fed4f4b"
+  },
+  "Runtime/Controls/CommandBinding/SerializedCommand.cs": {
+    "sha256": "647a41079007e3cd3c58556e214af80a42fa92a7718c404b1d17f87f59756163",
+    "canonicalLfSha256": "60096c7b68138cb4401e0ec200beb22c1ffcbebae1368aeb701b562e18854c95"
+  },
+  "Runtime/Controls/CommandBinding/SerializedCommandConverter.cs": {
+    "sha256": "b99be92683d6dfff4ed2b79b6b4efee2e018fa2db1065f55c9627ee26bb35ed0",
+    "canonicalLfSha256": "5138758e6bbd8855e93aaf1dd5ae20ddd32a8fa119b51883cffc10b572980f94"
+  },
+  "Runtime/Controls/ListBinding/SerializedListConverter.cs": {
+    "sha256": "abf5bfb8d023553f32f9133542721dd2f6430d5bb38b14c26542839b8e9d59ac",
+    "canonicalLfSha256": "88dad1728b8ed25fa0ba70fadc2cb336a8c2260f3b914561f746a30c2904145b"
+  },
+  "Runtime/Controls/ListBinding/SerializedListReference.cs": {
+    "sha256": "b18f03388488574393f4af1d37ce849c0847630363f6c414fae7f7f8af0bef59",
+    "canonicalLfSha256": "2a2b0a378fc53a8e9b2312168d65fb58446fef97aeb5b7aa9613e111ad29d6f8"
+  },
+  "InternalEditor/Controls/SerializedCommandPropertyDrawer.cs": {
+    "sha256": "c0edbb9cb7c1f4c82abf5e99b2439a476b44bfd1c210e76e4718b012258ac895",
+    "canonicalLfSha256": "48e8c974c0a0cc9b4bbd2d724f3fb190423d3a30d89d3e79e9faacbf90abd22e"
+  },
+  "InternalEditor/Controls/SerializedListReferencePropertyDrawer.cs": {
+    "sha256": "2f4c6e09e0a7cb7b5f39e5b126a8b7f5c69b683501918b9a555b28c2e106ba4f",
+    "canonicalLfSha256": "cb2375d1f7639d26491c8979573b5cecfa48f89fcb64714bc62afd978ee1cdd6"
+  },
+  "Editor/DI/EditorInjector.cs": {
+    "sha256": "c9bda943ebcfe1cb2d031fe18875cc04eecd8b1348484eb198a980101e182fec",
+    "canonicalLfSha256": "6045ec8c09403c79f6b66291a9c5bbbfd5eb260757c10172d62f732eb86634c3"
+  },
+  "Editor/DI/EditorServiceInstaller.cs": {
+    "sha256": "d0bb7c7aacb0143f0390b04b3a41e284a6526da955699f99ed921610fe31711d",
+    "canonicalLfSha256": "ead42ed03254ea9d8d414648122dab50555e96bec28b12e2863d7730087782e9"
+  },
+  "Editor/DI/IEditorInjector.cs": {
+    "sha256": "368073e60c74c833d7e1faa808b43041f4a7b74fc3da35b6ce610dac256a7a2f",
+    "canonicalLfSha256": "2ac5b04a3797efc188d23f76f9856140f3611923919282b7dff6d340be1d6b46"
+  },
+  "Editor/DI/ServiceRegistration.cs": {
+    "sha256": "a4394a06b46fb763601239fc0b257496279e2a372c36c28c7aacd2f23ba78014",
+    "canonicalLfSha256": "c74c766bd9d2f6593140a42c0aeb5998c866c573e1e66718b516750a6870cde9"
+  },
+  "Editor/Navigation/EditorToolNavigationService.cs": {
+    "sha256": "f868eb6341767640af51352c330709532696f8ef51854efb378636a9570f3061",
+    "canonicalLfSha256": "62175d7b92a62ab05062772dbc9b3f3fad698cea9992b210af92acf0b5ab8e00"
+  },
+  "Editor/Navigation/IEditorToolNavigationService.cs": {
+    "sha256": "0dc1749c2f3d7b540a30f191ed4fbc60ca7fd6101cf462b8b820fb45bb3f9dc1",
+    "canonicalLfSha256": "2e5ea244ad466dec37a40870bfd5b06732c35fd6cd63457365b84af9f218a5f7"
+  },
+  "Editor/Services/EditorViewIdRegistry.cs": {
+    "sha256": "4481043962a1f91c3e119a9b6e7b1fe17c7d362e4b0a323c3656fd85b6710593",
+    "canonicalLfSha256": "d677d67d47d68d8909c6203d45c028085d9133fcc83207561a513494cfe571a3"
+  }
+}

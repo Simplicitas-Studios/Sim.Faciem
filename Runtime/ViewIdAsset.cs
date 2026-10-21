@@ -21,6 +21,10 @@ namespace Sim.Faciem
         [MonoScriptReferenceFilter(typeof(ViewModel<>))]
         public MonoScriptReference ViewModel;
 
+        /// <summary>Optional behavior receiving the existing model/root; empty preserves declarative-only screens.</summary>
+        [MonoScriptReferenceFilter(typeof(Sim.Faciem.View))]
+        public MonoScriptReference TypedView;
+
         public bool SourceCodeGeneration;
 
 #if UNITY_EDITOR
@@ -38,6 +42,15 @@ namespace Sim.Faciem
                 if (classType != null)
                 {
                     ViewModel.TypeName = classType.AssemblyQualifiedName;
+                }
+            }
+
+            if (TypedView != null && TypedView.Script != null)
+            {
+                var classType = TypedView.Script.GetClass();
+                if (classType != null)
+                {
+                    TypedView.TypeName = classType.AssemblyQualifiedName;
                 }
             }
 

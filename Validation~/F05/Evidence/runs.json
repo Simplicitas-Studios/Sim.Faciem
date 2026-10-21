@@ -1,0 +1,179 @@
+{
+  "runs": [
+    {
+      "normalized": "pi-unity-tests-editmode-20261021T195050731Z-910efec6888b42c8b8412e1831d95ea9.json",
+      "outcome": "passed",
+      "summary": {
+        "total": 21,
+        "passed": 21,
+        "failed": 0,
+        "skipped": 0
+      },
+      "selection": {
+        "testFilters": [
+          "NavigationTypedViewTests"
+        ],
+        "testCategories": []
+      },
+      "artifacts": [
+        "pi-unity-tests-editmode-20261021T195050731Z-910efec6888b42c8b8412e1831d95ea9.json",
+        "unity-tests-editmode-20261021T194712784Z-2565327db0a0483b.xml",
+        "unity-tests-editmode-20261021T194712784Z-2565327db0a0483b.log"
+      ]
+    },
+    {
+      "normalized": "pi-unity-tests-editmode-20261021T195641136Z-f784ed4c622445c7a56981ac1406b4bd.json",
+      "outcome": "tests_failed",
+      "summary": {
+        "total": 25,
+        "passed": 24,
+        "failed": 1,
+        "skipped": 0
+      },
+      "selection": {
+        "testFilters": [
+          "NavigationTypedViewTests"
+        ],
+        "testCategories": []
+      },
+      "artifacts": [
+        "pi-unity-tests-editmode-20261021T195641136Z-f784ed4c622445c7a56981ac1406b4bd.json",
+        "unity-tests-editmode-20261021T195619648Z-5daeae126bf14817.xml",
+        "unity-tests-editmode-20261021T195619648Z-5daeae126bf14817.log"
+      ]
+    },
+    {
+      "normalized": "pi-unity-tests-editmode-20261021T200133842Z-acf2d7ec825948c2893d6c15ff980845.json",
+      "outcome": "tests_failed",
+      "summary": {
+        "total": 882,
+        "passed": 880,
+        "failed": 1,
+        "skipped": 1
+      },
+      "selection": {
+        "testFilters": [],
+        "testCategories": []
+      },
+      "artifacts": [
+        "pi-unity-tests-editmode-20261021T200133842Z-acf2d7ec825948c2893d6c15ff980845.json",
+        "unity-tests-editmode-20261021T200006662Z-b8abc6facb69430c.xml",
+        "unity-tests-editmode-20261021T200006662Z-b8abc6facb69430c.log"
+      ]
+    },
+    {
+      "normalized": "pi-unity-tests-editmode-20261021T200445315Z-6fd9555656bb41f58c0465abf64d2678.json",
+      "outcome": "uncertain",
+      "summary": {
+        "total": 882,
+        "passed": 881,
+        "failed": 0,
+        "skipped": 1
+      },
+      "selection": {
+        "testFilters": [],
+        "testCategories": []
+      },
+      "artifacts": [
+        "pi-unity-tests-editmode-20261021T200445315Z-6fd9555656bb41f58c0465abf64d2678.json",
+        "unity-tests-editmode-20261021T200336927Z-e1b8c91e87784665.xml",
+        "unity-tests-editmode-20261021T200336927Z-e1b8c91e87784665.log"
+      ]
+    },
+    {
+      "normalized": "pi-unity-tests-editmode-20261021T200611759Z-c5e6cc5f7c5e4e6f8e74ef5e227fd244.json",
+      "outcome": "passed",
+      "summary": {
+        "total": 224,
+        "passed": 224,
+        "failed": 0,
+        "skipped": 0
+      },
+      "selection": {
+        "testFilters": [
+          "Sim.Faciem.Tests"
+        ],
+        "testCategories": []
+      },
+      "artifacts": [
+        "pi-unity-tests-editmode-20261021T200611759Z-c5e6cc5f7c5e4e6f8e74ef5e227fd244.json",
+        "unity-tests-editmode-20261021T200550452Z-5824854c10cd4a6e.xml",
+        "unity-tests-editmode-20261021T200550452Z-5824854c10cd4a6e.log"
+      ]
+    },
+    {
+      "normalized": "pi-unity-tests-editmode-20261021T201141791Z-6e18b9d6c5b2436c8a7b3bdf5b223f9f.json",
+      "outcome": "passed",
+      "summary": {
+        "total": 874,
+        "passed": 874,
+        "failed": 0,
+        "skipped": 0
+      },
+      "selection": {
+        "testFilters": [
+          "Sim.Faciem.Tests",
+          "D01SocketTransportTests",
+          "D01SocketWriterTests",
+          "D02IntroLifecycleCharacterizationTests",
+          "D02IntroOwnershipReviewTests",
+          "D02LastChanceCharacterizationTests",
+          "D02PresentationOwnershipTests",
+          "D02ProjectionCharacterizationTests",
+          "D02VoiceoverCharacterizationTests",
+          "D031LocalPackageIntegrationTests",
+          "D032ShellDiTests",
+          "D032ShellDisposalPrerequisiteTests",
+          "D032ShellViewModelTests",
+          "D033ShellLabelPilotTests",
+          "D033ShellLabelTextTests",
+          "D034PanelRendererRootTests",
+          "D036JoinUrlIntegrationTests",
+          "D036JoinUrlModelTests",
+          "D041QuestionCategoryBindingTests",
+          "D041QuestionCategoryProjectionTests",
+          "D042RosterBindingTests",
+          "D042RosterProjectionTests",
+          "D043TitleBindingTests",
+          "D043TitleProjectionTests",
+          "D044GameplayCharacterizationTests",
+          "D045CaptionBindingTests",
+          "D0510TriviaQuestionTests",
+          "D057PresentationIdentityTests",
+          "D057RoomGenerationTests",
+          "D059GameplayWiringTests",
+          "DeadMansMemoryDisplayPresenterTests",
+          "DevilsCupsDisplayPresenterTests",
+          "DisplayStateStoreTests",
+          "HousesHandDisplayPresenterTests",
+          "ImpostorDisplayPresenterTests",
+          "IntroPresentationControllerTests",
+          "LastChanceDisplayPresentationTests",
+          "LastMatchDisplayPresenterTests",
+          "StopTheClockDisplayPresenterTests",
+          "Wp04DisplayStateStoreTests",
+          "Wp05DisplayPrivacyTests",
+          "Wp06LifecycleTests",
+          "D0510TriviaSceneTests",
+          "D059WorldSpaceRootLifecycleTests"
+        ],
+        "testCategories": []
+      },
+      "artifacts": [
+        "pi-unity-tests-editmode-20261021T201141791Z-6e18b9d6c5b2436c8a7b3bdf5b223f9f.json",
+        "unity-tests-editmode-20261021T201045042Z-6ae0c11fa2e44213.xml",
+        "unity-tests-editmode-20261021T201045042Z-6ae0c11fa2e44213.log"
+      ]
+    }
+  ],
+  "observationTotals": {
+    "total": 2908,
+    "passed": 2904,
+    "failed": 2,
+    "skipped": 2
+  },
+  "distinctBroaderRecords": 882,
+  "positiveAcceptanceRecords": 874,
+  "positiveNativeRecords": 224,
+  "aggregateUncertaintyPreserved": true
+}
